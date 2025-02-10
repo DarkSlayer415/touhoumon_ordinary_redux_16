@@ -375,7 +375,7 @@ PokemaniacRonSeenText:
 	done
 
 PokemaniacRonBeatenText:
-	text "My NIDOKING did"
+	text "My Yuugi did"
 	line "pretty right on!"
 	done
 
@@ -407,7 +407,7 @@ FisherMarvinBeatenText:
 	done
 
 FisherMarvinAfterBattleText:
-	text "KURT's LURE BALL"
+	text "KURT's LURE ORB"
 	line "is the best for"
 
 	para "catching hooked"
@@ -415,7 +415,7 @@ FisherMarvinAfterBattleText:
 
 	para "It's much more"
 	line "effective than a"
-	cont "ULTRA BALL."
+	cont "ULTRA ORB."
 	done
 
 CamperSpencerSeenText:
@@ -457,7 +457,7 @@ PicnickerTiffanyWantsPicnicText:
 	done
 
 PicnickerTiffanyClefairyText:
-	text "Isn't my CLEFAIRY"
+	text "Isn't my Tewi"
 	line "just the most"
 	cont "adorable thing?"
 	done

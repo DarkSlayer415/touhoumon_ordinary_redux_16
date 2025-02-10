@@ -3,6 +3,7 @@
 	const CIANWOODPOKECENTER1F_LASS
 	const CIANWOODPOKECENTER1F_GYM_GUIDE
 	const CIANWOODPOKECENTER1F_SUPER_NERD
+	const CIANWOODPOKECENTER1F_FISHING_GURU
 
 CianwoodPokecenter1F_MapScripts:
 	def_scene_scripts
@@ -14,6 +15,35 @@ CianwoodPokecenter1FNurseScript:
 
 CianwoodPokecenter1FLassScript:
 	jumptextfaceplayer CianwoodPokecenter1FLassText
+
+GoodRodGuru:
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_GOOD_ROD
+	iftrue .AlreadyGotItem
+	writetext OfferGoodRodText
+	yesorno
+	iffalse .DontWantIt
+	writetext GiveGoodRodText
+	promptbutton
+	verbosegiveitem GOOD_ROD
+	writetext GaveGoodRodText
+	waitbutton
+	closetext
+	setevent EVENT_GOT_GOOD_ROD
+	end
+
+.DontWantIt:
+	writetext DontWantGoodRodText
+	waitbutton
+	closetext
+	end
+
+.AlreadyGotItem:
+	writetext HaveGoodRodText
+	waitbutton
+	closetext
+	end
 
 CianwoodGymGuideScript:
 	faceplayer
@@ -42,6 +72,47 @@ CianwoodPokecenter1FLassText:
 	para "He's always brag-"
 	line "ging about his"
 	cont "rare #MON."
+	done
+
+OfferGoodRodText:
+	text "CIANWOOD is on the"
+	line "sea!"
+
+	para "And if it's on the"
+	line "sea, there are"
+	cont "bound to be fish!"
+
+	para "I've fished here"
+	line "for 30 years."
+
+	para "Would you like to"
+	line "face the sea and"
+	cont "fish?"
+	done
+
+GiveGoodRodText:
+	text "Ah, hahah!"
+	line "We have ourselves"
+	cont "a new angler!"
+	done
+
+GaveGoodRodText:
+	text "Fish aren't found"
+	line "in the sea alone."
+
+	para "They go wherever"
+	line "there is water."
+	done
+
+DontWantGoodRodText:
+	text "Whaaat? You don't"
+	line "like to fish!?"
+	cont "Incomprehensible!"
+	done
+
+HaveGoodRodText:
+	text "How are things?"
+	line "Land the big one?"
 	done
 
 CianwoodGymGuideText:
@@ -89,32 +160,6 @@ CianwoodGymGuideWinText:
 	cont "looking at you!"
 	done
 
-CianwoodPokecenter1FUnusedText1: ; unreferenced
-	text "Don't you get the"
-	line "urge to show off"
-
-	para "your #MON to"
-	line "friends?"
-
-	para "I wish I could"
-	line "show the #MON I"
-
-	para "raised to my pal"
-	line "in VIOLET."
-	done
-
-CianwoodPokecenter1FUnusedText2: ; unreferenced
-	text "I've been battling"
-	line "my pal in VIOLET"
-
-	para "using a MOBILE"
-	line "ADAPTER link."
-
-	para "I'm down 5-7"
-	line "against him. I've"
-	cont "gotta crank it up!"
-	done
-
 CianwoodPokecenter1FSuperNerdText:
 	text "I love showing off"
 	line "the #MON that"
@@ -143,6 +188,7 @@ CianwoodPokecenter1F_MapEvents:
 
 	def_object_events
 	object_event  3,  1, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CianwoodPokecenter1FNurseScript, -1
+	object_event  0,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoodRodGuru, -1
 	object_event  1,  5, SPRITE_LASS, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CianwoodPokecenter1FLassScript, -1
 	object_event  5,  3, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CianwoodGymGuideScript, -1
 	object_event  8,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CianwoodPokecenter1FSuperNerdScript, -1

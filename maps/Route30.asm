@@ -18,7 +18,7 @@ Route30_MapScripts:
 
 YoungsterJoey_ImportantBattleScript:
 	waitsfx
-	playmusic MUSIC_JOHTO_TRAINER_BATTLE
+	playmusic MUSIC_JOHTO_SANAE_BATTLE
 	opentext
 	writetext Text_UseTackle
 	pause 30
@@ -261,9 +261,9 @@ Route30_MikeysRattataAttacksMovement:
 	step_end
 
 Text_UseTackle:
-	text "Go, RATTATA!"
+	text "Go, CChen!"
 
-	para "TACKLE!"
+	para "Scratch!"
 	done
 
 Text_ThisIsABigBattle:

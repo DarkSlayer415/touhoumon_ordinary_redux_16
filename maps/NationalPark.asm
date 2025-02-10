@@ -5,7 +5,7 @@
 	const NATIONALPARK_YOUNGSTER1
 	const NATIONALPARK_YOUNGSTER2
 	const NATIONALPARK_TEACHER2
-	const NATIONALPARK_PERSIAN
+	const NATIONALPARK_RUMIA
 	const NATIONALPARK_YOUNGSTER3
 	const NATIONALPARK_POKEFAN_F2
 	const NATIONALPARK_POKEFAN_M
@@ -51,11 +51,11 @@ NationalParkYoungster2Script:
 NationalParkTeacher2Script:
 	jumptextfaceplayer NationalParkTeacher2Text
 
-NationalParkPersian:
+NationalParkRumia:
 	faceplayer
 	opentext
-	writetext NationalParkPersianText
-	cry PERSIAN
+	writetext NationalParkRumiaText
+	cry GROWLITHE
 	waitbutton
 	closetext
 	end
@@ -208,8 +208,8 @@ TrainerPokefanfBeverly1:
 	iftrue .GiveNugget
 	checkcellnum PHONE_POKEFAN_BEVERLY
 	iftrue .NumberAccepted
-	checkpoke MARILL
-	iffalse .NoMarill
+	checkpoke SUNKERN ;Replaces Marill
+	iffalse .NoFlandre
 	checkevent EVENT_BEVERLY_ASKED_FOR_PHONE_NUMBER
 	iftrue .AskAgain
 	writetext PokefanBeverlyCuteMonText
@@ -238,8 +238,8 @@ TrainerPokefanfBeverly1:
 .NoRoom:
 	sjump .PackFull
 
-.NoMarill:
-	writetext PokefanFBeverlyMarillFriendText
+.NoFlandre:
+	writetext PokefanFBeverlyFlandreFriendText
 	waitbutton
 	closetext
 	end
@@ -374,8 +374,8 @@ NationalParkTeacher2Text:
 	line "want to battle…"
 	done
 
-NationalParkPersianText:
-	text "PERSIAN: Fufushaa!"
+NationalParkRumiaText:
+	text "CRumia: Sonanoka?"
 	done
 
 NationalParkGameboyKidText:
@@ -459,15 +459,15 @@ PokefanmWilliamAfterBattleText:
 	line "being most lovely."
 	done
 
-PokefanFBeverlyMarillFriendText:
+PokefanFBeverlyFlandreFriendText:
 	text "My friend keeps a"
-	line "MARILL!"
+	line "CFlandre!"
 
 	para "I find them very"
 	line "endearing."
 
 	para "Oh, I wish for a"
-	line "MARILL of my own…"
+	line "CFlandre of my own…"
 	done
 
 LassKriseSeenText:
@@ -529,13 +529,13 @@ NationalPark_MapEvents:
 	bg_event 12,  4, BGEVENT_READ, NationalParkTrainerTipsSign
 
 	def_object_events
-	object_event 15, 24, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NationalParkLassScript, -1
+	object_event 15, 22, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NationalParkLassScript, -1
 	object_event 14,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NationalParkPokefanFScript, -1
 	object_event 27, 40, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NationalParkTeacher1Script, -1
 	object_event 11, 41, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NationalParkYoungster1Script, -1
 	object_event 10, 41, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, NationalParkYoungster2Script, -1
 	object_event 17, 41, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NationalParkTeacher2Script, -1
-	object_event 26, 40, SPRITE_GROWLITHE, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NationalParkPersian, -1
+	object_event 26, 40, SPRITE_GROWLITHE, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NationalParkRumia, -1
 	object_event 27, 23, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyJack1, -1
 	object_event 18, 29, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPokefanfBeverly1, -1
 	object_event 16,  9, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPokefanmWilliam, -1

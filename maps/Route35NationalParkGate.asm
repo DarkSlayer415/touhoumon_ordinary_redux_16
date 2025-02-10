@@ -228,16 +228,16 @@ Route35NationalParkGateOfficer1AskToParticipateText:
 	text "."
 	line "That means the"
 
-	para "Bug-Catching Con-"
-	line "test is on today."
+	para "Fairy-Catching"
+	line "Contest is on"
 
-	para "The rules are sim-"
-	line "ple."
+	para "today. The rules"
+	line "are simple."
 
 	para "Using one of your"
 	line "#MON, catch a"
 
-	para "bug #MON to be"
+	para "fairy #MON to be"
 	line "judged."
 
 	para "Would you like to"
@@ -246,7 +246,7 @@ Route35NationalParkGateOfficer1AskToParticipateText:
 
 Route35NationalParkGateOfficer1GiveParkBallsText:
 	text "Here are the PARK"
-	line "BALLS for the"
+	line "ORBS for the"
 	cont "Contest."
 	done
 
@@ -258,14 +258,14 @@ Route35NationalParkGatePlayerReceivedParkBallsText:
 Route35NationalParkGateOfficer1ExplainsRulesText:
 	text "The person who"
 	line "gets the strong-"
-	cont "est bug #MON"
+	cont "est fairy #MON"
 	cont "is the winner."
 
 	para "You have {d:BUG_CONTEST_MINUTES}"
 	line "minutes."
 
 	para "If you run out of"
-	line "PARK BALLS, you're"
+	line "PARK ORBS, you're"
 	cont "done."
 
 	para "You can keep the"
@@ -273,7 +273,7 @@ Route35NationalParkGateOfficer1ExplainsRulesText:
 	cont "catch as your own."
 
 	para "Go out and catch"
-	line "the strongest bug"
+	line "the strongest"
 
 	para "#MON you can"
 	line "find!"
@@ -411,12 +411,13 @@ Route35NationalParkGateOfficer1WeHoldContestsText:
 
 Route35NationalParkGateYoungsterText:
 	text "When is the next"
-	line "Bug-Catching Con-"
-	cont "test going to be?"
+	line "Fairy Catching"
+	cont "Contest going"
+	cont "to be?"
 	done
 
 BugCatchingContestExplanationText:
-	text "The Bug-Catching"
+	text "The Fairy Catching"
 	line "Contest is held on"
 
 	para "Tuesday, Thursday"
@@ -428,7 +429,7 @@ BugCatchingContestExplanationText:
 	para "for participating,"
 	line "you also get to"
 
-	para "keep the bug"
+	para "keep the Fairy"
 	line "#MON you may"
 
 	para "have at the end of"

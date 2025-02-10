@@ -13,8 +13,8 @@ GameFreakGameDesignerScript:
 	faceplayer
 	opentext
 	writetext GameFreakGameDesignerText
-	readvar VAR_DEXUNCAUGHT
-	ifless 3, .CompletedPokedex ; ignore Mew and Celebi
+	readvar VAR_DEXCAUGHT
+	ifgreater NUM_POKEMON - 2 - 1, .CompletedPokedex ; ignore Mew and Celebi
 	waitbutton
 	closetext
 	end
@@ -57,12 +57,6 @@ GameFreakGraphicArtistScript:
 	closetext
 	end
 
-.CancelPrinting: ; unreferenced
-	writetext GameFreakGraphicArtistErrorText
-	waitbutton
-	closetext
-	end
-
 GameFreakProgrammerScript:
 	jumptextfaceplayer GameFreakProgrammerText
 
@@ -84,8 +78,9 @@ CeladonMansion3FReferenceMaterial:
 GameFreakGameDesignerText:
 	text "Is that right?"
 
-	para "I'm the GAME"
-	line "DESIGNER!"
+	para "I'm the hack"
+	line "developer,"
+	cont "DarkSlayer!"
 
 	para "Filling up your"
 	line "#DEX is tough,"
@@ -105,64 +100,72 @@ GameFreakGameDesignerPauseForDiplomaText:
 	done
 
 GameFreakGameDesignerAfterDiplomaText:
-	text "The GRAPHIC ARTIST"
+	text "The Graphic Artist"
 	line "will print out a"
-	cont "DIPLOMA for you."
+	cont "Diploma for you."
 
 	para "You should go show"
 	line "it off."
 	done
 
 GameFreakGraphicArtistText:
-	text "I'm the GRAPHIC"
-	line "ARTIST."
+	text "I'm the Graphic"
+	line "Artist,"
+	cont "BonFlanCake!"
 
-	para "I drew you!"
+	para "I made all"
+	line "the #MON"
+	cont "sprites with"
+	
+	para "help from"
+	line "Marisus!"
 	done
 
 GameFreakGraphicArtistPrintDiplomaText:
-	text "I'm the GRAPHIC"
-	line "ARTIST."
+	text "I'm the Graphic"
+	line "Artist."
 
 	para "Oh, you completed"
 	line "your #DEX?"
 
 	para "Want me to print"
-	line "out your DIPLOMA?"
+	line "out your Diploma?"
 	done
 
 GameFreakGraphicArtistRefusedText:
 	text "Give me a shout if"
 	line "you want your"
-	cont "DIPLOMA printed."
-	done
-
-GameFreakGraphicArtistErrorText:
-	text "Something's wrong."
-	line "I'll have to can-"
-	cont "cel printing."
+	cont "Diploma printed."
 	done
 
 GameFreakProgrammerText:
-	text "Who, me? I'm the"
-	line "PROGRAMMER."
+	text "Who, me? I'm"
+	line "GeminiRage."
 
-	para "Play the slot"
-	line "machines!"
+	para "I developed"
+	line "the original"
+	
+	para "#MON Ordinary"
+	line "ROM Hack!"
 	done
 
 GameFreakCharacterDesignerText:
-	text "Aren't the TWINS"
+	text "Hey, I'm"
+	line "Suwart!"
+	
+	para "I designed"
+	line "the player"
+	cont "artwork!"
+	
+	para "Isn't Renko"
 	line "adorable?"
 
-	para "JASMINE's pretty"
-	line "too."
-
-	para "Oh, I love them!"
+	para "Maribel is"
+	line "just as cute!"
 	done
 
 CeladonMansion3FDevRoomSignText:
-	text "GAME FREAK"
+	text "TOUHOUMON HACK"
 	line "DEVELOPMENT ROOM"
 	done
 
@@ -184,7 +187,7 @@ CeladonMansion3FReferenceMaterialText:
 	text "It's crammed with"
 	line "reference materi-"
 	cont "als. There's even"
-	cont "a # DOLL."
+	cont "a # Fumo."
 	done
 
 CeladonMansion3F_MapEvents:

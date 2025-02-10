@@ -122,9 +122,9 @@ BugCatchingContestant1AText:
 	done
 
 BugCatchingContestant2AText:
-	text "ED: My PARASECT"
+	text "ED: My Medicine"
 	line "puts #MON to"
-	cont "sleep with SPORE."
+	cont "sleep with Spore."
 	done
 
 BugCatchingContestant3AText:
@@ -144,7 +144,7 @@ BugCatchingContestant4AText:
 
 BugCatchingContestant5AText:
 	text "BENNY: Ssh! You'll"
-	line "scare off SCYTHER."
+	line "scare off Ryukoto."
 
 	para "I'll talk to you"
 	line "later."
@@ -152,15 +152,15 @@ BugCatchingContestant5AText:
 
 BugCatchingContestant6AText:
 	text "BARRY: You should"
-	line "weaken bug #MON"
+	line "weaken the #MON"
 
 	para "first, then throw"
 	line "a BALL."
 	done
 
 BugCatchingContestant7AText:
-	text "CINDY: I love bug"
-	line "#MON."
+	text "CINDY: I love"
+	line "fairy #MON."
 
 	para "I guess you must"
 	line "like them too."
@@ -168,7 +168,7 @@ BugCatchingContestant7AText:
 
 BugCatchingContestant8AText:
 	text "JOSH: I've been"
-	line "collecting bug"
+	line "collecting fairy"
 
 	para "#MON since I"
 	line "was just a baby."
@@ -182,12 +182,12 @@ BugCatchingContestant9AText:
 	line "got the time to"
 
 	para "chat, go find some"
-	line "bug #MON."
+	line "fairy #MON."
 	done
 
 BugCatchingContestant10AText:
 	text "KIPP: I've studied"
-	line "about bug #MON"
+	line "about fairy #MON"
 	cont "a lot."
 
 	para "I'm going to win"
@@ -238,7 +238,7 @@ NationalParkBugContest_MapEvents:
 	def_object_events
 	object_event 19, 29, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant1AScript, EVENT_BUG_CATCHING_CONTESTANT_1A
 	object_event 28, 22, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant2AScript, EVENT_BUG_CATCHING_CONTESTANT_2A
-	object_event  9, 18, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant3AScript, EVENT_BUG_CATCHING_CONTESTANT_3A
+	object_event 13, 18, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant3AScript, EVENT_BUG_CATCHING_CONTESTANT_3A
 	object_event  7, 13, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant4AScript, EVENT_BUG_CATCHING_CONTESTANT_4A
 	object_event 23,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant5AScript, EVENT_BUG_CATCHING_CONTESTANT_5A
 	object_event 27, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant6AScript, EVENT_BUG_CATCHING_CONTESTANT_6A

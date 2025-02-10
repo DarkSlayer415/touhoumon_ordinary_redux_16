@@ -37,7 +37,7 @@ VioletCityEarlScript:
 	writetext Text_FollowEarl
 	waitbutton
 	closetext
-	playmusic MUSIC_SHOW_ME_AROUND
+	playmusic MUSIC_FOLLOWME_HIROSHIGE
 	follow VIOLETCITY_EARL, PLAYER
 	applymovement VIOLETCITY_EARL, VioletCityFollowEarl_MovementData
 	turnobject PLAYER, UP
@@ -89,14 +89,14 @@ VioletCityMartSign:
 VioletCityPPUp:
 	itemball PP_UP
 
-VioletCityRareCandy:
-	itemball RARE_CANDY
+VioletCityLeftovers:
+	itemball LEFTOVERS
 
 VioletCityFruitTree:
 	fruittree FRUITTREE_VIOLET_CITY
 
-VioletCityHiddenHyperPotion:
-	hiddenitem HYPER_POTION, EVENT_VIOLET_CITY_HIDDEN_HYPER_POTION
+VioletCityHiddenRareCandy:
+	hiddenitem RARE_CANDY, EVENT_VIOLET_CITY_HIDDEN_RARE_CANDY
 
 VioletCityFollowEarl_MovementData:
 	big_step DOWN
@@ -205,7 +205,7 @@ Text_HereTeacherIAm:
 VioletCityLassText:
 	text "Ghosts are rumored"
 	line "to appear in"
-	cont "SPROUT TOWER."
+	cont "AUTUMN TOWER."
 
 	para "They said normal-"
 	line "type #MON moves"
@@ -265,7 +265,7 @@ VioletGymSignText:
 	done
 
 SproutTowerSignText:
-	text "SPROUT TOWER"
+	text "AUTUMN TOWER"
 
 	para "Experience the"
 	line "Way of #MON"
@@ -299,7 +299,7 @@ VioletCity_MapEvents:
 	bg_event 27, 17, BGEVENT_READ, EarlsPokemonAcademySign
 	bg_event 32, 25, BGEVENT_READ, VioletCityPokecenterSign
 	bg_event 10, 17, BGEVENT_READ, VioletCityMartSign
-	bg_event 37, 14, BGEVENT_ITEM, VioletCityHiddenHyperPotion
+	bg_event 37, 14, BGEVENT_ITEM, VioletCityHiddenRareCandy
 
 	def_object_events
 	object_event 13, 16, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VioletCityEarlScript, EVENT_VIOLET_CITY_EARL
@@ -308,5 +308,5 @@ VioletCity_MapEvents:
 	object_event 17, 20, SPRITE_GRAMPS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VioletCityGrampsScript, -1
 	object_event  5, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VioletCityYoungsterScript, -1
 	object_event 14, 29, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VioletCityFruitTree, -1
-	object_event  4,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VioletCityPPUp, EVENT_VIOLET_CITY_PP_UP
-	object_event 35,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VioletCityRareCandy, EVENT_VIOLET_CITY_RARE_CANDY
+	object_event  8,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VioletCityPPUp, EVENT_VIOLET_CITY_PP_UP
+	object_event 35,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VioletCityLeftovers, EVENT_VIOLET_CITY_LEFTOVERS

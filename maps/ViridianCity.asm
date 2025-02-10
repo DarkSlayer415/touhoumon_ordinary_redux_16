@@ -47,20 +47,20 @@ ViridianCityGrampsNearGym:
 	closetext
 	end
 
-ViridianCityDreamEaterFisher:
+ViridianCitySleepTalkFisher:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TM42_DREAM_EATER
-	iftrue .GotDreamEater
-	writetext ViridianCityDreamEaterFisherText
+	checkevent EVENT_GOT_TM35_SLEEP_TALK
+	iftrue .GotSleepTalk
+	writetext ViridianCitySleepTalkFisherText
 	promptbutton
-	verbosegiveitem TM_DREAM_EATER
-	iffalse .NoRoomForDreamEater
-	setevent EVENT_GOT_TM42_DREAM_EATER
-.GotDreamEater:
-	writetext ViridianCityDreamEaterFisherGotDreamEaterText
+	verbosegiveitem TM_SLEEP_TALK
+	iffalse .NoRoomForSleepTalk
+	setevent EVENT_GOT_TM35_SLEEP_TALK
+.GotSleepTalk:
+	writetext ViridianCitySleepTalkFisherGotSleepTalkText
 	waitbutton
-.NoRoomForDreamEater:
+.NoRoomForSleepTalk:
 	closetext
 	end
 
@@ -144,17 +144,11 @@ ViridianCityGrampsNearGymBlueReturnedText:
 	line "You'll need it."
 	done
 
-ViridianCityDreamEaterFisherText:
+ViridianCitySleepTalkFisherText:
 	text "Yawn!"
 
 	para "I must have dozed"
 	line "off in the sun."
-
-	para "…I had this dream"
-	line "about a DROWZEE"
-
-	para "eating my dream."
-	line "Weird, huh?"
 
 	para "Huh?"
 	line "What's this?"
@@ -167,9 +161,9 @@ ViridianCityDreamEaterFisherText:
 	cont "this TM."
 	done
 
-ViridianCityDreamEaterFisherGotDreamEaterText:
-	text "TM42 contains"
-	line "DREAM EATER…"
+ViridianCitySleepTalkFisherGotSleepTalkText:
+	text "TM35 contains"
+	line "Sleep Talk…"
 
 	para "…Zzzzz…"
 	done
@@ -236,5 +230,5 @@ ViridianCity_MapEvents:
 	def_object_events
 	object_event 18,  5, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ViridianCityCoffeeGramps, -1
 	object_event 30,  8, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ViridianCityGrampsNearGym, -1
-	object_event  6, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ViridianCityDreamEaterFisher, -1
+	object_event  6, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ViridianCitySleepTalkFisher, -1
 	object_event 17, 21, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ViridianCityYoungsterScript, -1

@@ -144,12 +144,12 @@ VermilionMachopOwnerText:
 	done
 
 VermilionMachopText1:
-	text "MACHOP: Guooh"
+	text "CMeiling: Guooh"
 	line "gogogoh!"
 	done
 
 VermilionMachopText2:
-	text "A MACHOP is growl-"
+	text "CMeiling is growl-"
 	line "ing while stomping"
 	cont "the ground flat."
 	done
@@ -164,18 +164,18 @@ VermilionCitySuperNerdText:
 	done
 
 VermilionCitySnorlaxSleepingText:
-	text "SNORLAX is snoring"
+	text "Genji is snoring"
 	line "peacefully…"
 	done
 
 VermilionCityRadioNearSnorlaxText:
 	text "The #GEAR was"
 	line "placed near the"
-	cont "sleeping SNORLAX…"
+	cont "sleeping Genji…"
 
 	para "…"
 
-	para "SNORLAX woke up!"
+	para "Genji woke up!"
 	done
 
 VermilionCityBadgeGuyTrainerText:
@@ -246,7 +246,7 @@ VermilionGymSignText:
 	cont "LEADER: LT.SURGE"
 
 	para "The Lightning"
-	line "American"
+	line "Lieutenant!"
 	done
 
 PokemonFanClubSignText:
@@ -257,7 +257,7 @@ PokemonFanClubSignText:
 	done
 
 VermilionCityDiglettsCaveSignText:
-	text "DIGLETT'S CAVE"
+	text "YAMAME'S CAVE"
 	done
 
 VermilionCityPortSignText:

@@ -205,7 +205,7 @@ EcruteakTinTowerEntranceSageText_HearsClearBell:
 	para "Ah!"
 
 	para "The sound of that"
-	line "CLEAR BELL!"
+	line "CLEAR ERHU!"
 
 	para "It… It's sublime!"
 
@@ -213,7 +213,7 @@ EcruteakTinTowerEntranceSageText_HearsClearBell:
 	line "so beautiful a"
 	cont "sound before!"
 
-	para "That bell's chime"
+	para "That errhu's chime"
 	line "is indicative of"
 	cont "the bearer's soul."
 
@@ -231,7 +231,7 @@ EcruteakTinTowerEntranceSageText_PleaseDoGoOn:
 	done
 
 EcruteakTinTowerEntranceSageText_HeardClearBell:
-	text "That bell's chime"
+	text "That erhu's chime"
 	line "is indicative of"
 	cont "the bearer's soul."
 

@@ -124,11 +124,11 @@ BrockBoulderBadgeText:
 	line "though I am a bit"
 	cont "upset."
 
-	para "That BOULDERBADGE"
-	line "will make your"
+	para "By the way, I saw"
+	line "a red-haired"
 
-	para "#MON even more"
-	line "powerful."
+	para "trainer headed to"
+	line "MT. MOON."
 	done
 
 BrockFightDoneText:

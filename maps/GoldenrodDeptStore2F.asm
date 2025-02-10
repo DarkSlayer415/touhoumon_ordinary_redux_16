@@ -69,8 +69,9 @@ GoldenrodDeptStore2FYoungsterText:
 	done
 
 GoldenrodDeptStore2FCooltrainerFText:
-	text "I got my ABRA at"
-	line "the GAME CORNER."
+	text "I got my CMarisa"
+	line "at the"
+	cont "GAME CORNER."
 
 	para "Now it's my best"
 	line "partner."

@@ -222,11 +222,11 @@ Text_ReceivedTM24:
 
 ClairText_DescribeDragonbreathDragonDen:
 	text "That contains"
-	line "DRAGONBREATH."
+	line "DragonBreath."
 
 	para "No, it doesn't"
 	line "have anything to"
-	cont "do with my breath."
+	cont "do with my breath!"
 
 	para "If you don't want"
 	line "it, you don't have"

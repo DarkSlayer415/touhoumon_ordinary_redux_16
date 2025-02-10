@@ -1,28 +1,10 @@
 	object_const_def
 	const BILLSHOUSE_GRAMPS
 
-	const_def 1 ; locked Pokémon ID table entries, used for species checking
-	const BILLSHOUSE_INDEX_LICKITUNG
-	const BILLSHOUSE_INDEX_ODDISH
-	const BILLSHOUSE_INDEX_STARYU
-	const BILLSHOUSE_INDEX_GROWLITHE
-	const BILLSHOUSE_INDEX_VULPIX
-	const BILLSHOUSE_INDEX_PICHU
-
 BillsHouse_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
-	callback MAPCALLBACK_NEWMAP, BillsHouseLoadReservedIDsCallback
-
-BillsHouseLoadReservedIDsCallback:
-	loadmonindex BILLSHOUSE_INDEX_LICKITUNG, LICKITUNG
-	loadmonindex BILLSHOUSE_INDEX_ODDISH, ODDISH
-	loadmonindex BILLSHOUSE_INDEX_STARYU, STARYU
-	loadmonindex BILLSHOUSE_INDEX_GROWLITHE, GROWLITHE
-	loadmonindex BILLSHOUSE_INDEX_VULPIX, VULPIX
-	loadmonindex BILLSHOUSE_INDEX_PICHU, PICHU
-	endcallback
 
 BillsGrandpa:
 	faceplayer
@@ -55,8 +37,7 @@ BillsGrandpa:
 	scall .ExcitedToSee
 	special BillsGrandfather
 	iffalse .SaidNo
-	checkmaplockedmons
-	ifnotequal BILLSHOUSE_INDEX_LICKITUNG, .WrongPokemon
+	ifnotequal LICKITUNG, .WrongPokemon
 	scall .CorrectPokemon
 	setevent EVENT_SHOWED_LICKITUNG_TO_BILLS_GRANDPA
 	sjump .ShowedLickitung
@@ -70,8 +51,7 @@ BillsGrandpa:
 	scall .ExcitedToSee
 	special BillsGrandfather
 	iffalse .SaidNo
-	checkmaplockedmons
-	ifnotequal BILLSHOUSE_INDEX_ODDISH, .WrongPokemon
+	ifnotequal ODDISH, .WrongPokemon
 	scall .CorrectPokemon
 	setevent EVENT_SHOWED_ODDISH_TO_BILLS_GRANDPA
 	sjump .ShowedOddish
@@ -85,8 +65,7 @@ BillsGrandpa:
 	scall .ExcitedToSee
 	special BillsGrandfather
 	iffalse .SaidNo
-	checkmaplockedmons
-	ifnotequal BILLSHOUSE_INDEX_STARYU, .WrongPokemon
+	ifnotequal STARYU, .WrongPokemon
 	scall .CorrectPokemon
 	setevent EVENT_SHOWED_STARYU_TO_BILLS_GRANDPA
 	sjump .ShowedStaryu
@@ -102,8 +81,7 @@ BillsGrandpa:
 	scall .ExcitedToSee
 	special BillsGrandfather
 	iffalse .SaidNo
-	checkmaplockedmons
-	ifnotequal BILLSHOUSE_INDEX_GROWLITHE, .WrongPokemon
+	ifnotequal GROWLITHE, .WrongPokemon
 	scall .CorrectPokemon
 	setevent EVENT_SHOWED_GROWLITHE_VULPIX_TO_BILLS_GRANDPA
 	sjump .ShowedGrowlitheVulpix
@@ -117,8 +95,7 @@ BillsGrandpa:
 	scall .ExcitedToSee
 	special BillsGrandfather
 	iffalse .SaidNo
-	checkmaplockedmons
-	ifnotequal BILLSHOUSE_INDEX_VULPIX, .WrongPokemon
+	ifnotequal VULPIX, .WrongPokemon
 	scall .CorrectPokemon
 	setevent EVENT_SHOWED_GROWLITHE_VULPIX_TO_BILLS_GRANDPA
 	sjump .ShowedGrowlitheVulpix
@@ -132,8 +109,7 @@ BillsGrandpa:
 	scall .ExcitedToSee
 	special BillsGrandfather
 	iffalse .SaidNo
-	checkmaplockedmons
-	ifnotequal BILLSHOUSE_INDEX_PICHU, .WrongPokemon
+	ifnotequal PICHU, .WrongPokemon
 	scall .CorrectPokemon
 	setevent EVENT_SHOWED_PICHU_TO_BILLS_GRANDPA
 	sjump .ShowedPichu
@@ -142,7 +118,7 @@ BillsGrandpa:
 	checkevent EVENT_GOT_EVERSTONE_FROM_BILLS_GRANDPA
 	iftrue .GotEverstone
 	scall .ReceiveItem
-	verbosegiveitem EVERSTONE
+	verbosegiveitem NUGGET
 	iffalse .BagFull
 	setevent EVENT_GOT_EVERSTONE_FROM_BILLS_GRANDPA
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
@@ -153,7 +129,7 @@ BillsGrandpa:
 	checkevent EVENT_GOT_LEAF_STONE_FROM_BILLS_GRANDPA
 	iftrue .GotLeafStone
 	scall .ReceiveItem
-	verbosegiveitem LEAF_STONE
+	verbosegiveitem NUGGET
 	iffalse .BagFull
 	setevent EVENT_GOT_LEAF_STONE_FROM_BILLS_GRANDPA
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
@@ -164,7 +140,7 @@ BillsGrandpa:
 	checkevent EVENT_GOT_WATER_STONE_FROM_BILLS_GRANDPA
 	iftrue .GotWaterStone
 	scall .ReceiveItem
-	verbosegiveitem WATER_STONE
+	verbosegiveitem NUGGET
 	iffalse .BagFull
 	setevent EVENT_GOT_WATER_STONE_FROM_BILLS_GRANDPA
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
@@ -175,7 +151,7 @@ BillsGrandpa:
 	checkevent EVENT_GOT_FIRE_STONE_FROM_BILLS_GRANDPA
 	iftrue .GotFireStone
 	scall .ReceiveItem
-	verbosegiveitem FIRE_STONE
+	verbosegiveitem NUGGET
 	iffalse .BagFull
 	setevent EVENT_GOT_FIRE_STONE_FROM_BILLS_GRANDPA
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
@@ -184,7 +160,7 @@ BillsGrandpa:
 
 .ShowedPichu:
 	scall .ReceiveItem
-	verbosegiveitem THUNDERSTONE
+	verbosegiveitem NUGGET
 	iffalse .BagFull
 	setevent EVENT_GOT_THUNDERSTONE_FROM_BILLS_GRANDPA
 	closetext
@@ -307,32 +283,25 @@ BillsGrandpaLickitungText:
 	text "My grandson BILL"
 	line "told me about a"
 
-	para "#MON that has a"
-	line "long tongue."
+	para "#MON who is a"
+	line "tiny devil."
 	done
 
 BillsGrandpaOddishText:
 	text "Ah, my grandson"
-	line "mentioned a round,"
+	line "mentioned a green"
 
-	para "green #MON that"
-	line "has leaves growing"
-	cont "on its head."
+	para "#MON wjo's known"
+	line "for making a"
+	cont "funny face."
 	done
 
 BillsGrandpaStaryuText:
 	text "Do you know of a"
-	line "sea #MON that"
+	line "#MON that's very"
 
-	para "has a red sphere"
-	line "in its body?"
-
-	para "You know, the one"
-	line "that's shaped like"
-	cont "a star?"
-
-	para "I heard that it"
-	line "appears at night."
+	para "jealous and has"
+	line "pointy ears?"
 
 	para "I would surely"
 	line "like to see it."
@@ -342,17 +311,14 @@ BillsGrandpaGrowlitheText:
 	text "BILL told me about"
 	line "a #MON that is"
 
-	para "very loyal to its"
-	line "trainer."
-
-	para "It's supposed to"
-	line "ROAR well."
+	para "shrouded in a ball"
+	line "of darkness."
 	done
 
 BillsGrandpaVulpixText:
 	text "I heard about a"
 	line "cute #MON that"
-	cont "has six tails."
+	cont "announces spring."
 
 	para "I would love to"
 	line "hug a cute #MON"
@@ -360,19 +326,13 @@ BillsGrandpaVulpixText:
 	done
 
 BillsGrandpaPichuText:
-	text "Do you know that"
-	line "hugely popular"
-	cont "#MON?"
+	text "Do you know of a"
+	line "#MON that eats"
+	cont "cucumbers?"
 
-	para "The #MON that"
-	line "has a yellow body"
-	cont "and red cheeks."
-
-	para "I would love to"
-	line "see what it looks"
-
-	para "like before it"
-	line "evolves."
+	para "The #MON is said"
+	line "to be very shy"
+	cont "around humans."
 	done
 
 BillsHouse_MapEvents:

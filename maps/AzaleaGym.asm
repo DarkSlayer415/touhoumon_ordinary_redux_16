@@ -151,14 +151,14 @@ BugsyText_INeverLose:
 	text "I'm BUGSY!"
 	line "I never lose when"
 
-	para "it comes to bug"
+	para "it comes to fairy"
 	line "#MON."
 
 	para "My research is"
 	line "going to make me"
 
 	para "the authority on"
-	line "bug #MON!"
+	line "fairy #MON!"
 
 	para "Let me demonstrate"
 	line "what I've learned"
@@ -194,7 +194,7 @@ BugsyText_HiveBadgeSpeech:
 	line "even traded ones."
 
 	para "#MON that know"
-	line "CUT will be able"
+	line "Cut will be able"
 
 	para "to use it outside"
 	line "of battle too."
@@ -205,7 +205,7 @@ BugsyText_HiveBadgeSpeech:
 
 BugsyText_FuryCutterSpeech:
 	text "TM49 contains"
-	line "FURY CUTTER."
+	line "Fury Cutter."
 
 	para "If you don't miss,"
 	line "it gets stronger"
@@ -220,7 +220,7 @@ BugsyText_FuryCutterSpeech:
 	done
 
 BugsyText_BugMonsAreDeep:
-	text "Bug #MON are"
+	text "Fairy #MON are"
 	line "deep. There are"
 
 	para "many mysteries to"
@@ -231,11 +231,11 @@ BugsyText_BugMonsAreDeep:
 	done
 
 BugCatcherBennySeenText:
-	text "Bug #MON evolve"
-	line "young. So they get"
+	text "Fairy #MON evolve"
+	line "young. So they"
 
-	para "stronger that much"
-	line "faster."
+	para "get stronger that"
+	line "much faster."
 	done
 
 BugCatcherBennyBeatenText:
@@ -250,7 +250,7 @@ BugCatcherBennyAfterBattleText:
 	done
 
 BugCatcherAlSeenText:
-	text "Bug #MON are"
+	text "Fairy #MON are"
 	line "cool and tough!"
 
 	para "I'll prove it to"
@@ -264,9 +264,9 @@ BugCatcherAlBeatenText:
 
 BugCatcherAlAfterBattleText:
 	text "They're so cool,"
-	line "but most girls"
+	line "but most boys"
 
-	para "don't like bug"
+	para "don't like fairy"
 	line "#MON."
 
 	para "I don't know why…"
@@ -274,7 +274,7 @@ BugCatcherAlAfterBattleText:
 
 BugCatcherJoshSeenText:
 	text "You saved all the"
-	line "SLOWPOKE? Whew,"
+	line "Nitori? Whew,"
 	cont "you're mighty!"
 
 	para "But my grown-up"
@@ -320,7 +320,7 @@ TwinsAmyandmay2BeatenText:
 	done
 
 TwinsAmyandmay2AfterBattleText:
-	text "MAY: Our bug #-"
+	text "MAY: Our fairy #-"
 	line "MON lost! Oh, what"
 	cont "a shame."
 	done
@@ -331,18 +331,18 @@ AzaleaGymGuideText:
 	para "BUGSY's young, but"
 	line "his knowledge of"
 
-	para "bug #MON is for"
+	para "fairy #MON is for"
 	line "real."
 
 	para "It's going to be"
 	line "tough without my"
 	cont "advice."
 
-	para "Let's see… Bug"
+	para "Let's see… Fairy"
 	line "#MON don't like"
-	cont "fire."
+	cont "poison."
 
-	para "Flying-type moves"
+	para "Psychic-type moves"
 	line "are super-effec-"
 	cont "tive too."
 	done

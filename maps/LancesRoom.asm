@@ -231,9 +231,8 @@ LanceBattleIntroText:
 	para "the #MON LEAGUE"
 	line "CHAMPION…"
 
-	para "I, LANCE the drag-"
-	line "on master, accept"
-	cont "your challenge!"
+	para "I, LANCE, accept"
+	line "your challenge!"
 	done
 
 LanceBattleWinText:

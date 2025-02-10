@@ -30,7 +30,7 @@ CopycatsHouse1FPokefanFScript:
 CopycatsHouse1FBlisseyScript:
 	opentext
 	writetext CopycatsHouse1FBlisseyText
-	cry BLISSEY
+	cry NIDOQUEEN
 	waitbutton
 	closetext
 	end
@@ -67,7 +67,7 @@ CopycatsHouse1FPokefanFText_ReturnedMachinePart:
 	done
 
 CopycatsHouse1FBlisseyText:
-	text "BLISSEY: Bliisii!"
+	text "EReisen: Pyonpyon!"
 	done
 
 CopycatsHouse1F_MapEvents:

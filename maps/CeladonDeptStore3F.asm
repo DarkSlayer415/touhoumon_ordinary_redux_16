@@ -1,8 +1,6 @@
 	object_const_def
 	const CELADONDEPTSTORE3F_CLERK
 	const CELADONDEPTSTORE3F_YOUNGSTER
-	const CELADONDEPTSTORE3F_GAMEBOY_KID1
-	const CELADONDEPTSTORE3F_GAMEBOY_KID2
 	const CELADONDEPTSTORE3F_SUPER_NERD
 
 CeladonDeptStore3F_MapScripts:
@@ -20,23 +18,6 @@ CeladonDeptStore3FClerkScript:
 CeladonDeptStore3FYoungsterScript:
 	jumptextfaceplayer CeladonDeptStore3FYoungsterText
 
-CeladonDeptStore3FGameboyKid1Script:
-	faceplayer
-	opentext
-	writetext CeladonDeptStore3FGameboyKid1Text
-	waitbutton
-	closetext
-	turnobject CELADONDEPTSTORE3F_GAMEBOY_KID1, DOWN
-	end
-
-CeladonDeptStore3FGameboyKid2Script:
-	faceplayer
-	opentext
-	writetext CeladonDeptStore3FGameboyKid2Text
-	waitbutton
-	closetext
-	turnobject CELADONDEPTSTORE3F_GAMEBOY_KID2, DOWN
-	end
 
 CeladonDeptStore3FSuperNerdScript:
 	jumptextfaceplayer CeladonDeptStore3FSuperNerdText
@@ -53,31 +34,6 @@ CeladonDeptStore3FYoungsterText:
 
 	para "should use this TM"
 	line "on…"
-	done
-
-CeladonDeptStore3FGameboyKid1Text:
-	text "Uh-oh! I traded my"
-	line "#MON without"
-
-	para "removing the UP-"
-	line "GRADE from it."
-	done
-
-CeladonDeptStore3FGameboyKid2Text:
-	text "Yeah! I'm finally"
-	line "getting a PORYGON!"
-
-	para "I'm no good at the"
-	line "slots, so I could"
-
-	para "never get enough"
-	line "coins…"
-
-	para "…Huh?"
-
-	para "The traded PORYGON"
-	line "turned into a dif-"
-	cont "ferent #MON!"
 	done
 
 CeladonDeptStore3FSuperNerdText:
@@ -109,6 +65,4 @@ CeladonDeptStore3F_MapEvents:
 	def_object_events
 	object_event  7,  1, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore3FClerkScript, -1
 	object_event  6,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore3FYoungsterScript, -1
-	object_event  9,  1, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore3FGameboyKid1Script, -1
-	object_event 10,  1, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore3FGameboyKid2Script, -1
 	object_event 13,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore3FSuperNerdScript, -1

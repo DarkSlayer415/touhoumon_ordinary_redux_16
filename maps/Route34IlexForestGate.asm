@@ -1,6 +1,5 @@
 	object_const_def
 	const ROUTE34ILEXFORESTGATE_TEACHER1
-	const ROUTE34ILEXFORESTGATE_BUTTERFREE
 	const ROUTE34ILEXFORESTGATE_LASS
 	const ROUTE34ILEXFORESTGATE_TEACHER2
 
@@ -46,15 +45,15 @@ Route34IlexForestGateTeacherScript:
 	opentext
 	checkevent EVENT_FOREST_IS_RESTLESS
 	iftrue .ForestIsRestless
-	checkevent EVENT_GOT_TM12_SWEET_SCENT
-	iftrue .GotSweetScent
+	checkevent EVENT_GOT_TM12_RAZOR_WIND
+	iftrue .GotRazorWind
 	writetext Route34IlexForestGateTeacherText
 	promptbutton
-	verbosegiveitem TM_SWEET_SCENT
+	verbosegiveitem TM_RAZOR_WIND
 	iffalse .NoRoom
-	setevent EVENT_GOT_TM12_SWEET_SCENT
-.GotSweetScent:
-	writetext Route34IlexForestGateTeacher_GotSweetScent
+	setevent EVENT_GOT_TM12_RAZOR_WIND
+.GotRazorWind:
+	writetext Route34IlexForestGateTeacher_GotRazorWind
 	waitbutton
 .NoRoom:
 	closetext
@@ -63,14 +62,6 @@ Route34IlexForestGateTeacherScript:
 .ForestIsRestless:
 	writetext Route34IlexForestGateTeacher_ForestIsRestless
 	promptbutton
-	closetext
-	end
-
-Route34IlexForestGateButterfreeScript:
-	opentext
-	writetext Route34IlexForestGateButterfreeText
-	cry BUTTERFREE
-	waitbutton
 	closetext
 	end
 
@@ -91,21 +82,15 @@ Route34IlexForestGateTeacherText:
 	text "Oh, honey. You're"
 	line "making a #DEX?"
 
-	para "It must be hard if"
-	line "#MON won't"
-
-	para "appear. Try using"
-	line "this TM."
+	para "Please take this"
+	line "amazing TM!"
 	done
 
-Route34IlexForestGateTeacher_GotSweetScent:
-	text "It's SWEET SCENT."
+Route34IlexForestGateTeacher_GotRazorWind:
+	text "It's Razor Wind."
 
-	para "Use it wherever"
-	line "#MON appear."
-
-	para "#MON will be"
-	line "enticed by it."
+	para "It's an attack that"
+	line "will strike first!"
 	done
 
 Route34IlexForestGateTeacher_ForestIsRestless:
@@ -114,10 +99,6 @@ Route34IlexForestGateTeacher_ForestIsRestless:
 
 	para "You should stay"
 	line "away right now."
-	done
-
-Route34IlexForestGateButterfreeText:
-	text "BUTTERFREE: Freeh!"
 	done
 
 Route34IlexForestGateLassText:
@@ -150,6 +131,5 @@ Route34IlexForestGate_MapEvents:
 
 	def_object_events
 	object_event  9,  3, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route34IlexForestGateTeacherScript, EVENT_ROUTE_34_ILEX_FOREST_GATE_TEACHER_BEHIND_COUNTER
-	object_event  9,  4, SPRITE_BUTTERFREE, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route34IlexForestGateButterfreeScript, -1
 	object_event  3,  4, SPRITE_LASS, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route34IlexForestGateLassScript, EVENT_ROUTE_34_ILEX_FOREST_GATE_LASS
 	object_event  5,  7, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route34IlexForestGateTeacherScript, EVENT_ROUTE_34_ILEX_FOREST_GATE_TEACHER_IN_WALKWAY

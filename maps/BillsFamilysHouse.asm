@@ -11,7 +11,7 @@ BillsFamilysHouse_MapScripts:
 BillScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_EEVEE
+	checkevent EVENT_GOT_CYUUTO
 	iftrue .GotEevee
 	writetext BillTakeThisEeveeText
 	yesorno
@@ -24,8 +24,8 @@ BillScript:
 	writetext ReceivedEeveeText
 	playsound SFX_CAUGHT_MON
 	waitsfx
-	givepoke EEVEE, 20
-	setevent EVENT_GOT_EEVEE
+	givepoke CYUUTO, 20
+	setevent EVENT_GOT_CYUUTO
 	writetext BillEeveeMayEvolveText
 	waitbutton
 	closetext
@@ -65,12 +65,12 @@ BillsMomScript:
 	closetext
 	end
 
-BillsYoungerSisterScript:
+BillsSisterScript:
 	faceplayer
 	opentext
 	checkcellnum PHONE_BILL
 	iftrue .GotBillsNumber
-	writetext BillsYoungerSisterUsefulNumberText
+	writetext BillsSisterUsefulNumberText
 	askforphonenumber PHONE_BILL
 	ifequal PHONE_CONTACTS_FULL, .NoRoom
 	ifequal PHONE_CONTACT_REFUSED, .Refused
@@ -81,19 +81,19 @@ BillsYoungerSisterScript:
 	waitsfx
 	promptbutton
 .GotBillsNumber:
-	writetext BillsYoungerSisterStorageSystemText
+	writetext BillsSisterStorageSystemText
 	waitbutton
 	closetext
 	end
 
 .Refused:
-	writetext BillsYoungerSisterRefusedNumberText
+	writetext BillsSisterRefusedNumberText
 	waitbutton
 	closetext
 	end
 
 .NoRoom:
-	writetext BillsYoungerSisterPhoneFullText
+	writetext BillsSisterPhoneFullText
 	promptbutton
 	sjump .Refused
 
@@ -109,7 +109,7 @@ BillsHouseRadio:
 BillTakeThisEeveeText:
 	text "BILL: Hi, <PLAYER>!"
 	line "Do us a favor and"
-	cont "take this EEVEE."
+	cont "take this CYuuto."
 
 	para "It came over when"
 	line "I was adjusting"
@@ -142,15 +142,15 @@ BillImCountingOnYouText:
 
 ReceivedEeveeText:
 	text "<PLAYER> received"
-	line "EEVEE!"
+	line "CYuuto!"
 	done
 
 BillEeveeMayEvolveText:
 	text "BILL: PROF.ELM"
-	line "claims EEVEE may"
+	line "claims CYuuto may"
 
-	para "evolve in new and"
-	line "unknown ways."
+	para "come from another"
+	line "world or time."
 	done
 
 BillPartyFullText:
@@ -204,7 +204,7 @@ BillsMomText_AfterEcruteak:
 	line "father."
 	done
 
-BillsYoungerSisterUsefulNumberText:
+BillsSisterUsefulNumberText:
 	text "Are you a trainer?"
 
 	para "I've got a useful"
@@ -217,7 +217,7 @@ RecordedBillsNumberText:
 	line "BILL's number."
 	done
 
-BillsYoungerSisterRefusedNumberText:
+BillsSisterRefusedNumberText:
 	text "My brother made"
 	line "the PC #MON"
 	cont "storage system."
@@ -227,12 +227,12 @@ BillsYoungerSisterRefusedNumberText:
 	cont "number…"
 	done
 
-BillsYoungerSisterPhoneFullText:
+BillsSisterPhoneFullText:
 	text "You can't record"
 	line "any more numbers."
 	done
 
-BillsYoungerSisterStorageSystemText:
+BillsSisterStorageSystemText:
 	text "My big brother"
 	line "BILL made the PC"
 
@@ -257,4 +257,4 @@ BillsFamilysHouse_MapEvents:
 	def_object_events
 	object_event  2,  3, SPRITE_BILL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BillScript, EVENT_MET_BILL
 	object_event  5,  3, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BillsMomScript, -1
-	object_event  5,  4, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, BillsYoungerSisterScript, -1
+	object_event  5,  4, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, BillsSisterScript, -1

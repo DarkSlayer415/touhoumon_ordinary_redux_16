@@ -119,7 +119,7 @@ IlexForestFarfetchdScript:
 	writetext Text_ItsTheMissingPokemon
 	promptbutton
 	writetext Text_Kwaaaa
-	cry FARFETCH_D
+	cry GEODUDE
 	waitbutton
 	closetext
 	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetchd_Pos1_Pos2
@@ -327,7 +327,7 @@ IlexForestFarfetchdScript:
 	faceplayer
 	opentext
 	writetext Text_Kwaaaa
-	cry FARFETCH_D
+	cry GEODUDE
 	waitbutton
 	closetext
 	end
@@ -336,7 +336,7 @@ IlexForestFarfetchdScript:
 	faceplayer
 	opentext
 	writetext Text_Kwaaaa
-	cry FARFETCH_D
+	cry GEODUDE
 	waitbutton
 	closetext
 	readvar VAR_FACING
@@ -740,7 +740,7 @@ IlexForestApprenticeIntroText:
 	line "is going to be"
 	cont "steaming…"
 
-	para "The FARFETCH'D"
+	para "The CYoumu"
 	line "that CUTS trees"
 
 	para "for charcoal took"
@@ -770,11 +770,11 @@ Text_ItsTheMissingPokemon:
 	done
 
 Text_Kwaaaa:
-	text "FARFETCH'D: Kwaa!"
+	text "CYoumu: Myon!"
 	done
 
 Text_CharcoalMasterIntro:
-	text "Ah! My FARFETCH'D!"
+	text "Ah! My CYoumu!"
 
 	para "You found it for"
 	line "us, kid?"
@@ -782,7 +782,7 @@ Text_CharcoalMasterIntro:
 	para "Without it, we"
 	line "wouldn't be able"
 
-	para "to CUT trees for"
+	para "to cut trees for"
 	line "charcoal."
 
 	para "Thanks, kid!"
@@ -795,7 +795,7 @@ Text_CharcoalMasterIntro:
 	done
 
 Text_CharcoalMasterOutro:
-	text "That's the CUT HM."
+	text "That's the Cut HM."
 	line "Teach that to a"
 
 	para "#MON to clear"
@@ -952,7 +952,7 @@ IlexForest_MapEvents:
 	bg_event  8, 22, BGEVENT_UP, IlexForestShrineScript
 
 	def_object_events
-	object_event 14, 31, SPRITE_BIRD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, IlexForestFarfetchdScript, EVENT_ILEX_FOREST_FARFETCHD
+	object_event 14, 31, SPRITE_MONSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, IlexForestFarfetchdScript, EVENT_ILEX_FOREST_FARFETCHD
 	object_event  7, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, IlexForestCharcoalApprenticeScript, EVENT_ILEX_FOREST_APPRENTICE
 	object_event  5, 28, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IlexForestCharcoalMasterScript, EVENT_ILEX_FOREST_CHARCOAL_MASTER
 	object_event 15, 14, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IlexForestHeadbuttGuyScript, -1

@@ -72,8 +72,6 @@ Kurt1:
 	iffalse .NoRoomForBall
 	setevent EVENT_KURT_GAVE_YOU_LURE_BALL
 .GotLureBall:
-	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	iftrue .WaitForApricorns
 	checkevent EVENT_GAVE_KURT_RED_APRICORN
 	iftrue .GiveLevelBall
 	checkevent EVENT_GAVE_KURT_BLU_APRICORN
@@ -167,10 +165,14 @@ Kurt1:
 
 .GaveKurtApricorns:
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	setflag ENGINE_KURT_MAKING_BALLS
-.WaitForApricorns:
-	writetext KurtsHouseKurtItWillTakeADayText
+	writetext KurtsHouseKurtGetStartedText
 	waitbutton
+	special FadeOutToBlack
+	special ReloadSpritesNoPalettes
+	playsound SFX_WARP_TO
+	waitsfx
+	pause 35
+	sjump Kurt1	
 	closetext
 	end
 
@@ -414,7 +416,7 @@ KurtsHouseSlowpoke:
 	faceplayer
 	opentext
 	writetext KurtsHouseSlowpokeText
-	cry SLOWPOKE
+	cry PICHU
 	waitbutton
 	closetext
 	end
@@ -447,6 +449,11 @@ KurtsHouseKurtGoAroundPlayerThenExitHouseMovement:
 	big_step DOWN
 	big_step DOWN
 	step_end
+	
+KurtsHouseKurtGetStartedText:
+	text "Kurt: I'll get"
+	line "started right now!"
+	done	
 
 KurtsHouseKurtMakingBallsMustWaitText:
 	text "Hm? Who are you?"
@@ -475,16 +482,16 @@ KurtsHouseKurtMakingBallsMustWaitText:
 	cont "three years ago."
 
 	para "Anyway, they're at"
-	line "the WELL, cutting"
+	line "the WELL, stealing"
 
-	para "off SLOWPOKETAILS"
+	para "kappa cucumbers"
 	line "for sale!"
 
 	para "So I'm going to"
 	line "go give them a"
 	cont "lesson in pain!"
 
-	para "Hang on, SLOWPOKE!"
+	para "Hang on, Nitori!"
 	line "Old KURT is on his"
 	cont "way!"
 	done
@@ -526,14 +533,6 @@ KurtsHouseKurtAskYouHaveAnApricornText:
 
 	para "Fine! I'll turn it"
 	line "into a BALL."
-	done
-
-KurtsHouseKurtItWillTakeADayText:
-	text "KURT: It'll take a"
-	line "day to make you a"
-
-	para "BALL. Come back"
-	line "for it later."
 	done
 
 KurtsHouseKurtThatsALetdownText:
@@ -606,7 +605,7 @@ KurtsHouseKurtThisBallStartedToShakeText:
 	done
 
 KurtsGranddaughterSlowpokeGoneText:
-	text "The SLOWPOKE are"
+	text "The Nitori are"
 	line "gone… Were they"
 
 	para "taken away by bad"
@@ -619,7 +618,7 @@ KurtsGranddaughterLonelyText:
 	done
 
 KurtsGranddaughterSlowpokeBackText:
-	text "The SLOWPOKE my"
+	text "The Nitori my"
 	line "dad gave me came"
 
 	para "back! Its TAIL is"
@@ -629,11 +628,11 @@ KurtsGranddaughterSlowpokeBackText:
 KurtsGranddaughterDadText:
 	text "Dad works at SILPH"
 	line "where he studies"
-	cont "# BALLS."
+	cont "# Orbs."
 
 	para "I have to stay"
 	line "home with Grandpa"
-	cont "and SLOWPOKE."
+	cont "and Nitori."
 	done
 
 KurtsGranddaughterHelpText:
@@ -641,25 +640,25 @@ KurtsGranddaughterHelpText:
 	line "Grandpa now!"
 
 	para "We'll make good"
-	line "BALLS for you, so"
+	line "Orbs for you, so"
 	cont "please wait!"
 	done
 
 KurtsGranddaughterFunText:
 	text "It's fun to make"
-	line "BALLS!"
+	line "Orbs!"
 	done
 
 KurtsGranddaughterGSBallText:
 	text "Grandpa's checking"
-	line "a BALL right now."
+	line "a Orb right now."
 
 	para "So I'm waiting"
 	line "till he's done."
 	done
 
 KurtsHouseSlowpokeText:
-	text "SLOWPOKE: …"
+	text "CNitori: …"
 	line "Yawn?"
 	done
 

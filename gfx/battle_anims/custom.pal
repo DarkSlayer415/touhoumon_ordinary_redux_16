@@ -1,0 +1,64 @@
+; first 6 custom pals look like regular ones
+INCLUDE "gfx/battle_anims/battle_anims.pal"
+
+if !DEF(MONOCHROME)
+; metallic
+	RGB 31, 31, 31
+	RGB 20, 20, 20
+	RGB 10, 10, 10
+	RGB 00, 00, 00
+; purple
+	RGB 31, 31, 31
+	RGB 22, 05, 24
+	RGB 10, 02, 11
+	RGB 00, 00, 00
+; ice
+	RGB 31, 31, 31
+	RGB 00, 22, 29
+	RGB 06, 18, 30
+	RGB 00, 00, 00
+; fire
+	RGB 31, 31, 31
+	RGB 31, 24, 02
+	RGB 29, 03, 04
+	RGB 00, 00, 00
+; psychoboost2
+	RGB 31, 31, 31
+	RGB 31, 18, 25
+	RGB 31, 00, 27
+	RGB 15, 06, 31
+; darkpulse
+	RGB 31, 31, 31
+	RGB 25, 00, 08
+	RGB 09, 00, 06
+	RGB 19, 00, 06
+; bright
+	RGB 31, 31, 31
+	RGB 28, 28, 28
+	RGB 16, 16, 16
+	RGB 10, 10, 10
+; verybright
+	RGB 31, 31, 31
+	RGB 31, 31, 31
+	RGB 28, 28, 28
+	RGB 10, 10, 10
+; glowluster
+	RGB 31, 31, 31
+	RGB 31, 31, 31
+	RGB 23, 30, 31
+	RGB 29, 25, 31
+; peach
+	RGB 31, 31, 31
+	RGB 31, 25, 14
+	RGB 31, 13, 04
+	RGB 00, 00, 00
+; bubble
+	RGB 31, 31, 31
+	RGB 19, 28, 28
+	RGB 00, 23, 28
+	RGB 03, 10, 30
+else
+rept NUM_CUSTOM_BATTLE_PALETTES - 6
+	MONOCHROME_RGB_FOUR
+endr
+endc

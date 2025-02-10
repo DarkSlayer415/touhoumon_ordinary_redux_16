@@ -39,7 +39,8 @@ MrPsychicText1:
 	done
 
 MrPsychicText2:
-	text "TM29 is PSYCHIC."
+	text "TM29 is Mana"
+	line "Burst."
 
 	para "It may lower the"
 	line "target's SPCL.DEF."

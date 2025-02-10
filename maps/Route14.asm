@@ -63,8 +63,8 @@ PokefanmCarterBeatenText:
 	done
 
 PokefanmCarterAfterBattleText:
-	text "SQUIRTLE, CHARMAN-"
-	line "DER and BULBASAUR…"
+	text "CEirin, CMokou,"
+	line "and CKaguya…"
 
 	para "I think that's a"
 	line "well-balanced mix."
@@ -85,7 +85,7 @@ BirdKeeperRoyAfterBattleText:
 	text "You have #MON"
 	line "that know the HM"
 
-	para "move FLY, don't"
+	para "move Fly, don't"
 	line "you? I envy you."
 	done
 
@@ -102,7 +102,7 @@ PokefanmTrevorSeenText:
 
 PokefanmTrevorBeatenText:
 	text "Where did I meet"
-	line "this PSYDUCK?"
+	line "this Koishi?"
 	done
 
 PokefanmTrevorAfterBattleText:

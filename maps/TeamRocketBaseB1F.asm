@@ -272,7 +272,7 @@ PlaySecurityCameraSounds:
 ExplodingTrap1:
 	checkevent EVENT_EXPLODING_TRAP_1
 	iftrue NoExplodingTrap
-	scall KoffingExplodingTrap
+	scall OkuuExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_1
 	end
@@ -280,7 +280,7 @@ ExplodingTrap1:
 ExplodingTrap2:
 	checkevent EVENT_EXPLODING_TRAP_2
 	iftrue NoExplodingTrap
-	scall VoltorbExplodingTrap
+	scall RikaExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_2
 	end
@@ -288,7 +288,7 @@ ExplodingTrap2:
 ExplodingTrap3:
 	checkevent EVENT_EXPLODING_TRAP_3
 	iftrue NoExplodingTrap
-	scall GeodudeExplodingTrap
+	scall NitoriExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_3
 	end
@@ -296,7 +296,7 @@ ExplodingTrap3:
 ExplodingTrap4:
 	checkevent EVENT_EXPLODING_TRAP_4
 	iftrue NoExplodingTrap
-	scall VoltorbExplodingTrap
+	scall RikaExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_4
 	end
@@ -304,7 +304,7 @@ ExplodingTrap4:
 ExplodingTrap5:
 	checkevent EVENT_EXPLODING_TRAP_5
 	iftrue NoExplodingTrap
-	scall GeodudeExplodingTrap
+	scall NitoriExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_5
 	end
@@ -312,7 +312,7 @@ ExplodingTrap5:
 ExplodingTrap6:
 	checkevent EVENT_EXPLODING_TRAP_6
 	iftrue NoExplodingTrap
-	scall KoffingExplodingTrap
+	scall OkuuExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_6
 	end
@@ -320,7 +320,7 @@ ExplodingTrap6:
 ExplodingTrap7:
 	checkevent EVENT_EXPLODING_TRAP_7
 	iftrue NoExplodingTrap
-	scall VoltorbExplodingTrap
+	scall RikaExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_7
 	end
@@ -328,7 +328,7 @@ ExplodingTrap7:
 ExplodingTrap8:
 	checkevent EVENT_EXPLODING_TRAP_8
 	iftrue NoExplodingTrap
-	scall KoffingExplodingTrap
+	scall OkuuExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_8
 	end
@@ -336,7 +336,7 @@ ExplodingTrap8:
 ExplodingTrap9:
 	checkevent EVENT_EXPLODING_TRAP_9
 	iftrue NoExplodingTrap
-	scall KoffingExplodingTrap
+	scall OkuuExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_9
 	end
@@ -344,7 +344,7 @@ ExplodingTrap9:
 ExplodingTrap10:
 	checkevent EVENT_EXPLODING_TRAP_10
 	iftrue NoExplodingTrap
-	scall VoltorbExplodingTrap
+	scall RikaExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_10
 	end
@@ -352,7 +352,7 @@ ExplodingTrap10:
 ExplodingTrap11:
 	checkevent EVENT_EXPLODING_TRAP_11
 	iftrue NoExplodingTrap
-	scall GeodudeExplodingTrap
+	scall NitoriExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_11
 	end
@@ -360,7 +360,7 @@ ExplodingTrap11:
 ExplodingTrap12:
 	checkevent EVENT_EXPLODING_TRAP_12
 	iftrue NoExplodingTrap
-	scall GeodudeExplodingTrap
+	scall NitoriExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_12
 	end
@@ -368,7 +368,7 @@ ExplodingTrap12:
 ExplodingTrap13:
 	checkevent EVENT_EXPLODING_TRAP_13
 	iftrue NoExplodingTrap
-	scall GeodudeExplodingTrap
+	scall NitoriExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_13
 	end
@@ -376,7 +376,7 @@ ExplodingTrap13:
 ExplodingTrap14:
 	checkevent EVENT_EXPLODING_TRAP_14
 	iftrue NoExplodingTrap
-	scall KoffingExplodingTrap
+	scall OkuuExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_14
 	end
@@ -384,7 +384,7 @@ ExplodingTrap14:
 ExplodingTrap15:
 	checkevent EVENT_EXPLODING_TRAP_15
 	iftrue NoExplodingTrap
-	scall VoltorbExplodingTrap
+	scall RikaExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_15
 	end
@@ -392,7 +392,7 @@ ExplodingTrap15:
 ExplodingTrap16:
 	checkevent EVENT_EXPLODING_TRAP_16
 	iftrue NoExplodingTrap
-	scall KoffingExplodingTrap
+	scall OkuuExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_16
 	end
@@ -400,7 +400,7 @@ ExplodingTrap16:
 ExplodingTrap17:
 	checkevent EVENT_EXPLODING_TRAP_17
 	iftrue NoExplodingTrap
-	scall VoltorbExplodingTrap
+	scall RikaExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_17
 	end
@@ -408,7 +408,7 @@ ExplodingTrap17:
 ExplodingTrap18:
 	checkevent EVENT_EXPLODING_TRAP_18
 	iftrue NoExplodingTrap
-	scall GeodudeExplodingTrap
+	scall NitoriExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_18
 	end
@@ -416,7 +416,7 @@ ExplodingTrap18:
 ExplodingTrap19:
 	checkevent EVENT_EXPLODING_TRAP_19
 	iftrue NoExplodingTrap
-	scall GeodudeExplodingTrap
+	scall NitoriExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_19
 	end
@@ -424,7 +424,7 @@ ExplodingTrap19:
 ExplodingTrap20:
 	checkevent EVENT_EXPLODING_TRAP_20
 	iftrue NoExplodingTrap
-	scall VoltorbExplodingTrap
+	scall RikaExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_20
 	end
@@ -432,7 +432,7 @@ ExplodingTrap20:
 ExplodingTrap21:
 	checkevent EVENT_EXPLODING_TRAP_21
 	iftrue NoExplodingTrap
-	scall KoffingExplodingTrap
+	scall OkuuExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_21
 	end
@@ -440,38 +440,38 @@ ExplodingTrap21:
 ExplodingTrap22:
 	checkevent EVENT_EXPLODING_TRAP_22
 	iftrue NoExplodingTrap
-	scall VoltorbExplodingTrap
+	scall RikaExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_22
 	end
 
-VoltorbExplodingTrap:
+RikaExplodingTrap:
 	special FadeOutToWhite
-	cry VOLTORB
+	cry EXEGGUTOR
 	special FadeInFromWhite
 	setlasttalked -1
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon VOLTORB, 23
+	loadwildmon EXEGGUTOR, 30
 	startbattle
 	end
 
-GeodudeExplodingTrap:
+NitoriExplodingTrap:
 	special FadeOutToWhite
-	cry GEODUDE
+	cry PIKACHU
 	special FadeInFromWhite
 	setlasttalked -1
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon GEODUDE, 21
+	loadwildmon PIKACHU, 30
 	startbattle
 	end
 
-KoffingExplodingTrap:
+OkuuExplodingTrap:
 	special FadeOutToWhite
-	cry KOFFING
+	cry SKIPLOOM
 	special FadeInFromWhite
 	setlasttalked -1
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon KOFFING, 21
+	loadwildmon SKIPLOOM, 30
 	startbattle
 	end
 
@@ -707,7 +707,7 @@ GruntM16AfterBattleText:
 	done
 
 TeamRocketBaseB1FSecurityCameraText:
-	text "It's a PERSIAN"
+	text "It's a Remilia"
 	line "statue…"
 
 	para "Its eyes are oddly"
@@ -745,7 +745,7 @@ TeamRocketBaseB1F_MapEvents:
 	coord_event 22, 16, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera4
 	coord_event  8, 16, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera5
 	; There are spots on the floor that trigger a Pokémon battle.
-	; Each Pokémon (Voltorb, Koffing, Geodude) knows Selfdestruct.
+	; Each Pokémon (Rika, Okuu, Nitori) knows Selfdestruct.
 	coord_event  2,  7, SCENE_TEAMROCKETBASEB1F_TRAPS, ExplodingTrap1
 	coord_event  3,  7, SCENE_TEAMROCKETBASEB1F_TRAPS, ExplodingTrap2
 	coord_event  4,  7, SCENE_TEAMROCKETBASEB1F_TRAPS, ExplodingTrap3

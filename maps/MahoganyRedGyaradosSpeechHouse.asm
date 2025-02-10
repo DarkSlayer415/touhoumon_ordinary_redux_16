@@ -33,14 +33,14 @@ MahoganyRedGyaradosSpeechHouseUnusedBookshelf2: ; unreferenced
 	jumpstd MagazineBookshelfScript
 
 MahoganyRedGyaradosSpeechHouseBlackBeltText:
-	text "I heard that a red"
-	line "GYARADOS appeared"
+	text "I heard a gold"
+	line "Kanako appeared"
 	cont "at the LAKE."
 
 	para "That's odd, since"
 	line "even ordinary"
 
-	para "GYARADOS are rare"
+	para "Kanako are rare"
 	line "in that lake…"
 	done
 

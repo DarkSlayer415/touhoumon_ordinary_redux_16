@@ -11,7 +11,7 @@ VermilionDiglettsCaveSpeechHouseGentlemanScript:
 
 VermilionDiglettsCaveSpeechHouseGentlemanText:
 	text "Over many years,"
-	line "DIGLETT dug a"
+	line "Yamame dug a"
 	cont "large tunnel."
 
 	para "That tunnel goes"

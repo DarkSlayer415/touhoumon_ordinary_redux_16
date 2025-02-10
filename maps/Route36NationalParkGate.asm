@@ -463,10 +463,6 @@ BugCatchingContestant10BScript:
 	closetext
 	end
 
-UnusedBugCatchingContestExplanationSign: ; unreferenced
-; duplicate of BugCatchingContestExplanationSign in Route35NationalParkGate.asm
-	jumptext UnusedBugCatchingContestExplanationText
-
 Route36NationalParkGatePlayerWaitWithContestantsMovement:
 	big_step DOWN
 	big_step RIGHT
@@ -479,16 +475,16 @@ Route36NationalParkGateOfficer1AskToParticipateText:
 	text "."
 	line "That means the"
 
-	para "Bug-Catching Con-"
-	line "test is on today."
+	para "Fairy-Catching"
+	line "Contest is on"
 
-	para "The rules are sim-"
-	line "ple."
+	para "today. The rules"
+	line "are simple."
 
 	para "Using one of your"
 	line "#MON, catch a"
 
-	para "bug #MON to be"
+	para "fairy #MON to be"
 	line "judged."
 
 	para "Would you like to"
@@ -497,26 +493,26 @@ Route36NationalParkGateOfficer1AskToParticipateText:
 
 Route36NationalParkGateOfficer1GiveParkBallsText:
 	text "Here are the PARK"
-	line "BALLS for the"
+	line "ORBS for the"
 	cont "Contest."
 	done
 
 Route36NationalParkGatePlayerReceivedParkBallsText:
 	text "<PLAYER> received"
-	line "{d:BUG_CONTEST_BALLS} PARK BALLS."
+	line "{d:BUG_CONTEST_BALLS} PARK ORBS."
 	done
 
 Route36NationalParkGateOfficer1ExplainsRulesText:
 	text "The person who"
 	line "gets the strong-"
-	cont "est bug #MON"
+	cont "est fairy #MON"
 	cont "is the winner."
 
 	para "You have {d:BUG_CONTEST_MINUTES}"
 	line "minutes."
 
 	para "If you run out of"
-	line "PARK BALLS, you're"
+	line "PARK ORBS, you're"
 	cont "done."
 
 	para "You can keep the"
@@ -524,7 +520,7 @@ Route36NationalParkGateOfficer1ExplainsRulesText:
 	cont "catch as your own."
 
 	para "Go out and catch"
-	line "the strongest bug"
+	line "the strongest"
 
 	para "#MON you can"
 	line "find!"
@@ -596,7 +592,7 @@ Route36NationalParkGateOfficer1MakeRoomText:
 	line "are full."
 
 	para "You have no room"
-	line "to put the bug"
+	line "to put the fairy"
 	cont "#MON you catch."
 
 	para "Please make room"
@@ -720,7 +716,7 @@ BugCatchingContestant5BText:
 
 BugCatchingContestant5BStillCompetingText:
 	text "BENNY: I caught a"
-	line "SCYTHER before,"
+	line "Daiyousei before,"
 	cont "but I didn't win."
 	done
 
@@ -734,8 +730,8 @@ BugCatchingContestant6BStillCompetingText:
 	text "BARRY: It's easier"
 	line "to win if you get"
 
-	para "a high-level bug"
-	line "#MON."
+	para "a high-level"
+	line "fairy #MON."
 
 	para "But I think they"
 	line "also consider some"
@@ -747,25 +743,25 @@ BugCatchingContestant7BText:
 	line "That's great!"
 
 	para "Do you feel like"
-	line "looking for bug"
+	line "looking for fairy"
 	cont "#MON with me?"
 	done
 
 BugCatchingContestant7BStillCompetingText:
 	text "CINDY: I really"
-	line "love bug #MON!"
+	line "love fairy #MON!"
 	done
 
 BugCatchingContestant8BText:
 	text "JOSH: I… I can't"
 	line "believe I lost at"
-	cont "bug-catching…"
+	cont "fairy-catching…"
 	done
 
 BugCatchingContestant8BStillCompetingText:
 	text "JOSH: I heard that"
 	line "somebody won with"
-	cont "a CATERPIE!"
+	cont "a Cirno!"
 	done
 
 BugCatchingContestant9BText:
@@ -793,39 +789,6 @@ BugCatchingContestant10BStillCompetingText:
 
 	para "not good enough to"
 	line "win."
-	done
-
-UnusedSilphScope2Text: ; unreferenced
-; This text is referring to Sudowoodo.
-; The SILPHSCOPE2 was later reworked into the SQUIRTBOTTLE.
-	text "I hear there's a"
-	line "#MON that looks"
-	cont "just like a tree."
-
-	para "You can reveal its"
-	line "identity using a"
-	cont "SILPHSCOPE 2."
-	done
-
-UnusedBugCatchingContestExplanationText:
-; duplicate of BugCatchingContestExplanationText in Route35NationalParkGate.asm
-	text "The Bug-Catching"
-	line "Contest is held on"
-
-	para "Tuesday, Thursday"
-	line "and Saturday."
-
-	para "Not only do you"
-	line "earn a prize just"
-
-	para "for participating,"
-	line "you also get to"
-
-	para "keep the bug"
-	line "#MON you may"
-
-	para "have at the end of"
-	line "the contest."
 	done
 
 Route36NationalParkGateOfficer1WellHoldPrizeText:

@@ -18,7 +18,7 @@ CeruleanTradeSpeechHouseGrampsScript:
 CeruleanTradeSpeechHouseRhydonScript:
 	opentext
 	writetext CeruleanTradeSpeechHouseRhydonText
-	cry KANGASKHAN
+	cry MISDREAVUS
 	waitbutton
 	closetext
 	end
@@ -26,7 +26,7 @@ CeruleanTradeSpeechHouseRhydonScript:
 CeruleanTradeSpeechHouseZubatScript:
 	opentext
 	writetext CeruleanTradeSpeechHouseZubatText
-	cry ZUBAT
+	cry VULPIX
 	waitbutton
 	closetext
 	end
@@ -43,12 +43,11 @@ CeruleanTradeSpeechHouseGrampsText:
 	done
 
 CeruleanTradeSpeechHouseRhydonText:
-	text "KANGASKHAN: Garu"
-	line "garuu."
+	text "CRan: Kon! Kon!"
 	done
 
 CeruleanTradeSpeechHouseZubatText:
-	text "ZUBAT: Zuba zubaa."
+	text "Lily: Spring!"
 	done
 
 CeruleanTradeSpeechHouse_MapEvents:

@@ -131,9 +131,10 @@ WiseTriosRoomSageAllowsPassageMovement:
 WiseTriosRoomSage1Text:
 	text "Astounding…"
 
-	para "SUICUNE, ENTEI and"
-	line "RAIKOU have arisen"
-	cont "from their sleep…"
+	para "Toyohime, Yorihime,"
+	line "and Satsuki have"
+	cont "arisen from"
+	cont "their sleep…"
 
 	para "Is the legend"
 	line "coming true?"
@@ -161,9 +162,9 @@ WiseTriosRoomSage3BlocksExitText:
 	line "GYM BADGE."
 
 	para "However, now that"
-	line "SUICUNE, RAIKOU"
+	line "Toyohime, Yorihime"
 
-	para "and ENTEI have"
+	para "and Satsuki have"
 	line "arisen, I ask you"
 
 	para "to refrain from"
@@ -198,7 +199,7 @@ SageGakuSeenText:
 	line "come true!"
 
 	para "The legendary"
-	line "#MON SUICUNE"
+	line "#MON Satsuki"
 	cont "has arrived!"
 
 	para "We, the WISE TRIO,"
@@ -217,8 +218,9 @@ SageGakuAfterBattleText:
 	text "Ah, so it is you"
 	line "who claim to have"
 
-	para "seen SUICUNE,"
-	line "ENTEI and RAIKOU"
+	para "seen Toyohime,"
+	line "Yorihime,"
+	cont "and Satsuki"
 	cont "while they slept?"
 
 	para "Unbelievable!"
@@ -331,14 +333,14 @@ SageKojiAfterBattleSpeechText:
 	line "and enter the TIN"
 	cont "TOWER ahead."
 
-	para "SUICUNE will put"
+	para "Satsuki will put"
 	line "you to the test."
 	done
 
 SageKojiAfterBattleFinalText:
 	text "Please, do go on."
 
-	para "SUICUNE will put"
+	para "Satsuki will put"
 	line "you to the test."
 	done
 

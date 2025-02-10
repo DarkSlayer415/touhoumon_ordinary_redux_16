@@ -290,7 +290,7 @@ BlackthornGymSignText:
 	done
 
 MoveDeletersHouseSignText:
-	text "MOVE DELETER'S"
+	text "MOVE TUTOR"
 	line "HOUSE"
 	done
 

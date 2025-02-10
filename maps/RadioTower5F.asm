@@ -348,7 +348,7 @@ RadioTower5FDirectorDescribeClearBellText:
 	cont "TOWER."
 
 	para "We dug up that"
-	line "bell during"
+	line "erhu during"
 	cont "construction."
 
 	para "I heard that all"
@@ -359,7 +359,7 @@ RadioTower5FDirectorDescribeClearBellText:
 
 	para "Perhaps…"
 
-	para "That bell has some"
+	para "That erhu has some"
 	line "connection to the"
 
 	para "TIN TOWER in"

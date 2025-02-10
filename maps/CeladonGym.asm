@@ -162,7 +162,7 @@ ErikaExplainTMText:
 	line "Please, I wish you"
 	cont "to have this TM."
 
-	para "It is GIGA DRAIN."
+	para "It is Giga Drain."
 
 	para "It is a wonderful"
 	line "move that drains"

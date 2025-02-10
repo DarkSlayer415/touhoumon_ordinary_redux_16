@@ -2,7 +2,7 @@
 	const MAHOGANYMART1F_PHARMACIST
 	const MAHOGANYMART1F_BLACK_BELT
 	const MAHOGANYMART1F_LANCE
-	const MAHOGANYMART1F_DRAGONITE
+	const MAHOGANYMART1F_MARISA
 	const MAHOGANYMART1F_GRANNY
 
 MahoganyMart1F_MapScripts:
@@ -63,14 +63,14 @@ MahoganyMart1FBlackBeltScript:
 MahoganyMart1FLanceUncoversStaircaseScript:
 	pause 15
 	opentext
-	writetext MahoganyMart1FLanceDragoniteHyperBeamText
+	writetext MahoganyMart1FLanceMarisaHyperBeamText
 	pause 15
 	closetext
 	playsound SFX_TACKLE
-	applymovement MAHOGANYMART1F_DRAGONITE, MahoganyMart1FDragoniteTackleMovement
+	applymovement MAHOGANYMART1F_MARISA, MahoganyMart1FMarisaTackleMovement
 	applymovement MAHOGANYMART1F_BLACK_BELT, MahoganyMart1FBlackBeltKnockedBackMovement
 	pause 15
-	disappear MAHOGANYMART1F_DRAGONITE
+	disappear MAHOGANYMART1F_MARISA
 	pause 15
 	applymovement MAHOGANYMART1F_LANCE, MahoganyMart1FLanceApproachPlayerMovement
 	opentext
@@ -110,7 +110,7 @@ MahoganyMart1FGrannyScript:
 	closetext
 	end
 
-MahoganyMart1FDragoniteTackleMovement:
+MahoganyMart1FMarisaTackleMovement:
 	fix_facing
 	big_step LEFT
 	big_step RIGHT
@@ -175,10 +175,10 @@ MahoganyMart1FBlackBeltText:
 	line "ment worked like a"
 	cont "charm."
 
-	para "MAGIKARP are just"
+	para "Suwako are just"
 	line "worthless, but"
 
-	para "GYARADOS are big"
+	para "Kanako are big"
 	line "moneymakers."
 	done
 
@@ -189,9 +189,9 @@ MahoganyMart1FBlackBeltText_LanceEntered:
 	line "#MON are tough…"
 	done
 
-MahoganyMart1FLanceDragoniteHyperBeamText:
-	text "LANCE: DRAGONITE,"
-	line "HYPER BEAM."
+MahoganyMart1FLanceMarisaHyperBeamText:
+	text "LANCE: EMarisa,"
+	line "Master Spark."
 	done
 
 MahoganyMart1FLanceRadioText:
@@ -233,6 +233,6 @@ MahoganyMart1F_MapEvents:
 	def_object_events
 	object_event  4,  3, SPRITE_PHARMACIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MahoganyMart1FPharmacistScript, EVENT_TEAM_ROCKET_BASE_POPULATION
 	object_event  1,  6, SPRITE_BLACK_BELT, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MahoganyMart1FBlackBeltScript, EVENT_TEAM_ROCKET_BASE_POPULATION
-	object_event  4,  6, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_MAHOGANY_MART_LANCE_AND_DRAGONITE
-	object_event  3,  6, SPRITE_DRAGON, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_MAHOGANY_MART_LANCE_AND_DRAGONITE
+	object_event  4,  6, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_MAHOGANY_MART_LANCE_AND_MARISA
+	object_event  3,  6, SPRITE_DRAGON, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_MAHOGANY_MART_LANCE_AND_MARISA
 	object_event  1,  3, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MahoganyMart1FGrannyScript, EVENT_MAHOGANY_MART_OWNERS

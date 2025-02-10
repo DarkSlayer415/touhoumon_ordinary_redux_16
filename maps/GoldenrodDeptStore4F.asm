@@ -57,15 +57,6 @@ GoldenrodDeptStore4FGameboyKidText:
 
 	para "being traded via a"
 	line "Game Link cable."
-
-	para "I know of four:"
-	line "MACHOKE, KADABRA,"
-
-	para "HAUNTER and, um,"
-	line "GRAVELER."
-
-	para "I heard there are"
-	line "others too."
 	done
 
 GoldenrodDeptStore4FDirectoryText:

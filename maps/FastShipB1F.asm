@@ -417,7 +417,7 @@ TeacherShirleyAfterBattleText:
 
 SchoolboyNateSeenText:
 	text "Do you know the"
-	line "RUINS OF ALPH?"
+	line "RUINS OF MEMORY?"
 	done
 
 SchoolboyNateBeatenText:
@@ -433,7 +433,7 @@ SchoolboyNateAfterBattleText:
 SchoolboyRickySeenText:
 	text "There are some odd"
 	line "stone panels in"
-	cont "the RUINS OF ALPH."
+	cont "the RUINS OF MEMORY."
 	done
 
 SchoolboyRickyBeatenText:

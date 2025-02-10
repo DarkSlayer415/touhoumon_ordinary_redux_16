@@ -8,7 +8,7 @@ GoldenrodFlowerShop_MapScripts:
 	def_callbacks
 
 FlowerShopTeacherScript:
-	checkevent EVENT_FOUGHT_SUDOWOODO
+	checkevent EVENT_FOUGHT_SUWAKO
 	iftrue .Lalala
 	checkevent EVENT_GOT_SQUIRTBOTTLE
 	iftrue .GotSquirtbottle
@@ -25,7 +25,7 @@ FlowerShopTeacherScript:
 	verbosegiveitem SQUIRTBOTTLE
 	setevent EVENT_GOT_SQUIRTBOTTLE
 	closetext
-	setevent EVENT_FLORIA_AT_SUDOWOODO
+	setevent EVENT_FLORIA_AT_SUWAKO
 	clearevent EVENT_FLORIA_AT_FLOWER_SHOP
 	end
 
@@ -49,7 +49,7 @@ FlowerShopTeacherScript:
 FlowerShopFloriaScript:
 	faceplayer
 	opentext
-	checkevent EVENT_FOUGHT_SUDOWOODO
+	checkevent EVENT_FOUGHT_SUWAKO
 	iftrue .FoughtSudowoodo
 	checkevent EVENT_GOT_SQUIRTBOTTLE
 	iftrue .GotSquirtbottle
@@ -58,7 +58,7 @@ FlowerShopFloriaScript:
 	closetext
 	setevent EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP
 	setevent EVENT_FLORIA_AT_FLOWER_SHOP
-	clearevent EVENT_FLORIA_AT_SUDOWOODO
+	clearevent EVENT_FLORIA_AT_SUWAKO
 	end
 
 .GotSquirtbottle:
@@ -84,10 +84,10 @@ FlowerShopRadio: ; unreferenced
 
 GoldenrodFlowerShopTeacherMySisterWentToSeeWigglyTreeRoute36Text:
 	text "Have you seen that"
-	line "wiggly tree that's"
+	line "wiggly hat that's"
 
-	para "growing on ROUTE"
-	line "36?"
+	para "blocking the way"
+	line "on ROUTE 36?"
 
 	para "My little sister"
 	line "got all excited"
@@ -101,9 +101,9 @@ GoldenrodFlowerShopTeacherMySisterWentToSeeWigglyTreeRoute36Text:
 
 GoldenrodFlowerShopTeacherAskWantToBorrowWaterBottleText:
 	text "Do you want to"
-	line "borrow the water"
+	line "borrow the frozen"
 
-	para "bottle too?"
+	para "frog too?"
 	line "I don't want you"
 
 	para "doing anything"
@@ -116,7 +116,7 @@ GoldenrodFlowerShopTeacherHeresTheSquirtbottleText:
 
 	para "You'll be OK,"
 	line "then. Here's the"
-	cont "SQUIRTBOTTLE!"
+	cont "Frozen Frog!"
 	done
 
 GoldenrodFlowerShopTeacherDontDoAnythingDangerousText:

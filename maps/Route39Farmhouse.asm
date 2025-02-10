@@ -65,28 +65,28 @@ FarmerMScript_Milking:
 	closetext
 	end
 
-PokefanF_SnoreFarmer:
+PokefanF_RockSlideFarmer:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TM13_SNORE_FROM_MOOMOO_FARM
-	iftrue FarmerFScript_GotSnore
+	checkevent EVENT_GOT_TM13_ROCK_SLIDE_FROM_MOOMOO_FARM
+	iftrue FarmerFScript_GotRockSlide
 	checkevent EVENT_HEALED_MOOMOO
-	iftrue FarmerFScript_GiveSnore
+	iftrue FarmerFScript_GiveRockSlide
 	writetext FarmerFText_InTrouble
 	waitbutton
 	closetext
 	end
 
-FarmerFScript_GiveSnore:
+FarmerFScript_GiveRockSlide:
 	writetext FarmerFText_HealedMiltank
 	promptbutton
-	verbosegiveitem TM_SNORE
-	iffalse FarmerFScript_NoRoomForSnore
-	setevent EVENT_GOT_TM13_SNORE_FROM_MOOMOO_FARM
-FarmerFScript_GotSnore:
-	writetext FarmerFText_SnoreSpeech
+	verbosegiveitem TM_ROCK_SLIDE
+	iffalse FarmerFScript_NoRoomForRockSlide
+	setevent EVENT_GOT_TM13_ROCK_SLIDE_FROM_MOOMOO_FARM
+FarmerFScript_GotRockSlide:
+	writetext FarmerFText_RockSlideSpeech
 	waitbutton
-FarmerFScript_NoRoomForSnore:
+FarmerFScript_NoRoomForRockSlide:
 	closetext
 	end
 
@@ -94,7 +94,7 @@ FarmhouseBookshelf:
 	jumpstd PictureBookshelfScript
 
 FarmerMText_SickCow:
-	text "My MILTANK ain't"
+	text "My Sunny ain't"
 	line "givin' me milk"
 	cont "n'more."
 
@@ -155,7 +155,7 @@ FarmerFText_InTrouble:
 	line "out to KANTO."
 
 	para "So if our own"
-	line "MILTANK won't give"
+	line "Sunny won't give"
 
 	para "us any milk, we're"
 	line "in trouble."
@@ -163,7 +163,7 @@ FarmerFText_InTrouble:
 
 FarmerFText_HealedMiltank:
 	text "You fixed our"
-	line "MILTANK, hon. Now"
+	line "Sunny, hon. Now"
 
 	para "it gives MOOMOO"
 	line "MILK again."
@@ -177,15 +177,15 @@ Text_ReceivedTM13: ; unreferenced
 	line "TM13."
 	done
 
-FarmerFText_SnoreSpeech:
+FarmerFText_RockSlideSpeech:
 	text "That there's"
-	line "SNORE."
+	line "Rock Slide."
 
-	para "It's a rare move"
-	line "that only works"
+	para "It's a stong"
+	line "Rock-type move!"
 
-	para "while the #MON"
-	line "is asleep."
+	para "It can make the"
+	line "target flinch!"
 
 	para "You best think how"
 	line "you ought to use"
@@ -207,4 +207,4 @@ Route39Farmhouse_MapEvents:
 
 	def_object_events
 	object_event  3,  2, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PokefanM_DairyFarmer, -1
-	object_event  5,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, PokefanF_SnoreFarmer, -1
+	object_event  5,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, PokefanF_RockSlideFarmer, -1

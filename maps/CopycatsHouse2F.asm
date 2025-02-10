@@ -173,7 +173,7 @@ Copycat:
 CopycatsDodrio:
 	opentext
 	writetext CopycatsDodrioText1
-	cry DODRIO
+	cry CELEBI
 	promptbutton
 	writetext CopycatsDodrioText2
 	waitbutton
@@ -222,7 +222,7 @@ CopycatText_Male_2:
 	line "I heard that you"
 
 	para "lost your favorite"
-	line "# DOLL."
+	line "# Fumo."
 
 	para "<PLAYER>: If I find"
 	line "it, you'll give me"
@@ -250,8 +250,8 @@ CopycatText_Worried:
 
 CopycatText_GiveDoll:
 	text "COPYCAT: Yay!"
-	line "That's my CLEFAIRY"
-	cont "# DOLL!"
+	line "That's my Tewi"
+	cont "# Fumo!"
 
 	para "See the tear where"
 	line "the right leg is"
@@ -310,7 +310,7 @@ CopycatText_Female_1:
 CopycatText_Female_2:
 	text "<PLAYER>: Hi. Did"
 	line "you really lose"
-	cont "your # DOLL?"
+	cont "your # Fumo?"
 
 	para "<PLAYER>: You'll"
 	line "really give me a"
@@ -340,7 +340,7 @@ CopycatText_Female_3:
 	done
 
 CopycatsDodrioText1:
-	text "DODRIO: Gii giii!"
+	text "Hatate: Hatata!"
 	done
 
 CopycatsDodrioText2:
@@ -355,7 +355,7 @@ CopycatsHouse2FDollText:
 	text "This is a rare"
 	line "#MON! Huh?"
 
-	para "It's only a doll…"
+	para "It's only a Fumo…"
 	done
 
 CopycatsHouse2F_MapEvents:
@@ -372,8 +372,8 @@ CopycatsHouse2F_MapEvents:
 
 	def_object_events
 	object_event  4,  3, SPRITE_COPYCAT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Copycat, EVENT_COPYCAT_1
-	object_event  6,  4, SPRITE_MOLTRES, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CopycatsDodrio, -1
-	object_event  6,  1, SPRITE_FAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CopycatsHouse2FDoll, EVENT_COPYCATS_HOUSE_2F_DOLL
-	object_event  2,  1, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CopycatsHouse2FDoll, -1
-	object_event  7,  1, SPRITE_BIRD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CopycatsHouse2FDoll, -1
+	object_event  6,  4, SPRITE_PIDGEY, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CopycatsDodrio, -1
+	object_event  6,  1, SPRITE_CLEFAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CopycatsHouse2FDoll, EVENT_COPYCATS_HOUSE_2F_DOLL
+	object_event  2,  1, SPRITE_CHARMANDER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CopycatsHouse2FDoll, -1
+	object_event  7,  1, SPRITE_BULBASAUR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CopycatsHouse2FDoll, -1
 	object_event  4,  3, SPRITE_COPYCAT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Copycat, EVENT_COPYCAT_2

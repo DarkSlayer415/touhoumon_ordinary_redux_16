@@ -25,7 +25,7 @@ CeladonCityFisherScript:
 CeladonCityPoliwrath:
 	opentext
 	writetext CeladonCityPoliwrathText
-	cry POLIWRATH
+	cry AZUMARILL
 	waitbutton
 	closetext
 	end
@@ -76,7 +76,7 @@ CeladonCityHiddenPpUp:
 	hiddenitem PP_UP, EVENT_CELADON_CITY_HIDDEN_PP_UP
 
 CeladonCityFisherText:
-	text "This POLIWRATH is"
+	text "This Suwako is"
 	line "my partner."
 
 	para "I wonder if it'll"
@@ -85,10 +85,15 @@ CeladonCityFisherText:
 	done
 
 CeladonCityPoliwrathText:
-	text "POLIWRATH: Croak!"
+	text "Suwako: Croak!"
 	done
 
 CeladonCityTeacher1Text:
+if DEF(_CRYSTAL_AU)
+	text "I lost at the"
+	line "machines."
+	done
+else
 	text "I lost at the slot"
 	line "machines again…"
 
@@ -98,15 +103,16 @@ CeladonCityTeacher1Text:
 	para "You should check"
 	line "them out too."
 	done
+endc
 
 CeladonCityGramps1Text:
-	text "GRIMER have been"
+	text "Hina have been"
 	line "appearing lately."
 
 	para "See that pond out"
 	line "in front of the"
 
-	para "house? GRIMER live"
+	para "house? Hina live"
 	line "there now."
 
 	para "Where did they"
@@ -211,10 +217,17 @@ CeladonCityMansionSignText:
 	done
 
 CeladonCityGameCornerSignText:
+if DEF(_CRYSTAL_AU)
+	text "The Game Area for"
+	line "Grown-ups--CELADON"
+	cont "GAME CORNER"
+	done
+else
 	text "The Playground for"
 	line "Everybody--CELADON"
 	cont "GAME CORNER"
 	done
+endc
 
 CeladonCityTrainerTipsText:
 	text "TRAINER TIPS"
@@ -259,7 +272,7 @@ CeladonCity_MapEvents:
 
 	def_object_events
 	object_event 26, 11, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonCityFisherScript, -1
-	object_event 27, 11, SPRITE_POLIWAG, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeladonCityPoliwrath, -1
+	object_event 27, 11, SPRITE_POLITOED, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeladonCityPoliwrath, -1
 	object_event 20, 24, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonCityTeacher1Script, -1
 	object_event 14, 16, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CeladonCityGramps1Script, -1
 	object_event  8, 31, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonCityGramps2Script, -1

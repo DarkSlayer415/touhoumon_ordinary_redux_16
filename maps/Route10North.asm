@@ -19,6 +19,7 @@ Route10North_MapEvents:
 	def_warp_events
 	warp_event 11,  1, ROUTE_10_POKECENTER_1F, 1
 	warp_event  3,  9, POWER_PLANT, 1
+	warp_event  6,  1, ROCK_TUNNEL_1F, 1
 
 	def_coord_events
 

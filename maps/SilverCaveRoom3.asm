@@ -35,12 +35,11 @@ Red:
 	end
 
 RedSeenText:
-	text "<……>"
-	line "<……>"
+	text "……"
 	done
 
 RedWinLossText:
-	text "…"
+	text "……!"
 	done
 
 RedLeavesText:

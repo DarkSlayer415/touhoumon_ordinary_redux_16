@@ -7,11 +7,6 @@ OlivineLighthouse6F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
-	callback MAPCALLBACK_NEWMAP, OlivineLighthouse6FLoadReservedIDCallback
-
-OlivineLighthouse6FLoadReservedIDCallback:
-	loadmonindex 1, AMPHAROS
-	endcallback
 
 OlivineLighthouseJasmine:
 	faceplayer
@@ -111,7 +106,7 @@ OlivineLighthouseAmphy:
 	checkevent EVENT_JASMINE_RETURNED_TO_GYM
 	iftrue .HealthyNow
 	writetext AmphyPalPalooText
-	loadmonindex 0, AMPHAROS
+	setval AMPHAROS
 	special PlaySlowCry
 	promptbutton
 	writetext AmphyBreathingLaboredText
@@ -130,8 +125,8 @@ OlivineLighthouseAmphy:
 	special FadeInFromWhite
 	end
 
-OlivineLighthouse6FSuperPotion:
-	itemball SUPER_POTION
+OlivineLighthouse6FThunderStone:
+	itemball THUNDERSTONE
 
 OlivineLighthouseJasmineLeavesUpMovement:
 	slow_step UP
@@ -185,7 +180,7 @@ JasmineCianwoodPharmacyText:
 	line "the sea…"
 
 	para "And I can't leave"
-	line "AMPHY unattended…"
+	line "Luna unattended…"
 	done
 
 JasmineGetSomeMedicineText:
@@ -197,7 +192,7 @@ JasmineGetSomeMedicineText:
 JasmineCureAmphyText:
 	text "JASMINE: …Will"
 	line "that medicine cure"
-	cont "AMPHY?"
+	cont "Luna?"
 	done
 
 PlayerHandedSecretpotionText:
@@ -211,7 +206,7 @@ JasmineDontBeOffendedText:
 	line "please don't be"
 	cont "offended…"
 
-	para "…AMPHY will not"
+	para "…Luna will not"
 	line "take anything from"
 	cont "anyone but me…"
 	done
@@ -219,7 +214,7 @@ JasmineDontBeOffendedText:
 JasmineAmphyHowAreYouFeelingText:
 	text "JASMINE: …"
 
-	para "AMPHY, how are you"
+	para "Luna, how are you"
 	line "feeling?"
 	done
 
@@ -242,12 +237,12 @@ JasmineISeeText:
 	done
 
 JasmineAmphyHangOnText:
-	text "…AMPHY, hang on!"
+	text "…Luna, hang on!"
 	done
 
 AmphyPalPalooText:
-	text "AMPHY: …"
-	line "…Pa… paloo…"
+	text "Luna: …"
+	line "…Moon…light…"
 	done
 
 AmphyBreathingLaboredText:
@@ -256,8 +251,8 @@ AmphyBreathingLaboredText:
 	done
 
 AmphyPaluPaluluText:
-	text "AMPHY: Palu!"
-	line "Palulu!"
+	text "Luna: Luna!"
+	line "Moonlight!"
 	done
 
 OlivineLighthouse6F_MapEvents:
@@ -274,5 +269,5 @@ OlivineLighthouse6F_MapEvents:
 
 	def_object_events
 	object_event  8,  8, SPRITE_JASMINE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OlivineLighthouseJasmine, EVENT_OLIVINE_LIGHTHOUSE_JASMINE
-	object_event  9,  8, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, OlivineLighthouseAmphy, -1
-	object_event  3,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, OlivineLighthouse6FSuperPotion, EVENT_OLIVINE_LIGHTHOUSE_6F_SUPER_POTION
+	object_event  9,  8, SPRITE_WEEDLE, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, OlivineLighthouseAmphy, -1
+	object_event  3,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, OlivineLighthouse6FThunderStone, EVENT_OLIVINE_LIGHTHOUSE_6F_THUNDERSTONE

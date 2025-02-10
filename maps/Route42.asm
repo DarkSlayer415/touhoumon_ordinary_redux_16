@@ -8,11 +8,13 @@
 	const ROUTE42_POKE_BALL1
 	const ROUTE42_POKE_BALL2
 	const ROUTE42_SUICUNE
+	const ROUTE42_OFFICER
 
 Route42_MapScripts:
 	def_scene_scripts
-	scene_script Route42Noop1Scene, SCENE_ROUTE42_NOOP
-	scene_script Route42Noop2Scene, SCENE_ROUTE42_SUICUNE
+    scene_script Route42Noop1Scene, SCENE_ROUTE42_OFFICER_BLOCKS
+    scene_script Route42Noop2Scene, SCENE_ROUTE42_SUICUNE
+    scene_script Route42Noop3Scene, SCENE_ROUTE42_NOOP
 
 	def_callbacks
 
@@ -22,6 +24,55 @@ Route42Noop1Scene:
 Route42Noop2Scene:
 	end
 
+Route42Noop3Scene:
+	end
+	
+Route42OfficerScript:
+    checkevent EVENT_BEAT_JASMINE
+    iftrue .BeatJasmine	
+	faceplayer
+	opentext
+	writetext Text_YouCantPass
+	waitbutton
+	closetext
+	end
+	
+.BeatJasmine:
+	faceplayer
+	opentext
+	writetext Text_Route42Cleared
+	waitbutton
+	closetext
+	end
+	
+Route42OfficerBlocksScript:
+	turnobject PLAYER, UP
+	sjump _OfficerStopsYouScript
+
+_OfficerStopsYouScript:
+    checkevent EVENT_BEAT_JASMINE
+    iftrue .BeatJasmine
+	faceplayer
+    opentext
+    writetext Text_YouCantPass
+    waitbutton
+    closetext
+    applymovement PLAYER, OfficerSendsYouBack
+    end
+	
+.BeatJasmine:
+	faceplayer
+	opentext
+	writetext Text_Route42Cleared
+	waitbutton
+	closetext
+	setscene SCENE_ROUTE42_SUICUNE
+	end
+	
+OfficerSendsYouBack:
+	step LEFT
+	step_end
+	
 Route42SuicuneScript:
 	showemote EMOTE_SHOCK, PLAYER, 15
 	pause 15
@@ -33,7 +84,7 @@ Route42SuicuneScript:
 	clearevent EVENT_SAW_SUICUNE_ON_ROUTE_36
 	setmapscene ROUTE_36, SCENE_ROUTE36_SUICUNE
 	end
-
+	
 TrainerFisherTully:
 	trainer FISHER, TULLY1, EVENT_BEAT_FISHER_TULLY, FisherTullySeenText, FisherTullyBeatenText, 0, .Script
 
@@ -193,9 +244,9 @@ MtMortarSign2:
 
 Route42Sign2:
 	jumptext Route42Sign2Text
-
-Route42UltraBall:
-	itemball ULTRA_BALL
+	
+Route42TMSteelWing:
+	itemball TM_STEEL_WING
 
 Route42SuperPotion:
 	itemball SUPER_POTION
@@ -273,7 +324,7 @@ PokemaniacShaneSeenText:
 
 PokemaniacShaneBeatenText:
 	text "I should have used"
-	line "my MOON STONE…"
+	line "my RARE CANDY…"
 	done
 
 PokemaniacShaneAfterBattleText:
@@ -315,6 +366,29 @@ Route42Sign2Text:
 	para "ECRUTEAK CITY -"
 	line "MAHOGANY TOWN"
 	done
+	
+Text_YouCantPass:
+	text "There's been a"
+	line "rock slide here,"
+	
+	para "so the route is"
+	line "closed until"
+	
+	para "the rubble is"
+	line "cleared away."
+	done
+	
+Text_Route42Cleared:
+	text "Sorry for the"
+	line "inconvenience."
+
+	para "We've cleared"
+	line "enough to let"
+	
+	para "the road open"
+	line "for everyone."
+	done
+
 
 Route42_MapEvents:
 	db 0, 0 ; filler
@@ -328,6 +402,8 @@ Route42_MapEvents:
 
 	def_coord_events
 	coord_event 24, 14, SCENE_ROUTE42_SUICUNE, Route42SuicuneScript
+	coord_event 11,  8, SCENE_ROUTE42_OFFICER_BLOCKS, Route42OfficerBlocksScript
+	coord_event 11,  9, SCENE_ROUTE42_OFFICER_BLOCKS, Route42OfficerBlocksScript
 
 	def_bg_events
 	bg_event  4, 10, BGEVENT_READ, Route42Sign1
@@ -343,6 +419,7 @@ Route42_MapEvents:
 	object_event 27, 16, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route42FruitTree1, -1
 	object_event 28, 16, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route42FruitTree2, -1
 	object_event 29, 16, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route42FruitTree3, -1
-	object_event  6,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route42UltraBall, EVENT_ROUTE_42_ULTRA_BALL
+	object_event  6,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route42TMSteelWing, EVENT_ROUTE_42_TM_STEEL_WING
 	object_event 33,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route42SuperPotion, EVENT_ROUTE_42_SUPER_POTION
-	object_event 26, 16, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_ON_ROUTE_42
+	object_event 26, 16, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_ON_ROUTE_42
+	object_event 11,  7, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route42OfficerScript, -1

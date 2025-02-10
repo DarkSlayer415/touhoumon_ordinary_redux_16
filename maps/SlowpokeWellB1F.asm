@@ -54,7 +54,6 @@ TrainerGruntM1:
 	waitbutton
 	closetext
 	setevent EVENT_CLEARED_SLOWPOKE_WELL
-	variablesprite SPRITE_AZALEA_ROCKET, SPRITE_RIVAL
 	setmapscene AZALEA_TOWN, SCENE_AZALEATOWN_RIVAL_BATTLE
 	clearevent EVENT_ILEX_FOREST_APPRENTICE
 	clearevent EVENT_ILEX_FOREST_FARFETCHD
@@ -96,7 +95,7 @@ TrainerGruntF1:
 SlowpokeWellB1FSlowpokeWithMailScript:
 	faceplayer
 	opentext
-	cry SLOWPOKE
+	cry PICHU
 	writetext SlowpokeWellB1FSlowpokeWithMailText
 	yesorno
 	iftrue .ReadMail
@@ -113,7 +112,7 @@ SlowpokeWellB1FTaillessSlowpokeScript:
 	faceplayer
 	opentext
 	writetext SlowpokeWellB1FTaillessSlowpokeText
-	cry SLOWPOKE
+	cry PICHU
 	waitbutton
 	closetext
 	end
@@ -207,10 +206,10 @@ GruntM29BeatenText:
 
 GruntM29AfterBattleText:
 	text "Sure, we've been"
-	line "hacking the tails"
+	line "stealing cucumbers"
 
-	para "off SLOWPOKE and"
-	line "selling them."
+	para "from the kappa"
+	line "and selling them."
 
 	para "Everything we do"
 	line "is for profit."
@@ -251,8 +250,8 @@ TrainerGruntM1WhenTalkText:
 	done
 
 GruntM2SeenText:
-	text "Quit taking SLOW-"
-	line "POKETAILS?"
+	text "Quit taking"
+	line "CUCUMBERS?"
 
 	para "If we obeyed you,"
 	line "TEAM ROCKET's rep"
@@ -266,15 +265,15 @@ GruntM2BeatenText:
 
 GruntM2AfterBattleText:
 	text "We need the money,"
-	line "but selling SLOW-"
-	cont "POKETAILS?"
+	line "but selling"
+	cont "CUCUMBERS?"
 
 	para "It's tough being a"
 	line "ROCKET GRUNT!"
 	done
 
 GruntF1SeenText:
-	text "Stop taking TAILS?"
+	text "Stop stealing?"
 
 	para "Yeah, just try to"
 	line "defeat all of us!"
@@ -285,7 +284,7 @@ GruntF1BeatenText:
 	done
 
 GruntF1AfterBattleText:
-	text "SLOWPOKETAILS"
+	text "CUCUMBERS"
 	line "grow back fast!"
 
 	para "What's wrong with"
@@ -293,8 +292,8 @@ GruntF1AfterBattleText:
 	done
 
 SlowpokeWellB1FSlowpokeWithMailText:
-	text "A SLOWPOKE with"
-	line "its TAIL cut off…"
+	text "A CNitori with"
+	line "its cucumber stolen…"
 
 	para "Huh? It has MAIL."
 	line "Read it?"
@@ -308,14 +307,14 @@ SlowpokeWellB1FSlowpokeMailText:
 	line "after the house"
 
 	para "with Grandpa and"
-	line "SLOWPOKE."
+	line "CNitori."
 
 	para "Love, Dad"
 	done
 
 SlowpokeWellB1FTaillessSlowpokeText:
-	text "A SLOWPOKE with"
-	line "its TAIL cut off…"
+	text "A CNitori with"
+	line "its cucumber stolen…"
 	done
 
 SlowpokeWellB1F_MapEvents:

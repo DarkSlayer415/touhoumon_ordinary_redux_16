@@ -418,14 +418,14 @@ TrainerCooltrainerfIrene:
 .Script:
 	endifjustbattled
 	opentext
-	checkevent EVENT_GOT_SOFT_SAND_FROM_KATE
-	iftrue .GotSoftSand
+	checkevent EVENT_GOT_FOCUS_BAND_FROM_KATE
+	iftrue .GotFocusBand
 	writetext CooltrainerfIreneAfterText1
 	waitbutton
 	closetext
 	end
 
-.GotSoftSand:
+.GotFocusBand:
 	writetext CooltrainerfIreneAfterText2
 	waitbutton
 	closetext
@@ -437,14 +437,14 @@ TrainerCooltrainerfJenn:
 .Script:
 	endifjustbattled
 	opentext
-	checkevent EVENT_GOT_SOFT_SAND_FROM_KATE
-	iftrue .GotSoftSand
+	checkevent EVENT_GOT_FOCUS_BAND_FROM_KATE
+	iftrue .GotFocusBand
 	writetext CooltrainerfJennAfterText1
 	waitbutton
 	closetext
 	end
 
-.GotSoftSand:
+.GotFocusBand:
 	writetext CooltrainerfJennAfterText2
 	waitbutton
 	closetext
@@ -456,22 +456,19 @@ TrainerCooltrainerfKate:
 .Script:
 	endifjustbattled
 	opentext
-	checkevent EVENT_GOT_SOFT_SAND_FROM_KATE
-	iftrue .GotSoftSand
-	writetext CooltrainerfKateOfferSoftSandText
+	checkevent EVENT_GOT_FOCUS_BAND_FROM_KATE
+	iftrue .GotFocusBand
+	writetext CooltrainerfKateOfferFocusBandText
 	promptbutton
-	verbosegiveitem SOFT_SAND
+	verbosegiveitem FOCUS_BAND
 	iffalse .BagFull
-	setevent EVENT_GOT_SOFT_SAND_FROM_KATE
-.GotSoftSand:
+	setevent EVENT_GOT_FOCUS_BAND_FROM_KATE
+.GotFocusBand:
 	writetext CooltrainerfKateAfterText
 	waitbutton
 .BagFull:
 	closetext
 	end
-
-Route34IlexForestSign: ; unreferenced
-	jumptext Route34IlexForestSignText
 
 Route34Sign:
 	jumptext Route34SignText
@@ -513,17 +510,6 @@ YoungsterSamuelSeenText:
 YoungsterSamuelBeatenText:
 	text "Beaten by a"
 	line "passing stranger!"
-	done
-
-YoungsterSamuelMobileText: ; unreferenced
-	text "Have you been to"
-	line "GOLDENROD CITY?"
-
-	para "Weren't you amazed"
-	line "by how they've"
-
-	para "changed the"
-	line "#MON CENTER?"
 	done
 
 YoungsterSamuelAfterText:
@@ -704,7 +690,7 @@ CooltrainerfKateBeatenText:
 	line "believe I lost."
 	done
 
-CooltrainerfKateOfferSoftSandText:
+CooltrainerfKateOfferFocusBandText:
 	text "KATE: You're too"
 	line "strong. I didn't"
 	cont "stand a chance."
@@ -722,11 +708,6 @@ CooltrainerfKateAfterText:
 
 	para "here. You sure"
 	line "startled us."
-	done
-
-Route34IlexForestSignText:
-	text "ILEX FOREST"
-	line "THROUGH THE GATE"
 	done
 
 Route34SignText:

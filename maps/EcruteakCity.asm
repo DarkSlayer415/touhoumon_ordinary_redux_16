@@ -196,7 +196,7 @@ EcruteakCityGramps3Text:
 	para "nameless #MON"
 	line "perished in it."
 
-	para "A rainbow-colored"
+	para "A mechanical"
 	line "#MON descended"
 
 	para "from the sky and"

@@ -15,8 +15,8 @@ MountMortarB1F_MapScripts:
 MountMortarB1FKiyoScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TYROGUE_FROM_KIYO
-	iftrue .GotTyrogue
+	checkevent EVENT_GOT_RINNOSUKE_FROM_KIYO
+	iftrue .GotRinnosuke
 	checkevent EVENT_BEAT_BLACKBELT_KIYO
 	iftrue .BeatKiyo
 	writetext MountMortarB1FKiyoIntroText
@@ -29,7 +29,7 @@ MountMortarB1FKiyoScript:
 	setevent EVENT_BEAT_BLACKBELT_KIYO
 	opentext
 .BeatKiyo:
-	writetext MountMortarB1FTyrogueRewardText
+	writetext MountMortarB1FRinnosukeRewardText
 	promptbutton
 	waitsfx
 	readvar VAR_PARTYCOUNT
@@ -37,10 +37,10 @@ MountMortarB1FKiyoScript:
 	writetext MountMortarB1FReceiveMonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
-	givepoke TYROGUE, 10
-	setevent EVENT_GOT_TYROGUE_FROM_KIYO
-.GotTyrogue:
-	writetext MountMortarB1FKiyoGotTyrogueText
+	givepoke UNOWN, 10
+	setevent EVENT_GOT_RINNOSUKE_FROM_KIYO
+.GotRinnosuke:
+	writetext MountMortarB1FKiyoGotRinnosukeText
 	waitbutton
 	closetext
 	end
@@ -54,14 +54,14 @@ MountMortarB1FKiyoScript:
 MountMortarB1FBoulder:
 	jumpstd StrengthBoulderScript
 
-MountMortarB1FHyperPotion:
-	itemball HYPER_POTION
+MountMortarB1FMetalPowder:
+	itemball METAL_POWDER
 
-MountMortarB1FCarbos:
-	itemball CARBOS
+MountMortarB1FLightBall:
+	itemball LIGHT_BALL
 
-MountMortarB1FFullRestore:
-	itemball FULL_RESTORE
+MountMortarB1FThickClub:
+	itemball THICK_CLUB
 
 MountMortarB1FMaxEther:
 	itemball MAX_ETHER
@@ -92,7 +92,7 @@ MountMortarB1FKiyoWinText:
 	line "I'm beaten!"
 	done
 
-MountMortarB1FTyrogueRewardText:
+MountMortarB1FRinnosukeRewardText:
 	text "I… I'm crushed…"
 
 	para "My training is"
@@ -105,20 +105,20 @@ MountMortarB1FTyrogueRewardText:
 	line "defeated me, I'll"
 
 	para "give you a rare"
-	line "fighting #MON."
+	line "#MON."
 	done
 
 MountMortarB1FReceiveMonText:
 	text "<PLAYER> received"
-	line "TYROGUE."
+	line "Rinnosuke."
 	done
 
-MountMortarB1FKiyoGotTyrogueText:
-	text "TYROGUE is a"
-	line "fighting-type."
+MountMortarB1FKiyoGotRinnosukeText:
+	text "Rinnosuke is"
+	line "very rare."
 
-	para "It evolves into a"
-	line "tougher #MON."
+	para "It can use"
+	line "almost any move."
 
 	para "Keep up the hard"
 	line "work. I'll keep"
@@ -145,10 +145,10 @@ MountMortarB1F_MapEvents:
 	bg_event  4,  6, BGEVENT_ITEM, MountMortarB1FHiddenMaxRevive
 
 	def_object_events
-	object_event 29, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FHyperPotion, EVENT_MOUNT_MORTAR_B1F_HYPER_POTION
-	object_event  4, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FCarbos, EVENT_MOUNT_MORTAR_B1F_CARBOS
+	object_event 29, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FMetalPowder, EVENT_MOUNT_MORTAR_B1F_METAL_POWDER
+	object_event  4, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FLightBall, EVENT_MOUNT_MORTAR_B1F_LIGHT_BALL
 	object_event  9, 10, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MountMortarB1FBoulder, -1
 	object_event 16,  4, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MountMortarB1FKiyoScript, -1
-	object_event 34, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FFullRestore, EVENT_MOUNT_MORTAR_B1F_FULL_RESTORE
+	object_event 34, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FThickClub, EVENT_MOUNT_MORTAR_B1F_THICK_CLUB
 	object_event 32,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FMaxEther, EVENT_MOUNT_MORTAR_B1F_MAX_ETHER
 	object_event 21, 26, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FPPUp, EVENT_MOUNT_MORTAR_B1F_PP_UP

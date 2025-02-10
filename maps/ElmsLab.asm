@@ -96,43 +96,43 @@ ProfElmScript:
 	iftrue ElmGiveTicketScript
 ElmCheckMasterBall:
 	checkevent EVENT_GOT_MASTER_BALL_FROM_ELM
-	iftrue ElmCheckEverstone
+	iftrue ElmCheckExpShare
 	checkflag ENGINE_RISINGBADGE
 	iftrue ElmGiveMasterBallScript
-ElmCheckEverstone:
-	checkevent EVENT_GOT_EVERSTONE_FROM_ELM
+ElmCheckExpShare:
+	checkevent EVENT_GOT_EXP_SHARE_FROM_ELM
 	iftrue ElmScript_CallYou
-	checkevent EVENT_SHOWED_TOGEPI_TO_ELM
-	iftrue ElmGiveEverstoneScript
-	checkevent EVENT_TOLD_ELM_ABOUT_TOGEPI_OVER_THE_PHONE
-	iffalse ElmCheckTogepiEgg
-	loadmonindex 1, TOGEPI
+	checkevent EVENT_SHOWED_HATATE_TO_ELM
+	iftrue ElmGiveExpShareScript
+	checkevent EVENT_TOLD_ELM_ABOUT_HATATE_OVER_THE_PHONE
+	iffalse ElmCheckCHatateEgg
+	setval NATU
 	special FindPartyMonThatSpeciesYourTrainerID
-	iftrue ShowElmTogepiScript
-	loadmonindex 2, TOGETIC
+	iftrue ShowElmCHatateScript
+	setval XATU
 	special FindPartyMonThatSpeciesYourTrainerID
-	iftrue ShowElmTogepiScript
+	iftrue ShowElmCHatateScript
 	writetext ElmThoughtEggHatchedText
 	waitbutton
 	closetext
 	end
 
 ElmEggHatchedScript:
-	loadmonindex 1, TOGEPI
+	setval NATU
 	special FindPartyMonThatSpeciesYourTrainerID
-	iftrue ShowElmTogepiScript
-	loadmonindex 2, TOGETIC
+	iftrue ShowElmCHatateScript
+	setval XATU
 	special FindPartyMonThatSpeciesYourTrainerID
-	iftrue ShowElmTogepiScript
+	iftrue ShowElmCHatateScript
 	sjump ElmCheckGotEggAgain
 
-ElmCheckTogepiEgg:
-	checkevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
+ElmCheckCHatateEgg:
+	checkevent EVENT_GOT_HATATE_EGG_FROM_ELMS_AIDE
 	iffalse ElmCheckGotEggAgain
-	checkevent EVENT_TOGEPI_HATCHED
+	checkevent EVENT_HATATE_HATCHED
 	iftrue ElmEggHatchedScript
 ElmCheckGotEggAgain:
-	checkevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE ; why are we checking it again?
+	checkevent EVENT_GOT_HATATE_EGG_FROM_ELMS_AIDE ; why are we checking it again?
 	iftrue ElmWaitingEggHatchScript
 	checkflag ENGINE_ZEPHYRBADGE
 	iftrue ElmAideHasEggScript
@@ -367,32 +367,32 @@ ElmWaitingEggHatchScript:
 	closetext
 	end
 
-ShowElmTogepiScript:
-	writetext ShowElmTogepiText1
+ShowElmCHatateScript:
+	writetext ShowElmCHatateText1
 	waitbutton
 	closetext
 	showemote EMOTE_SHOCK, ELMSLAB_ELM, 15
-	setevent EVENT_SHOWED_TOGEPI_TO_ELM
+	setevent EVENT_SHOWED_HATATE_TO_ELM
 	opentext
-	writetext ShowElmTogepiText2
+	writetext ShowElmCHatateText2
 	promptbutton
-	writetext ShowElmTogepiText3
+	writetext ShowElmCHatateText3
 	promptbutton
-ElmGiveEverstoneScript:
-	writetext ElmGiveEverstoneText1
+ElmGiveExpShareScript:
+	writetext ElmGiveExpShareText1
 	promptbutton
-	verbosegiveitem EVERSTONE
-	iffalse ElmScript_NoRoomForEverstone
-	writetext ElmGiveEverstoneText2
+	verbosegiveitem EXP_SHARE
+	iffalse ElmScript_NoRoomForExpShare
+	writetext ElmGiveExpShareText2
 	waitbutton
 	closetext
-	setevent EVENT_GOT_EVERSTONE_FROM_ELM
+	setevent EVENT_GOT_EXP_SHARE_FROM_ELM
 	end
 
 ElmScript_CallYou:
 	writetext ElmText_CallYou
 	waitbutton
-ElmScript_NoRoomForEverstone:
+ElmScript_NoRoomForExpShare:
 	closetext
 	end
 
@@ -516,7 +516,7 @@ AideScript_ReceiveTheBalls:
 ElmsAideScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
+	checkevent EVENT_GOT_HATATE_EGG_FROM_ELMS_AIDE
 	iftrue AideScript_AfterTheft
 	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
 	iftrue AideScript_ExplainBalls
@@ -836,7 +836,7 @@ ElmText_ChooseAPokemon:
 	line "raise one of the"
 
 	para "#MON contained"
-	line "in these BALLS."
+	line "in these Orbs."
 
 	para "You'll be that"
 	line "#MON's first"
@@ -858,19 +858,19 @@ LabWhereGoingText:
 
 TakeCyndaquilText:
 	text "ELM: You'll take"
-	line "CYNDAQUIL, the"
+	line "CMokou, the"
 	cont "fire #MON?"
 	done
 
 TakeTotodileText:
 	text "ELM: Do you want"
-	line "TOTODILE, the"
+	line "CEirin, the"
 	cont "water #MON?"
 	done
 
 TakeChikoritaText:
 	text "ELM: So, you like"
-	line "CHIKORITA, the"
+	line "CKaguya, the"
 	cont "grass #MON?"
 	done
 
@@ -1072,17 +1072,17 @@ ElmThoughtEggHatchedText:
 	line "#MON?"
 	done
 
-ShowElmTogepiText1:
+ShowElmCHatateText1:
 	text "ELM: <PLAY_G>, you"
 	line "look great!"
 	done
 
-ShowElmTogepiText2:
+ShowElmCHatateText2:
 	text "What?"
 	line "That #MON!?!"
 	done
 
-ShowElmTogepiText3:
+ShowElmCHatateText3:
 	text "The EGG hatched!"
 	line "So, #MON are"
 	cont "born from EGGS…"
@@ -1095,7 +1095,7 @@ ShowElmTogepiText3:
 	cont "to be done."
 	done
 
-ElmGiveEverstoneText1:
+ElmGiveExpShareText1:
 	text "Thanks, <PLAY_G>!"
 	line "You're helping"
 
@@ -1107,23 +1107,26 @@ ElmGiveEverstoneText1:
 	cont "our appreciation."
 	done
 
-ElmGiveEverstoneText2:
+ElmGiveExpShareText2:
 	text "That's an"
-	line "EVERSTONE."
+	line "EXP.SHARE."
 
-	para "Some species of"
+	para "Most species of"
 	line "#MON evolve"
 
 	para "when they grow to"
 	line "certain levels."
 
 	para "A #MON holding"
-	line "the EVERSTONE"
-	cont "won't evolve."
+	line "the EXP.SHARE"
+	cont "gains experience"
+	
+	para "without being"
+	line "in battle!"
 
 	para "Give it to a #-"
-	line "MON you don't want"
-	cont "to evolve."
+	line "MON you want"
+	cont "to train."
 	done
 
 ElmText_CallYou:
@@ -1159,11 +1162,11 @@ ElmGiveMasterBallText1:
 	done
 
 ElmGiveMasterBallText2:
-	text "The MASTER BALL is"
+	text "The Heaven Orb is"
 	line "the best!"
 
 	para "It's the ultimate"
-	line "BALL! It'll catch"
+	line "Orb! It'll catch"
 
 	para "any #MON with-"
 	line "out fail."
@@ -1264,7 +1267,7 @@ AideText_ExplainBalls:
 	line "#DEX, you have"
 	cont "to catch #MON."
 
-	para "Throw # BALLS"
+	para "Throw # Orbs"
 	line "at wild #MON"
 	cont "to get them."
 	done

@@ -266,7 +266,7 @@ JanineText_ToxicSpeech:
 	line "tough! I have a"
 	cont "special gift!"
 
-	para "It's TOXIC, a pow-"
+	para "It's Toxic, a pow-"
 	line "erful poison that"
 
 	para "steadily saps the"

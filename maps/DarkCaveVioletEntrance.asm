@@ -22,8 +22,8 @@ DarkCaveVioletEntranceFullHeal:
 DarkCaveVioletEntranceHyperPotion:
 	itemball HYPER_POTION
 
-DarkCaveVioletEntranceDireHit:
-	itemball DIRE_HIT
+DarkCaveVioletEntranceMoonStone:
+	itemball MOON_STONE
 
 DarkCaveVioletEntranceRock:
 	jumpstd SmashRockScript
@@ -52,4 +52,4 @@ DarkCaveVioletEntrance_MapEvents:
 	object_event 36, 31, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DarkCaveVioletEntranceRock, -1
 	object_event 36, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceFullHeal, EVENT_DARK_CAVE_VIOLET_ENTRANCE_FULL_HEAL
 	object_event 35,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceHyperPotion, EVENT_DARK_CAVE_VIOLET_ENTRANCE_HYPER_POTION
-	object_event 30, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceDireHit, EVENT_DARK_CAVE_VIOLET_ENTRANCE_DIRE_HIT
+	object_event 30, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceMoonStone, EVENT_DARK_CAVE_VIOLET_ENTRANCE_MOON_STONE

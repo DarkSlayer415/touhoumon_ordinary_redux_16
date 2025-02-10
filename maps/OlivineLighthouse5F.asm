@@ -35,8 +35,8 @@ TrainerSailorErnest:
 OlivineLighthouse5FRareCandy:
 	itemball RARE_CANDY
 
-OlivineLighthouse5FSuperRepel:
-	itemball SUPER_REPEL
+OlivineLighthouse5FFireStone:
+	itemball FIRE_STONE
 
 OlivineLighthouse5FTMSwagger:
 	itemball TM_SWAGGER
@@ -80,11 +80,11 @@ BirdKeeperDenisBeatenText:
 
 BirdKeeperDenisAfterBattleText:
 	text "My #MON learned"
-	line "how to use FLY in"
+	line "how to use Fly in"
 	cont "CIANWOOD."
 
 	para "Well, since I'm a"
-	line "loser, I'll FLY"
+	line "loser, I'll Fly"
 	cont "across the sea…"
 	done
 
@@ -109,5 +109,5 @@ OlivineLighthouse5F_MapEvents:
 	object_event  8, 11, SPRITE_SAILOR, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSailorErnest, -1
 	object_event  8,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerBirdKeeperDenis, -1
 	object_event 15, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, OlivineLighthouse5FRareCandy, EVENT_OLIVINE_LIGHTHOUSE_5F_RARE_CANDY
-	object_event  6, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, OlivineLighthouse5FSuperRepel, EVENT_OLIVINE_LIGHTHOUSE_5F_SUPER_REPEL
+	object_event  6, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, OlivineLighthouse5FFireStone, EVENT_OLIVINE_LIGHTHOUSE_5F_FIRE_STONE
 	object_event  2, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, OlivineLighthouse5FTMSwagger, EVENT_OLIVINE_LIGHTHOUSE_5F_TM_SWAGGER

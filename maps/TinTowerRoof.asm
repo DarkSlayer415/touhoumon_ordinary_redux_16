@@ -39,7 +39,7 @@ TinTowerHoOh:
 	end
 
 HoOhText:
-	text "Shaoooh!"
+	text "Cactus!"
 	done
 
 TinTowerRoof_MapEvents:

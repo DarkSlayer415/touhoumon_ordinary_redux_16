@@ -52,8 +52,9 @@ CeladonDeptStore5FSailorText:
 	text "I want PP UP, so I"
 	line "can raise the PP"
 
-	para "of moves. But you"
-	line "can't buy it…"
+	para "of my #MON's"
+	line "moves. They only"
+	cont "sell them here!"
 	done
 
 CeladonDeptStore5FTeacherText:

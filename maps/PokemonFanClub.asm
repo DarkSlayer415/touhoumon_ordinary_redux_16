@@ -140,17 +140,17 @@ PokemonFanClubChairmanRapidashText:
 	line "Then listen up!"
 
 	para "So… my favorite"
-	line "RAPIDASH…"
+	line "Yuugi…"
 
-	para "It… cute… lovely…"
-	line "smart… unbearably…"
+	para "She's strong… and…"
+	line "very… powerful…"
 	cont "plus… amazing… oh…"
 	cont "you think so?…"
 	cont "Too much… wild…"
 	cont "beautiful… kindly…"
-	cont "love it!"
+	cont "love her!"
 
-	para "Hug it… when…"
+	para "Hug her… when…"
 	line "sleeping… warm and"
 	cont "cuddly… Oh, and…"
 	cont "spectacular…"
@@ -168,7 +168,7 @@ PokemonFanClubChairmanIWantYouToHaveThisText:
 	done
 
 PokemonFanClubChairmanItsARareCandyText:
-	text "It's a RARE CANDY"
+	text "It's a Rare Candy"
 	line "that makes #MON"
 	cont "stronger."
 
@@ -205,23 +205,23 @@ PokemonFanClubReceptionistText:
 
 PokemonFanClubClefairyGuyClefairyIsSoAdorableText:
 	text "I love the way"
-	line "CLEFAIRY waggles"
+	line "Tewi waggles"
 
 	para "its finger when"
 	line "it's trying to use"
 
-	para "METRONOME."
+	para "Metronome."
 	line "It's so adorable!"
 	done
 
 PokemonFanClubClefairyGuyMakingDoWithADollIFoundText:
-	text "I love CLEFAIRY,"
+	text "I love Tewi,"
 	line "but I could never"
 
 	para "catch one. So I'm"
 	line "making do with a"
 
-	para "# DOLL that I"
+	para "Fumo that I"
 	line "found."
 	done
 
@@ -229,16 +229,16 @@ PokemonFanClubClefairyGuyTakeThisDollBackToGirlText:
 	text "Oh, I see now. The"
 	line "girl who lost this"
 
-	para "# DOLL is sad…"
+	para "Fumo is sad…"
 
 	para "OK. Could you take"
-	line "this # DOLL"
+	line "this Fumo"
 
 	para "back to that poor"
 	line "little girl?"
 
 	para "I'll befriend a"
-	line "real CLEFAIRY on"
+	line "real Tewi on"
 
 	para "my own one day."
 	line "No worries!"
@@ -246,14 +246,14 @@ PokemonFanClubClefairyGuyTakeThisDollBackToGirlText:
 
 PokemonFanClubPlayerReceivedDollText:
 	text "<PLAYER> received"
-	line "# DOLL."
+	line "# Fumo."
 	done
 
 PokemonFanClubClefairyGuyGoingToGetARealClefairyText:
 	text "You watch. I'm"
 	line "going to get a"
 
-	para "real CLEFAIRY as"
+	para "real Tewi as"
 	line "my friend."
 	done
 
@@ -264,23 +264,19 @@ PokemonFanClubClefairyGuyPackIsJammedFullText:
 
 PokemonFanClubTeacherText:
 	text "Look at my darling"
-	line "BAYLEEF!"
-
-	para "The leaf on its"
-	line "head is so cute!"
+	line "Kaguya!"
 	done
 
 PokemonFanClubClefairyDollText:
-	text "It's a CLEFAIRY!"
+	text "It's a Tewi!"
 	line "Huh?"
 
 	para "Oh, right. It's a"
-	line "CLEFAIRY #"
-	cont "DOLL."
+	line "Tewi Fumo."
 	done
 
 PokemonFanClubBayleefText:
-	text "BAYLEEF: Li liif!"
+	text "Kaguya: Hourai!"
 	done
 
 PokemonFanClubListenSignText:
@@ -312,5 +308,5 @@ PokemonFanClub_MapEvents:
 	object_event  4,  1, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PokemonFanClubReceptionistScript, -1
 	object_event  2,  3, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubClefairyGuyScript, -1
 	object_event  7,  2, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubTeacherScript, -1
-	object_event  2,  4, SPRITE_FAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubClefairyDollScript, EVENT_VERMILION_FAN_CLUB_DOLL
-	object_event  7,  3, SPRITE_ODDISH, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PokemonFanClubBayleefScript, -1
+	object_event  2,  4, SPRITE_CLEFAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PokemonFanClubClefairyDollScript, EVENT_VERMILION_FAN_CLUB_DOLL
+	object_event  7,  3, SPRITE_CHIKORITA, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PokemonFanClubBayleefScript, -1

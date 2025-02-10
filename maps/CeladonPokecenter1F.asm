@@ -27,7 +27,7 @@ CeladonEusine:
 	opentext
 	writetext CeladonEusineText1
 	promptbutton
-	loadmonindex 1, SUICUNE
+	setval SUICUNE
 	special MonCheck
 	iffalse .NoSuicune
 	special BeastsCheck
@@ -107,7 +107,7 @@ EusineLeavesCeladonText:
 	para "There have been"
 	line "fresh rumors of a"
 
-	para "rainbow-colored"
+	para "futuristic robot"
 	line "#MON appearing"
 	cont "at TIN TOWER."
 
@@ -128,8 +128,8 @@ NoBeastsText:
 	para "Have you caught"
 	line "the legendary"
 
-	para "#MON RAIKOU and"
-	line "ENTEI?"
+	para "#MON Toyohime"
+	line "and Yorihime?"
 
 	para "<……><……><……>"
 

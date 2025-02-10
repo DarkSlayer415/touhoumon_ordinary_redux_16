@@ -28,7 +28,7 @@ RandyScript:
 	writetext Route35GoldenrodGatePlayerReceivedAMonWithMailText
 	playsound SFX_KEY_ITEM
 	waitsfx
-	givepoke SPEAROW, 10, NO_ITEM, GiftSpearowName, GiftSpearowOTName
+	givepoke PIDGEY, 15, NO_ITEM, GiftSpearowName, GiftSpearowOTName
 	givepokemail GiftSpearowMail
 	setevent EVENT_GOT_KENYA
 .alreadyhavekenya
@@ -78,7 +78,7 @@ GiftSpearowOTName:
 Route35GoldenrodGatePokefanFScript:
 	faceplayer
 	opentext
-	checkevent EVENT_FOUGHT_SUDOWOODO
+	checkevent EVENT_FOUGHT_SUWAKO
 	iftrue .FoughtSudowoodo
 	writetext Route35GoldenrodGatePokefanFText
 	waitbutton
@@ -129,7 +129,7 @@ Route35GoldenrodGateRandyWeirdTreeBlockingRoadText:
 	cont "ROUTE 31!"
 
 	para "Oh, yeah. There"
-	line "was a weird tree"
+	line "was a weird hat"
 	cont "blocking the road."
 
 	para "I wonder if it's"
@@ -162,7 +162,7 @@ Route35GoldenrodGateRandyMyPalWasSnoozingRightText:
 	done
 
 Route35GoldenrodGatePokefanFText:
-	text "A strange tree is"
+	text "A strange hat is"
 	line "blocking the road."
 
 	para "It wriggles around"
@@ -171,8 +171,8 @@ Route35GoldenrodGatePokefanFText:
 	para "I heard it became"
 	line "wild when someone"
 
-	para "watered it with a"
-	line "SQUIRTBOTTLE."
+	para "showed it a"
+	line "Frozen Frog."
 	done
 
 Route35GoldenrodGatePokefanFText_FoughtSudowoodo:

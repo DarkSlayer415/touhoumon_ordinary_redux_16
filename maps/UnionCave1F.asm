@@ -81,9 +81,6 @@ UnionCave1FPotion:
 UnionCave1FAwakening:
 	itemball AWAKENING
 
-UnionCave1FUnusedSign: ; unreferenced
-	jumptext UnionCave1FUnusedSignText
-
 HikerRussellSeenText:
 	text "You're headed to"
 	line "AZALEA, are you?"
@@ -154,8 +151,8 @@ HikerDanielAfterBattleText:
 	done
 
 FirebreatherBillSeenText:
-	text "ZUBAT's SUPERSONIC"
-	line "keeps confusing"
+	text "CParsee's Growl"
+	line "keeps weakening"
 	cont "my #MON."
 
 	para "I'm seriously"
@@ -191,10 +188,6 @@ FirebreatherRayAfterBattleText:
 	text "It's my #MON's"
 	line "fire that lights"
 	cont "up this cave."
-	done
-
-UnionCave1FUnusedSignText:
-	text "UNION CAVE"
 	done
 
 UnionCave1F_MapEvents:

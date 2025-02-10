@@ -5,7 +5,7 @@
 	const DANCETHEATER_KIMONO_GIRL4
 	const DANCETHEATER_KIMONO_GIRL5
 	const DANCETHEATER_GENTLEMAN
-	const DANCETHEATER_RHYDON
+	const DANCETHEATER_ERAN
 	const DANCETHEATER_COOLTRAINER_M
 	const DANCETHEATER_GRANNY
 
@@ -69,13 +69,13 @@ TrainerKimonoGirlMiki:
 	closetext
 	end
 
-DanceTheaterSurfGuy:
+DanceTheaterStrengthGuy:
 	faceplayer
 	opentext
-	writetext SurfGuyNeverLeftAScratchText
+	writetext StrengthGuyNeverLeftAScratchText
 	promptbutton
-	checkevent EVENT_GOT_HM03_SURF
-	iftrue SurfGuyAlreadyGaveSurf
+	checkevent EVENT_GOT_HM04_STRENGTH
+	iftrue StrengthGuyAlreadyGaveStrength
 	checkevent EVENT_BEAT_KIMONO_GIRL_NAOKO
 	iffalse .KimonoGirlsUndefeated
 	checkevent EVENT_BEAT_KIMONO_GIRL_SAYO
@@ -86,41 +86,41 @@ DanceTheaterSurfGuy:
 	iffalse .KimonoGirlsUndefeated
 	checkevent EVENT_BEAT_KIMONO_GIRL_MIKI
 	iffalse .KimonoGirlsUndefeated
-	sjump .GetSurf
+	sjump .GetStrength
 
 .KimonoGirlsUndefeated:
 	checkflag ENGINE_PLAYER_IS_FEMALE
 	iftrue .PlayerIsFemale
-	writetext SurfGuyLadGiftText
+	writetext StrengthGuyLadGiftText
 	waitbutton
 	closetext
 	end
 
 .PlayerIsFemale:
-	writetext SurfGuyLassieGiftText
+	writetext StrengthGuyLassieGiftText
 	waitbutton
 	closetext
 	end
 
-.GetSurf:
-	writetext SurfGuyLikeADanceText
+.GetStrength:
+	writetext StrengthGuyLikeADanceText
 	promptbutton
-	verbosegiveitem HM_SURF
-	setevent EVENT_GOT_HM03_SURF
-	writetext SurfGuySurfExplanationText
+	verbosegiveitem HM_STRENGTH
+	setevent EVENT_GOT_HM04_STRENGTH
+	writetext StrengthGuyStrengthExplanationText
 	waitbutton
 	closetext
 	end
 
-SurfGuyAlreadyGaveSurf:
-	writetext SurfGuyElegantKimonoGirlsText
+StrengthGuyAlreadyGaveStrength:
+	writetext StrengthGuyElegantKimonoGirlsText
 	waitbutton
 	closetext
 	end
 
-DanceTheaterRhydon:
+DanceTheaterERan:
 	opentext
-	writetext RhydonText
+	writetext ERanText
 	cry RHYDON
 	waitbutton
 	closetext
@@ -233,7 +233,7 @@ KimonoGirlMikiAfterBattleText:
 	line "spirits up too."
 	done
 
-SurfGuyNeverLeftAScratchText:
+StrengthGuyNeverLeftAScratchText:
 	text "Not only are the"
 	line "KIMONO GIRLS great"
 
@@ -248,15 +248,7 @@ SurfGuyNeverLeftAScratchText:
 	line "scratch…"
 	done
 
-SurfGuyLadGiftText:
-	text "Lad! If you can"
-	line "defeat all the"
-
-	para "KIMONO GIRLS, I'll"
-	line "give you a gift."
-	done
-
-SurfGuyLassieGiftText:
+StrengthGuyLadGiftText:
 	text "Lassie, if you can"
 	line "defeat all the"
 
@@ -264,7 +256,15 @@ SurfGuyLassieGiftText:
 	line "give you a gift."
 	done
 
-SurfGuyLikeADanceText:
+StrengthGuyLassieGiftText:
+	text "Lassie, if you can"
+	line "defeat all the"
+
+	para "KIMONO GIRLS, I'll"
+	line "give you a gift."
+	done
+
+StrengthGuyLikeADanceText:
 	text "The way you bat-"
 	line "tled, it was like"
 	cont "watching a dance."
@@ -277,37 +277,32 @@ SurfGuyLikeADanceText:
 	cont "--take it!"
 	done
 
-SurfGuySurfExplanationText:
-	text "That's SURF."
+StrengthGuyStrengthExplanationText:
+	text "That's Strength."
 
 	para "It's a move that"
-	line "lets #MON swim"
-	cont "across water."
+	line "lets #MON move"
+	cont "boulders aside."
 	done
 
-SurfGuyElegantKimonoGirlsText:
+StrengthGuyElegantKimonoGirlsText:
 	text "I wish my #MON"
 	line "were as elegant as"
 	cont "the KIMONO GIRLS…"
 	done
 
-RhydonText:
-	text "RHYDON: Gugooh"
-	line "gugogooh!"
+ERanText:
+	text "ERan: Tofu!"
+	line "Fried Tofu!"
 	done
 
 DanceTheaterCooltrainerMText:
 	text "That man's always"
-	line "with his RHYDON."
+	line "with his ERan."
 
 	para "Says he wants a"
 	line "#MON that can"
-	cont "SURF and dance."
-
-	para "Is he trying to"
-	line "make a synchro-"
-	cont "nized swimming"
-	cont "#MON?"
+	cont "lift and dance."
 	done
 
 DanceTheaterGrannyText:
@@ -354,7 +349,7 @@ DanceTheater_MapEvents:
 	object_event  6,  2, SPRITE_KIMONO_GIRL, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerKimonoGirlZuki, -1
 	object_event  9,  1, SPRITE_KIMONO_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 0, TrainerKimonoGirlKuni, -1
 	object_event 11,  2, SPRITE_KIMONO_GIRL, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, TrainerKimonoGirlMiki, -1
-	object_event  7, 10, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DanceTheaterSurfGuy, -1
-	object_event  6,  8, SPRITE_RHYDON, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, DanceTheaterRhydon, -1
+	object_event  7, 10, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DanceTheaterStrengthGuy, -1
+	object_event  6,  8, SPRITE_RHYDON, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, DanceTheaterERan, -1
 	object_event 10, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DanceTheaterCooltrainerMScript, -1
 	object_event  3,  6, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DanceTheaterGrannyScript, -1

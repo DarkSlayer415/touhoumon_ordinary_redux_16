@@ -24,12 +24,12 @@ VioletPokecenter1F_ElmsAideScript:
 	iffalse .RefusedEgg
 	readvar VAR_PARTYCOUNT
 	ifequal PARTY_LENGTH, .PartyFull
-	giveegg TOGEPI, EGG_LEVEL
+	giveegg NATU, EGG_LEVEL
 	getstring STRING_BUFFER_4, .eggname
 	scall .AideGivesEgg
-	setevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
+	setevent EVENT_GOT_HATATE_EGG_FROM_ELMS_AIDE
 	clearevent EVENT_ELMS_AIDE_IN_LAB
-	clearevent EVENT_TOGEPI_HATCHED
+	clearevent EVENT_HATATE_HATCHED
 	setmapscene ROUTE_32, SCENE_ROUTE32_OFFER_SLOWPOKETAIL
 	writetext VioletPokecenterElmsAideGiveEggText
 	waitbutton
@@ -56,7 +56,7 @@ VioletPokecenter1F_ElmsAideScript:
 	db "EGG@"
 
 .AideGivesEgg:
-	jumpstd ReceiveTogepiEggScript
+	jumpstd ReceiveHatateEggScript
 	end
 
 .PartyFull:

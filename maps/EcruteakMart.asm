@@ -21,22 +21,22 @@ EcruteakMartGrannyScript:
 	jumptextfaceplayer EcruteakMartGrannyText
 
 EcruteakMartSuperNerdText:
-	text "My EEVEE evolved"
-	line "into an ESPEON."
+	text "My Keine evolved"
+	line "into an EKeine."
 
 	para "But my friend's"
-	line "EEVEE turned into"
-	cont "an UMBREON."
+	line "Keine turned into"
+	cont "an HKeine."
 
 	para "I wonder why? We"
 	line "both were raising"
 
-	para "our EEVEE in the"
+	para "our Keine in the"
 	line "same way…"
 	done
 
 EcruteakMartGrannyText:
-	text "If you use REVIVE,"
+	text "If you use Revive,"
 	line "a #MON that's"
 
 	para "fainted will wake"

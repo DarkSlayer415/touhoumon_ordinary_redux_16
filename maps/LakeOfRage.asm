@@ -7,7 +7,7 @@
 	const LAKEOFRAGE_FISHER2
 	const LAKEOFRAGE_COOLTRAINER_M
 	const LAKEOFRAGE_COOLTRAINER_F2
-	const LAKEOFRAGE_GYARADOS
+	const LAKEOFRAGE_EKANAKO
 	const LAKEOFRAGE_WESLEY
 	const LAKEOFRAGE_POKE_BALL1
 	const LAKEOFRAGE_POKE_BALL2
@@ -58,7 +58,7 @@ LakeOfRageLanceScript:
 	playsound SFX_WARP_TO
 	applymovement LAKEOFRAGE_LANCE, LakeOfRageLanceTeleportIntoSkyMovement
 	disappear LAKEOFRAGE_LANCE
-	clearevent EVENT_MAHOGANY_MART_LANCE_AND_DRAGONITE
+	clearevent EVENT_MAHOGANY_MART_LANCE_AND_MARISA
 	setevent EVENT_DECIDED_TO_HELP_LANCE
 	setmapscene MAHOGANY_MART_1F, SCENE_MAHOGANYMART1F_LANCE_UNCOVERS_STAIRS
 	end
@@ -78,17 +78,17 @@ LakeOfRageLanceScript:
 	iffalse .RefusedToHelp
 	sjump .AgreedToHelp
 
-RedGyarados:
+ShinyKanako:
 	opentext
-	writetext LakeOfRageGyaradosCryText
+	writetext LakeOfRageEKanakoCryText
 	pause 15
-	cry GYARADOS
+	cry SEAKING
 	closetext
-	loadwildmon GYARADOS, 30
+	loadwildmon SEAKING, 35
 	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
 	startbattle
 	ifequal LOSE, .NotBeaten
-	disappear LAKEOFRAGE_GYARADOS
+	disappear LAKEOFRAGE_EKANAKO
 .NotBeaten:
 	reloadmapafterbattle
 	opentext
@@ -127,21 +127,6 @@ LakeOfRageCooltrainerFScript:
 
 LakeOfRageSign:
 	jumptext LakeOfRageSignText
-
-MagikarpHouseSignScript:
-	opentext
-	writetext FishingGurusHouseSignText
-	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
-	iftrue .MagikarpLengthRecord
-	waitbutton
-	closetext
-	end
-
-.MagikarpLengthRecord:
-	promptbutton
-	special MagikarpHouseSign
-	closetext
-	end
 
 TrainerFisherAndre:
 	trainer FISHER, ANDRE, EVENT_BEAT_FISHER_ANDRE, FisherAndreSeenText, FisherAndreBeatenText, 0, .Script
@@ -226,8 +211,8 @@ WesleyNotWednesdayScript:
 LakeOfRageElixer:
 	itemball ELIXER
 
-LakeOfRageTMDetect:
-	itemball TM_DETECT
+LakeOfRageTMSwordsDance:
+	itemball TM_SWORDS_DANCE
 
 LakeOfRageHiddenFullRestore:
 	hiddenitem FULL_RESTORE, EVENT_LAKE_OF_RAGE_HIDDEN_FULL_RESTORE
@@ -244,10 +229,10 @@ LakeOfRageLanceTeleportIntoSkyMovement:
 
 LakeOfRageLanceForcedToEvolveText:
 	text "This lake is full"
-	line "of GYARADOS but"
+	line "of Kanako but"
 	cont "nothing else…"
 
-	para "So the MAGIKARP"
+	para "So the #MON"
 	line "are being forced"
 	cont "to evolve…"
 	done
@@ -284,7 +269,7 @@ LakeOfRageLanceRadioSignalText:
 	text "LANCE: Excellent!"
 
 	para "It seems that the"
-	line "LAKE's MAGIKARP"
+	line "LAKE's #MON"
 
 	para "are being forced"
 	line "to evolve."
@@ -310,31 +295,31 @@ LakeOfRageLanceAskHelpText:
 	line "going to help me?"
 	done
 
-LakeOfRageGyaradosCryText:
-	text "GYARADOS: Gyashaa!"
+LakeOfRageEKanakoCryText:
+	text "Kanako: Faaiitthh!"
 	done
 
 LakeOfRageGotRedScaleText:
-	text "<PLAYER> obtained a"
-	line "RED SCALE."
+	text "<PLAYER> obtained"
+	line "GOLDEN ROBES."
 	done
 
 LakeOfRageGrampsText:
-	text "The GYARADOS are"
+	text "The Kanako are"
 	line "angry!"
 
 	para "It's a bad omen!"
 	done
 
 LakeOfRageGrampsText_ClearedRocketHideout:
-	text "Hahah! The MAGI-"
-	line "KARP are biting!"
+	text "Hahah! The fish"
+	line "are biting!"
 	done
 
 LakeOfRageSuperNerdText:
 	text "I heard this lake"
 	line "was made by ram-"
-	cont "paging GYARADOS."
+	cont "paging Kanako."
 
 	para "I wonder if there"
 	line "is any connection"
@@ -345,14 +330,14 @@ LakeOfRageSuperNerdText:
 
 LakeOfRageCooltrainerFText:
 	text "Did my eyes de-"
-	line "ceive me? I saw a"
+	line "ceive me? I saw an"
 
-	para "red GYARADOS in"
+	para "odd Kanako in"
 	line "the LAKE…"
 
 	para "But I thought"
-	line "GYARADOS were"
-	cont "usually blue?"
+	line "Kanako were"
+	cont "usually red?"
 	done
 
 FisherAndreSeenText:
@@ -419,7 +404,7 @@ CooltrainermAaronAfterBattleText:
 
 CooltrainerfLoisSeenText:
 	text "What happened to"
-	line "the red GYARADOS?"
+	line "the odd Cirno?"
 
 	para "It's gone?"
 
@@ -437,7 +422,7 @@ CooltrainerfLoisBeatenText:
 CooltrainerfLoisAfterBattleText:
 	text "Come to think of"
 	line "it, I've seen a"
-	cont "pink BUTTERFREE."
+	cont "pink Mugetsu."
 	done
 
 MeetWesleyText:
@@ -483,26 +468,20 @@ WesleyNotWednesdayText:
 LakeOfRageSignText:
 	text "LAKE OF RAGE,"
 	line "also known as"
-	cont "GYARADOS LAKE."
+	cont "GODDESS LAKE."
 	done
 
-FishingGurusHouseSignText:
-	text "FISHING GURU'S"
-	line "HOUSE"
-	done
 
 LakeOfRage_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
 	warp_event  7,  3, LAKE_OF_RAGE_HIDDEN_POWER_HOUSE, 1
-	warp_event 27, 31, LAKE_OF_RAGE_MAGIKARP_HOUSE, 1
 
 	def_coord_events
 
 	def_bg_events
 	bg_event 21, 27, BGEVENT_READ, LakeOfRageSign
-	bg_event 25, 31, BGEVENT_READ, MagikarpHouseSignScript
 	bg_event 11, 28, BGEVENT_ITEM, LakeOfRageHiddenFullRestore
 	bg_event  4,  4, BGEVENT_ITEM, LakeOfRageHiddenRareCandy
 	bg_event 35,  5, BGEVENT_ITEM, LakeOfRageHiddenMaxPotion
@@ -516,7 +495,7 @@ LakeOfRage_MapEvents:
 	object_event 24, 26, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerFisherRaymond, EVENT_LAKE_OF_RAGE_CIVILIANS
 	object_event  4, 15, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainermAaron, EVENT_LAKE_OF_RAGE_CIVILIANS
 	object_event 36,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerCooltrainerfLois, EVENT_LAKE_OF_RAGE_CIVILIANS
-	object_event 18, 22, SPRITE_GYARADOS, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RedGyarados, EVENT_LAKE_OF_RAGE_RED_GYARADOS
+	object_event 18, 22, SPRITE_BELLSPROUT, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ShinyKanako, EVENT_LAKE_OF_RAGE_SHINY_KANAKO
 	object_event  4,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, WesleyScript, EVENT_LAKE_OF_RAGE_WESLEY_OF_WEDNESDAY
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageElixer, EVENT_LAKE_OF_RAGE_ELIXER
-	object_event 35,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageTMDetect, EVENT_LAKE_OF_RAGE_TM_DETECT
+	object_event 35,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageTMSwordsDance, EVENT_LAKE_OF_RAGE_TM_SWORDS_DANCE

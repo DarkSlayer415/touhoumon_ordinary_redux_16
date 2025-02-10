@@ -31,14 +31,14 @@ SilverCaveRoom1_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  9, 33, SILVER_CAVE_OUTSIDE, 2
+	warp_event  8, 33, SILVER_CAVE_OUTSIDE, 2
 	warp_event 15,  1, SILVER_CAVE_ROOM_2, 1
 
 	def_coord_events
 
 	def_bg_events
 	bg_event 16, 23, BGEVENT_ITEM, SilverCaveRoom1HiddenDireHit
-	bg_event 17, 12, BGEVENT_ITEM, SilverCaveRoom1HiddenUltraBall
+	bg_event 16, 12, BGEVENT_ITEM, SilverCaveRoom1HiddenUltraBall
 
 	def_object_events
 	object_event  4,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SilverCaveRoom1MaxElixer, EVENT_SILVER_CAVE_ROOM_1_MAX_ELIXER

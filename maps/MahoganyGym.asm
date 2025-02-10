@@ -33,7 +33,7 @@ MahoganyGymPryceScript:
 	readvar VAR_BADGES
 	scall MahoganyGymActivateRockets
 .FightDone:
-	checkevent EVENT_GOT_TM16_ICY_WIND
+	checkevent EVENT_GOT_TM16_HAIL
 	iftrue PryceScript_Defeat
 	setevent EVENT_BEAT_SKIER_ROXANNE
 	setevent EVENT_BEAT_SKIER_CLARISSA
@@ -42,10 +42,10 @@ MahoganyGymPryceScript:
 	setevent EVENT_BEAT_BOARDER_DOUGLAS
 	writetext PryceText_GlacierBadgeSpeech
 	promptbutton
-	verbosegiveitem TM_ICY_WIND
-	iffalse MahoganyGym_NoRoomForIcyWind
-	setevent EVENT_GOT_TM16_ICY_WIND
-	writetext PryceText_IcyWindSpeech
+	verbosegiveitem TM_HAIL
+	iffalse MahoganyGym_NoRoomForHail
+	setevent EVENT_GOT_TM16_HAIL
+	writetext PryceText_HailSpeech
 	waitbutton
 	closetext
 	end
@@ -53,7 +53,7 @@ MahoganyGymPryceScript:
 PryceScript_Defeat:
 	writetext PryceText_CherishYourPokemon
 	waitbutton
-MahoganyGym_NoRoomForIcyWind:
+MahoganyGym_NoRoomForHail:
 	closetext
 	end
 
@@ -198,25 +198,24 @@ Text_ReceivedGlacierBadge:
 	done
 
 PryceText_GlacierBadgeSpeech:
-	text "That BADGE will"
-	line "raise the SPECIAL"
-	cont "stats of #MON."
-
-	para "It also lets your"
-	line "#MON use WHIRL-"
-	cont "POOL to get across"
+	text "That BADGGE lets"
+	line "#MON use Whirl-"
+	cont "pool to get across"
 	cont "real whirlpools."
 
 	para "And this… This is"
 	line "a gift from me!"
 	done
 
-PryceText_IcyWindSpeech:
+PryceText_HailSpeech:
 	text "That TM contains"
-	line "ICY WIND."
+	line "Hail."
 
 	para "It inflicts damage"
-	line "and lowers speed."
+	line "every turn and"
+	
+	para "raises the Defense"
+	line "of Ice-types."
 
 	para "It demonstrates"
 	line "the harshness of"
@@ -239,9 +238,10 @@ PryceText_CherishYourPokemon:
 	done
 
 BoarderRonaldSeenText:
-	text "I'll freeze your"
-	line "#MON, so you"
-	cont "can't do a thing!"
+	text "I'll frostbite"
+	line "your #MON,"
+	cont "so you can't"
+	cont "do a thing!"
 	done
 
 BoarderRonaldBeatenText:
@@ -251,10 +251,10 @@ BoarderRonaldBeatenText:
 
 BoarderRonaldAfterBattleText:
 	text "I think there's a"
-	line "move a #MON"
+	line "move a frostbitten"
 
-	para "can use while it's"
-	line "frozen."
+	para "#MON can use to"
+	line "cure itself."
 	done
 
 BoarderBradSeenText:

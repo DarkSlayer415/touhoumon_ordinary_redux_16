@@ -207,7 +207,7 @@ SageLiSeenText:
 	text "So good of you to"
 	line "come here!"
 
-	para "SPROUT TOWER is a"
+	para "AUTUMN TOWER is a"
 	line "place of training."
 
 	para "People and #MON"
@@ -316,8 +316,8 @@ SageNealAfterBattleText:
 
 SproutTower3FPaintingText:
 	text "It's a powerful"
-	line "painting of a"
-	cont "BELLSPROUT."
+	line "painting of two"
+	cont "autumn gods."
 	done
 
 SproutTower3FStatueText:

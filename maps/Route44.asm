@@ -320,7 +320,7 @@ Route44HiddenElixer:
 
 FisherWilton1SeenText:
 	text "Aack! You made me"
-	line "lose a POLIWAG!"
+	line "lose a CSuwako!"
 
 	para "What are you going"
 	line "to do about it?"
@@ -332,7 +332,7 @@ FisherWilton1BeatenText:
 	done
 
 FisherWiltonHugePoliwagText:
-	text "That POLIWAG that"
+	text "That CSuwako that"
 	line "got away…"
 	cont "It was huge."
 
@@ -367,7 +367,7 @@ FisherEdgarAfterBattleText:
 
 BirdKeeperVance1SeenText:
 	text "Do you know about"
-	line "the legendary bird"
+	line "the Poltergeist"
 	cont "#MON?"
 	done
 
@@ -377,15 +377,16 @@ BirdKeeperVance1BeatenText:
 	done
 
 BirdKeeperVanceLegendaryBirdsText:
-	text "ARTICUNO, ZAPDOS"
-	line "and MOLTRES are"
+	text "Lunasa, Merlin"
+	line "and Lyrica are"
 
-	para "the three legend-"
-	line "ary bird #MON."
+	para "the three"
+	line "Poltergeist"
+	cont "#MON."
 
-	para "I heard there are"
-	line "other legendary"
-	cont "birds, though."
+	para "I heard there"
+	line "is a legendary"
+	cont "Poltergeist."
 	done
 
 BirdKeeperVance2BeatenText:
@@ -459,7 +460,7 @@ CooltrainermAllenAfterBattleText:
 	para "No wonder you're"
 	line "so tough."
 
-	para "I wonder if"
+	para "I wonder if the"
 	line "ECRUTEAK GYM's"
 
 	para "MORTY is still in"

@@ -9,13 +9,13 @@ LakeOfRageHiddenPowerHouse_MapScripts:
 HiddenPowerGuy:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TM10_HIDDEN_POWER
+	checkevent EVENT_GOT_TM43_MEDITATE
 	iftrue .AlreadyGotItem
 	writetext HiddenPowerGuyText1
 	promptbutton
-	verbosegiveitem TM_HIDDEN_POWER
+	verbosegiveitem TM_MEDITATE
 	iffalse .Done
-	setevent EVENT_GOT_TM10_HIDDEN_POWER
+	setevent EVENT_GOT_TM43_MEDITATE
 	writetext HiddenPowerGuyText2
 	waitbutton
 	closetext
@@ -49,16 +49,11 @@ HiddenPowerGuyText1:
 
 HiddenPowerGuyText2:
 	text "Do you see it? It"
-	line "is HIDDEN POWER!"
+	line "is Mana Charge!"
 
-	para "It draws out the"
-	line "power of #MON"
-	cont "for attacking."
-
-	para "Remember this: its"
-	line "type and power de-"
-	cont "pend on the #-"
-	cont "MON using it."
+	para "It raises the"
+	line "Sp.Atk of"
+	cont "#MON sharply."
 	done
 
 HiddenPowerGuyText3:

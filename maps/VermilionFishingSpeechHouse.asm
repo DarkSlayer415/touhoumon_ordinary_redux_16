@@ -20,23 +20,23 @@ FishingDudeText:
 	line "DUDE, the elder of"
 	cont "the FISHING BROS."
 
-	para "Have you met the"
-	line "FISHING GURU at"
-	cont "LAKE OF RAGE?"
+	para "Have you gathered"
+	line "all of the fishing"
+	cont "rods?"
 
-	para "He dreams about"
-	line "seeing the world's"
-	cont "greatest MAGIKARP."
+	para "If you haven't,"
+	line "I can tell you"
+	cont "where they are."
 
-	para "If you don't mind,"
-	line "could you show him"
+	para "The Old Rod is on"
+	line "Route 32 in Johto."
 
-	para "any MAGIKARP you"
-	line "catch?"
+	para "The Good Rod is in"
+	line "Olivine City."
 
-	para "Who knows, you may"
-	line "catch the MAGIKARP"
-	cont "of his dreams."
+	para "The Super Rod is"
+	line "somewhere here in"
+	cont "Kanto, good luck!"
 	done
 
 FishingDudesHousePhotoText:

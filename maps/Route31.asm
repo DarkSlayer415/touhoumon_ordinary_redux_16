@@ -183,7 +183,7 @@ TrainerBugCatcherWade1:
 Route31MailRecipientScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TM50_NIGHTMARE
+	checkevent EVENT_GOT_TM50_SUBSTITUTE
 	iftrue .DescribeNightmare
 	checkevent EVENT_GOT_KENYA
 	iftrue .TryGiveKenya
@@ -206,9 +206,9 @@ Route31MailRecipientScript:
 	writetext Text_Route31ReadingMail
 	promptbutton
 	setevent EVENT_GAVE_KENYA
-	verbosegiveitem TM_NIGHTMARE
+	verbosegiveitem TM_SUBSTITUTE
 	iffalse .NoRoomForItems
-	setevent EVENT_GOT_TM50_NIGHTMARE
+	setevent EVENT_GOT_TM50_SUBSTITUTE
 .DescribeNightmare:
 	writetext Text_Route31DescribeNightmare
 	waitbutton
@@ -350,19 +350,20 @@ Text_Route31ReadingMail:
 	done
 
 Text_Route31DescribeNightmare:
-	text "TM50 is NIGHTMARE."
+	text "TM50 is"
+	line "Substitute."
 
-	para "It's a wicked move"
-	line "that steadily cuts"
+	para "Your #MON "
+	line "creates a"
+	
+	para "substitute that"
+	line "takes hits"
 
-	para "the HP of a sleep-"
-	line "ing enemy."
+	para "without hurting"
+	line "your #MON!"
 
-	para "Ooooh…"
-	line "That's scary…"
-
-	para "I don't want to"
-	line "have bad dreams."
+	para "You can make good"
+	line "use of it for sure."
 	done
 
 Text_Route31WrongMail:

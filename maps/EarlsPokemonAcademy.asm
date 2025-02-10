@@ -71,7 +71,7 @@ AcademyBlackboard:
 	ifequal 2, .Paralysis
 	ifequal 3, .Sleep
 	ifequal 4, .Burn
-	ifequal 5, .Freeze
+	ifequal 5, .Frostbite
 	closetext
 	end
 
@@ -95,8 +95,8 @@ AcademyBlackboard:
 	waitbutton
 	sjump .Loop
 
-.Freeze:
-	writetext AcademyFreezeText
+.Frostbite:
+	writetext AcademyFrostbiteText
 	waitbutton
 	sjump .Loop
 
@@ -137,9 +137,6 @@ AcademyNotebook:
 .Done:
 	closetext
 	end
-
-AcademyStickerMachine: ; unreferenced
-	jumptext AcademyStickerMachineText
 
 AcademyBookshelf:
 	jumpstd DifficultBookshelfScript
@@ -270,10 +267,6 @@ AcademyBlackboardText:
 	line "battle."
 	done
 
-AcademyBlackboardText2: ; unreferenced
-	text "Read which topic?"
-	done
-
 AcademyPoisonText:
 	text "If poisoned, a"
 	line "#MON steadily"
@@ -316,8 +309,8 @@ AcademyBurnText:
 	text "A burn steadily"
 	line "consumes HP."
 
-	para "It also reduces"
-	line "attack power."
+	para "Its ATK will"
+	line "also be halved."
 
 	para "A burn lingers"
 	line "after battle."
@@ -326,16 +319,16 @@ AcademyBurnText:
 	line "the cure."
 	done
 
-AcademyFreezeText:
+AcademyFrostbiteText::
 	text "If your #MON is"
-	line "frozen, it can't"
-	cont "do a thing."
+	line "frostbitten, it'll"
+	cont "gradually lose HP."
 
-	para "It remains frozen"
-	line "after battle."
+	para "Its SPCL.ATK will"
+	line "also be halved."
 
-	para "Thaw it out with"
-	line "an ICE HEAL."
+	para "Use an ICE HEAL as"
+	line "the cure."
 	done
 
 AcademyNotebookText:
@@ -398,13 +391,6 @@ AcademyNotebookText3:
 
 	para "I haven't written"
 	line "anymore…"
-	done
-
-AcademyStickerMachineText:
-	text "This super machine"
-	line "prints data out as"
-
-	para "stickers!"
 	done
 
 EarlsPokemonAcademy_MapEvents:
