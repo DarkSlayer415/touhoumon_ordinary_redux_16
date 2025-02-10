@@ -2,7 +2,7 @@
 
 MapGroupRoofSGBPalInds:
 ; entries correspond to map groups
-	table_width 1
+	table_width 1, MapGroupRoofSGBPalInds
 	db PREDEFPAL_ROUTES
 	db PREDEFPAL_OLIVINE
 	db PREDEFPAL_MAHOGANY

@@ -163,7 +163,6 @@ CeruleanTradeSpeechHouse_Blocks:
 BillsHouse_Blocks:
 CharcoalKiln_Blocks:
 LakeOfRageHiddenPowerHouse_Blocks:
-LakeOfRageMagikarpHouse_Blocks:
 GoldenrodHappinessRater_Blocks:
 BillsFamilysHouse_Blocks:
 GoldenrodPPSpeechHouse_Blocks:
@@ -174,7 +173,7 @@ VermilionDiglettsCaveSpeechHouse_Blocks:
 BluesHouse_Blocks:
 PewterNidoranSpeechHouse_Blocks:
 PewterSnoozeSpeechHouse_Blocks:
-BillsOlderSistersHouse_Blocks:
+BillsBrothersHouse_Blocks:
 LavenderSpeechHouse_Blocks:
 LavenderNameRater_Blocks:
 Route12SuperRodHouse_Blocks:
@@ -189,9 +188,7 @@ PokeSeersHouse_Blocks:
 ViridianNicknameSpeechHouse_Blocks:
 Route2NuggetHouse_Blocks:
 PlayersNeighborsHouse_Blocks:
-Route26HealHouse_Blocks:
 DayOfWeekSiblingsHouse_Blocks:
-Route27SandstormHouse_Blocks:
 MrPsychicsHouse_Blocks:
 Route5CleanseTagHouse_Blocks:
 CherrygroveGymSpeechHouse_Blocks:
@@ -199,6 +196,10 @@ GuideGentsHouse_Blocks:
 CherrygroveEvolutionSpeechHouse_Blocks:
 Route30BerryHouse_Blocks:
 	INCBIN "maps/House1.blk"
+	
+Route26HealHouse_Blocks:
+Route27SandstormHouse_Blocks:
+	INCBIN "maps/SandstormHouse.blk"
 
 SafariZoneFuchsiaGateBeta_Blocks:
 Route19FuchsiaGate_Blocks:
@@ -796,9 +797,6 @@ DarkCaveVioletEntrance_Blocks:
 
 DarkCaveBlackthornEntrance_Blocks:
 	INCBIN "maps/DarkCaveBlackthornEntrance.blk"
-
-RuinsOfAlphResearchCenter_Blocks:
-	INCBIN "maps/RuinsOfAlphResearchCenter.blk"
 
 GoldenrodBikeShop_Blocks:
 	INCBIN "maps/GoldenrodBikeShop.blk"

@@ -6,7 +6,7 @@ ENDM
 
 Landmarks:
 ; entries correspond to constants/landmark_constants.asm
-	table_width 4
+	table_width 4, Landmarks
 	landmark  -8, -16, SpecialMapName
 	landmark 140, 100, NewBarkTownName
 	landmark 128, 100, Route29Name
@@ -118,10 +118,10 @@ MahoganyTownName:    db "MAHOGANY<BSP>TOWN@"
 BlackthornCityName:  db "BLACKTHORN<BSP>CITY@"
 LakeOfRageName:      db "LAKE OF<BSP>RAGE@"
 SilverCaveName:      db "SILVER CAVE@"
-SproutTowerName:     db "SPROUT<BSP>TOWER@"
-RuinsOfAlphName:     db "RUINS<BSP>OF ALPH@"
+SproutTowerName:     db "AUTUMN¯TOWER@"
+RuinsOfAlphName:     db "RUINS¯OF MEMORY@"
 UnionCaveName:       db "UNION CAVE@"
-SlowpokeWellName:    db "SLOWPOKE<BSP>WELL@"
+SlowpokeWellName:    db "KAPPA'S¯WELL@"
 RadioTowerName:      db "RADIO TOWER@"
 PowerPlantName:      db "POWER PLANT@"
 NationalParkName:    db "NATIONAL<BSP>PARK@"
@@ -202,8 +202,8 @@ DarkCaveName:        db "DARK CAVE@"
 IlexForestName:      db "ILEX<BSP>FOREST@"
 BurnedTowerName:     db "BURNED<BSP>TOWER@"
 FastShipName:        db "FAST SHIP@"
-ViridianForestName:  db "VIRIDIAN<BSP>FOREST@" ; unreferenced
-DiglettsCaveName:    db "DIGLETT'S<BSP>CAVE@"
+ViridianForestName:  db "VIRIDIAN¯FOREST@" ; unreferenced
+DiglettsCaveName:    db "YAMAME'S¯CAVE@"
 TohjoFallsName:      db "TOHJO FALLS@"
 UndergroundName:     db "UNDERGROUND@"
 BattleTowerName:     db "BATTLE<BSP>TOWER@"

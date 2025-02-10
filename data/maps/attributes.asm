@@ -403,7 +403,6 @@ ENDM
 	map_attributes RuinsOfAlphOmanyteChamber, RUINS_OF_ALPH_OMANYTE_CHAMBER, $00, 0
 	map_attributes RuinsOfAlphAerodactylChamber, RUINS_OF_ALPH_AERODACTYL_CHAMBER, $00, 0
 	map_attributes RuinsOfAlphInnerChamber, RUINS_OF_ALPH_INNER_CHAMBER, $00, 0
-	map_attributes RuinsOfAlphResearchCenter, RUINS_OF_ALPH_RESEARCH_CENTER, $00, 0
 	map_attributes RuinsOfAlphHoOhItemRoom, RUINS_OF_ALPH_HO_OH_ITEM_ROOM, $00, 0
 	map_attributes RuinsOfAlphKabutoItemRoom, RUINS_OF_ALPH_KABUTO_ITEM_ROOM, $00, 0
 	map_attributes RuinsOfAlphOmanyteItemRoom, RUINS_OF_ALPH_OMANYTE_ITEM_ROOM, $00, 0
@@ -464,7 +463,6 @@ ENDM
 	map_attributes OlivineTimsHouse, OLIVINE_TIMS_HOUSE, $00, 0
 	map_attributes OlivineHouseBeta, OLIVINE_HOUSE_BETA, $00, 0
 	map_attributes OlivinePunishmentSpeechHouse, OLIVINE_PUNISHMENT_SPEECH_HOUSE, $00, 0
-	map_attributes OlivineGoodRodHouse, OLIVINE_GOOD_ROD_HOUSE, $00, 0
 	map_attributes OlivineCafe, OLIVINE_CAFE, $00, 0
 	map_attributes OlivineMart, OLIVINE_MART, $00, 0
 	map_attributes Route38EcruteakGate, ROUTE_38_ECRUTEAK_GATE, $00, 0
@@ -518,7 +516,6 @@ ENDM
 	map_attributes KurtsHouse, KURTS_HOUSE, $00, 0
 	map_attributes AzaleaGym, AZALEA_GYM, $00, 0
 	map_attributes LakeOfRageHiddenPowerHouse, LAKE_OF_RAGE_HIDDEN_POWER_HOUSE, $00, 0
-	map_attributes LakeOfRageMagikarpHouse, LAKE_OF_RAGE_MAGIKARP_HOUSE, $00, 0
 	map_attributes Route43MahoganyGate, ROUTE_43_MAHOGANY_GATE, $00, 0
 	map_attributes Route43Gate, ROUTE_43_GATE, $00, 0
 	map_attributes VioletMart, VIOLET_MART, $00, 0
@@ -597,7 +594,7 @@ ENDM
 	map_attributes FuchsiaMart, FUCHSIA_MART, $00, 0
 	map_attributes SafariZoneMainOffice, SAFARI_ZONE_MAIN_OFFICE, $00, 0
 	map_attributes FuchsiaGym, FUCHSIA_GYM, $00, 0
-	map_attributes BillsOlderSistersHouse, BILLS_OLDER_SISTERS_HOUSE, $00, 0
+	map_attributes BillsBrothersHouse, BILLS_BROTHERS_HOUSE, $00, 0
 	map_attributes FuchsiaPokecenter1F, FUCHSIA_POKECENTER_1F, $00, 0
 	map_attributes FuchsiaPokecenter2FBeta, FUCHSIA_POKECENTER_2F_BETA, $00, 0
 	map_attributes SafariZoneWardensHome, SAFARI_ZONE_WARDENS_HOME, $00, 0
