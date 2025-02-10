@@ -1,6 +1,7 @@
 MACRO momitem
 ; money to trigger, cost, kind, item
-	bigdt \1, \2
+	dt \1
+	dt \2
 	db \3, \4
 ENDM
 
@@ -19,10 +20,10 @@ MomItems_2:
 	momitem  10000,  1800, MOM_DOLL, DECO_CHARMANDER_DOLL
 	momitem  15000,  3000, MOM_ITEM, MOON_STONE
 	momitem  19000,   600, MOM_ITEM, SUPER_POTION
-	momitem  30000,  4800, MOM_DOLL, DECO_CLEFAIRY_DOLL
+	momitem  30000,  4800, MOM_DOLL, DECO_NIDORAN_F_DOLL
 	momitem  40000,   900, MOM_ITEM, HYPER_POTION
-	momitem  50000,  8000, MOM_DOLL, DECO_PIKACHU_DOLL
+	momitem  50000,  8000, MOM_DOLL, DECO_MARILL_DOLL
 	momitem 100000, 22800, MOM_DOLL, DECO_BIG_SNORLAX_DOLL
 .End
 
-	bigdt 0 ; unused
+	dt 0 ; unused
