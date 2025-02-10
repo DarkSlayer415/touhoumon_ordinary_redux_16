@@ -223,7 +223,7 @@ UpdateChannels:
 	jp hl
 
 .ChannelFunctions:
-	table_width 2
+	table_width 2, UpdateChannels.ChannelFunctions
 ; music channels
 	dw .Channel1
 	dw .Channel2
@@ -241,6 +241,8 @@ UpdateChannels:
 
 .Channel1:
 	ld a, [wLowHealthAlarm]
+	cp $ff
+	jr z, .Channel5
 	bit DANGER_ON_F, a
 	ret nz
 .Channel5:
@@ -531,29 +533,25 @@ PlayDanger:
 	ld a, [wLowHealthAlarm]
 	bit DANGER_ON_F, a
 	ret z
+	cp $ff
+	ret z
 
 	; Don't do anything if SFX is being played
-	and ~(1 << DANGER_ON_F)
 	ld d, a
 	call _CheckSFX
 	jr c, .increment
+	ld a, d
 
 	; Play the high tone
-	and a
-	jr z, .begin
-
+	and $1f
+	ld hl, DangerSoundHigh
+	jr z, .applychannel
+	
 	; Play the low tone
 	cp 16
-	jr z, .halfway
+	jr nz, .increment
 
-	jr .increment
-
-.halfway
 	ld hl, DangerSoundLow
-	jr .applychannel
-
-.begin
-	ld hl, DangerSoundHigh
 
 .applychannel
 	xor a
@@ -569,13 +567,19 @@ PlayDanger:
 
 .increment
 	ld a, d
+	and $e0
+	ld e, a
+	ld a, d
+	and $1f
 	inc a
 	cp 30 ; Ending frame
 	jr c, .noreset
-	xor a
+	add 2
 .noreset
-	; Make sure the danger sound is kept on
-	or 1 << DANGER_ON_F
+	add e
+	jr nz, .load
+	dec a
+.load
 	ld [wLowHealthAlarm], a
 
 	; Enable channel 1 if it's off
@@ -1371,7 +1375,7 @@ ParseMusicCommand:
 
 MusicCommands:
 ; entries correspond to audio constants (see macros/scripts/audio.asm)
-	table_width 2
+	table_width 2, MusicCommands
 	dw Music_Octave8
 	dw Music_Octave7
 	dw Music_Octave6
@@ -1413,7 +1417,7 @@ MusicCommands:
 	dw MusicF6 ; nothing
 	dw MusicF7 ; nothing
 	dw MusicF8 ; nothing
-	dw MusicF9 ; unused
+	dw Music_ChangeNoiseSampleSet
 	dw Music_SetCondition
 	dw Music_JumpIf
 	dw Music_Jump
@@ -1673,14 +1677,6 @@ MusicEE:
 	ld [hl], d
 	ret
 
-MusicF9:
-; unused
-; sets some flag
-; params: 0
-	ld a, TRUE
-	ld [wUnusedMusicF9Flag], a
-	ret
-
 MusicE2:
 ; unused
 ; params: 1
@@ -1870,6 +1866,7 @@ Music_ToggleNoise:
 .on
 	; turn noise sampling on
 	set SOUND_NOISE, [hl]
+Music_ChangeNoiseSampleSet:
 	call GetMusicByte
 	ld [wMusicNoiseSampleSet], a
 	ret
@@ -2205,8 +2202,8 @@ SetNoteDuration:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	; add duration modifier to the next result
-	ld hl, CHANNEL_NOTE_DURATION_MODIFIER
+	; add ??? to the next result
+	ld hl, CHANNEL_FIELD16
 	add hl, bc
 	ld l, [hl]
 	; multiply Tempo by last result (NoteLength * LOW(delay))
@@ -2214,10 +2211,11 @@ SetNoteDuration:
 	; copy result to de
 	ld e, l
 	ld d, h
-	; store result in NoteDuration and NoteDurationModifier
-	ld hl, CHANNEL_NOTE_DURATION_MODIFIER
+	; store result in ???
+	ld hl, CHANNEL_FIELD16
 	add hl, bc
 	ld [hl], e
+	; store result in NoteDuration
 	ld hl, CHANNEL_NOTE_DURATION
 	add hl, bc
 	ld [hl], d
@@ -2282,9 +2280,9 @@ Tempo:
 	ld [hl], e
 	inc hl
 	ld [hl], d
-	; clear duration modifier
+	; clear ???
 	xor a
-	ld hl, CHANNEL_NOTE_DURATION_MODIFIER
+	ld hl, CHANNEL_FIELD16
 	add hl, bc
 	ld [hl], a
 	ret
@@ -2782,7 +2780,7 @@ StereoTracks:
 	db $11, $22, $44, $88
 
 ChannelPointers:
-	table_width 2
+	table_width 2, ChannelPointers
 ; music channels
 	dw wChannel1
 	dw wChannel2
