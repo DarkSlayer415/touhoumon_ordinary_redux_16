@@ -1,6 +1,6 @@
 TreeMons:
 ; entries correspond to TREEMON_SET_* constants
-	table_width 2
+	table_width 2, TreeMons
 	dw TreeMonSet_City
 	dw TreeMonSet_Canyon
 	dw TreeMonSet_Town
@@ -17,115 +17,115 @@ TreeMons:
 ;	db  %, species, level
 
 TreeMonSet_City:
-TreeMonSet_Canyon:
+TreeMonSet_Canyon: ;Suika Trees
 ; common
-	dbbw 50, 10, SPEAROW
-	dbbw 15, 10, SPEAROW
-	dbbw 15, 10, SPEAROW
-	dbbw 10, 10, AIPOM
-	dbbw  5, 10, AIPOM
-	dbbw  5, 10, AIPOM
+	db 25, XATU,  	   20
+	db 25, XATU,       20
+	db 20, SMOOCHUM,   20
+	db 10, SMOOCHUM,   20
+	db 10, SMOOCHUM,   20
+	db 10, RATTATA,    24
 	db -1
 ; rare
-	dbbw 50, 10, SPEAROW
-	dbbw 15, 10, HERACROSS
-	dbbw 15, 10, HERACROSS
-	dbbw 10, 10, AIPOM
-	dbbw  5, 10, AIPOM
-	dbbw  5, 10, AIPOM
+	db 25, SMOOCHUM,   20
+	db 25, SMOOCHUM,   20
+	db 20, SMOOCHUM,   20
+	db 10, RATTATA,    24
+	db 10, RATTATA,    24
+	db 10, RATTATA,    24
 	db -1
 
-TreeMonSet_Town:
+TreeMonSet_Town: ;Yuyuko Trees
 ; common
-	dbbw 50, 10, SPEAROW
-	dbbw 15, 10, EKANS
-	dbbw 15, 10, SPEAROW
-	dbbw 10, 10, AIPOM
-	dbbw  5, 10, AIPOM
-	dbbw  5, 10, AIPOM
+	db 25, NATU,   	   10
+	db 25, NATU,       10
+	db 20, HOUNDOUR,   12
+	db 10, HOUNDOUR,   14
+	db 10, HOUNDOUR,   14
+	db 10, HOUNDOUR,   16
 	db -1
 ; rare
-	dbbw 50, 10, SPEAROW
-	dbbw 15, 10, HERACROSS
-	dbbw 15, 10, HERACROSS
-	dbbw 10, 10, AIPOM
-	dbbw  5, 10, AIPOM
-	dbbw  5, 10, AIPOM
+	db 25, HOUNDOUR,   10
+	db 25, HOUNDOUR,   10
+	db 20, HOUNDOUR,   12
+	db 10, HOUNDOUR,   14
+	db 10, HOUNDOUR,   14
+	db 10, HOUNDOUR,   16
 	db -1
 
-TreeMonSet_Route:
+TreeMonSet_Route: ;Kanako Trees
 ; common
-	dbbw 50, 10, HOOTHOOT
-	dbbw 15, 10, SPINARAK
-	dbbw 15, 10, LEDYBA
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	db 25, NATU,       10
+	db 25, NATU,       10
+	db 20, MURKROW,    12
+	db 10, MURKROW,    14
+	db 10, MURKROW,    14
+	db 10, MURKROW,    16
 	db -1
 ; rare
-	dbbw 50, 10, HOOTHOOT
-	dbbw 15, 10, PINECO
-	dbbw 15, 10, PINECO
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	db 25, MURKROW,    10
+	db 25, MURKROW,    10
+	db 20, MURKROW,    12
+	db 10, MURKROW,    14
+	db 10, MURKROW,    14
+	db 10, MURKROW,    16
 	db -1
 
-TreeMonSet_Kanto:
+TreeMonSet_Kanto: ;Evolved Form Trees (Suika, Kanako, Yuyuko)
 ; common
-	dbbw 50, 10, HOOTHOOT
-	dbbw 15, 10, EKANS
-	dbbw 15, 10, HOOTHOOT
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	db 25, HOUNDOOM,   35
+	db 25, GOLDEEN,    35
+	db 20, RATTATA,    35
+	db 10, KINGDRA,    40
+	db 10, SEAKING,    40
+	db 10, RATICATE,   40
 	db -1
 ; rare
-	dbbw 50, 10, HOOTHOOT
-	dbbw 15, 10, PINECO
-	dbbw 15, 10, PINECO
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	db 25, HOUNDOOM,   35
+	db 25, GOLDEEN,    35
+	db 20, RATTATA,    35
+	db 10, KINGDRA,    40
+	db 10, SEAKING,    40
+	db 10, RATICATE,   40
 	db -1
 
-TreeMonSet_Lake:
+TreeMonSet_Lake: ;Kanako/Yuyuko Trees
 ; common
-	dbbw 50, 10, HOOTHOOT
-	dbbw 15, 10, VENONAT
-	dbbw 15, 10, HOOTHOOT
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	db 25, HOUNDOUR,   24
+	db 25, MURKROW,    24
+	db 20, HOUNDOUR,   26
+	db 10, MURKROW,    26
+	db 10, MURKROW,    26
+	db 10, HOUNDOOM,   28
 	db -1
 ; rare
-	dbbw 50, 10, HOOTHOOT
-	dbbw 15, 10, PINECO
-	dbbw 15, 10, PINECO
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	db 25, HOUNDOUR,   24
+	db 25, MURKROW,    24
+	db 20, HOUNDOUR,   26
+	db 10, MURKROW,    26
+	db 10, MURKROW,    26
+	db 10, GOLDEEN,    28
 	db -1
 
-TreeMonSet_Forest:
-; common
-	dbbw 50, 10, HOOTHOOT
-	dbbw 15, 10, PINECO
-	dbbw 15, 10, PINECO
-	dbbw 10, 10, NOCTOWL
-	dbbw  5, 10, BUTTERFREE
-	dbbw  5, 10, BEEDRILL
+TreeMonSet_Forest: ;Fairy Trees
+; common (Fairies of Light)
+	db 25, MANKEY,     12
+	db 25, PSYDUCK,    12
+	db 20, MEOWTH,     12
+	db 10, PRIMEAPE,   15
+	db 10, GOLDUCK,    15
+	db 10, PERSIAN,    15
 	db -1
-; rare
-	dbbw 50, 10, HOOTHOOT
-	dbbw 15, 10, CATERPIE
-	dbbw 15, 10, WEEDLE
-	dbbw 10, 10, HOOTHOOT
-	dbbw  5, 10, METAPOD
-	dbbw  5, 10, KAKUNA
+; rare (Himawari + Evos)
+	db 35, EEVEE,      12
+	db 10, EEVEE,      13
+	db 10, EEVEE,      13
+	db 15, VULPIX,     15
+	db 15, ZUBAT,      15
+	db 15, MAGIKARP,   15
 	db -1
 
 TreeMonSet_Rock:
-	dbbw 90, 15, KRABBY
-	dbbw 10, 15, SHUCKLE
+	db 80, GIRAFARIG,  20
+	db 20, PINECO,     25
 	db -1

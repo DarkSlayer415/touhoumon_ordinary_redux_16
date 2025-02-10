@@ -1,51 +1,308 @@
 BattleTowerMons:
-; 10 groups of 21 mons.
-; Each mon is several bytes too long; the initial species, item and move IDs must be converted to 8-bit when loading.
-	table_width NICKNAMED_MON_STRUCT_LENGTH + 5
+; 10 groups (one per floor level) of 21 mons (BATTLETOWER_NUM_UNIQUE_MON).
+	table_width NICKNAMED_MON_STRUCT_LENGTH, BattleTowerMons
 
 ; BattleTowerMons group 1
 
-	dw JOLTEON
+	db BULBASAUR ;CReimu
 	db MIRACLEBERRY
-	dw THUNDERBOLT, HYPER_BEAM, SHADOW_BALL, ROAR
-
+	db FLASH, RAZOR_WIND, HEADBUTT, PROTECT
 	dw 0 ; OT ID
-	bigdt 1000 ; Exp
+	dt 1000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 40000
-	bigdw 40000
-	bigdw 35000
-	bigdw 40000
-	dn 13, 13, 11, 13 ; DVs
-	db 15, 5, 15, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 10 ; Level
 	db 0, 0 ; Status
-	bigdw 41 ; HP
-	bigdw 41 ; Max HP
-	bigdw 25 ; Atk
+	bigdw 39 ; HP
+	bigdw 39 ; Max HP
+	bigdw 24 ; Atk
 	bigdw 24 ; Def
-	bigdw 37 ; Spd
-	bigdw 34 ; SAtk
-	bigdw 31 ; SDef
+	bigdw 24 ; Spd
+	bigdw 24 ; SAtk
+	bigdw 24 ; SDef
 	db "SANDA-SU@@@"
 
-	dw ESPEON
-	db LEFTOVERS
-	dw MUD_SLAP, PSYCHIC_M, PSYCH_UP, TOXIC
-
+	db CHARMANDER ;CMarisa
+	db BERRY_JUICE
+	db THUNDERSHOCK, EMBER, PROTECT, TOXIC
 	dw 0 ; OT ID
-	bigdt 1000 ; Exp
+	dt 1000 ; Exp
 	; Stat exp
-	bigdw 40000
-	bigdw 50000
-	bigdw 35000
-	bigdw 40000
-	bigdw 40000
-	dn 14, 13, 15, 11 ; DVs
-	db 10, 10, 10, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 25, 25, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 39 ; HP
+	bigdw 39 ; Max HP
+	bigdw 22 ; Atk
+	bigdw 23 ; Def
+	bigdw 26 ; Spd
+	bigdw 26 ; SAtk
+	bigdw 23 ; SDef
+	db "E-HUi@@@@@@"
+
+	db SQUIRTLE ;CSakuya
+	db SCOPE_LENS
+	db CONFUSION, CUT, RAZOR_WIND, PROTECT
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 25, 20, 20, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 39 ; HP
+	bigdw 39 ; Max HP
+	bigdw 24 ; Atk
+	bigdw 23 ; Def
+	bigdw 26 ; Spd
+	bigdw 24 ; SAtk
+	bigdw 23 ; SDef
+	db "BURAtuKI-@@"
+
+	db CHIKORITA ;CKaguya
+	db LEFTOVERS
+	db ABSORB, CONFUSION, REFLECT, LIGHT_SCREEN
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 25, 20, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 39 ; HP
+	bigdw 39 ; Max HP
+	bigdw 22 ; Atk
+	bigdw 25 ; Def
+	bigdw 22 ; Spd
+	bigdw 26 ; SAtk
+	bigdw 25 ; SDef
+	db "SO-NANSU@@@"
+
+	db CYNDAQUIL ;CMokou
+	db SCOPE_LENS
+	db EMBER, KARATE_CHOP, SUNNY_DAY, DRAGONBREATH
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 25, 25, 10, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 39 ; HP
+	bigdw 39 ; Max HP
+	bigdw 25 ; Atk
+	bigdw 22 ; Def
+	bigdw 26 ; Spd
+	bigdw 25 ; SAtk
+	bigdw 22 ; SDef
+	db "GARU-RA@@@@"
+
+	db TOTODILE ;CEirin
+	db MIRACLEBERRY
+	db WATER_GUN, ACID, TOXIC, PROTECT
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 25, 25, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 39 ; HP
+	bigdw 39 ; Max HP
+	bigdw 23 ; Atk
+	bigdw 25 ; Def
+	bigdw 23 ; Spd
+	bigdw 26 ; SAtk
+	bigdw 25 ; SDef
+	db "SANI-GO@@@@"
+
+	db KABUTO ;CHakurei
+	db GOLD_BERRY
+	db CONFUSION, ROCK_SMASH, CURSE, HEADBUTT
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 25, 15, 10, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 40 ; HP
+	bigdw 40 ; Max HP
+	bigdw 28 ; Atk
+	bigdw 24 ; Def
+	bigdw 27 ; Spd
+	bigdw 28 ; SAtk
+	bigdw 24 ; SDef
+	db "MIRUTANKU@@"
+
+	db OMANYTE ;CKirisame
+	db LEFTOVERS
+	db THUNDERSHOCK, FLASH, DRAGONBREATH, PROTECT
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 25, 20, 20, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 39 ; HP
+	bigdw 39 ; Max HP
+	bigdw 24 ; Atk
+	bigdw 24 ; Def
+	bigdw 28 ; Spd
+	bigdw 28 ; SAtk
+	bigdw 28 ; SDef
+	db "PUTERA@@@@@"
+
+	db CYUUTO ;CYuuto
+	db MIRACLEBERRY
+	db SUPERSONIC, ROCK_THROW, KINESIS, PROTECT
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 39 ; HP
+	bigdw 39 ; Max HP
+	bigdw 27 ; Atk
+	bigdw 24 ; Def
+	bigdw 26 ; Spd
+	bigdw 29 ; SAtk
+	bigdw 26 ; SDef
+	db "RAPURASU@@@"
+
+	db SNEASEL ;CYumeko
+	db BERRY_JUICE
+	db CUT, PURSUIT, SHARPEN, RAZOR_WIND
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 39 ; HP
+	bigdw 39 ; Max HP
+	bigdw 29 ; Atk
+	bigdw 24 ; Def
+	bigdw 23 ; Spd
+	bigdw 20 ; SAtk
+	bigdw 24 ; SDef
+	db "NIyu-RA@@@@"
+
+	db PHANPY ;CElly
+	db BRIGHTPOWDER
+	db TRIPLE_KICK, SHARPEN, CUT, RAZOR_WIND
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 20, 20, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 39 ; HP
+	bigdw 44 ; Max HP
+	bigdw 26 ; Atk
+	bigdw 23 ; Def
+	bigdw 26 ; Spd
+	bigdw 22 ; SAtk
+	bigdw 23 ; SDef
+	db "PORIGON2@@@"
+
+	db MISDREAVUS ;CRan
+	db FOCUS_BAND
+	db MUD_SLAP, CONFUSION, CONFUSE_RAY, DRAGONBREATH
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 25, 10, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 10 ; Level
@@ -53,269 +310,103 @@ BattleTowerMons:
 	bigdw 39 ; HP
 	bigdw 39 ; Max HP
 	bigdw 26 ; Atk
-	bigdw 24 ; Def
-	bigdw 35 ; Spd
-	bigdw 38 ; SAtk
-	bigdw 31 ; SDef
-	db "E-HUi@@@@@@"
-
-	dw UMBREON
-	db GOLD_BERRY
-	dw SHADOW_BALL, IRON_TAIL, PSYCH_UP, TOXIC
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 40000
-	bigdw 40000
-	bigdw 45000
-	bigdw 50000
-	bigdw 40000
-	dn 13, 11, 14, 15 ; DVs
-	db 15, 15, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 46 ; HP
-	bigdw 46 ; Max HP
-	bigdw 25 ; Atk
-	bigdw 34 ; Def
-	bigdw 26 ; Spd
-	bigdw 25 ; SAtk
-	bigdw 39 ; SDef
-	db "BURAtuKI-@@"
-
-	dw WOBBUFFET
-	db FOCUS_BAND
-	dw COUNTER, MIRROR_COAT, SAFEGUARD, DESTINY_BOND
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 7, 15, 13, 7 ; DVs
-	db 20, 20, 25, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 66 ; HP
-	bigdw 66 ; Max HP
-	bigdw 18 ; Atk
-	bigdw 25 ; Def
-	bigdw 19 ; Spd
-	bigdw 18 ; SAtk
-	bigdw 23 ; SDef
-	db "SO-NANSU@@@"
-
-	dw KANGASKHAN
-	db MIRACLEBERRY
-	dw REVERSAL, HYPER_BEAM, EARTHQUAKE, ATTRACT
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 40000
-	bigdw 30000
-	bigdw 40000
-	bigdw 30000
-	bigdw 30000
-	dn 14, 15, 12, 15 ; DVs
-	db 15, 5, 10, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 47 ; HP
-	bigdw 47 ; Max HP
-	bigdw 31 ; Atk
-	bigdw 29 ; Def
-	bigdw 29 ; Spd
-	bigdw 20 ; SAtk
-	bigdw 28 ; SDef
-	db "GARU-RA@@@@"
-
-	dw CORSOLA
-	db SCOPE_LENS
-	dw SURF, PSYCHIC_M, RECOVER, ANCIENTPOWER
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 40000
-	bigdw 30000
-	bigdw 33300
-	bigdw 30000
-	bigdw 30000
-	dn 15, 14, 15, 13 ; DVs
-	db 15, 10, 20, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 38 ; HP
-	bigdw 38 ; Max HP
-	bigdw 23 ; Atk
-	bigdw 29 ; Def
-	bigdw 19 ; Spd
-	bigdw 24 ; SAtk
-	bigdw 28 ; SDef
-	db "SANI-GO@@@@"
-
-	dw MILTANK
-	db GOLD_BERRY
-	dw BLIZZARD, EARTHQUAKE, HYPER_BEAM, TOXIC
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 35000
-	dn 11, 11, 13, 15 ; DVs
-	db 5, 10, 5, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 46 ; HP
-	bigdw 46 ; Max HP
-	bigdw 27 ; Atk
-	bigdw 32 ; Def
-	bigdw 31 ; Spd
-	bigdw 20 ; SAtk
-	bigdw 26 ; SDef
-	db "MIRUTANKU@@"
-
-	dw AERODACTYL
-	db LEFTOVERS
-	dw HYPER_BEAM, SUPERSONIC, EARTHQUAKE, BITE
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 13, 11, 15, 11 ; DVs
-	db 5, 20, 10, 25 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 43 ; HP
-	bigdw 43 ; Max HP
-	bigdw 32 ; Atk
-	bigdw 24 ; Def
-	bigdw 38 ; Spd
-	bigdw 23 ; SAtk
-	bigdw 26 ; SDef
-	db "PUTERA@@@@@"
-
-	dw LAPRAS
-	db MIRACLEBERRY
-	dw BLIZZARD, SURF, THUNDERBOLT, PSYCHIC_M
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 15, 13, 14, 11 ; DVs
-	db 5, 15, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 52 ; HP
-	bigdw 52 ; Max HP
-	bigdw 29 ; Atk
-	bigdw 27 ; Def
-	bigdw 24 ; Spd
-	bigdw 28 ; SAtk
-	bigdw 30 ; SDef
-	db "RAPURASU@@@"
-
-	dw SNEASEL
-	db GOLD_BERRY
-	dw SLASH, FAINT_ATTACK, SURF, BLIZZARD
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 30000
-	bigdw 35000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 15, 11, 11, 15 ; DVs
-	db 20, 20, 15, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 38 ; HP
-	bigdw 38 ; Max HP
-	bigdw 31 ; Atk
 	bigdw 22 ; Def
-	bigdw 34 ; Spd
-	bigdw 19 ; SAtk
-	bigdw 27 ; SDef
-	db "NIyu-RA@@@@"
+	bigdw 26 ; Spd
+	bigdw 26 ; SAtk
+	bigdw 22 ; SDef
+	db "MUUMA@@@@@@"
 
-	dw PORYGON2
-	db BRIGHTPOWDER
-	dw PSYCHIC_M, BLIZZARD, HYPER_BEAM, TRI_ATTACK
-
+	db HOUNDOUR ;CYuyuko
+	db GOLD_BERRY
+	db NIGHT_SHADE, CONFUSE_RAY, ABSORB, PROTECT
 	dw 0 ; OT ID
-	bigdt 1000 ; Exp
+	dt 1000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 40000
-	bigdw 30000
-	bigdw 30000
-	dn 15, 11, 13, 14 ; DVs
-	db 10, 5, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 10, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 10 ; Level
 	db 0, 0 ; Status
-	bigdw 44 ; HP
-	bigdw 44 ; Max HP
-	bigdw 28 ; Atk
-	bigdw 30 ; Def
-	bigdw 23 ; Spd
-	bigdw 33 ; SAtk
-	bigdw 31 ; SDef
-	db "PORIGON2@@@"
+	bigdw 39 ; HP
+	bigdw 39 ; Max HP
+	bigdw 20 ; Atk
+	bigdw 24 ; Def
+	bigdw 20 ; Spd
+	bigdw 28 ; SAtk
+	bigdw 28 ; SDef
+	db "DERUBIRU@@@"
 
-	dw MISDREAVUS
-	db FOCUS_BAND
-	dw PERISH_SONG, MEAN_LOOK, PAIN_SPLIT, SHADOW_BALL
-
+	db GIRAFARIG ;CTenshi
+	db LEFTOVERS
+	db ROCK_THROW, MUD_SLAP, FALSE_SWIPE, CURSE
 	dw 0 ; OT ID
-	bigdt 1000 ; Exp
+	dt 1000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 14, 15, 13, 15 ; DVs
-	db 5, 5, 20, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 25, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 41 ; HP
+	bigdw 41 ; Max HP
+	bigdw 24 ; Atk
+	bigdw 26 ; Def
+	bigdw 22 ; Spd
+	bigdw 22 ; SAtk
+	bigdw 24 ; SDef
+	db "KIRINRIKI@@"
+
+	db TYROGUE ;CGengetsu
+	db QUICK_CLAW
+	db SWEET_KISS, BITE, PURSUIT, GUST
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 25, 20, 25 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 10 ; Level
+	db 0, 0 ; Status
+	bigdw 37 ; HP
+	bigdw 37 ; Max HP
+	bigdw 27 ; Atk
+	bigdw 21 ; Def
+	bigdw 26 ; Spd
+	bigdw 27 ; SAtk
+	bigdw 21 ; SDef
+	db "HAPINASU@@@"
+
+	db MARILL ;CSuwako
+	db MIRACLEBERRY
+	db WATER_GUN, MUD_SLAP, TWISTER, DEFENSE_CURL
+	dw 0 ; OT ID
+	dt 1000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 25, 20, 20, 30 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 10 ; Level
@@ -323,1058 +414,915 @@ BattleTowerMons:
 	bigdw 37 ; HP
 	bigdw 37 ; Max HP
 	bigdw 24 ; Atk
-	bigdw 24 ; Def
-	bigdw 28 ; Spd
-	bigdw 29 ; SAtk
-	bigdw 29 ; SDef
-	db "MUUMA@@@@@@"
-
-	dw HOUNDOUR
-	db GOLD_BERRY
-	dw FAINT_ATTACK, SOLARBEAM, ROAR, SUNNY_DAY
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 33000
-	bigdw 30000
-	dn 15, 13, 15, 14 ; DVs
-	db 20, 10, 20, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 36 ; HP
-	bigdw 36 ; Max HP
-	bigdw 24 ; Atk
-	bigdw 17 ; Def
-	bigdw 25 ; Spd
-	bigdw 28 ; SAtk
-	bigdw 22 ; SDef
-	db "DERUBIRU@@@"
-
-	dw GIRAFARIG
-	db KINGS_ROCK
-	dw PSYBEAM, MUD_SLAP, SHADOW_BALL, AGILITY
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 14, 13, 15, 13 ; DVs
-	db 20, 10, 15, 30 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 39 ; HP
-	bigdw 39 ; Max HP
-	bigdw 28 ; Atk
-	bigdw 24 ; Def
-	bigdw 29 ; Spd
-	bigdw 29 ; SAtk
-	bigdw 24 ; SDef
-	db "KIRINRIKI@@"
-
-	dw BLISSEY
-	db QUICK_CLAW
-	dw HEADBUTT, SOLARBEAM, ROLLOUT, STRENGTH
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 32000
-	bigdw 40000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 13, 15, 12, 14 ; DVs
-	db 15, 10, 20, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 77 ; HP
-	bigdw 77 ; Max HP
-	bigdw 14 ; Atk
-	bigdw 14 ; Def
-	bigdw 22 ; Spd
-	bigdw 27 ; SAtk
-	bigdw 39 ; SDef
-	db "HAPINASU@@@"
-
-	dw SNORLAX
-	db MIRACLEBERRY
-	dw HEADBUTT, PROTECT, SNORE, SURF
-
-	dw 0 ; OT ID
-	bigdt 1000 ; Exp
-	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 14, 15, 15, 7 ; DVs
-	db 15, 10, 15, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 10 ; Level
-	db 0, 0 ; Status
-	bigdw 57 ; HP
-	bigdw 57 ; Max HP
-	bigdw 34 ; Atk
-	bigdw 25 ; Def
-	bigdw 18 ; Spd
-	bigdw 23 ; SAtk
-	bigdw 32 ; SDef
+	bigdw 22 ; Def
+	bigdw 24 ; Spd
+	bigdw 26 ; SAtk
+	bigdw 26 ; SDef
 	db "KABIGON@@@@"
 
-	dw EXEGGUTOR
+	db EXEGGCUTE ;CRika
 	db KINGS_ROCK
-	dw TOXIC, GIGA_DRAIN, THIEF, CONFUSION
-
+	db TOXIC, SMOKESCREEN, POISON_GAS, ROLLOUT
 	dw 0 ; OT ID
-	bigdt 1000 ; Exp
+	dt 1000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 15, 14, 15, 14 ; DVs
-	db 10, 5, 10, 25 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 20, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 10 ; Level
 	db 0, 0 ; Status
-	bigdw 45 ; HP
-	bigdw 45 ; Max HP
-	bigdw 31 ; Atk
-	bigdw 29 ; Def
+	bigdw 38 ; HP
+	bigdw 38 ; Max HP
+	bigdw 23 ; Atk
+	bigdw 26 ; Def
 	bigdw 23 ; Spd
-	bigdw 37 ; SAtk
-	bigdw 25 ; SDef
+	bigdw 26 ; SAtk
+	bigdw 23 ; SDef
 	db "NAtuSI-@@@@"
 
-	dw HERACROSS
+	db SHUCKLE ;CLouise
 	db GOLD_BERRY
-	dw REVERSAL, ENDURE, COUNTER, ROCK_SMASH
-
+	db SING, ENDURE, SWIFT, PROTECT
 	dw 0 ; OT ID
-	bigdt 1000 ; Exp
+	dt 1000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 15, 7, 15, 7 ; DVs
-	db 15, 10, 20, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 10, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 10 ; Level
 	db 0, 0 ; Status
-	bigdw 43 ; HP
-	bigdw 43 ; Max HP
-	bigdw 37 ; Atk
-	bigdw 25 ; Def
-	bigdw 29 ; Spd
-	bigdw 18 ; SAtk
-	bigdw 29 ; SDef
+	bigdw 41 ; HP
+	bigdw 41 ; Max HP
+	bigdw 23 ; Atk
+	bigdw 24 ; Def
+	bigdw 24 ; Spd
+	bigdw 23 ; SAtk
+	bigdw 24 ; SDef
 	db "HERAKUROSU@"
 
-	dw UNOWN
+	db NATU ;CHatate
 	db BERRY
-	dw HIDDEN_POWER, 0, 0, 0
-
+	db CONFUSION, CONFUSE_RAY, RAZOR_WIND, MUD_SLAP
 	dw 0 ; OT ID
-	bigdt 1000 ; Exp
+	dt 1000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
 	dn 15, 15, 15, 15 ; DVs
-	db 15, 0, 0, 0 ; PP
+	db 25, 10, 20, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 10 ; Level
 	db 0, 0 ; Status
-	bigdw 36 ; HP
-	bigdw 36 ; Max HP
-	bigdw 26 ; Atk
-	bigdw 21 ; Def
-	bigdw 21 ; Spd
+	bigdw 37 ; HP
+	bigdw 37 ; Max HP
+	bigdw 24 ; Atk
+	bigdw 23 ; Def
+	bigdw 26 ; Spd
 	bigdw 26 ; SAtk
-	bigdw 21 ; SDef
+	bigdw 23 ; SDef
 	db "ANNO-N@@@@@"
 
-	dw TAUROS
+	db MAGNEMITE ;CRin
 	db KINGS_ROCK
-	dw HEADBUTT, SWAGGER, TAIL_WHIP, ICY_WIND
-
+	db HEADBUTT, LICK, EMBER, MUD_SLAP
 	dw 0 ; OT ID
-	bigdt 1000 ; Exp
+	dt 1000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 6, 5, 5, 7 ; DVs
-	db 15, 15, 30, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 25, 25, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 10 ; Level
 	db 0, 0 ; Status
-	bigdw 40 ; HP
-	bigdw 40 ; Max HP
-	bigdw 30 ; Atk
-	bigdw 29 ; Def
-	bigdw 32 ; Spd
-	bigdw 18 ; SAtk
-	bigdw 24 ; SDef
+	bigdw 37 ; HP
+	bigdw 37 ; Max HP
+	bigdw 26 ; Atk
+	bigdw 20 ; Def
+	bigdw 26 ; Spd
+	bigdw 28 ; SAtk
+	bigdw 22 ; SDef
 	db "KENTAROSU@@"
 
-	dw MR__MIME
+	db STARYU ;CParsee
 	db QUICK_CLAW
-	dw TOXIC, PSYCH_UP, FIRE_PUNCH, HEADBUTT
-
+	db TOXIC, LICK, POISON_STING, PIN_MISSILE
 	dw 0 ; OT ID
-	bigdt 1000 ; Exp
+	dt 1000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 3, 6, 7 ; DVs
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
 	db 10, 10, 15, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 10 ; Level
 	db 0, 0 ; Status
-	bigdw 34 ; HP
-	bigdw 34 ; Max HP
-	bigdw 19 ; Atk
-	bigdw 22 ; Def
-	bigdw 28 ; Spd
-	bigdw 30 ; SAtk
-	bigdw 34 ; SDef
+	bigdw 43 ; HP
+	bigdw 43 ; Max HP
+	bigdw 20 ; Atk
+	bigdw 26 ; Def
+	bigdw 20 ; Spd
+	bigdw 22 ; SAtk
+	bigdw 28 ; SDef
 	db "BARIYA-DO@@"
 
 
 ; BattleTowerMons group 2
 
-	dw UMBREON
+	db QUAGSIRE ;Keine
 	db LEFTOVERS
-	dw PROTECT, TOXIC, MUD_SLAP, ATTRACT
-
+	db PROTECT, HEADBUTT, CONFUSION, METAL_CLAW
 	dw 0 ; OT ID
-	bigdt 8000 ; Exp
+	dt 8000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 12, 15, 11, 12 ; DVs
-	db 10, 10, 10, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 81 ; HP
-	bigdw 81 ; Max HP
-	bigdw 46 ; Atk
-	bigdw 66 ; Def
-	bigdw 46 ; Spd
-	bigdw 44 ; SAtk
-	bigdw 72 ; SDef
-	db "BURAtuKI-@@"
-
-	dw STARMIE
-	db GOLD_BERRY
-	dw RECOVER, PSYCHIC_M, SURF, PSYCH_UP
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 13, 11, 13, 11 ; DVs
-	db 20, 10, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 71 ; HP
-	bigdw 71 ; Max HP
-	bigdw 51 ; Atk
-	bigdw 54 ; Def
-	bigdw 67 ; Spd
-	bigdw 60 ; SAtk
-	bigdw 54 ; SDef
-	db "SUTA-MI-@@@"
-
-	dw GYARADOS
-	db MIRACLEBERRY
-	dw HYPER_BEAM, DRAGON_RAGE, THUNDERBOLT, FIRE_BLAST
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 10, 15, 13 ; DVs
-	db 5, 10, 15, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 83 ; HP
-	bigdw 83 ; Max HP
-	bigdw 72 ; Atk
-	bigdw 51 ; Def
-	bigdw 54 ; Spd
-	bigdw 45 ; SAtk
-	bigdw 61 ; SDef
-	db "GIyaRADOSU@"
-
-	dw STEELIX
-	db GOLD_BERRY
-	dw ROAR, IRON_TAIL, SWAGGER, EARTHQUAKE
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 30000
-	bigdw 50000
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
 	dn 15, 15, 15, 15 ; DVs
-	db 20, 15, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 77 ; HP
-	bigdw 77 ; Max HP
-	bigdw 55 ; Atk
-	bigdw 102 ; Def
-	bigdw 31 ; Spd
-	bigdw 44 ; SAtk
-	bigdw 48 ; SDef
-	db "HAGANE-RU@@"
-
-	dw ALAKAZAM
-	db BERRY_JUICE
-	dw PSYCHIC_M, PSYCH_UP, TOXIC, THUNDERPUNCH
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 30000
-	bigdw 50000
-	bigdw 40000
-	dn 15, 13, 14, 15 ; DVs
-	db 10, 10, 10, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 68 ; HP
-	bigdw 68 ; Max HP
-	bigdw 42 ; Atk
-	bigdw 36 ; Def
-	bigdw 69 ; Spd
-	bigdw 75 ; SAtk
-	bigdw 55 ; SDef
-	db "HU-DEiN@@@@"
-
-	dw ARCANINE
-	db BRIGHTPOWDER
-	dw FLAMETHROWER, ROAR, HYPER_BEAM, IRON_TAIL
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 35000
-	bigdw 45000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 11, 15, 11 ; DVs
-	db 15, 20, 5, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 81 ; HP
-	bigdw 81 ; Max HP
-	bigdw 64 ; Atk
-	bigdw 52 ; Def
-	bigdw 60 ; Spd
-	bigdw 60 ; SAtk
-	bigdw 52 ; SDef
-	db "UINDEi@@@@@"
-
-	dw HERACROSS
-	db FOCUS_BAND
-	dw ENDURE, REVERSAL, MEGAHORN, EARTHQUAKE
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 30000
-	bigdw 45000
-	bigdw 30000
-	bigdw 45000
-	dn 13, 15, 13, 14 ; DVs
-	db 10, 15, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 78 ; HP
-	bigdw 78 ; Max HP
-	bigdw 68 ; Atk
-	bigdw 51 ; Def
-	bigdw 52 ; Spd
-	bigdw 37 ; SAtk
-	bigdw 59 ; SDef
-	db "HERAKUROSU@"
-
-	dw EXEGGUTOR
-	db LEFTOVERS
-	dw HYPER_BEAM, PSYCHIC_M, TOXIC, DREAM_EATER
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 45000
-	dn 15, 13, 14, 11 ; DVs
-	db 5, 10, 10, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 83 ; HP
-	bigdw 83 ; Max HP
-	bigdw 60 ; Atk
-	bigdw 55 ; Def
-	bigdw 43 ; Spd
-	bigdw 70 ; SAtk
-	bigdw 46 ; SDef
-	db "NAtuSI-@@@@"
-
-	dw AERODACTYL
-	db GOLD_BERRY
-	dw REST, HYPER_BEAM, EARTHQUAKE, DRAGON_RAGE
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 45000
-	dn 15, 11, 11, 11 ; DVs
-	db 10, 5, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 78 ; HP
-	bigdw 78 ; Max HP
-	bigdw 64 ; Atk
-	bigdw 45 ; Def
-	bigdw 72 ; Spd
-	bigdw 44 ; SAtk
-	bigdw 50 ; SDef
-	db "PUTERA@@@@@"
-
-	dw BLISSEY
-	db BRIGHTPOWDER
-	dw PSYCHIC_M, SUBMISSION, SOFTBOILED, COUNTER
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 30000
-	bigdw 30000
-	bigdw 50000
-	dn 11, 13, 15, 14 ; DVs
-	db 10, 25, 10, 20 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 148 ; HP
-	bigdw 148 ; Max HP
-	bigdw 24 ; Atk
-	bigdw 22 ; Def
-	bigdw 41 ; Spd
-	bigdw 51 ; SAtk
-	bigdw 75 ; SDef
-	db "HAPINASU@@@"
-
-	dw LAPRAS
-	db GOLD_BERRY
-	dw PSYCHIC_M, THUNDERBOLT, BLIZZARD, CONFUSE_RAY
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 30000
-	bigdw 40000
-	bigdw 55000
-	bigdw 30000
-	dn 15, 14, 13, 7 ; DVs
-	db 10, 15, 5, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 98 ; HP
-	bigdw 98 ; Max HP
-	bigdw 53 ; Atk
-	bigdw 52 ; Def
-	bigdw 45 ; Spd
-	bigdw 50 ; SAtk
-	bigdw 54 ; SDef
-	db "RAPURASU@@@"
-
-	dw PIKACHU
-	db LIGHT_BALL
-	dw THUNDERBOLT, THUNDER_WAVE, STRENGTH, TOXIC
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 12, 15, 14 ; DVs
-	db 15, 20, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 58 ; HP
-	bigdw 58 ; Max HP
-	bigdw 44 ; Atk
-	bigdw 32 ; Def
-	bigdw 58 ; Spd
-	bigdw 41 ; SAtk
-	bigdw 37 ; SDef
-	db "PIKATIyuU@@"
-
-	dw SCIZOR
-	db FOCUS_BAND
-	dw STEEL_WING, SLASH, TOXIC, SANDSTORM
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 40000
-	bigdw 45000
-	bigdw 40000
-	bigdw 45000
-	bigdw 50000
-	dn 15, 13, 15, 14 ; DVs
-	db 25, 20, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 73 ; HP
-	bigdw 73 ; Max HP
-	bigdw 73 ; Atk
-	bigdw 60 ; Def
-	bigdw 47 ; Spd
-	bigdw 43 ; SAtk
-	bigdw 53 ; SDef
-	db "HAtuSAMU@@@"
-
-	dw HITMONCHAN
-	db GOLD_BERRY
-	dw THUNDERPUNCH, ICE_PUNCH, FIRE_PUNCH, MEGA_PUNCH
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 35000
-	bigdw 50000
-	bigdw 30000
-	dn 15, 11, 15, 13 ; DVs
-	db 15, 15, 15, 20 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 67 ; HP
-	bigdw 67 ; Max HP
-	bigdw 63 ; Atk
-	bigdw 50 ; Def
-	bigdw 52 ; Spd
-	bigdw 32 ; SAtk
-	bigdw 62 ; SDef
-	db "EBIWARA-@@@"
-
-	dw TAUROS
-	db BRIGHTPOWDER
-	dw THUNDERBOLT, EARTHQUAKE, HYPER_BEAM, BLIZZARD
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 30000
-	bigdw 30000
-	dn 15, 11, 14, 15 ; DVs
-	db 15, 10, 5, 5 ; PP
+	db 10, 15, 25, 25 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 20 ; Level
 	db 0, 0 ; Status
 	bigdw 76 ; HP
 	bigdw 76 ; Max HP
-	bigdw 61 ; Atk
-	bigdw 58 ; Def
-	bigdw 63 ; Spd
-	bigdw 35 ; SAtk
-	bigdw 47 ; SDef
-	db "KENTAROSU@@"
+	bigdw 51 ; Atk
+	bigdw 51 ; Def
+	bigdw 51 ; Spd
+	bigdw 51 ; SAtk
+	bigdw 51 ; SDef
+	db "BURAtuKI-@@"
 
-	dw AZUMARILL
-	db MYSTIC_WATER
-	dw SURF, BLIZZARD, ATTRACT, RAIN_DANCE
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	dn 14, 13, 15, 7 ; DVs
-	db 15, 5, 15, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 82 ; HP
-	bigdw 82 ; Max HP
-	bigdw 40 ; Atk
-	bigdw 52 ; Def
-	bigdw 41 ; Spd
-	bigdw 37 ; SAtk
-	bigdw 49 ; SDef
-	db "MARIRURI@@@"
-
-	dw MILTANK
-	db KINGS_ROCK
-	dw EARTHQUAKE, THUNDER, ATTRACT, SURF
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	dn 13, 15, 15, 14 ; DVs
-	db 10, 10, 15, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 83 ; HP
-	bigdw 83 ; Max HP
-	bigdw 52 ; Atk
-	bigdw 63 ; Def
-	bigdw 61 ; Spd
-	bigdw 36 ; SAtk
-	bigdw 48 ; SDef
-	db "MIRUTANKU@@"
-
-	dw WIGGLYTUFF
+	db STARMIE ;Parsee
 	db GOLD_BERRY
-	dw HYPER_BEAM, BLIZZARD, FIRE_BLAST, ATTRACT
-
+	db NIGHT_SHADE, TOXIC, CONFUSE_RAY, PROTECT
 	dw 0 ; OT ID
-	bigdt 8000 ; Exp
+	dt 8000 ; Exp
 	; Stat exp
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	dn 12, 7, 15, 14 ; DVs
-	db 5, 5, 5, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 20 ; Level
 	db 0, 0 ; Status
-	bigdw 98 ; HP
-	bigdw 98 ; Max HP
-	bigdw 47 ; Atk
-	bigdw 35 ; Def
-	bigdw 39 ; Spd
-	bigdw 50 ; SAtk
-	bigdw 40 ; SDef
-	db "PUKURIN@@@@"
+	bigdw 84 ; HP
+	bigdw 84 ; Max HP
+	bigdw 41 ; Atk
+	bigdw 51 ; Def
+	bigdw 41 ; Spd
+	bigdw 47 ; SAtk
+	bigdw 59 ; SDef
+	db "SUTA-MI-@@@"
 
-	dw WIGGLYTUFF
-	db PINK_BOW
-	dw PSYCHIC_M, SWAGGER, PSYCH_UP, HEADBUTT
-
+	db MAGIKARP ;Daiyousei
+	db MIRACLEBERRY
+	db FURY_CUTTER, FLASH, PROTECT, GIGA_DRAIN
 	dw 0 ; OT ID
-	bigdt 8000 ; Exp
+	dt 8000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 12, 7, 7, 7 ; DVs
-	db 10, 15, 10, 15 ; PP
-	db 0 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 20 ; Level
-	db 0, 0 ; Status
-	bigdw 97 ; HP
-	bigdw 97 ; Max HP
-	bigdw 46 ; Atk
-	bigdw 34 ; Def
-	bigdw 34 ; Spd
-	bigdw 46 ; SAtk
-	bigdw 36 ; SDef
-	db "PUKURIN@@@@"
-
-	dw NIDOKING
-	db BERRY
-	dw BLIZZARD, EARTHQUAKE, SURF, THUNDERPUNCH
-
-	dw 0 ; OT ID
-	bigdt 8000 ; Exp
-	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 5, 6, 4, 6 ; DVs
-	db 5, 10, 15, 15 ; PP
-	db 0 ; Happiness
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 10, 15 ; PP
+	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 20 ; Level
 	db 0, 0 ; Status
 	bigdw 74 ; HP
 	bigdw 74 ; Max HP
-	bigdw 52 ; Atk
-	bigdw 46 ; Def
-	bigdw 49 ; Spd
-	bigdw 50 ; SAtk
-	bigdw 46 ; SDef
-	db "NIDOKINGU@@"
+	bigdw 49 ; Atk
+	bigdw 49 ; Def
+	bigdw 53 ; Spd
+	bigdw 49 ; SAtk
+	bigdw 49 ; SDef
+	db "GIyaRADOSU@"
 
-	dw QUAGSIRE
-	db QUICK_CLAW
-	dw AMNESIA, EARTHQUAKE, SURF, RAIN_DANCE
-
+	db DUNSPARCE ;CYumemi
+	db GOLD_BERRY
+	db FIRE_PUNCH, ICE_PUNCH, SWAGGER, DOUBLE_TEAM
 	dw 0 ; OT ID
-	bigdt 8000 ; Exp
+	dt 8000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 5, 5, 4, 7 ; DVs
-	db 20, 10, 15, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 64 ; HP
+	bigdw 64 ; Max HP
+	bigdw 39 ; Atk
+	bigdw 43 ; Def
+	bigdw 47 ; Spd
+	bigdw 47 ; SAtk
+	bigdw 43 ; SDef
+	db "HAGANE-RU@@"
+
+	db ABRA ;CEiki 
+	db BERRY_JUICE
+	db PSYBEAM, SONICBOOM, SPIKES, KINESIS
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 66 ; HP
+	bigdw 66 ; Max HP
+	bigdw 39 ; Atk
+	bigdw 43 ; Def
+	bigdw 37 ; Spd
+	bigdw 51 ; SAtk
+	bigdw 47 ; SDef
+	db "HU-DEiN@@@@"
+
+	db ARCANINE ;Rumia
+	db BRIGHTPOWDER
+	db HAZE, SMOG, FAINT_ATTACK, CONFUSE_RAY
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 30, 20, 20, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 74 ; HP
+	bigdw 74 ; Max HP
+	bigdw 51 ; Atk
+	bigdw 41 ; Def
+	bigdw 57 ; Spd
+	bigdw 51 ; SAtk
+	bigdw 49 ; SDef
+	db "UINDEi@@@@@"
+
+	db HERACROSS ;Louise
+	db FOCUS_BAND
+	db SING, CHARM, ICY_WIND, HEADBUTT
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 20, 20, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 80 ; HP
+	bigdw 80 ; Max HP
+	bigdw 47 ; Atk
+	bigdw 51 ; Def
+	bigdw 47 ; Spd
+	bigdw 47 ; SAtk
+	bigdw 51 ; SDef
+	db "HERAKUROSU@"
+
+	db MAROWAK ;Meira
+	db SCOPE_LENS
+	db SLASH, FALSE_SWIPE, PURSUIT, FOCUS_ENERGY
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 25, 20, 30 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 74 ; HP
+	bigdw 74 ; Max HP
+	bigdw 59 ; Atk
+	bigdw 43 ; Def
+	bigdw 61 ; Spd
+	bigdw 45 ; SAtk
+	bigdw 45 ; SDef
+	db "NAtuSI-@@@@"
+
+	db SANDSLASH ;Ellen
+	db GOLD_BERRY
+	db SUPERSONIC, SWEET_KISS, ICE_PUNCH, THUNDERPUNCH
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 10, 15, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 78 ; HP
+	bigdw 78 ; Max HP
+	bigdw 43 ; Atk
+	bigdw 43 ; Def
+	bigdw 53 ; Spd
+	bigdw 57 ; SAtk
+	bigdw 53 ; SDef
+	db "PUTERA@@@@@"
+
+	db HITMONTOP ;Gengetsu
+	db BRIGHTPOWDER
+	db PURSUIT, SUPERSONIC, SCREECH, STOMP
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 72 ; HP
+	bigdw 72 ; Max HP
+	bigdw 57 ; Atk
+	bigdw 45 ; Def
+	bigdw 55 ; Spd
+	bigdw 57 ; SAtk
+	bigdw 45 ; SDef
+	db "HAPINASU@@@"
+
+	db RHYHORN ;Ran
+	db GOLD_BERRY
+	db DIG, PSYBEAM, CONFUSE_RAY, BODY_SLAM
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 20, 10, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 72 ; HP
+	bigdw 72 ; Max HP
+	bigdw 55 ; Atk
+	bigdw 47 ; Def
+	bigdw 55 ; Spd
+	bigdw 55 ; SAtk
+	bigdw 47 ; SDef
+	db "RAPURASU@@@"
+
+	db PIKACHU ;Nitori
+	db MIRACLEBERRY
+	db SPARK, BUBBLEBEAM, THUNDER_WAVE, ICE_PUNCH
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 72 ; HP
+	bigdw 72 ; Max HP
+	bigdw 43 ; Atk
+	bigdw 49 ; Def
+	bigdw 51 ; Spd
+	bigdw 57 ; SAtk
+	bigdw 51 ; SDef
+	db "PIKATIyuU@@"
+
+	db ELECTRODE ;Tokiko
+	db FOCUS_BAND
+	db STEEL_WING, WING_ATTACK, FOCUS_ENERGY, QUICK_ATTACK
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 25, 20, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 74 ; HP
+	bigdw 74 ; Max HP
+	bigdw 55 ; Atk
+	bigdw 51 ; Def
+	bigdw 53 ; Spd
+	bigdw 43 ; SAtk
+	bigdw 49 ; SDef
+	db "HAtuSAMU@@@"
+
+	db ARBOK ;Minoriko
+	db GOLD_BERRY
+	db MEGA_DRAIN, FLASH, LEECH_SEED, POISONPOWDER
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 20, 10, 25 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 80 ; HP
+	bigdw 80 ; Max HP
+	bigdw 43 ; Atk
+	bigdw 55 ; Def
+	bigdw 43 ; Spd
+	bigdw 47 ; SAtk
+	bigdw 55 ; SDef
+	db "EBIWARA-@@@"
+
+	db VENOMOTH ;Kisume
+	db BRIGHTPOWDER
+	db FIRE_SPIN, WHIRLPOOL, NIGHT_SHADE, BIDE
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 20, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 80 ; HP
+	bigdw 80 ; Max HP
+	bigdw 39 ; Atk
+	bigdw 63 ; Def
+	bigdw 39 ; Spd
+	bigdw 51 ; SAtk
+	bigdw 51 ; SDef
+	db "KENTAROSU@@"
+
+	db GLOOM ;Sanae
+	db MYSTIC_WATER
+	db SURF, RAZOR_LEAF, GROWTH, RAIN_DANCE
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 25, 30, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 76 ; HP
+	bigdw 76 ; Max HP
+	bigdw 47 ; Atk
+	bigdw 51 ; Def
+	bigdw 49 ; Spd
+	bigdw 57 ; SAtk
+	bigdw 51 ; SDef
+	db "MARIRURI@@@"
+
+	db SMEARGLE ;Mugetsu
+	db LEFTOVERS
+	db ENCORE, STOMP, FLASH, SWEET_KISS
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 5, 20, 20, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 80 ; HP
+	bigdw 80 ; Max HP
+	bigdw 47 ; Atk
+	bigdw 57 ; Def
+	bigdw 43 ; Spd
+	bigdw 47 ; SAtk
+	bigdw 57 ; SDef
+	db "MIRUTANKU@@"
+
+	db JIGGLYPUFF ;Alice
+	db KINGS_ROCK
+	db AURORA_BEAM, FLASH, KINESIS, BARRIER
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 78 ; HP
+	bigdw 78 ; Max HP
+	bigdw 43 ; Atk
+	bigdw 47 ; Def
+	bigdw 53 ; Spd
+	bigdw 57 ; SAtk
+	bigdw 47 ; SDef
+	db "PUKURIN@@@@"
+
+	db NOCTOWL ;Kotohime 
+	db PINK_BOW
+	db TAKE_DOWN, CHARM, PROTECT, HEADBUTT
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 20, 10, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 20 ; Level
 	db 0, 0 ; Status
-	bigdw 81 ; HP
-	bigdw 81 ; Max HP
-	bigdw 49 ; Atk
-	bigdw 49 ; Def
-	bigdw 29 ; Spd
-	bigdw 42 ; SAtk
-	bigdw 42 ; SDef
+	bigdw 84 ; HP
+	bigdw 84 ; Max HP
+	bigdw 47 ; Atk
+	bigdw 55 ; Def
+	bigdw 39 ; Spd
+	bigdw 43 ; SAtk
+	bigdw 55 ; SDef
+	db "PUKURIN@@@@"
+
+	db GRANBULL ;Sara
+	db BERRY_JUICE
+	db MEGA_PUNCH, MACH_PUNCH, FOCUS_ENERGY, PROTECT
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 25, 30, 10 ; PP
+	db 0 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 78 ; HP
+	bigdw 78 ; Max HP
+	bigdw 57 ; Atk
+	bigdw 53 ; Def
+	bigdw 43 ; Spd
+	bigdw 39 ; SAtk
+	bigdw 53 ; SDef
+	db "NIDOKINGU@@"
+
+	db GRAVELER ;Youmu
+	db QUICK_CLAW
+	db SHARPEN, METAL_CLAW, FALSE_SWIPE, LICK
+	dw 0 ; OT ID
+	dt 8000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 30, 25, 25, 25 ; PP
+	db 0 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 20 ; Level
+	db 0, 0 ; Status
+	bigdw 70 ; HP
+	bigdw 70 ; Max HP
+	bigdw 55 ; Atk
+	bigdw 45 ; Def
+	bigdw 61 ; Spd
+	bigdw 55 ; SAtk
+	bigdw 45 ; SDef
 	db "NUO-@@@@@@@"
 
 
 ; BattleTowerMons group 3
 
-	dw JOLTEON
+	db JOLTEON ;ELunaChild
 	db MIRACLEBERRY
-	dw THUNDERBOLT, THUNDER_WAVE, ROAR, MUD_SLAP
-
+	db THUNDERPUNCH, THUNDER_WAVE, AGILITY, FLASH
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 55000
-	dn 13, 11, 14, 13 ; DVs
-	db 15, 20, 20, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 20, 20, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 103 ; HP
-	bigdw 103 ; Max HP
-	bigdw 68 ; Atk
-	bigdw 64 ; Def
-	bigdw 107 ; Spd
-	bigdw 96 ; SAtk
-	bigdw 87 ; SDef
+	bigdw 115 ; HP
+	bigdw 115 ; Max HP
+	bigdw 77 ; Atk
+	bigdw 74 ; Def
+	bigdw 101 ; Spd
+	bigdw 98 ; SAtk
+	bigdw 74 ; SDef
 	db "SANDA-SU@@@"
 
-	dw POLIWRATH
+	db POLIWRATH ;EKomachi
 	db BRIGHTPOWDER
-	dw DOUBLE_TEAM, SURF, FISSURE, SUBMISSION
-
+	db SHADOW_BALL, SURF, SLASH, CONFUSE_RAY
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 55000
-	bigdw 55000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 13, 15, 11 ; DVs
-	db 15, 15, 5, 25 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 119 ; HP
-	bigdw 119 ; Max HP
-	bigdw 81 ; Atk
-	bigdw 87 ; Def
-	bigdw 73 ; Spd
-	bigdw 70 ; SAtk
-	bigdw 82 ; SDef
+	bigdw 118 ; HP
+	bigdw 118 ; Max HP
+	bigdw 89 ; Atk
+	bigdw 77 ; Def
+	bigdw 83 ; Spd
+	bigdw 101 ; SAtk
+	bigdw 77 ; SDef
 	db "NIyoROBON@@"
 
-	dw STARMIE
+	db GYARADOS ;EDaiyousei
 	db LEFTOVERS
-	dw THUNDER_WAVE, PSYCHIC_M, RECOVER, SURF
-
+	db MOONLIGHT, CRABHAMMER, SLEEP_POWDER, SWEET_SCENT
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
 	dn 15, 15, 15, 15 ; DVs
-	db 20, 10, 20, 15 ; PP
+	db 15, 15, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 101 ; HP
-	bigdw 101 ; Max HP
-	bigdw 75 ; Atk
-	bigdw 81 ; Def
-	bigdw 99 ; Spd
-	bigdw 90 ; SAtk
-	bigdw 81 ; SDef
+	bigdw 112 ; HP
+	bigdw 112 ; Max HP
+	bigdw 86 ; Atk
+	bigdw 77 ; Def
+	bigdw 89 ; Spd
+	bigdw 86 ; SAtk
+	bigdw 77 ; SDef
 	db "SUTA-MI-@@@"
 
-	dw JYNX
+	db VAPOREON ;EStar
 	db GOLD_BERRY
-	dw BLIZZARD, LOVELY_KISS, DREAM_EATER, ATTRACT
-
+	db SURF, FLASH, MIST, HAZE
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 30000
-	bigdw 50000
-	dn 15, 11, 14, 14 ; DVs
-	db 5, 10, 15, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 20, 30, 30 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 102 ; HP
-	bigdw 102 ; Max HP
-	bigdw 60 ; Atk
-	bigdw 49 ; Def
-	bigdw 83 ; Spd
-	bigdw 98 ; SAtk
-	bigdw 86 ; SDef
+	bigdw 121 ; HP
+	bigdw 121 ; Max HP
+	bigdw 68 ; Atk
+	bigdw 89 ; Def
+	bigdw 74 ; Spd
+	bigdw 89 ; SAtk
+	bigdw 98 ; SDef
 	db "RU-ZIyuRA@@"
 
-	dw DUGTRIO
+	db GOLBAT ;ELilyBlack
 	db KINGS_ROCK
-	dw EARTHQUAKE, SLUDGE_BOMB, SLASH, MUD_SLAP
-
+	db MOONLIGHT, STEEL_WING, FAINT_ATTACK, PURSUIT
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 30000
-	bigdw 50000
-	bigdw 50000
-	dn 14, 15, 15, 15 ; DVs
-	db 10, 10, 20, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 20, 20, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 81 ; HP
-	bigdw 81 ; Max HP
-	bigdw 77 ; Atk
-	bigdw 56 ; Def
-	bigdw 102 ; Spd
-	bigdw 60 ; SAtk
-	bigdw 72 ; SDef
+	bigdw 106 ; HP
+	bigdw 106 ; Max HP
+	bigdw 92 ; Atk
+	bigdw 68 ; Def
+	bigdw 101 ; Spd
+	bigdw 92 ; SAtk
+	bigdw 68 ; SDef
 	db "DAGUTORIO@@"
 
-	dw BELLOSSOM
+	db NINETALES ;ELilyWhite 
 	db BRIGHTPOWDER
-	dw GIGA_DRAIN, SUNNY_DAY, SOLARBEAM, DOUBLE_TEAM
-
+	db GIGA_DRAIN, MOONLIGHT, SAFEGUARD, ENCORE
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 45000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 15, 13, 11 ; DVs
-	db 5, 5, 10, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 20, 5 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 30 ; Level
+	db 0, 0 ; Status
+	bigdw 133 ; HP
+	bigdw 133 ; Max HP
+	bigdw 71 ; Atk
+	bigdw 92 ; Def
+	bigdw 68 ; Spd
+	bigdw 71 ; SAtk
+	bigdw 92 ; SDef
+	db "KIREIHANA@@"
+
+	db DRAGONAIR ;Yukari
+	db LEFTOVERS
+	db TOXIC, PSYCHIC_M, LIGHT_SCREEN, REFLECT
+	dw 0 ; OT ID
+	dt 27000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 20, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 30 ; Level
+	db 0, 0 ; Status
+	bigdw 115 ; HP
+	bigdw 115 ; Max HP
+	bigdw 56 ; Atk
+	bigdw 89 ; Def
+	bigdw 59 ; Spd
+	bigdw 71 ; SAtk
+	bigdw 89 ; SDef
+	db "HAPINASU@@@"
+
+	db PUPITAR ;Mima
+	db SCOPE_LENS
+	db DESTINY_BOND, CRUNCH, SHADOW_BALL, CURSE
+	dw 0 ; OT ID
+	dt 27000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 5, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
 	bigdw 109 ; HP
 	bigdw 109 ; Max HP
-	bigdw 76 ; Atk
-	bigdw 81 ; Def
-	bigdw 60 ; Spd
-	bigdw 82 ; SAtk
-	bigdw 88 ; SDef
-	db "KIREIHANA@@"
-
-	dw BLISSEY
-	db LEFTOVERS
-	dw TOXIC, REFLECT, SOFTBOILED, PROTECT
-
-	dw 0 ; OT ID
-	bigdt 27000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 30000
-	bigdw 45000
-	bigdw 30000
-	bigdw 45000
-	dn 15, 11, 14, 13 ; DVs
-	db 10, 20, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 30 ; Level
-	db 0, 0 ; Status
-	bigdw 217 ; HP
-	bigdw 217 ; Max HP
-	bigdw 32 ; Atk
-	bigdw 33 ; Def
-	bigdw 59 ; Spd
-	bigdw 73 ; SAtk
-	bigdw 109 ; SDef
-	db "HAPINASU@@@"
-
-	dw HOUNDOOM
-	db CHARCOAL
-	dw FLAMETHROWER, CRUNCH, SHADOW_BALL, DREAM_EATER
-
-	dw 0 ; OT ID
-	bigdt 27000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 45000
-	dn 15, 13, 14, 13 ; DVs
-	db 15, 15, 15, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 30 ; Level
-	db 0, 0 ; Status
-	bigdw 108 ; HP
-	bigdw 108 ; Max HP
-	bigdw 84 ; Atk
-	bigdw 59 ; Def
-	bigdw 86 ; Spd
-	bigdw 94 ; SAtk
-	bigdw 76 ; SDef
+	bigdw 83 ; Atk
+	bigdw 65 ; Def
+	bigdw 74 ; Spd
+	bigdw 83 ; SAtk
+	bigdw 65 ; SDef
 	db "HERUGA-@@@@"
 
-	dw MACHAMP
+	db SCYTHER ;EWriggle 
 	db MIRACLEBERRY
-	dw CROSS_CHOP, ICE_PUNCH, EARTHQUAKE, FIRE_BLAST
-
+	db FURY_CUTTER, JUMP_KICK, LEECH_LIFE, PURSUIT
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 45000
-	dn 15, 13, 11, 14 ; DVs
-	db 5, 15, 10, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 10, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
@@ -1388,1466 +1336,1412 @@ BattleTowerMons:
 	bigdw 80 ; SDef
 	db "KAIRIKI-@@@"
 
-	dw CROBAT
+	db CROBAT ;ERemilia
 	db GOLD_BERRY
-	dw ATTRACT, CONFUSE_RAY, TOXIC, WING_ATTACK
-
+	db CRUNCH, LEECH_LIFE, FLY, PURSUIT
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 30000
-	bigdw 30000
-	bigdw 50000
-	dn 14, 15, 13, 12 ; DVs
-	db 15, 10, 10, 35 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 10, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 111 ; HP
-	bigdw 111 ; Max HP
-	bigdw 83 ; Atk
-	bigdw 74 ; Def
-	bigdw 103 ; Spd
-	bigdw 70 ; SAtk
-	bigdw 76 ; SDef
+	bigdw 112 ; HP
+	bigdw 112 ; Max HP
+	bigdw 101 ; Atk
+	bigdw 77 ; Def
+	bigdw 104 ; Spd
+	bigdw 80 ; SAtk
+	bigdw 77 ; SDef
 	db "KUROBAtuTO@"
 
-	dw PORYGON2
+	db YANMA ;EFlandre
 	db BRIGHTPOWDER
-	dw PSYCHIC_M, RECOVER, HYPER_BEAM, TRI_ATTACK
-
+	db STOMP, LEECH_LIFE, STOMP, FIRE_PUNCH
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 55000
-	bigdw 30000
-	bigdw 40000
-	bigdw 55000
-	bigdw 30000
-	dn 13, 15, 13, 11 ; DVs
-	db 10, 20, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 10, 20, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 117 ; HP
-	bigdw 117 ; Max HP
-	bigdw 73 ; Atk
-	bigdw 83 ; Def
-	bigdw 66 ; Spd
-	bigdw 87 ; SAtk
-	bigdw 81 ; SDef
+	bigdw 106 ; HP
+	bigdw 106 ; Max HP
+	bigdw 107 ; Atk
+	bigdw 65 ; Def
+	bigdw 101 ; Spd
+	bigdw 107 ; SAtk
+	bigdw 65 ; SDef
 	db "PORIGON2@@@"
 
-	dw MAROWAK
-	db THICK_CLUB
-	dw EARTHQUAKE, RETURN, HYPER_BEAM, BONEMERANG
-
+	db HITMONLEE ;EShizuha
+	db GOLD_BERRY
+	db CONSTRICT, FLASH, GROWTH, LEECH_SEED
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 30000
-	dn 13, 13, 14, 11 ; DVs
-	db 10, 20, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 10 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 99 ; HP
-	bigdw 99 ; Max HP
-	bigdw 77 ; Atk
-	bigdw 94 ; Def
-	bigdw 56 ; Spd
-	bigdw 54 ; SAtk
-	bigdw 72 ; SDef
+	bigdw 118 ; HP
+	bigdw 118 ; Max HP
+	bigdw 74 ; Atk
+	bigdw 74 ; Def
+	bigdw 83 ; Spd
+	bigdw 95 ; SAtk
+	bigdw 83 ; SDef
 	db "GARAGARA@@@"
 
-	dw ELECTRODE
+	db HITMONCHAN ;EMinoriko
 	db BRIGHTPOWDER
-	dw LIGHT_SCREEN, THUNDERBOLT, PROTECT, THUNDER
-
+	db SPORE, MEGA_DRAIN, PROTECT, SYNTHESIS
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 40000
-	bigdw 45000
-	bigdw 40000
-	bigdw 45000
-	bigdw 50000
-	dn 11, 13, 14, 15 ; DVs
-	db 30, 15, 10, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 98 ; HP
-	bigdw 98 ; Max HP
-	bigdw 57 ; Atk
-	bigdw 69 ; Def
-	bigdw 113 ; Spd
-	bigdw 78 ; SAtk
-	bigdw 78 ; SDef
+	bigdw 127 ; HP
+	bigdw 127 ; Max HP
+	bigdw 62 ; Atk
+	bigdw 98 ; Def
+	bigdw 62 ; Spd
+	bigdw 80 ; SAtk
+	bigdw 98 ; SDef
 	db "MARUMAIN@@@"
 
-	dw LAPRAS
+	db SEAKING ;EKanako
 	db LEFTOVERS
-	dw RAIN_DANCE, WATER_GUN, ICY_WIND, STRENGTH
-
+	db SPARK, CONSTRICT, SONICBOOM, THUNDER_WAVE
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 35000
-	bigdw 50000
-	bigdw 30000
-	dn 15, 13, 14, 11 ; DVs
-	db 5, 25, 15, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 142 ; HP
-	bigdw 142 ; Max HP
-	bigdw 80 ; Atk
-	bigdw 74 ; Def
-	bigdw 65 ; Spd
-	bigdw 75 ; SAtk
-	bigdw 81 ; SDef
+	bigdw 127 ; HP
+	bigdw 127 ; Max HP
+	bigdw 71 ; Atk
+	bigdw 92 ; Def
+	bigdw 71 ; Spd
+	bigdw 98 ; SAtk
+	bigdw 92 ; SDef
 	db "RAPURASU@@@"
 
-	dw LANTURN
+	db POLITOED ;ESuwako
 	db GOLD_BERRY
-	dw RAIN_DANCE, THUNDER, SURF, FLAIL
-
+	db MAGNITUDE, BUBBLEBEAM, ICY_WIND, CHARM
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 30000
-	bigdw 30000
-	dn 13, 13, 14, 11 ; DVs
-	db 5, 10, 15, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 139 ; HP
-	bigdw 139 ; Max HP
-	bigdw 62 ; Atk
-	bigdw 64 ; Def
-	bigdw 66 ; Spd
-	bigdw 70 ; SAtk
-	bigdw 70 ; SDef
+	bigdw 115 ; HP
+	bigdw 115 ; Max HP
+	bigdw 83 ; Atk
+	bigdw 83 ; Def
+	bigdw 74 ; Spd
+	bigdw 98 ; SAtk
+	bigdw 98 ; SDef
 	db "RANTA-N@@@@"
 
-	dw ESPEON
+	db ESPEON ;EKeine
 	db MIRACLEBERRY
-	dw CONFUSION, SWIFT, TOXIC, PSYCH_UP
-
+	db PSYBEAM, SLASH, HEADBUTT, PROTECT
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 14, 15, 15, 7 ; DVs
-	db 25, 20, 10, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 99 ; HP
-	bigdw 99 ; Max HP
-	bigdw 68 ; Atk
-	bigdw 66 ; Def
-	bigdw 96 ; Spd
-	bigdw 103 ; SAtk
-	bigdw 82 ; SDef
+	bigdw 118 ; HP
+	bigdw 118 ; Max HP
+	bigdw 74 ; Atk
+	bigdw 83 ; Def
+	bigdw 80 ; Spd
+	bigdw 98 ; SAtk
+	bigdw 89 ; SDef
 	db "E-HUi@@@@@@"
 
-	dw TENTACRUEL
+	db UMBREON ;HKeine
 	db KINGS_ROCK
-	dw WRAP, TOXIC, SLUDGE_BOMB, BUBBLEBEAM
-
+	db ROLLING_KICK, SLASH, HEADBUTT, PROTECT
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 47000
-	bigdw 45000
-	dn 15, 14, 15, 14 ; DVs
-	db 20, 10, 10, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 20, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 110 ; HP
-	bigdw 110 ; Max HP
-	bigdw 71 ; Atk
-	bigdw 68 ; Def
-	bigdw 90 ; Spd
-	bigdw 77 ; SAtk
-	bigdw 101 ; SDef
+	bigdw 118 ; HP
+	bigdw 118 ; Max HP
+	bigdw 104 ; Atk
+	bigdw 77 ; Def
+	bigdw 92 ; Spd
+	bigdw 74 ; SAtk
+	bigdw 77 ; SDef
 	db "DOKUKURAGE@"
 
-	dw GENGAR
+	db QUILAVA ;Mokou
 	db GOLD_BERRY
-	dw THIEF, LICK, NIGHT_SHADE, GIGA_DRAIN
-
+	db FIRE_PUNCH, THUNDERPUNCH, ROLLING_KICK, STOMP
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 7, 15, 7 ; DVs
-	db 10, 30, 15, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 101 ; HP
-	bigdw 101 ; Max HP
-	bigdw 68 ; Atk
-	bigdw 61 ; Def
-	bigdw 96 ; Spd
-	bigdw 103 ; SAtk
-	bigdw 70 ; SDef
+	bigdw 106 ; HP
+	bigdw 106 ; Max HP
+	bigdw 80 ; Atk
+	bigdw 65 ; Def
+	bigdw 83 ; Spd
+	bigdw 80 ; SAtk
+	bigdw 65 ; SDef
 	db "GENGA-@@@@@"
 
-	dw URSARING
+	db BAYLEEF ;Kaguya
 	db GOLD_BERRY
-	dw HEADBUTT, PROTECT, ROAR, LEER
-
+	db LEECH_SEED, PROTECT, MEGA_DRAIN, MORNING_SUN
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 7, 4, 5 ; DVs
-	db 15, 10, 20, 30 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 15, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 114 ; HP
-	bigdw 114 ; Max HP
-	bigdw 100 ; Atk
-	bigdw 67 ; Def
-	bigdw 53 ; Spd
-	bigdw 65 ; SAtk
-	bigdw 65 ; SDef
+	bigdw 112 ; HP
+	bigdw 112 ; Max HP
+	bigdw 65 ; Atk
+	bigdw 78 ; Def
+	bigdw 68 ; Spd
+	bigdw 80 ; SAtk
+	bigdw 78 ; SDef
 	db "RINGUMA@@@@"
 
-	dw FEAROW
+	db CROCONAW ;Eirin
 	db BRIGHTPOWDER
-	dw MIRROR_MOVE, PURSUIT, PECK, SWIFT
-
+	db BUBBLEBEAM, SLUDGE, AURORA_BEAM, DREAM_EATER
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 6, 7, 7, 7 ; DVs
-	db 20, 20, 35, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 96 ; HP
-	bigdw 96 ; Max HP
-	bigdw 75 ; Atk
-	bigdw 61 ; Def
-	bigdw 82 ; Spd
-	bigdw 58 ; SAtk
-	bigdw 58 ; SDef
+	bigdw 109 ; HP
+	bigdw 109 ; Max HP
+	bigdw 68 ; Atk
+	bigdw 71 ; Def
+	bigdw 77 ; Spd
+	bigdw 83 ; SAtk
+	bigdw 71 ; SDef
 	db "ONIDORIRU@@"
 
-	dw PRIMEAPE
+	db FLAREON ;ESunny
 	db MIRACLEBERRY
-	dw LOW_KICK, KARATE_CHOP, REVERSAL, FOCUS_ENERGY
-
+	db MEDITATE, FLASH, OCTAZOOKA, SWAGGER
 	dw 0 ; OT ID
-	bigdt 27000 ; Exp
+	dt 27000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 7, 6, 7 ; DVs
-	db 20, 25, 15, 30 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 30 ; Level
 	db 0, 0 ; Status
-	bigdw 99 ; HP
-	bigdw 99 ; Max HP
-	bigdw 85 ; Atk
-	bigdw 58 ; Def
-	bigdw 78 ; Spd
-	bigdw 58 ; SAtk
-	bigdw 64 ; SDef
+	bigdw 121 ; HP
+	bigdw 121 ; Max HP
+	bigdw 74 ; Atk
+	bigdw 83 ; Def
+	bigdw 89 ; Spd
+	bigdw 89 ; SAtk
+	bigdw 83 ; SDef
 	db "OKORIZARU@@"
 
 
 ; BattleTowerMons group 4
 
-	dw TAUROS
+	db TAUROS ;ERin
 	db GOLD_BERRY
-	dw RETURN, HYPER_BEAM, EARTHQUAKE, IRON_TAIL
-
+	db FLAMETHROWER, SHADOW_BALL, CONFUSE_RAY, SLASH
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 13, 15, 14 ; DVs
-	db 20, 5, 10, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 10, 20 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
 	bigdw 143 ; HP
 	bigdw 143 ; Max HP
-	bigdw 119 ; Atk
-	bigdw 113 ; Def
-	bigdw 127 ; Spd
-	bigdw 70 ; SAtk
-	bigdw 94 ; SDef
+	bigdw 110 ; Atk
+	bigdw 98 ; Def
+	bigdw 138 ; Spd
+	bigdw 126 ; SAtk
+	bigdw 106 ; SDef
 	db "KENTAROSU@@"
 
-	dw KINGDRA
+	db KINGDRA ;EYuyuko
 	db LEFTOVERS
-	dw SURF, DRAGONBREATH, HYPER_BEAM, BLIZZARD
-
+	db SHADOW_BALL, MORNING_SUN, DESTINY_BOND, CURSE
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 13, 14, 15 ; DVs
-	db 15, 20, 5, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 142 ; HP
-	bigdw 142 ; Max HP
-	bigdw 115 ; Atk
-	bigdw 113 ; Def
-	bigdw 106 ; Spd
-	bigdw 115 ; SAtk
-	bigdw 115 ; SDef
+	bigdw 175 ; HP
+	bigdw 175 ; Max HP
+	bigdw 90 ; Atk
+	bigdw 106 ; Def
+	bigdw 98 ; Spd
+	bigdw 130 ; SAtk
+	bigdw 130 ; SDef
 	db "KINGUDORA@@"
 
-	dw SNORLAX
+	db SNORLAX ;Genji
 	db QUICK_CLAW
-	dw ATTRACT, BODY_SLAM, PSYCH_UP, EARTHQUAKE
-
+	db REST, SLEEP_TALK, FLY, ROCK_SLIDE
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 14, 13, 13, 13 ; DVs
-	db 15, 15, 10, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 205 ; HP
-	bigdw 205 ; Max HP
-	bigdw 126 ; Atk
-	bigdw 89 ; Def
-	bigdw 61 ; Spd
-	bigdw 89 ; SAtk
-	bigdw 125 ; SDef
+	bigdw 199 ; HP
+	bigdw 199 ; Max HP
+	bigdw 130 ; Atk
+	bigdw 130 ; Def
+	bigdw 82 ; Spd
+	bigdw 94 ; SAtk
+	bigdw 94 ; SDef
 	db "KABIGON@@@@"
 
-	dw LAPRAS
+	db LAPRAS ;ERika
 	db LEFTOVERS
-	dw THUNDERBOLT, ICE_BEAM, CONFUSE_RAY, SURF
-
+	db SLUDGE_BOMB, STEEL_WING, SELFDESTRUCT, PROTECT
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 13, 14, 11 ; DVs
-	db 15, 10, 10, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 20, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 186 ; HP
-	bigdw 186 ; Max HP
-	bigdw 107 ; Atk
-	bigdw 101 ; Def
-	bigdw 86 ; Spd
-	bigdw 103 ; SAtk
-	bigdw 111 ; SDef
+	bigdw 155 ; HP
+	bigdw 155 ; Max HP
+	bigdw 110 ; Atk
+	bigdw 138 ; Def
+	bigdw 98 ; Spd
+	bigdw 130 ; SAtk
+	bigdw 98 ; SDef
 	db "RAPURASU@@@"
 
-	dw STEELIX
+	db STEELIX ;EYumemi
 	db GOLD_BERRY
-	dw SANDSTORM, IRON_TAIL, EARTHQUAKE, TOXIC
-
+	db FLAMETHROWER, ICE_BEAM, PSYCHIC_M, MEDITATE
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 14, 15, 13, 11 ; DVs
-	db 10, 15, 10, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 137 ; HP
-	bigdw 137 ; Max HP
-	bigdw 106 ; Atk
-	bigdw 199 ; Def
-	bigdw 61 ; Spd
-	bigdw 79 ; SAtk
-	bigdw 87 ; SDef
+	bigdw 155 ; HP
+	bigdw 155 ; Max HP
+	bigdw 98 ; Atk
+	bigdw 106 ; Def
+	bigdw 122 ; Spd
+	bigdw 142 ; SAtk
+	bigdw 106 ; SDef
 	db "HAGANE-RU@@"
 
-	dw ALAKAZAM
+	db BUTTERFREE ;EPatchouli
 	db KINGS_ROCK
-	dw PSYCHIC_M, THUNDERPUNCH, RECOVER, FIRE_PUNCH
-
+	db PSYCHIC_M, MOONLIGHT, KINESIS, FIRE_PUNCH
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 13, 14, 15 ; DVs
-	db 10, 15, 20, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 20, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 126 ; HP
-	bigdw 126 ; Max HP
-	bigdw 76 ; Atk
-	bigdw 73 ; Def
-	bigdw 135 ; Spd
-	bigdw 147 ; SAtk
-	bigdw 107 ; SDef
+	bigdw 155 ; HP
+	bigdw 155 ; Max HP
+	bigdw 90 ; Atk
+	bigdw 90 ; Def
+	bigdw 110 ; Spd
+	bigdw 142 ; SAtk
+	bigdw 134 ; SDef
 	db "HU-DEiN@@@@"
 
-	dw STARMIE
+	db MR__MIME ;EParsee
 	db LEFTOVERS
-	dw BLIZZARD, THUNDERBOLT, SURF, PSYCHIC_M
-
+	db DREAM_EATER, TOXIC, CURSE, PROTECT
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 45000
-	dn 15, 13, 11, 14 ; DVs
-	db 5, 15, 15, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 131 ; HP
-	bigdw 131 ; Max HP
-	bigdw 99 ; Atk
-	bigdw 104 ; Def
-	bigdw 127 ; Spd
-	bigdw 117 ; SAtk
-	bigdw 105 ; SDef
+	bigdw 175 ; HP
+	bigdw 175 ; Max HP
+	bigdw 86 ; Atk
+	bigdw 114 ; Def
+	bigdw 86 ; Spd
+	bigdw 98 ; SAtk
+	bigdw 138 ; SDef
 	db "SUTA-MI-@@@"
 
-	dw WOBBUFFET
+	db OCTILLERY ;EKurumi
 	db GOLD_BERRY
-	dw COUNTER, MIRROR_COAT, SAFEGUARD, DESTINY_BOND
-
+	db SURF, CRUNCH, ICE_PUNCH, RECOVER
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 11, 15, 14, 7 ; DVs
-	db 20, 20, 25, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 233 ; HP
-	bigdw 233 ; Max HP
-	bigdw 62 ; Atk
-	bigdw 85 ; Def
-	bigdw 64 ; Spd
-	bigdw 59 ; SAtk
-	bigdw 79 ; SDef
+	bigdw 159 ; HP
+	bigdw 159 ; Max HP
+	bigdw 110 ; Atk
+	bigdw 90 ; Def
+	bigdw 122 ; Spd
+	bigdw 122 ; SAtk
+	bigdw 102 ; SDef
 	db "SO-NANSU@@@"
 
-	dw GOLEM
+	db GOLEM ;EYoumu
 	db FOCUS_BAND
-	dw EXPLOSION, EARTHQUAKE, MEGA_PUNCH, ROCK_SLIDE
-
+	db SWORDS_DANCE, SLASH, FALSE_SWIPE, ROCK_SLIDE
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 45000
-	dn 13, 13, 14, 13 ; DVs
-	db 5, 10, 20, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 25, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 145 ; HP
-	bigdw 145 ; Max HP
-	bigdw 125 ; Atk
-	bigdw 139 ; Def
-	bigdw 74 ; Spd
-	bigdw 80 ; SAtk
-	bigdw 88 ; SDef
+	bigdw 143 ; HP
+	bigdw 143 ; Max HP
+	bigdw 126 ; Atk
+	bigdw 98 ; Def
+	bigdw 130 ; Spd
+	bigdw 126 ; SAtk
+	bigdw 98 ; SDef
 	db "GORO-NIya@@"
 
-	dw SCIZOR
+	db SCIZOR ;ETokiko
 	db SCOPE_LENS
-	dw SLASH, STEEL_WING, PURSUIT, HYPER_BEAM
-
+	db DRILL_PECK, STEEL_WING, FOCUS_ENERGY, HEADBUTT
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	dn 11, 13, 15, 14 ; DVs
-	db 20, 25, 20, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 40 ; Level
-	db 0, 0 ; Status
-	bigdw 139 ; HP
-	bigdw 139 ; Max HP
-	bigdw 139 ; Atk
-	bigdw 117 ; Def
-	bigdw 89 ; Spd
-	bigdw 82 ; SAtk
-	bigdw 102 ; SDef
-	db "HAtuSAMU@@@"
-
-	dw DUGTRIO
-	db KINGS_ROCK
-	dw EARTHQUAKE, HYPER_BEAM, SLUDGE_BOMB, MUD_SLAP
-
-	dw 0 ; OT ID
-	bigdt 64000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 14, 11, 11 ; DVs
-	db 10, 5, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 40 ; Level
-	db 0, 0 ; Status
-	bigdw 108 ; HP
-	bigdw 108 ; Max HP
-	bigdw 103 ; Atk
-	bigdw 78 ; Def
-	bigdw 131 ; Spd
-	bigdw 75 ; SAtk
-	bigdw 91 ; SDef
-	db "DAGUTORIO@@"
-
-	dw SLOWBRO
-	db MIRACLEBERRY
-	dw SURF, PSYCHIC_M, EARTHQUAKE, BLIZZARD
-
-	dw 0 ; OT ID
-	bigdt 64000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	dn 11, 15, 12, 15 ; DVs
-	db 15, 10, 10, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 40 ; Level
-	db 0, 0 ; Status
-	bigdw 157 ; HP
-	bigdw 157 ; Max HP
-	bigdw 95 ; Atk
-	bigdw 126 ; Def
-	bigdw 60 ; Spd
-	bigdw 119 ; SAtk
-	bigdw 103 ; SDef
-	db "YADORAN@@@@"
-
-	dw PORYGON2
-	db NO_ITEM
-	dw CONVERSION2, CONVERSION, PSYBEAM, THIEF
-
-	dw 0 ; OT ID
-	bigdt 64000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 11, 12, 14, 15 ; DVs
-	db 30, 30, 20, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 30, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
 	bigdw 147 ; HP
 	bigdw 147 ; Max HP
-	bigdw 99 ; Atk
-	bigdw 108 ; Def
-	bigdw 86 ; Spd
-	bigdw 123 ; SAtk
-	bigdw 115 ; SDef
+	bigdw 130 ; Atk
+	bigdw 106 ; Def
+	bigdw 118 ; Spd
+	bigdw 90 ; SAtk
+	bigdw 106 ; SDef
+	db "HAtuSAMU@@@"
+
+	db PORYGON ;EYamame
+	db KINGS_ROCK
+	db SPIDER_WEB, SPIKES, CRABHAMMER, MAGNITUDE
+	dw 0 ; OT ID
+	dt 64000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 20, 15, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 40 ; Level
+	db 0, 0 ; Status
+	bigdw 151 ; HP
+	bigdw 151 ; Max HP
+	bigdw 130 ; Atk
+	bigdw 102 ; Def
+	bigdw 122 ; Spd
+	bigdw 90 ; SAtk
+	bigdw 102 ; SDef
+	db "DAGUTORIO@@"
+
+	db MAGMAR ;EHina
+	db MIRACLEBERRY
+	db SURF, SLUDGE_BOMB, TOXIC, DISABLE
+	dw 0 ; OT ID
+	dt 64000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 10, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 40 ; Level
+	db 0, 0 ; Status
+	bigdw 175 ; HP
+	bigdw 175 ; Max HP
+	bigdw 94 ; Atk
+	bigdw 118 ; Def
+	bigdw 90 ; Spd
+	bigdw 110 ; SAtk
+	bigdw 118 ; SDef
+	db "YADORAN@@@@"
+
+	db PORYGON2 ;EElly
+	db SCOPE_LENS
+	db SWORDS_DANCE, IRON_TAIL, ROLLING_KICK, STOMP
+	dw 0 ; OT ID
+	dt 64000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 15, 15, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 40 ; Level
+	db 0, 0 ; Status
+	bigdw 151 ; HP
+	bigdw 151 ; Max HP
+	bigdw 142 ; Atk
+	bigdw 102 ; Def
+	bigdw 126 ; Spd
+	bigdw 90 ; SAtk
+	bigdw 102 ; SDef
 	db "PORIGON2@@@"
 
-	dw ARCANINE
-	db CHARCOAL
-	dw FLAME_WHEEL, LEER, BODY_SLAM, ROAR
-
+	db CHANSEY ;ERumia
+	db FOCUS_BAND
+	db CRUNCH, SLUDGE_BOMB, BODY_SLAM, SCARY_FACE
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 14, 11, 11 ; DVs
-	db 25, 30, 15, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 152 ; HP
-	bigdw 152 ; Max HP
-	bigdw 127 ; Atk
-	bigdw 102 ; Def
-	bigdw 111 ; Spd
-	bigdw 115 ; SAtk
-	bigdw 99 ; SDef
+	bigdw 143 ; HP
+	bigdw 143 ; Max HP
+	bigdw 118 ; Atk
+	bigdw 94 ; Def
+	bigdw 130 ; Spd
+	bigdw 110 ; SAtk
+	bigdw 110 ; SDef
 	db "UINDEi@@@@@"
 
-	dw FORRETRESS
+	db FORRETRESS ;ETenshi
 	db LEFTOVERS
-	dw RAPID_SPIN, PROTECT, TOXIC, SANDSTORM
-
+	db EARTHQUAKE, SWORDS_DANCE, ROCK_SLIDE, SANDSTORM
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 10, 7, 15 ; DVs
-	db 40, 10, 10, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 20, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 140 ; HP
-	bigdw 140 ; Max HP
-	bigdw 111 ; Atk
-	bigdw 147 ; Def
-	bigdw 64 ; Spd
-	bigdw 87 ; SAtk
-	bigdw 87 ; SDef
+	bigdw 167 ; HP
+	bigdw 167 ; Max HP
+	bigdw 122 ; Atk
+	bigdw 138 ; Def
+	bigdw 90 ; Spd
+	bigdw 90 ; SAtk
+	bigdw 122 ; SDef
 	db "HUoRETOSU@@"
 
-	dw OMASTAR
+	db OMASTAR ;Kirisame
 	db GOLD_BERRY
-	dw CURSE, WATER_GUN, ANCIENTPOWER, ROCK_SMASH
-
+	db THUNDERBOLT, PSYCHIC_M, MEDITATE, ICE_PUNCH
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 14, 15, 15, 7 ; DVs
-	db 10, 25, 5, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 20, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 133 ; HP
-	bigdw 133 ; Max HP
-	bigdw 86 ; Atk
-	bigdw 139 ; Def
-	bigdw 83 ; Spd
-	bigdw 124 ; SAtk
-	bigdw 88 ; SDef
+	bigdw 143 ; HP
+	bigdw 143 ; Max HP
+	bigdw 94  ; Atk
+	bigdw 94  ; Def
+	bigdw 118 ; Spd
+	bigdw 150 ; SAtk
+	bigdw 118 ; SDef
 	db "OMUSUTA-@@@"
 
-	dw CHARIZARD
+	db CHARIZARD ;EMarisa
 	db KINGS_ROCK
-	dw FIRE_SPIN, DRAGON_RAGE, FLY, SLASH
-
+	db FLAMETHROWER, THUNDERBOLT, AGILITY, MEDITATE
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 14, 15, 14 ; DVs
-	db 15, 10, 15, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 20, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 142 ; HP
-	bigdw 142 ; Max HP
-	bigdw 106 ; Atk
-	bigdw 100 ; Def
-	bigdw 119 ; Spd
-	bigdw 125 ; SAtk
-	bigdw 106 ; SDef
+	bigdw 151 ; HP
+	bigdw 151 ; Max HP
+	bigdw 94 ; Atk
+	bigdw 102 ; Def
+	bigdw 134 ; Spd
+	bigdw 138 ; SAtk
+	bigdw 102 ; SDef
 	db "RIZA-DON@@@"
 
-	dw EXEGGUTOR
+	db VILEPLUME ;ESanae
 	db BRIGHTPOWDER
-	dw EGG_BOMB, STOMP, PSYCH_UP, CONFUSION
-
+	db SURF, MORNING_SUN, ICE_PUNCH, SAFEGUARD
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 7, 14, 7 ; DVs
-	db 10, 20, 10, 25 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 25 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 158 ; HP
-	bigdw 158 ; Max HP
-	bigdw 115 ; Atk
-	bigdw 100 ; Def
-	bigdw 82 ; Spd
-	bigdw 132 ; SAtk
-	bigdw 84 ; SDef
+	bigdw 163 ; HP
+	bigdw 163 ; Max HP
+	bigdw 98 ; Atk
+	bigdw 114 ; Def
+	bigdw 110 ; Spd
+	bigdw 122 ; SAtk
+	bigdw 114 ; SDef
 	db "NAtuSI-@@@@"
 
-	dw HYPNO
+	db HYPNO ;EIku
 	db BRIGHTPOWDER
-	dw CONFUSION, THUNDERPUNCH, HEADBUTT, DISABLE
-
+	db DRAGON_RAGE, THUNDERBOLT, SURF, THUNDER_WAVE
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 7, 7, 10 ; DVs
-	db 25, 15, 15, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 146 ; HP
-	bigdw 146 ; Max HP
-	bigdw 86 ; Atk
-	bigdw 83 ; Def
-	bigdw 81 ; Spd
-	bigdw 88 ; SAtk
-	bigdw 122 ; SDef
+	bigdw 159 ; HP
+	bigdw 159 ; Max HP
+	bigdw 102 ; Atk
+	bigdw 102 ; Def
+	bigdw 114 ; Spd
+	bigdw 138 ; SAtk
+	bigdw 114 ; SDef
 	db "SURI-PA-@@@"
 
-	dw MUK
+	db BELLOSSOM ;EKana
 	db QUICK_CLAW
-	dw SCREECH, TOXIC, SLUDGE, HARDEN
-
+	db SHADOW_BALL, TOXIC, REFLECT, LIGHT_SCREEN
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 5, 6, 11 ; DVs
-	db 40, 10, 20, 30 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 10, 20, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 161 ; HP
-	bigdw 161 ; Max HP
-	bigdw 111 ; Atk
-	bigdw 86 ; Def
-	bigdw 67 ; Spd
-	bigdw 83 ; SAtk
-	bigdw 111 ; SDef
+	bigdw 167 ; HP
+	bigdw 167 ; Max HP
+	bigdw 98 ; Atk
+	bigdw 114 ; Def
+	bigdw 98 ; Spd
+	bigdw 114 ; SAtk
+	bigdw 122 ; SDef
 	db "BETOBETON@@"
 
-	dw ELECTABUZZ
+	db ELECTABUZZ ;EMomiji
 	db KINGS_ROCK
-	dw LIGHT_SCREEN, THUNDERPUNCH, SWIFT, SNORE
-
+	db SWORDS_DANCE, CRUNCH, BODY_SLAM, SLASH
 	dw 0 ; OT ID
-	bigdt 64000 ; Exp
+	dt 64000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 6, 5, 7, 7 ; DVs
-	db 30, 15, 20, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 15, 15, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 40 ; Level
 	db 0, 0 ; Status
-	bigdw 124 ; HP
-	bigdw 124 ; Max HP
-	bigdw 93 ; Atk
-	bigdw 71 ; Def
-	bigdw 111 ; Spd
-	bigdw 103 ; SAtk
-	bigdw 95 ; SDef
+	bigdw 151 ; HP
+	bigdw 151 ; Max HP
+	bigdw 142 ; Atk
+	bigdw 106 ; Def
+	bigdw 118 ; Spd
+	bigdw 90 ; SAtk
+	bigdw 90 ; SDef
 	db "EREBU-@@@@@"
 
 
 ; BattleTowerMons group 5
 
-	dw KINGDRA
+	db KINGDRA ;EYuyuko
 	db GOLD_BERRY
-	dw SURF, HYPER_BEAM, BLIZZARD, DRAGONBREATH
-
+	db SHADOW_BALL, MORNING_SUN, BLIZZARD, PROTECT
 	dw 0 ; OT ID
-	bigdt 125000 ; Exp
+	dt 125000 ; Exp
 	; Stat exp
-	bigdw 55000
-	bigdw 55000
-	bigdw 60000
-	bigdw 50000
-	bigdw 55000
-	dn 13, 13, 15, 15 ; DVs
-	db 15, 5, 5, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 10, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 50 ; Level
 	db 0, 0 ; Status
-	bigdw 179 ; HP
-	bigdw 179 ; Max HP
-	bigdw 142 ; Atk
-	bigdw 143 ; Def
-	bigdw 132 ; Spd
-	bigdw 144 ; SAtk
-	bigdw 144 ; SDef
+	bigdw 216 ; HP
+	bigdw 216 ; Max HP
+	bigdw 111 ; Atk
+	bigdw 131 ; Def
+	bigdw 121 ; Spd
+	bigdw 161 ; SAtk
+	bigdw 161 ; SDef
 	db "KINGUDORA@@"
 
-	dw HOUNDOOM
+	db MAGCARGO ;EYuki 
 	db MIRACLEBERRY
-	dw REST, CRUNCH, DREAM_EATER, FLAMETHROWER
-
+	db FLAMETHROWER, PSYCHIC_M, MEDITATE, DRAGONBREATH
 	dw 0 ; OT ID
-	bigdt 125000 ; Exp
+	dt 125000 ; Exp
 	; Stat exp
-	bigdw 55000
-	bigdw 50000
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	dn 13, 13, 15, 12 ; DVs
-	db 10, 15, 15, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 20, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 50 ; Level
 	db 0, 0 ; Status
-	bigdw 178 ; HP
-	bigdw 178 ; Max HP
-	bigdw 135 ; Atk
-	bigdw 98 ; Def
-	bigdw 145 ; Spd
-	bigdw 157 ; SAtk
-	bigdw 127 ; SDef
+	bigdw 186 ; HP
+	bigdw 186 ; Max HP
+	bigdw 116 ; Atk
+	bigdw 131 ; Def
+	bigdw 141 ; Spd
+	bigdw 166 ; SAtk
+	bigdw 1411 ; SDef
 	db "HERUGA-@@@@"
 
-	dw SHUCKLE
+	db CORSOLA ;ELouise
 	db LEFTOVERS
-	dw SANDSTORM, REST, TOXIC, WRAP
-
+	db PERISH_SONG, ENCORE, DREAM_EATER, HEAL_BELL
 	dw 0 ; OT ID
-	bigdt 125000 ; Exp
+	dt 125000 ; Exp
 	; Stat exp
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	bigdw 55000
-	dn 15, 13, 12, 15 ; DVs
-	db 10, 10, 10, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 5, 5, 10, 5 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 50 ; Level
 	db 0, 0 ; Status
-	bigdw 123 ; HP
-	bigdw 123 ; Max HP
-	bigdw 60 ; Atk
-	bigdw 278 ; Def
-	bigdw 52 ; Spd
-	bigdw 59 ; SAtk
-	bigdw 279 ; SDef
+	bigdw 216 ; HP
+	bigdw 216 ; Max HP
+	bigdw 126 ; Atk
+	bigdw 146 ; Def
+	bigdw 121 ; Spd
+	bigdw 126 ; SAtk
+	bigdw 146 ; SDef
 	db "TUBOTUBO@@@"
 
-	dw SNORLAX
+	db SNORLAX ;Genji
 	db LEFTOVERS
-	dw HYPER_BEAM, EARTHQUAKE, SURF, PSYCH_UP
-
+	db PROTECT, ROCK_SLIDE, REST, SLEEP_TALK
 	dw 0 ; OT ID
-	bigdt 125000 ; Exp
+	dt 125000 ; Exp
 	; Stat exp
-	bigdw 60000
-	bigdw 55000
-	bigdw 55000
-	bigdw 60000
-	bigdw 55000
-	dn 15, 13, 14, 15 ; DVs
-	db 5, 10, 15, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 10, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 50 ; Level
 	db 0, 0 ; Status
-	bigdw 263 ; HP
-	bigdw 263 ; Max HP
-	bigdw 159 ; Atk
-	bigdw 112 ; Def
-	bigdw 79 ; Spd
-	bigdw 114 ; SAtk
-	bigdw 159 ; SDef
+	bigdw 246 ; HP
+	bigdw 246 ; Max HP
+	bigdw 161 ; Atk
+	bigdw 161 ; Def
+	bigdw 101 ; Spd
+	bigdw 116 ; SAtk
+	bigdw 116 ; SDef
 	db "KABIGON@@@@"
 
-	dw LAPRAS
+	db LAPRAS ;ERika
 	db GOLD_BERRY
-	dw THUNDERBOLT, SURF, CONFUSE_RAY, BLIZZARD
-
+	db THUNDERBOLT, SLUDGE_BOMB, STEEL_WING, ICE_BEAM
 	dw 0 ; OT ID
-	bigdt 125000 ; Exp
+	dt 125000 ; Exp
 	; Stat exp
-	bigdw 55000
-	bigdw 60000
-	bigdw 60000
-	bigdw 55000
-	bigdw 60000
-	dn 13, 13, 13, 13 ; DVs
-	db 15, 15, 10, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 20, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 50 ; Level
 	db 0, 0 ; Status
-	bigdw 234 ; HP
-	bigdw 234 ; Max HP
-	bigdw 133 ; Atk
-	bigdw 128 ; Def
-	bigdw 107 ; Spd
-	bigdw 133 ; SAtk
-	bigdw 143 ; SDef
+	bigdw 191 ; HP
+	bigdw 191 ; Max HP
+	bigdw 136 ; Atk
+	bigdw 171 ; Def
+	bigdw 121 ; Spd
+	bigdw 161 ; SAtk
+	bigdw 121 ; SDef
 	db "RAPURASU@@@"
 
-	dw JOLTEON
+	db JOLTEON ;ELunaChild
 	db KINGS_ROCK
-	dw THUNDERBOLT, THUNDER_WAVE, SHADOW_BALL, HIDDEN_POWER
-
+	db THUNDERBOLT, THUNDER_WAVE, ICE_PUNCH, MOONLIGHT
 	dw 0 ; OT ID
-	bigdt 125000 ; Exp
+	dt 125000 ; Exp
 	; Stat exp
-	bigdw 55000
-	bigdw 60000
-	bigdw 57000
-	bigdw 55000
-	bigdw 55000
-	dn 14, 13, 15, 15 ; DVs
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
 	db 15, 20, 15, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 50 ; Level
 	db 0, 0 ; Status
-	bigdw 161 ; HP
-	bigdw 161 ; Max HP
-	bigdw 114 ; Atk
-	bigdw 107 ; Def
-	bigdw 179 ; Spd
-	bigdw 159 ; SAtk
-	bigdw 144 ; SDef
+	bigdw 186 ; HP
+	bigdw 186 ; Max HP
+	bigdw 126 ; Atk
+	bigdw 121 ; Def
+	bigdw 166 ; Spd
+	bigdw 161 ; SAtk
+	bigdw 121 ; SDef
 	db "SANDA-SU@@@"
 
-	dw SCIZOR
+	db SCIZOR ;ETokiko
 	db LEFTOVERS
-	dw HYPER_BEAM, SLASH, AGILITY, METAL_CLAW
-
+	db DRILL_PECK, SOFTBOILED, AGILITY, STEEL_WING
 	dw 0 ; OT ID
-	bigdt 125000 ; Exp
+	dt 125000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 45000
-	dn 13, 15, 14, 13 ; DVs
-	db 5, 20, 30, 35 ; PP
-	db 0 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 50 ; Level
-	db 0, 0 ; Status
-	bigdw 169 ; HP
-	bigdw 169 ; Max HP
-	bigdw 175 ; Atk
-	bigdw 145 ; Def
-	bigdw 111 ; Spd
-	bigdw 99 ; SAtk
-	bigdw 124 ; SDef
-	db "HAtuSAMU@@@"
-
-	dw SLOWKING
-	db MINT_BERRY
-	dw REST, SURF, PSYCHIC_M, AMNESIA
-
-	dw 0 ; OT ID
-	bigdt 125000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 40000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	dn 13, 15, 13, 14 ; DVs
-	db 10, 15, 10, 20 ; PP
-	db 15 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 50 ; Level
-	db 0, 0 ; Status
-	bigdw 196 ; HP
-	bigdw 196 ; Max HP
-	bigdw 118 ; Atk
-	bigdw 126 ; Def
-	bigdw 75 ; Spd
-	bigdw 146 ; SAtk
-	bigdw 156 ; SDef
-	db "YADOKINGU@@"
-
-	dw MACHAMP
-	db GOLD_BERRY
-	dw CROSS_CHOP, EARTHQUAKE, FIRE_BLAST, THUNDERPUNCH
-
-	dw 0 ; OT ID
-	bigdt 125000 ; Exp
-	; Stat exp
-	bigdw 40000
-	bigdw 45000
-	bigdw 50000
-	bigdw 40000
-	bigdw 44000
-	dn 15, 15, 14, 12 ; DVs
-	db 5, 10, 5, 15 ; PP
-	db 13 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 50 ; Level
-	db 0, 0 ; Status
-	bigdw 187 ; HP
-	bigdw 187 ; Max HP
-	bigdw 176 ; Atk
-	bigdw 127 ; Def
-	bigdw 99 ; Spd
-	bigdw 108 ; SAtk
-	bigdw 128 ; SDef
-	db "KAIRIKI-@@@"
-
-	dw STARMIE
-	db SCOPE_LENS
-	dw THUNDER_WAVE, RECOVER, THUNDERBOLT, SURF
-
-	dw 0 ; OT ID
-	bigdt 125000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 44000
-	bigdw 40000
-	bigdw 45000
-	bigdw 40000
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
 	dn 15, 15, 15, 15 ; DVs
-	db 20, 20, 15, 15 ; PP
-	db 0 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 50 ; Level
-	db 0, 0 ; Status
-	bigdw 161 ; HP
-	bigdw 161 ; Max HP
-	bigdw 121 ; Atk
-	bigdw 130 ; Def
-	bigdw 161 ; Spd
-	bigdw 145 ; SAtk
-	bigdw 130 ; SDef
-	db "SUTA-MI-@@@"
-
-	dw DUGTRIO
-	db KINGS_ROCK
-	dw EARTHQUAKE, SLASH, HYPER_BEAM, SLUDGE_BOMB
-
-	dw 0 ; OT ID
-	bigdt 125000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 40000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	dn 15, 7, 15, 14 ; DVs
-	db 10, 20, 5, 10 ; PP
-	db 0 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 50 ; Level
-	db 0, 0 ; Status
-	bigdw 135 ; HP
-	bigdw 135 ; Max HP
-	bigdw 125 ; Atk
-	bigdw 89 ; Def
-	bigdw 166 ; Spd
-	bigdw 96 ; SAtk
-	bigdw 116 ; SDef
-	db "DAGUTORIO@@"
-
-	dw ELECTRODE
-	db MIRACLEBERRY
-	dw THUNDERBOLT, EXPLOSION, MIRROR_COAT, REST
-
-	dw 0 ; OT ID
-	bigdt 125000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 54000
-	bigdw 40000
-	bigdw 50000
-	dn 7, 13, 15, 14 ; DVs
-	db 15, 5, 20, 10 ; PP
-	db 0 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 50 ; Level
-	db 0, 0 ; Status
-	bigdw 161 ; HP
-	bigdw 161 ; Max HP
-	bigdw 88 ; Atk
-	bigdw 117 ; Def
-	bigdw 185 ; Spd
-	bigdw 126 ; SAtk
-	bigdw 126 ; SDef
-	db "MARUMAIN@@@"
-
-	dw AERODACTYL
-	db KINGS_ROCK
-	dw HYPER_BEAM, EARTHQUAKE, FIRE_BLAST, IRON_TAIL
-
-	dw 0 ; OT ID
-	bigdt 125000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 45000
-	dn 15, 13, 13, 13 ; DVs
-	db 5, 10, 5, 15 ; PP
+	db 20, 10, 20, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 50 ; Level
 	db 0, 0 ; Status
 	bigdw 181 ; HP
 	bigdw 181 ; Max HP
-	bigdw 152 ; Atk
-	bigdw 110 ; Def
-	bigdw 174 ; Spd
-	bigdw 104 ; SAtk
-	bigdw 119 ; SDef
+	bigdw 161 ; Atk
+	bigdw 131 ; Def
+	bigdw 146 ; Spd
+	bigdw 111 ; SAtk
+	bigdw 131 ; SDef
+	db "HAtuSAMU@@@"
+
+	db SLOWKING ;EKotohime
+	db MINT_BERRY
+	db REST, CURSE, BODY_SLAM, SLEEP_TALK
+	dw 0 ; OT ID
+	dt 125000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 15, 10 ; PP
+	db 15 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 50 ; Level
+	db 0, 0 ; Status
+	bigdw 216 ; HP
+	bigdw 216 ; Max HP
+	bigdw 141 ; Atk
+	bigdw 151 ; Def
+	bigdw 111 ; Spd
+	bigdw 111 ; SAtk
+	bigdw 151 ; SDef
+	db "YADOKINGU@@"
+
+	db MACHAMP ;EMeiling
+	db GOLD_BERRY
+	db CROSS_CHOP, DRAGON_RAGE, ICE_PUNCH, THUNDERPUNCH
+	dw 0 ; OT ID
+	dt 125000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 15 ; PP
+	db 13 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 50 ; Level
+	db 0, 0 ; Status
+	bigdw 186 ; HP
+	bigdw 186 ; Max HP
+	bigdw 171 ; Atk
+	bigdw 111 ; Def
+	bigdw 141 ; Spd
+	bigdw 136 ; SAtk
+	bigdw 136 ; SDef
+	db "KAIRIKI-@@@"
+
+	db SUDOWOODO ;EChiyuri
+	db SCOPE_LENS
+	db THUNDER_WAVE, ICE_PUNCH, PSYCHIC_M, SURF
+	dw 0 ; OT ID
+	dt 125000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 15, 15, 15 ; PP
+	db 0 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 50 ; Level
+	db 0, 0 ; Status
+	bigdw 201 ; HP
+	bigdw 201 ; Max HP
+	bigdw 106 ; Atk
+	bigdw 146 ; Def
+	bigdw 131 ; Spd
+	bigdw 146 ; SAtk
+	bigdw 161 ; SDef
+	db "SUTA-MI-@@@"
+
+	db PORYGON ;EYamame 
+	db KINGS_ROCK
+	db EARTHQUAKE, SPIKES, CRABHAMMER, ROCK_SLIDE
+	dw 0 ; OT ID
+	dt 125000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 20, 15, 15 ; PP
+	db 0 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 50 ; Level
+	db 0, 0 ; Status
+	bigdw 186 ; HP
+	bigdw 186 ; Max HP
+	bigdw 161 ; Atk
+	bigdw 126 ; Def
+	bigdw 151 ; Spd
+	bigdw 111 ; SAtk
+	bigdw 126 ; SDef
+	db "DAGUTORIO@@"
+
+	db SEAKING ;EKanako
+	db MIRACLEBERRY
+	db THUNDER, RAIN_DANCE, SAFEGUARD, RECOVER
+	dw 0 ; OT ID
+	dt 125000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 10 ; PP
+	db 0 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 50 ; Level
+	db 0, 0 ; Status
+	bigdw 206 ; HP
+	bigdw 206 ; Max HP
+	bigdw 116 ; Atk
+	bigdw 151 ; Def
+	bigdw 116 ; Spd
+	bigdw 161 ; SAtk
+	bigdw 151 ; SDef
+	db "MARUMAIN@@@"
+
+	db AERODACTYL ;EEllen
+	db KINGS_ROCK
+	db MEDITATE, MOONLIGHT, DREAM_EATER, PSYCHIC_M
+	dw 0 ; OT ID
+	dt 125000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 15, 10, 15 ; PP
+	db 0 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 50 ; Level
+	db 0, 0 ; Status
+	bigdw 196 ; HP
+	bigdw 196 ; Max HP
+	bigdw 111 ; Atk
+	bigdw 121 ; Def
+	bigdw 141 ; Spd
+	bigdw 171 ; SAtk
+	bigdw 141 ; SDef
 	db "PUTERA@@@@@"
 
-	dw CROBAT
+	db CROBAT ;ERemilia
 	db LEFTOVERS
-	dw CONFUSE_RAY, ATTRACT, HYPER_BEAM, TOXIC
-
+	db CRUNCH, FLY, GLARE, AGILITY
 	dw 0 ; OT ID
-	bigdt 125000 ; Exp
+	dt 125000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 40000
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	dn 14, 15, 15, 15 ; DVs
-	db 10, 15, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 20, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 50 ; Level
 	db 0, 0 ; Status
-	bigdw 178 ; HP
-	bigdw 178 ; Max HP
-	bigdw 134 ; Atk
-	bigdw 127 ; Def
-	bigdw 175 ; Spd
-	bigdw 117 ; SAtk
-	bigdw 127 ; SDef
+	bigdw 181 ; HP
+	bigdw 181 ; Max HP
+	bigdw 161 ; Atk
+	bigdw 126 ; Def
+	bigdw 171 ; Spd
+	bigdw 131 ; SAtk
+	bigdw 126 ; SDef
 	db "KUROBAtuTO@"
 
-	dw ZAPDOS
+	db ZAPDOS ;EMerlin
 	db MIRACLEBERRY
-	dw DRILL_PECK, THUNDERBOLT, THUNDER_WAVE, HYPER_BEAM
-
+	db MOONLIGHT, SHADOW_BALL, MEDITATE, FIRE_PUNCH
 	dw 0 ; OT ID
-	bigdt 125000 ; Exp
+	dt 125000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 45000
-	bigdw 40000
-	bigdw 50000
-	dn 15, 13, 13, 14 ; DVs
-	db 20, 15, 20, 5 ; PP
-	db 0 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 50 ; Level
-	db 0, 0 ; Status
-	bigdw 190 ; HP
-	bigdw 190 ; Max HP
-	bigdw 137 ; Atk
-	bigdw 129 ; Def
-	bigdw 143 ; Spd
-	bigdw 171 ; SAtk
-	bigdw 136 ; SDef
-	db "SANDA-@@@@@"
-
-	dw SKARMORY
-	db GOLD_BERRY
-	dw SANDSTORM, FLY, STEEL_WING, TOXIC
-
-	dw 0 ; OT ID
-	bigdt 125000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 40000
-	dn 13, 7, 14, 13 ; DVs
-	db 10, 15, 25, 10 ; PP
-	db 0 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 50 ; Level
-	db 0, 0 ; Status
-	bigdw 164 ; HP
-	bigdw 164 ; Max HP
-	bigdw 125 ; Atk
-	bigdw 179 ; Def
-	bigdw 116 ; Spd
-	bigdw 83 ; SAtk
-	bigdw 113 ; SDef
-	db "EA-MUDO@@@@"
-
-	dw FORRETRESS
-	db LEFTOVERS
-	dw SANDSTORM, TOXIC, EXPLOSION, SWAGGER
-
-	dw 0 ; OT ID
-	bigdt 125000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 55000
-	bigdw 45000
-	bigdw 40000
-	dn 12, 15, 13, 13 ; DVs
-	db 10, 10, 5, 15 ; PP
-	db 0 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 50 ; Level
-	db 0, 0 ; Status
-	bigdw 169 ; HP
-	bigdw 169 ; Max HP
-	bigdw 134 ; Atk
-	bigdw 189 ; Def
-	bigdw 84 ; Spd
-	bigdw 103 ; SAtk
-	bigdw 103 ; SDef
-	db "HUoRETOSU@@"
-
-	dw STEELIX
-	db MIRACLEBERRY
-	dw SANDSTORM, IRON_TAIL, REST, EARTHQUAKE
-
-	dw 0 ; OT ID
-	bigdt 125000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 40000
-	bigdw 45000
-	dn 13, 13, 13, 13 ; DVs
-	db 10, 15, 10, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 20, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 50 ; Level
 	db 0, 0 ; Status
 	bigdw 176 ; HP
 	bigdw 176 ; Max HP
-	bigdw 130 ; Atk
-	bigdw 245 ; Def
-	bigdw 73 ; Spd
-	bigdw 99 ; SAtk
-	bigdw 109 ; SDef
+	bigdw 131 ; Atk
+	bigdw 121 ; Def
+	bigdw 161 ; Spd
+	bigdw 171 ; SAtk
+	bigdw 121 ; SDef
+	db "SANDA-@@@@@"
+
+	db SKARMORY ;EOrange
+	db METAL_POWDER
+	db SNORE, COUNTER, MIRROR_COAT, TOXIC
+	dw 0 ; OT ID
+	dt 125000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 20, 20, 10 ; PP
+	db 0 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 50 ; Level
+	db 0, 0 ; Status
+	bigdw 361 ; HP
+	bigdw 361 ; Max HP
+	bigdw 91 ; Atk
+	bigdw 101 ; Def
+	bigdw 116 ; Spd
+	bigdw 91 ; SAtk
+	bigdw 101 ; SDef
+	db "EA-MUDO@@@@"
+
+	db FORRETRESS ;ETenshi
+	db LEFTOVERS
+	db SANDSTORM, EARTHQUAKE, ROCK_SLIDE, SWORDS_DANCE
+	dw 0 ; OT ID
+	dt 125000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 15, 20 ; PP
+	db 0 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 50 ; Level
+	db 0, 0 ; Status
+	bigdw 206 ; HP
+	bigdw 206 ; Max HP
+	bigdw 151 ; Atk
+	bigdw 171 ; Def
+	bigdw 111 ; Spd
+	bigdw 111 ; SAtk
+	bigdw 151 ; SDef
+	db "HUoRETOSU@@"
+
+	db STEELIX ;EYumemi
+	db MIRACLEBERRY
+	db FIRE_BLAST, BLIZZARD, HAIL, PROTECT
+	dw 0 ; OT ID
+	dt 125000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 0 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 50 ; Level
+	db 0, 0 ; Status
+	bigdw 191 ; HP
+	bigdw 191 ; Max HP
+	bigdw 121 ; Atk
+	bigdw 131 ; Def
+	bigdw 151 ; Spd
+	bigdw 171 ; SAtk
+	bigdw 131 ; SDef
 	db "HAGANE-RU@@"
 
-	dw GIRAFARIG
+	db CELEBI ;EHatate
 	db SCOPE_LENS
-	dw DREAM_EATER, CRUNCH, PSYCHIC_M, EARTHQUAKE
-
+	db HEADWIND, EXTREMESPEED, MYSTIC_BOMB, MEDITATE
 	dw 0 ; OT ID
-	bigdt 125000 ; Exp
+	dt 125000 ; Exp
 	; Stat exp
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	dn 4, 5, 5, 6 ; DVs
-	db 15, 15, 10, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 15, 20 ; PP
 	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 50 ; Level
-	db 0, 0 ; Status
-	bigdw 161 ; HP
-	bigdw 161 ; Max HP
-	bigdw 114 ; Atk
-	bigdw 100 ; Def
-	bigdw 120 ; Spd
-	bigdw 126 ; SAtk
-	bigdw 101 ; SDef
-	db "KIRINRIKI@@"
-
-	dw GYARADOS
-	db MIRACLEBERRY
-	dw HYPER_BEAM, SURF, RAIN_DANCE, ZAP_CANNON
-
-	dw 0 ; OT ID
-	bigdt 125000 ; Exp
-	; Stat exp
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	dn 7, 5, 6, 5 ; DVs
-	db 5, 15, 5, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 50 ; Level
-	db 0, 0 ; Status
-	bigdw 193 ; HP
-	bigdw 193 ; Max HP
-	bigdw 162 ; Atk
-	bigdw 114 ; Def
-	bigdw 117 ; Spd
-	bigdw 95 ; SAtk
-	bigdw 135 ; SDef
-	db "GIyaRADOSU@"
-
-	dw ARTICUNO
-	db GOLD_BERRY
-	dw BLIZZARD, HYPER_BEAM, ROAR, ICY_WIND
-
-	dw 0 ; OT ID
-	bigdt 125000 ; Exp
-	; Stat exp
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	bigdw 40000
-	dn 4, 5, 5, 6 ; DVs
-	db 5, 5, 20, 15 ; PP
-	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 50 ; Level
 	db 0, 0 ; Status
 	bigdw 181 ; HP
 	bigdw 181 ; Max HP
-	bigdw 119 ; Atk
-	bigdw 135 ; Def
-	bigdw 120 ; Spd
+	bigdw 136 ; Atk
+	bigdw 121 ; Def
+	bigdw 161 ; Spd
+	bigdw 171 ; SAtk
+	bigdw 121 ; SDef
+	db "KIRINRIKI@@"
+
+	db GYARADOS ;EDaiyousei
+	db MIRACLEBERRY
+	db BATON_PASS, SLEEP_POWDER, MEGAHORN, HEAL_BELL
+	dw 0 ; OT ID
+	dt 125000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 15, 10, 5 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 50 ; Level
+	db 0, 0 ; Status
+	bigdw 181 ; HP
+	bigdw 181 ; Max HP
+	bigdw 141 ; Atk
+	bigdw 126 ; Def
+	bigdw 146 ; Spd
+	bigdw 141 ; SAtk
+	bigdw 126 ; SDef
+	db "GIyaRADOSU@"
+
+	db ARTICUNO ;ELunasa
+	db GOLD_BERRY
+	db DREAM_EATER, LIGHT_SCREEN, REFLECT, BATON_PASS
+	dw 0 ; OT ID
+	dt 125000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 20, 20, 20 ; PP
+	db 0 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 50 ; Level
+	db 0, 0 ; Status
+	bigdw 201 ; HP
+	bigdw 201 ; Max HP
+	bigdw 106 ; Atk
+	bigdw 151 ; Def
+	bigdw 131 ; Spd
 	bigdw 131 ; SAtk
 	bigdw 161 ; SDef
 	db "HURI-ZA-@@@"
@@ -2855,2851 +2749,2746 @@ BattleTowerMons:
 
 ; BattleTowerMons group 6
 
-	dw KINGDRA
+	db KINGDRA ;EYuyuko
 	db LEFTOVERS
-	dw DRAGONBREATH, SURF, HYPER_BEAM, BLIZZARD
-
+	db PROTECT, DREAM_EATER, GIGA_DRAIN, CURSE
 	dw 0 ; OT ID
-	bigdt 216000 ; Exp
+	dt 216000 ; Exp
 	; Stat exp
-	bigdw 55000
-	bigdw 55000
-	bigdw 50000
-	bigdw 60000
-	bigdw 60000
-	dn 13, 13, 15, 14 ; DVs
-	db 20, 15, 5, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 211 ; HP
-	bigdw 211 ; Max HP
-	bigdw 169 ; Atk
-	bigdw 167 ; Def
-	bigdw 161 ; Spd
-	bigdw 172 ; SAtk
-	bigdw 172 ; SDef
-	db "KINGUDORA@@"
-
-	dw TYRANITAR
-	db GOLD_BERRY
-	dw CRUNCH, EARTHQUAKE, ROCK_SLIDE, HYPER_BEAM
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 60000
-	bigdw 55000
-	bigdw 60000
-	bigdw 55000
-	dn 15, 13, 14, 13 ; DVs
-	db 15, 10, 10, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 240 ; HP
-	bigdw 240 ; Max HP
-	bigdw 220 ; Atk
-	bigdw 187 ; Def
-	bigdw 131 ; Spd
-	bigdw 169 ; SAtk
-	bigdw 175 ; SDef
-	db "BANGIRASU@@"
-
-	dw HOUNDOOM
-	db MIRACLEBERRY
-	dw FLAMETHROWER, CRUNCH, DREAM_EATER, REST
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 60000
-	bigdw 55000
-	bigdw 55000
-	bigdw 60000
-	bigdw 55000
-	dn 15, 11, 14, 15 ; DVs
-	db 15, 15, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 212 ; HP
-	bigdw 212 ; Max HP
-	bigdw 165 ; Atk
-	bigdw 113 ; Def
-	bigdw 172 ; Spd
-	bigdw 189 ; SAtk
-	bigdw 153 ; SDef
-	db "HERUGA-@@@@"
-
-	dw PORYGON2
-	db LEFTOVERS
-	dw BLIZZARD, RECOVER, TOXIC, PSYCHIC_M
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 55000
-	dn 13, 13, 13, 14 ; DVs
-	db 5, 20, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 223 ; HP
-	bigdw 223 ; Max HP
-	bigdw 149 ; Atk
-	bigdw 161 ; Def
-	bigdw 125 ; Spd
-	bigdw 182 ; SAtk
-	bigdw 170 ; SDef
-	db "PORIGON2@@@"
-
-	dw MACHAMP
-	db QUICK_CLAW
-	dw FIRE_PUNCH, CROSS_CHOP, THUNDERPUNCH, EARTHQUAKE
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 13, 14, 15 ; DVs
-	db 15, 5, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 226 ; HP
-	bigdw 226 ; Max HP
-	bigdw 212 ; Atk
-	bigdw 148 ; Def
-	bigdw 120 ; Spd
-	bigdw 134 ; SAtk
-	bigdw 158 ; SDef
-	db "KAIRIKI-@@@"
-
-	dw ZAPDOS
-	db MINT_BERRY
-	dw REST, DRILL_PECK, THUNDERBOLT, THUNDER_WAVE
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 13, 15, 13 ; DVs
-	db 10, 20, 15, 20 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 229 ; HP
-	bigdw 229 ; Max HP
-	bigdw 160 ; Atk
-	bigdw 155 ; Def
-	bigdw 177 ; Spd
-	bigdw 203 ; SAtk
-	bigdw 161 ; SDef
-	db "SANDA-@@@@@"
-
-	dw WOBBUFFET
-	db GOLD_BERRY
-	dw COUNTER, MIRROR_COAT, DESTINY_BOND, SAFEGUARD
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 45000
-	dn 15, 13, 14, 13 ; DVs
-	db 20, 20, 5, 25 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 346 ; HP
-	bigdw 346 ; Max HP
-	bigdw 95 ; Atk
-	bigdw 122 ; Def
-	bigdw 94 ; Spd
-	bigdw 92 ; SAtk
-	bigdw 122 ; SDef
-	db "SO-NANSU@@@"
-
-	dw AERODACTYL
-	db LEFTOVERS
-	dw HYPER_BEAM, SUPERSONIC, EARTHQUAKE, BITE
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 45000
-	dn 15, 13, 13, 13 ; DVs
-	db 5, 20, 10, 25 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 215 ; HP
-	bigdw 215 ; Max HP
-	bigdw 182 ; Atk
-	bigdw 131 ; Def
-	bigdw 208 ; Spd
-	bigdw 124 ; SAtk
-	bigdw 142 ; SDef
-	db "PUTERA@@@@@"
-
-	dw DRAGONITE
-	db MIRACLEBERRY
-	dw HYPER_BEAM, ICY_WIND, THUNDERBOLT, SURF
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 45000
-	dn 13, 13, 15, 13 ; DVs
-	db 5, 15, 15, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 229 ; HP
-	bigdw 229 ; Max HP
-	bigdw 214 ; Atk
-	bigdw 164 ; Def
-	bigdw 152 ; Spd
-	bigdw 172 ; SAtk
-	bigdw 172 ; SDef
-	db "KAIRIyu-@@@"
-
-	dw UMBREON
-	db GOLD_BERRY
-	dw MUD_SLAP, MOONLIGHT, PSYCHIC_M, FAINT_ATTACK
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 13, 14, 15 ; DVs
-	db 10, 5, 10, 20 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 232 ; HP
-	bigdw 232 ; Max HP
-	bigdw 134 ; Atk
-	bigdw 185 ; Def
-	bigdw 132 ; Spd
-	bigdw 128 ; SAtk
-	bigdw 212 ; SDef
-	db "BURAtuKI-@@"
-
-	dw ARCANINE
-	db CHARCOAL
-	dw FLAMETHROWER, CRUNCH, EXTREMESPEED, IRON_TAIL
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 50000
-	bigdw 40000
-	bigdw 55000
-	bigdw 50000
-	dn 15, 13, 14, 13 ; DVs
-	db 15, 15, 5, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 228 ; HP
-	bigdw 228 ; Max HP
-	bigdw 188 ; Atk
-	bigdw 146 ; Def
-	bigdw 170 ; Spd
-	bigdw 173 ; SAtk
-	bigdw 149 ; SDef
-	db "UINDEi@@@@@"
-
-	dw SKARMORY
-	db MIRACLEBERRY
-	dw STEEL_WING, FLY, TOXIC, PROTECT
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 11, 14, 11 ; DVs
-	db 25, 15, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 196 ; HP
-	bigdw 196 ; Max HP
-	bigdw 152 ; Atk
-	bigdw 218 ; Def
-	bigdw 138 ; Spd
-	bigdw 99 ; SAtk
-	bigdw 135 ; SDef
-	db "EA-MUDO@@@@"
-
-	dw BLISSEY
-	db LEFTOVERS
-	dw SOFTBOILED, TOXIC, PROTECT, PSYCHIC_M
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	dn 15, 11, 12, 13 ; DVs
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
 	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 60 ; Level
 	db 0, 0 ; Status
-	bigdw 424 ; HP
-	bigdw 424 ; Max HP
-	bigdw 66 ; Atk
-	bigdw 63 ; Def
-	bigdw 117 ; Spd
-	bigdw 143 ; SAtk
-	bigdw 215 ; SDef
-	db "HAPINASU@@@"
+	bigdw 257 ; HP
+	bigdw 257 ; Max HP
+	bigdw 132 ; Atk
+	bigdw 156 ; Def
+	bigdw 144 ; Spd
+	bigdw 192 ; SAtk
+	bigdw 192 ; SDef
+	db "KINGUDORA@@"
 
-	dw SNORLAX
-	db PINK_BOW
-	dw ROCK_SLIDE, SURF, BODY_SLAM, EARTHQUAKE
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 10, 15, 12 ; DVs
-	db 10, 15, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 307 ; HP
-	bigdw 307 ; Max HP
-	bigdw 186 ; Atk
-	bigdw 128 ; Def
-	bigdw 92 ; Spd
-	bigdw 130 ; SAtk
-	bigdw 184 ; SDef
-	db "KABIGON@@@@"
-
-	dw HERACROSS
-	db FOCUS_BAND
-	dw REVERSAL, MEGAHORN, EARTHQUAKE, COUNTER
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 13, 15, 14, 13 ; DVs
-	db 15, 10, 10, 20 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 214 ; HP
-	bigdw 214 ; Max HP
-	bigdw 200 ; Atk
-	bigdw 146 ; Def
-	bigdw 156 ; Spd
-	bigdw 101 ; SAtk
-	bigdw 167 ; SDef
-	db "HERAKUROSU@"
-
-	dw JYNX
-	db MIRACLEBERRY
-	dw BLIZZARD, PSYCHIC_M, SHADOW_BALL, ICY_WIND
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 15, 14, 11 ; DVs
-	db 5, 10, 15, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 196 ; HP
-	bigdw 196 ; Max HP
-	bigdw 116 ; Atk
-	bigdw 98 ; Def
-	bigdw 168 ; Spd
-	bigdw 189 ; SAtk
-	bigdw 165 ; SDef
-	db "RU-ZIyuRA@@"
-
-	dw BLASTOISE
+	db TYRANITAR ;EMima
 	db GOLD_BERRY
-	dw SURF, EARTHQUAKE, RAPID_SPIN, BLIZZARD
-
+	db CRUNCH, SHADOW_BALL, DESTINY_BOND, PERISH_SONG
 	dw 0 ; OT ID
-	bigdt 216000 ; Exp
+	dt 216000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 14, 15, 14 ; DVs
-	db 15, 10, 40, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 5, 5 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 239 ; HP
+	bigdw 239 ; Max HP
+	bigdw 210 ; Atk
+	bigdw 144 ; Def
+	bigdw 198 ; Spd
+	bigdw 210 ; SAtk
+	bigdw 144 ; SDef
+	db "BANGIRASU@@"
+
+	db TAUROS ;ERin
+	db MIRACLEBERRY
+	db FLAMETHROWER, SHADOW_BALL, EXTREMESPEED, DESTINY_BOND
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 60 ; Level
 	db 0, 0 ; Status
 	bigdw 209 ; HP
 	bigdw 209 ; Max HP
-	bigdw 155 ; Atk
+	bigdw 162 ; Atk
+	bigdw 144 ; Def
+	bigdw 204 ; Spd
+	bigdw 186 ; SAtk
+	bigdw 156 ; SDef
+	db "HERUGA-@@@@"
+
+	db PORYGON2 ;EElly
+	db LEFTOVERS
+	db DYNAMICPUNCH, GUILLOTINE, EARTHQUAKE, SWORDS_DANCE
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 221 ; HP
+	bigdw 221 ; Max HP
+	bigdw 210 ; Atk
+	bigdw 150 ; Def
+	bigdw 186 ; Spd
+	bigdw 132 ; SAtk
+	bigdw 150 ; SDef
+	db "PORIGON2@@@"
+
+	db MACHAMP ;EMeiling
+	db QUICK_CLAW
+	db FIRE_PUNCH, CROSS_CHOP, THUNDERPUNCH, DRAGON_RAGE
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 221 ; HP
+	bigdw 221 ; Max HP
+	bigdw 204 ; Atk
+	bigdw 132 ; Def
+	bigdw 168 ; Spd
+	bigdw 162 ; SAtk
+	bigdw 162 ; SDef
+	db "KAIRIKI-@@@"
+
+	db ZAPDOS ;EMerlin 
+	db MINT_BERRY
+	db MOONLIGHT, BATON_PASS, MEDITATE, PERISH_SONG
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 20, 20, 5 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 209 ; HP
+	bigdw 209 ; Max HP
+	bigdw 156 ; Atk
+	bigdw 144 ; Def
+	bigdw 192 ; Spd
+	bigdw 204 ; SAtk
+	bigdw 144 ; SDef
+	db "SANDA-@@@@@"
+
+	db DODRIO ;ESatori
+	db GOLD_BERRY
+	db COUNTER, MIRROR_COAT, DESTINY_BOND, ENCORE
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 5, 5 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 389 ; HP
+	bigdw 389 ; Max HP
+	bigdw 120 ; Atk
+	bigdw 144 ; Def
+	bigdw 120 ; Spd
+	bigdw 144 ; SAtk
+	bigdw 144 ; SDef
+	db "SO-NANSU@@@"
+
+	db AERODACTYL ;EEllen
+	db LEFTOVERS
+	db ATTRACT, MYSTIC_BOMB, MEDITATE, FIRE_PUNCH
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 233 ; HP
+	bigdw 233 ; Max HP
+	bigdw 132 ; Atk
+	bigdw 144 ; Def
+	bigdw 168 ; Spd
+	bigdw 204 ; SAtk
+	bigdw 168 ; SDef
+	db "PUTERA@@@@@"
+
+	db DRAGONITE ;EYukari
+	db MIRACLEBERRY
+	db PSYCHIC_M, DREAM_EATER, SNORE, FLASH
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 263 ; HP
+	bigdw 263 ; Max HP
+	bigdw 144 ; Atk
+	bigdw 210 ; Def
+	bigdw 144 ; Spd
+	bigdw 174 ; SAtk
+	bigdw 210 ; SDef
+	db "KAIRIyu-@@@"
+
+	db UMBREON ;HKeine
+	db GOLD_BERRY
+	db HI_JUMP_KICK, PETAL_DANCE, EARTHQUAKE, SWORDS_DANCE
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 227 ; HP
+	bigdw 227 ; Max HP
+	bigdw 204 ; Atk
+	bigdw 150 ; Def
+	bigdw 180 ; Spd
+	bigdw 144 ; SAtk
+	bigdw 150 ; SDef
+	db "BURAtuKI-@@"
+
+	db CHANSEY ;ERumia
+	db FOCUS_BAND
+	db OUTRAGE, DESTINY_BOND, TOXIC, SLUDGE_BOMB
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 5, 10, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 209 ; HP
+	bigdw 209 ; Max HP
+	bigdw 174 ; Atk
+	bigdw 138 ; Def
+	bigdw 180 ; Spd
+	bigdw 162 ; SAtk
+	bigdw 162 ; SDef
+	db "UINDEi@@@@@"
+
+	db SKARMORY ;EOrange 
+	db METAL_POWDER
+	db MEGA_KICK, SNORE, TOXIC, PROTECT
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 431 ; HP
+	bigdw 431 ; Max HP
+	bigdw 108 ; Atk
+	bigdw 120 ; Def
+	bigdw 138 ; Spd
+	bigdw 108 ; SAtk
+	bigdw 120 ; SDef
+	db "EA-MUDO@@@@"
+
+	db BLISSEY ;EGengetsu
+	db SCOPE_LENS
+	db OUTRAGE, SKY_ATTACK, ATTRACT, SOFTBOILED
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 209 ; HP
+	bigdw 209 ; Max HP
+	bigdw 204 ; Atk
+	bigdw 138 ; Def
+	bigdw 204 ; Spd
+	bigdw 204 ; SAtk
+	bigdw 138 ; SDef
+	db "HAPINASU@@@"
+
+	db SNORLAX ;Genji
+	db LEFTOVERS
+	db ANCIENTPOWER, FLY, PROTECT, EARTHQUAKE
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 293 ; HP
+	bigdw 293 ; Max HP
+	bigdw 192 ; Atk
+	bigdw 192 ; Def
+	bigdw 120 ; Spd
+	bigdw 138 ; SAtk
+	bigdw 138 ; SDef
+	db "KABIGON@@@@"
+
+	db CORSOLA ;ELouise
+	db FOCUS_BAND
+	db PERISH_SONG, DREAM_EATER, ICE_PUNCH, THUNDERPUNCH
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 5, 15, 15, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 257 ; HP
+	bigdw 257 ; Max HP
+	bigdw 150 ; Atk
 	bigdw 174 ; Def
-	bigdw 149 ; Spd
-	bigdw 156 ; SAtk
-	bigdw 180 ; SDef
+	bigdw 144 ; Spd
+	bigdw 150 ; SAtk
+	bigdw 174 ; SDef
+	db "HERAKUROSU@"
+
+	db JYNX ;EChen
+	db MIRACLEBERRY
+	db EARTHQUAKE, ROCK_SLIDE, EXTREMESPEED, BODY_SLAM
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 10, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 215 ; HP
+	bigdw 215 ; Max HP
+	bigdw 192 ; Atk
+	bigdw 138 ; Def
+	bigdw 204 ; Spd
+	bigdw 138 ; SAtk
+	bigdw 138 ; SDef
+	db "RU-ZIyuRA@@"
+
+	db BLASTOISE ;ESakuya
+	db GOLD_BERRY
+	db SPIKES, BATON_PASS, HORN_DRILL, HYPNOSIS
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 15, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 221 ; HP
+	bigdw 221 ; Max HP
+	bigdw 168 ; Atk
+	bigdw 150 ; Def
+	bigdw 204 ; Spd
+	bigdw 168 ; SAtk
+	bigdw 150 ; SDef
 	db "KAMEtuKUSU@"
 
-	dw RHYDON
+	db RHYDON ;ERan
 	db QUICK_CLAW
-	dw EARTHQUAKE, SURF, IRON_TAIL, ROCK_SLIDE
-
+	db EARTHQUAKE, SACRED_FIRE, IRON_TAIL, PSYCHIC_M
 	dw 0 ; OT ID
-	bigdt 216000 ; Exp
+	dt 216000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 11, 15, 10 ; DVs
-	db 10, 15, 15, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 15, 15 ; PP
 	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 221 ; HP
+	bigdw 221 ; Max HP
+	bigdw 186 ; Atk
+	bigdw 150 ; Def
+	bigdw 180 ; Spd
+	bigdw 180 ; SAtk
+	bigdw 150 ; SDef
+	db "SAIDON@@@@@"
+
+	db POLITOED ;ESuwako
+	db SCOPE_LENS
+	db EARTHQUAKE, HYDRO_PUMP, BLIZZARD, ANCIENTPOWER
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 0 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 60 ; Level
+	db 0, 0 ; Status
+	bigdw 221 ; HP
+	bigdw 221 ; Max HP
+	bigdw 162 ; Atk
+	bigdw 162 ; Def
+	bigdw 144 ; Spd
+	bigdw 192 ; SAtk
+	bigdw 192 ; SDef
+	db "SANDOPAN@@@"
+
+	db PINSIR ;EMedicine
+	db GOLD_BERRY
+	db SPORE, GIGA_DRAIN, TOXIC, SYNTHESIS
+	dw 0 ; OT ID
+	dt 216000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 60 ; Level
 	db 0, 0 ; Status
 	bigdw 245 ; HP
 	bigdw 245 ; Max HP
-	bigdw 212 ; Atk
-	bigdw 195 ; Def
-	bigdw 104 ; Spd
-	bigdw 104 ; SAtk
-	bigdw 104 ; SDef
-	db "SAIDON@@@@@"
-
-	dw SANDSLASH
-	db SCOPE_LENS
-	dw EARTHQUAKE, SLASH, HYPER_BEAM, SNORE
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 11, 7, 6, 7 ; DVs
-	db 10, 20, 5, 15 ; PP
-	db 0 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 201 ; HP
-	bigdw 201 ; Max HP
-	bigdw 164 ; Atk
-	bigdw 171 ; Def
-	bigdw 116 ; Spd
-	bigdw 93 ; SAtk
-	bigdw 105 ; SDef
-	db "SANDOPAN@@@"
-
-	dw PARASECT
-	db GOLD_BERRY
-	dw SPORE, GIGA_DRAIN, HYPER_BEAM, SLUDGE_BOMB
-
-	dw 0 ; OT ID
-	bigdt 216000 ; Exp
-	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 6, 6, 5, 15 ; DVs
-	db 15, 5, 5, 10 ; PP
-	db 0 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 60 ; Level
-	db 0, 0 ; Status
-	bigdw 171 ; HP
-	bigdw 171 ; Max HP
-	bigdw 152 ; Atk
-	bigdw 134 ; Def
-	bigdw 72 ; Spd
-	bigdw 120 ; SAtk
-	bigdw 144 ; SDef
+	bigdw 132 ; Atk
+	bigdw 174 ; Def
+	bigdw 156 ; Spd
+	bigdw 168 ; SAtk
+	bigdw 174 ; SDef
 	db "PARASEKUTO@"
 
-	dw GOLEM
+	db GOLEM ;EYoumu
 	db BRIGHTPOWDER
-	dw EXPLOSION, EARTHQUAKE, FIRE_PUNCH, FRUSTRATION
-
+	db PETAL_DANCE, EXTREMESPEED, SWORDS_DANCE, JUMP_KICK
 	dw 0 ; OT ID
-	bigdt 216000 ; Exp
+	dt 216000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 6, 5, 7 ; DVs
-	db 5, 10, 15, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 60 ; Level
 	db 0, 0 ; Status
-	bigdw 205 ; HP
-	bigdw 205 ; Max HP
-	bigdw 171 ; Atk
-	bigdw 194 ; Def
-	bigdw 90 ; Spd
-	bigdw 105 ; SAtk
-	bigdw 117 ; SDef
+	bigdw 209 ; HP
+	bigdw 209 ; Max HP
+	bigdw 186 ; Atk
+	bigdw 144 ; Def
+	bigdw 192 ; Spd
+	bigdw 186 ; SAtk
+	bigdw 144 ; SDef
 	db "GORO-NIya@@"
 
 
 ; BattleTowerMons group 7
 
-	dw JOLTEON
+	db JOLTEON ;ELunaChild
 	db MIRACLEBERRY
-	dw THUNDERBOLT, HYPER_BEAM, SHADOW_BALL, ROAR
-
+	db THUNDERBOLT, MOONLIGHT, ICE_PUNCH, MEDITATE
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 60000
-	bigdw 56000
-	bigdw 55000
-	bigdw 50000
-	bigdw 60000
-	dn 15, 11, 14, 15 ; DVs
-	db 15, 5, 15, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
 	bigdw 231 ; HP
 	bigdw 231 ; Max HP
-	bigdw 158 ; Atk
-	bigdw 145 ; Def
-	bigdw 245 ; Spd
-	bigdw 222 ; SAtk
-	bigdw 201 ; SDef
+	bigdw 175 ; Atk
+	bigdw 168 ; Def
+	bigdw 231 ; Spd
+	bigdw 224 ; SAtk
+	bigdw 168 ; SDef
 	db "SANDA-SU@@@"
 
-	dw VAPOREON
+	db VAPOREON ;EStar
 	db LEFTOVERS
-	dw BLIZZARD, SHADOW_BALL, SURF, MUD_SLAP
-
+	db HYDRO_PUMP, MOONLIGHT, RECOVER, SAFEGUARD
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 60000
-	bigdw 60000
-	bigdw 50000
-	dn 11, 15, 14, 15 ; DVs
-	db 5, 15, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 70 ; Level
-	db 0, 0 ; Status
-	bigdw 318 ; HP
-	bigdw 318 ; Max HP
-	bigdw 149 ; Atk
-	bigdw 152 ; Def
-	bigdw 158 ; Spd
-	bigdw 218 ; SAtk
-	bigdw 197 ; SDef
-	db "SIyaWA-ZU@@"
-
-	dw UMBREON
-	db GOLD_BERRY
-	dw FAINT_ATTACK, MOONLIGHT, PSYCH_UP, TOXIC
-
-	dw 0 ; OT ID
-	bigdt 343000 ; Exp
-	; Stat exp
-	bigdw 54000
-	bigdw 60000
-	bigdw 55000
-	bigdw 50000
-	bigdw 58000
-	dn 13, 13, 13, 13 ; DVs
-	db 20, 5, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 70 ; Level
-	db 0, 0 ; Status
-	bigdw 274 ; HP
-	bigdw 274 ; Max HP
-	bigdw 156 ; Atk
-	bigdw 217 ; Def
-	bigdw 152 ; Spd
-	bigdw 149 ; SAtk
-	bigdw 247 ; SDef
-	db "BURAtuKI-@@"
-
-	dw BLISSEY
-	db GOLD_BERRY
-	dw COUNTER, SOFTBOILED, SHADOW_BALL, THUNDERBOLT
-
-	dw 0 ; OT ID
-	bigdt 343000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 55000
-	bigdw 55000
-	bigdw 58000
-	bigdw 50000
-	dn 13, 15, 14, 13 ; DVs
-	db 20, 10, 15, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 70 ; Level
-	db 0, 0 ; Status
-	bigdw 495 ; HP
-	bigdw 495 ; Max HP
-	bigdw 77 ; Atk
-	bigdw 80 ; Def
-	bigdw 143 ; Spd
-	bigdw 166 ; SAtk
-	bigdw 250 ; SDef
-	db "HAPINASU@@@"
-
-	dw SNORLAX
-	db LEFTOVERS
-	dw ROCK_SLIDE, EARTHQUAKE, BLIZZARD, SHADOW_BALL
-
-	dw 0 ; OT ID
-	bigdt 343000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 55000
-	bigdw 60000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 13, 13, 13 ; DVs
-	db 10, 10, 5, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 70 ; Level
-	db 0, 0 ; Status
-	bigdw 365 ; HP
-	bigdw 365 ; Max HP
-	bigdw 217 ; Atk
-	bigdw 156 ; Def
-	bigdw 105 ; Spd
-	bigdw 152 ; SAtk
-	bigdw 215 ; SDef
-	db "KABIGON@@@@"
-
-	dw HOUNDOOM
-	db KINGS_ROCK
-	dw CRUNCH, FLAMETHROWER, FAINT_ATTACK, ROAR
-
-	dw 0 ; OT ID
-	bigdt 343000 ; Exp
-	; Stat exp
-	bigdw 58000
-	bigdw 50000
-	bigdw 55000
-	bigdw 60000
-	bigdw 55000
-	dn 13, 13, 12, 13 ; DVs
-	db 15, 15, 20, 20 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 70 ; Level
-	db 0, 0 ; Status
-	bigdw 245 ; HP
-	bigdw 245 ; Max HP
-	bigdw 187 ; Atk
-	bigdw 133 ; Def
-	bigdw 197 ; Spd
-	bigdw 217 ; SAtk
-	bigdw 175 ; SDef
-	db "HERUGA-@@@@"
-
-	dw TYRANITAR
-	db LEFTOVERS
-	dw EARTHQUAKE, CRUNCH, ROCK_SLIDE, HYPER_BEAM
-
-	dw 0 ; OT ID
-	bigdt 343000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 45000
-	bigdw 50000
-	bigdw 45000
-	dn 13, 11, 13, 15 ; DVs
-	db 10, 15, 10, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 70 ; Level
-	db 0, 0 ; Status
-	bigdw 279 ; HP
-	bigdw 279 ; Max HP
-	bigdw 247 ; Atk
-	bigdw 211 ; Def
-	bigdw 147 ; Spd
-	bigdw 196 ; SAtk
-	bigdw 203 ; SDef
-	db "BANGIRASU@@"
-
-	dw ZAPDOS
-	db GOLD_BERRY
-	dw THUNDERBOLT, DRILL_PECK, THUNDER_WAVE, HYPER_BEAM
-
-	dw 0 ; OT ID
-	bigdt 343000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 45000
-	dn 13, 11, 13, 15 ; DVs
-	db 15, 20, 20, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 70 ; Level
-	db 0, 0 ; Status
-	bigdw 264 ; HP
-	bigdw 264 ; Max HP
-	bigdw 187 ; Atk
-	bigdw 177 ; Def
-	bigdw 200 ; Spd
-	bigdw 238 ; SAtk
-	bigdw 189 ; SDef
-	db "SANDA-@@@@@"
-
-	dw EXEGGUTOR
-	db MIRACLEBERRY
-	dw REST, EXPLOSION, PSYCHIC_M, GIGA_DRAIN
-
-	dw 0 ; OT ID
-	bigdt 343000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 45000
-	dn 13, 13, 14, 13 ; DVs
-	db 10, 5, 10, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 70 ; Level
-	db 0, 0 ; Status
-	bigdw 268 ; HP
-	bigdw 268 ; Max HP
-	bigdw 194 ; Atk
-	bigdw 177 ; Def
-	bigdw 140 ; Spd
-	bigdw 235 ; SAtk
-	bigdw 151 ; SDef
-	db "NAtuSI-@@@@"
-
-	dw UMBREON
-	db GOLD_BERRY
-	dw MOONLIGHT, FAINT_ATTACK, PSYCHIC_M, SHADOW_BALL
-
-	dw 0 ; OT ID
-	bigdt 343000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 45000
-	bigdw 50000
-	dn 15, 13, 14, 11 ; DVs
-	db 5, 20, 10, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 70 ; Level
-	db 0, 0 ; Status
-	bigdw 269 ; HP
-	bigdw 269 ; Max HP
-	bigdw 155 ; Atk
-	bigdw 214 ; Def
-	bigdw 152 ; Spd
-	bigdw 142 ; SAtk
-	bigdw 240 ; SDef
-	db "BURAtuKI-@@"
-
-	dw GYARADOS
-	db BRIGHTPOWDER
-	dw SURF, THUNDERBOLT, HYPER_BEAM, ROAR
-
-	dw 0 ; OT ID
-	bigdt 343000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 45000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 11, 14, 15 ; DVs
-	db 15, 15, 5, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 10, 25 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
 	bigdw 271 ; HP
 	bigdw 271 ; Max HP
-	bigdw 235 ; Atk
-	bigdw 169 ; Def
-	bigdw 178 ; Spd
-	bigdw 148 ; SAtk
-	bigdw 204 ; SDef
+	bigdw 154 ; Atk
+	bigdw 203 ; Def
+	bigdw 168 ; Spd
+	bigdw 203 ; SAtk
+	bigdw 224 ; SDef
+	db "SIyaWA-ZU@@"
+
+	db UMBREON ;HKeine
+	db GOLD_BERRY
+	db HI_JUMP_KICK, PETAL_DANCE, PROTECT, CURSE
+	dw 0 ; OT ID
+	dt 343000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 70 ; Level
+	db 0, 0 ; Status
+	bigdw 264 ; HP
+	bigdw 264 ; Max HP
+	bigdw 238 ; Atk
+	bigdw 175 ; Def
+	bigdw 210 ; Spd
+	bigdw 168 ; SAtk
+	bigdw 175 ; SDef
+	db "BURAtuKI-@@"
+
+	db SKARMORY ;EOrange
+	db THICK_CLUB
+	db SNORE, CURSE, HI_JUMP_KICK, MEGA_KICK
+	dw 0 ; OT ID
+	dt 343000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 70 ; Level
+	db 0, 0 ; Status
+	bigdw 502 ; HP
+	bigdw 502 ; Max HP
+	bigdw 126 ; Atk
+	bigdw 140 ; Def
+	bigdw 161 ; Spd
+	bigdw 126 ; SAtk
+	bigdw 140 ; SDef
+	db "HAPINASU@@@"
+
+	db RATICATE ;ESuika
+	db LEFTOVERS
+	db ANCIENTPOWER, DYNAMICPUNCH, BELLY_DRUM, MILK_DRINK
+	dw 0 ; OT ID
+	dt 343000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 5, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 70 ; Level
+	db 0, 0 ; Status
+	bigdw 299 ; HP
+	bigdw 299 ; Max HP
+	bigdw 238 ; Atk
+	bigdw 189 ; Def
+	bigdw 175 ; Spd
+	bigdw 161 ; SAtk
+	bigdw 189 ; SDef
+	db "KABIGON@@@@"
+
+	db FLAREON ;ESunny
+	db KINGS_ROCK
+	db MOONLIGHT, FLAMETHROWER, MEDITATE, MORNING_SUN
+	dw 0 ; OT ID
+	dt 343000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 20, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 70 ; Level
+	db 0, 0 ; Status
+	bigdw 271 ; HP
+	bigdw 271 ; Max HP
+	bigdw 168 ; Atk
+	bigdw 189 ; Def
+	bigdw 203 ; Spd
+	bigdw 203 ; SAtk
+	bigdw 189 ; SDef
+	db "HERUGA-@@@@"
+
+	db TYRANITAR ;EMima
+	db LEFTOVERS
+	db OUTRAGE, NIGHTMARE, TRI_ATTACK, PERISH_SONG
+	dw 0 ; OT ID
+	dt 343000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 5 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 70 ; Level
+	db 0, 0 ; Status
+	bigdw 278 ; HP
+	bigdw 278 ; Max HP
+	bigdw 245 ; Atk
+	bigdw 168 ; Def
+	bigdw 231 ; Spd
+	bigdw 245 ; SAtk
+	bigdw 168 ; SDef
+	db "BANGIRASU@@"
+
+	db ZAPDOS ;EMerlin
+	db GOLD_BERRY
+	db SHADOW_BALL, MOONLIGHT, MEDITATE, FIRE_PUNCH
+	dw 0 ; OT ID
+	dt 343000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 20, 15 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 70 ; Level
+	db 0, 0 ; Status
+	bigdw 243 ; HP
+	bigdw 243 ; Max HP
+	bigdw 182 ; Atk
+	bigdw 168 ; Def
+	bigdw 224 ; Spd
+	bigdw 238 ; SAtk
+	bigdw 168 ; SDef
+	db "SANDA-@@@@@"
+
+	db MEGANIUM ;EKaguya 
+	db MIRACLEBERRY
+	db RECOVER, MEDITATE, MYSTIC_BOMB, LEAF_STORM
+	dw 0 ; OT ID
+	dt 343000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 20, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 70 ; Level
+	db 0, 0 ; Status
+	bigdw 292 ; HP
+	bigdw 292 ; Max HP
+	bigdw 168 ; Atk
+	bigdw 203 ; Def
+	bigdw 168 ; Spd
+	bigdw 210 ; SAtk
+	bigdw 203 ; SDef
+	db "NAtuSI-@@@@"
+
+	db ESPEON ;EKeine
+	db GOLD_BERRY
+	db PSYCHIC_M, THUNDERPUNCH, ICE_PUNCH, MEDITATE
+	dw 0 ; OT ID
+	dt 343000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 15, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 70 ; Level
+	db 0, 0 ; Status
+	bigdw 264 ; HP
+	bigdw 264 ; Max HP
+	bigdw 168 ; Atk
+	bigdw 189 ; Def
+	bigdw 182 ; Spd
+	bigdw 224 ; SAtk
+	bigdw 203 ; SDef
+	db "BURAtuKI-@@"
+
+	db GYARADOS ;EDaiyousei
+	db BRIGHTPOWDER
+	db MEGAHORN, SLEEP_POWDER, HEAL_BELL, BATON_PASS
+	dw 0 ; OT ID
+	dt 343000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 5, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 70 ; Level
+	db 0, 0 ; Status
+	bigdw 250 ; HP
+	bigdw 250 ; Max HP
+	bigdw 196 ; Atk
+	bigdw 175 ; Def
+	bigdw 203 ; Spd
+	bigdw 196 ; SAtk
+	bigdw 175 ; SDef
 	db "GIyaRADOSU@"
 
-	dw QUAGSIRE
-	db MIRACLEBERRY
-	dw EARTHQUAKE, SURF, SLUDGE_BOMB, IRON_TAIL
-
+	db FERALIGATR ;EEirin
+	db KINGS_ROCK
+	db ICE_BEAM, SURF, SLUDGE_BOMB, MOONLIGHT
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	dn 13, 14, 13, 13 ; DVs
-	db 10, 15, 10, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
-	bigdw 266 ; HP
-	bigdw 266 ; Max HP
-	bigdw 180 ; Atk
-	bigdw 180 ; Def
-	bigdw 110 ; Spd
-	bigdw 152 ; SAtk
-	bigdw 152 ; SDef
+	bigdw 278 ; HP
+	bigdw 278 ; Max HP
+	bigdw 168 ; Atk
+	bigdw 182 ; Def
+	bigdw 203 ; Spd
+	bigdw 231 ; SAtk
+	bigdw 182 ; SDef
 	db "NUO-@@@@@@@"
 
-	dw URSARING
+	db URSARING ;EYumeko
 	db SCOPE_LENS
-	dw SLASH, EARTHQUAKE, HYPER_BEAM, THUNDERPUNCH
-
+	db GUILLOTINE, OUTRAGE, SWORDS_DANCE, SPIKES
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	dn 15, 13, 14, 13 ; DVs
-	db 20, 10, 5, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
-	bigdw 262 ; HP
-	bigdw 262 ; Max HP
-	bigdw 245 ; Atk
-	bigdw 166 ; Def
-	bigdw 138 ; Spd
-	bigdw 166 ; SAtk
-	bigdw 166 ; SDef
+	bigdw 271 ; HP
+	bigdw 271 ; Max HP
+	bigdw 238 ; Atk
+	bigdw 196 ; Def
+	bigdw 182 ; Spd
+	bigdw 154 ; SAtk
+	bigdw 196 ; SDef
 	db "RINGUMA@@@@"
 
-	dw MR__MIME
-	db KINGS_ROCK
-	dw REFLECT, FIRE_PUNCH, PSYCHIC_M, ENCORE
-
+	db MR__MIME ;EParsee
+	db LEFTOVERS
+	db REFLECT, LIGHT_SCREEN, PAIN_SPLIT, DREAM_EATER
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	dn 11, 13, 15, 11 ; DVs
-	db 20, 15, 10, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
-	bigdw 195 ; HP
-	bigdw 195 ; Max HP
-	bigdw 120 ; Atk
-	bigdw 151 ; Def
-	bigdw 190 ; Spd
-	bigdw 198 ; SAtk
-	bigdw 226 ; SDef
+	bigdw 299 ; HP
+	bigdw 299 ; Max HP
+	bigdw 147 ; Atk
+	bigdw 196 ; Def
+	bigdw 147 ; Spd
+	bigdw 168 ; SAtk
+	bigdw 238 ; SDef
 	db "BARIYA-DO@@"
 
-	dw PRIMEAPE
+	db TYPHLOSION ;EMokou
 	db QUICK_CLAW
-	dw CROSS_CHOP, ICE_PUNCH, THUNDERPUNCH, ROCK_SLIDE
-
+	db CROSS_CHOP, FLAMETHROWER, MOONLIGHT, ROCK_SLIDE
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 11, 13, 14, 15 ; DVs
-	db 5, 15, 15, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
-	bigdw 227 ; HP
-	bigdw 227 ; Max HP
-	bigdw 202 ; Atk
-	bigdw 145 ; Def
-	bigdw 196 ; Spd
-	bigdw 148 ; SAtk
-	bigdw 162 ; SDef
+	bigdw 250 ; HP
+	bigdw 250 ; Max HP
+	bigdw 224 ; Atk
+	bigdw 168 ; Def
+	bigdw 210 ; Spd
+	bigdw 224 ; SAtk
+	bigdw 168 ; SDef
 	db "OKORIZARU@@"
 
-	dw GIRAFARIG
+	db AIPOM ;ERikako
 	db GOLD_BERRY
-	dw AGILITY, BATON_PASS, CRUNCH, EARTHQUAKE
-
+	db AGILITY, MEDITATE, FIRE_BLAST, MYSTIC_BOMB
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 14, 15, 13 ; DVs
-	db 30, 40, 15, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
-	bigdw 231 ; HP
-	bigdw 231 ; Max HP
-	bigdw 176 ; Atk
-	bigdw 154 ; Def
-	bigdw 183 ; Spd
-	bigdw 187 ; SAtk
-	bigdw 152 ; SDef
+	bigdw 243 ; HP
+	bigdw 243 ; Max HP
+	bigdw 140 ; Atk
+	bigdw 161 ; Def
+	bigdw 238 ; Spd
+	bigdw 266 ; SAtk
+	bigdw 175 ; SDef
 	db "KIRINRIKI@@"
 
-	dw HITMONLEE
+	db HITMONLEE ;EShizuha
 	db FOCUS_BAND
-	dw REVERSAL, ENDURE, BODY_SLAM, MEGA_KICK
-
+	db ATTRACT, LEAF_STORM, GIGA_DRAIN, PROTECT
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 14, 15, 14 ; DVs
-	db 15, 10, 15, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
-	bigdw 202 ; HP
-	bigdw 202 ; Max HP
-	bigdw 232 ; Atk
-	bigdw 137 ; Def
-	bigdw 186 ; Spd
-	bigdw 112 ; SAtk
-	bigdw 217 ; SDef
+	bigdw 264 ; HP
+	bigdw 264 ; Max HP
+	bigdw 168 ; Atk
+	bigdw 168 ; Def
+	bigdw 189 ; Spd
+	bigdw 217 ; SAtk
+	bigdw 189 ; SDef
 	db "SAWAMURA-@@"
 
-	dw HERACROSS
+	db AMPHAROS ;EKoishi
 	db BRIGHTPOWDER
-	dw REVERSAL, ENDURE, MEGAHORN, EARTHQUAKE
-
+	db DOUBLE_EDGE, PHANTOM_DAZE, THUNDERBOLT, ICE_BEAM
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 7, 15, 7 ; DVs
-	db 15, 10, 10, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
-	bigdw 251 ; HP
-	bigdw 251 ; Max HP
-	bigdw 239 ; Atk
-	bigdw 158 ; Def
-	bigdw 183 ; Spd
-	bigdw 109 ; SAtk
-	bigdw 186 ; SDef
+	bigdw 271 ; HP
+	bigdw 271 ; Max HP
+	bigdw 203 ; Atk
+	bigdw 175 ; Def
+	bigdw 203 ; Spd
+	bigdw 224 ; SAtk
+	bigdw 175 ; SDef
 	db "HERAKUROSU@"
 
-	dw VENUSAUR
+	db VENUSAUR ;EReimu
 	db BRIGHTPOWDER
-	dw SUNNY_DAY, SOLARBEAM, SYNTHESIS, HYPER_BEAM
-
+	db ATTRACT, JUMP_KICK, FLY, MIND_READER
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 6, 4, 4 ; DVs
-	db 5, 10, 5, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 20, 15, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
-	bigdw 233 ; HP
-	bigdw 233 ; Max HP
-	bigdw 159 ; Atk
-	bigdw 159 ; Def
-	bigdw 152 ; Spd
-	bigdw 180 ; SAtk
-	bigdw 180 ; SDef
+	bigdw 264 ; HP
+	bigdw 264 ; Max HP
+	bigdw 196 ; Atk
+	bigdw 196 ; Def
+	bigdw 189 ; Spd
+	bigdw 196 ; SAtk
+	bigdw 196 ; SDef
 	db "HUSIGIBANA@"
 
-	dw CHARIZARD
+	db CHARIZARD ;EMarisa
 	db SCOPE_LENS
-	dw SLASH, EARTHQUAKE, HYPER_BEAM, FLAMETHROWER
-
+	db MEDITATE, MORNING_SUN, THUNDERBOLT, FLAMETHROWER
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 5, 6, 4, 4 ; DVs
-	db 20, 10, 5, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 15, 15, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
-	bigdw 230 ; HP
-	bigdw 230 ; Max HP
-	bigdw 159 ; Atk
-	bigdw 152 ; Def
-	bigdw 180 ; Spd
-	bigdw 193 ; SAtk
-	bigdw 159 ; SDef
+	bigdw 257 ; HP
+	bigdw 257 ; Max HP
+	bigdw 161 ; Atk
+	bigdw 175 ; Def
+	bigdw 231 ; Spd
+	bigdw 238 ; SAtk
+	bigdw 175 ; SDef
 	db "RIZA-DON@@@"
 
-	dw BLASTOISE
+	db BLASTOISE ;ESakuya
 	db QUICK_CLAW
-	dw HYDRO_PUMP, ICE_PUNCH, HYPER_BEAM, IRON_TAIL
-
+	db PSYCHIC_M, ICE_BEAM, SHADOW_BALL, MEDITATE
 	dw 0 ; OT ID
-	bigdt 343000 ; Exp
+	dt 343000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 6, 6, 4 ; DVs
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
 	db 5, 15, 5, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 70 ; Level
 	db 0, 0 ; Status
-	bigdw 231 ; HP
-	bigdw 231 ; Max HP
-	bigdw 161 ; Atk
-	bigdw 183 ; Def
-	bigdw 152 ; Spd
-	bigdw 159 ; SAtk
-	bigdw 187 ; SDef
+	bigdw 257 ; HP
+	bigdw 257 ; Max HP
+	bigdw 196 ; Atk
+	bigdw 175 ; Def
+	bigdw 238 ; Spd
+	bigdw 196 ; SAtk
+	bigdw 175 ; SDef
 	db "KAMEtuKUSU@"
 
 
 ; BattleTowerMons group 8
 
-	dw JOLTEON
+	db HYPNO ;EIku
 	db MIRACLEBERRY
-	dw THUNDER_WAVE, THUNDERBOLT, IRON_TAIL, ROAR
-
+	db THUNDER_WAVE, THUNDERBOLT, DRAGON_RAGE, ICE_BEAM
 	dw 0 ; OT ID
-	bigdt 512000 ; Exp
+	dt 512000 ; Exp
 	; Stat exp
-	bigdw 60000
-	bigdw 55000
-	bigdw 60000
-	bigdw 55000
-	bigdw 55000
-	dn 15, 13, 14, 11 ; DVs
-	db 20, 15, 15, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 15, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 80 ; Level
 	db 0, 0 ; Status
-	bigdw 263 ; HP
-	bigdw 263 ; Max HP
-	bigdw 179 ; Atk
-	bigdw 170 ; Def
-	bigdw 281 ; Spd
-	bigdw 245 ; SAtk
-	bigdw 221 ; SDef
+	bigdw 308 ; HP
+	bigdw 308 ; Max HP
+	bigdw 199 ; Atk
+	bigdw 199 ; Def
+	bigdw 223 ; Spd
+	bigdw 271 ; SAtk
+	bigdw 223 ; SDef
 	db "SANDA-SU@@@"
 
-	dw SNORLAX
+	db YUUTO ;Yuuto
 	db LEFTOVERS
-	dw REST, BELLY_DRUM, SNORE, EARTHQUAKE
-
+	db ATTRACT, ANCIENTPOWER, SANDSTORM, MEDITATE
 	dw 0 ; OT ID
-	bigdt 512000 ; Exp
+	dt 512000 ; Exp
 	; Stat exp
-	bigdw 60000
-	bigdw 55000
-	bigdw 50000
-	bigdw 55500
-	bigdw 60000
-	dn 13, 11, 14, 13 ; DVs
-	db 10, 10, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 80 ; Level
-	db 0, 0 ; Status
-	bigdw 415 ; HP
-	bigdw 415 ; Max HP
-	bigdw 248 ; Atk
-	bigdw 170 ; Def
-	bigdw 121 ; Spd
-	bigdw 178 ; SAtk
-	bigdw 250 ; SDef
-	db "KABIGON@@@@"
-
-	dw HOUNDOOM
-	db MINT_BERRY
-	dw REST, CRUNCH, FLAMETHROWER, SUNNY_DAY
-
-	dw 0 ; OT ID
-	bigdt 512000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 50000
-	bigdw 55000
-	bigdw 55000
-	bigdw 55000
-	dn 15, 13, 13, 11 ; DVs
-	db 10, 15, 15, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 80 ; Level
-	db 0, 0 ; Status
-	bigdw 280 ; HP
-	bigdw 280 ; Max HP
-	bigdw 217 ; Atk
-	bigdw 152 ; Def
-	bigdw 224 ; Spd
-	bigdw 245 ; SAtk
-	bigdw 197 ; SDef
-	db "HERUGA-@@@@"
-
-	dw TAUROS
-	db GOLD_BERRY
-	dw EARTHQUAKE, BODY_SLAM, IRON_TAIL, HYPER_BEAM
-
-	dw 0 ; OT ID
-	bigdt 512000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 30000
-	bigdw 50000
-	dn 15, 13, 13, 14 ; DVs
-	db 10, 15, 15, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 80 ; Level
 	db 0, 0 ; Status
 	bigdw 276 ; HP
 	bigdw 276 ; Max HP
-	bigdw 233 ; Atk
-	bigdw 221 ; Def
-	bigdw 236 ; Spd
-	bigdw 135 ; SAtk
-	bigdw 183 ; SDef
-	db "KENTAROSU@@"
+	bigdw 231 ; Atk
+	bigdw 191 ; Def
+	bigdw 223 ; Spd
+	bigdw 255 ; SAtk
+	bigdw 223 ; SDef
+	db "KABIGON@@@@"
 
-	dw LAPRAS
+	db KANGASKHAN ;EKisume
 	db MINT_BERRY
-	dw REST, SURF, CONFUSE_RAY, PSYCHIC_M
-
+	db PAIN_SPLIT, SUPER_FANG, FLAMETHROWER, SURF
 	dw 0 ; OT ID
-	bigdt 512000 ; Exp
+	dt 512000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 15, 13, 11 ; DVs
-	db 10, 15, 10, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 10, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 80 ; Level
 	db 0, 0 ; Status
-	bigdw 366 ; HP
-	bigdw 366 ; Max HP
-	bigdw 205 ; Atk
-	bigdw 201 ; Def
-	bigdw 168 ; Spd
-	bigdw 202 ; SAtk
-	bigdw 218 ; SDef
-	db "RAPURASU@@@"
+	bigdw 324 ; HP
+	bigdw 324 ; Max HP
+	bigdw 175 ; Atk
+	bigdw 271 ; Def
+	bigdw 159 ; Spd
+	bigdw 215 ; SAtk
+	bigdw 215 ; SDef
+	db "HERUGA-@@@@"
 
-	dw TYRANITAR
-	db MIRACLEBERRY
-	dw REST, CRUNCH, EARTHQUAKE, ROCK_SLIDE
-
+	db TAUROS ;ERin
+	db GOLD_BERRY
+	db DESTINY_BOND, EXTREMESPEED, FIRE_BLAST, SHADOW_BALL
 	dw 0 ; OT ID
-	bigdt 512000 ; Exp
+	dt 512000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 15, 13, 11 ; DVs
-	db 10, 15, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 80 ; Level
-	db 0, 0 ; Status
-	bigdw 318 ; HP
-	bigdw 318 ; Max HP
-	bigdw 286 ; Atk
-	bigdw 249 ; Def
-	bigdw 169 ; Spd
-	bigdw 218 ; SAtk
-	bigdw 226 ; SDef
-	db "BANGIRASU@@"
-
-	dw GENGAR
-	db NO_ITEM
-	dw THUNDERBOLT, SHADOW_BALL, CONFUSE_RAY, THIEF
-
-	dw 0 ; OT ID
-	bigdt 512000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 14, 13, 13 ; DVs
-	db 15, 15, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 80 ; Level
-	db 0, 0 ; Status
-	bigdw 247 ; HP
-	bigdw 247 ; Max HP
-	bigdw 173 ; Atk
-	bigdw 165 ; Def
-	bigdw 248 ; Spd
-	bigdw 277 ; SAtk
-	bigdw 189 ; SDef
-	db "GENGA-@@@@@"
-
-	dw FORRETRESS
-	db LEFTOVERS
-	dw EXPLOSION, TOXIC, SOLARBEAM, SWAGGER
-
-	dw 0 ; OT ID
-	bigdt 512000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	dn 15, 13, 14, 13 ; DVs
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
 	db 5, 10, 10, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 80 ; Level
 	db 0, 0 ; Status
-	bigdw 273 ; HP
-	bigdw 273 ; Max HP
-	bigdw 217 ; Atk
-	bigdw 293 ; Def
-	bigdw 133 ; Spd
-	bigdw 165 ; SAtk
-	bigdw 165 ; SDef
-	db "HUoRETOSU@@"
+	bigdw 276 ; HP
+	bigdw 276 ; Max HP
+	bigdw 215 ; Atk
+	bigdw 191 ; Def
+	bigdw 271 ; Spd
+	bigdw 247 ; SAtk
+	bigdw 207 ; SDef
+	db "KENTAROSU@@"
 
-	dw KINGDRA
+	db LAPRAS ;ERika
 	db MINT_BERRY
-	dw REST, SURF, BLIZZARD, DRAGONBREATH
-
+	db AEROBLAST, SIGMA_CANNON, EXPLOSION, FIRE_BLAST
 	dw 0 ; OT ID
-	bigdt 512000 ; Exp
+	dt 512000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 40000
-	bigdw 55000
-	bigdw 50000
-	dn 15, 11, 14, 13 ; DVs
-	db 10, 15, 5, 20 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 80 ; Level
-	db 0, 0 ; Status
-	bigdw 273 ; HP
-	bigdw 273 ; Max HP
-	bigdw 225 ; Atk
-	bigdw 214 ; Def
-	bigdw 209 ; Spd
-	bigdw 221 ; SAtk
-	bigdw 221 ; SDef
-	db "KINGUDORA@@"
-
-	dw DRAGONITE
-	db GOLD_BERRY
-	dw THUNDER_WAVE, SURF, THUNDERBOLT, OUTRAGE
-
-	dw 0 ; OT ID
-	bigdt 512000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	dn 13, 13, 13, 13 ; DVs
-	db 20, 15, 15, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 80 ; Level
-	db 0, 0 ; Status
-	bigdw 303 ; HP
-	bigdw 303 ; Max HP
-	bigdw 284 ; Atk
-	bigdw 221 ; Def
-	bigdw 197 ; Spd
-	bigdw 228 ; SAtk
-	bigdw 228 ; SDef
-	db "KAIRIyu-@@@"
-
-	dw PORYGON2
-	db LEFTOVERS
-	dw PSYCHIC_M, RECOVER, HYPER_BEAM, TRI_ATTACK
-
-	dw 0 ; OT ID
-	bigdt 512000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 50000
-	bigdw 40000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 15, 14, 13 ; DVs
-	db 10, 20, 5, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 80 ; Level
-	db 0, 0 ; Status
-	bigdw 293 ; HP
-	bigdw 293 ; Max HP
-	bigdw 197 ; Atk
-	bigdw 213 ; Def
-	bigdw 169 ; Spd
-	bigdw 237 ; SAtk
-	bigdw 221 ; SDef
-	db "PORIGON2@@@"
-
-	dw JYNX
-	db QUICK_CLAW
-	dw LOVELY_KISS, BLIZZARD, DREAM_EATER, PSYCHIC_M
-
-	dw 0 ; OT ID
-	bigdt 512000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	dn 13, 15, 13, 15 ; DVs
-	db 10, 5, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 80 ; Level
-	db 0, 0 ; Status
-	bigdw 264 ; HP
-	bigdw 264 ; Max HP
-	bigdw 149 ; Atk
-	bigdw 127 ; Def
-	bigdw 221 ; Spd
-	bigdw 257 ; SAtk
-	bigdw 225 ; SDef
-	db "RU-ZIyuRA@@"
-
-	dw MANTINE
-	db GOLD_BERRY
-	dw SURF, CONFUSE_RAY, BLIZZARD, WING_ATTACK
-
-	dw 0 ; OT ID
-	bigdt 512000 ; Exp
-	; Stat exp
-	bigdw 40000
-	bigdw 45000
-	bigdw 40000
-	bigdw 45000
-	bigdw 50000
-	dn 13, 15, 13, 12 ; DVs
-	db 15, 10, 5, 35 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 80 ; Level
-	db 0, 0 ; Status
-	bigdw 256 ; HP
-	bigdw 256 ; Max HP
-	bigdw 132 ; Atk
-	bigdw 181 ; Def
-	bigdw 180 ; Spd
-	bigdw 196 ; SAtk
-	bigdw 292 ; SDef
-	db "MANTAIN@@@@"
-
-	dw SKARMORY
-	db QUICK_CLAW
-	dw STEEL_WING, FLY, MUD_SLAP, TOXIC
-
-	dw 0 ; OT ID
-	bigdt 512000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 35000
-	bigdw 50000
-	bigdw 50000
-	dn 13, 13, 14, 15 ; DVs
-	db 25, 15, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 80 ; Level
-	db 0, 0 ; Status
-	bigdw 258 ; HP
-	bigdw 258 ; Max HP
-	bigdw 196 ; Atk
-	bigdw 286 ; Def
-	bigdw 183 ; Spd
-	bigdw 137 ; SAtk
-	bigdw 185 ; SDef
-	db "EA-MUDO@@@@"
-
-	dw MOLTRES
-	db CHARCOAL
-	dw FLAMETHROWER, SKY_ATTACK, STEEL_WING, HYPER_BEAM
-
-	dw 0 ; OT ID
-	bigdt 512000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	dn 13, 13, 15, 14 ; DVs
-	db 15, 5, 25, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 80 ; Level
 	db 0, 0 ; Status
 	bigdw 300 ; HP
 	bigdw 300 ; Max HP
-	bigdw 225 ; Atk
-	bigdw 213 ; Def
-	bigdw 213 ; Spd
-	bigdw 271 ; SAtk
+	bigdw 215 ; Atk
+	bigdw 271 ; Def
+	bigdw 191 ; Spd
+	bigdw 255 ; SAtk
+	bigdw 191 ; SDef
+	db "RAPURASU@@@"
+
+	db TYRANITAR ;EMima
+	db MIRACLEBERRY
+	db REST, SLEEP_TALK, NIGHTMARE, OUTRAGE
+	dw 0 ; OT ID
+	dt 512000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 80 ; Level
+	db 0, 0 ; Status
+	bigdw 316 ; HP
+	bigdw 316 ; Max HP
+	bigdw 279 ; Atk
+	bigdw 191 ; Def
+	bigdw 263 ; Spd
+	bigdw 279 ; SAtk
+	bigdw 191 ; SDef
+	db "BANGIRASU@@"
+
+	db GENGAR ;EMystia
+	db FOCUS_BAND
+	db SING, PERISH_SONG, DOUBLE_EDGE, SKY_ATTACK
+	dw 0 ; OT ID
+	dt 512000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 5, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 80 ; Level
+	db 0, 0 ; Status
+	bigdw 292 ; HP
+	bigdw 292 ; Max HP
+	bigdw 239 ; Atk
+	bigdw 183 ; Def
+	bigdw 255 ; Spd
+	bigdw 183 ; SAtk
 	bigdw 207 ; SDef
+	db "GENGA-@@@@@"
+
+	db FORRETRESS ;ETenshi
+	db LEFTOVERS
+	db ANCIENTPOWER, EARTHQUAKE, PETAL_DANCE, SWORDS_DANCE
+	dw 0 ; OT ID
+	dt 512000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 80 ; Level
+	db 0, 0 ; Status
+	bigdw 324 ; HP
+	bigdw 324 ; Max HP
+	bigdw 239 ; Atk
+	bigdw 271 ; Def
+	bigdw 175 ; Spd
+	bigdw 175 ; SAtk
+	bigdw 239 ; SDef
+	db "HUoRETOSU@@"
+
+	db KINGDRA ;EYuyuko
+	db MINT_BERRY
+	db REST, CURSE, DREAM_EATER, GIGA_DRAIN
+	dw 0 ; OT ID
+	dt 512000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 80 ; Level
+	db 0, 0 ; Status
+	bigdw 340 ; HP
+	bigdw 340 ; Max HP
+	bigdw 175 ; Atk
+	bigdw 207 ; Def
+	bigdw 191 ; Spd
+	bigdw 255 ; SAtk
+	bigdw 255 ; SDef
+	db "KINGUDORA@@"
+
+	db DRAGONITE ;EYukari
+	db GOLD_BERRY
+	db SNORE, TOXIC, FUTURE_SIGHT, PROTECT
+	dw 0 ; OT ID
+	dt 512000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 80 ; Level
+	db 0, 0 ; Status
+	bigdw 348 ; HP
+	bigdw 348 ; Max HP
+	bigdw 191 ; Atk
+	bigdw 271 ; Def
+	bigdw 191 ; Spd
+	bigdw 231 ; SAtk
+	bigdw 271 ; SDef
+	db "KAIRIyu-@@@"
+
+	db PORYGON2 ;EElly
+	db LEFTOVERS
+	db GUILLOTINE, SWORDS_DANCE, FALSE_SWIPE, DYNAMICPUNCH
+	dw 0 ; OT ID
+	dt 512000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 20, 25, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 80 ; Level
+	db 0, 0 ; Status
+	bigdw 292 ; HP
+	bigdw 292 ; Max HP
+	bigdw 279 ; Atk
+	bigdw 199 ; Def
+	bigdw 247 ; Spd
+	bigdw 175 ; SAtk
+	bigdw 199 ; SDef
+	db "PORIGON2@@@"
+
+	db JYNX ;EChen
+	db QUICK_CLAW
+	db EARTHQUAKE, ROCK_SLIDE, SWORDS_DANCE, EXTREMESPEED
+	dw 0 ; OT ID
+	dt 512000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 20, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 80 ; Level
+	db 0, 0 ; Status
+	bigdw 284 ; HP
+	bigdw 284 ; Max HP
+	bigdw 255 ; Atk
+	bigdw 183 ; Def
+	bigdw 271 ; Spd
+	bigdw 183 ; SAtk
+	bigdw 183 ; SDef
+	db "RU-ZIyuRA@@"
+
+	db SUDOWOODO ;EChiyuri
+	db GOLD_BERRY
+	db SURF, PSYCHIC_M, ICE_BEAM, MEDITATE
+	dw 0 ; OT ID
+	dt 512000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 80 ; Level
+	db 0, 0 ; Status
+	bigdw 393 ; HP
+	bigdw 393 ; Max HP
+	bigdw 208 ; Atk
+	bigdw 288 ; Def
+	bigdw 258 ; Spd
+	bigdw 288 ; SAtk
+	bigdw 318 ; SDef
+	db "MANTAIN@@@@"
+
+	db SKARMORY ;EOrange
+	db LIGHT_BALL
+	db THUNDERPUNCH, FIRE_PUNCH, ICE_PUNCH, MEDITATE
+	dw 0 ; OT ID
+	dt 512000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 25, 15, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 80 ; Level
+	db 0, 0 ; Status
+	bigdw 572 ; HP
+	bigdw 572 ; Max HP
+	bigdw 143 ; Atk
+	bigdw 159 ; Def
+	bigdw 183 ; Spd
+	bigdw 143 ; SAtk
+	bigdw 159 ; SDef
+	db "EA-MUDO@@@@"
+
+	db MOLTRES ;ELyrica
+	db LEFTOVERS
+	db SHADOW_BALL, PERISH_SONG, AGILITY, BATON_PASS
+	dw 0 ; OT ID
+	dt 512000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 5, 20, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 80 ; Level
+	db 0, 0 ; Status
+	bigdw 284 ; HP
+	bigdw 284 ; Max HP
+	bigdw 183 ; Atk
+	bigdw 215 ; Def
+	bigdw 271 ; Spd
+	bigdw 223 ; SAtk
+	bigdw 215 ; SDef
 	db "HUaIYA-@@@@"
 
-	dw AERODACTYL
+	db AERODACTYL ;EEllen
 	db MIRACLEBERRY
-	dw HYPER_BEAM, REST, EARTHQUAKE, ROAR
-
+	db MYSTIC_BOMB, ATTRACT, DREAM_EATER, MEDITATE
 	dw 0 ; OT ID
-	bigdt 512000 ; Exp
+	dt 512000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	dn 15, 15, 14, 13 ; DVs
-	db 5, 10, 10, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 80 ; Level
 	db 0, 0 ; Status
-	bigdw 282 ; HP
-	bigdw 282 ; Max HP
-	bigdw 237 ; Atk
-	bigdw 177 ; Def
-	bigdw 275 ; Spd
-	bigdw 165 ; SAtk
-	bigdw 189 ; SDef
+	bigdw 308 ; HP
+	bigdw 308 ; Max HP
+	bigdw 175 ; Atk
+	bigdw 191 ; Def
+	bigdw 223 ; Spd
+	bigdw 271 ; SAtk
+	bigdw 223 ; SDef
 	db "PUTERA@@@@@"
 
-	dw ELECTRODE
+	db SCIZOR ;ETokiko
 	db KINGS_ROCK
-	dw THUNDERBOLT, EXPLOSION, MIRROR_COAT, TOXIC
-
+	db DOUBLE_EDGE, SKY_ATTACK, AGILITY, SWORDS_DANCE
 	dw 0 ; OT ID
-	bigdt 512000 ; Exp
+	dt 512000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 40000
-	bigdw 40000
-	bigdw 50000
-	dn 15, 15, 14, 15 ; DVs
-	db 15, 5, 20, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 80 ; Level
 	db 0, 0 ; Status
-	bigdw 250 ; HP
-	bigdw 250 ; Max HP
-	bigdw 153 ; Atk
-	bigdw 181 ; Def
-	bigdw 291 ; Spd
-	bigdw 201 ; SAtk
-	bigdw 201 ; SDef
+	bigdw 284 ; HP
+	bigdw 284 ; Max HP
+	bigdw 255 ; Atk
+	bigdw 207 ; Def
+	bigdw 231 ; Spd
+	bigdw 175 ; SAtk
+	bigdw 207 ; SDef
 	db "MARUMAIN@@@"
 
-	dw DUGTRIO
+	db PORYGON ;EYamame
 	db SCOPE_LENS
-	dw SLASH, EARTHQUAKE, THIEF, MUD_SLAP
-
+	db SPIKES, EARTHQUAKE, MEGAHORN, TOXIC
 	dw 0 ; OT ID
-	bigdt 512000 ; Exp
+	dt 512000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 40000
-	dn 15, 13, 13, 13 ; DVs
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
 	db 20, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 80 ; Level
 	db 0, 0 ; Status
-	bigdw 214 ; HP
-	bigdw 214 ; Max HP
-	bigdw 201 ; Atk
-	bigdw 145 ; Def
-	bigdw 261 ; Spd
-	bigdw 145 ; SAtk
-	bigdw 177 ; SDef
+	bigdw 292 ; HP
+	bigdw 292 ; Max HP
+	bigdw 255 ; Atk
+	bigdw 199 ; Def
+	bigdw 239 ; Spd
+	bigdw 175 ; SAtk
+	bigdw 199 ; SDef
 	db "DAGUTORIO@@"
 
-	dw VICTREEBEL
+	db VICTREEBEL ;EYuuka
 	db QUICK_CLAW
-	dw GIGA_DRAIN, SLUDGE_BOMB, HYPER_BEAM, TOXIC
-
+	db GIGA_DRAIN, OUTRAGE, SLUDGE_BOMB, LOVELY_KISS
 	dw 0 ; OT ID
-	bigdt 512000 ; Exp
+	dt 512000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 6, 5, 6, 5 ; DVs
-	db 5, 10, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 15, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 80 ; Level
 	db 0, 0 ; Status
-	bigdw 260 ; HP
-	bigdw 260 ; Max HP
-	bigdw 217 ; Atk
-	bigdw 151 ; Def
-	bigdw 161 ; Spd
-	bigdw 207 ; SAtk
-	bigdw 143 ; SDef
+	bigdw 308 ; HP
+	bigdw 308 ; Max HP
+	bigdw 231 ; Atk
+	bigdw 191 ; Def
+	bigdw 191 ; Spd
+	bigdw 271 ; SAtk
+	bigdw 231 ; SDef
 	db "UTUBOtuTO@@"
 
-	dw PINSIR
+	db PINSIR ;EMedicine
 	db GOLD_BERRY
-	dw HYPER_BEAM, SUBMISSION, STRENGTH, TOXIC
-
+	db SPIKES, SPORE, GIGA_DRAIN, TOXIC
 	dw 0 ; OT ID
-	bigdt 512000 ; Exp
+	dt 512000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 4, 6, 4 ; DVs
-	db 5, 25, 15, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 10, 10, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 80 ; Level
 	db 0, 0 ; Status
-	bigdw 241 ; HP
-	bigdw 241 ; Max HP
-	bigdw 250 ; Atk
-	bigdw 205 ; Def
-	bigdw 185 ; Spd
-	bigdw 133 ; SAtk
-	bigdw 157 ; SDef
+	bigdw 324 ; HP
+	bigdw 324 ; Max HP
+	bigdw 175 ; Atk
+	bigdw 231 ; Def
+	bigdw 207 ; Spd
+	bigdw 231 ; SAtk
+	bigdw 231 ; SDef
 	db "KAIROSU@@@@"
 
-	dw GRANBULL
+	db QWILFISH ;ESara
 	db BRIGHTPOWDER
-	dw ROAR, SHADOW_BALL, HYPER_BEAM, THUNDERPUNCH
-
+	db BELLY_DRUM, SNORE, EARTHQUAKE, DYNAMICPUNCH
 	dw 0 ; OT ID
-	bigdt 512000 ; Exp
+	dt 512000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 6, 5, 7 ; DVs
-	db 20, 15, 5, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 80 ; Level
 	db 0, 0 ; Status
-	bigdw 286 ; HP
-	bigdw 286 ; Max HP
-	bigdw 242 ; Atk
-	bigdw 169 ; Def
-	bigdw 119 ; Spd
-	bigdw 146 ; SAtk
-	bigdw 146 ; SDef
+	bigdw 332 ; HP
+	bigdw 332 ; Max HP
+	bigdw 247 ; Atk
+	bigdw 231 ; Def
+	bigdw 175 ; Spd
+	bigdw 159 ; SAtk
+	bigdw 231 ; SDef
 	db "GURANBURU@@"
 
 
 ; BattleTowerMons group 9
 
-	dw UMBREON
+	db UMBREON ;HKeine
 	db KINGS_ROCK
-	dw FAINT_ATTACK, MUD_SLAP, MOONLIGHT, CONFUSE_RAY
-
+	db HI_JUMP_KICK, PETAL_DANCE, SWORDS_DANCE, OUTRAGE
 	dw 0 ; OT ID
-	bigdt 729000 ; Exp
+	dt 729000 ; Exp
 	; Stat exp
-	bigdw 60000
-	bigdw 60000
-	bigdw 55000
-	bigdw 60000
-	bigdw 55000
-	dn 15, 13, 14, 13 ; DVs
-	db 20, 10, 5, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 349 ; HP
-	bigdw 349 ; Max HP
-	bigdw 203 ; Atk
-	bigdw 278 ; Def
-	bigdw 202 ; Spd
-	bigdw 188 ; SAtk
-	bigdw 314 ; SDef
-	db "BURAtuKI-@@"
-
-	dw DRAGONITE
-	db QUICK_CLAW
-	dw FIRE_BLAST, HYPER_BEAM, OUTRAGE, BLIZZARD
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 65000
-	bigdw 50000
-	bigdw 56000
-	bigdw 60000
-	bigdw 60000
-	dn 15, 13, 14, 13 ; DVs
-	db 5, 5, 15, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 343 ; HP
-	bigdw 343 ; Max HP
-	bigdw 322 ; Atk
-	bigdw 252 ; Def
-	bigdw 229 ; Spd
-	bigdw 263 ; SAtk
-	bigdw 263 ; SDef
-	db "KAIRIyu-@@@"
-
-	dw STARMIE
-	db LEFTOVERS
-	dw RECOVER, THUNDERBOLT, SURF, PSYCHIC_M
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	bigdw 55000
-	bigdw 60000
-	dn 13, 15, 13, 13 ; DVs
-	db 20, 15, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 289 ; HP
-	bigdw 289 ; Max HP
-	bigdw 218 ; Atk
-	bigdw 239 ; Def
-	bigdw 287 ; Spd
-	bigdw 263 ; SAtk
-	bigdw 236 ; SDef
-	db "SUTA-MI-@@@"
-
-	dw CLOYSTER
-	db LEFTOVERS
-	dw EXPLOSION, BLIZZARD, SURF, ICY_WIND
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 13, 11, 13, 15 ; DVs
-	db 5, 5, 15, 15 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 266 ; HP
-	bigdw 266 ; Max HP
-	bigdw 248 ; Atk
-	bigdw 398 ; Def
-	bigdw 203 ; Spd
-	bigdw 234 ; SAtk
-	bigdw 162 ; SDef
-	db "PARUSIeN@@@"
-
-	dw CROBAT
-	db GOLD_BERRY
-	dw WING_ATTACK, HAZE, HYPER_BEAM, GIGA_DRAIN
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 13, 12, 15 ; DVs
-	db 35, 30, 5, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 325 ; HP
-	bigdw 325 ; Max HP
-	bigdw 243 ; Atk
-	bigdw 221 ; Def
-	bigdw 310 ; Spd
-	bigdw 207 ; SAtk
-	bigdw 225 ; SDef
-	db "KUROBAtuTO@"
-
-	dw PORYGON2
-	db QUICK_CLAW
-	dw TOXIC, PSYCHIC_M, RECOVER, PROTECT
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 15, 13, 14, 13 ; DVs
-	db 10, 10, 20, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 325 ; HP
-	bigdw 325 ; Max HP
-	bigdw 223 ; Atk
-	bigdw 239 ; Def
-	bigdw 190 ; Spd
-	bigdw 266 ; SAtk
-	bigdw 248 ; SDef
-	db "PORIGON2@@@"
-
-	dw KINGDRA
-	db LEFTOVERS
-	dw DRAGONBREATH, SURF, HYPER_BEAM, BLIZZARD
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	bigdw 45000
-	dn 13, 15, 13, 14 ; DVs
-	db 20, 15, 5, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 309 ; HP
-	bigdw 309 ; Max HP
-	bigdw 248 ; Atk
-	bigdw 255 ; Def
-	bigdw 230 ; Spd
-	bigdw 248 ; SAtk
-	bigdw 248 ; SDef
-	db "KINGUDORA@@"
-
-	dw TYRANITAR
-	db QUICK_CLAW
-	dw HYPER_BEAM, CRUNCH, EARTHQUAKE, ROCK_SLIDE
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	dn 13, 15, 13, 14 ; DVs
-	db 5, 15, 10, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 354 ; HP
-	bigdw 354 ; Max HP
-	bigdw 321 ; Atk
-	bigdw 279 ; Def
-	bigdw 185 ; Spd
-	bigdw 250 ; SAtk
-	bigdw 259 ; SDef
-	db "BANGIRASU@@"
-
-	dw LAPRAS
-	db MINT_BERRY
-	dw REST, SURF, THUNDERBOLT, PSYCHIC_M
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 55000
-	dn 11, 13, 14, 15 ; DVs
-	db 10, 15, 15, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 405 ; HP
-	bigdw 405 ; Max HP
-	bigdw 227 ; Atk
-	bigdw 221 ; Def
-	bigdw 187 ; Spd
-	bigdw 237 ; SAtk
-	bigdw 255 ; SDef
-	db "RAPURASU@@@"
-
-	dw ESPEON
-	db GOLD_BERRY
-	dw PSYCHIC_M, SHADOW_BALL, SUNNY_DAY, MORNING_SUN
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 50000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 13, 15, 14 ; DVs
-	db 10, 15, 5, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 294 ; HP
-	bigdw 294 ; Max HP
-	bigdw 194 ; Atk
-	bigdw 185 ; Def
-	bigdw 282 ; Spd
-	bigdw 313 ; SAtk
-	bigdw 250 ; SDef
-	db "E-HUi@@@@@@"
-
-	dw MACHAMP
-	db QUICK_CLAW
-	dw CROSS_CHOP, VITAL_THROW, FIRE_BLAST, EARTHQUAKE
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 55000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 13, 14, 13 ; DVs
-	db 5, 10, 5, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 337 ; HP
-	bigdw 337 ; Max HP
-	bigdw 314 ; Atk
-	bigdw 221 ; Def
-	bigdw 181 ; Spd
-	bigdw 194 ; SAtk
-	bigdw 230 ; SDef
-	db "KAIRIKI-@@@"
-
-	dw SNORLAX
-	db MIRACLEBERRY
-	dw FIRE_BLAST, SURF, EARTHQUAKE, HYPER_BEAM
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 14, 15, 13 ; DVs
-	db 5, 15, 10, 5 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 90 ; Level
-	db 0, 0 ; Status
-	bigdw 455 ; HP
-	bigdw 455 ; Max HP
-	bigdw 279 ; Atk
-	bigdw 199 ; Def
-	bigdw 135 ; Spd
-	bigdw 194 ; SAtk
-	bigdw 275 ; SDef
-	db "KABIGON@@@@"
-
-	dw ARCANINE
-	db MINT_BERRY
-	dw SUNNY_DAY, FLAMETHROWER, EXTREMESPEED, REST
-
-	dw 0 ; OT ID
-	bigdt 729000 ; Exp
-	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 45000
-	bigdw 55000
-	dn 13, 15, 13, 14 ; DVs
-	db 5, 15, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 90 ; Level
 	db 0, 0 ; Status
 	bigdw 336 ; HP
 	bigdw 336 ; Max HP
-	bigdw 274 ; Atk
-	bigdw 225 ; Def
-	bigdw 247 ; Spd
-	bigdw 262 ; SAtk
-	bigdw 226 ; SDef
+	bigdw 304 ; Atk
+	bigdw 223 ; Def
+	bigdw 268 ; Spd
+	bigdw 214 ; SAtk
+	bigdw 223 ; SDef
+	db "BURAtuKI-@@"
+
+	db DRAGONITE ;EYukari
+	db QUICK_CLAW
+	db SNORE, MYSTIC_BOMB, PHANTOM_DAZE, MEDITATE
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 390 ; HP
+	bigdw 390 ; Max HP
+	bigdw 214 ; Atk
+	bigdw 313 ; Def
+	bigdw 214 ; Spd
+	bigdw 259 ; SAtk
+	bigdw 313 ; SDef
+	db "KAIRIyu-@@@"
+
+	db MR__MIME ;EParsee
+	db LEFTOVERS
+	db TOXIC, PROTECT, PAIN_SPLIT, DREAM_EATER
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 381 ; HP
+	bigdw 381 ; Max HP
+	bigdw 187 ; Atk
+	bigdw 250 ; Def
+	bigdw 187 ; Spd
+	bigdw 214 ; SAtk
+	bigdw 304 ; SDef
+	db "SUTA-MI-@@@"
+
+	db STEELIX ;EYumemi
+	db LEFTOVERS
+	db FIRE_BLAST, BLIZZARD, TRI_ATTACK, AGILITY
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 336 ; HP
+	bigdw 336 ; Max HP
+	bigdw 214 ; Atk
+	bigdw 232 ; Def
+	bigdw 268 ; Spd
+	bigdw 313 ; SAtk
+	bigdw 232 ; SDef
+	db "PARUSIeN@@@"
+
+	db CROBAT ;ERemilia
+	db GOLD_BERRY
+	db SKY_ATTACK, OUTRAGE, EXTREMESPEED, LEECH_LIFE
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 318 ; HP
+	bigdw 318 ; Max HP
+	bigdw 295 ; Atk
+	bigdw 223 ; Def
+	bigdw 304 ; Spd
+	bigdw 232 ; SAtk
+	bigdw 223 ; SDef
+	db "KUROBAtuTO@"
+
+	db SLOWKING ;EKotohime
+	db QUICK_CLAW
+	db TOXIC, RECOVER, CURSE, DOUBLE_EDGE
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 381 ; HP
+	bigdw 381 ; Max HP
+	bigdw 250 ; Atk
+	bigdw 268 ; Def
+	bigdw 196 ; Spd
+	bigdw 196 ; SAtk
+	bigdw 268 ; SDef
+	db "PORIGON2@@@"
+
+	db KINGDRA ;EYuyuko
+	db QUICK_CLAW
+	db ICE_BEAM, SHADOW_BALL, MORNING_SUN, MEDITATE
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 381 ; HP
+	bigdw 381 ; Max HP
+	bigdw 196 ; Atk
+	bigdw 232 ; Def
+	bigdw 214 ; Spd
+	bigdw 286 ; SAtk
+	bigdw 286 ; SDef
+	db "KINGUDORA@@"
+
+	db TYRANITAR ;EMima
+	db LEFTOVERS
+	db ANCIENTPOWER, TRI_ATTACK, NIGHTMARE, OUTRAGE
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 354 ; HP
+	bigdw 354 ; Max HP
+	bigdw 313 ; Atk
+	bigdw 214 ; Def
+	bigdw 295 ; Spd
+	bigdw 313 ; SAtk
+	bigdw 214 ; SDef
+	db "BANGIRASU@@"
+
+	db LAPRAS ;ERika
+	db MINT_BERRY
+	db REST, MOONLIGHT, SIGMA_CANNON, AEROBLAST
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 336 ; HP
+	bigdw 336 ; Max HP
+	bigdw 241 ; Atk
+	bigdw 304 ; Def
+	bigdw 214 ; Spd
+	bigdw 286 ; SAtk
+	bigdw 214 ; SDef
+	db "RAPURASU@@@"
+
+	db ESPEON ;EKeine
+	db GOLD_BERRY
+	db MYSTIC_BOMB, THUNDERBOLT, ICE_BEAM, MEDITATE
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 15, 15, 20 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 336 ; HP
+	bigdw 336 ; Max HP
+	bigdw 214 ; Atk
+	bigdw 241 ; Def
+	bigdw 232 ; Spd
+	bigdw 286 ; SAtk
+	bigdw 259 ; SDef
+	db "E-HUi@@@@@@"
+
+	db MACHAMP ;EMeiling
+	db QUICK_CLAW
+	db HI_JUMP_KICK, OUTRAGE, CURSE, SNORE
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 327 ; HP
+	bigdw 327 ; Max HP
+	bigdw 304 ; Atk
+	bigdw 196 ; Def
+	bigdw 250 ; Spd
+	bigdw 241 ; SAtk
+	bigdw 241 ; SDef
+	db "KAIRIKI-@@@"
+
+	db RATICATE ;ESuika
+	db MIRACLEBERRY
+	db ANCIENTPOWER, DYNAMICPUNCH, OUTRAGE, MILK_DRINK
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 381 ; HP
+	bigdw 381 ; Max HP
+	bigdw 304 ; Atk
+	bigdw 241 ; Def
+	bigdw 223 ; Spd
+	bigdw 205 ; SAtk
+	bigdw 241 ; SDef
+	db "KABIGON@@@@"
+
+	db CHARIZARD ;EMarisa
+	db MINT_BERRY
+	db FIRE_BLAST, THUNDER, TRI_ATTACK, REST
+	dw 0 ; OT ID
+	dt 729000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 90 ; Level
+	db 0, 0 ; Status
+	bigdw 327 ; HP
+	bigdw 327 ; Max HP
+	bigdw 205 ; Atk
+	bigdw 223 ; Def
+	bigdw 295 ; Spd
+	bigdw 304 ; SAtk
+	bigdw 223 ; SDef
 	db "UINDEi@@@@@"
 
-	dw BLISSEY
+	db MILTANK ;EMugetsu
 	db LEFTOVERS
-	dw SOLARBEAM, SUNNY_DAY, SOFTBOILED, FIRE_BLAST
-
+	db COUNTER, MIRROR_COAT, RECOVER, SUPER_FANG
 	dw 0 ; OT ID
-	bigdt 729000 ; Exp
+	dt 729000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 11, 13, 15, 14 ; DVs
-	db 10, 5, 10, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 20, 20, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 90 ; Level
 	db 0, 0 ; Status
-	bigdw 633 ; HP
-	bigdw 633 ; Max HP
-	bigdw 90 ; Atk
-	bigdw 95 ; Def
-	bigdw 180 ; Spd
-	bigdw 214 ; SAtk
-	bigdw 322 ; SDef
+	bigdw 363 ; HP
+	bigdw 363 ; Max HP
+	bigdw 223 ; Atk
+	bigdw 268 ; Def
+	bigdw 214 ; Spd
+	bigdw 223 ; SAtk
+	bigdw 304 ; SDef
 	db "HAPINASU@@@"
 
-	dw HOUNDOOM
+	db YANMA ;EFlandre
 	db BRIGHTPOWDER
-	dw FLAMETHROWER, CRUNCH, SUNNY_DAY, SOLARBEAM
-
+	db OUTRAGE, FIRE_BLAST, THRASH, EXPLOSION
 	dw 0 ; OT ID
-	bigdt 729000 ; Exp
+	dt 729000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 13, 11, 15, 14 ; DVs
-	db 15, 15, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 90 ; Level
 	db 0, 0 ; Status
-	bigdw 309 ; HP
-	bigdw 309 ; Max HP
-	bigdw 235 ; Atk
-	bigdw 164 ; Def
-	bigdw 252 ; Spd
-	bigdw 277 ; SAtk
-	bigdw 223 ; SDef
+	bigdw 300 ; HP
+	bigdw 300 ; Max HP
+	bigdw 313 ; Atk
+	bigdw 196 ; Def
+	bigdw 295 ; Spd
+	bigdw 313 ; SAtk
+	bigdw 196 ; SDef
 	db "HERUGA-@@@@"
 
-	dw SKARMORY
+	db URSARING ;EYumeko
 	db QUICK_CLAW
-	dw SANDSTORM, STEEL_WING, TOXIC, RETURN
-
+	db SANDSTORM, SPIKES, HORN_DRILL, PURSUIT
 	dw 0 ; OT ID
-	bigdt 729000 ; Exp
+	dt 729000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 14, 15, 15, 7 ; DVs
-	db 10, 25, 10, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 20, 15, 20 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 90 ; Level
 	db 0, 0 ; Status
-	bigdw 279 ; HP
-	bigdw 279 ; Max HP
-	bigdw 223 ; Atk
-	bigdw 333 ; Def
-	bigdw 207 ; Spd
-	bigdw 139 ; SAtk
-	bigdw 193 ; SDef
+	bigdw 345 ; HP
+	bigdw 345 ; Max HP
+	bigdw 304 ; Atk
+	bigdw 250 ; Def
+	bigdw 232 ; Spd
+	bigdw 196 ; SAtk
+	bigdw 250 ; SDef
 	db "EA-MUDO@@@@"
 
-	dw SHUCKLE
+	db FORRETRESS ;ETenshi
 	db LEFTOVERS
-	dw TOXIC, WRAP, PROTECT, ENCORE
-
+	db SANDSTORM, EARTHQUAKE, PROTECT, ANCIENTPOWER
 	dw 0 ; OT ID
-	bigdt 729000 ; Exp
+	dt 729000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 14, 15, 14 ; DVs
-	db 10, 20, 10, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 90 ; Level
 	db 0, 0 ; Status
-	bigdw 203 ; HP
-	bigdw 203 ; Max HP
-	bigdw 99 ; Atk
-	bigdw 493 ; Def
-	bigdw 90 ; Spd
-	bigdw 97 ; SAtk
-	bigdw 493 ; SDef
+	bigdw 363 ; HP
+	bigdw 363 ; Max HP
+	bigdw 268 ; Atk
+	bigdw 304 ; Def
+	bigdw 196 ; Spd
+	bigdw 196 ; SAtk
+	bigdw 268 ; SDef
 	db "TUBOTUBO@@@"
 
-	dw FLAREON
+	db FLAREON ;ESunny
 	db MINT_BERRY
-	dw HYPER_BEAM, FLAMETHROWER, SHADOW_BALL, ROAR
-
+	db FIRE_BLAST, ATTRACT, MEDITATE, BATON_PASS
 	dw 0 ; OT ID
-	bigdt 729000 ; Exp
+	dt 729000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 7, 15, 7 ; DVs
-	db 5, 15, 15, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 90 ; Level
 	db 0, 0 ; Status
-	bigdw 293 ; HP
-	bigdw 293 ; Max HP
-	bigdw 315 ; Atk
-	bigdw 175 ; Def
-	bigdw 198 ; Spd
-	bigdw 238 ; SAtk
-	bigdw 265 ; SDef
+	bigdw 345 ; HP
+	bigdw 345 ; Max HP
+	bigdw 214 ; Atk
+	bigdw 241 ; Def
+	bigdw 259 ; Spd
+	bigdw 259 ; SAtk
+	bigdw 241 ; SDef
 	db "BU-SUTA-@@@"
 
-	dw MILTANK
+	db AMPHAROS ;EKoishi
 	db LEFTOVERS
-	dw MILK_DRINK, EARTHQUAKE, ATTRACT, BODY_SLAM
-
+	db DOUBLE_EDGE, ATTRACT, LEAF_STORM, PHANTOM_DAZE
 	dw 0 ; OT ID
-	bigdt 729000 ; Exp
+	dt 729000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 4, 7, 5, 7 ; DVs
-	db 10, 10, 15, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 90 ; Level
 	db 0, 0 ; Status
-	bigdw 322 ; HP
-	bigdw 322 ; Max HP
-	bigdw 194 ; Atk
-	bigdw 245 ; Def
-	bigdw 232 ; Spd
-	bigdw 128 ; SAtk
-	bigdw 182 ; SDef
+	bigdw 345 ; HP
+	bigdw 345 ; Max HP
+	bigdw 259 ; Atk
+	bigdw 223 ; Def
+	bigdw 259 ; Spd
+	bigdw 286 ; SAtk
+	bigdw 223 ; SDef
 	db "MIRUTANKU@@"
 
-	dw TAUROS
-	db PINK_BOW
-	dw THUNDERBOLT, HYPER_BEAM, ATTRACT, EARTHQUAKE
-
+	db JUMPLUFF ;EUtsuho
+	db FOCUS_BAND
+	db FIRE_BLAST, HEADWIND, SOLARBEAM, SUNNY_DAY
 	dw 0 ; OT ID
-	bigdt 729000 ; Exp
+	dt 729000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 6, 5, 7, 6 ; DVs
-	db 15, 5, 15, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 90 ; Level
 	db 0, 0 ; Status
-	bigdw 284 ; HP
-	bigdw 284 ; Max HP
-	bigdw 234 ; Atk
-	bigdw 223 ; Def
-	bigdw 254 ; Spd
-	bigdw 126 ; SAtk
-	bigdw 180 ; SDef
+	bigdw 318 ; HP
+	bigdw 318 ; Max HP
+	bigdw 250 ; Atk
+	bigdw 205 ; Def
+	bigdw 286 ; Spd
+	bigdw 322 ; SAtk
+	bigdw 205 ; SDef
 	db "KENTAROSU@@"
 
-	dw MUK
+	db MAGMAR ;EHina
 	db QUICK_CLAW
-	dw TOXIC, SLUDGE_BOMB, ATTRACT, GIGA_DRAIN
-
+	db TOXIC, PAIN_SPLIT, DESTINY_BOND, GIGA_DRAIN
 	dw 0 ; OT ID
-	bigdt 729000 ; Exp
+	dt 729000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 5, 4, 4, 4 ; DVs
-	db 10, 10, 15, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 20, 5, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 90 ; Level
 	db 0, 0 ; Status
-	bigdw 342 ; HP
-	bigdw 342 ; Max HP
-	bigdw 241 ; Atk
-	bigdw 185 ; Def
-	bigdw 140 ; Spd
-	bigdw 167 ; SAtk
-	bigdw 230 ; SDef
+	bigdw 381 ; HP
+	bigdw 381 ; Max HP
+	bigdw 205 ; Atk
+	bigdw 259 ; Def
+	bigdw 196 ; Spd
+	bigdw 241 ; SAtk
+	bigdw 259 ; SDef
 	db "BETOBETON@@"
 
 
 ; BattleTowerMons group 10
 
-	dw HOUNDOOM
-	db MINT_BERRY
-	dw CRUNCH, FLAMETHROWER, ROAR, REST
-
+	db TYPHLOSION ;EMokou
+	db SCOPE_LENS
+	db FIRE_BLAST, DYNAMICPUNCH, OUTRAGE, SACRED_FIRE
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	dn 15, 13, 14, 13 ; DVs
-	db 15, 15, 20, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 347 ; HP
-	bigdw 347 ; Max HP
-	bigdw 276 ; Atk
-	bigdw 192 ; Def
-	bigdw 284 ; Spd
-	bigdw 312 ; SAtk
-	bigdw 252 ; SDef
+	bigdw 353 ; HP
+	bigdw 353 ; Max HP
+	bigdw 318 ; Atk
+	bigdw 238 ; Def
+	bigdw 298 ; Spd
+	bigdw 318 ; SAtk
+	bigdw 238 ; SDef
 	db "HERUGA-@@@@"
 
-	dw MACHAMP
-	db QUICK_CLAW
-	dw CROSS_CHOP, EARTHQUAKE, HYPER_BEAM, VITAL_THROW
-
+	db MACHAMP ;EMeiling
+	db GOLD_BERRY
+	db HI_JUMP_KICK, EARTHQUAKE, OUTRAGE, BELLY_DRUM
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	dn 15, 13, 14, 15 ; DVs
-	db 5, 10, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 377 ; HP
-	bigdw 377 ; Max HP
-	bigdw 356 ; Atk
-	bigdw 252 ; Def
-	bigdw 204 ; Spd
-	bigdw 226 ; SAtk
-	bigdw 266 ; SDef
+	bigdw 363 ; HP
+	bigdw 363 ; Max HP
+	bigdw 338 ; Atk
+	bigdw 218 ; Def
+	bigdw 278 ; Spd
+	bigdw 268 ; SAtk
+	bigdw 268 ; SDef
 	db "KAIRIKI-@@@"
 
-	dw KINGDRA
+	db KINGDRA ;EYuyuko
 	db LEFTOVERS
-	dw SURF, DRAGONBREATH, REST, TOXIC
-
+	db GIGA_DRAIN, DREAM_EATER, CURSE, TOXIC
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	bigdw 60000
-	dn 13, 15, 15, 14 ; DVs
-	db 15, 20, 10, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 349 ; HP
-	bigdw 349 ; Max HP
-	bigdw 282 ; Atk
-	bigdw 286 ; Def
-	bigdw 266 ; Spd
-	bigdw 284 ; SAtk
-	bigdw 284 ; SDef
+	bigdw 423 ; HP
+	bigdw 423 ; Max HP
+	bigdw 218 ; Atk
+	bigdw 258 ; Def
+	bigdw 238 ; Spd
+	bigdw 318 ; SAtk
+	bigdw 318 ; SDef
 	db "KINGUDORA@@"
 
-	dw JOLTEON
+	db FERALIGATR ;EEirin
 	db BRIGHTPOWDER
-	dw THUNDERBOLT, ROAR, THUNDER_WAVE, IRON_TAIL
-
+	db HYDRO_PUMP, AEROBLAST, TRI_ATTACK, TOXIC
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 30000
-	bigdw 50000
-	dn 15, 13, 15, 14 ; DVs
-	db 15, 20, 20, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 323 ; HP
-	bigdw 323 ; Max HP
-	bigdw 220 ; Atk
-	bigdw 206 ; Def
-	bigdw 338 ; Spd
-	bigdw 308 ; SAtk
-	bigdw 278 ; SDef
+	bigdw 393 ; HP
+	bigdw 393 ; Max HP
+	bigdw 238 ; Atk
+	bigdw 258 ; Def
+	bigdw 288 ; Spd
+	bigdw 328 ; SAtk
+	bigdw 258 ; SDef
 	db "SANDA-SU@@@"
 
-	dw TAUROS
-	db KINGS_ROCK
-	dw HYPER_BEAM, EARTHQUAKE, IRON_TAIL, THUNDERBOLT
-
+	db MEGANIUM ;EKaguya
+	db LEFTOVERS
+	db LEAF_STORM, MYSTIC_BOMB, LEECH_SEED, HEAL_BELL
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 13, 14, 15 ; DVs
-	db 5, 10, 15, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 341 ; HP
-	bigdw 341 ; Max HP
-	bigdw 290 ; Atk
-	bigdw 276 ; Def
-	bigdw 308 ; Spd
-	bigdw 170 ; SAtk
-	bigdw 230 ; SDef
+	bigdw 413 ; HP
+	bigdw 413 ; Max HP
+	bigdw 238 ; Atk
+	bigdw 288 ; Def
+	bigdw 238 ; Spd
+	bigdw 298 ; SAtk
+	bigdw 288 ; SDef
 	db "KENTAROSU@@"
 
-	dw ARCANINE
-	db LEFTOVERS
-	dw FLAMETHROWER, EXTREMESPEED, IRON_TAIL, HYPER_BEAM
-
+	db BLASTOISE ;ESakuya
+	db MIRACLEBERRY
+	db PETAL_DANCE, EXTREMESPEED, HI_JUMP_KICK, SWORDS_DANCE
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 55000
-	bigdw 50000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 13, 13, 14, 15 ; DVs
-	db 15, 5, 15, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 374 ; HP
-	bigdw 374 ; Max HP
-	bigdw 306 ; Atk
-	bigdw 246 ; Def
-	bigdw 281 ; Spd
-	bigdw 290 ; SAtk
-	bigdw 250 ; SDef
+	bigdw 363 ; HP
+	bigdw 363 ; Max HP
+	bigdw 278 ; Atk
+	bigdw 248 ; Def
+	bigdw 338 ; Spd
+	bigdw 278 ; SAtk
+	bigdw 248 ; SDef
 	db "UINDEi@@@@@"
 
-	dw CHARIZARD
+	db CHARIZARD ;EMarisa
 	db SCOPE_LENS
-	dw FLAMETHROWER, EARTHQUAKE, SLASH, FLY
-
+	db FIRE_BLAST, THUNDER, TRI_ATTACK, MEDITATE
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 55000
-	bigdw 55000
-	bigdw 55000
-	dn 15, 14, 13, 15 ; DVs
-	db 15, 10, 20, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 343 ; HP
-	bigdw 343 ; Max HP
-	bigdw 258 ; Atk
-	bigdw 247 ; Def
-	bigdw 289 ; Spd
-	bigdw 311 ; SAtk
-	bigdw 263 ; SDef
+	bigdw 363 ; HP
+	bigdw 363 ; Max HP
+	bigdw 228 ; Atk
+	bigdw 248 ; Def
+	bigdw 328 ; Spd
+	bigdw 338 ; SAtk
+	bigdw 248 ; SDef
 	db "RIZA-DON@@@"
 
-	dw ELECTRODE
+	db VENUSAUR ;EReimu
 	db BRIGHTPOWDER
-	dw THUNDER_WAVE, THUNDERBOLT, EXPLOSION, MIRROR_COAT
-
+	db ATTRACT, HI_JUMP_KICK, FLY, MIND_READER
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	bigdw 45000
-	dn 15, 11, 14, 15 ; DVs
-	db 20, 15, 5, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 309 ; HP
-	bigdw 309 ; Max HP
-	bigdw 190 ; Atk
-	bigdw 222 ; Def
-	bigdw 366 ; Spd
-	bigdw 248 ; SAtk
-	bigdw 248 ; SDef
+	bigdw 373 ; HP
+	bigdw 373 ; Max HP
+	bigdw 278 ; Atk
+	bigdw 278 ; Def
+	bigdw 268 ; Spd
+	bigdw 278 ; SAtk
+	bigdw 278 ; SDef
 	db "MARUMAIN@@@"
 
-	dw RHYDON
+	db RHYDON ;ERan
 	db MIRACLEBERRY
-	dw SURF, EARTHQUAKE, HYPER_BEAM, ROCK_SLIDE
-
+	db SACRED_FIRE, EARTHQUAKE, EXTREMESPEED, ANCIENTPOWER
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 55000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	bigdw 45000
-	dn 15, 13, 14, 15 ; DVs
-	db 15, 10, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 404 ; HP
-	bigdw 404 ; Max HP
-	bigdw 350 ; Atk
-	bigdw 329 ; Def
-	bigdw 168 ; Spd
-	bigdw 178 ; SAtk
-	bigdw 178 ; SDef
+	bigdw 363 ; HP
+	bigdw 363 ; Max HP
+	bigdw 308 ; Atk
+	bigdw 248 ; Def
+	bigdw 298 ; Spd
+	bigdw 308 ; SAtk
+	bigdw 248 ; SDef
 	db "SAIDON@@@@@"
 
-	dw STEELIX
+	db STEELIX ;EYumemi
 	db LEFTOVERS
-	dw EARTHQUAKE, HYPER_BEAM, SWAGGER, CRUNCH
-
+	db FIRE_BLAST, BLIZZARD, TRI_ATTACK, HAIL
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 55000
-	bigdw 60000
-	bigdw 50000
-	dn 15, 13, 13, 14 ; DVs
-	db 10, 5, 15, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
+	db 100 ; Happiness
+	db 0, 0, 0 ; Pokerus, Caught data
+	db 100 ; Level
+	db 0, 0 ; Status
+	bigdw 373 ; HP
+	bigdw 373 ; Max HP
+	bigdw 238 ; Atk
+	bigdw 258 ; Def
+	bigdw 298 ; Spd
+	bigdw 348 ; SAtk
+	bigdw 258 ; SDef
+	db "HAGANE-RU@@"
+
+	db PIDGEOT ;EAya
+	db KINGS_ROCK
+	db DOUBLE_EDGE, SKY_ATTACK, HI_JUMP_KICK, SOFTBOILED
+	dw 0 ; OT ID
+	dt 1000000 ; Exp
+	; Stat exp
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 40 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
 	bigdw 343 ; HP
 	bigdw 343 ; Max HP
-	bigdw 260 ; Atk
-	bigdw 489 ; Def
-	bigdw 152 ; Spd
-	bigdw 198 ; SAtk
-	bigdw 218 ; SDef
-	db "HAGANE-RU@@"
-
-	dw FEAROW
-	db KINGS_ROCK
-	dw DRILL_PECK, STEEL_WING, HYPER_BEAM, MUD_SLAP
-
-	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
-	; Stat exp
-	bigdw 55000
-	bigdw 50000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	dn 15, 13, 12, 15 ; DVs
-	db 20, 25, 5, 10 ; PP
-	db 100 ; Happiness
-	db 0, 0, 0 ; Pokerus, Caught data
-	db 100 ; Level
-	db 0, 0 ; Status
-	bigdw 324 ; HP
-	bigdw 324 ; Max HP
-	bigdw 270 ; Atk
-	bigdw 216 ; Def
-	bigdw 287 ; Spd
-	bigdw 212 ; SAtk
-	bigdw 212 ; SDef
+	bigdw 308 ; Atk
+	bigdw 238 ; Def
+	bigdw 378 ; Spd
+	bigdw 248 ; SAtk
+	bigdw 238 ; SDef
 	db "ONIDORIRU@@"
 
-	dw MISDREAVUS
+	db BELLOSSOM ;EKana
 	db FOCUS_BAND
-	dw PERISH_SONG, MEAN_LOOK, PAIN_SPLIT, SHADOW_BALL
-
+	db PERISH_SONG, DESTINY_BOND, PAIN_SPLIT, DREAM_EATER
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 45000
-	bigdw 50000
-	bigdw 55000
-	bigdw 50000
-	bigdw 55000
-	dn 11, 13, 14, 15 ; DVs
-	db 5, 5, 20, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 5, 5, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 309 ; HP
-	bigdw 309 ; Max HP
-	bigdw 202 ; Atk
-	bigdw 209 ; Def
-	bigdw 258 ; Spd
-	bigdw 263 ; SAtk
-	bigdw 263 ; SDef
+	bigdw 403 ; HP
+	bigdw 403 ; Max HP
+	bigdw 238 ; Atk
+	bigdw 278 ; Def
+	bigdw 238 ; Spd
+	bigdw 278 ; SAtk
+	bigdw 298 ; SDef
 	db "MUUMA@@@@@@"
 
-	dw SNEASEL
+	db TYRANITAR ;EMima
 	db SCOPE_LENS
-	dw SLASH, BLIZZARD, DREAM_EATER, FAINT_ATTACK
-
+	db OUTRAGE, NIGHTMARE, TRI_ATTACK, ANCIENTPOWER
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 48000
-	bigdw 45000
-	bigdw 50000
-	dn 15, 13, 14, 15 ; DVs
-	db 20, 5, 15, 20 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 301 ; HP
-	bigdw 301 ; Max HP
-	bigdw 280 ; Atk
-	bigdw 195 ; Def
-	bigdw 316 ; Spd
-	bigdw 160 ; SAtk
-	bigdw 240 ; SDef
+	bigdw 393 ; HP
+	bigdw 393 ; Max HP
+	bigdw 348 ; Atk
+	bigdw 238 ; Def
+	bigdw 328 ; Spd
+	bigdw 348 ; SAtk
+	bigdw 238 ; SDef
 	db "NIyu-RA@@@@"
 
-	dw SCIZOR
+	db URSARING ;EYumeko
 	db QUICK_CLAW
-	dw STEEL_WING, HYPER_BEAM, SLASH, TOXIC
-
+	db OUTRAGE, GUILLOTINE, SWORDS_DANCE, MACH_PUNCH
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 45000
-	dn 15, 11, 15, 14 ; DVs
-	db 25, 5, 20, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 25 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 333 ; HP
-	bigdw 333 ; Max HP
-	bigdw 350 ; Atk
-	bigdw 282 ; Def
-	bigdw 220 ; Spd
-	bigdw 196 ; SAtk
-	bigdw 246 ; SDef
+	bigdw 383 ; HP
+	bigdw 383 ; Max HP
+	bigdw 338 ; Atk
+	bigdw 278 ; Def
+	bigdw 258 ; Spd
+	bigdw 218 ; SAtk
+	bigdw 278 ; SDef
 	db "HAtuSAMU@@@"
 
-	dw BLISSEY
+	db DRAGONITE ;EYukari
 	db LEFTOVERS
-	dw THUNDERBOLT, BLIZZARD, FIRE_BLAST, SOFTBOILED
-
+	db DREAM_EATER, RECOVER, PROTECT, TOXIC
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 40000
-	bigdw 50000
-	bigdw 30000
-	bigdw 30000
-	dn 13, 13, 15, 14 ; DVs
-	db 15, 5, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 703 ; HP
-	bigdw 703 ; Max HP
-	bigdw 101 ; Atk
-	bigdw 106 ; Def
-	bigdw 188 ; Spd
-	bigdw 226 ; SAtk
-	bigdw 346 ; SDef
+	bigdw 433 ; HP
+	bigdw 433 ; Max HP
+	bigdw 238 ; Atk
+	bigdw 348 ; Def
+	bigdw 238 ; Spd
+	bigdw 288 ; SAtk
+	bigdw 348 ; SDef
 	db "HAPINASU@@@"
 
-	dw PILOSWINE
-	db MINT_BERRY
-	dw REST, BLIZZARD, HYPER_BEAM, EARTHQUAKE
-
+	db MILTANK ;EMugetsu
+	db MIRACLEBERRY
+	db RECOVER, SUPER_FANG, SPIKES, LOVELY_KISS
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 14, 15, 7 ; DVs
-	db 10, 5, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 387 ; HP
-	bigdw 387 ; Max HP
-	bigdw 290 ; Atk
-	bigdw 248 ; Def
-	bigdw 190 ; Spd
-	bigdw 194 ; SAtk
-	bigdw 194 ; SDef
+	bigdw 403 ; HP
+	bigdw 403 ; Max HP
+	bigdw 248 ; Atk
+	bigdw 298 ; Def
+	bigdw 238 ; Spd
+	bigdw 248 ; SAtk
+	bigdw 338 ; SDef
 	db "INOMU-@@@@@"
 
-	dw EXEGGUTOR
+	db KABUTOPS ;Hakurei
 	db QUICK_CLAW
-	dw PSYCHIC_M, TOXIC, EXPLOSION, GIGA_DRAIN
-
+	db PSYCHIC_M, FIRE_PUNCH, THUNDERPUNCH, ICE_PUNCH
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 14, 15, 14 ; DVs
-	db 10, 10, 5, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 15, 15, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 375 ; HP
-	bigdw 375 ; Max HP
-	bigdw 280 ; Atk
-	bigdw 258 ; Def
-	bigdw 200 ; Spd
-	bigdw 338 ; SAtk
-	bigdw 218 ; SDef
+	bigdw 343 ; HP
+	bigdw 343 ; Max HP
+	bigdw 328 ; Atk
+	bigdw 238 ; Def
+	bigdw 268 ; Spd
+	bigdw 328 ; SAtk
+	bigdw 238 ; SDef
 	db "NAtuSI-@@@@"
 
-	dw OMASTAR
+	db OMASTAR ;Kirisame
 	db LEFTOVERS
-	dw SURF, ANCIENTPOWER, BLIZZARD, TOXIC
-
+	db ZAP_CANNON, MIND_READER, MYSTIC_BOMB, HYPER_BEAM
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	bigdw 50000
-	dn 15, 11, 14, 7 ; DVs
-	db 15, 5, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 5, 20, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 331 ; HP
-	bigdw 331 ; Max HP
-	bigdw 210 ; Atk
-	bigdw 332 ; Def
-	bigdw 198 ; Spd
-	bigdw 304 ; SAtk
-	bigdw 214 ; SDef
+	bigdw 343 ; HP
+	bigdw 343 ; Max HP
+	bigdw 228 ; Atk
+	bigdw 228 ; Def
+	bigdw 288 ; Spd
+	bigdw 368 ; SAtk
+	bigdw 288 ; SDef
 	db "OMUSUTA-@@@"
 
-	dw GOLEM
+	db BLISSEY ;EGengetsu
 	db BRIGHTPOWDER
-	dw EXPLOSION, EARTHQUAKE, ROCK_SLIDE, FIRE_BLAST
-
+	db ATTRACT, OUTRAGE, AGILITY, SOFTBOILED
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 4, 4, 6 ; DVs
-	db 5, 10, 10, 5 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 20, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 329 ; HP
-	bigdw 329 ; Max HP
-	bigdw 282 ; Atk
-	bigdw 316 ; Def
-	bigdw 146 ; Spd
-	bigdw 170 ; SAtk
-	bigdw 190 ; SDef
+	bigdw 343 ; HP
+	bigdw 343 ; Max HP
+	bigdw 338 ; Atk
+	bigdw 228 ; Def
+	bigdw 298 ; Spd
+	bigdw 338 ; SAtk
+	bigdw 228 ; SDef
 	db "GORO-NIya@@"
 
-	dw HITMONCHAN
+	db YUUTO ;Yuuto
 	db FOCUS_BAND
-	dw COUNTER, FIRE_PUNCH, THUNDERPUNCH, ICE_PUNCH
-
+	db ANCIENTPOWER, ATTRACT, TRI_ATTACK, SANDSTORM
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 6, 7, 7, 6 ; DVs
-	db 20, 15, 15, 15 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 265 ; HP
-	bigdw 265 ; Max HP
-	bigdw 270 ; Atk
-	bigdw 220 ; Def
-	bigdw 214 ; Spd
-	bigdw 130 ; SAtk
-	bigdw 280 ; SDef
+	bigdw 343 ; HP
+	bigdw 343 ; Max HP
+	bigdw 288 ; Atk
+	bigdw 238 ; Def
+	bigdw 278 ; Spd
+	bigdw 318 ; SAtk
+	bigdw 278 ; SDef
 	db "EBIWARA-@@@"
 
-	dw LANTURN
+	db MEW ;Kasen
 	db QUICK_CLAW
-	dw SURF, RAIN_DANCE, ZAP_CANNON, CONFUSE_RAY
-
+	db LEAF_STORM, SACRED_FIRE, MILK_DRINK, EXTREMESPEED
 	dw 0 ; OT ID
-	bigdt 1000000 ; Exp
+	dt 1000000 ; Exp
 	; Stat exp
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	bigdw 30000
-	dn 7, 6, 5, 7 ; DVs
-	db 15, 5, 5, 10 ; PP
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	bigdw 65535 
+	dn 15, 15, 15, 15 ; DVs
+	db 10, 10, 10, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 100 ; Level
 	db 0, 0 ; Status
-	bigdw 425 ; HP
-	bigdw 425 ; Max HP
-	bigdw 178 ; Atk
-	bigdw 176 ; Def
-	bigdw 192 ; Spd
-	bigdw 214 ; SAtk
-	bigdw 214 ; SDef
+	bigdw 373 ; HP
+	bigdw 373 ; Max HP
+	bigdw 298 ; Atk
+	bigdw 248 ; Def
+	bigdw 298 ; Spd
+	bigdw 338 ; SAtk
+	bigdw 248 ; SDef
 	db "RANTA-N@@@@"
 
 	assert_table_length 10 * BATTLETOWER_NUM_UNIQUE_MON

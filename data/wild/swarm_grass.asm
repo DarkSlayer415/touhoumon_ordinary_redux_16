@@ -1,61 +1,67 @@
-; Pokémon swarms in grass
+; Swarms in grass
 
 SwarmGrassWildMons:
 
-; Dunsparce swarm
+; CMokou swarm
 	map_id DARK_CAVE_VIOLET_ENTRANCE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 3, GEODUDE
-	dbw 3, DUNSPARCE
-	dbw 2, ZUBAT
-	dbw 2, GEODUDE
-	dbw 2, DUNSPARCE
-	dbw 4, DUNSPARCE
-	dbw 4, DUNSPARCE
+	db 6, GROWLITHE
+	db 5, CYNDAQUIL
+	db 6, WOBBUFFET
+	db 6, WOBBUFFET
+	db 5, CYNDAQUIL
+	db 5, CYNDAQUIL
+	db 5, CYNDAQUIL
+	db 5, CYNDAQUIL
 	; day
-	dbw 3, GEODUDE
-	dbw 3, DUNSPARCE
-	dbw 2, ZUBAT
-	dbw 2, GEODUDE
-	dbw 2, DUNSPARCE
-	dbw 4, DUNSPARCE
-	dbw 4, DUNSPARCE
+	db 6, GROWLITHE
+	db 5, CYNDAQUIL
+	db 6, WOBBUFFET
+	db 6, WOBBUFFET
+	db 5, CYNDAQUIL
+	db 5, CYNDAQUIL
+	db 5, CYNDAQUIL
+	db 5, CYNDAQUIL
 	; nite
-	dbw 3, GEODUDE
-	dbw 3, DUNSPARCE
-	dbw 2, ZUBAT
-	dbw 2, GEODUDE
-	dbw 2, DUNSPARCE
-	dbw 4, DUNSPARCE
-	dbw 4, DUNSPARCE
+	db 6, GROWLITHE
+	db 5, CYNDAQUIL
+	db 6, WOBBUFFET
+	db 6, WOBBUFFET
+	db 5, CYNDAQUIL
+	db 5, CYNDAQUIL
+	db 5, CYNDAQUIL
+	db 5, CYNDAQUIL
 
-; Yanma swarm
+; CKaguya swarm
 	map_id ROUTE_35
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 12, NIDORAN_M
-	dbw 12, NIDORAN_F
-	dbw 12, YANMA
-	dbw 14, YANMA
-	dbw 14, PIDGEY
-	dbw 10, DITTO
-	dbw 10, DITTO
+	db 13, PIDGEY
+	db 13, TENTACOOL
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
 	; day
-	dbw 12, NIDORAN_M
-	dbw 12, NIDORAN_F
-	dbw 12, YANMA
-	dbw 14, YANMA
-	dbw 14, PIDGEY
-	dbw 10, DITTO
-	dbw 10, DITTO
+	db 13, PIDGEY
+	db 13, TENTACOOL
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
 	; nite
-	dbw 12, NIDORAN_M
-	dbw 12, NIDORAN_F
-	dbw 12, YANMA
-	dbw 14, YANMA
-	dbw 14, HOOTHOOT
-	dbw 10, DITTO
-	dbw 10, DITTO
+	db 13, GROWLITHE
+	db 13, SENTRET
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
+	db 15, CHIKORITA
 
 	db -1 ; end
