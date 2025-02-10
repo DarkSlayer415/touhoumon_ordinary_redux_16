@@ -7,7 +7,7 @@ ENDM
 
 SpecialPhoneCallList:
 ; entries correspond to SPECIALCALL_* constants
-	table_width SPECIALCALL_SIZE
+	table_width SPECIALCALL_SIZE, SpecialPhoneCallList
 	specialcall SpecialCallOnlyWhenOutside, PHONECONTACT_ELM,      ElmPhoneCallerScript
 	specialcall SpecialCallOnlyWhenOutside, PHONECONTACT_ELM,      ElmPhoneCallerScript
 	specialcall SpecialCallOnlyWhenOutside, PHONECONTACT_ELM,      ElmPhoneCallerScript

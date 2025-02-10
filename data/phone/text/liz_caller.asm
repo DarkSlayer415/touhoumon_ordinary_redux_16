@@ -83,8 +83,8 @@ LizRuinsOfAlphGossipText:
 	para "I was listening to"
 	line "the radio in the"
 
-	para "RUINS OF ALPH when"
-	line "an odd broadcast"
+	para "RUINS OF MEMORY"
+	line "when an odd noise"
 
 	para "suddenly cut it on"
 	line "the regular show."
@@ -135,12 +135,12 @@ LizSurfPikachuGossipText:
 	text "Listen, listen!"
 
 	para "I collect #MON"
-	line "plush dolls."
+	line "Fumo dolls."
 
 	para "But I can't seem"
 	line "to get a hold of a"
 
-	para "SURF PIKACHU DOLL."
+	para "Inu Sakuya Fumo."
 	line "None of my friends"
 
 	para "have it. It must"
@@ -221,18 +221,18 @@ LizBugCatchingContestGossipText:
 	para "Have you ever"
 	line "taken part in a"
 
-	para "Bug-Catching"
+	para "Fairy Catching"
 	line "Contest at the"
 	cont "NATIONAL PARK?"
 
 	para "I did once, but"
 	line "all I could catch"
-	cont "was a CATERPIE."
+	cont "was a CSunny."
 
 	para "But guess what!"
 
 	para "I won with that"
-	line "CATERPIE. Isn't"
+	line "CSunny. Isn't"
 	cont "that great?"
 	done
 

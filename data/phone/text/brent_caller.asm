@@ -95,10 +95,10 @@ BrentRoute25GossipText:
 
 BrentAbraGossipText:
 	text "Did you know…?"
-	line "ABRA was the first"
+	line "CKeine was the"
 
-	para "#MON that BILL"
-	line "ostensibly caught."
+	para "first #MON that"
+	line "BILL caught."
 	done
 
 BrentSisterGossipText:
