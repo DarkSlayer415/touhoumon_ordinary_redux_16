@@ -19,8 +19,8 @@ FirstEvoStages::
 	dw PIDGEY     ;10
 	dw PIDGEY
 	dw PIDGEY
-	dw RATTATA
-	dw RATTATA
+	dw SMOOCHUM
+	dw SMOOCHUM
 	dw SPEAROW
 	dw SPEAROW
 	dw EKANS
@@ -37,12 +37,12 @@ FirstEvoStages::
 	dw NIDORAN_M
 	dw CLEFFA
 	dw CLEFFA
-	dw VULPIX
-	dw VULPIX
+	dw EEVEE
+	dw EEVEE
 	dw IGGLYBUFF
 	dw IGGLYBUFF  ;28
-	dw ZUBAT
-	dw ZUBAT
+	dw EEVEE
+	dw EEVEE
 	dw ODDISH
 	dw ODDISH
 	dw ODDISH
@@ -84,8 +84,8 @@ FirstEvoStages::
 	dw MAGNEMITE
 	dw MAGNEMITE
 	dw FARFETCH_D
-	dw DODUO
-	dw DODUO
+	dw FARFETCH_D
+	dw FARFETCH_D
 	dw SEEL
 	dw SEEL
 	dw GRIMER     ;58
@@ -96,8 +96,8 @@ FirstEvoStages::
 	dw GASTLY
 	dw GASTLY
 	dw ONIX
-	dw DROWZEE    ;60
-	dw DROWZEE
+	dw ONIX    ;60
+	dw ONIX
 	dw KRABBY
 	dw KRABBY
 	dw VOLTORB
@@ -106,52 +106,52 @@ FirstEvoStages::
 	dw EXEGGCUTE
 	dw CUBONE     ;68
 	dw CUBONE
-	dw TYROGUE
-	dw TYROGUE
+	dw SPEAROW
+	dw EKANS
 	dw LICKITUNG
-	dw KOFFING
-	dw KOFFING
-	dw RHYHORN
-	dw RHYHORN    ;70
-	dw CHANSEY
-	dw TANGELA
-	dw KANGASKHAN
+	dw LICKITUNG
+	dw LICKITUNG
+	dw MISDREAVUS
+	dw MISDREAVUS    ;70
+	dw GROWLITHE
+	dw KRABBY
+	dw VENONAT
 	dw HORSEA
 	dw HORSEA
-	dw GOLDEEN
-	dw GOLDEEN
+	dw MURKROW
+	dw MURKROW
 	dw STARYU     ;78
 	dw STARYU
-	dw MR__MIME
-	dw SCYTHER
+	dw STARYU
+	dw HORSEA
 	dw SMOOCHUM
-	dw ELEKID
-	dw MAGBY
-	dw PINSIR
-	dw TAUROS     ;80
-	dw MAGIKARP
-	dw MAGIKARP
-	dw LAPRAS
-	dw DITTO
+	dw PONYTA
+	dw SLOWPOKE
+	dw PARAS
+	dw MAGNEMITE     ;80
 	dw EEVEE
 	dw EEVEE
+	dw EXEGGCUTE
+	dw CUBONE
 	dw EEVEE
-	dw EEVEE      ;88
-	dw PORYGON
+	dw MEOWTH
+	dw PSYDUCK
+	dw MANKEY      ;88
+	dw DIGLETT
 	dw OMANYTE
 	dw OMANYTE
 	dw KABUTO
 	dw KABUTO
-	dw AERODACTYL
+	dw SANDSHREW
 	dw SNORLAX
-	dw ARTICUNO   ;90
-	dw ZAPDOS
-	dw MOLTRES
+	dw SEEL   ;90
+	dw GRIMER
+	dw SHELLDER
 	dw DRATINI
 	dw DRATINI
 	dw DRATINI
 	dw MEWTWO
-	dw MEW
+	dw MEWTWO
 	dw CHIKORITA  ;98
 	dw CHIKORITA
 	dw CHIKORITA
@@ -169,7 +169,7 @@ FirstEvoStages::
 	dw LEDYBA
 	dw SPINARAK
 	dw SPINARAK   ;a8
-	dw ZUBAT
+	dw SPINARAK
 	dw CHINCHOU
 	dw CHINCHOU
 	dw PICHU
@@ -182,67 +182,67 @@ FirstEvoStages::
 	dw MAREEP
 	dw MAREEP
 	dw MAREEP
-	dw ODDISH
+	dw SENTRET
 	dw MARILL
 	dw MARILL     ;b8
-	dw SUDOWOODO
-	dw POLIWAG
+	dw CHINCHOU
+	dw MARILL
 	dw HOPPIP
 	dw HOPPIP
 	dw HOPPIP
-	dw AIPOM
+	dw LEDYBA
 	dw SUNKERN
 	dw SUNKERN    ;c0
-	dw YANMA
+	dw SUNKERN
 	dw WOOPER
 	dw WOOPER
-	dw EEVEE
-	dw EEVEE
+	dw WOOPER
+	dw WOOPER
 	dw MURKROW
-	dw SLOWPOKE
+	dw HOOTHOOT
 	dw MISDREAVUS ;c8
 	dw UNOWN
 	dw WOBBUFFET
 	dw GIRAFARIG
-	dw PINECO
-	dw PINECO
+	dw GIRAFARIG
+	dw GIRAFARIG
 	dw DUNSPARCE
-	dw GLIGAR
-	dw ONIX       ;d0
+	dw DUNSPARCE
+	dw DUNSPARCE       ;d0
 	dw SNUBBULL
 	dw SNUBBULL
-	dw QWILFISH
-	dw SCYTHER
+	dw SNUBBULL
+	dw VOLTORB
 	dw SHUCKLE
-	dw HERACROSS
+	dw SHUCKLE
 	dw SNEASEL
-	dw TEDDIURSA  ;d8
-	dw TEDDIURSA
-	dw SLUGMA
-	dw SLUGMA
-	dw SWINUB
-	dw SWINUB
-	dw CORSOLA
-	dw REMORAID
-	dw REMORAID   ;e0
+	dw SNEASEL  ;d8
+	dw SNEASEL
+	dw MAGBY
+	dw MAGBY
+	dw ELEKID
+	dw ELEKID
+	dw SHUCKLE
+	dw WOBBUFFET
+	dw WOBBUFFET   ;e0
 	dw DELIBIRD
-	dw MANTINE
-	dw SKARMORY
+	dw DELIBIRD
+	dw DELIBIRD
 	dw HOUNDOUR
 	dw HOUNDOUR
-	dw HORSEA
+	dw HOUNDOUR
 	dw PHANPY
 	dw PHANPY     ;e8
-	dw PORYGON
+	dw PHANPY
 	dw STANTLER
-	dw SMEARGLE
+	dw STANTLER
 	dw TYROGUE
 	dw TYROGUE
 	dw SMOOCHUM
 	dw ELEKID
 	dw MAGBY      ;f0
-	dw MILTANK
-	dw CHANSEY
+	dw STANTLER
+	dw TYROGUE
 	dw RAIKOU
 	dw ENTEI
 	dw SUICUNE
@@ -251,5 +251,7 @@ FirstEvoStages::
 	dw LARVITAR   ;f8
 	dw LUGIA
 	dw HO_OH
-	dw CELEBI
+	dw NATU
+	dw CYUUTO
+	dw CYUUTO
 	assert_table_length NUM_POKEMON
