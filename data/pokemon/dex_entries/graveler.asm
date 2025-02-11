@@ -1,10 +1,10 @@
-	db "ROCK@" ; species name
-	dw 303, 2320 ; height, weight
+	db "Half-Ghost@" ; species name
+	dw 306, 850 ; height, weight
 
-	db   "It travels by rol-"
-	next "ling on mountain"
-	next "paths. If it gains"
+	db   "A skilled swordsman"
+	next "who uses two"
+	next "swords. She boldly"
 
-	page "too much speed, it"
-	next "stops by running"
-	next "into huge rocks.@"
+	page "claims there are"
+	next "few things that"
+	next "they cannot cut.@"

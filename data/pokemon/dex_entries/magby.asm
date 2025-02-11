@@ -1,10 +1,10 @@
-	db "LIVE COAL@" ; species name
-	dw 204, 470 ; height, weight
+	db "BlackWitch@" ; species name
+	dw 304, 470 ; height, weight
 
-	db   "It naturally spits"
-	next "an 1100-degree"
-	next "flame. It is said"
+	db   "A mage who is"
+	next "often seen with"
+	next "Mai. Her loud"
 
-	page "when many appear,"
-	next "it heralds a"
-	next "volcanic eruption.@"
+	page "personality often"
+	next "gets the two into"
+	next "fights.@"

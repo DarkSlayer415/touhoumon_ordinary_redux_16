@@ -1,10 +1,10 @@
-	db "LONG NECK@" ; species name
-	dw 411, 910 ; height, weight
+	db "Celestial@" ; species name
+	dw 300, 750 ; height, weight
 
-	db   "When it is in"
-	next "danger, its tail"
-	next "uses some sort of"
+	db   "A spoiled young"
+	next "girl who became"
+	next "a celestial due"
 
-	page "mysterious powers"
-	next "to drive away the"
-	next "enemy.@"
+	page "to her family"
+	next "ties. Lives a"
+	next "carefree life.@"

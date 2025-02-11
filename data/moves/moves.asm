@@ -39,7 +39,7 @@ Moves1:
 	move EFFECT_FORCE_SWITCH,        0, FLYING,        100, 20,   0      ;WHIRLWIND
 	move EFFECT_FLY,                90, FLYING,         95, 15,   0      ;FLY
 	move EFFECT_SPEED_DOWN_HIT,    120, NORMAL,         85, 10,  30      ;HEADWIND
-	move EFFECT_FALSE_SWIPE,        40, NORMAL,        100, 40,   0      ;HOLD_BACK
+	move EFFECT_FALSE_SWIPE,        40, NORMAL,        100, 40,   0      ;HOLD_BACK (SLAM)
 	move EFFECT_NORMAL_HIT,         40, GRASS,         100, 25,   0      ;VINE_WHIP
 	move EFFECT_STOMP,              70, DARK,          100, 20,  30      ;STOMP
 	move EFFECT_DOUBLE_HIT,         30, FIGHTING,      100, 20,   0      ;DOUBLE_KICK
@@ -112,9 +112,9 @@ Moves1:
 	move EFFECT_FLY,                70, GROUND,        100, 15,   0      ;DIG
 	move EFFECT_TOXIC,               0, POISON,         90, 10,   0      ;TOXIC
 	move EFFECT_CONFUSE_HIT,        40, PSYCHIC_TYPE,  100, 25,  10      ;CONFUSION
-	move EFFECT_SP_DEF_DOWN_HIT,    90, PSYCHIC_TYPE,  100, 15,  20      ;MANA_BURST
+	move EFFECT_SP_DEF_DOWN_HIT,    90, PSYCHIC_TYPE,  100, 15,  20      ;MANA_BURST (PSYCHIC_M)
 	move EFFECT_SLEEP,               0, PSYCHIC_TYPE,   65, 20,   0      ;HYPNOSIS
-	move EFFECT_SP_ATK_UP_2,         0, PSYCHIC_TYPE,  100, 20,   0      ;MANA_CHARGE
+	move EFFECT_SP_ATK_UP_2,         0, PSYCHIC_TYPE,  100, 20,   0      ;MANA_CHARGE (MEDITATE)
 	move EFFECT_SPEED_UP_2,          0, FLYING,        100, 20,   0      ;AGILITY
 	move EFFECT_PRIORITY_HIT,       40, NORMAL,        100, 25,   0      ;QUICK_ATTACK
 	move EFFECT_TELEPORT,            0, PSYCHIC_TYPE,  100, 20,   0      ;TELEPORT

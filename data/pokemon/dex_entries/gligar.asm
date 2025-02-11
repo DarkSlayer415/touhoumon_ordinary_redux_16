@@ -1,10 +1,11 @@
-	db "FLYSCORPIO@" ; species name
-	dw 307, 1430 ; height, weight
+	db "Professor@" ; species name
+	dw 408, 1430 ; height, weight
 
-	db   "It builds its nest"
-	next "on a steep cliff."
-	next "When it is done"
+	db   "She lives with her"
+	next "assistant Chiyuri"
+	next "in the Probability"
 
-	page "gliding, it hops"
-	next "along the ground"
-	next "back to its nest.@"
+	page "Space Hypervessel."
+	next "which may possibly"
+	next "be a time machine.@"
+

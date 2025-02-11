@@ -1,10 +1,11 @@
-	db "SUPERPOWER@" ; species name
-	dw 207, 430 ; height, weight
+	db "Gatekeeper@" ; species name
+	dw 307, 730 ; height, weight
 
-	db   "It trains by"
-	next "lifting rocks in"
-	next "the mountains. It"
+	db   "The Scarlet Devil"
+	next "Mansion's"
+	next "gatekeeper. She"
 
-	page "can even pick up a"
-	next "GRAVELER with"
-	next "ease.@"
+	page "is a master of"
+	next "martial arts and"
+	next "can use qi.@"
+	

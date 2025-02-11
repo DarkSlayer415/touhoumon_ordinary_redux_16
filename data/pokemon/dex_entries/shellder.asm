@@ -1,10 +1,10 @@
-	db "BIVALVE@" ; species name
-	dw 100, 90 ; height, weight
+	db "Poltergeist@" ; species name
+	dw 211, 350 ; height, weight
 
-	db   "Clamping on to an"
-	next "opponent reveals"
-	next "its vulnerable"
+	db   "A poltergeist"
+	next "musician who"
+	next "prefers keyboards."
 
-	page "parts, so it uses"
-	next "this move only as"
-	next "a last resort.@"
+	page "Very clever, she"
+	next "is able to perform"
+	next "illusionary notes.@"

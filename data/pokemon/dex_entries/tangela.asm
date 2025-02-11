@@ -1,10 +1,10 @@
-	db "VINE@" ; species name
-	dw 303, 770 ; height, weight
+	db "Winter@" ; species name
+	dw 503, 1770 ; height, weight
 
-	db   "During battle, it"
-	next "constantly moves"
-	next "the vines that"
+	db   "She disappears"
+	next "when winter ends."
+	next "It is rumored that"
 
-	page "cover its body in"
-	next "order to annoy its"
-	next "opponent.@"
+	page "she hides within"
+	next "caves that don't"
+	next "see sunlight.@"

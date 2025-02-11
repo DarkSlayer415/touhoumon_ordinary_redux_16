@@ -1,10 +1,11 @@
-	db "PUNCHING@" ; species name
-	dw 407, 1110 ; height, weight
+	db "Autumn@" ; species name
+	dw 500, 1700 ; height, weight
 
-	db   "To increase the"
-	next "strength of all"
-	next "its punch moves,"
+	db   "Normally harmless,"
+	next "but no good comes"
+	next "from disrespecting"
 
-	page "it spins its arms"
-	next "just before making"
-	next "contact.@"
+	page "her as she can"
+	next "effortlessly"
+	next "destroy crops.@"
+	

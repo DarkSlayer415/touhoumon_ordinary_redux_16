@@ -1,10 +1,10 @@
-	db "VOLCANO@" ; species name
-	dw 507, 1750 ; height, weight
+	db "Immortal@" ; species name
+	dw 600, 1750 ; height, weight
 
-	db   "When heat from its"
-	next "body causes the"
-	next "air around it to"
+	db   "Her eternal and"
+	next "undying rivalry"
+	next "with Kaguya lead"
 
-	page "shimmer, this is a"
-	next "sign that it is"
-	next "ready to battle.@"
+	page "them to killing"
+	next "each other for"
+	next "over 300 years.@"

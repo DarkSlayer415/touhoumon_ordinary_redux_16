@@ -1,21 +1,21 @@
-	db 0 ; species ID placeholder
+	db STARYU ; 120
 
-	db  30,  45,  55,  85,  70,  55
+	db  70,  30,  60,  30,  40,  70
 	;   hp  atk  def  spd  sat  sdf
 
-	db WATER, WATER ; type
+	db GHOST, POISON ; type
 	db 225 ; catch rate
-	db 106 ; base exp
-	db STARDUST, STAR_PIECE ; items
-	db GENDER_UNKNOWN ; gender ratio
+	db 75 ; base exp
+	db NO_ITEM, NO_ITEM ; items
+	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/staryu/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
-	db GROWTH_SLOW ; growth rate
-	dn EGG_WATER_3, EGG_WATER_3 ; egg groups
+	db GROWTH_MEDIUM_FAST ; growth rate
+	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset
-	tmhm CURSE, TOXIC, ZAP_CANNON, PSYCH_UP, HIDDEN_POWER, SNORE, BLIZZARD, ICY_WIND, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, THUNDER, RETURN, PSYCHIC_M, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, REST, ATTRACT, SURF, FLASH, WHIRLPOOL, WATERFALL, THUNDERBOLT, ICE_BEAM
+	tmhm HEADBUTT, CURSE, ROAR, TOXIC, LIGHT_SCREEN, REFLECT, ROCK_SLIDE, HAIL, PROTECT, RAIN_DANCE, GIGA_DRAIN, ENDURE, FRUSTRATION, RETURN, PSYCHIC_M, SHADOW_BALL, MUD_SLAP, ICE_PUNCH, SWAGGER, SLEEP_TALK, SLUDGE_BOMB, SWIFT, SLAM, REST, THIEF, SUBSTITUTE, SURF, FLASH, WHIRLPOOL, ICE_BEAM
 	; end

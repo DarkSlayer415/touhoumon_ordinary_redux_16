@@ -1,10 +1,11 @@
-	db "FLAME@" ; species name
-	dw 507, 2000 ; height, weight
+	db "Magician@" ; species name
+	dw 403, 1300 ; height, weight
 
-	db   "It uses its wings"
-	next "to fly high. The"
-	next "temperature of its"
+	db   "When not studying"
+	next "magic, she is a"
+	next "common thief. She"
 
-	page "fire increases as"
-	next "it gains exper-"
-	next "ience in battle.@"
+	page "steals books often"
+	next "and claims she is"
+	next "borrowing them.@"
+	

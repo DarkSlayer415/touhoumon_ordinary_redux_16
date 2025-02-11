@@ -1,10 +1,10 @@
-	db "HERMITCRAB@" ; species name
-	dw 503, 1730 ; height, weight
+	db "Curse God@" ; species name
+	dw 311, 690 ; height, weight
 
-	db   "An attached"
-	next "SHELLDER won't let"
-	next "go because of the"
+	db   "Gathers misfortune"
+	next "so it won't spread"
+	next "to humans. Those"
 
-	page "tasty flavor that"
-	next "oozes out of its"
-	next "tail.@"
+	page "who meet her say"
+	next "she has a cheerful"
+	next "personality.@"

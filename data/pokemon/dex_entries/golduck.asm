@@ -1,10 +1,10 @@
-	db "DUCK@" ; species name
-	dw 507, 1690 ; height, weight
+	db "Moonlight@" ; species name
+	dw 311, 750 ; height, weight
 
-	db   "It swims grace-"
-	next "fully along on the"
-	next "quiet, slow-moving"
+	db   "She is most active"
+	next "at night. Usually"
+	next "attempts to steal"
 
-	page "rivers and lakes"
-	next "of which it is so"
-	next "fond.@"
+	page "her favorite"
+	next "coffee beans using"
+	next "her powers.@"

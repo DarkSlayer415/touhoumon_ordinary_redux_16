@@ -1,10 +1,11 @@
-	db "LIZARD@" ; species name
-	dw 200, 190 ; height, weight
+	db "Magician@" ; species name
+	dw 200, 500 ; height, weight
 
-	db   "If it's healthy,"
-	next "the flame on the"
-	next "tip of its tail"
+	db   "A human magician"
+	next "that lives in"
+	next "the Forest of"
 
-	page "will burn vigor-"
-	next "ously, even if it"
-	next "gets a bit wet.@"
+	page "Magic. She loves"
+	next "to collect books"
+	next "and mushrooms.@"
+	

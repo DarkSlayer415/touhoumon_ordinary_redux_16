@@ -1,10 +1,11 @@
-	db "SHADOW@" ; species name
-	dw 411, 890 ; height, weight
+	db "Night Bird@" ; species name
+	dw 500, 890 ; height, weight
 
-	db   "Hiding in people's"
-	next "shadows at night,"
-	next "it absorbs their"
+	db   "Although she is"
+	next "known for causing"
+	next "night-blindness,"
 
-	page "heat. The chill it"
-	next "causes makes the"
-	next "victims shake.@"
+	page "she also runs an"
+	next "izakaya that's"
+	next "very popular.@"
+

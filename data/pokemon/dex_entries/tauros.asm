@@ -1,10 +1,10 @@
-	db "WILD BULL@" ; species name
-	dw 407, 1950 ; height, weight
+	db "Kasha@" ; species name
+	dw 500, 1350 ; height, weight
 
-	db   "These violent"
-	next "#MON fight"
-	next "with other mem-"
+	db   "She shows up at"
+	next "funerals in hopes"
+	next "of stealing the"
 
-	page "bers of their herd"
-	next "in order to prove"
-	next "their strength.@"
+	page "corpse. If you see"
+	next "her, the corpse"
+	next "must be guarded.@"

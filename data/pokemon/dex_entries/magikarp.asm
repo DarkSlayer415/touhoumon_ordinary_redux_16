@@ -1,10 +1,10 @@
-	db "FISH@" ; species name
-	dw 211, 220 ; height, weight
+	db "LakeFairy@" ; species name
+	dw 306, 440 ; height, weight
 
-	db   "This weak and"
-	next "pathetic #MON"
-	next "gets easily pushed"
+	db   "A fairy stronger"
+	next "than most other"
+	next "fairies. Despite"
 
-	page "along rivers when"
-	next "there are strong"
-	next "currents.@"
+	page "this, she is still"
+	next "weaker than the"
+	next "average human.@"

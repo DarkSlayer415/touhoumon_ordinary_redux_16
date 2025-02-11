@@ -1,10 +1,10 @@
-	db "KICKING@" ; species name
-	dw 411, 1100 ; height, weight
+	db "Autumn@" ; species name
+	dw 502, 1600 ; height, weight
 
-	db   "It is also called"
-	next "the Kick Master."
-	next "It uses its"
+	db   "Greatly enjoys"
+	next "quiet autumn days."
+	next "She often spends"
 
-	page "elastic legs to"
-	next "execute every"
-	next "known kick.@"
+	page "hours at a time"
+	next "simply watching"
+	next "the leaves fall.@"

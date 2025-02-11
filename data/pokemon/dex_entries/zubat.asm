@@ -1,10 +1,10 @@
-	db "BAT@" ; species name
-	dw 207, 170 ; height, weight
+	db "SpringFairy@" ; species name
+	dw 305, 620 ; height, weight
 
-	db   "During the day, it"
-	next "gathers with"
-	next "others and hangs"
+	db   "She heralds the"
+	next "coming of spring"
+	next "to the drearier"
 
-	page "from the ceilings"
-	next "of old buildings"
-	next "and caves.@"
+	page "parts of Gensokyo."
+	next "She's merely Lily"
+	next "White in cosplay.@"

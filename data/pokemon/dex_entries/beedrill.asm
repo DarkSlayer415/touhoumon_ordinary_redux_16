@@ -1,10 +1,11 @@
-	db "POISON BEE@" ; species name
-	dw 303, 650 ; height, weight
+	db "Ice Fairy@" ; species name
+	dw 409, 999 ; height, weight
 
-	db   "It uses sharp,"
-	next "poisonous stings"
-	next "to defeat prey,"
+	db   "Although she is"
+	next "still a fairy,"
+	next "her powers were"
 
-	page "then takes the"
-	next "victim back to its"
-	next "nest for food.@"
+	page "once heightened"
+	next "during an incident"
+	next "by Okina Matara.@"
+	

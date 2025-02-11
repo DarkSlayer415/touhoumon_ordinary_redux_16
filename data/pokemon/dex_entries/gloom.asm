@@ -1,10 +1,11 @@
-	db "WEED@" ; species name
-	dw 207, 190 ; height, weight
+	db "Blue Miko@" ; species name
+	dw 400, 750 ; height, weight
 
-	db   "The smell from its"
-	next "drool-like syrup"
-	next "and the pollen on"
+	db   "A priestess to a"
+	next "shrine with two"
+	next "goddesses. She can"
 
-	page "its petals is so"
-	next "bad, it may make"
-	next "opponents faint.@"
+	page "summon rainfall,"
+	next "control winds, and"
+	next "cause miracles.@"
+	

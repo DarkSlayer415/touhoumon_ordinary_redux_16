@@ -1,10 +1,10 @@
-	db "POISON GAS@" ; species name
-	dw 311, 210 ; height, weight
+	db "Familiar@" ; species name
+	dw 411, 1210 ; height, weight
 
-	db   "When it inhales"
-	next "poisonous gases"
-	next "from garbage, its"
+	db   "Nobody believes it"
+	next "due to her quiet"
+	next "nature, but she is"
 
-	page "body expands, and"
-	next "its insides smell"
-	next "much worse.@"
+	page "mischievous and"
+	next "has a bit of a"
+	next "mean streak.@"

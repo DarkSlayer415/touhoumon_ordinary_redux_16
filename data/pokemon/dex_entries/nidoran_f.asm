@@ -1,10 +1,10 @@
-	db "POISON PIN@" ; species name
-	dw 104, 150 ; height, weight
+	db "MoonRabbit@" ; species name
+	dw 300, 400 ; height, weight
 
-	db   "Small and very"
-	next "docile, it pro-"
-	next "tects itself with"
+	db   "A moon rabbit."
+	next "Once an inhabitant"
+	next "and soldier of the"
 
-	page "its small, poison-"
-	next "ous horn when"
-	next "attacked.@"
+	page "Lunar Capital, she"
+	next "left her allies"
+	next "and fled to Earth.@"

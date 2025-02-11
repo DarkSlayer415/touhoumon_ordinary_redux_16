@@ -1,10 +1,10 @@
-	db "AQUARABBIT@" ; species name
-	dw 207, 630 ; height, weight
+	db "Native@" ; species name
+	dw 411, 1200 ; height, weight
 
-	db   "The bubble-like"
-	next "pattern on its"
-	next "stomach helps it"
+	db   "She likes frogs,"
+	next "and sometimes"
+	next "acts like one."
 
-	page "camouflage itself"
-	next "when it's in the"
-	next "water.@"
+	page "However, she is"
+	next "not related to"
+	next "frogs at all.@"

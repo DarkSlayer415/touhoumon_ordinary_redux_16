@@ -1,10 +1,10 @@
-	db "TADPOLE@" ; species name
-	dw 403, 1190 ; height, weight
+	db "Shinigami@" ; species name
+	dw 503, 1390 ; height, weight
 
-	db   "It can use its"
-	next "well-developed"
-	next "arms and legs to"
+	db   "She can manipulate"
+	next "distances. Her"
+	next "scythe serves as a"
 
-	page "run on the surface"
-	next "of the water for a"
-	next "split second.@"
+	page "sign for departed"
+	next "spirits that death"
+	next "has finally come.@"

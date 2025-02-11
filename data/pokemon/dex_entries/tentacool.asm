@@ -1,10 +1,10 @@
-	db "JELLYFISH@" ; species name
-	dw 211, 1000 ; height, weight
+	db "Nekomata@" ; species name
+	dw 211, 300 ; height, weight
 
-	db   "As it floats along"
-	next "on the waves, it"
-	next "uses its toxic"
+	db   "A young and"
+	next "enthusiastic cat"
+	next "girl. Though she"
 
-	page "feelers to stab"
-	next "anything it"
-	next "touches.@"
+	page "is fairly weak,"
+	next "she's also very"
+	next "quick on her feet.@"

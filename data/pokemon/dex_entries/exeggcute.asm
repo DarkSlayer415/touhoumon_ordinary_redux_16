@@ -1,10 +1,11 @@
-	db "EGG@" ; species name
-	dw 104, 60 ; height, weight
+	db "Engineer@" ; species name
+	dw 303, 1200 ; height, weight
 
-	db   "If even one is"
-	next "separated from the"
-	next "group, the energy"
+	db   "An engineer that"
+	next "creates monsters,"
+	next "machines, and"
 
-	page "bond between the"
-	next "six will make them"
-	next "rejoin instantly.@"
+	page "even tanks using"
+	next "Gensokyo's limited"
+	next "technology.@"
+	

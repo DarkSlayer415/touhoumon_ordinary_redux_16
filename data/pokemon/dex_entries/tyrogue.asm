@@ -1,10 +1,10 @@
-	db "SCUFFLE@" ; species name
-	dw 204, 460 ; height, weight
+	db "Dream Demon@" ; species name
+	dw 300, 460 ; height, weight
 
-	db   "To brush up on its"
-	next "fighting skills,"
-	next "it will challenge"
+	db   "The older dream"
+	next "world sister."
+	next "Despite an angelic"
 
-	page "anyone. It has a"
-	next "very strong com-"
-	next "petitive spirit.@"
+	page "appearance, her"
+	next "true identity is"
+	next "that of a demon.@"

@@ -1,10 +1,11 @@
-	db "WORM@" ; species name
-	dw 100, 60 ; height, weight
+	db "Knowledge@" ; species name
+	dw 303, 600 ; height, weight
 
-	db   "It crawls into"
-	next "foliage where it"
-	next "camouflages itself"
+	db   "A girl that"
+	next "practices magic"
+	next "of all elements."
 
-	page "among leaves that"
-	next "are the same color"
-	next "as its body.@"
+	page "Due to her"
+	next "asthma, she is"
+	next "very frail.@"
+

@@ -1,10 +1,10 @@
-	db "PIG@" ; species name
-	dw 104, 140 ; height, weight
+	db "WhiteWitch@" ; species name
+	dw 404, 740 ; height, weight
 
-	db   "It uses the tip of"
-	next "its nose to dig"
-	next "for food. Its nose"
+	db   "Wields ice magic"
+	next "with ease. She is"
+	next "also egotistical,"
 
-	page "is so tough that"
-	next "even frozen ground"
-	next "poses no problem.@"
+	page "and often tends to"
+	next "put herself above"
+	next "others.@"

@@ -1,10 +1,11 @@
-	db "DRAGON@" ; species name
-	dw 104, 180 ; height, weight
+	db "Firefly@" ; species name
+	dw 211, 400 ; height, weight
 
-	db   "When they're in a"
-	next "safe location,"
-	next "they can be seen"
+	db   "A firefly youkai"
+	next "most active at"
+	next "night. She has"
 
-	page "playfully tangling"
-	next "their tails"
-	next "together.@"
+	page "the ability to"
+	next "command insects to"
+	next "do her bidding.@"
+	

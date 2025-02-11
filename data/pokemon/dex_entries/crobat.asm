@@ -1,10 +1,10 @@
-	db "BAT@" ; species name
-	dw 511, 1650 ; height, weight
+	db "Vampire@" ; species name
+	dw 406, 1300 ; height, weight
 
-	db   "As a result of its"
-	next "pursuit of faster,"
-	next "yet more silent"
+	db   "The mistress of"
+	next "the Scarlet Devil"
+	next "Mansion. Highly"
 
-	page "flight, a new set"
-	next "of wings grew on"
-	next "its hind legs.@"
+	page "confident, she has"
+	next "the ability to"
+	next "manipulate fate.@"

@@ -1,10 +1,11 @@
-	db "FLOWER@" ; species name
-	dw 104, 130 ; height, weight
+	db "Poltergeist@" ; species name
+	dw 500, 1103 ; height, weight
 
-	db   "When these dance"
-	next "together, their"
-	next "petals rub against"
+	db   "The people in the"
+	next "mansion she haunts"
+	next "do not fear her"
 
-	page "each other,"
-	next "making pretty,"
-	next "relaxing sounds.@"
+	page "anymore, so she"
+	next "wants to move to"
+	next "Gensokyo.@"
+	

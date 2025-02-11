@@ -1,10 +1,11 @@
-	db "BAGWORM@" ; species name
-	dw 311, 2770 ; height, weight
+	db "Celestial@" ; species name
+	dw 500, 1770 ; height, weight
 
-	db   "Usually found"
-	next "hanging on to a"
-	next "fat tree trunk. It"
+	db   "The sword she"
+	next "fights with is"
+	next "able to determine"
 
-	page "shoots out bits of"
-	next "its shell when it"
-	next "sees action.@"
+	page "her foe's weakness"
+	next "and take full"
+	next "advantage of them.@"
+	

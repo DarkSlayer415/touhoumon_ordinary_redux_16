@@ -1,10 +1,10 @@
-	db "TINY BIRD@" ; species name
-	dw 100, 40 ; height, weight
+	db "Autumn@" ; species name
+	dw 300, 600 ; height, weight
 
-	db   "To protect its"
-	next "territory, it"
-	next "flies around"
+	db   "The elder of the"
+	next "Aki sisters. She"
+	next "has the power to"
 
-	page "ceaselessly,"
-	next "making high-"
-	next "pitched cries.@"
+	page "turn the colors"
+	next "of leaves when"
+	next "autumn comes.@"

@@ -1,10 +1,10 @@
-	db "HAIRY BUG@" ; species name
-	dw 100, 70 ; height, weight
+	db "Ice Fairy@" ; species name
+	dw 211, 339 ; height, weight
 
-	db   "The barb on top of"
-	next "its head secretes"
-	next "a strong poison."
+	db   "An ice fairy who"
+	next "claims to be the"
+	next "strongest in"
 
-	page "It uses this toxic"
-	next "barb to protect"
-	next "itself.@"
+	page "Gensokyo. Touching"
+	next "her can cause a"
+	next "frostbite.@"

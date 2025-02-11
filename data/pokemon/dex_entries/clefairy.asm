@@ -1,10 +1,11 @@
-	db "FAIRY@" ; species name
-	dw 200, 170 ; height, weight
+	db "EarthRabbit@" ; species name
+	dw 404, 900 ; height, weight
 
-	db   "Though rarely"
-	next "seen, it becomes"
-	next "easier to spot,"
+	db   "She bears good"
+	next "fortune to humans"
+	next "that catch sight"
 
-	page "for some reason,"
-	next "on the night of a "
-	next "full moon.@"
+	page "of her, but she"
+	next "is known for her"
+	next "elusive nature.@"
+	

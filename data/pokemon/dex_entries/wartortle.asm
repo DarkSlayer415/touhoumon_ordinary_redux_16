@@ -1,10 +1,10 @@
-	db "TURTLE@" ; species name
-	dw 303, 500 ; height, weight
+	db "ElegantMaid@" ; species name
+	dw 403, 700 ; height, weight
 
-	db   "Its long, furry"
-	next "tail is a symbol"
-	next "of longevity,"
+	db   "She is skilled"
+	next "with throwing many"
+	next "knives and has"
 
-	page "making it quite"
-	next "popular among"
-	next "older people.@"
+	page "hundreds of them."
+	next "Stops time to pick"
+	next "up thrown knives.@"

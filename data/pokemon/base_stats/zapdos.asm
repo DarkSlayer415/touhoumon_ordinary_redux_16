@@ -1,21 +1,21 @@
-	db 0 ; species ID placeholder
+	db ZAPDOS ; 145
 
-	db  90,  90,  85, 100, 125,  90
+	db  70,  80,  70, 110, 120,  70
 	;   hp  atk  def  spd  sat  sdf
 
-	db ELECTRIC, FLYING ; type
-	db 3 ; catch rate
-	db 216 ; base exp
+	db GHOST, FAIRY ; type
+	db 45 ; catch rate
+	db 185 ; base exp
 	db NO_ITEM, NO_ITEM ; items
-	db GENDER_UNKNOWN ; gender ratio
+	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
-	db 80 ; step cycles to hatch
+	db 20 ; step cycles to hatch
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/zapdos/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
-	db GROWTH_SLOW ; growth rate
-	dn EGG_NONE, EGG_NONE ; egg groups
+	db GROWTH_MEDIUM_FAST ; growth rate
+	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset
-	tmhm CURSE, ROAR, TOXIC, ZAP_CANNON, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, HYPER_BEAM, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, THUNDER, RETURN, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SANDSTORM, SWIFT, DETECT, REST, STEEL_WING, FLY, FLASH, THUNDERBOLT
+	tmhm CURSE, ROAR, TOXIC, LIGHT_SCREEN, REFLECT, PROTECT, ENDURE, FRUSTRATION, RETURN, PSYCHIC_M, SHADOW_BALL, ICE_PUNCH, SWAGGER, SLEEP_TALK, SWIFT, THUNDERPUNCH, MEDITATE, REST, THIEF, FIRE_PUNCH, SUBSTITUTE, FLASH
 	; end

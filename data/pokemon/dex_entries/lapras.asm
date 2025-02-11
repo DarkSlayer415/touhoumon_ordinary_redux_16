@@ -1,10 +1,10 @@
-	db "TRANSPORT@" ; species name
-	dw 802, 4850 ; height, weight
+	db "Engineer@" ; species name
+	dw 802, 12120 ; height, weight
 
-	db   "This gentle"
-	next "#MON loves to"
-	next "give people rides"
+	db   "She created many"
+	next "monsters and"
+	next "machines in an"
 
-	page "and provides a ve-"
-	next "ry comfortable way"
-	next "to get around.@"
+	page "attempt to destroy"
+	next "Reimu, but for"
+	next "reasons unknown.@"

@@ -1,11 +1,11 @@
-	db 0 ; species ID placeholder
+	db TANGELA ; 114
 
-	db  65,  55, 115,  60, 100,  40
+	db  95,  60,  85,  65, 110,  85
 	;   hp  atk  def  spd  sat  sdf
 
-	db GRASS, GRASS ; type
+	db ICE, GHOST ; type
 	db 45 ; catch rate
-	db 166 ; base exp
+	db 190 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
@@ -14,8 +14,8 @@
 	INCBIN "gfx/pokemon/tangela/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
 	db GROWTH_MEDIUM_FAST ; growth rate
-	dn EGG_PLANT, EGG_PLANT ; egg groups
+	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset
-	tmhm HEADBUTT, CURSE, TOXIC, PSYCH_UP, HIDDEN_POWER, SUNNY_DAY, SWEET_SCENT, SNORE, HYPER_BEAM, PROTECT, GIGA_DRAIN, ENDURE, FRUSTRATION, SOLARBEAM, RETURN, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SLUDGE_BOMB, REST, ATTRACT, THIEF, CUT, FLASH
+	tmhm HEADBUTT, CURSE, TOXIC, LIGHT_SCREEN, REFLECT, BLIZZARD, DOUBLE_EDGE, HAIL, PROTECT, ENDURE, FRUSTRATION, RETURN, SHADOW_BALL, MUD_SLAP, BODY_SLAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SWIFT, SLAM, THUNDERPUNCH, MEDITATE, REST, SUBSTITUTE, SURF, STRENGTH, WHIRLPOOL, ICE_BEAM
 	; end

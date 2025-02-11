@@ -1,10 +1,10 @@
-	db "ROCK SNAKE@" ; species name
-	dw 2810, 4630 ; height, weight
+	db "Oarfish@" ; species name
+	dw 307, 650 ; height, weight
 
-	db   "As it digs through"
-	next "the ground, it"
-	next "absorbs many hard"
+	db   "An oarfish youkai"
+	next "who lives in the"
+	next "skies above"
 
-	page "objects. This is"
-	next "what makes its"
-	next "body so solid.@"
+	page "Gensokyo. Capable"
+	next "of reading the"
+	next "atmosphere.@"

@@ -1,10 +1,10 @@
-	db "SHELLFISH@" ; species name
-	dw 503, 1890 ; height, weight
+	db "ElegantMaid@" ; species name
+	dw 508, 1600 ; height, weight
 
-	db   "It firmly plants"
-	next "its feet on the"
-	next "ground before"
+	db   "She can manipulate"
+	next "time and, to an"
+	next "extent, space."
 
-	page "shooting water"
-	next "from the jets on"
-	next "its back.@"
+	page "She can stop and"
+	next "slow the flow"
+	next "of time freely.@"

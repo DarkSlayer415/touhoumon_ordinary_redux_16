@@ -1,10 +1,11 @@
-	db "PARENT@" ; species name
-	dw 703, 1760 ; height, weight
+	db "Bucket@" ; species name
+	dw 500, 1760 ; height, weight
 
-	db   "To avoid"
-	next "crushing the"
-	next "baby it carries in"
+	db   "A youkai that"
+	next "people don't know"
+	next "too much about."
 
-	page "its pouch, it"
-	next "always sleeps"
-	next "standing up.@"
+	page "The head we see"
+	next "may not actually"
+	next "be her own.@"
+	

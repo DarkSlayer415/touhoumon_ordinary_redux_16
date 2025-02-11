@@ -1,10 +1,10 @@
-	db "SUN@" ; species name
-	dw 211, 580 ; height, weight
+	db "Half-Beast@" ; species name
+	dw 507, 1750 ; height, weight
 
-	db   "The tip of its"
-	next "forked tail"
-	next "quivers when it is"
+	db   "She has a close"
+	next "relationship with"
+	next "the Hieda family."
 
-	page "predicting its"
-	next "opponent's next"
-	next "move.@"
+	page "Keine uses Akyuu's"
+	next "records for her"
+	next "school lessons.@"

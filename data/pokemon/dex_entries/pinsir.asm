@@ -1,10 +1,11 @@
-	db "STAGBEETLE@" ; species name
+	db "PoisonDoll@" ; species name
 	dw 411, 1210 ; height, weight
 
-	db   "When the tempera-"
-	next "ture drops at"
-	next "night, it sleeps"
+	db   "Her poisons"
+	next "overwhelm almost"
+	next "every enemy she"
 
-	page "on treetops or"
-	next "among roots where"
-	next "it is well hidden.@"
+	page "faces, leaving them"
+	next "with no choice but"
+	next "to run away.@"
+

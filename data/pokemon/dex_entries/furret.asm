@@ -1,10 +1,11 @@
-	db "LONG BODY@" ; species name
-	dw 511, 720 ; height, weight
+	db "Poltergeist@" ; species name
+	dw 400, 720 ; height, weight
 
-	db   "It lives in narrow"
-	next "burrows that fit"
-	next "its slim body. The"
+	db   "A poltergeist who"
+	next "originally came"
+	next "from a huge"
 
-	page "deeper the nests"
-	next "go, the more maze-"
-	next "like they become.@"
+	page "mansion where"
+	next "the family she"
+	next "haunted resided.@"
+	

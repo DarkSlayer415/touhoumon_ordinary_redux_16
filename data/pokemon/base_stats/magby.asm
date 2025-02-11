@@ -1,21 +1,21 @@
-	db 0 ; species ID placeholder
+	db MAGBY ; 240
 
-	db  45,  75,  37,  83,  70,  55
+	db  45,  45,  35,  60,  70,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type
-	db 45 ; catch rate
-	db 117 ; base exp
-	db BURNT_BERRY, BURNT_BERRY ; items
-	db GENDER_F25 ; gender ratio
+	db 200 ; catch rate
+	db 60 ; base exp
+	db NO_ITEM, NO_ITEM ; items
+	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
-	db 25 ; step cycles to hatch
+	db 20 ; step cycles to hatch
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/magby/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
 	db GROWTH_MEDIUM_FAST ; growth rate
-	dn EGG_NONE, EGG_NONE ; egg groups
+	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset
-	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, TOXIC, HIDDEN_POWER, SUNNY_DAY, SNORE, PROTECT, ENDURE, FRUSTRATION, IRON_TAIL, RETURN, PSYCHIC_M, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, FIRE_BLAST, THUNDERPUNCH, DETECT, REST, ATTRACT, THIEF, FIRE_PUNCH, FLAMETHROWER
+	tmhm HEADBUTT, TOXIC, LIGHT_SCREEN, REFLECT, SUNNY_DAY, RAZOR_WIND, DOUBLE_EDGE, PROTECT, ENDURE, FRUSTRATION, SOLARBEAM, DRAGONBREATH, RETURN, PSYCHIC_M, SHADOW_BALL, SWAGGER, SLEEP_TALK, FIRE_BLAST, SWIFT, THUNDERPUNCH, MEDITATE, REST, MORNING_SUN, THIEF, FIRE_PUNCH, SUBSTITUTE, FLASH, FLAMETHROWER
 	; end

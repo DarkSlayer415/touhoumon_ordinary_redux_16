@@ -1,10 +1,10 @@
-	db "DARK@" ; species name
-	dw 200, 240 ; height, weight
+	db "Ghost@" ; species name
+	dw 211, 240 ; height, weight
 
-	db   "Around dawn, its"
-	next "ominous howl"
-	next "echoes through the"
+	db   "The ghost princess"
+	next "of Hakugyokurou."
+	next "Although friendly,"
 
-	page "area to announce"
-	next "that this is its"
-	next "territory.@"
+	page "she is capable of"
+	next "manipulating and"
+	next "invoking death.@"

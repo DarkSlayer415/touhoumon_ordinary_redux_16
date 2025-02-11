@@ -1,10 +1,10 @@
-	db "EVOLUTION@" ; species name
-	dw 100, 140 ; height, weight
+	db "Fairy@" ; species name
+	dw 200, 300 ; height, weight
 
-	db   "Its ability to"
-	next "evolve into many"
-	next "forms allows it to"
+	db   "An ordinary fairy"
+	next "found throughout"
+	next "Gensokyo. While"
 
-	page "adapt smoothly"
-	next "and perfectly to"
-	next "any environment.@"
+	page "they are weak when"
+	next "alone, they are"
+	next "strong in numbers.@"

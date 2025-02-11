@@ -1,10 +1,10 @@
-	db "TINYTURTLE@" ; species name
-	dw 108, 200 ; height, weight
+	db "ElegantMaid@" ; species name
+	dw 208, 400 ; height, weight
 
-	db   "When it feels"
-	next "threatened, it"
-	next "draws its legs"
+	db   "The head maid of"
+	next "the Scarlet Devil"
+	next "Mansion. Elegant"
 
-	page "inside its shell"
-	next "and sprays water"
-	next "from its mouth.@"
+	page "yet deadly, her"
+	next "past is shrouded"
+	next "in mystery.@"

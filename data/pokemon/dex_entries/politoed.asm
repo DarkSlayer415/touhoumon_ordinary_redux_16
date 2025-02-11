@@ -1,10 +1,10 @@
-	db "FROG@" ; species name
-	dw 307, 750 ; height, weight
+	db "Native@" ; species name
+	dw 507, 1500 ; height, weight
 
-	db   "When it expands"
-	next "its throat to"
-	next "croak out a tune,"
+	db   "Able to create"
+	next "earth and control"
+	next "the Mishaguji."
 
-	page "nearby POLIWAG and"
-	next "POLIWHIRL gather"
-	next "immediately.@"
+	page "If you cross her,"
+	next "she may rend your"
+	next "fields barren.@"

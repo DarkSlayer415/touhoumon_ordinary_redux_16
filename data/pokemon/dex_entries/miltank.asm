@@ -1,10 +1,10 @@
-	db "MILK COW@" ; species name
-	dw 311, 1660 ; height, weight
+	db "Dream Demon@" ; species name
+	dw 500, 1660 ; height, weight
 
-	db   "In order to milk a"
-	next "MILTANK, one must"
-	next "have a knack for"
+	db   "Lives alone with"
+	next "Gengetsu. Doesn't"
+	next "care for human"
 
-	page "rhythmically pull-"
-	next "ing up and down"
-	next "on its udders.@"
+	page "life, and kills"
+	next "anyone that enters"
+	next "their world.@"

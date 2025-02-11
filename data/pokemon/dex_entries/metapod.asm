@@ -1,10 +1,10 @@
-	db "COCOON@" ; species name
-	dw 204, 220 ; height, weight
+	db "Knowledge@" ; species name
+	dw 400, 950 ; height, weight
 
-	db   "This is its pre-"
-	next "evolved form. At"
-	next "this stage, it can"
+	db   "The librarian of"
+	next "the Scarlet Devil"
+	next "Mansion. She is"
 
-	page "only harden, so it"
-	next "remains motionless"
-	next "to avoid attack.@"
+	page "often times the"
+	next "victim of Marisa's"
+	next "thievery.@"

@@ -1,21 +1,21 @@
-	db 0 ; species ID placeholder
+	db ARTICUNO ; 144
 
-	db  90,  85, 100,  85,  95, 125
+	db  95,  55, 100,  80,  80, 110
 	;   hp  atk  def  spd  sat  sdf
 
-	db ICE, FLYING ; type
-	db 3 ; catch rate
-	db 215 ; base exp
+	db GHOST, FAIRY ; type
+	db 45 ; catch rate
+	db 185 ; base exp
 	db NO_ITEM, NO_ITEM ; items
-	db GENDER_UNKNOWN ; gender ratio
+	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
-	db 80 ; step cycles to hatch
+	db 20 ; step cycles to hatch
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/articuno/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
-	db GROWTH_SLOW ; growth rate
-	dn EGG_NONE, EGG_NONE ; egg groups
+	db GROWTH_MEDIUM_FAST ; growth rate
+	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset
-	tmhm CURSE, ROAR, TOXIC, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, BLIZZARD, HYPER_BEAM, ICY_WIND, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, RETURN, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SANDSTORM, SWIFT, DETECT, REST, STEEL_WING, FLY, ICE_BEAM
+	tmhm CURSE, ROAR, TOXIC, LIGHT_SCREEN, REFLECT, PROTECT, ENDURE, FRUSTRATION, RETURN, PSYCHIC_M, SHADOW_BALL, ICE_PUNCH, SWAGGER, SLEEP_TALK, SWIFT, THUNDERPUNCH, MEDITATE, REST, THIEF, FIRE_PUNCH, SUBSTITUTE, FLASH
 	; end

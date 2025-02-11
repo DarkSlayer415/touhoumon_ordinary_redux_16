@@ -1,10 +1,11 @@
-	db "PSI@" ; species name
-	dw 411, 1060 ; height, weight
+	db "Yama@" ; species name
+	dw 504, 1600 ; height, weight
 
-	db   "It has an IQ of"
-	next "5000. It calcu-"
-	next "lates many things"
+	db   "Her presence alone"
+	next "drives youkai into"
+	next "hiding. Gensokyo's"
 
-	page "in order to gain"
-	next "the edge in every"
-	next "battle.@"
+	page "residents agree"
+	next "it is pointless"
+	next "to cross her.@"
+	

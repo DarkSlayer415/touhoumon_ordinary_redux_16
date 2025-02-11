@@ -1,11 +1,11 @@
-	db 0 ; species ID placeholder
+	db HOUNDOOM ; 229
 
-	db  75,  90,  50,  95, 110,  80
+	db  80,  50,  60,  50,  90,  90
 	;   hp  atk  def  spd  sat  sdf
 
-	db DARK, FIRE ; type
-	db 45 ; catch rate
-	db 204 ; base exp
+	db GRASS, GHOST ; type
+	db 90 ; catch rate
+	db 145 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
@@ -13,9 +13,9 @@
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/houndoom/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
-	db GROWTH_SLOW ; growth rate
-	dn EGG_GROUND, EGG_GROUND ; egg groups
+	db GROWTH_MEDIUM_SLOW ; growth rate
+	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset
-	tmhm HEADBUTT, CURSE, ROAR, TOXIC, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, HYPER_BEAM, PROTECT, ENDURE, FRUSTRATION, SOLARBEAM, IRON_TAIL, RETURN, SHADOW_BALL, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SLUDGE_BOMB, FIRE_BLAST, SWIFT, DREAM_EATER, DETECT, REST, ATTRACT, THIEF, NIGHTMARE, STRENGTH, FLAMETHROWER
+	tmhm CURSE, ROAR, TOXIC, LIGHT_SCREEN, REFLECT, SUNNY_DAY, BLIZZARD, HAIL, PROTECT, RAIN_DANCE, GIGA_DRAIN, ENDURE, FRUSTRATION, SOLARBEAM, DRAGONBREATH, RETURN, PSYCHIC_M, SHADOW_BALL, BODY_SLAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SWIFT, MEDITATE, REST, MORNING_SUN, SUBSTITUTE, FLASH, ICE_BEAM
 	; end

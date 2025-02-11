@@ -1,10 +1,11 @@
-	db "ROCK@" ; species name
-	dw 104, 440 ; height, weight
+	db "Half-Ghost@" ; species name
+	dw 204, 550 ; height, weight
 
-	db   "Proud of their"
-	next "sturdy bodies,"
-	next "they bash against"
+	db   "A girl that's"
+	next "half-human and"
+	next "half-ghost. She"
 
-	page "each other in a"
-	next "contest to prove"
-	next "whose is harder.@"
+	page "serves as the"
+	next "Netherworld's"
+	next "gardener.@"
+	

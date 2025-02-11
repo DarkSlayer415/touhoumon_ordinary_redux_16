@@ -1,10 +1,10 @@
-	db "JELLYFISH@" ; species name
-	dw 503, 1210 ; height, weight
+	db "Nekomata@" ; species name
+	dw 306, 550 ; height, weight
 
-	db   "When its 80 feel-"
-	next "ers absorb water,"
-	next "it stretches to"
+	db   "Her new friendship"
+	next "with Orin has made"
+	next "her an expert at"
 
-	page "become like a net"
-	next "to entangle its"
-	next "prey.@"
+	page "finding corpses."
+	next "Ran is not so"
+	next "pleased, though.@"

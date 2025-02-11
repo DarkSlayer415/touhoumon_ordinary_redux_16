@@ -1,10 +1,10 @@
-	db "SWINE@" ; species name
-	dw 307, 1230 ; height, weight
+	db "WhiteWitch@" ; species name
+	dw 502, 1230 ; height, weight
 
-	db   "Although its legs"
-	next "are short, its"
-	next "rugged hooves"
+	db   "An ice magician"
+	next "with skills"
+	next "matched only by"
 
-	page "prevent it from"
-	next "slipping, even on"
-	next "icy ground.@"
+	page "her arrogance."
+	next "Considers Yuki"
+	next "a hindrance.@"

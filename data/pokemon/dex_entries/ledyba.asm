@@ -1,10 +1,11 @@
-	db "FIVE STAR@" ; species name
-	dw 303, 240 ; height, weight
+	db "Science@" ; species name
+	dw 303, 500 ; height, weight
 
-	db   "It is timid and"
-	next "clusters together"
-	next "with others. The"
+	db   "A rare type of"
+	next "person in Gensokyo"
+	next "who believes that"
 
-	page "fluid secreted by"
-	next "its feet indicates"
-	next "its location.@"
+	page "science is more"
+	next "important than"
+	next "magic.@"
+	

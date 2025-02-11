@@ -1,10 +1,11 @@
-	db "LONELY@" ; species name
-	dw 104, 140 ; height, weight
+	db "Samurai@" ; species name
+	dw 303, 650 ; height, weight
 
-	db   "It lost its mother"
-	next "after its birth."
-	next "It wears its"
+	db   "A wandering"
+	next "samurai. She"
+	next "travels Gensokyo,"
 
-	page "mother's skull,"
-	next "never revealing"
-	next "its true face.@"
+	page "seeking out"
+	next "the Hakurei"
+	next "clan's powers.@"
+	

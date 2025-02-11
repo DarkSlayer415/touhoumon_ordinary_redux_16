@@ -1,10 +1,10 @@
-	db "MYSTIC@" ; species name
-	dw 411, 330 ; height, weight
+	db "Crow Tengu@" ; species name
+	dw 407, 660 ; height, weight
 
-	db   "Once it begins to"
-	next "meditate at sun-"
-	next "rise, the entire"
+	db   "An inexperienced"
+	next "journalist. The"
+	next "articles that she"
 
-	page "day will pass"
-	next "before it will"
-	next "move again.@"
+	page "writes tend to be"
+	next "about events that"
+	next "happened already.@"

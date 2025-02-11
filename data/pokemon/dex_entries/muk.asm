@@ -1,10 +1,10 @@
-	db "SLUDGE@" ; species name
+	db "Poltergeist@" ; species name
 	dw 311, 660 ; height, weight
 
-	db   "As it moves, a"
-	next "very strong poison"
-	next "leaks from it,"
+	db   "The middle sister"
+	next "of the three"
+	next "Prismrivers."
 
-	page "making the ground"
-	next "there barren for"
-	next "three years.@"
+	page "She has a very"
+	next "cheery and bright"
+	next "personality.@"

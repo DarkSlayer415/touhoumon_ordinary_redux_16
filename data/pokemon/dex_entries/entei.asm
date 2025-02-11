@@ -1,10 +1,11 @@
-	db "VOLCANO@" ; species name
-	dw 607, 4370 ; height, weight
+	db "Lunarian@" ; species name
+	dw 510, 2000 ; height, weight
 
-	db   "This brawny"
-	next "#MON courses"
-	next "around the earth,"
+	db   "The sword she"
+	next "wields is capable"
+	next "of channeling the"
 
-	page "spouting flames"
-	next "hotter than a"
-	next "volcano's magma.@"
+	page "power of Shinto"
+	next "gods, as long as"
+	next "it is kept clean.@"
+	

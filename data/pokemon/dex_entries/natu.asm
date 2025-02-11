@@ -1,10 +1,11 @@
-	db "LITTLE BIRD@" ; species name
-	dw 8, 40 ; height, weight
+	db "Crow Tengu@" ; species name
+	dw 211, 500 ; height, weight
 
-	db   "It is extremely"
-	next "good at climbing"
-	next "tree trunks and"
+	db   "A relatively"
+	next "unknown crow tengu"
+	next "with an equally"
 
-	page "likes to eat the"
-	next "new sprouts on"
-	next "the trees.@"
+	page "unknown newspaper."
+	next "She considers Aya"
+	next "as a rival.@"
+

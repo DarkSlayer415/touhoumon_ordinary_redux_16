@@ -1,10 +1,10 @@
-	db "TRANSFORM@" ; species name
-	dw 100, 90 ; height, weight
+	db "Samurai@" ; species name
+	dw 507, 1400 ; height, weight
 
-	db   "When it encount-"
-	next "ers another DITTO,"
-	next "it will move"
+	db   "Reimu mistook her"
+	next "for a man when"
+	next "being challenged."
 
-	page "faster than normal"
-	next "to duplicate that"
-	next "opponent exactly.@"
+	page "Disappeared after"
+	next "her defeat, likely"
+	next "out of shame.@"

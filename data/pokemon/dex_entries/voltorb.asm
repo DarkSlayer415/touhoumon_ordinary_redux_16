@@ -1,10 +1,10 @@
-	db "BALL@" ; species name
-	dw 108, 230 ; height, weight
+	db "Ibis@" ; species name
+	dw 208, 430 ; height, weight
 
-	db   "During the study"
-	next "of this #MON,"
-	next "it was discovered"
+	db   "A run-of-the-mill"
+	next "youkai who enjoys"
+	next "reading books."
 
-	page "that its compo-"
-	next "nents are not"
-	next "found in nature.@"
+	page "Often seen around"
+	next "Kourindou looking"
+	next "for old books.@"

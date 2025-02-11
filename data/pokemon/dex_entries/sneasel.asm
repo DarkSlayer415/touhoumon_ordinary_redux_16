@@ -1,10 +1,10 @@
-	db "SHARP CLAW@" ; species name
+	db "Makai Maid@" ; species name
 	dw 211, 620 ; height, weight
 
-	db   "This cunning"
-	next "#MON hides"
-	next "under the cover"
+	db   "Shinki's maid."
+	next "Polite towards"
+	next "her mistress, but"
 
-	page "of darkness,"
-	next "waiting to attack"
-	next "its prey.@"
+	page "is hostile and"
+	next "dangerous to any"
+	next "intruder.@"

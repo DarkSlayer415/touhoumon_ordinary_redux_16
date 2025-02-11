@@ -1,10 +1,10 @@
-	db "FLYCATCHER@" ; species name
-	dw 507, 340 ; height, weight
+	db "Flower@" ; species name
+	dw 507, 1840 ; height, weight
 
-	db   "Once ingested into"
-	next "this #MON's"
-	next "body, even the"
+	db   "Shows no fear in"
+	next "battle and loves"
+	next "to taunt her foes."
 
-	page "hardest object"
-	next "will melt into"
-	next "nothing.@"
+	page "Carries a parasol"
+	next "that also doubles"
+	next "as her weapon.@"

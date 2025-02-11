@@ -1,10 +1,10 @@
-	db "PSI@" ; species name
-	dw 211, 430 ; height, weight
+	db "Yama@" ; species name
+	dw 407, 700 ; height, weight
 
-	db   "It hypnotizes"
-	next "itself so that it"
-	next "can teleport away"
+	db   "The Yama in"
+	next "charge of"
+	next "Gensokyo's dead."
 
-	page "when it senses"
-	next "danger, even"
-	next "if it is asleep.@"
+	page "She can distinctly"
+	next "judge between"
+	next "good or evil.@"

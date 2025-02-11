@@ -1,10 +1,10 @@
-	db "SEED@" ; species name
-	dw 100, 40 ; height, weight
+	db "Vampire@" ; species name
+	dw 204, 350 ; height, weight
 
-	db   "It is very weak."
-	next "Its only means of"
-	next "defense is to"
+	db   "Remilia's younger"
+	next "sister. Due to"
+	next "her ability, she"
 
-	page "shake its leaves"
-	next "desperately at its"
-	next "attacker.@"
+	page "usually ends up"
+	next "breaking her toys"
+	next "and playmates.@"

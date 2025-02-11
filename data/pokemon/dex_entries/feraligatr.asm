@@ -1,10 +1,11 @@
-	db "BIG JAW@" ; species name
-	dw 707, 1960 ; height, weight
+	db "Genius@" ; species name
+	dw 600, 1960 ; height, weight
 
-	db   "Although it has a"
-	next "massive body, its"
-	next "powerful hind legs"
+	db   "When the Lunarians"
+	next "invaded Gensokyo,"
+	next "she thwarted their"
 
-	page "enable it to move"
-	next "quickly, even on"
-	next "the ground.@"
+	page "plans by using"
+	next "the Ultramarine"
+	next "Orb Elixir.@"
+	

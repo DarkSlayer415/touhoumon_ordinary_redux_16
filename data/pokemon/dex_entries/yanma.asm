@@ -1,10 +1,10 @@
-	db "CLEAR WING@" ; species name
-	dw 311, 840 ; height, weight
+	db "Vampire@" ; species name
+	dw 402, 1200 ; height, weight
 
-	db   "It can see in all"
-	next "directions without"
-	next "moving its big"
+	db   "She rarely leaves"
+	next "the mansion, but"
+	next "on one occasion"
 
-	page "eyes, helping it"
-	next "spot attackers and"
-	next "food right away.@"
+	page "she was hired by"
+	next "to assassinate"
+	next "Yuuma by Okina.@"

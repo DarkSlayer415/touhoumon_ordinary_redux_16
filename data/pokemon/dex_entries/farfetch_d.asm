@@ -1,10 +1,11 @@
-	db "WILD DUCK@" ; species name
-	dw 207, 330 ; height, weight
+	db "Third-Eye@" ; species name
+	dw 300, 600 ; height, weight
 
-	db   "In order to pre-"
-	next "vent their"
-	next "extinction, more"
+	db   "A girl with the"
+	next "terrifying ability"
+	next "to read the hearts"
 
-	page "people have made"
-	next "an effort to breed"
-	next "these #MON.@"
+	page "of others. Feared"
+	next "by both humans and"
+	next "some youkai too.@"
+	

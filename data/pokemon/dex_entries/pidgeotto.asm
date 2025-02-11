@@ -1,10 +1,10 @@
-	db "BIRD@" ; species name
-	dw 307, 660 ; height, weight
+	db "Crow Tengu@" ; species name
+	dw 407, 660 ; height, weight
 
-	db   "It slowly flies in"
-	next "a circular pat-"
-	next "tern, all the"
+	db   "Her fan lets her"
+	next "control wind."
+	next "Waving it can"
 
-	page "while keeping a"
-	next "sharp lookout for"
-	next "prey.@"
+	page "produce tornadoes"
+	next "and blow away her"
+	next "opponents.@"

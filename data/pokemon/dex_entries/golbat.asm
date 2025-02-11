@@ -1,10 +1,11 @@
-	db "BAT@" ; species name
-	dw 503, 1210 ; height, weight
+	db "SpringFairy@" ; species name
+	dw 409, 1210 ; height, weight
 
-	db   "When it plunges"
-	next "its fangs into its"
-	next "prey, it instantly"
+	db   "Although she is"
+	next "commonly mistaken"
+	next "as Lily White's"
 
-	page "draws and gulps"
-	next "down more than ten"
-	next "ounces of blood.@"
+	page "counterpart, she's"
+	next "just Lily dressed"
+	next "as Eiki Shiki.@"
+	

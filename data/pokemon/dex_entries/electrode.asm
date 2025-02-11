@@ -1,10 +1,11 @@
-	db "BALL@" ; species name
-	dw 311, 1470 ; height, weight
+	db "Ibis@" ; species name
+	dw 311, 900 ; height, weight
 
-	db   "The more energy it"
-	next "charges up, the"
-	next "faster it gets."
+	db   "A youkai that"
+	next "keeps to herself."
+	next "She has been"
 
-	page "But this also"
-	next "makes it more"
-	next "likely to explode.@"
+	page "attacked before"
+	next "by both Reimu"
+	next "and Marisa.@"
+	

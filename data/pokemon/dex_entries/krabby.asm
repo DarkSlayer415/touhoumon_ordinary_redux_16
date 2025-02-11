@@ -1,10 +1,11 @@
-	db "RIVER CRAB@" ; species name
-	dw 104, 140 ; height, weight
+	db "Winter@" ; species name
+	dw 300, 850 ; height, weight
 
-	db   "If it is unable"
-	next "to find food, it"
-	next "will absorb"
+	db   "A youkai only seen"
+	next "during winter."
+	next "Despite their"
 
-	page "nutrients by"
-	next "swallowing a"
-	next "mouthful of sand.@"
+	page "similarities, she"
+	next "seems to dislike"
+	next "Cirno.@"
+	

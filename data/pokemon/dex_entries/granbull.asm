@@ -1,10 +1,10 @@
-	db "FAIRY@" ; species name
+	db "Gatekeeper@" ; species name
 	dw 407, 1070 ; height, weight
 
-	db   "It can make most"
-	next "any #MON run"
-	next "away simply by"
+	db   "She's somewhat"
+	next "weaker than other"
+	next "Makai residents."
 
-	page "opening its mouth"
-	next "wide to reveal its"
-	next "big fangs.@"
+	page "She can not even"
+	next "aim danmaku at her"
+	next "enemies correctly.@"

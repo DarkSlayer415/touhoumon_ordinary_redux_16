@@ -1,10 +1,10 @@
-	db "INSECT@" ; species name
+	db "Bucket@" ; species name
 	dw 303, 660 ; height, weight
 
-	db   "The small bugs it"
-	next "eats appear only"
-	next "at night, so it"
+	db   "Always seen hiding"
+	next "inside her bucket."
+	next "She hides in dark"
 
-	page "sleeps in a hole"
-	next "in a tree until"
-	next "night falls.@"
+	page "places like caves"
+	next "or wells to scare"
+	next "passerbys.@"

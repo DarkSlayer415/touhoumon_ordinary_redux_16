@@ -1,10 +1,10 @@
-	db "TINY BIRD@" ; species name
-	dw 100, 40 ; height, weight
+	db "Crow Tengu@" ; species name
+	dw 300, 500 ; height, weight
 
-	db   "It rapidly flaps"
-	next "its wings in the"
-	next "grass, stirring up"
+	db   "A tengu who runs"
+	next "the Bunbunmaru"
+	next "Newspaper. She is"
 
-	page "a dust cloud that"
-	next "drives insect prey"
-	next "out into the open.@"
+	page "the fastest known"
+	next "resident in all of"
+	next "Gensokyo.@"

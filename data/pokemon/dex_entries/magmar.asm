@@ -1,10 +1,10 @@
-	db "SPITFIRE@" ; species name
-	dw 403, 980 ; height, weight
+	db "Curse God@" ; species name
+	dw 503, 1444 ; height, weight
 
-	db   "It moves more"
-	next "frequently in hot"
-	next "areas. It can heal"
+	db   "Misfortune is her"
+	next "power source. She"
+	next "is widely feared"
 
-	page "itself by dipping"
-	next "its wound into"
-	next "lava.@"
+	page "as there is no way"
+	next "to counteract her"
+	next "bad luck.@"

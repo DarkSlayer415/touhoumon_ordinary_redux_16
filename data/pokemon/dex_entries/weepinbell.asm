@@ -1,10 +1,10 @@
-	db "FLYCATCHER@" ; species name
-	dw 303, 140 ; height, weight
+	db "Flower@" ; species name
+	dw 403, 900 ; height, weight
 
-	db   "When it's hungry,"
-	next "it swings its"
-	next "razor-sharp"
+	db   "Able to manipulate"
+	next "flowers. While her"
+	next "ability is nothing"
 
-	page "leaves, slicing up"
-	next "any unlucky object"
-	next "nearby for food.@"
+	page "too special, her"
+	next "raw power is not"
+	next "to be scoffed at.@"

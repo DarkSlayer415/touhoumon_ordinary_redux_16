@@ -1,10 +1,10 @@
-	db "BUTTERFLY@" ; species name
-	dw 307, 710 ; height, weight
+	db "Knowledge@" ; species name
+	dw 500, 1450 ; height, weight
 
-	db   "It flits from"
-	next "flower to flower,"
-	next "collecting honey."
+	db   "A powerful mage"
+	next "who specializes in"
+	next "elemental magic."
 
-	page "It can even"
-	next "identify distant"
-	next "flowers in bloom.@"
+	page "She casts spells"
+	next "that utilize"
+	next "multiple elements.@"

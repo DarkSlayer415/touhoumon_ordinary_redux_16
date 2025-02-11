@@ -1,10 +1,10 @@
-	db "FOX@" ; species name
-	dw 200, 220 ; height, weight
+	db "SpringFairy@" ; species name
+	dw 305, 620 ; height, weight
 
-	db   "As its body grows"
-	next "larger, its six"
-	next "warm tails become"
+	db   "Announces the"
+	next "coming of spring"
+	next "with curtains of"
 
-	page "more beautiful,"
-	next "with a more luxur-"
-	next "ious coat of fur.@"
+	page "danmaku. As such,"
+	next "she's mistaken as"
+	next "a hostile target.@"

@@ -1,10 +1,10 @@
-	db "BALLOON@" ; species name
-	dw 108, 90 ; height, weight
+	db "Gatekeeper@" ; species name
+	dw 500, 1400 ; height, weight
 
-	db   "When faced with a"
-	next "larger opponent,"
-	next "it swallows as"
+	db   "Takes her job as"
+	next "Makai's gatekeeper"
+	next "seriously. Despite"
 
-	page "much water as it"
-	next "can to match the"
-	next "opponent's size.@"
+	page "this, she is rather"
+	next "weak and easy to"
+	next "defeat.@"

@@ -1,10 +1,11 @@
-	db "LIGHT@" ; species name
-	dw 311, 500 ; height, weight
+	db "Sailor@" ; species name
+	dw 311, 700 ; height, weight
 
-	db   "This #MON uses"
-	next "the bright part of"
-	next "its body, which"
+	db   "Though she's just"
+	next "a normal human,"
+	next "she seems capable"
 
-	page "changed from a"
-	next "dorsal fin, to"
-	next "lure prey.@"
+	page "of using some"
+	next "kind of"
+	next "artificial magic.@"
+	

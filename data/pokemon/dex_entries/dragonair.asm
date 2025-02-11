@@ -1,10 +1,10 @@
-	db "DRAGON@" ; species name
-	dw 1301, 360 ; height, weight
+	db "Gap Youkai@" ; species name
+	dw 404, 900 ; height, weight
 
-	db   "It is called the"
-	next "divine #MON."
-	next "When its entire"
+	db   "She has a fondness"
+	next "for fancy and bold"
+	next "clothing. When out"
 
-	page "body brightens"
-	next "slightly, the"
-	next "weather changes.@"
+	page "in public, she is"
+	next "rarely seen without"
+	next "her large parasol.@"

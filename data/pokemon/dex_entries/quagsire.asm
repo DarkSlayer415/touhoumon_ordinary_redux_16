@@ -1,10 +1,10 @@
-	db "WATER FISH@" ; species name
-	dw 407, 1650 ; height, weight
+	db "Half-Beast@" ; species name
+	dw 407, 1450 ; height, weight
 
-	db   "Its body is always"
-	next "slimy. It often"
-	next "bangs its head on"
+	db   "Spends her days"
+	next "as a teacher in"
+	next "the Human Village."
 
-	page "the river bottom"
-	next "as it swims but"
-	next "seems not to care.@"
+	page "Depending on her"
+	next "form, she can eat"
+	next "or create history.@"

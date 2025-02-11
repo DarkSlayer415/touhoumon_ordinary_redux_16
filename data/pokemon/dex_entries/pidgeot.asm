@@ -1,10 +1,10 @@
-	db "BIRD@" ; species name
-	dw 411, 870 ; height, weight
+	db "Crow Tengu@" ; species name
+	dw 511, 1270 ; height, weight
 
-	db   "Its outstanding"
-	next "vision allows it"
-	next "to spot splashing"
+	db   "Constantly darts"
+	next "around Gensokyo on"
+	next "the prowl for"
 
-	page "MAGIKARP, even"
-	next "while flying at"
-	next "3300 feet.@"
+	page "stories. There are"
+	next "few fans of her"
+	next "reporting style.@"

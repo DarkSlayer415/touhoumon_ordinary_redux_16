@@ -1,10 +1,10 @@
-	db "BAGWORM@" ; species name
-	dw 200, 160 ; height, weight
+	db "Celestial@" ; species name
+	dw 400, 900 ; height, weight
 
-	db   "It spits out a"
-	next "fluid that it uses"
-	next "to glue tree bark"
+	db   "A smug and selfish"
+	next "girl. Thinks she's"
+	next "more important"
 
-	page "to its body. The"
-	next "fluid hardens when"
-	next "it touches air.@"
+	page "than everybody"
+	next "else, and dislikes"
+	next "being insulted.@"

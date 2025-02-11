@@ -1,10 +1,10 @@
-	db "STARSHAPE@" ; species name
-	dw 207, 760 ; height, weight
+	db "Jealousy@" ; species name
+	dw 207, 460 ; height, weight
 
-	db   "When the stars"
-	next "twinkle at night,"
-	next "it floats up from"
+	db   "Nonchalantly"
+	next "guards the bridge"
+	next "to the underworld."
 
-	page "the sea floor, and"
-	next "its body's center"
-	next "core flickers.@"
+	page "Her notable trait"
+	next "is her green eyes"
+	next "of jealousy.@"

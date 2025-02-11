@@ -1,10 +1,11 @@
-	db "WOOL@" ; species name
-	dw 207, 290 ; height, weight
+	db "Satori@" ; species name
+	dw 404, 900 ; height, weight
 
-	db   "Because of its"
-	next "rubbery, electric-"
-	next "ity-resistant"
+	db   "She sealed away"
+	next "her Third Eye in"
+	next "order to avoid the"
 
-	page "skin, it can store"
-	next "lots of electric-"
-	next "ity in its fur.@"
+	page "hate that Satori"
+	next "faced due to her"
+	next "abilities.@"
+	

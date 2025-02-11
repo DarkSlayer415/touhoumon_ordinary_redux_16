@@ -1,10 +1,10 @@
-	db "AURORA@" ; species name
-	dw 607, 4120 ; height, weight
+	db "Forgotten@" ; species name
+	dw 507, 1420 ; height, weight
 
-	db   "This divine"
-	next "#MON blows"
-	next "around the world,"
+	db   "A being whose"
+	next "existence was"
+	next "completely erased."
 
-	page "always in search"
-	next "of a pure"
-	next "reservoir.@"
+	page "Her true identity"
+	next "and her appearance"
+	next "are all unknown.@"

@@ -1,10 +1,11 @@
-	db "STARSHAPE@" ; species name
-	dw 100, 70 ; height, weight
+	db "EarthRabbit@" ; species name
+	dw 303, 700 ; height, weight
 
-	db   "If the impact site"
-	next "of a meteorite is"
-	next "found, this"
+	db   "A youkai rabbit"
+	next "who has lived for"
+	next "a very long time."
 
-	page "#MON is certain"
-	next "to be within the"
-	next "immediate area.@"
+	page "She is the leader"
+	next "of Eientei's"
+	next "earth rabbits.@"
+	

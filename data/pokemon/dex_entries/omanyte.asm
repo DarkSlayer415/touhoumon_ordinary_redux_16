@@ -1,10 +1,10 @@
-	db "SPIRAL@" ; species name
-	dw 104, 170 ; height, weight
+	db "Magician@" ; species name
+	dw 211, 170 ; height, weight
 
-	db   "In prehistoric"
-	next "times, it swam on"
-	next "the sea floor,"
+	db   "A young and"
+	next "hopeful magician"
+	next "studying under"
 
-	page "eating plankton."
-	next "Its fossils are"
-	next "sometimes found.@"
+	page "Mima's guidance."
+	next "Her magic is still"
+	next "unrefined.@"

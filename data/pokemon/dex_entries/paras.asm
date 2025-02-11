@@ -1,10 +1,10 @@
-	db "MUSHROOM@" ; species name
-	dw 100, 120 ; height, weight
+	db "PoisonDoll@" ; species name
+	dw 206, 400 ; height, weight
 
-	db   "The tochukaso"
-	next "growing on this"
-	next "#MON's back"
+	db   "A doll turned"
+	next "youkai who lives"
+	next "on the Nameless"
 
-	page "orders it to"
-	next "extract juice from"
-	next "tree trunks.@"
+	page "Hill. Gained her"
+	next "poison from lilies"
+	next "of the valley.@"

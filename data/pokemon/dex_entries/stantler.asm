@@ -1,10 +1,10 @@
-	db "BIG HORN@" ; species name
-	dw 407, 1570 ; height, weight
+	db "Dream Demon@" ; species name
+	dw 207, 470 ; height, weight
 
-	db   "The round balls"
-	next "found on the"
-	next "fallen antlers can"
+	db   "The younger of the"
+	next "two dream world"
+	next "sisters. She is"
 
-	page "be ground into a"
-	next "powder that aids"
-	next "in sleeping.@"
+	page "frequently seen"
+	next "wearing a maid"
+	next "uniform for fun.@"

@@ -1,10 +1,10 @@
-	db "RAT@" ; species name
-	dw 100, 80 ; height, weight
+	db "Oni@" ; species name
+	dw 306, 800 ; height, weight
 
-	db   "This #MON's"
-	next "impressive vital-"
-	next "ity allows it to"
+	db   "Despite her small"
+	next "size, she has"
+	next "considerable"
 
-	page "live anywhere. It"
-	next "also multiplies"
-	next "very quickly.@"
+	page "physical strength."
+	next "Can easily toss"
+	next "boulders around.@"

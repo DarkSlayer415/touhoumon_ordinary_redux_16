@@ -1,10 +1,10 @@
-	db "IMITATION@" ; species name
-	dw 311, 840 ; height, weight
+	db "Sailor@" ; species name
+	dw 411, 1040 ; height, weight
 
-	db   "If a tree branch"
-	next "shakes when there"
-	next "is no wind, it's a"
+	db   "She completed her"
+	next "graduate school"
+	next "studies at the"
 
-	page "SUDOWOODO, not a"
-	next "tree. It hides"
-	next "from the rain.@"
+	page "young age of 13."
+	next "Despite this, she"
+	next "is very immature.@"

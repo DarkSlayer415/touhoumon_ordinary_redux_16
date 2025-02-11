@@ -1,10 +1,10 @@
-	db "PATIENT@" ; species name
-	dw 403, 630 ; height, weight
+	db "Vampire@" ; species name
+	dw 210, 430 ; height, weight
 
-	db   "In order to con-"
-	next "ceal its black"
-	next "tail, it lives in"
+	db   "A vampire guarding"
+	next "the Lake of Blood"
+	next "from intruders."
 
-	page "a dark cave and"
-	next "only moves about"
-	next "at night.@"
+	page "Strangely for her"
+	next "species, she is"
+	next "not weak to water.@"

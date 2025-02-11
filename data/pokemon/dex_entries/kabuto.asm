@@ -1,10 +1,11 @@
-	db "SHELLFISH@" ; species name
-	dw 108, 250 ; height, weight
+	db "Miko@" ; species name
+	dw 300, 750 ; height, weight
 
-	db   "Three hundred"
-	next "million years ago,"
-	next "it hid on the sea"
+	db   "A fledgling shrine"
+	next "maiden that hasn't"
+	next "yet realized her"
 
-	page "floor. It also has"
-	next "eyes on its back"
-	next "that glow.@"
+	page "potential. Usually"
+	next "seen kicking her"
+	next "Yin-Yang Orb.@"
+

@@ -1,10 +1,10 @@
-	db "LONG LEG@" ; species name
-	dw 307, 740 ; height, weight
+	db "Vampire@" ; species name
+	dw 311, 1200 ; height, weight
 
-	db   "Rather than mak-"
-	next "ing a nest in one"
-	next "specific spot, it"
+	db   "Despite her best"
+	next "efforts to appear"
+	next "like a terrifying"
 
-	page "wanders in search"
-	next "of food after"
-	next "darkness falls.@"
+	page "master of the"
+	next "night, her actions"
+	next "are very childish.@"

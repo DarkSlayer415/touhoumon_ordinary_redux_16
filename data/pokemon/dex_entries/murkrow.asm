@@ -1,10 +1,10 @@
-	db "DARKNESS@" ; species name
-	dw 108, 50 ; height, weight
+	db "WindGoddess@" ; species name
+	dw 300, 750 ; height, weight
 
-	db   "It hides any shiny"
-	next "object it finds in"
-	next "a secret location."
+	db   "A divine spirit"
+	next "from the outside"
+	next "world who came to"
 
-	page "MURKROW and"
-	next "MEOWTH loot one"
-	next "another's stashes.@"
+	page "Gensokyo. She is"
+	next "the current god of"
+	next "the Moriya Shrine.@"

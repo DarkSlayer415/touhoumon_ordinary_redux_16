@@ -1,10 +1,10 @@
-	db "MOONLIGHT@" ; species name
-	dw 303, 600 ; height, weight
+	db "Half-Beast@" ; species name
+	dw 511, 1750 ; height, weight
 
-	db   "On the night of a"
-	next "full moon, or when"
-	next "it gets excited,"
+	db   "The guardian of"
+	next "the Human Village."
+	next "Even as a hakutaku"
 
-	page "the ring patterns"
-	next "on its body glow"
-	next "yellow.@"
+	page "she is the safest"
+	next "youkai for a human"
+	next "to be around.@"

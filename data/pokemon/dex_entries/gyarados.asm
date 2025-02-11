@@ -1,10 +1,11 @@
-	db "ATROCIOUS@" ; species name
-	dw 2104, 5180 ; height, weight
+	db "LakeFairy@" ; species name
+	dw 411, 1300 ; height, weight
 
-	db   "It appears when-"
-	next "ever there is"
-	next "world conflict,"
+	db   "Sometimes takes a"
+	next "leadership role"
+	next "among other"
 
-	page "burning down any"
-	next "place it travels"
-	next "through.@"
+	page "fairies due to her"
+	next "above-average"
+	next "power for a fairy.@"
+	

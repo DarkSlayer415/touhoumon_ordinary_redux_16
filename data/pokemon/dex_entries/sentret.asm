@@ -1,10 +1,10 @@
-	db "SCOUT@" ; species name
-	dw 207, 130 ; height, weight
+	db "Poltergeist@" ; species name
+	dw 207, 530 ; height, weight
 
-	db   "When acting as a"
-	next "lookout, it warns"
-	next "others of danger"
+	db   "A poltergeist girl"
+	next "produced by the"
+	next "imagination of a"
 
-	page "by screeching and"
-	next "hitting the ground"
-	next "with its tail.@"
+	page "mentally unstable"
+	next "girl. Often seen"
+	next "with a road sign.@"

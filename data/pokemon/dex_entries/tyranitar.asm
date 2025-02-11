@@ -1,10 +1,10 @@
-	db "ARMOR@" ; species name
-	dw 607, 4450 ; height, weight
+	db "EvilSpirit@" ; species name
+	dw 600, 1850 ; height, weight
 
-	db   "In just one of its"
-	next "mighty hands, it"
-	next "has the power to"
+	db   "A boastful spirit"
+	next "who once caused an"
+	next "incident. Nowadays"
 
-	page "make the ground"
-	next "shake and moun-"
-	next "tains crumble.@"
+	page "spends her time"
+	next "haunting the"
+	next "Hakurei Shrine.@"

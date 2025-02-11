@@ -1,10 +1,10 @@
-	db "VIRTUAL@" ; species name
-	dw 200, 720 ; height, weight
+	db "Gatekeeper@" ; species name
+	dw 508, 1720 ; height, weight
 
-	db   "This manmade"
-	next "#MON evolved"
-	next "from the latest"
+	db   "When thrown, her"
+	next "scythe returns"
+	next "like a boomerang."
 
-	page "technology. It"
-	next "may have unprog-"
-	next "rammed reactions.@"
+	page "She rarely fights"
+	next "as Kurumi defeats"
+	next "most intruders.@"

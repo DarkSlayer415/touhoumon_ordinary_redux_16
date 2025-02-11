@@ -1,10 +1,10 @@
-	db "SUPERPOWER@" ; species name
+	db "Gatekeeper@" ; species name
 	dw 411, 1550 ; height, weight
 
-	db   "This tough #MON"
-	next "always stays in"
-	next "the zone. Its"
+	db   "A youkai hailing"
+	next "from China. Spars"
+	next "with people on"
 
-	page "muscles become"
-	next "thicker after"
-	next "every battle.@"
+	page "request and"
+	next "enjoys friendly"
+	next "bouts and duels.@"

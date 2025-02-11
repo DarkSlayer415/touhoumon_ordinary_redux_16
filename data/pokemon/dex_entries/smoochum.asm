@@ -1,10 +1,10 @@
-	db "KISS@" ; species name
-	dw 104, 130 ; height, weight
+	db "Oni@" ; species name
+	dw 206, 500 ; height, weight
 
-	db   "The sensitivity of"
-	next "its lips develops"
-	next "most quickly."
+	db   "A cheerful oni"
+	next "girl with immense"
+	next "power. She's never"
 
-	page "It uses them to"
-	next "try to identify"
-	next "unknown objects.@"
+	page "seen without her"
+	next "gourd nor is she"
+	next "ever sober.@"

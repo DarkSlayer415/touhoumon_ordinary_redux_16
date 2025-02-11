@@ -1,10 +1,10 @@
-	db "ROYAL@" ; species name
-	dw 607, 1750 ; height, weight
+	db "Princess@" ; species name
+	dw 507, 1750 ; height, weight
 
-	db   "Every time it ya-"
-	next "wns, SHELLDER"
-	next "injects more poi-"
+	db   "Her personality is"
+	next "something of"
+	next "failure. As such,"
 
-	page "son into it. The"
-	next "poison makes it"
-	next "more intelligent.@"
+	page "she doesn't get"
+	next "out to meet other"
+	next "people often.@"

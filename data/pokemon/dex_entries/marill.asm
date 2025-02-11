@@ -1,10 +1,10 @@
-	db "AQUAMOUSE@" ; species name
-	dw 104, 190 ; height, weight
+	db "Native@" ; species name
+	dw 206, 650 ; height, weight
 
-	db   "The fur on its"
-	next "body naturally"
-	next "repels water. It"
+	db   "The native and"
+	next "former goddess of"
+	next "the Moriya Shrine."
 
-	page "can stay dry, even"
-	next "when it plays in"
-	next "the water.@"
+	page "She rarely leaves"
+	next "the shrine, making"
+	next "her presence rare.@"

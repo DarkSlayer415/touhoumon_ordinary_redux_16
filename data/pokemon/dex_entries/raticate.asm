@@ -1,10 +1,10 @@
-	db "RAT@" ; species name
-	dw 204, 410 ; height, weight
+	db "Oni@" ; species name
+	dw 410, 1300 ; height, weight
 
-	db   "The webs on its"
-	next "hind legs enable"
-	next "it to cross"
+	db   "One of the known"
+	next "Devas of the"
+	next "Mountain alongside"
 
-	page "rivers. It search-"
-	next "es wide areas for"
-	next "food.@"
+	page "Yuugi and Kasen."
+	next "She can manipulate"
+	next "density as well.@"

@@ -1,10 +1,10 @@
-	db "FOSSIL@" ; species name
-	dw 511, 1300 ; height, weight
+	db "Witch@" ; species name
+	dw 507, 1102 ; height, weight
 
-	db   "In prehistoric"
-	next "times, this"
-	next "#MON flew"
+	db   "Has a playful"
+	next "personality and"
+	next "loves meeting new"
 
-	page "freely and"
-	next "fearlessly through"
-	next "the skies.@"
+	page "people. She owns"
+	next "a pet cat named"
+	next "Sokrates.@"

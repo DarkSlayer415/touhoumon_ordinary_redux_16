@@ -1,10 +1,10 @@
-	db "GAS@" ; species name
-	dw 503, 2 ; height, weight
+	db "Night Bird@" ; species name
+	dw 306, 750 ; height, weight
 
-	db   "It hides in the"
-	next "dark, planning to"
-	next "take the life of"
+	db   "She holds night"
+	next "concerts with her"
+	next "friend Kyouko."
 
-	page "the next living"
-	next "thing that wanders"
-	next "close by.@"
+	page "Together, the two"
+	next "formed the band"
+	next "Choujuu Gigaku.@"

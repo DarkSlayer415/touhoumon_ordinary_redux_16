@@ -1,10 +1,10 @@
-	db "LEGENDARY@" ; species name
-	dw 603, 3420 ; height, weight
+	db "Darkness@" ; species name
+	dw 403, 802 ; height, weight
 
-	db   "An ancient picture"
-	next "scroll shows that"
-	next "people were"
+	db   "Despite her"
+	next "childish apperance"
+	next "she eats humans."
 
-	page "attracted to its"
-	next "movement as it ran"
-	next "through prairies.@"
+	page "She waits for"
+	next "for anyone who"
+	next "becomes lost.@"

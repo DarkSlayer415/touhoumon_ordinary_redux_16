@@ -1,10 +1,10 @@
-	db "SINGLEHORN@" ; species name
+	db "Makai@" ; species name
 	dw 411, 1190 ; height, weight
 
-	db   "With its Herculean"
-	next "powers, it can"
-	next "easily throw arou-"
+	db   "Her eyes are often"
+	next "seen closed. Many"
+	next "who meet her say"
 
-	page "nd an object that"
-	next "is 100 times its"
-	next "own weight.@"
+	page "her clam nature"
+	next "makes them feel"
+	next "at ease.@"

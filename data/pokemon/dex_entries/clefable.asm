@@ -1,10 +1,10 @@
-	db "FAIRY@" ; species name
-	dw 403, 880 ; height, weight
+	db "EarthRabbit@" ; species name
+	dw 500, 1200 ; height, weight
 
-	db   "Said to live in"
-	next "quiet, remote"
-	next "mountains, this"
+	db   "She constantly"
+	next "pulls pranks,"
+	next "with Reisen being"
 
-	page "type of fairy has"
-	next "a strong aversion"
-	next "to being seen.@"
+	page "her main victim."
+	next "Quick to run if"
+	next "she fears capture.@"

@@ -1,10 +1,10 @@
-	db "DUCK@" ; species name
-	dw 207, 430 ; height, weight
+	db "Moonlight@" ; species name
+	dw 211, 520 ; height, weight
 
-	db   "The only time it"
-	next "can use its psy-"
-	next "chic power is when"
+	db   "One of the Three"
+	next "Fairies of Light."
+	next "Somewhat clumsy,"
 
-	page "its sleeping brain"
-	next "cells happen to"
-	next "wake.@"
+	page "she is capable of"
+	next "muffling all sound"
+	next "around her.@"

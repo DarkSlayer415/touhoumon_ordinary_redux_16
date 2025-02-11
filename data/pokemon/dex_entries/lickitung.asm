@@ -1,10 +1,10 @@
-	db "LICKING@" ; species name
-	dw 311, 1440 ; height, weight
+	db "Familiar@" ; species name
+	dw 211, 600 ; height, weight
 
-	db   "It has a tongue"
-	next "that is over 6'6''"
-	next "long. It uses this"
+	db   "An unnamed demon"
+	next "who is Patchouli's"
+	next "familiar. She"
 
-	page "long tongue to"
-	next "lick its body"
-	next "clean.@"
+	page "often helps with"
+	next "sorting books in"
+	next "the library.@"

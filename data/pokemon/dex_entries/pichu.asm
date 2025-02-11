@@ -1,10 +1,10 @@
-	db "TINY MOUSE@" ; species name
-	dw 100, 40 ; height, weight
+	db "Kappa@" ; species name
+	dw 206, 300 ; height, weight
 
-	db   "It is unskilled at"
-	next "storing electric"
-	next "power. Any kind of"
+	db   "A shy youkai who"
+	next "lives at the"
+	next "Genbu Ravine. Like"
 
-	page "shock causes it to"
-	next "discharge energy"
-	next "spontaneously.@"
+	page "her fellow kappa,"
+	next "she is able to"
+	next "manipulate water.@"

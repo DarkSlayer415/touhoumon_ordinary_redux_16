@@ -1,10 +1,11 @@
-	db "SEA LION@" ; species name
-	dw 507, 2650 ; height, weight
+	db "Poltergeist@" ; species name
+	dw 400, 1200 ; height, weight
 
-	db   "It sleeps under"
-	next "shallow ocean"
-	next "waters during the"
+	db   "The eldest sister"
+	next "of the three"
+	next "Prismrivers."
 
-	page "day, then looks"
-	next "for food at night"
-	next "when it's cold.@"
+	page "Though calm and"
+	next "collected, she"
+	next "is very gloomy.@"
+	

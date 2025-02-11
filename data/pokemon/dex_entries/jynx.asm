@@ -1,10 +1,10 @@
-	db "HUMANSHAPE@" ; species name
+	db "Nekomata@" ; species name
 	dw 407, 900 ; height, weight
 
-	db   "It has several"
-	next "different cry pat-"
-	next "terns, each of"
+	db   "While she grows"
+	next "stronger when near"
+	next "Ran, her attacks"
 
-	page "which seems to"
-	next "have its own"
-	next "meaning.@"
+	page "rely on her high"
+	next "speed to confuse"
+	next "her foes.@"

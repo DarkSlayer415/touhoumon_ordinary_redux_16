@@ -1,10 +1,10 @@
-	db "FIRE HORSE@" ; species name
-	dw 507, 2090 ; height, weight
+	db "Wolf Tengu@" ; species name
+	dw 402, 990 ; height, weight
 
-	db   "It just loves to"
-	next "gallop. The faster"
-	next "it goes, the long-"
+	db   "Plays dai shogi"
+	next "with the kappa"
+	next "when she's bored."
 
-	page "er the swaying"
-	next "flames of its mane"
-	next "will become.@"
+	page "She has an ongoing"
+	next "feud with Aya and"
+	next "finds her irksome.@"

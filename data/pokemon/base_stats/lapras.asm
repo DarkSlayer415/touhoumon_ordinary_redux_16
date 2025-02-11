@@ -1,21 +1,21 @@
-	db 0 ; species ID placeholder
+	db LAPRAS ; 131
 
-	db 130,  85,  80,  60,  85,  95
+	db  85,  85, 120,  70, 110,  70
 	;   hp  atk  def  spd  sat  sdf
 
-	db WATER, ICE ; type
+	db STEEL, POISON ; type
 	db 45 ; catch rate
-	db 219 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db 215 ; base exp
+	db UP_GRADE, UP_GRADE ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
-	db 40 ; step cycles to hatch
+	db 20 ; step cycles to hatch
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/lapras/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
-	db GROWTH_SLOW ; growth rate
-	dn EGG_MONSTER, EGG_WATER_1 ; egg groups
+	db GROWTH_MEDIUM_SLOW ; growth rate
+	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset
-	tmhm HEADBUTT, CURSE, TOXIC, ZAP_CANNON, ROCK_SMASH, HIDDEN_POWER, SNORE, BLIZZARD, HYPER_BEAM, ICY_WIND, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, IRON_TAIL, DRAGONBREATH, THUNDER, RETURN, PSYCHIC_M, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, DREAM_EATER, REST, ATTRACT, NIGHTMARE, SURF, STRENGTH, WHIRLPOOL, THUNDERBOLT, ICE_BEAM
+	tmhm HEADBUTT, CURSE, ROLLOUT, ROAR, TOXIC, ZAP_CANNON, RAZOR_WIND, DOUBLE_EDGE, PROTECT, ENDURE, FRUSTRATION, DRAGONBREATH, RETURN, SHADOW_BALL, MUD_SLAP, BODY_SLAM, SWAGGER, SLEEP_TALK, SLUDGE_BOMB, SANDSTORM, FIRE_BLAST, SWIFT, REST, STEEL_WING, SUBSTITUTE, FLY, STRENGTH, FLASH, FLAMETHROWER, THUNDERBOLT, ICE_BEAM
 	; end

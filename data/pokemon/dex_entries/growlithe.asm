@@ -1,10 +1,11 @@
-	db "PUPPY@" ; species name
+	db "Darkness@" ; species name
 	dw 204, 420 ; height, weight
 
-	db   "It controls a big"
-	next "territory. If it"
-	next "detects an unknown"
+	db   "A night youkai who"
+	next "wanders about in"
+	next "an orb of darkness"
 
-	page "smell, it roars"
-	next "loudly to force"
-	next "out the intruder.@"
+	page "that she creates,"
+	next "but she is unable"
+	next "to see beyond it.@"
+	

@@ -1,10 +1,11 @@
-	db "HANDSTAND@" ; species name
-	dw 407, 1060 ; height, weight
+	db "Dream Demon@" ; species name
+	dw 404, 900 ; height, weight
 
-	db   "After doing a"
-	next "handstand to"
-	next "throw off the"
+	db   "The dream world"
+	next "she and Mugetsu"
+	next "reside in is"
 
-	page "opponent's timing,"
-	next "it presents its"
-	next "fancy kick moves.@"
+	page "claimed to have"
+	next "been created by"
+	next "Mugetsu herself.@"
+	

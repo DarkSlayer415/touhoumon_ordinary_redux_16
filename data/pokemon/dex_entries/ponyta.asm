@@ -1,10 +1,10 @@
-	db "FIRE HORSE@" ; species name
+	db "Wolf Tengu@" ; species name
 	dw 303, 660 ; height, weight
 
-	db   "Training by"
-	next "jumping over grass"
-	next "that grows longer"
+	db   "A wolf tengu who"
+	next "patrols the Youkai"
+	next "Mountain. Reports"
 
-	page "every day has made"
-	next "it a world-class"
-	next "jumper.@"
+	page "any intruders to"
+	next "Lord Tenma and"
+	next "Megumu.@"

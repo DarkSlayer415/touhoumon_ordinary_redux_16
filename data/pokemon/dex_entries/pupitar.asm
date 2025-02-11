@@ -1,10 +1,10 @@
-	db "HARD SHELL@" ; species name
-	dw 311, 3350 ; height, weight
+	db "EvilSpirit@" ; species name
+	dw 406, 950 ; height, weight
 
-	db   "It will not stay"
-	next "still, even while"
-	next "it's a pupa. It"
+	db   "An evil spirit who"
+	next "has lived for a"
+	next "long time. In the"
 
-	page "already has arms"
-	next "and legs under its"
-	next "solid shell.@"
+	page "past, it was her"
+	next "who taught Marisa"
+	next "how to use magic.@"

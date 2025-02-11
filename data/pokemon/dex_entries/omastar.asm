@@ -1,10 +1,10 @@
-	db "SPIRAL@" ; species name
-	dw 303, 770 ; height, weight
+	db "Magician@" ; species name
+	dw 403, 1300 ; height, weight
 
-	db   "Its heavy shell"
-	next "allowed it to"
-	next "reach only nearby"
+	db   "Marisa before she"
+	next "obtained her Mini"
+	next "Hakkero. Her magic"
 
-	page "food. This could"
-	next "be the reason it"
-	next "is extinct.@"
+	page "is still wild and"
+	next "unrefined, yet is"
+	next "very destructive.@"

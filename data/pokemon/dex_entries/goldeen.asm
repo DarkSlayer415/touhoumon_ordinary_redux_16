@@ -1,10 +1,10 @@
-	db "GOLDFISH@" ; species name
-	dw 200, 330 ; height, weight
+	db "WindGoddess@" ; species name
+	dw 409, 1500 ; height, weight
 
-	db   "During spawning"
-	next "season, they swim"
-	next "gracefully in the"
+	db   "Her appearance is"
+	next "for intimidating"
+	next "others. However, she"
 
-	page "water, searching"
-	next "for their perfect"
-	next "mate.@"
+	page "is very lax and"
+	next "cares little about"
+	next "worship formality.@"

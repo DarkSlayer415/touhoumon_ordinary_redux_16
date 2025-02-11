@@ -1,10 +1,11 @@
-	db "MAGNET@" ; species name
-	dw 100, 130 ; height, weight
+	db "Kasha@" ; species name
+	dw 211, 400 ; height, weight
 
-	db   "The electricity"
-	next "emitted by the"
-	next "units on each side"
+	db   "One of Satori's"
+	next "pets. She prefers"
+	next "to be called by"
 
-	page "of its body cause"
-	next "it to become a"
-	next "strong magnet.@"
+	page "her nickname Orin"
+	next "instead of by"
+	next "her real name.@"
+

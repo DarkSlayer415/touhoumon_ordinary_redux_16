@@ -1,10 +1,10 @@
-	db "JET@" ; species name
-	dw 211, 630 ; height, weight
+	db "Vampire@" ; species name
+	dw 504, 1500 ; height, weight
 
-	db   "Its instinct is to"
-	next "bury itself in"
-	next "holes. It often"
+	db   "Shoots first and"
+	next "asks questions"
+	next "later. She has"
 
-	page "steals the nesting"
-	next "holes of others to"
-	next "sleep in them.@"
+	page "defended the Lake"
+	next "of Blood from"
+	next "various invaders.@"

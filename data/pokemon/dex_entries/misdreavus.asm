@@ -1,10 +1,10 @@
-	db "SCREECH@" ; species name
-	dw 204, 20 ; height, weight
+	db "Shikigami@" ; species name
+	dw 300, 750 ; height, weight
 
-	db   "It loves to watch"
-	next "people it's scar-"
-	next "ed. It frightens"
+	db   "A nine-tailed fox"
+	next "youkai who serves"
+	next "as a shikigami to"
 
-	page "them by screaming"
-	next "loudly or appear-"
-	next "ing suddenly.@"
+	page "Yukari. She has a"
+	next "shikigami in the"
+	next "form of Chen.@"

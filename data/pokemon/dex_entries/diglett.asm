@@ -1,10 +1,11 @@
-	db "MOLE@" ; species name
-	dw 8, 20 ; height, weight
+	db "Spider@" ; species name
+	dw 303, 600 ; height, weight
 
-	db   "It digs under-"
-	next "ground and chews"
-	next "on tree roots,"
+	db   "An earth spider"
+	next "youkai who lives"
+	next "in Former Hell."
 
-	page "sticking its head"
-	next "out only when the"
-	next "sun isn't bright.@"
+	page "Hated by humans"
+	next "due to her ability"
+	next "to spread disease.@"
+	

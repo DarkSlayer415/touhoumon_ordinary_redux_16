@@ -1,10 +1,11 @@
-	db "ANGLER@" ; species name
-	dw 108, 260 ; height, weight
+	db "Sailor@" ; species name
+	dw 303, 550 ; height, weight
 
-	db   "Its antennae, whi-"
-	next "ch evolved from a"
-	next "fin, have both po-"
+	db   "She is Yumemi's"
+	next "assistant in her"
+	next "studies. Organizes"
 
-	page "sitive and neg-"
-	next "ative charges flo-"
-	next "wing through them.@"
+	page "Yumemi's data, but"
+	next "also messes with"
+	next "her machines.@"
+	

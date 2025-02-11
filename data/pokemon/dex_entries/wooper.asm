@@ -1,10 +1,10 @@
-	db "WATER FISH@" ; species name
-	dw 104, 190 ; height, weight
+	db "Half-Beast@" ; species name
+	dw 211, 600 ; height, weight
 
-	db   "A mucous"
-	next "membrane covers"
-	next "its body. Touching"
+	db   "A were-hakutaku"
+	next "who lives in the"
+	next "Human Village."
 
-	page "it barehanded will"
-	next "cause a shooting"
-	next "pain.@"
+	page "One of the most"
+	next "sensible beings"
+	next "in Gensokyo.@"

@@ -1,10 +1,10 @@
-	db "COCONUT@" ; species name
-	dw 607, 2650 ; height, weight
+	db "Engineer@" ; species name
+	dw 508, 10140 ; height, weight
 
-	db   "Living in a good"
-	next "environment makes"
-	next "it grow lots of"
+	db   "While she has not"
+	next "visited Gensokyo"
+	next "recently, she"
 
-	page "heads. A head that"
-	next "drops off becomes"
-	next "an EXEGGCUTE.@"
+	page "became friends"
+	next "with both Nitori"
+	next "and Takane.@"

@@ -1,10 +1,10 @@
-	db "COCOON@" ; species name
-	dw 200, 220 ; height, weight
+	db "Ice Fairy@" ; species name
+	dw 309, 669 ; height, weight
 
-	db   "Nearly incapable"
-	next "of movement, it"
-	next "leans against"
+	db   "She is somewhat"
+	next "smart for a fairy."
+	next "She can count and"
 
-	page "stout trees while"
-	next "waiting for its"
-	next "evolution.@"
+	page "read, but also"
+	next "knows when she's"
+	next "in huge trouble.@"

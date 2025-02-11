@@ -1,10 +1,10 @@
-	db "HERB@" ; species name
-	dw 511, 2220 ; height, weight
+	db "Princess@" ; species name
+	dw 511, 1850 ; height, weight
 
-	db   "Anyone who stands"
-	next "beside it becomes"
-	next "refreshed, just as"
+	db   "Rumors of her"
+	next "unnatural beauty"
+	next "lured countless"
 
-	page "if they were"
-	next "relaxing in a"
-	next "sunny forest.@"
+	page "suitors, who were"
+	next "met with her Five"
+	next "Impossible Tasks.@"

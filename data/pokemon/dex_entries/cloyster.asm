@@ -1,10 +1,10 @@
-	db "BIVALVE@" ; species name
-	dw 411, 2920 ; height, weight
+	db "Poltergeist@" ; species name
+	dw 404, 900 ; height, weight
 
-	db   "Even a missile"
-	next "can't break the"
-	next "spikes it uses to"
+	db   "The youngest of"
+	next "the Prismrivers."
+	next "She's easier to"
 
-	page "stab opponents."
-	next "They're even hard-"
-	next "er than its shell.@"
+	page "communicate with"
+	next "than her sisters,"
+	next "but is a rascal.@"

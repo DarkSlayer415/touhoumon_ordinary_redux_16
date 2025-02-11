@@ -1,10 +1,11 @@
-	db "CORAL@" ; species name
-	dw 200, 110 ; height, weight
+	db "Makai@" ; species name
+	dw 500, 1300 ; height, weight
 
-	db   "The points on its"
-	next "head absorb"
-	next "nutrients from"
+	db   "A polite girl"
+	next "interested in"
+	next "what Gensokyo is"
 
-	page "clean water. They"
-	next "cannot survive in"
-	next "polluted water.@"
+	page "like, but she got"
+	next "caught up in"
+	next "fights on her way.@"
+	

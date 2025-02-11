@@ -1,10 +1,10 @@
-	db "MOUSE@" ; species name
-	dw 303, 650 ; height, weight
+	db "Witch@" ; species name
+	dw 311, 650 ; height, weight
 
-	db   "Adept at climbing"
-	next "trees, it rolls"
-	next "into a spiny ball,"
+	db   "Despite being an"
+	next "immortal, she will"
+	next "lose chunks of her"
 
-	page "then attacks its"
-	next "enemies from"
-	next "above.@"
+	page "memory frequently."
+	next "As such, she acts"
+	next "quite childish.@"

@@ -1,10 +1,10 @@
-	db "DIVING@" ; species name
-	dw 1701, 4760 ; height, weight
+	db "Spirit@" ; species name
+	dw 700, 2000 ; height, weight
 
-	db   "It has an incred-"
-	next "ible ability to"
-	next "calm raging sto-"
+	db   "The youngest and"
+	next "fourth Prismriver"
+	next "sister. Conjured"
 
-	page "rms. It is said"
-	next "that LUGIA appears"
-	next "when storms start.@"
+	page "three poltergeists"
+	next "that resembled her"
+	next "three sisters.@"

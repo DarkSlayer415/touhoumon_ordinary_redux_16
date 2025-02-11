@@ -1,10 +1,10 @@
-	db "NEW SPECIE@" ; species name
-	dw 104, 90 ; height, weight
+	db "Oni Hermit@" ; species name
+	dw 510, 1800 ; height, weight
 
-	db   "Because it can"
-	next "learn any move,"
-	next "some people began"
+	db   "Keeps many pets"
+	next "and seems to know"
+	next "Suika and Yuugi."
 
-	page "research to see if"
-	next "it is the ancestor"
-	next "of all #MON.@"
+	page "Her pet dragon"
+	next "Koutei obeys her"
+	next "with loyalty.@"

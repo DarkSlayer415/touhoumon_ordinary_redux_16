@@ -1,10 +1,10 @@
-	db "BEAK@" ; species name
+	db "Autumn@" ; species name
 	dw 311, 840 ; height, weight
 
-	db   "It uses its long"
-	next "beak to attack. It"
-	next "has a surprisingly"
+	db   "Shizuha is the"
+	next "goddess of autumn"
+	next "leaves. To make"
 
-	page "long reach, so it"
-	next "must be treated"
-	next "with caution.@"
+	page "the leaves fall,"
+	next "she kicks trees to"
+	next "scatter them.@"

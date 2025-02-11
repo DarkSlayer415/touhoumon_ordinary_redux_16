@@ -1,10 +1,11 @@
-	db "FLAME@" ; species name
-	dw 211, 550 ; height, weight
+	db "Sunlight@" ; species name
+	dw 406, 1200 ; height, weight
 
-	db   "Once it has stored"
-	next "up enough heat,"
-	next "this #MON's"
+	db   "Gets weaker when"
+	next "the sun is not in"
+	next "the sky. She is"
 
-	page "body temperature"
-	next "can reach up to"
-	next "1700 degrees.@"
+	page "nearly harmless if"
+	next "you catch her"
+	next "during the night.@"
+	

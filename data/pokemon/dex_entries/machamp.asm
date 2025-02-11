@@ -1,10 +1,10 @@
-	db "SUPERPOWER@" ; species name
-	dw 503, 2870 ; height, weight
+	db "Gatekeeper@" ; species name
+	dw 600, 1870 ; height, weight
 
-	db   "With four arms"
-	next "that react more"
-	next "quickly than it"
+	db   "A diligent guard,"
+	next "she is excellent"
+	next "at keeping"
 
-	page "can think, it can"
-	next "execute many"
-	next "punches at once.@"
+	page "intruders at bay."
+	next "Marisa gives her"
+	next "trouble, though.@"

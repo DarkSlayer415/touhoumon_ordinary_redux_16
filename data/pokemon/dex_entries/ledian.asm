@@ -1,10 +1,10 @@
-	db "FIVE STAR@" ; species name
+	db "Science@" ; species name
 	dw 407, 780 ; height, weight
 
-	db   "In the daytime"
-	next "when it gets warm,"
-	next "it curls up inside"
+	db   "Regarded as a"
+	next "heretic by most"
+	next "people due to her"
 
-	page "a big leaf and"
-	next "drifts off into"
-	next "a deep slumber.@"
+	page "firm stance on"
+	next "scientific logic"
+	next "over magic.@"

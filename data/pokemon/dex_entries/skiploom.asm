@@ -1,10 +1,10 @@
-	db "COTTONWEED@" ; species name
-	dw 200, 20 ; height, weight
+	db "Hell Raven@" ; species name
+	dw 400, 1000 ; height, weight
 
-	db   "As soon as it"
-	next "rains, it closes"
-	next "its flower and"
+	db   "A hell raven that"
+	next "gained the"
+	next "Yatagarasu's"
 
-	page "hides in the shade"
-	next "of a tree to avoid"
-	next "getting wet.@"
+	page "powers thanks to"
+	next "Kanako's schemes. A"
+	next "little airheaded.@"

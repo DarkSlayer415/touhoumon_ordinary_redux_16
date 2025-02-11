@@ -1,10 +1,11 @@
-	db "LIGHTNING@" ; species name
-	dw 207, 540 ; height, weight
+	db "Moonlight@" ; species name
+	dw 406, 1200 ; height, weight
 
-	db   "The negatively"
-	next "charged ions"
-	next "generated in its"
+	db   "Gets weaker when"
+	next "the moon is not in"
+	next "the sky. She is"
 
-	page "fur create a"
-	next "constant sparking"
-	next "noise.@"
+	page "nearly harmless if"
+	next "you catch her"
+	next "during the day.@"
+	

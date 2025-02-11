@@ -1,10 +1,11 @@
-	db "FREEZE@" ; species name
-	dw 507, 1220 ; height, weight
+	db "Poltergeist@" ; species name
+	dw 506, 1520 ; height, weight
 
-	db   "Legendary bird"
-	next "#MON. As it"
-	next "flies through the"
+	db   "Puts a lot of "
+	next "effort into"
+	next "anything she does."
 
-	page "sky, it cools the"
-	next "air, causing snow"
-	next "to fall.@"
+	page "She cannot stand"
+	next "the thought of"
+	next "cheating.@"
+

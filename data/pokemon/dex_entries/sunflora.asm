@@ -1,10 +1,10 @@
-	db "SUN@" ; species name
-	dw 207, 190 ; height, weight
+	db "Vampire@" ; species name
+	dw 302, 690 ; height, weight
 
-	db   "As the hot season"
-	next "approaches, the"
-	next "petals on this"
+	db   "The reason behind"
+	next "her confinement is"
+	next "unknown. Some say"
 
-	page "#MON's face"
-	next "become more vivid"
-	next "and lively.@"
+	page "it was to seal her"
+	next "powers, others say"
+	next "she is a shut-in.@"

@@ -1,10 +1,10 @@
-	db "HYPNOSIS@" ; species name
-	dw 503, 1670 ; height, weight
+	db "Oarfish@" ; species name
+	dw 600, 1670 ; height, weight
 
-	db   "The longer it"
-	next "swings its"
-	next "pendulum, the"
+	db   "She has absolute"
+	next "control over her"
+	next "shawl."
 
-	page "longer the effects"
-	next "of its hypnosis"
-	next "last.@"
+	page "Underestimating"
+	next "its range is a"
+	next "fatal mistake.@"

@@ -1,10 +1,11 @@
-	db "BIG JAW@" ; species name
-	dw 307, 550 ; height, weight
+	db "Genius@" ; species name
+	dw 408, 900 ; height, weight
 
-	db   "The tips of its"
-	next "fangs are slanted"
-	next "backward. Once"
+	db   "A natural genius"
+	next "and skilled doctor"
+	next "who created the"
 
-	page "those fangs clamp"
-	next "down, the prey has"
-	next "no hope of escape.@"
+	page "Hourai Elixir with"
+	next "assistance from"
+	next "Princess Kaguya.@"
+	

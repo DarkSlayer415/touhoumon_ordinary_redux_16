@@ -1,10 +1,11 @@
-	db "OWL@" ; species name
-	dw 204, 470 ; height, weight
+	db "Princess@" ; species name
+	dw 300, 570 ; height, weight
 
-	db   "It begins to hoot"
-	next "at the same time"
-	next "every day. Some"
+	db   "A girl with a few"
+	next "screws loose. She"
+	next "is supposedly a"
 
-	page "trainers use them"
-	next "in place of"
-	next "clocks.@"
+	page "princess, but"
+	next "these claims are"
+	next "dubious at best.@"
+

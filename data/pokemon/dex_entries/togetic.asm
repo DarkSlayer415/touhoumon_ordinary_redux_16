@@ -1,10 +1,10 @@
-	db "HAPPINESS@" ; species name
-	dw 200, 70 ; height, weight
+	db "Makai God@" ; species name
+	dw 510, 1800 ; height, weight
 
-	db   "Although it does"
-	next "not flap its wings"
-	next "very much, it can"
+	db   "She can destroy"
+	next "and recreate Makai"
+	next "as she sees fit."
 
-	page "stay up in the air"
-	next "as it tags along"
-	next "after its trainer.@"
+	page "She once leveled"
+	next "the entire realm"
+	next "in a single duel.@"

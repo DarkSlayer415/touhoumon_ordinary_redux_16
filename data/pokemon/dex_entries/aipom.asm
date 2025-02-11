@@ -1,10 +1,10 @@
-	db "LONG TAIL@" ; species name
-	dw 207, 250 ; height, weight
+	db "Scientist@" ; species name
+	dw 507, 120 ; height, weight
 
-	db   "It uses its tail"
-	next "to hang on to tree"
-	next "branches. It uses"
+	db   "Longs for the"
+	next "scientific"
+	next "knowledge of the"
 
-	page "its momentum to"
-	next "swing from one"
-	next "branch to another.@"
+	page "outside world. She"
+	next "can use magic, but"
+	next "prefers not to.@"

@@ -1,10 +1,10 @@
-	db "SLEEPING@" ; species name
+	db "Turtle@" ; species name
 	dw 611, 10140 ; height, weight
 
-	db   "This #MON's"
-	next "stomach is so"
-	next "strong, even"
+	db   "A turtle blessed"
+	next "with flight. He"
+	next "assisted Reimu in"
 
-	page "eating moldy or"
-	next "rotten food will"
-	next "not affect it.@"
+	page "traveling Gensokyo"
+	next "before she learned"
+	next "how to fly.@"

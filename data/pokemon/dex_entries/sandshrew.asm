@@ -1,10 +1,10 @@
-	db "MOUSE@" ; species name
-	dw 200, 260 ; height, weight
+	db "Witch@" ; species name
+	dw 210, 460 ; height, weight
 
-	db   "It prefers dry,"
-	next "sandy places"
-	next "because it uses"
+	db   "Ellen is a witch"
+	next "who never grows"
+	next "old. She seeks to"
 
-	page "the sand to"
-	next "protect itself"
-	next "when threatened.@"
+	page "one day open and"
+	next "operate her own"
+	next "magical shop.@"

@@ -1,10 +1,10 @@
-	db "SCRATCHCAT@" ; species name
-	dw 104, 90 ; height, weight
+	db "Starlight@" ; species name
+	dw 211, 400 ; height, weight
 
-	db   "It loves things"
-	next "that sparkle. When"
-	next "it sees a shiny"
+	db   "One of the Three"
+	next "Fairies of Light."
+	next "She is cautious,"
 
-	page "object, the gold"
-	next "coin on its head"
-	next "shines too.@"
+	page "and has the power"
+	next "of detecting any"
+	next "moving object.@"

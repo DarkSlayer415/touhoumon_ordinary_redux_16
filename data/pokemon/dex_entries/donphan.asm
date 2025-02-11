@@ -1,10 +1,10 @@
-	db "ARMOR@" ; species name
+	db "Gatekeeper@" ; species name
 	dw 307, 2650 ; height, weight
 
-	db   "Because this"
-	next "#MON's skin is"
-	next "so tough, a normal"
+	db   "Elly's scythe is"
+	next "very sharp and it"
+	next "can cut through"
 
-	page "attack won't even"
-	next "leave a scratch on"
-	next "it.@"
+	page "almost anything."
+	next "She guards Yuuka's"
+	next "mansion, Mugenkan.@"

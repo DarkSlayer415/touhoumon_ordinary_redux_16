@@ -1,10 +1,10 @@
-	db "BONEKEEPER@" ; species name
-	dw 303, 990 ; height, weight
+	db "Samurai@" ; species name
+	dw 311, 990 ; height, weight
 
-	db   "Somewhere in the"
-	next "world is a ceme-"
-	next "tery just for"
+	db   "Capable of using"
+	next "many sword skills."
+	next "She possesses a"
 
-	page "MAROWAK. It gets"
-	next "its bones from"
-	next "those graves.@"
+	page "mysterious aura,"
+	next "and usually moves"
+	next "by night.@"

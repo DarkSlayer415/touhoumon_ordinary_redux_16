@@ -1,10 +1,11 @@
-	db "FLAME@" ; species name
-	dw 307, 420 ; height, weight
+	db "Magician@" ; species name
+	dw 303, 650 ; height, weight
 
-	db   "If it becomes"
-	next "agitated during"
-	next "battle, it spouts"
+	db   "Flies with a"
+	next "broom influenced"
+	next "by magic."
 
-	page "intense flames,"
-	next "incinerating its"
-	next "surroundings.@"
+	page "In combat, she"
+	next "crashes into foes"
+	next "at high speeds.@"
+	

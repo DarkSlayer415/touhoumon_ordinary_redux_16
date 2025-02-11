@@ -1,10 +1,10 @@
-	db "BALLOON@" ; species name
-	dw 303, 260 ; height, weight
+	db "Puppeteer@" ; species name
+	dw 503, 1460 ; height, weight
 
-	db   "The rich, fluffy"
-	next "fur that covers"
-	next "its body feels so"
+	db   "Enjoys dueling and"
+	next "rarely turns down"
+	next "a challenge. In a"
 
-	page "good that anyone"
-	next "who feels it can't"
-	next "stop touching it.@"
+	page "battle, she fights"
+	next "with strategy over"
+	next "using brute force.@"

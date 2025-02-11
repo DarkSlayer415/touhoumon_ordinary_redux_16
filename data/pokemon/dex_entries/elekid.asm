@@ -1,10 +1,10 @@
-	db "ELECTRIC@" ; species name
-	dw 200, 520 ; height, weight
+	db "WhiteWitch@" ; species name
+	dw 300, 520 ; height, weight
 
-	db   "It loves violent"
-	next "thunder. The space"
-	next "between its horns"
+	db   "A mage often seen"
+	next "together with"
+	next "Yuki. She minds"
 
-	page "flickers bluish-"
-	next "white when it is"
-	next "charging energy.@"
+	page "her own business"
+	next "and rarely speaks"
+	next "out loud.@"

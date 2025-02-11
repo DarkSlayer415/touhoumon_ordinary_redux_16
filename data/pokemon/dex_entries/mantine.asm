@@ -1,10 +1,11 @@
-	db "KITE@" ; species name
-	dw 611, 4850 ; height, weight
+	db "Youkai@" ; species name
+	dw 311, 850 ; height, weight
 
-	db   "It swims along"
-	next "freely, eating"
-	next "things that swim"
+	db   "She gets attacked"
+	next "often because she"
+	next "is merely a youkai"
 
-	page "into its mouth."
-	next "Its whole body is"
-	next "very coarse.@"
+	page "or is just because"
+	next "she was in the way"
+	next "of someone.@"
+	

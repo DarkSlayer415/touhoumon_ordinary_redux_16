@@ -1,10 +1,10 @@
-	db "RAINBOW@" ; species name
-	dw 1206, 4390 ; height, weight
+	db "Robot Maid@" ; species name
+	dw 700, 12120 ; height, weight
 
-	db   "It will reveal"
-	next "itself before a"
-	next "pure-hearted"
+	db   "A combat maid"
+	next "android created by"
+	next "Erich. She was"
 
-	page "trainer by shining"
-	next "its bright rain-"
-	next "bow-colored wings.@"
+	page "modeled after a"
+	next "girl named Vivit,"
+	next "Erich's daughter.@"

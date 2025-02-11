@@ -1,10 +1,10 @@
-	db "SHELLFISH@" ; species name
-	dw 403, 890 ; height, weight
+	db "Miko@" ; species name
+	dw 503, 970 ; height, weight
 
-	db   "It was able to"
-	next "swim quickly thro-"
-	next "ugh the water by"
+	db   "Reimu before her"
+	next "powers matured."
+	next "She dislikes"
 
-	page "compactly folding"
-	next "up its razor-sharp"
-	next "sickles.@"
+	page "training, so she"
+	next "gets by with her"
+	next "natural talents.@"

@@ -1,10 +1,11 @@
-	db "GAS@" ; species name
-	dw 403, 2 ; height, weight
+	db "Night Bird@" ; species name
+	dw 206, 500 ; height, weight
 
-	db   "It wraps its op-"
-	next "ponent in its gas-"
-	next "like body, slowly"
+	db   "A night sparrow"
+	next "youkai who enjoys"
+	next "singing. Her songs"
 
-	page "weakening its prey"
-	next "by poisoning it"
-	next "through the skin.@"
+	page "drive people mad,"
+	next "which results in"
+	next "night-blindness.@"
+	

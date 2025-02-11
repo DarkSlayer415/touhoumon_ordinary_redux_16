@@ -1,10 +1,10 @@
-	db "ARMOR BIRD@" ; species name
-	dw 507, 1110 ; height, weight
+	db "Youkai@" ; species name
+	dw 507, 1410 ; height, weight
 
-	db   "The feathers that"
-	next "it sheds are very"
-	next "sharp. It is said"
+	db   "She tries to make"
+	next "up for her lack"
+	next "of power by giving"
 
-	page "that people once"
-	next "used the feathers"
-	next "as swords.@"
+	page "battles her all."
+	next "It usually doesn't"
+	next "work very well.@"

@@ -1,10 +1,10 @@
-	db "POISONMOTH@" ; species name
-	dw 411, 280 ; height, weight
+	db "Bucket@" ; species name
+	dw 401, 980 ; height, weight
 
-	db   "The scales it"
-	next "scatters will"
-	next "paralyze anyone"
+	db   "She terrorizes"
+	next "humans that get"
+	next "too close to her"
 
-	page "who touches them,"
-	next "making that person"
-	next "unable to stand.@"
+	page "by dropping from"
+	next "above. Her bucket"
+	next "is very sturdy.@"

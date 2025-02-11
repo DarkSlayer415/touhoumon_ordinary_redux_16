@@ -1,10 +1,10 @@
-	db "PAINTER@" ; species name
-	dw 311, 1280 ; height, weight
+	db "Dream Demon@" ; species name
+	dw 311, 980 ; height, weight
 
-	db   "The color of the"
-	next "mysterious fluid"
-	next "secreted from its"
+	db   "The dream world"
+	next "that she created"
+	next "for herself and"
 
-	page "tail is predeter-"
-	next "mined for each"
-	next "SMEARGLE.@"
+	page "Gengetsu is"
+	next "different from"
+	next "Yuuka's world.@"

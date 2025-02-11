@@ -1,10 +1,10 @@
-	db "TADPOLE@" ; species name
-	dw 200, 270 ; height, weight
+	db "Shinigami@" ; species name
+	dw 300, 470 ; height, weight
 
-	db   "The swirl on its"
-	next "belly is its"
-	next "insides showing"
+	db   "As Gensokyo's"
+	next "shinigami, she is"
+	next "charged with"
 
-	page "through the skin."
-	next "It looks clearer"
-	next "after it eats.@"
+	page "guiding souls to"
+	next "their judgement"
+	next "in the afterlife.@"

@@ -1,10 +1,10 @@
-	db "GENETIC@" ; species name
-	dw 607, 2690 ; height, weight
+	db "Oni Hermit@" ; species name
+	dw 307, 750 ; height, weight
 
-	db   "Said to rest qui-"
-	next "etly in an"
-	next "undiscovered cave,"
+	db   "A hermit who lives"
+	next "deep in the Youkai"
+	next "Mountains. She is"
 
-	page "this #MON was"
-	next "created solely for"
-	next "battling.@"
+	page "one of Gensokyo's"
+	next "Sages alongside"
+	next "Yukari and Okina.@"

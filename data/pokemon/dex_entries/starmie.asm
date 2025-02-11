@@ -1,10 +1,10 @@
-	db "MYSTERIOUS@" ; species name
+	db "Jealousy@" ; species name
 	dw 307, 1760 ; height, weight
 
-	db   "It is said that it"
-	next "uses the seven-"
-	next "colored core of"
+	db   "She appears to be"
+	next "pleasant, but she"
+	next "enjoys watching"
 
-	page "its body to send"
-	next "electric waves"
-	next "into outer space.@"
+	page "people spiral into"
+	next "madness due to"
+	next "jealousy.@"

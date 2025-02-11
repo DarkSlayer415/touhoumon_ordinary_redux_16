@@ -1,10 +1,10 @@
-	db "SEED@" ; species name
-	dw 303, 290 ; height, weight
+	db "Red Miko@" ; species name
+	dw 400, 750 ; height, weight
 
-	db   "The bulb on its"
-	next "back grows as it"
-	next "absorbs nutrients."
+	db   "She is extremely"
+	next "carefree and"
+	next "treats everybody"
 
-	page "The bulb gives off"
-	next "a pleasant aroma"
-	next "when it blooms.@"
+	page "with disinterest."
+	next "Usually idles"
+	next "about her shrine.@"

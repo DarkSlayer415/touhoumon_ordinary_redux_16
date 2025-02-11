@@ -1,10 +1,11 @@
-	db "DRAGON@" ; species name
-	dw 511, 3350 ; height, weight
+	db "Ghost@" ; species name
+	dw 511, 2100 ; height, weight
 
-	db   "It stores energy"
-	next "by sleeping at"
-	next "underwater depths"
+	db   "She can kill"
+	next "people without"
+	next "resistance."
 
-	page "at which no other"
-	next "life forms can"
-	next "survive.@"
+	page "Despite this power"
+	next "she's friendly and"
+	next "holds no grudges.@"
+

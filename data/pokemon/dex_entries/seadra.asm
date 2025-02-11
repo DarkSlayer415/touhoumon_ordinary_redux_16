@@ -1,10 +1,10 @@
-	db "DRAGON@" ; species name
-	dw 311, 550 ; height, weight
+	db "Firefly@" ; species name
+	dw 311, 750 ; height, weight
 
-	db   "The male raises"
-	next "the young. If it"
-	next "is approached, it"
+	db   "She's always seen"
+	next "surrounded by"
+	next "bugs. Her strength"
 
-	page "uses its toxic"
-	next "spikes to fend off"
-	next "the intruder.@"
+	page "comes in numbers"
+	next "thanks to her"
+	next "swarm of bugs.@"

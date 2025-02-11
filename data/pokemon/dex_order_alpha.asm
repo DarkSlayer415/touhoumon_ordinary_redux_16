@@ -1,256 +1,258 @@
-; Every Pokémon sorted alphabetically by name.
+; Every Touhou character ordered in game appearance order starting with SoEW.
 
 AlphabeticalPokedexOrder:
 	table_width 2
-	dw ABRA
-	dw AERODACTYL
-	dw AIPOM
-	dw ALAKAZAM
-	dw AMPHAROS
-	dw ARBOK
-	dw ARCANINE
-	dw ARIADOS
-	dw ARTICUNO
-	dw AZUMARILL
-	dw BAYLEEF
-	dw BEEDRILL
-	dw BELLOSSOM
-	dw BELLSPROUT
-	dw BLASTOISE
-	dw BLISSEY
-	dw BULBASAUR
-	dw BUTTERFREE
-	dw CATERPIE
-	dw CELEBI
-	dw CHANSEY
-	dw CHARIZARD
-	dw CHARMANDER
-	dw CHARMELEON
-	dw CHIKORITA
-	dw CHINCHOU
-	dw CLEFABLE
-	dw CLEFAIRY
-	dw CLEFFA
-	dw CLOYSTER
-	dw CORSOLA
-	dw CROBAT
-	dw CROCONAW
-	dw CUBONE
-	dw CYNDAQUIL
-	dw DELIBIRD
-	dw DEWGONG
-	dw DIGLETT
-	dw DITTO
-	dw DODRIO
-	dw DODUO
-	dw DONPHAN
-	dw DRAGONAIR
-	dw DRAGONITE
-	dw DRATINI
-	dw DROWZEE
-	dw DUGTRIO
-	dw DUNSPARCE
-	dw EEVEE
-	dw EKANS
-	dw ELECTABUZZ
-	dw ELECTRODE
-	dw ELEKID
-	dw ENTEI
-	dw ESPEON
-	dw EXEGGCUTE
-	dw EXEGGUTOR
-	dw FARFETCH_D
-	dw FEAROW
-	dw FERALIGATR
-	dw FLAAFFY
-	dw FLAREON
-	dw FORRETRESS
-	dw FURRET
-	dw GASTLY
-	dw GENGAR
-	dw GEODUDE
-	dw GIRAFARIG
-	dw GLIGAR
-	dw GLOOM
-	dw GOLBAT
-	dw GOLDEEN
-	dw GOLDUCK
-	dw GOLEM
-	dw GRANBULL
-	dw GRAVELER
-	dw GRIMER
-	dw GROWLITHE
-	dw GYARADOS
-	dw HAUNTER
-	dw HERACROSS
-	dw HITMONCHAN
-	dw HITMONLEE
-	dw HITMONTOP
-	dw HO_OH
-	dw HOOTHOOT
-	dw HOPPIP
-	dw HORSEA
-	dw HOUNDOOM
-	dw HOUNDOUR
-	dw HYPNO
-	dw IGGLYBUFF
-	dw IVYSAUR
-	dw JIGGLYPUFF
-	dw JOLTEON
-	dw JUMPLUFF
-	dw JYNX
-	dw KABUTO
-	dw KABUTOPS
-	dw KADABRA
-	dw KAKUNA
-	dw KANGASKHAN
-	dw KINGDRA
-	dw KINGLER
-	dw KOFFING
-	dw KRABBY
-	dw LANTURN
-	dw LAPRAS
-	dw LARVITAR
-	dw LEDIAN
-	dw LEDYBA
-	dw LICKITUNG
-	dw LUGIA
-	dw MACHAMP
-	dw MACHOKE
-	dw MACHOP
-	dw MAGBY
-	dw MAGCARGO
-	dw MAGIKARP
-	dw MAGMAR
-	dw MAGNEMITE
-	dw MAGNETON
-	dw MANKEY
-	dw MANTINE
-	dw MAREEP
-	dw MARILL
-	dw MAROWAK
-	dw MEGANIUM
-	dw MEOWTH
-	dw METAPOD
-	dw MEW
-	dw MEWTWO
-	dw MILTANK
-	dw MISDREAVUS
-	dw MOLTRES
-	dw MR__MIME
-	dw MUK
-	dw MURKROW
-	dw NATU
-	dw NIDOKING
-	dw NIDOQUEEN
-	dw NIDORAN_F
-	dw NIDORAN_M
-	dw NIDORINA
-	dw NIDORINO
-	dw NINETALES
-	dw NOCTOWL
-	dw OCTILLERY
-	dw ODDISH
-	dw OMANYTE
-	dw OMASTAR
-	dw ONIX
-	dw PARAS
-	dw PARASECT
-	dw PERSIAN
-	dw PHANPY
-	dw PICHU
-	dw PIDGEOT
-	dw PIDGEOTTO
-	dw PIDGEY
-	dw PIKACHU
-	dw PILOSWINE
-	dw PINECO
-	dw PINSIR
-	dw POLITOED
-	dw POLIWAG
-	dw POLIWHIRL
-	dw POLIWRATH
-	dw PONYTA
-	dw PORYGON
-	dw PORYGON2
-	dw PRIMEAPE
-	dw PSYDUCK
-	dw PUPITAR
-	dw QUAGSIRE
-	dw QUILAVA
-	dw QWILFISH
-	dw RAICHU
-	dw RAIKOU
-	dw RAPIDASH
-	dw RATICATE
-	dw RATTATA
-	dw REMORAID
-	dw RHYDON
-	dw RHYHORN
-	dw SANDSHREW
-	dw SANDSLASH
-	dw SCIZOR
-	dw SCYTHER
-	dw SEADRA
-	dw SEAKING
-	dw SEEL
-	dw SENTRET
-	dw SHELLDER
-	dw SHUCKLE
-	dw SKARMORY
-	dw SKIPLOOM
-	dw SLOWBRO
-	dw SLOWKING
-	dw SLOWPOKE
-	dw SLUGMA
-	dw SMEARGLE
-	dw SMOOCHUM
-	dw SNEASEL
-	dw SNORLAX
-	dw SNUBBULL
-	dw SPEAROW
-	dw SPINARAK
-	dw SQUIRTLE
-	dw STANTLER
-	dw STARMIE
-	dw STARYU
-	dw STEELIX
-	dw SUDOWOODO
-	dw SUICUNE
-	dw SUNFLORA
-	dw SUNKERN
-	dw SWINUB
-	dw TANGELA
-	dw TAUROS
-	dw TEDDIURSA
-	dw TENTACOOL
-	dw TENTACRUEL
-	dw TOGEPI
-	dw TOGETIC
-	dw TOTODILE
-	dw TYPHLOSION
-	dw TYRANITAR
-	dw TYROGUE
-	dw UMBREON
-	dw UNOWN
-	dw URSARING
-	dw VAPOREON
-	dw VENOMOTH
-	dw VENONAT
-	dw VENUSAUR
-	dw VICTREEBEL
-	dw VILEPLUME
-	dw VOLTORB
-	dw VULPIX
-	dw WARTORTLE
-	dw WEEDLE
-	dw WEEPINBELL
-	dw WEEZING
-	dw WIGGLYTUFF
-	dw WOBBUFFET
-	dw WOOPER
-	dw XATU
-	dw YANMA
-	dw ZAPDOS
-	dw ZUBAT
+	dw BULBASAUR	;CReimu
+	dw IVYSAUR		;Reimu
+	dw VENUSAUR		;EReimu
+	dw CHARMANDER	;CMarisa
+	dw CHARMELEON	;Marisa
+	dw CHARIZARD	;EMarisa
+	dw KABUTO		;CHakurei
+	dw KABUTOPS		;Hakurei
+	dw OMANYTE		;CKirisame
+	dw OMASTAR		;Kirisame
+	dw SNORLAX		;Genji
+	dw EXEGGCUTE	;CRika
+	dw EXEGGUTOR	;Rika
+	dw LAPRAS		;ERika
+	dw CUBONE		;CMeira
+	dw MAROWAK		;Meira
+	dw DITTO		;EMeira
+	dw LARVITAR		;CMima
+	dw PUPITAR		;Mima
+	dw TYRANITAR	;EMima
+	dw SENTRET		;CKana
+	dw FURRET		;Kana
+	dw BELLOSSOM	;EKana
+	dw HOOTHOOT		;CKotohime
+	dw NOCTOWL		;Kotohime
+	dw SLOWKING		;EKotohime
+	dw SANDSHREW	;CEllen
+	dw SANDSLASH	;Ellen
+	dw AERODACTYL	;EEllen
+	dw LEDYBA		;CRikako
+	dw LEDIAN		;Rikako
+	dw AIPOM		;ERikako
+	dw CHINCHOU		;CChiyuri
+	dw LANTURN		;Chiyuri
+	dw SUDOWOODO	;EChiyuri
+	dw DUNSPARCE	;CYumemi
+	dw GLIGAR		;Yumemi
+	dw STEELIX		;EYumemi			    
+	dw DELIBIRD		;COrange
+	dw MANTINE		;Orange
+	dw SKARMORY		;EOrange
+	dw WOBBUFFET	;CKurumi
+	dw REMORAID		;Kurumi
+	dw OCTILLERY	;EKurumi
+	dw PHANPY		;CElly
+	dw DONPHAN		;Elly
+	dw PORYGON2		;EElly
+	dw BELLSPROUT	;CYuuka
+	dw WEEPINBELL	;Yuuka
+	dw VICTREEBEL	;EYuuka
+	dw STANTLER		;CMugetsu
+	dw SMEARGLE		;Mugetsu
+	dw MILTANK		;EMugetsu
+	dw TYROGUE		;CGengetsu
+	dw HITMONTOP	;Gengetsu
+	dw BLISSEY		;EGengetsu
+	dw SNUBBULL		;CSara
+	dw GRANBULL		;Sara
+	dw QWILFISH		;ESara
+	dw SHUCKLE		;CLouise
+	dw HERACROSS	;Louise
+	dw CORSOLA		;ELouise
+	dw IGGLYBUFF	;CAlice
+	dw JIGGLYPUFF	;Alice
+	dw WIGGLYTUFF	;EAlice
+	dw MAGBY		;CYuki
+	dw SLUGMA		;Yuki
+	dw MAGCARGO		;EYuki
+	dw ELEKID		;CMai
+	dw SWINUB		;Mai
+	dw PILOSWINE	;EMai
+	dw SNEASEL		;CYumeko
+	dw TEDDIURSA	;Yumeko
+	dw URSARING		;EYumeko
+	dw TOGEPI		;CShinki
+	dw TOGETIC		;Shinki
+	dw GROWLITHE	;CRumia
+	dw ARCANINE		;Rumia
+	dw CHANSEY		;ERumia
+	dw EEVEE		;Himawari
+	dw MAGIKARP		;Daiyousei
+	dw GYARADOS		;EDaiyousei
+	dw VULPIX		;LilyWhite
+	dw NINETALES	;ELilyWhite
+	dw ZUBAT		;LilyBlack
+	dw GOLBAT		;ELilyBlack
+	dw WEEDLE		;CCirno
+	dw KAKUNA		;Cirno	
+	dw BEEDRILL		;ECirno
+	dw MACHOP		;CMeiling
+	dw MACHOKE		;Meiling
+	dw MACHAMP		;EMeiling
+	dw LICKITUNG	;CKoakuma
+	dw KOFFING		;Koakuma
+	dw WEEZING		;EKoakuma
+	dw CATERPIE		;CPatchouli
+	dw METAPOD		;Patchouli
+	dw BUTTERFREE	;EPatchouli
+	dw SQUIRTLE		;CSakuya
+	dw WARTORTLE	;Sakuya
+	dw BLASTOISE	;ESakuya
+	dw SPINARAK		;CRemilia
+	dw ARIADOS		;Remilia
+	dw CROBAT		;ERemilia
+	dw SUNKERN		;CFlandre
+	dw SUNFLORA		;Flandre
+	dw YANMA		;EFlandre
+	dw KRABBY		;CLetty
+	dw KINGLER		;Letty
+	dw TANGELA		;ELetty
+	dw TENTACOOL	;CChen
+	dw TENTACRUEL	;Chen
+	dw JYNX			;EChen
+	dw SEEL			;CLunasa
+	dw DEWGONG		;Lunasa
+	dw ARTICUNO		;ELunasa
+	dw GRIMER		;CMerlin
+	dw MUK			;Merlin
+	dw ZAPDOS		;EMerlin
+	dw SHELLDER		;CLyrica
+	dw CLOYSTER		;Lyrica
+	dw MOLTRES		;ELyrica
+	dw GEODUDE		;CYoumu
+	dw GRAVELER		;Youmu
+	dw GOLEM		;EYoumu
+	dw HOUNDOUR		;CYuyuko
+	dw HOUNDOOM		;Yuyuko
+	dw KINGDRA		;EYuyuko
+	dw MISDREAVUS	;CRan
+	dw RHYHORN		;Ran
+	dw RHYDON		;ERan
+	dw DRATINI		;CYukari
+	dw DRAGONAIR	;Yukari
+	dw DRAGONITE	;EYukari
+	dw SMOOCHUM		;CSuika
+	dw RATTATA		;Suika
+	dw RATICATE		;ESuika
+	dw HORSEA		;CWriggle
+	dw SEADRA		;Wriggle
+	dw SCYTHER		;EWriggle
+	dw GASTLY		;CMystia
+	dw HAUNTER		;Mystia
+	dw GENGAR		;EMystia
+	dw WOOPER		;CKeine
+	dw QUAGSIRE		;Keine
+	dw ESPEON		;EKeine
+	dw UMBREON		;HKeine
+	dw CLEFFA		;CTewi
+	dw CLEFAIRY		;Tewi
+	dw CLEFABLE		;ETewi
+	dw NIDORAN_F	;CReisen
+	dw NIDORINA		;Reisen
+	dw NIDOQUEEN	;EReisen
+	dw TOTODILE		;CEirin
+	dw CROCONAW		;Eirin
+	dw FERALIGATR	;EEirin
+	dw CHIKORITA	;CKaguya
+	dw BAYLEEF		;Kaguya
+	dw MEGANIUM		;EKaguya
+	dw CYNDAQUIL	;CMokou
+	dw QUILAVA		;Mokou
+	dw TYPHLOSION	;EMokou
+	dw PARAS		;CMedicine
+	dw PARASECT		;Medicine
+	dw PINSIR		;EMedicine
+	dw PIDGEY		;CAya
+	dw PIDGEOTTO	;Aya
+	dw PIDGEOT		;EAya
+	dw POLIWAG		;CKomachi
+	dw POLIWHIRL	;Komachi
+	dw POLIWRATH	;EKomachi	
+	dw ABRA			;CEiki
+	dw KADABRA		;Eiki
+	dw ALAKAZAM		;EEiki
+	dw SPEAROW		;CShizuha
+	dw FEAROW		;Shizuha
+	dw HITMONLEE	;EShizuha
+	dw EKANS		;CMinoriko
+	dw ARBOK		;Minoriko
+	dw HITMONCHAN	;EMinoriko
+	dw SLOWPOKE		;CHina
+	dw SLOWBRO		;Hina
+	dw MAGMAR		;EHina
+	dw PICHU		;CNitori
+	dw PIKACHU		;Nitori
+	dw RAICHU		;ENitori
+	dw PONYTA		;CMomiji
+	dw RAPIDASH		;Momiji
+	dw ELECTABUZZ	;EMomiji
+	dw ODDISH		;CSanae
+	dw GLOOM		;Sanae
+	dw VILEPLUME	;ESanae
+	dw MURKROW		;CKanako	
+	dw GOLDEEN		;Kanako
+	dw SEAKING		;EKanako
+	dw MARILL		;CSuwako
+	dw AZUMARILL	;Suwako
+	dw POLITOED		;ESuwako
+	dw ONIX			;CIku
+	dw DROWZEE		;Iku
+	dw HYPNO		;EIku
+	dw GIRAFARIG	;CTenshi
+	dw PINECO		;Tenshi
+	dw FORRETRESS	;ETenshi
+	dw VENONAT		;CKisume
+	dw VENOMOTH		;Kisume
+	dw KANGASKHAN	;EKisume
+	dw DIGLETT		;CYamame
+	dw DUGTRIO		;Yamame
+	dw PORYGON		;EYamame
+	dw STARYU		;CParsee
+	dw STARMIE		;Parsee
+	dw MR__MIME		;EParsee
+	dw NIDORAN_M	;CYuugi
+	dw NIDORINO		;Yuugi
+	dw NIDOKING		;EYuugi
+	dw MAGNEMITE	;CRin
+	dw MAGNETON		;Rin
+	dw TAUROS		;ERin
+	dw HOPPIP		;CUtsuho
+	dw SKIPLOOM		;Utsuho
+	dw JUMPLUFF		;EUtsuho
+	dw FARFETCH_D	;CSatori
+	dw DODUO		;Satori
+	dw DODRIO		;ESatori
+	dw MAREEP		;CKoishi
+	dw FLAAFFY		;Koishi
+	dw AMPHAROS		;EKoishi
+	dw VOLTORB		;CTokiko
+	dw ELECTRODE	;Tokiko
+	dw SCIZOR		;ETokiko
+	dw MANKEY		;CSunny
+	dw PRIMEAPE		;Sunny
+	dw FLAREON		;ESunny
+	dw PSYDUCK		;CLuna
+	dw GOLDUCK		;Luna
+	dw JOLTEON		;ELuna
+	dw MEOWTH		;CStar
+	dw PERSIAN		;Star
+	dw VAPOREON		;EStar
+	dw NATU			;CHatate
+	dw XATU			;Hatate
+	dw CELEBI		;EHatate
+	dw MEWTWO		;CKasen
+	dw MEW			;Kasen
+	dw CYUUTO		;CYuuto
+	dw YUUTO		;Yuuto
+	dw UNOWN		;Rinnosuke
+	dw RAIKOU		;Toyohime
+	dw ENTEI		;Yorihime
+	dw SUICUNE		;Satsuki
+	dw LUGIA		;Layla
+	dw HO_OH		;VIVIT
 	assert_table_length NUM_POKEMON

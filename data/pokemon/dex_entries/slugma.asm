@@ -1,10 +1,10 @@
-	db "LAVA@" ; species name
-	dw 204, 770 ; height, weight
+	db "BlackWitch@" ; species name
+	dw 404, 770 ; height, weight
 
-	db   "These group to-"
-	next "gether in areas"
-	next "that are hotter"
+	db   "A fierce and"
+	next "dangerous mage."
+	next "Although she uses"
 
-	page "than normal. If it"
-	next "cools off, its"
-	next "skin hardens.@"
+	page "fiey magic, her"
+	next "name ironically"
+	next "means snow.@"

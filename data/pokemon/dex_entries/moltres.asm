@@ -1,10 +1,10 @@
-	db "FLAME@" ; species name
-	dw 607, 1320 ; height, weight
+	db "Poltergeist@" ; species name
+	dw 500, 1320 ; height, weight
 
-	db   "Legendary bird"
-	next "#MON. It is"
-	next "said to migrate"
+	db   "She struggles to"
+	next "stand out during"
+	next "concerts due to"
 
-	page "from the south"
-	next "along with the"
-	next "spring.@"
+	page "her small size,"
+	next "so she thrashes"
+	next "about often.@"

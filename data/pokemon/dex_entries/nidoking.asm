@@ -1,10 +1,10 @@
-	db "DRILL@" ; species name
-	dw 407, 1370 ; height, weight
+	db "Oni@" ; species name
+	dw 600, 2110 ; height, weight
 
-	db   "It uses its thick"
-	next "arms, legs and"
-	next "tail to attack"
+	db   "A rambunctious oni"
+	next "that loves to"
+	next "drink and brawl."
 
-	page "forcefully. Melee"
-	next "combat is its"
-	next "specialty.@"
+	page "She loves Former"
+	next "Hell for its rowdy"
+	next "inhabitants.@"

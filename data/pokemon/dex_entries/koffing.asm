@@ -1,10 +1,11 @@
-	db "POISON GAS@" ; species name
-	dw 200, 20 ; height, weight
+	db "Familiar@" ; species name
+	dw 311, 750 ; height, weight
 
-	db   "If one gets close"
-	next "enough to it when"
-	next "it expels poison-"
+	db   "A rather plain and"
+	next "unremarkable"
+	next "demon, but she is"
 
-	page "ous gas, the gas"
-	next "swirling inside it"
-	next "can be seen.@"
+	page "nonetheless loyal"
+	next "to her master"
+	next "Patchouli.@"
+	

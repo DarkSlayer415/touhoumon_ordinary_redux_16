@@ -1,10 +1,10 @@
-	db "FOX@" ; species name
-	dw 307, 440 ; height, weight
+	db "SpringFairy@" ; species name
+	dw 409, 1200 ; height, weight
 
-	db   "It is said to live"
-	next "a thousand years,"
-	next "and each of its"
+	db   "She is at her"
+	next "strongest when"
+	next "announcing the"
 
-	page "tails is loaded"
-	next "with supernatural"
-	next "powers.@"
+	page "coming of spring,"
+	next "but she isn't very"
+	next "aggressive either.@"

@@ -1,10 +1,10 @@
-	db "FAIRY@" ; species name
-	dw 200, 170 ; height, weight
+	db "Gatekeeper@" ; species name
+	dw 210, 570 ; height, weight
 
-	db   "In truth, it is a"
-	next "cowardly #MON."
-	next "It growls eagerly"
+	db   "She guards the"
+	next "entrance to Makai"
+	next "inside a cave."
 
-	page "in order to hide"
-	next "its fear from its"
-	next "opponent.@"
+	page "Despite her duty,"
+	next "she is not very"
+	next "good at her job.@"

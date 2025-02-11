@@ -1,10 +1,10 @@
-	db "DRAGON@" ; species name
-	dw 511, 70 ; height, weight
+	db "Gap Youkai@" ; species name
+	dw 303, 700 ; height, weight
 
-	db   "It sheds many lay-"
-	next "ers of skin as it"
-	next "grows larger. Dur-"
+	db   "An aloof youkai"
+	next "that spends most"
+	next "of her time"
 
-	page "ing this process,"
-	next "it is protected by"
-	next "a rapid waterfall.@"
+	page "sleeping. She is"
+	next "able to manipulate"
+	next "boundaries.@"

@@ -1,10 +1,11 @@
-	db "MOLE@" ; species name
-	dw 204, 730 ; height, weight
+	db "Spider@" ; species name
+	dw 400, 930 ; height, weight
 
-	db   "These DIGLETT"
-	next "triplets dig over"
-	next "60 miles below sea"
+	db   "A youkai that can"
+	next "spread infectious"
+	next "diseases. You can"
 
-	page "level. No one"
-	next "knows what it's"
-	next "like underground.@"
+	page "reason with her,"
+	next "but it is best to"
+	next "avoid all contact.@"
+	

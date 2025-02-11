@@ -1,10 +1,11 @@
-	db "COBRA@" ; species name
-	dw 1106, 1430 ; height, weight
+	db "Autumn@" ; species name
+	dw 403, 750 ; height, weight
 
-	db   "To intimidate"
-	next "foes, it spreads"
-	next "its chest wide and"
+	db   "She symbolizes and"
+	next "manipulates the"
+	next "autumn harvests."
 
-	page "makes eerie sounds"
-	next "by expelling air"
-	next "from its mouth.@"
+	page "Liked by humans,"
+	next "but not enough to"
+	next "have shrines.@"
+	

@@ -1,10 +1,10 @@
-	db "TIMETRAVEL@" ; species name
-	dw 200, 110 ; height, weight
+	db "Crow Tengu@" ; species name
+	dw 510, 1650 ; height, weight
 
-	db   "Revered as a"
-	next "guardian of the"
-	next "forest, CELEBI"
+	db   "She gets photos"
+	next "by typing phrases"
+	next "into her camera"
 
-	page "appears wherever"
-	next "beautiful forests"
-	next "exist.@"
+	page "and chooses the"
+	next "ones that she"
+	next "finds interesting.@"

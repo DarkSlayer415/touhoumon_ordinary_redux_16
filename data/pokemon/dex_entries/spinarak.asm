@@ -1,10 +1,10 @@
-	db "STRINGSPIT@" ; species name
-	dw 108, 190 ; height, weight
+	db "Vampire@" ; species name
+	dw 206, 390 ; height, weight
 
-	db   "If prey becomes"
-	next "ensnared in its"
-	next "nest of spun"
+	db   "A vampire who"
+	next "calls herself the"
+	next "Scarlet Devil."
 
-	page "string, it waits"
-	next "motionlessly until"
-	next "it becomes dark.@"
+	page "A light but messy"
+	next "eater, she rarely"
+	next "kills her victims.@"

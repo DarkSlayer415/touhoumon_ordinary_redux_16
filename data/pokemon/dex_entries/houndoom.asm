@@ -1,10 +1,10 @@
-	db "DARK@" ; species name
-	dw 407, 770 ; height, weight
+	db "Ghost@" ; species name
+	dw 400, 970 ; height, weight
 
-	db   "The pungent-"
-	next "smelling flame"
-	next "that shoots from"
+	db   "An extraordinarily"
+	next "carefree spirit."
+	next "Her personality"
 
-	page "its mouth results"
-	next "from toxins burn-"
-	next "ing in its body.@"
+	page "and behavior are"
+	next "disarming to those"
+	next "first meeting her.@"

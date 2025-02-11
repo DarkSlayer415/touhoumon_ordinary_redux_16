@@ -1,10 +1,11 @@
-	db "TWIN BIRD@" ; species name
-	dw 407, 860 ; height, weight
+	db "Third-Eye@" ; species name
+	dw 407, 1000 ; height, weight
 
-	db   "It lives on a"
-	next "grassy plain where"
-	next "it can see a long"
+	db   "Her ability to"
+	next "look into people's"
+	next "hearts allows her"
 
-	page "way. If it sees an"
-	next "enemy, it runs"
-	next "away at 60 mph.@"
+	page "to use techniques"
+	next "that they know or"
+	next "have witnessed.@"
+	

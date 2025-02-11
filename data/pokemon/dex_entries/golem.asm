@@ -1,10 +1,11 @@
-	db "MEGATON@" ; species name
-	dw 407, 6620 ; height, weight
+	db "Half-Ghost@" ; species name
+	dw 504, 1450 ; height, weight
 
-	db   "Its rock-like body"
-	next "is so durable,"
-	next "even high-powered"
+	db   "Acts as Yuyuko's"
+	next "bodyguard. Takes"
+	next "her job seriously,"
 
-	page "dynamite blasts"
-	next "fail to scratch"
-	next "its rugged hide.@"
+	page "but doesn't always"
+	next "understand what"
+	next "Yuyuko tells her.@"
+	

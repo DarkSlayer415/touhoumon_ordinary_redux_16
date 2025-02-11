@@ -1,10 +1,11 @@
-	db "COTTONWEED@" ; species name
-	dw 104, 10 ; height, weight
+	db "Hell Raven@" ; species name
+	dw 211, 450 ; height, weight
 
-	db   "It can be carried"
-	next "away on even the"
-	next "gentlest breeze."
+	db   "One of Satori's"
+	next "pets. She is"
+	next "called by her"
 
-	page "It may even float"
-	next "all the way to the"
-	next "next town.@"
+	page "nickname Okuu by"
+	next "Orin and the"
+	next "Komeiji sisters.@"
+	

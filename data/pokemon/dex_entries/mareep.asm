@@ -1,10 +1,10 @@
-	db "WOOL@" ; species name
-	dw 200, 170 ; height, weight
+	db "Satori@" ; species name
+	dw 206, 500 ; height, weight
 
-	db   "It stores lots of"
-	next "air in its soft"
-	next "fur, allowing it"
+	db   "A satori who can"
+	next "manipulate the"
+	next "unconscious mind"
 
-	page "to stay cool in"
-	next "summer and warm"
-	next "in winter.@"
+	page "of others. Her"
+	next "presense is"
+	next "unsettling.@"

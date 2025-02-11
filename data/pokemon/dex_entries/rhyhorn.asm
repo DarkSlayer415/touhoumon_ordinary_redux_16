@@ -1,10 +1,10 @@
-	db "SPIKES@" ; species name
-	dw 303, 2540 ; height, weight
+	db "Shikigami@" ; species name
+	dw 407, 1000 ; height, weight
 
-	db   "It can remember"
-	next "only one thing at"
-	next "a time. Once it"
+	db   "An extremely smart"
+	next "youkai proficient"
+	next "with math. She"
 
-	page "starts rushing, it"
-	next "forgets why it"
-	next "started.@"
+	page "once calculated"
+	next "the width of the"
+	next "Sanzu River.@"

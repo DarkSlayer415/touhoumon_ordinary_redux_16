@@ -1,10 +1,10 @@
-	db "THUNDER@" ; species name
-	dw 603, 3920 ; height, weight
+	db "Lunarian@" ; species name
+	dw 603, 2200 ; height, weight
 
-	db   "This rough #MON"
-	next "stores energy"
-	next "inside its body,"
+	db   "The fan she"
+	next "carries is a"
+	next "dangerous weapon"
 
-	page "then sweeps across"
-	next "the land, shooting"
-	next "off electricity.@"
+	page "with its power"
+	next "comparable to"
+	next "nuclear weaponry.@"

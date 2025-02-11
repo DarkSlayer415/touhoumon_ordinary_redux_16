@@ -1,10 +1,10 @@
-	db "LONG NOSE@" ; species name
-	dw 108, 740 ; height, weight
+	db "Gatekeeper@" ; species name
+	dw 208, 540 ; height, weight
 
-	db   "During the desert-"
-	next "ed morning hours,"
-	next "it comes ashore"
+	db   "The gatekeeper of"
+	next "Yuuka's mansion in"
+	next "the Dream World."
 
-	page "where it deftly"
-	next "uses its trunk to"
-	next "take a shower.@"
+	page "She wields a heavy"
+	next "yet throwable"
+	next "scythe.@"

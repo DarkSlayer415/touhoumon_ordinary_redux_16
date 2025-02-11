@@ -1,10 +1,11 @@
-	db "PIG MONKEY@" ; species name
-	dw 108, 620 ; height, weight
+	db "Sunlight@" ; species name
+	dw 300, 520 ; height, weight
 
-	db   "It lives in groups"
-	next "in the treetops."
-	next "If it loses sight"
+	db   "One of the Three"
+	next "Fairies of Light."
+	next "Energetic and"
 
-	page "of its group, it"
-	next "becomes infuriated"
-	next "by its loneliness.@"
+	page "curious, she"
+	next "is capable of"
+	next "refracting light.@"
+	

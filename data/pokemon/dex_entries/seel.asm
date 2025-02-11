@@ -1,10 +1,10 @@
-	db "SEA LION@" ; species name
-	dw 307, 1980 ; height, weight
+	db "Poltergeist@" ; species name
+	dw 300, 650 ; height, weight
 
-	db   "The light blue fur"
-	next "that covers it"
-	next "keeps it protected"
+	db   "A poltergeist"
+	next "musician who play"
+	next "the violin. Calm"
 
-	page "against the cold."
-	next "It loves iceberg-"
-	next "filled oceans.@"
+	page "but pessimistic,"
+	next "she performs"
+	next "melancholic music.@"

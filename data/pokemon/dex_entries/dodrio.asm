@@ -1,10 +1,11 @@
-	db "TRIPLEBIRD@" ; species name
-	dw 511, 1880 ; height, weight
+	db "Third-Eye@" ; species name
+	dw 507, 1700 ; height, weight
 
-	db   "An enemy that"
-	next "takes its eyes off"
-	next "any of the three"
+	db   "By reading her"
+	next "foe's heart, she"
+	next "often chooses to"
 
-	page "heads--even for a"
-	next "second--will get"
-	next "pecked severely.@"
+	page "wait for the"
+	next "perfect chance to"
+	next "make her move.@"
+	

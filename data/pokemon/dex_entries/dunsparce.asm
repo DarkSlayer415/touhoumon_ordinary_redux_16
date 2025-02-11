@@ -1,10 +1,11 @@
-	db "LAND SNAKE@" ; species name
-	dw 411, 310 ; height, weight
+	db "Professor@" ; species name
+	dw 300, 510 ; height, weight
 
-	db   "It hides deep"
-	next "inside caves where"
-	next "no light ever"
+	db   "A professor from"
+	next "the outside world"
+	next "that came to visit"
 
-	page "reaches it and"
-	next "remains virtually"
-	next "motionless there.@"
+	page "Gensokyo with"
+	next "Chiyuri in order"
+	next "to study magic.@"
+	

@@ -1,10 +1,10 @@
-	db "SEED@" ; species name
-	dw 607, 2210 ; height, weight
+	db "Red Miko@" ; species name
+	dw 504, 1510 ; height, weight
 
-	db   "As it warms it-"
-	next "self and absorbs"
-	next "the sunlight, its"
+	db   "She treats youkai"
+	next "extermination as"
+	next "her job. Her luck"
 
-	page "flower petals"
-	next "release a pleasant"
-	next "fragrance.@"
+	page "combined with her"
+	next "natural abilities"
+	next "ensures victory.@"

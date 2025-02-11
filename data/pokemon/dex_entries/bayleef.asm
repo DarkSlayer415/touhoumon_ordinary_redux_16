@@ -1,10 +1,10 @@
-	db "LEAF@" ; species name
-	dw 311, 350 ; height, weight
+	db "Princess@" ; species name
+	dw 411, 1300 ; height, weight
 
-	db   "The scent that"
-	next "wafts from the"
-	next "leaves on its neck"
+	db   "Mokou's eternal"
+	next "rival. They used"
+	next "to kill each other"
 
-	page "causes anyone who"
-	next "smells it to"
-	next "become energetic.@"
+	page "daily, fully aware"
+	next "that it would not"
+	next "change anything.@"

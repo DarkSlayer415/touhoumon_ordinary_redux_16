@@ -1,10 +1,10 @@
-	db "VIRTUAL@" ; species name
-	dw 207, 800 ; height, weight
+	db "Spider@" ; species name
+	dw 411, 1350 ; height, weight
 
-	db   "An artificial"
-	next "#MON created"
-	next "due to extensive"
+	db   "Although despised"
+	next "by humans, she is"
+	next "very popular among"
 
-	page "research, it can"
-	next "perform only what"
-	next "is in its program.@"
+	page "underground youkai"
+	next "due to her bright"
+	next "personality.@"

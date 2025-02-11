@@ -1,10 +1,10 @@
-	db "FLOWER@" ; species name
-	dw 311, 410 ; height, weight
+	db "Blue Miko@" ; species name
+	dw 506, 1410 ; height, weight
 
-	db   "By shaking its big"
-	next "petals, it scat-"
-	next "ters toxic pollen"
+	db   "As Moriya's Shrine"
+	next "Maiden, she can"
+	next "channel the powers"
 
-	page "into the air,"
-	next "turning the air"
-	next "yellow.@"
+	page "of both Kanako and"
+	next "Suwako whenever"
+	next "she pleases.@"

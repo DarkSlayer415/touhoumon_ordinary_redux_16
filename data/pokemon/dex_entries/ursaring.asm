@@ -1,10 +1,10 @@
-	db "HIBERNANT@" ; species name
-	dw 511, 2770 ; height, weight
+	db "Makai Maid@" ; species name
+	dw 511, 1770 ; height, weight
 
-	db   "Although it has a"
-	next "large body, it is"
-	next "quite skilled at"
+	db   "Shinki's strongest"
+	next "creation. Capable"
+	next "of throwing swords"
 
-	page "climbing trees. It"
-	next "eats and sleeps in"
-	next "the treetops.@"
+	page "in battle, with an"
+	next "elegance rivaling"
+	next "that of Sakuya's.@"

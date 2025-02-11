@@ -1,10 +1,10 @@
-	db "CLASSY CAT@" ; species name
-	dw 303, 710 ; height, weight
+	db "Starlight@" ; species name
+	dw 403, 710 ; height, weight
 
-	db   "Behind its lithe,"
-	next "elegant appearance"
-	next "lies a barbaric"
+	db   "Scouts for the"
+	next "Light Fairies."
+	next "Stars are always"
 
-	page "side. It will tear"
-	next "apart its prey on"
-	next "a mere whim.@"
+	page "in the sky, so"
+	next "her powers never"
+	next "grow weak.@"

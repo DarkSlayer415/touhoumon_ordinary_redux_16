@@ -1,10 +1,10 @@
-	db "LEAF@" ; species name
-	dw 211, 140 ; height, weight
+	db "Princess@" ; species name
+	dw 303, 650 ; height, weight
 
-	db   "It loves to bask"
-	next "in the sunlight."
-	next "It uses the leaf"
+	db   "A Lunarian"
+	next "princess banished"
+	next "for creating the"
 
-	page "on its head to"
-	next "seek out warm"
-	next "places.@"
+	page "Hourai Elixir."
+	next "Her isolation has"
+	next "made her lonely.@"

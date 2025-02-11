@@ -1,10 +1,10 @@
-	db "ELECTRIC@" ; species name
-	dw 307, 660 ; height, weight
+	db "Wolf Tengu@" ; species name
+	dw 507, 2000 ; height, weight
 
-	db   "When two"
-	next "ELECTABUZZ touch,"
-	next "they control the"
+	db   "When on guard, her"
+	next "superior eyesight"
+	next "and sense of smell"
 
-	page "electric currents"
-	next "to communicate"
-	next "their feelings.@"
+	page "allows her to"
+	next "detect intruders"
+	next "nearly instantly.@"

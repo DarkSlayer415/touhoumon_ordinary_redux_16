@@ -1,12 +1,12 @@
-	db 0 ; species ID placeholder
+	db SUNKERN ; 191
 
-	db  30,  30,  30,  30,  30,  30
+	db  30,  70,  30,  70,  70,  30
 	;   hp  atk  def  spd  sat  sdf
 
-	db GRASS, GRASS ; type
+	db DARK, FIRE ; type
 	db 235 ; catch rate
-	db 52 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db 75 ; base exp
+	db NO_ITEM, NUGGET ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch
@@ -14,8 +14,8 @@
 	INCBIN "gfx/pokemon/sunkern/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
 	db GROWTH_MEDIUM_SLOW ; growth rate
-	dn EGG_PLANT, EGG_PLANT ; egg groups
+	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset
-	tmhm CURSE, TOXIC, HIDDEN_POWER, SUNNY_DAY, SWEET_SCENT, SNORE, PROTECT, GIGA_DRAIN, ENDURE, FRUSTRATION, SOLARBEAM, RETURN, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SLUDGE_BOMB, REST, ATTRACT, CUT, FLASH
+	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, ROAR, TOXIC, ROCK_SMASH, RAZOR_WIND, ROCK_SLIDE, DOUBLE_EDGE, PROTECT, GIGA_DRAIN, ENDURE, FRUSTRATION, IRON_TAIL, DRAGONBREATH, RETURN, SHADOW_BALL, MUD_SLAP, BODY_SLAM, SWAGGER, SLEEP_TALK, SLUDGE_BOMB, FIRE_BLAST, SWIFT, SLAM, THUNDERPUNCH, REST, THIEF, STEEL_WING, FIRE_PUNCH, FURY_CUTTER, SUBSTITUTE, CUT, FLY, STRENGTH, FLAMETHROWER
 	; end

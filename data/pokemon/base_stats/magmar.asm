@@ -1,15 +1,15 @@
-	db 0 ; species ID placeholder
+	db MAGMAR ; 126
 
-	db  65,  95,  57,  93, 100,  85
+	db 110,  65,  95,  60,  85,  95
 	;   hp  atk  def  spd  sat  sdf
 
-	db FIRE, FIRE ; type
+	db POISON, WATER ; type
 	db 45 ; catch rate
-	db 167 ; base exp
-	db BURNT_BERRY, BURNT_BERRY ; items
-	db GENDER_F25 ; gender ratio
+	db 185 ; base exp
+	db NO_ITEM, NO_ITEM ; items
+	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
-	db 25 ; step cycles to hatch
+	db 20 ; step cycles to hatch
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/magmar/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
@@ -17,5 +17,5 @@
 	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset
-	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, TOXIC, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, HYPER_BEAM, PROTECT, ENDURE, FRUSTRATION, IRON_TAIL, RETURN, PSYCHIC_M, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, FIRE_BLAST, THUNDERPUNCH, DETECT, REST, ATTRACT, THIEF, FIRE_PUNCH, STRENGTH, FLAMETHROWER
+	tmhm CURSE, TOXIC, LIGHT_SCREEN, REFLECT, DOUBLE_EDGE, HAIL, PROTECT, RAIN_DANCE, GIGA_DRAIN, ENDURE, FRUSTRATION, DRAGONBREATH, RETURN, SHADOW_BALL, MUD_SLAP, BODY_SLAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SLUDGE_BOMB, SWIFT, SLAM, REST, MORNING_SUN, SUBSTITUTE, SURF, WHIRLPOOL, WATERFALL, ICE_BEAM
 	; end

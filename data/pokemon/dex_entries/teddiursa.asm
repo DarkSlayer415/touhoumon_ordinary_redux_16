@@ -1,10 +1,10 @@
-	db "LITTLE BEAR@" ; species name
-	dw 200, 190 ; height, weight
+	db "Makai Maid@" ; species name
+	dw 311, 990 ; height, weight
 
-	db   "It always licks"
-	next "honey. Its palm"
-	next "tastes sweet"
+	db   "Very strong and"
+	next "tough to defeat."
+	next "She wields swords"
 
-	page "because of all the"
-	next "honey it has"
-	next "absorbed.@"
+	page "in combat, and"
+	next "protects Shinki"
+	next "at all costs.@"

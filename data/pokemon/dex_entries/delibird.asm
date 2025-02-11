@@ -1,10 +1,10 @@
-	db "DELIVERY@" ; species name
-	dw 211, 350 ; height, weight
+	db "Youkai@" ; species name
+	dw 303, 500 ; height, weight
 
-	db   "It always carries"
-	next "its food with it,"
-	next "wherever it goes."
+	db   "A below-average"
+	next "youkai that"
+	next "struggles to stand"
 
-	page "If attacked, it"
-	next "throws its food at"
-	next "the opponent.@"
+	page "out. Relatively"
+	next "harmless, yet is"
+	next "usually attacked.@"

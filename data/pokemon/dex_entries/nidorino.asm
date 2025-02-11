@@ -1,10 +1,10 @@
-	db "POISON PIN@" ; species name
-	dw 211, 430 ; height, weight
+	db "Oni@" ; species name
+	dw 406, 850 ; height, weight
 
-	db   "It is easily"
-	next "agitated and uses"
-	next "its horn for"
+	db   "She is capable of"
+	next "wielding so-called"
+	next "unexplainable"
 
-	page "offense as soon as"
-	next "it notices an"
-	next "attacker.@"
+	page "phenomena. She likes"
+	next "people who are brave"
+	next "and honest.@"

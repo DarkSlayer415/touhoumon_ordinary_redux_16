@@ -1,10 +1,10 @@
-	db "MOLD@" ; species name
-	dw 200, 450 ; height, weight
+	db "Makai@" ; species name
+	dw 206, 450 ; height, weight
 
-	db   "The fluid secreted"
-	next "by its toes carves"
-	next "holes in rocks for"
+	db   "A resident of"
+	next "Makai that enjoys"
+	next "sightseeing. She"
 
-	page "nesting and can be"
-	next "mixed with BERRIES"
-	next "to make a drink.@"
+	page "desires to one day"
+	next "visit the Outside"
+	next "World for a visit.@"

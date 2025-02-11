@@ -1,10 +1,10 @@
-	db "GOLDFISH@" ; species name
-	dw 403, 860 ; height, weight
+	db "WindGoddess@" ; species name
+	dw 600, 2700 ; height, weight
 
-	db   "When autumn comes,"
-	next "the males patrol"
-	next "the area around"
+	db   "Conquered the"
+	next "Moriya Shrine by"
+	next "defeating Suwako."
 
-	page "their nests in"
-	next "order to protect"
-	next "their offspring.@"
+	page "Despite their past"
+	next "battle, the two"
+	next "are now friends.@"

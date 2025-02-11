@@ -1,10 +1,11 @@
-	db "PSI@" ; species name
-	dw 403, 1250 ; height, weight
+	db "Yama@" ; species name
+	dw 311, 950 ; height, weight
 
-	db   "When it closes its"
-	next "eyes, twice as"
-	next "many alpha parti-"
+	db   "Preachy by nature."
+	next "Her lectures are"
+	next "long-winded, but"
 
-	page "cles come out of"
-	next "the surface of its"
-	next "body.@"
+	page "they are intended"
+	next "to help others"
+	next "improve.@"
+	

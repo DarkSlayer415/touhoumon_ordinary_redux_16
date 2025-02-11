@@ -1,10 +1,11 @@
-	db "SNAKE@" ; species name
-	dw 607, 150 ; height, weight
+	db "Autumn@" ; species name
+	dw 303, 650 ; height, weight
 
-	db   "It flutters the"
-	next "tip of its tongue"
-	next "to seek out the"
+	db   "The younger of the"
+	next "two Aki sisters."
+	next "She governs over"
 
-	page "scent of prey,"
-	next "then swallows the"
-	next "prey whole.@"
+	page "the bountiful"
+	next "harvests in the"
+	next "autumn season.@"
+	

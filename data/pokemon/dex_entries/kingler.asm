@@ -1,10 +1,10 @@
-	db "PINCER@" ; species name
+	db "Winter@" ; species name
 	dw 403, 1320 ; height, weight
 
-	db   "Its oversized claw"
-	next "is very powerful,"
-	next "but when it's not"
+	db   "A youkai that"
+	next "manipulates cold"
+	next "air. Simply being"
 
-	page "in battle, the"
-	next "claw just gets in"
-	next "the way.@"
+	page "near her is enough"
+	next "to subdue most"
+	next "humans.@"

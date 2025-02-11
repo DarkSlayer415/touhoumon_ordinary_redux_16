@@ -1,10 +1,10 @@
-	db "TADPOLE@" ; species name
-	dw 303, 440 ; height, weight
+	db "Shinigami@" ; species name
+	dw 403, 740 ; height, weight
 
-	db   "Though it is"
-	next "skilled at walk-"
-	next "ing, it prefers to"
+	db   "Works at her own"
+	next "pace, and slacks"
+	next "off often. Eiki"
 
-	page "live underwater"
-	next "where there is"
-	next "less danger.@"
+	page "frequently scolds"
+	next "her whenever she"
+	next "slacks off.@"

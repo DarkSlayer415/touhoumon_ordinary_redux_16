@@ -1,10 +1,10 @@
-	db "DOPEY@" ; species name
-	dw 311, 790 ; height, weight
+	db "Curse God@" ; species name
+	dw 211, 490 ; height, weight
 
-	db   "It is always so"
-	next "absent-minded that"
-	next "it won't react,"
+	db   "A curse goddess"
+	next "that gathers the"
+	next "misfortune of"
 
-	page "even if its"
-	next "flavorful tail is"
-	next "bitten.@"
+	page "others instead of"
+	next "faith. Friendly"
+	next "and sociable.@"

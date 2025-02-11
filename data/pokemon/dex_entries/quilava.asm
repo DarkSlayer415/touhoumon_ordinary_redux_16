@@ -1,10 +1,10 @@
-	db "VOLCANO@" ; species name
-	dw 211, 420 ; height, weight
+	db "Immortal@" ; species name
+	dw 311, 750 ; height, weight
 
-	db   "Before battle, it"
-	next "turns its back on"
-	next "its opponent to"
+	db   "Lives in the"
+	next "Bamboo Forest of"
+	next "the Lost. Assists"
 
-	page "demonstrate how"
-	next "ferociously its"
-	next "fire blazes.@"
+	page "humans from the"
+	next "village reach"
+	next "Eientei safely.@"

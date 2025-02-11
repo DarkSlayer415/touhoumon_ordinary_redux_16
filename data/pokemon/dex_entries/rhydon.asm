@@ -1,10 +1,10 @@
-	db "DRILL@" ; species name
-	dw 603, 2650 ; height, weight
+	db "Shikigami@" ; species name
+	dw 603, 2300 ; height, weight
 
-	db   "By lightly spin-"
-	next "ning its drill-"
-	next "like horn, it can"
+	db   "Before becoming a"
+	next "Shikigami, she was"
+	next "a member of the"
 
-	page "easily shatter"
-	next "even a diamond in"
-	next "the rough.@"
+	page "Animal Realm and"
+	next "was friends with"
+	next "Yuuma Toutetsu.@"

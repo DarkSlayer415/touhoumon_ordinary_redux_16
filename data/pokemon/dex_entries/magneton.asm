@@ -1,10 +1,10 @@
-	db "MAGNET@" ; species name
-	dw 303, 1320 ; height, weight
+	db "Kasha@" ; species name
+	dw 400, 750 ; height, weight
 
-	db   "When many"
-	next "MAGNETON gather"
-	next "together, the"
+	db   "A cheerful youkai"
+	next "that gathers and"
+	next "communicates with"
 
-	page "resulting magnetic"
-	next "storm disrupts"
-	next "radio waves.@"
+	page "corpses. She is"
+	next "friends with Chen"
+	next "and Chiyari.@"

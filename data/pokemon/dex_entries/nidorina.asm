@@ -1,10 +1,10 @@
-	db "POISON PIN@" ; species name
-	dw 207, 440 ; height, weight
+	db "MoonRabbit@" ; species name
+	dw 400, 660 ; height, weight
 
-	db   "It has a docile"
-	next "nature. If it is"
-	next "threatened with"
+	db   "Her control of"
+	next "wavelengths can"
+	next "influence her voice,"
 
-	page "attack, it raises"
-	next "the barbs that are"
-	next "all over its body.@"
+	page "making it hard to"
+	next "hold conversation"
+	next "with her.@"

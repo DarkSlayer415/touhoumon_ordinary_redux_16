@@ -1,10 +1,10 @@
-	db "FIRE MOUSE@" ; species name
-	dw 108, 170 ; height, weight
+	db "Immortal@" ; species name
+	dw 303, 700 ; height, weight
 
-	db   "The fire that"
-	next "spouts from its"
-	next "back burns hottest"
+	db   "A human who"
+	next "gained eternal"
+	next "youth and"
 
-	page "when it is angry."
-	next "The flaring flames"
-	next "intimidate foes.@"
+	page "immortality by"
+	next "drinking the"
+	next "Hourai Elixir.@"

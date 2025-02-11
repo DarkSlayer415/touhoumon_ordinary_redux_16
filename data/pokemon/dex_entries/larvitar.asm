@@ -1,10 +1,10 @@
-	db "ROCK SKIN@" ; species name
-	dw 200, 1590 ; height, weight
+	db "EvilSpirit@" ; species name
+	dw 300, 400 ; height, weight
 
-	db   "Born deep under-"
-	next "ground, this"
-	next "#MON becomes a"
+	db   "An evil spirit"
+	next "who seeks power."
+	next "She seems to have"
 
-	page "pupa after eating"
-	next "enough dirt to"
-	next "make a mountain.@"
+	page "some kind of"
+	next "grudge against"
+	next "humanity.@"

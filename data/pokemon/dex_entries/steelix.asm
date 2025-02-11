@@ -1,10 +1,10 @@
-	db "IRON SNAKE@" ; species name
-	dw 3002, 8820 ; height, weight
+	db "Professor@" ; species name
+	dw 508, 1820 ; height, weight
 
-	db   "The many small"
-	next "metal particles"
-	next "that cover this"
+	db   "A human that uses"
+	next "artificial magic."
+	next "Lost her tenure"
 
-	page "#MON's body"
-	next "reflect bright"
-	next "light well.@"
+	page "for presenting"
+	next "her theories"
+	next "about magic.@"

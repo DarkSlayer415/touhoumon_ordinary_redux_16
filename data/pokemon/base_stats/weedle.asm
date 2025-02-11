@@ -1,11 +1,11 @@
-	db 0 ; species ID placeholder
+	db WEEDLE ; 013
 
-	db  40,  35,  30,  50,  20,  20
+	db  40,  40,  40,  60,  60,  60
 	;   hp  atk  def  spd  sat  sdf
 
-	db BUG, POISON ; type
-	db 255 ; catch rate
-	db 52 ; base exp
+	db ICE, ICE ; type
+	db 245 ; catch rate
+	db 50 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
@@ -14,8 +14,8 @@
 	INCBIN "gfx/pokemon/weedle/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
 	db GROWTH_MEDIUM_FAST ; growth rate
-	dn EGG_BUG, EGG_BUG ; egg groups
+	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset
-	tmhm
+	tmhm HEADBUTT, CURSE, TOXIC, RAZOR_WIND, BLIZZARD, DOUBLE_EDGE, HAIL, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, RETURN, MUD_SLAP, BODY_SLAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SWIFT, SLAM, REST, MORNING_SUN, SUBSTITUTE, SURF, FLASH, WHIRLPOOL, WATERFALL, ICE_BEAM
 	; end

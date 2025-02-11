@@ -1,10 +1,10 @@
-	db "BIG JAW@" ; species name
-	dw 200, 210 ; height, weight
+	db "Genius@" ; species name
+	dw 300, 510 ; height, weight
 
-	db   "This rough critter"
-	next "chomps at any"
-	next "moving object it"
+	db   "A Lunarian living"
+	next "in Gensokyo. She"
+	next "is speculated to"
 
-	page "sees. Turning your"
-	next "back on it is not"
-	next "recommended.@"
+	page "be Omoikane, the"
+	next "Shinto god of"
+	next "intelligence.@"

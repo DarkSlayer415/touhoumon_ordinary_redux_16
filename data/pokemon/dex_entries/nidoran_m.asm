@@ -1,10 +1,10 @@
-	db "POISON PIN@" ; species name
-	dw 108, 200 ; height, weight
+	db "Oni@" ; species name
+	dw 306, 550 ; height, weight
 
-	db   "It constantly"
-	next "moves its large"
-	next "ears in many"
+	db   "A powerful oni who"
+	next "is easy to"
+	next "recognize due to"
 
-	page "directions in"
-	next "order to detect"
-	next "danger right away.@"
+	page "her vibrant red"
+	next "horn. Often spends"
+	next "time with Suika.@"

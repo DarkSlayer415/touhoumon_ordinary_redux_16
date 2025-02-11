@@ -1,10 +1,10 @@
-	db "ELECTRIC@" ; species name
-	dw 503, 1160 ; height, weight
+	db "Poltergeist@" ; species name
+	dw 507, 1460 ; height, weight
 
-	db   "Legendary bird"
-	next "#MON. They say"
-	next "lightning caused"
+	db   "Since she is the"
+	next "tallest among her"
+	next "sisters, she is"
 
-	page "by the flapping of"
-	next "its wings causes"
-	next "summer storms.@"
+	page "often the one that"
+	next "takes center stage"
+	next "during concerts.@"
