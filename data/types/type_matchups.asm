@@ -124,7 +124,6 @@ TypeMatchups:
 	db FAIRY,     	 DRAGON,       SUPER_EFFECTIVE
 	db FAIRY,     	 DARK,         SUPER_EFFECTIVE
 	db FAIRY,     	 STEEL,        NOT_VERY_EFFECTIVE
-	db FAIRY,     	 FAIRY,        NOT_VERY_EFFECTIVE
 
 	db -2 ; end (with Foresight)
 

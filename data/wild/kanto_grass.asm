@@ -5,931 +5,931 @@ KantoGrassWildMons:
 	def_grass_wildmons DIGLETTS_CAVE
 	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, MR__MIME
-	db 50, KANGASKHAN
-	db 50, PORYGON
-	db 50, PORYGON
-	db 48, DUGTRIO
-	db 48, DUGTRIO
-	db 48, DUGTRIO
-	db 40, DIGLETT
+	dbw 50, MR__MIME
+	dbw 50, KANGASKHAN
+	dbw 50, PORYGON
+	dbw 50, PORYGON
+	dbw 48, DUGTRIO
+	dbw 48, DUGTRIO
+	dbw 48, DUGTRIO
+	dbw 40, DIGLETT
 	; day
-	db 50, MR__MIME
-	db 50, KANGASKHAN
-	db 50, PORYGON
-	db 50, PORYGON
-	db 48, DUGTRIO
-	db 48, DUGTRIO
-	db 48, DUGTRIO
-	db 40, DIGLETT
+	dbw 50, MR__MIME
+	dbw 50, KANGASKHAN
+	dbw 50, PORYGON
+	dbw 50, PORYGON
+	dbw 48, DUGTRIO
+	dbw 48, DUGTRIO
+	dbw 48, DUGTRIO
+	dbw 40, DIGLETT
 	; nite
-	db 50, MR__MIME
-	db 50, KANGASKHAN
-	db 50, PORYGON
-	db 50, PORYGON
-	db 48, DUGTRIO
-	db 48, DUGTRIO
-	db 48, DUGTRIO
-	db 40, DIGLETT
+	dbw 50, MR__MIME
+	dbw 50, KANGASKHAN
+	dbw 50, PORYGON
+	dbw 50, PORYGON
+	dbw 48, DUGTRIO
+	dbw 48, DUGTRIO
+	dbw 48, DUGTRIO
+	dbw 40, DIGLETT
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MOON
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, NIDOQUEEN
-	db 50, FORRETRESS
-	db 49, BLISSEY
-	db 49, MILTANK
-	db 48, CROBAT
-	db 48, CROBAT
-	db 48, CROBAT
-	db 45, PUPITAR
+	dbw 50, NIDOQUEEN
+	dbw 50, FORRETRESS
+	dbw 49, BLISSEY
+	dbw 49, MILTANK
+	dbw 48, CROBAT
+	dbw 48, CROBAT
+	dbw 48, CROBAT
+	dbw 45, PUPITAR
 	; day
-	db 50, NIDOQUEEN
-	db 50, FORRETRESS
-	db 49, BLISSEY
-	db 49, MILTANK
-	db 48, CROBAT
-	db 48, CROBAT
-	db 48, CROBAT
-	db 45, PUPITAR
+	dbw 50, NIDOQUEEN
+	dbw 50, FORRETRESS
+	dbw 49, BLISSEY
+	dbw 49, MILTANK
+	dbw 48, CROBAT
+	dbw 48, CROBAT
+	dbw 48, CROBAT
+	dbw 45, PUPITAR
 	; nite
-	db 50, NIDOQUEEN
-	db 50, FORRETRESS
-	db 49, BLISSEY
-	db 49, MILTANK
-	db 48, CROBAT
-	db 48, CROBAT
-	db 48, CROBAT
-	db 45, PUPITAR
+	dbw 50, NIDOQUEEN
+	dbw 50, FORRETRESS
+	dbw 49, BLISSEY
+	dbw 49, MILTANK
+	dbw 48, CROBAT
+	dbw 48, CROBAT
+	dbw 48, CROBAT
+	dbw 45, PUPITAR
 	end_grass_wildmons
 
 	def_grass_wildmons ROCK_TUNNEL_1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 51, NIDOKING
-	db 51, RATICATE
-	db 51, FORRETRESS
-	db 51, FORRETRESS
-	db 51, JUMPLUFF
-	db 51, JUMPLUFF
-	db 51, JUMPLUFF
-	db 45, PUPITAR
+	dbw 51, NIDOKING
+	dbw 51, RATICATE
+	dbw 51, FORRETRESS
+	dbw 51, FORRETRESS
+	dbw 51, JUMPLUFF
+	dbw 51, JUMPLUFF
+	dbw 51, JUMPLUFF
+	dbw 45, PUPITAR
 	; day
-	db 51, NIDOKING
-	db 51, RATICATE
-	db 51, FORRETRESS
-	db 51, FORRETRESS
-	db 51, JUMPLUFF
-	db 51, JUMPLUFF
-	db 51, JUMPLUFF
-	db 45, PUPITAR
+	dbw 51, NIDOKING
+	dbw 51, RATICATE
+	dbw 51, FORRETRESS
+	dbw 51, FORRETRESS
+	dbw 51, JUMPLUFF
+	dbw 51, JUMPLUFF
+	dbw 51, JUMPLUFF
+	dbw 45, PUPITAR
 	; nite
-	db 51, NIDOKING
-	db 51, RATICATE
-	db 51, FORRETRESS
-	db 51, FORRETRESS
-	db 51, JUMPLUFF
-	db 51, JUMPLUFF
-	db 51, JUMPLUFF
-	db 45, PUPITAR
+	dbw 51, NIDOKING
+	dbw 51, RATICATE
+	dbw 51, FORRETRESS
+	dbw 51, FORRETRESS
+	dbw 51, JUMPLUFF
+	dbw 51, JUMPLUFF
+	dbw 51, JUMPLUFF
+	dbw 45, PUPITAR
 	end_grass_wildmons
 
 	def_grass_wildmons ROCK_TUNNEL_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, BEEDRILL
-	db 50, PILOSWINE
-	db 52, TANGELA
-	db 52, TANGELA
-	db 51, STEELIX
-	db 51, STEELIX
-	db 51, STEELIX
-	db 45, PUPITAR
+	dbw 50, BEEDRILL
+	dbw 50, PILOSWINE
+	dbw 52, TANGELA
+	dbw 52, TANGELA
+	dbw 51, STEELIX
+	dbw 51, STEELIX
+	dbw 51, STEELIX
+	dbw 45, PUPITAR
 	; day
-	db 50, BEEDRILL
-	db 50, PILOSWINE
-	db 52, TANGELA
-	db 52, TANGELA
-	db 51, STEELIX
-	db 51, STEELIX
-	db 51, STEELIX
-	db 45, PUPITAR
+	dbw 50, BEEDRILL
+	dbw 50, PILOSWINE
+	dbw 52, TANGELA
+	dbw 52, TANGELA
+	dbw 51, STEELIX
+	dbw 51, STEELIX
+	dbw 51, STEELIX
+	dbw 45, PUPITAR
 	; nite
-	db 50, BEEDRILL
-	db 50, PILOSWINE
-	db 52, TANGELA
-	db 52, TANGELA
-	db 51, STEELIX
-	db 51, STEELIX
-	db 51, STEELIX
-	db 45, PUPITAR
+	dbw 50, BEEDRILL
+	dbw 50, PILOSWINE
+	dbw 52, TANGELA
+	dbw 52, TANGELA
+	dbw 51, STEELIX
+	dbw 51, STEELIX
+	dbw 51, STEELIX
+	dbw 45, PUPITAR
 	end_grass_wildmons
 
 	def_grass_wildmons VICTORY_ROAD
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 45, URSARING
-	db 45, NIDOKING
-	db 45, FORRETRESS
-	db 45, CROBAT
-	db 47, JUMPLUFF
-	db 47, RATICATE
-	db 47, RHYDON
-	db 40, PUPITAR
+	dbw 45, URSARING
+	dbw 45, NIDOKING
+	dbw 45, FORRETRESS
+	dbw 45, CROBAT
+	dbw 47, JUMPLUFF
+	dbw 47, RATICATE
+	dbw 47, RHYDON
+	dbw 40, PUPITAR
 	; day
-	db 45, URSARING
-	db 45, NIDOKING
-	db 45, FORRETRESS
-	db 45, CROBAT
-	db 47, JUMPLUFF
-	db 47, RATICATE
-	db 47, RHYDON
-	db 40, PUPITAR
+	dbw 45, URSARING
+	dbw 45, NIDOKING
+	dbw 45, FORRETRESS
+	dbw 45, CROBAT
+	dbw 47, JUMPLUFF
+	dbw 47, RATICATE
+	dbw 47, RHYDON
+	dbw 40, PUPITAR
 	; nite
-	db 45, URSARING
-	db 45, NIDOKING
-	db 45, FORRETRESS
-	db 45, CROBAT
-	db 47, JUMPLUFF
-	db 47, RATICATE
-	db 47, RHYDON
-	db 40, PUPITAR
+	dbw 45, URSARING
+	dbw 45, NIDOKING
+	dbw 45, FORRETRESS
+	dbw 45, CROBAT
+	dbw 47, JUMPLUFF
+	dbw 47, RATICATE
+	dbw 47, RHYDON
+	dbw 40, PUPITAR
 	end_grass_wildmons
 
 	def_grass_wildmons TOHJO_FALLS
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 35, VENOMOTH
-	db 35, STARMIE
-	db 34, PIKACHU
-	db 34, KADABRA
-	db 36, KANGASKHAN
-	db 36, KANGASKHAN
-	db 36, KANGASKHAN
-	db 30, LARVITAR
+	dbw 35, VENOMOTH
+	dbw 35, STARMIE
+	dbw 34, PIKACHU
+	dbw 34, KADABRA
+	dbw 36, KANGASKHAN
+	dbw 36, KANGASKHAN
+	dbw 36, KANGASKHAN
+	dbw 30, LARVITAR
 	; day
-	db 35, VENOMOTH
-	db 35, STARMIE
-	db 34, PIKACHU
-	db 34, KADABRA
-	db 36, KANGASKHAN
-	db 36, KANGASKHAN
-	db 36, KANGASKHAN
-	db 30, LARVITAR
+	dbw 35, VENOMOTH
+	dbw 35, STARMIE
+	dbw 34, PIKACHU
+	dbw 34, KADABRA
+	dbw 36, KANGASKHAN
+	dbw 36, KANGASKHAN
+	dbw 36, KANGASKHAN
+	dbw 30, LARVITAR
 	; nite
-	db 35, VENOMOTH
-	db 35, STARMIE
-	db 34, PIKACHU
-	db 34, KADABRA
-	db 36, KANGASKHAN
-	db 36, KANGASKHAN
-	db 36, KANGASKHAN
-	db 30, LARVITAR
+	dbw 35, VENOMOTH
+	dbw 35, STARMIE
+	dbw 34, PIKACHU
+	dbw 34, KADABRA
+	dbw 36, KANGASKHAN
+	dbw 36, KANGASKHAN
+	dbw 36, KANGASKHAN
+	dbw 30, LARVITAR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_1
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, SCIZOR
-	db 50, ELECTABUZZ
-	db 50, PIDGEOT
-	db 50, JYNX
-	db 50, CELEBI
-	db 50, CELEBI
-	db 50, CELEBI
-	db 45, DRAGONAIR
+	dbw 50, SCIZOR
+	dbw 50, ELECTABUZZ
+	dbw 50, PIDGEOT
+	dbw 50, JYNX
+	dbw 50, CELEBI
+	dbw 50, CELEBI
+	dbw 50, CELEBI
+	dbw 45, DRAGONAIR
 	; day
-	db 50, SCIZOR
-	db 50, ELECTABUZZ
-	db 50, PIDGEOT
-	db 50, JYNX
-	db 50, CELEBI
-	db 50, CELEBI
-	db 50, CELEBI
-	db 45, DRAGONAIR
+	dbw 50, SCIZOR
+	dbw 50, ELECTABUZZ
+	dbw 50, PIDGEOT
+	dbw 50, JYNX
+	dbw 50, CELEBI
+	dbw 50, CELEBI
+	dbw 50, CELEBI
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, GENGAR
-	db 50, CHANSEY
-	db 50, DITTO
-	db 50, JYNX
-	db 50, BLISSEY
-	db 50, BLISSEY
-	db 50, BLISSEY
-	db 45, DRAGONAIR
+	dbw 50, GENGAR
+	dbw 50, CHANSEY
+	dbw 50, DITTO
+	dbw 50, JYNX
+	dbw 50, BLISSEY
+	dbw 50, BLISSEY
+	dbw 50, BLISSEY
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_2
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, VULPIX
-	db 50, VULPIX
-	db 50, NINETALES
-	db 50, NINETALES
-	db 45, CHARIZARD
-	db 45, CHARIZARD
-	db 45, CHARIZARD
-	db 45, DRAGONAIR
+	dbw 50, VULPIX
+	dbw 50, VULPIX
+	dbw 50, NINETALES
+	dbw 50, NINETALES
+	dbw 45, CHARIZARD
+	dbw 45, CHARIZARD
+	dbw 45, CHARIZARD
+	dbw 45, DRAGONAIR
 	; day
-	db 50, MAGIKARP
-	db 50, MAGIKARP
-	db 50, GYARADOS
-	db 50, GYARADOS
-	db 45, CHARIZARD
-	db 45, CHARIZARD
-	db 45, CHARIZARD
-	db 45, DRAGONAIR
+	dbw 50, MAGIKARP
+	dbw 50, MAGIKARP
+	dbw 50, GYARADOS
+	dbw 50, GYARADOS
+	dbw 45, CHARIZARD
+	dbw 45, CHARIZARD
+	dbw 45, CHARIZARD
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, ZUBAT
-	db 50, ZUBAT
-	db 50, GOLBAT
-	db 50, GOLBAT
-	db 45, CHARIZARD
-	db 45, CHARIZARD
-	db 45, CHARIZARD
-	db 45, DRAGONAIR
+	dbw 50, ZUBAT
+	dbw 50, ZUBAT
+	dbw 50, GOLBAT
+	dbw 50, GOLBAT
+	dbw 45, CHARIZARD
+	dbw 45, CHARIZARD
+	dbw 45, CHARIZARD
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_3
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, ESPEON
-	db 50, PIDGEOT
-	db 50, NIDOQUEEN
-	db 50, CLEFABLE
-	db 48, BLASTOISE
-	db 48, BLASTOISE
-	db 48, BLASTOISE
-	db 45, DRAGONAIR
+	dbw 50, ESPEON
+	dbw 50, PIDGEOT
+	dbw 50, NIDOQUEEN
+	dbw 50, CLEFABLE
+	dbw 48, BLASTOISE
+	dbw 48, BLASTOISE
+	dbw 48, BLASTOISE
+	dbw 45, DRAGONAIR
 	; day
-	db 50, ESPEON
-	db 50, PIDGEOT
-	db 50, NIDOQUEEN
-	db 50, CLEFABLE
-	db 48, BLASTOISE
-	db 48, BLASTOISE
-	db 48, BLASTOISE
-	db 45, DRAGONAIR
+	dbw 50, ESPEON
+	dbw 50, PIDGEOT
+	dbw 50, NIDOQUEEN
+	dbw 50, CLEFABLE
+	dbw 48, BLASTOISE
+	dbw 48, BLASTOISE
+	dbw 48, BLASTOISE
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, NIDOQUEEN
-	db 50, CLEFABLE
-	db 50, UMBREON
-	db 50, UMBREON
-	db 48, BLASTOISE
-	db 48, BLASTOISE
-	db 48, BLASTOISE
-	db 45, DRAGONAIR
+	dbw 50, NIDOQUEEN
+	dbw 50, CLEFABLE
+	dbw 50, UMBREON
+	dbw 50, UMBREON
+	dbw 48, BLASTOISE
+	dbw 48, BLASTOISE
+	dbw 48, BLASTOISE
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_4
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, VICTREEBEL
-	db 50, VILEPLUME
-	db 50, PORYGON2
-	db 50, PORYGON2
-	db 45, VENUSAUR
-	db 45, VENUSAUR
-	db 45, VENUSAUR
-	db 45, DRAGONAIR
+	dbw 50, VICTREEBEL
+	dbw 50, VILEPLUME
+	dbw 50, PORYGON2
+	dbw 50, PORYGON2
+	dbw 45, VENUSAUR
+	dbw 45, VENUSAUR
+	dbw 45, VENUSAUR
+	dbw 45, DRAGONAIR
 	; day
-	db 50, VICTREEBEL
-	db 50, VILEPLUME
-	db 50, PORYGON2
-	db 50, PORYGON2
-	db 45, VENUSAUR
-	db 45, VENUSAUR
-	db 45, VENUSAUR
-	db 45, DRAGONAIR
+	dbw 50, VICTREEBEL
+	dbw 50, VILEPLUME
+	dbw 50, PORYGON2
+	dbw 50, PORYGON2
+	dbw 45, VENUSAUR
+	dbw 45, VENUSAUR
+	dbw 45, VENUSAUR
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, PINSIR
-	db 50, PINSIR
-	db 50, DITTO
-	db 50, DITTO
-	db 45, VENUSAUR
-	db 45, VENUSAUR
-	db 45, VENUSAUR
-	db 45, DRAGONAIR
+	dbw 50, PINSIR
+	dbw 50, PINSIR
+	dbw 50, DITTO
+	dbw 50, DITTO
+	dbw 45, VENUSAUR
+	dbw 45, VENUSAUR
+	dbw 45, VENUSAUR
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_5
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, BUTTERFREE
-	db 50, AERODACTYL
-	db 50, AIPOM
-	db 50, AIPOM
-	db 45, ALAKAZAM
-	db 45, ALAKAZAM
-	db 45, ALAKAZAM
-	db 45, DRAGONAIR
+	dbw 50, BUTTERFREE
+	dbw 50, AERODACTYL
+	dbw 50, AIPOM
+	dbw 50, AIPOM
+	dbw 45, ALAKAZAM
+	dbw 45, ALAKAZAM
+	dbw 45, ALAKAZAM
+	dbw 45, DRAGONAIR
 	; day
-	db 50, BUTTERFREE
-	db 50, AERODACTYL
-	db 50, AIPOM
-	db 50, AIPOM
-	db 48, ALAKAZAM
-	db 48, ALAKAZAM
-	db 48, ALAKAZAM
-	db 45, DRAGONAIR
+	dbw 50, BUTTERFREE
+	dbw 50, AERODACTYL
+	dbw 50, AIPOM
+	dbw 50, AIPOM
+	dbw 48, ALAKAZAM
+	dbw 48, ALAKAZAM
+	dbw 48, ALAKAZAM
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, BUTTERFREE
-	db 50, AERODACTYL
-	db 50, AIPOM
-	db 50, AIPOM
-	db 48, ALAKAZAM
-	db 48, ALAKAZAM
-	db 48, ALAKAZAM
-	db 45, DRAGONAIR
+	dbw 50, BUTTERFREE
+	dbw 50, AERODACTYL
+	dbw 50, AIPOM
+	dbw 50, AIPOM
+	dbw 48, ALAKAZAM
+	dbw 48, ALAKAZAM
+	dbw 48, ALAKAZAM
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_6
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, JYNX
-	db 50, CORSOLA
-	db 50, SLOWKING
-	db 50, SLOWKING
-	db 50, VAPOREON
-	db 50, VAPOREON
-	db 50, VAPOREON
-	db 45, DRAGONAIR
+	dbw 50, JYNX
+	dbw 50, CORSOLA
+	dbw 50, SLOWKING
+	dbw 50, SLOWKING
+	dbw 50, VAPOREON
+	dbw 50, VAPOREON
+	dbw 50, VAPOREON
+	dbw 45, DRAGONAIR
 	; day
-	db 50, JYNX
-	db 50, CORSOLA
-	db 50, SLOWKING
-	db 50, SLOWKING
-	db 50, FLAREON
-	db 50, FLAREON
-	db 50, FLAREON
-	db 45, DRAGONAIR
+	dbw 50, JYNX
+	dbw 50, CORSOLA
+	dbw 50, SLOWKING
+	dbw 50, SLOWKING
+	dbw 50, FLAREON
+	dbw 50, FLAREON
+	dbw 50, FLAREON
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, JYNX
-	db 50, CORSOLA
-	db 50, SLOWKING
-	db 50, SLOWKING
-	db 50, JOLTEON
-	db 50, JOLTEON
-	db 50, JOLTEON
-	db 45, DRAGONAIR
+	dbw 50, JYNX
+	dbw 50, CORSOLA
+	dbw 50, SLOWKING
+	dbw 50, SLOWKING
+	dbw 50, JOLTEON
+	dbw 50, JOLTEON
+	dbw 50, JOLTEON
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_7
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 47, MAGCARGO
-	db 47, PILOSWINE
-	db 48, LAPRAS
-	db 48, LAPRAS
-	db 50, AMPHAROS
-	db 50, AMPHAROS
-	db 50, AMPHAROS
-	db 45, DRAGONAIR
+	dbw 47, MAGCARGO
+	dbw 47, PILOSWINE
+	dbw 48, LAPRAS
+	dbw 48, LAPRAS
+	dbw 50, AMPHAROS
+	dbw 50, AMPHAROS
+	dbw 50, AMPHAROS
+	dbw 45, DRAGONAIR
 	; day
-	db 47, MAGCARGO
-	db 47, PILOSWINE
-	db 48, LAPRAS
-	db 48, LAPRAS
-	db 50, AMPHAROS
-	db 50, AMPHAROS
-	db 50, AMPHAROS
-	db 45, DRAGONAIR
+	dbw 47, MAGCARGO
+	dbw 47, PILOSWINE
+	dbw 48, LAPRAS
+	dbw 48, LAPRAS
+	dbw 50, AMPHAROS
+	dbw 50, AMPHAROS
+	dbw 50, AMPHAROS
+	dbw 45, DRAGONAIR
 	; nite
-	db 47, MAGCARGO
-	db 47, PILOSWINE
-	db 48, LAPRAS
-	db 48, LAPRAS
-	db 50, AMPHAROS
-	db 50, AMPHAROS
-	db 50, AMPHAROS
-	db 45, DRAGONAIR
+	dbw 47, MAGCARGO
+	dbw 47, PILOSWINE
+	dbw 48, LAPRAS
+	dbw 48, LAPRAS
+	dbw 50, AMPHAROS
+	dbw 50, AMPHAROS
+	dbw 50, AMPHAROS
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_8
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, ARTICUNO
-	db 50, ZAPDOS
-	db 50, MOLTRES
-	db 50, MOLTRES
-	db 52, BELLOSSOM
-	db 52, BELLOSSOM
-	db 52, BELLOSSOM
-	db 45, PUPITAR
+	dbw 50, ARTICUNO
+	dbw 50, ZAPDOS
+	dbw 50, MOLTRES
+	dbw 50, MOLTRES
+	dbw 52, BELLOSSOM
+	dbw 52, BELLOSSOM
+	dbw 52, BELLOSSOM
+	dbw 45, PUPITAR
 	; day
-	db 50, ARTICUNO
-	db 50, ZAPDOS
-	db 50, MOLTRES
-	db 50, MOLTRES
-	db 52, BELLOSSOM
-	db 52, BELLOSSOM
-	db 52, BELLOSSOM
-	db 45, PUPITAR
+	dbw 50, ARTICUNO
+	dbw 50, ZAPDOS
+	dbw 50, MOLTRES
+	dbw 50, MOLTRES
+	dbw 52, BELLOSSOM
+	dbw 52, BELLOSSOM
+	dbw 52, BELLOSSOM
+	dbw 45, PUPITAR
 	; nite
-	db 50, ARTICUNO
-	db 50, ZAPDOS
-	db 50, MOLTRES
-	db 50, MOLTRES
-	db 52, BELLOSSOM
-	db 52, BELLOSSOM
-	db 52, BELLOSSOM
-	db 45, PUPITAR
+	dbw 50, ARTICUNO
+	dbw 50, ZAPDOS
+	dbw 50, MOLTRES
+	dbw 50, MOLTRES
+	dbw 52, BELLOSSOM
+	dbw 52, BELLOSSOM
+	dbw 52, BELLOSSOM
+	dbw 45, PUPITAR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_9
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, MACHAMP
-	db 50, QWILFISH
-	db 48, TANGELA
-	db 48, TANGELA
-	db 47, URSARING
-	db 47, URSARING
-	db 47, URSARING
-	db 45, PUPITAR
+	dbw 50, MACHAMP
+	dbw 50, QWILFISH
+	dbw 48, TANGELA
+	dbw 48, TANGELA
+	dbw 47, URSARING
+	dbw 47, URSARING
+	dbw 47, URSARING
+	dbw 45, PUPITAR
 	; day
-	db 50, MACHAMP
-	db 50, QWILFISH
-	db 48, TANGELA
-	db 48, TANGELA
-	db 47, URSARING
-	db 47, URSARING
-	db 47, URSARING
-	db 45, PUPITAR
+	dbw 50, MACHAMP
+	dbw 50, QWILFISH
+	dbw 48, TANGELA
+	dbw 48, TANGELA
+	dbw 47, URSARING
+	dbw 47, URSARING
+	dbw 47, URSARING
+	dbw 45, PUPITAR
 	; nite
-	db 50, MACHAMP
-	db 50, QWILFISH
-	db 48, TANGELA
-	db 48, TANGELA
-	db 47, URSARING
-	db 47, URSARING
-	db 47, URSARING
-	db 45, PUPITAR
+	dbw 50, MACHAMP
+	dbw 50, QWILFISH
+	dbw 48, TANGELA
+	dbw 48, TANGELA
+	dbw 47, URSARING
+	dbw 47, URSARING
+	dbw 47, URSARING
+	dbw 45, PUPITAR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_10_NORTH
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, RAICHU
-	db 50, VILEPLUME
-	db 50, POLITOED
-	db 50, SEAKING
-	db 50, GOLEM
-	db 50, GOLEM
-	db 50, GOLEM
-	db 45, PUPITAR
+	dbw 50, RAICHU
+	dbw 50, VILEPLUME
+	dbw 50, POLITOED
+	dbw 50, SEAKING
+	dbw 50, GOLEM
+	dbw 50, GOLEM
+	dbw 50, GOLEM
+	dbw 45, PUPITAR
 	; day
-	db 50, RAICHU
-	db 50, VILEPLUME
-	db 50, POLITOED
-	db 50, SEAKING
-	db 50, GOLEM
-	db 50, GOLEM
-	db 50, GOLEM
-	db 45, PUPITAR
+	dbw 50, RAICHU
+	dbw 50, VILEPLUME
+	dbw 50, POLITOED
+	dbw 50, SEAKING
+	dbw 50, GOLEM
+	dbw 50, GOLEM
+	dbw 50, GOLEM
+	dbw 45, PUPITAR
 	; nite
-	db 50, RAICHU
-	db 50, VILEPLUME
-	db 50, POLITOED
-	db 50, SEAKING
-	db 50, GOLEM
-	db 50, GOLEM
-	db 50, GOLEM
-	db 45, PUPITAR
+	dbw 50, RAICHU
+	dbw 50, VILEPLUME
+	dbw 50, POLITOED
+	dbw 50, SEAKING
+	dbw 50, GOLEM
+	dbw 50, GOLEM
+	dbw 50, GOLEM
+	dbw 45, PUPITAR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_11
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, JYNX
-	db 50, PORYGON2
-	db 47, LAPRAS
-	db 49, JUMPLUFF
-	db 50, RHYDON
-	db 50, RHYDON
-	db 50, RHYDON
-	db 45, DRAGONAIR
+	dbw 50, JYNX
+	dbw 50, PORYGON2
+	dbw 47, LAPRAS
+	dbw 49, JUMPLUFF
+	dbw 50, RHYDON
+	dbw 50, RHYDON
+	dbw 50, RHYDON
+	dbw 45, DRAGONAIR
 	; day
-	db 50, JYNX
-	db 50, PORYGON2
-	db 47, LAPRAS
-	db 49, JUMPLUFF
-	db 50, RHYDON
-	db 50, RHYDON
-	db 50, RHYDON
-	db 45, DRAGONAIR
+	dbw 50, JYNX
+	dbw 50, PORYGON2
+	dbw 47, LAPRAS
+	dbw 49, JUMPLUFF
+	dbw 50, RHYDON
+	dbw 50, RHYDON
+	dbw 50, RHYDON
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, TAUROS
-	db 50, DITTO
-	db 47, LAPRAS
-	db 49, RATICATE
-	db 50, RHYDON
-	db 50, RHYDON
-	db 50, RHYDON
-	db 45, DRAGONAIR
+	dbw 50, TAUROS
+	dbw 50, DITTO
+	dbw 47, LAPRAS
+	dbw 49, RATICATE
+	dbw 50, RHYDON
+	dbw 50, RHYDON
+	dbw 50, RHYDON
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_13
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, HITMONCHAN
-	db 50, HITMONLEE
-	db 50, PIDGEOT
-	db 50, CELEBI
-	db 50, PINSIR
-	db 50, PINSIR
-	db 50, PINSIR
-	db 45, DRAGONAIR
+	dbw 50, HITMONCHAN
+	dbw 50, HITMONLEE
+	dbw 50, PIDGEOT
+	dbw 50, CELEBI
+	dbw 50, PINSIR
+	dbw 50, PINSIR
+	dbw 50, PINSIR
+	dbw 45, DRAGONAIR
 	; day
-	db 50, HITMONCHAN
-	db 50, HITMONLEE
-	db 50, PIDGEOT
-	db 50, CELEBI
-	db 50, PINSIR
-	db 50, PINSIR
-	db 50, PINSIR
-	db 45, DRAGONAIR
+	dbw 50, HITMONCHAN
+	dbw 50, HITMONLEE
+	dbw 50, PIDGEOT
+	dbw 50, CELEBI
+	dbw 50, PINSIR
+	dbw 50, PINSIR
+	dbw 50, PINSIR
+	dbw 45, DRAGONAIR
 	; nite
-	db 49, MILTANK
-	db 49, BLISSEY
-	db 50, CROBAT
-	db 50, YANMA
-	db 50, PINSIR
-	db 50, PINSIR
-	db 50, PINSIR
-	db 45, DRAGONAIR
+	dbw 49, MILTANK
+	dbw 49, BLISSEY
+	dbw 50, CROBAT
+	dbw 50, YANMA
+	dbw 50, PINSIR
+	dbw 50, PINSIR
+	dbw 50, PINSIR
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_14
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, CORSOLA
-	db 50, SLOWKING
-	db 50, PINSIR
-	db 50, WIGGLYTUFF
-	db 50, VICTREEBEL
-	db 50, VICTREEBEL
-	db 50, VICTREEBEL
-	db 45, DRAGONAIR
+	dbw 50, CORSOLA
+	dbw 50, SLOWKING
+	dbw 50, PINSIR
+	dbw 50, WIGGLYTUFF
+	dbw 50, VICTREEBEL
+	dbw 50, VICTREEBEL
+	dbw 50, VICTREEBEL
+	dbw 45, DRAGONAIR
 	; day
-	db 50, CORSOLA
-	db 50, SLOWKING
-	db 50, PINSIR
-	db 50, WIGGLYTUFF
-	db 50, VICTREEBEL
-	db 50, VICTREEBEL
-	db 50, VICTREEBEL
-	db 45, DRAGONAIR
+	dbw 50, CORSOLA
+	dbw 50, SLOWKING
+	dbw 50, PINSIR
+	dbw 50, WIGGLYTUFF
+	dbw 50, VICTREEBEL
+	dbw 50, VICTREEBEL
+	dbw 50, VICTREEBEL
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, CHANSEY
-	db 50, CHANSEY
-	db 50, PINSIR
-	db 50, WIGGLYTUFF
-	db 50, VICTREEBEL
-	db 50, VICTREEBEL
-	db 50, VICTREEBEL
-	db 45, DRAGONAIR
+	dbw 50, CHANSEY
+	dbw 50, CHANSEY
+	dbw 50, PINSIR
+	dbw 50, WIGGLYTUFF
+	dbw 50, VICTREEBEL
+	dbw 50, VICTREEBEL
+	dbw 50, VICTREEBEL
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_15
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, CORSOLA
-	db 50, SLOWKING
-	db 47, PILOSWINE
-	db 47, MAGCARGO
-	db 50, STEELIX
-	db 50, STEELIX
-	db 50, STEELIX
-	db 45, DRAGONAIR
+	dbw 50, CORSOLA
+	dbw 50, SLOWKING
+	dbw 47, PILOSWINE
+	dbw 47, MAGCARGO
+	dbw 50, STEELIX
+	dbw 50, STEELIX
+	dbw 50, STEELIX
+	dbw 45, DRAGONAIR
 	; day
-	db 50, CORSOLA
-	db 50, SLOWKING
-	db 47, PILOSWINE
-	db 47, MAGCARGO
-	db 50, STEELIX
-	db 50, STEELIX
-	db 50, STEELIX
-	db 45, DRAGONAIR
+	dbw 50, CORSOLA
+	dbw 50, SLOWKING
+	dbw 47, PILOSWINE
+	dbw 47, MAGCARGO
+	dbw 50, STEELIX
+	dbw 50, STEELIX
+	dbw 50, STEELIX
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, CHANSEY
-	db 50, CHANSEY
-	db 47, PILOSWINE
-	db 47, MAGCARGO
-	db 50, STEELIX
-	db 50, STEELIX
-	db 50, STEELIX
-	db 45, DRAGONAIR
+	dbw 50, CHANSEY
+	dbw 50, CHANSEY
+	dbw 47, PILOSWINE
+	dbw 47, MAGCARGO
+	dbw 50, STEELIX
+	dbw 50, STEELIX
+	dbw 50, STEELIX
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_16
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, SCIZOR
-	db 50, ELECTABUZZ
-	db 50, PORYGON2
-	db 50, PORYGON2
-	db 48, LAPRAS
-	db 48, LAPRAS
-	db 48, LAPRAS
-	db 45, DRAGONAIR
+	dbw 50, SCIZOR
+	dbw 50, ELECTABUZZ
+	dbw 50, PORYGON2
+	dbw 50, PORYGON2
+	dbw 48, LAPRAS
+	dbw 48, LAPRAS
+	dbw 48, LAPRAS
+	dbw 45, DRAGONAIR
 	; day
-	db 50, SCIZOR
-	db 50, ELECTABUZZ
-	db 50, PORYGON2
-	db 50, PORYGON2
-	db 48, LAPRAS
-	db 48, LAPRAS
-	db 48, LAPRAS
-	db 45, DRAGONAIR
+	dbw 50, SCIZOR
+	dbw 50, ELECTABUZZ
+	dbw 50, PORYGON2
+	dbw 50, PORYGON2
+	dbw 48, LAPRAS
+	dbw 48, LAPRAS
+	dbw 48, LAPRAS
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, GENGAR
-	db 50, CHANSEY
-	db 50, DITTO
-	db 50, DITTO
-	db 48, LAPRAS
-	db 48, LAPRAS
-	db 48, LAPRAS
-	db 45, DRAGONAIR
+	dbw 50, GENGAR
+	dbw 50, CHANSEY
+	dbw 50, DITTO
+	dbw 50, DITTO
+	dbw 48, LAPRAS
+	dbw 48, LAPRAS
+	dbw 48, LAPRAS
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_17
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 47, EXEGGUTOR
-	db 50, JYNX
-	db 50, TAUROS
-	db 50, PIDGEOT
-	db 51, LAPRAS
-	db 51, LAPRAS
-	db 51, LAPRAS
-	db 51, LAPRAS
+	dbw 47, EXEGGUTOR
+	dbw 50, JYNX
+	dbw 50, TAUROS
+	dbw 50, PIDGEOT
+	dbw 51, LAPRAS
+	dbw 51, LAPRAS
+	dbw 51, LAPRAS
+	dbw 51, LAPRAS
 	; day
-	db 47, EXEGGUTOR
-	db 50, JYNX
-	db 50, TAUROS
-	db 50, PIDGEOT
-	db 51, LAPRAS
-	db 51, LAPRAS
-	db 51, LAPRAS
-	db 51, LAPRAS
+	dbw 47, EXEGGUTOR
+	dbw 50, JYNX
+	dbw 50, TAUROS
+	dbw 50, PIDGEOT
+	dbw 51, LAPRAS
+	dbw 51, LAPRAS
+	dbw 51, LAPRAS
+	dbw 51, LAPRAS
 	; nite
-	db 47, EXEGGUTOR
-	db 50, JYNX
-	db 50, TAUROS
-	db 50, PIDGEOT
-	db 51, LAPRAS
-	db 51, LAPRAS
-	db 51, LAPRAS
-	db 51, LAPRAS
+	dbw 47, EXEGGUTOR
+	dbw 50, JYNX
+	dbw 50, TAUROS
+	dbw 50, PIDGEOT
+	dbw 51, LAPRAS
+	dbw 51, LAPRAS
+	dbw 51, LAPRAS
+	dbw 51, LAPRAS
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_18
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, JYNX
-	db 50, JYNX
-	db 50, CELEBI
-	db 50, PIDGEOT
-	db 49, JUMPLUFF
-	db 49, JUMPLUFF
-	db 49, JUMPLUFF
-	db 49, JUMPLUFF
+	dbw 50, JYNX
+	dbw 50, JYNX
+	dbw 50, CELEBI
+	dbw 50, PIDGEOT
+	dbw 49, JUMPLUFF
+	dbw 49, JUMPLUFF
+	dbw 49, JUMPLUFF
+	dbw 49, JUMPLUFF
 	; day
-	db 50, JYNX
-	db 50, JYNX
-	db 50, CELEBI
-	db 50, PIDGEOT
-	db 49, JUMPLUFF
-	db 49, JUMPLUFF
-	db 49, JUMPLUFF
-	db 49, JUMPLUFF
+	dbw 50, JYNX
+	dbw 50, JYNX
+	dbw 50, CELEBI
+	dbw 50, PIDGEOT
+	dbw 49, JUMPLUFF
+	dbw 49, JUMPLUFF
+	dbw 49, JUMPLUFF
+	dbw 49, JUMPLUFF
 	; nite
-	db 50, JYNX
-	db 50, JYNX
-	db 50, CELEBI
-	db 50, PIDGEOT
-	db 49, BLISSEY
-	db 49, BLISSEY
-	db 49, BLISSEY
-	db 49, BLISSEY
+	dbw 50, JYNX
+	dbw 50, JYNX
+	dbw 50, CELEBI
+	dbw 50, PIDGEOT
+	dbw 49, BLISSEY
+	dbw 49, BLISSEY
+	dbw 49, BLISSEY
+	dbw 49, BLISSEY
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_21
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
 	; day
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
 	; nite
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
-	db 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
+	dbw 50, SKARMORY
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_22
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 49, SKARMORY
-	db 50, CELEBI
-	db 50, VICTREEBEL
-	db 50, VICTREEBEL
-	db 51, RATICATE
-	db 51, RATICATE
-	db 51, RATICATE
-	db 45, PUPITAR
+	dbw 49, SKARMORY
+	dbw 50, CELEBI
+	dbw 50, VICTREEBEL
+	dbw 50, VICTREEBEL
+	dbw 51, RATICATE
+	dbw 51, RATICATE
+	dbw 51, RATICATE
+	dbw 45, PUPITAR
 	; day
-	db 49, SKARMORY
-	db 50, CELEBI
-	db 50, VICTREEBEL
-	db 50, VICTREEBEL
-	db 51, RATICATE
-	db 51, RATICATE
-	db 51, RATICATE
-	db 45, PUPITAR
+	dbw 49, SKARMORY
+	dbw 50, CELEBI
+	dbw 50, VICTREEBEL
+	dbw 50, VICTREEBEL
+	dbw 51, RATICATE
+	dbw 51, RATICATE
+	dbw 51, RATICATE
+	dbw 45, PUPITAR
 	; nite
-	db 49, SKARMORY
-	db 50, YANMA
-	db 50, PINSIR
-	db 50, PINSIR
-	db 51, RATICATE
-	db 51, RATICATE
-	db 51, RATICATE
-	db 45, PUPITAR
+	dbw 49, SKARMORY
+	dbw 50, YANMA
+	dbw 50, PINSIR
+	dbw 50, PINSIR
+	dbw 51, RATICATE
+	dbw 51, RATICATE
+	dbw 51, RATICATE
+	dbw 45, PUPITAR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_24
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, HITMONCHAN
-	db 50, HITMONLEE
-	db 50, RAICHU
-	db 50, RAICHU
-	db 50, VILEPLUME
-	db 50, VILEPLUME
-	db 50, VILEPLUME
-	db 45, DRAGONAIR
+	dbw 50, HITMONCHAN
+	dbw 50, HITMONLEE
+	dbw 50, RAICHU
+	dbw 50, RAICHU
+	dbw 50, VILEPLUME
+	dbw 50, VILEPLUME
+	dbw 50, VILEPLUME
+	dbw 45, DRAGONAIR
 	; day
-	db 50, HITMONCHAN
-	db 50, HITMONLEE
-	db 50, RAICHU
-	db 50, RAICHU
-	db 50, VILEPLUME
-	db 50, VILEPLUME
-	db 50, VILEPLUME
-	db 45, DRAGONAIR
+	dbw 50, HITMONCHAN
+	dbw 50, HITMONLEE
+	dbw 50, RAICHU
+	dbw 50, RAICHU
+	dbw 50, VILEPLUME
+	dbw 50, VILEPLUME
+	dbw 50, VILEPLUME
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, HITMONCHAN
-	db 50, HITMONLEE
-	db 50, RAICHU
-	db 50, RAICHU
-	db 50, VILEPLUME
-	db 50, VILEPLUME
-	db 50, VILEPLUME
-	db 45, DRAGONAIR
+	dbw 50, HITMONCHAN
+	dbw 50, HITMONLEE
+	dbw 50, RAICHU
+	dbw 50, RAICHU
+	dbw 50, VILEPLUME
+	dbw 50, VILEPLUME
+	dbw 50, VILEPLUME
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_25
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 50, BEEDRILL
-	db 50, WEEZING
-	db 50, MACHAMP
-	db 50, BUTTERFREE
-	db 50, BLASTOISE
-	db 50, BLASTOISE
-	db 50, BLASTOISE
-	db 45, DRAGONAIR
+	dbw 50, BEEDRILL
+	dbw 50, WEEZING
+	dbw 50, MACHAMP
+	dbw 50, BUTTERFREE
+	dbw 50, BLASTOISE
+	dbw 50, BLASTOISE
+	dbw 50, BLASTOISE
+	dbw 45, DRAGONAIR
 	; day
-	db 50, BEEDRILL
-	db 50, WEEZING
-	db 50, MACHAMP
-	db 50, BUTTERFREE
-	db 50, BLASTOISE
-	db 50, BLASTOISE
-	db 50, BLASTOISE
-	db 45, DRAGONAIR
+	dbw 50, BEEDRILL
+	dbw 50, WEEZING
+	dbw 50, MACHAMP
+	dbw 50, BUTTERFREE
+	dbw 50, BLASTOISE
+	dbw 50, BLASTOISE
+	dbw 50, BLASTOISE
+	dbw 45, DRAGONAIR
 	; nite
-	db 50, CROBAT
-	db 50, YANMA
-	db 50, CROBAT
-	db 50, YANMA
-	db 50, BLASTOISE
-	db 50, BLASTOISE
-	db 50, BLASTOISE
-	db 45, DRAGONAIR
+	dbw 50, CROBAT
+	dbw 50, YANMA
+	dbw 50, CROBAT
+	dbw 50, YANMA
+	dbw 50, BLASTOISE
+	dbw 50, BLASTOISE
+	dbw 50, BLASTOISE
+	dbw 45, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_26
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 44, PIDGEOT
-	db 44, CELEBI
-	db 45, ALAKAZAM
-	db 45, SKARMORY
-	db 42, XATU
-	db 42, XATU
-	db 42, XATU
-	db 35, DRAGONAIR
+	dbw 44, PIDGEOT
+	dbw 44, CELEBI
+	dbw 45, ALAKAZAM
+	dbw 45, SKARMORY
+	dbw 42, XATU
+	dbw 42, XATU
+	dbw 42, XATU
+	dbw 35, DRAGONAIR
 	; day
-	db 44, PIDGEOT
-	db 44, CELEBI
-	db 45, ALAKAZAM
-	db 45, SKARMORY
-	db 42, XATU
-	db 42, XATU
-	db 42, XATU
-	db 35, DRAGONAIR
+	dbw 44, PIDGEOT
+	dbw 44, CELEBI
+	dbw 45, ALAKAZAM
+	dbw 45, SKARMORY
+	dbw 42, XATU
+	dbw 42, XATU
+	dbw 42, XATU
+	dbw 35, DRAGONAIR
 	; nite
-	db 44, JYNX
-	db 44, PINSIR
-	db 45, YANMA
-	db 45, SKARMORY
-	db 42, SUNFLORA
-	db 42, SUNFLORA
-	db 42, SUNFLORA
-	db 35, DRAGONAIR
+	dbw 44, JYNX
+	dbw 44, PINSIR
+	dbw 45, YANMA
+	dbw 45, SKARMORY
+	dbw 42, SUNFLORA
+	dbw 42, SUNFLORA
+	dbw 42, SUNFLORA
+	dbw 35, DRAGONAIR
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_27
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 43, ELECTABUZZ
-	db 43, SCIZOR
-	db 42, WEEPINBELL
-	db 42, GLIGAR
-	db 41, PORYGON2
-	db 41, PORYGON2
-	db 41, PORYGON2
-	db 35, DRAGONAIR
+	dbw 43, ELECTABUZZ
+	dbw 43, SCIZOR
+	dbw 42, WEEPINBELL
+	dbw 42, GLIGAR
+	dbw 41, PORYGON2
+	dbw 41, PORYGON2
+	dbw 41, PORYGON2
+	dbw 35, DRAGONAIR
 	; day
-	db 43, ELECTABUZZ
-	db 43, SCIZOR
-	db 42, WEEPINBELL
-	db 42, GLIGAR
-	db 41, PORYGON2
-	db 41, PORYGON2
-	db 41, PORYGON2
-	db 35, DRAGONAIR
+	dbw 43, ELECTABUZZ
+	dbw 43, SCIZOR
+	dbw 42, WEEPINBELL
+	dbw 42, GLIGAR
+	dbw 41, PORYGON2
+	dbw 41, PORYGON2
+	dbw 41, PORYGON2
+	dbw 35, DRAGONAIR
 	; nite
-	db 43, CHANSEY
-	db 43, GENGAR
-	db 42, SMEARGLE
-	db 42, HITMONTOP
-	db 41, DITTO
-	db 41, DITTO
-	db 41, DITTO
-	db 35, DRAGONAIR
+	dbw 43, CHANSEY
+	dbw 43, GENGAR
+	dbw 42, SMEARGLE
+	dbw 42, HITMONTOP
+	dbw 41, DITTO
+	dbw 41, DITTO
+	dbw 41, DITTO
+	dbw 35, DRAGONAIR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_28
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 56, PIDGEOT
-	db 56, CELEBI
-	db 57, ESPEON
-	db 57, RHYDON
-	db 56, ELECTABUZZ
-	db 56, ELECTABUZZ
-	db 56, ELECTABUZZ
-	db 56, ELECTABUZZ
+	dbw 56, PIDGEOT
+	dbw 56, CELEBI
+	dbw 57, ESPEON
+	dbw 57, RHYDON
+	dbw 56, ELECTABUZZ
+	dbw 56, ELECTABUZZ
+	dbw 56, ELECTABUZZ
+	dbw 56, ELECTABUZZ
 	; day
-	db 56, PIDGEOT
-	db 56, CELEBI
-	db 57, ESPEON
-	db 57, RHYDON
-	db 56, ELECTABUZZ
-	db 56, ELECTABUZZ
-	db 56, ELECTABUZZ
-	db 56, ELECTABUZZ
+	dbw 56, PIDGEOT
+	dbw 56, CELEBI
+	dbw 57, ESPEON
+	dbw 57, RHYDON
+	dbw 56, ELECTABUZZ
+	dbw 56, ELECTABUZZ
+	dbw 56, ELECTABUZZ
+	dbw 56, ELECTABUZZ
 	; nite
-	db 56, CROBAT
-	db 56, YANMA
-	db 57, UMBREON
-	db 57, RHYDON
-	db 56, RATICATE
-	db 56, RATICATE
-	db 56, RATICATE
-	db 56, RATICATE
+	dbw 56, CROBAT
+	dbw 56, YANMA
+	dbw 57, UMBREON
+	dbw 57, RHYDON
+	dbw 56, RATICATE
+	dbw 56, RATICATE
+	dbw 56, RATICATE
+	dbw 56, RATICATE
 	end_grass_wildmons
 
-	db -1 ; end
+	dbw -1 ; end

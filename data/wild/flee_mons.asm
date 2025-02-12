@@ -2,23 +2,23 @@ FleeMons:
 ; referenced by TryEnemyFlee and FastBallMultiplier
 
 SometimesFleeMons:
-	db VENONAT
-	db VENOMOTH
-	db MAGNEMITE
-	db MAGNETON
-	db EEVEE
-	db DRATINI
-	db DRAGONAIR
-	db LARVITAR
-	db PUPITAR
-	db -1
+	dw VENONAT
+	dw VENOMOTH
+	dw MAGNEMITE
+	dw MAGNETON
+	dw EEVEE
+	dw DRATINI
+	dw DRAGONAIR
+	dw LARVITAR
+	dw PUPITAR
+	dw -1
 
 OftenFleeMons:
-	db CUBONE
-	db DELIBIRD
-	db -1
+	dw CUBONE
+	dw DELIBIRD
+	dw -1
 
 AlwaysFleeMons:
-	db RAIKOU
-	db ENTEI
-	db -1
+	dw RAIKOU
+	dw ENTEI
+	dw -1
