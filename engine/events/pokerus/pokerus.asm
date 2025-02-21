@@ -123,14 +123,14 @@ GivePokerusAndConvertBerries:
 
 ConvertBerriesToBerryJuice:
 ; If we haven't been to Goldenrod City at least once,
-; prevent Shuckle from turning held Berry into Berry Juice.
+; prevent CSuika (Smoochum) from turning held Berry into Berry Juice.
 	ld hl, wStatusFlags2
 	bit STATUSFLAGS2_REACHED_GOLDENROD_F, [hl]
 	ret z
 	call Random
 	cp 1 out_of 16 ; 6.25% chance
 	ret nc
-	ld hl, SHUCKLE
+	ld hl, SMOOCHUM
 	call GetPokemonIDFromIndex
 	ld [wTempSpecies], a
 	ld hl, wPartyMons
