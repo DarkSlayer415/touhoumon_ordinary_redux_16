@@ -1,13 +1,13 @@
 NurseMornText:
 	text "Good morning!"
 	line "Welcome to our"
-	cont "#MON CENTER."
+	cont "Eirin Center!"
 	done
 
 NurseDayText:
 	text "Hello!"
 	line "Welcome to our"
-	cont "#MON CENTER."
+	cont "Eirin Center!"
 	done
 
 NurseNiteText:
@@ -15,7 +15,7 @@ NurseNiteText:
 	line "You're out late."
 
 	para "Welcome to our"
-	line "#MON CENTER."
+	line "Eirin Center!"
 	done
 
 PokeComNurseMornText:
@@ -71,14 +71,14 @@ NurseReturnPokemonText:
 	line "fully healed."
 	done
 
-NurseGoodbyeText:
-	text "We hope to see you"
-	line "again."
+NurseReturnPokemonShortText:
+	text "Your #MON are"
+	line "fully healed."
 	done
 
-; not used
+NurseGoodbyeText:
 	text "We hope to see you"
-	line "again."
+	line "again!"
 	done
 
 NursePokerusText:
@@ -180,38 +180,21 @@ HomepageText:
 	line "updated…"
 	done
 
-; not used
-	text "#MON RADIO!"
-
-	para "Call in with your"
-	line "requests now!"
-	done
-
 TrashCanText:
 	text "There's nothing in"
 	line "here…"
 	done
 
-; not used
-	text "A #MON may be"
-	line "able to move this."
-	done
-
-; not used
-	text "Maybe a #MON"
-	line "can break this."
-	done
-
 PokecenterSignText:
 	text "Heal Your #MON!"
-	line "#MON CENTER"
+	line "Eirin Center"
 	done
 
 MartSignText:
 	text "For All Your"
 	line "#MON Needs"
 
-	para "#MON MART"
+	para "KOURIN MART"
 	done
 
 ContestResults_ReadyToJudgeText:

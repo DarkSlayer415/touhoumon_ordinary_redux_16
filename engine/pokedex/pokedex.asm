@@ -1984,14 +1984,14 @@ Pokedex_DisplayModeDescription:
 
 .OldMode:
 	db   "<PK><MN> are listed by"
-	next "official type.@"
+	next "index order.@"
 
 .ABCMode:
 	db   "<PK><MN> are listed"
-	next "alphabetically.@"
+	next "by Touhou game.@"
 
 .UnownMode:
-	db   "UNOWN are listed"
+	db   "Kosuzu are listed"
 	next "in catching order.@"
 
 Pokedex_DisplayChangingModesMessage:

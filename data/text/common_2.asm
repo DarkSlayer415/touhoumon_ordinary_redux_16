@@ -305,47 +305,45 @@ _CantUseItemText::
 _UseCutText::
 	text_ram wStringBuffer2
 	text " used"
-	line "CUT!"
+	line "Cut!"
 	prompt
 
 _CutNothingText::
 	text "There's nothing to"
-	line "CUT here."
+	line "cut here."
 	prompt
 
 _BlindingFlashText::
-	text "A blinding FLASH"
+	text "A blinding Flash"
 	line "lights the area!@"
 	text_promptbutton
 	text_end
 
-	text_end ; unreferenced
-
 _UsedSurfText::
 	text_ram wStringBuffer2
 	text " used"
-	line "SURF!"
+	line "Surf!"
 	done
 
 _CantSurfText::
-	text "You can't SURF"
+	text "You can't Surf"
 	line "here."
 	prompt
 
 _AlreadySurfingText::
 	text "You're already"
-	line "SURFING."
+	line "surfing."
 	prompt
 
 _AskSurfText::
 	text "The water is calm."
-	line "Want to SURF?"
+	line "Want to Surf?"
 	done
 
 _UseWaterfallText::
 	text_ram wStringBuffer2
 	text " used"
-	line "WATERFALL!"
+	line "Waterfall!"
 	done
 
 _HugeWaterfallText::
@@ -355,18 +353,18 @@ _HugeWaterfallText::
 
 _AskWaterfallText::
 	text "Do you want to use"
-	line "WATERFALL?"
+	line "Waterfall?"
 	done
 
 _UseDigText::
 	text_ram wStringBuffer2
 	text " used"
-	line "DIG!"
+	line "Dig!"
 	done
 
 _UseEscapeRopeText::
 	text "<PLAYER> used an"
-	line "ESCAPE ROPE."
+	line "Escape Rope."
 	done
 
 _CantUseDigText::
@@ -388,13 +386,13 @@ _CantUseTeleportText::
 
 _AlreadyUsingStrengthText::
 	text "A #MON is using"
-	line "STRENGTH already."
+	line "Strength already."
 	prompt
 
 _UseStrengthText::
 	text_ram wStringBuffer2
 	text " used"
-	line "STRENGTH!"
+	line "Strength!"
 	done
 
 _MoveBoulderText::
@@ -408,7 +406,7 @@ _AskStrengthText::
 	line "able to move this."
 
 	para "Want to use"
-	line "STRENGTH?"
+	line "Strength?"
 	done
 
 _BouldersMoveText::
@@ -424,7 +422,7 @@ _BouldersMayMoveText::
 _UseWhirlpoolText::
 	text_ram wStringBuffer2
 	text " used"
-	line "WHIRLPOOL!"
+	line "Whirlpool!"
 	prompt
 
 _MayPassWhirlpoolText::
@@ -440,13 +438,13 @@ _AskWhirlpoolText::
 	line "the way."
 
 	para "Want to use"
-	line "WHIRLPOOL?"
+	line "Whirlpool?"
 	done
 
 _UseHeadbuttText::
 	text_ram wStringBuffer2
 	text " did a"
-	line "HEADBUTT!"
+	line "Headbutt!"
 	prompt
 
 _HeadbuttNothingText::
@@ -457,14 +455,14 @@ _AskHeadbuttText::
 	text "A #MON could be"
 	line "in this tree."
 
-	para "Want to HEADBUTT"
+	para "Want to Headbutt"
 	line "it?"
 	done
 
 _UseRockSmashText::
 	text_ram wStringBuffer2
 	text " used"
-	line "ROCK SMASH!"
+	line "Rock Smash!"
 	prompt
 
 _MaySmashText::
@@ -476,8 +474,8 @@ _AskRockSmashText::
 	text "This rock looks"
 	line "breakable."
 
-	para "Want to use ROCK"
-	line "SMASH?"
+	para "Want to use Rock"
+	line "Smash?"
 	done
 
 _RodBiteText::
@@ -515,14 +513,14 @@ _GotOffBikeText::
 
 _AskCutText::
 	text "This tree can be"
-	line "CUT!"
+	line "Cut!"
 
-	para "Want to use CUT?"
+	para "Want to use Cut?"
 	done
 
 _CanCutText::
 	text "This tree can be"
-	line "CUT!"
+	line "Cut!"
 	done
 
 _FoundItemText::
@@ -541,6 +539,40 @@ _CantCarryItemText::
 _WhitedOutText::
 	text "<PLAYER> is out of"
 	line "useable #MON!"
+
+	para "<PLAYER> whited"
+	line "out!"
+	done
+	
+_WhitedOutToWildMonText::
+	text "<PLAYER> is out of"
+	line "useable #MON!"
+
+	para "<PLAYER> panicked"
+	line "and dropped"
+	cont "¥@"
+	text_decimal hMoneyTemp, 3, 6
+	text "…"
+
+	para "<……><……><……>"
+	line "<……><……><……>"
+
+	para "<PLAYER> whited"
+	line "out!"
+	done
+
+_WhitedOutToTrainerText::
+	text "<PLAYER> is out of"
+	line "useable #MON!"
+
+	para "<PLAYER> paid"
+	line "¥@"
+	text_decimal hMoneyTemp, 3, 6
+	text " to the"
+	cont "winner…"
+
+	para "<……><……><……>"
+	line "<……><……><……>"
 
 	para "<PLAYER> whited"
 	line "out!"
@@ -663,8 +695,8 @@ _YouCantUseItInABattleText::
 	prompt
 
 _AreYouABoyOrAreYouAGirlText::
-	text "Are you a boy?"
-	line "Or are you a girl?"
+	text "Are you girlish?"
+	line "Or tomboyish?"
 	done
 
 Text_BattleEffectActivate::
@@ -672,8 +704,6 @@ Text_BattleEffectActivate::
 	line "@"
 	text_ram wStringBuffer2
 	text_end
-
-	text_end ; unreferenced
 
 _BattleStatWentWayUpText::
 	text_pause
@@ -689,8 +719,6 @@ Text_BattleFoeEffectActivate::
 	line "@"
 	text_ram wStringBuffer2
 	text_end
-
-	text_end ; unreferenced
 
 _BattleStatSharplyFellText::
 	text_pause
@@ -771,8 +799,6 @@ _BreedEggHatchText::
 	sound_caught_mon
 	text_promptbutton
 	text_end
-
-	text_end ; unreferenced
 
 _BreedAskNicknameText::
 	text "Give a nickname to"
@@ -863,29 +889,6 @@ _MailMovedFromBoxText::
 	text "The MAIL was moved"
 	line "from the MAILBOX."
 	prompt
-
-_YesPromptText:: ; unreferenced
-	text "Yes"
-	prompt
-
-_NoPromptText:: ; unreferenced
-	text "No"
-	prompt
-
-_AnimationTypeText:: ; unreferenced
-	text_decimal wcf64, 1, 3
-	text " @"
-	text_ram wStringBuffer1
-	text_start
-	line "Animation type @"
-	text_ram wStringBuffer2
-	text_end
-
-	text_end ; unreferenced
-
-_MonNumberText:: ; unreferenced
-	text "#MON number?"
-	done
 
 _WasSentToBillsPCText::
 	text_ram wStringBuffer1
@@ -1028,8 +1031,6 @@ _KarpGuruRecordText::
 	text_ram wMagikarpRecordHoldersName
 	text_promptbutton
 	text_end
-
-	text_end ; unreferenced
 
 _LuckyNumberMatchPartyText::
 	text "Congratulations!"
@@ -1187,7 +1188,7 @@ _OakRating01::
 _OakRating02::
 	text "Good. I see you"
 	line "understand how to"
-	cont "use # BALLS."
+	cont "use # ORBS."
 	done
 
 _OakRating03::
@@ -1260,7 +1261,7 @@ _OakRating11::
 
 _OakRating12::
 	text "Have you met KURT?"
-	line "His custom BALLS"
+	line "His custom ORBS"
 	cont "should help."
 	done
 
@@ -1321,27 +1322,6 @@ _OakRating19::
 _OakPCText4::
 	text "The link to PROF."
 	line "OAK's PC closed."
-	done
-
-_TrainerRankingExplanationText:: ; unreferenced
-	text "Triple-theme"
-	line "trainer ranking!"
-
-	para "The SAVE file you"
-	line "just sent might"
-	cont "make the rankings!"
-
-	para ""
-	done
-
-_TrainerRankingNoDataText:: ; unreferenced
-	text "There is no"
-	line "ranking data."
-
-	para "Link to obtain"
-	line "ranking data."
-
-	para ""
 	done
 
 _MemoryGameYeahText::
@@ -1522,8 +1502,6 @@ _OakText2::
 _OakText3::
 	text_promptbutton
 	text_end
-
-	text_end ; unreferenced
 
 _OakText4::
 	text "People and #MON"
