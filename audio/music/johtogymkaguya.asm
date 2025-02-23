@@ -3,7 +3,8 @@
 ;Version 5.2.0 (16-Nov-2022)
 ;Visit github.com/TriteHexagon/Midi2ASM-Converter for up-to-date versions.
 ;Original remix and MIDI by PaterDM (ぱたー#3586)
-;Original compositions: Battle! (Gym Leader—Johto Version) by Junichi Masuda
+;Original compositions: Battle! (Gym Leader—Johto Version) by Junichi Masuda 
+; and Battle! Johto Gym Leader (Masters EX) by Shota Kageyama, Haruki Yamada
 ;Original compositions: Flight of the Bamboo Cutter ~ Lunatic Princess, Gensokyo Milennium ~ History of the Moon,
 ;and Eiyashou ~ Eastern Night by ZUN.
 
@@ -23,7 +24,6 @@ Music_JohtoGymKaguya_Ch1:
 	vibrato 18, 1, 5
 	note_type 12, 11, 2
 ;Bar 1
-	octave 3
 .loop1:
 	octave 3
 	note A#, 1
@@ -48,38 +48,105 @@ Music_JohtoGymKaguya_Ch1:
 	note D#, 6
 	note C_, 4
 ;Bar 4
-	note F_, 6
-	note D_, 6
+	note G_, 2
+	note F_, 2
+	note D#, 2
+	note D_, 4
+	note D_, 2
 	note D#, 4
 ;Bar 5
-	note D_, 6
-	note D#, 6
+	note D_, 2
+	note D_, 2
+	note D_, 2
+	note D#, 4
+	note D#, 2
 	note C_, 4
 ;Bar 6
-	note F_, 6
-	note G_, 6
+	note F_, 2
+	note E_, 2
+	note F_, 2
+	note G_, 4
+	note G_, 2
 	volume_envelope 11, 7
 	note C_, 4
 ;Bar 7
 	volume_envelope 11, 2
-	note G_, 6
-	note G#, 6
-	note F_, 4
-;Bar 8
-	note G#, 6
-	note F_, 6
-	note G#, 4
-;Bar 9
-	note G_, 6
-	note G#, 6
-	note F_, 4
-;Bar 10
-	note G#, 6
-	octave 4
-	note C_, 6
+.loop3:
 	octave 3
-	note G#, 2
-	note F_, 2
+	note F_, 1
+	octave 4
+	note C_, 1
+	octave 3
+	note A#, 1
+	octave 4
+	note C_, 1
+	sound_loop 2, .loop3
+.loop4:
+	octave 3
+	note F_, 1
+	octave 4
+	note C#, 1
+	note C_, 1
+	note C#, 1
+	sound_loop 2, .loop4
+;Bar 8
+.loop5:
+	octave 3
+	note F_, 1
+	octave 4
+	note D_, 1
+	note C#, 1
+	note D_, 1
+	sound_loop 2, .loop5
+.loop6:
+	octave 3
+	note F_, 1
+	octave 4
+	note C#, 1
+	note C_, 1
+	note C#, 1
+	sound_loop 2, .loop6
+;Bar 9
+.loop7:
+	octave 3
+	note F_, 1
+	octave 4
+	note C_, 1
+	octave 3
+	note A#, 1
+	octave 4
+	note C_, 1
+	sound_loop 2, .loop7
+.loop8:
+	octave 3
+	note F_, 1
+	octave 4
+	note C#, 1
+	note C_, 1
+	note C#, 1
+	sound_loop 2, .loop8
+;Bar 10
+.loop9:
+	octave 3
+	note F_, 1
+	octave 4
+	note D_, 1
+	note C#, 1
+	note D_, 1
+	sound_loop 2, .loop9
+	octave 3
+	note F_, 1
+	octave 4
+	note C#, 1
+	note C_, 1
+	note C#, 1
+	octave 3
+	note F_, 1
+	octave 4
+	note C#, 1
+	octave 3
+	note G#, 1
+	note A_, 1
 ;Bar 11
 .mainloop:
 	volume_envelope 11, 5
@@ -390,16 +457,29 @@ Music_JohtoGymKaguya_Ch1:
 	volume_envelope 12, 2
 	note D#, 16
 ;Bar 54
-	volume_envelope 5, 0
+	volume_envelope 8, 0
 	octave 3
-	note C_, 16
+	note C_, 5
+	rest 1
+	note C_, 5
+	rest 1
+	note C_, 4
 ;Bar 55
-	note F_, 16
+	note C#, 5
+	rest 1
+	note C#, 5
+	rest 1
+	note C#, 4
 ;Bar 56
-	note E_, 16
+	note D#, 5
+	rest 1
+	note D#, 5
+	rest 1
+	note D#, 4
 ;Bar 57
 	volume_envelope 9, 7
-	note D#, 10
+	note C#, 6
+	note C#, 4
 	volume_envelope 11, 4
 	octave 2
 	note A#, 2
@@ -418,119 +498,103 @@ Music_JohtoGymKaguya_Ch2:
 ;Bar 1
 .loop1:
 	octave 4
-	note F#, 1
 	note F_, 1
-	note E_, 1
+	octave 5
+	note C_, 1
+	octave 4
 	note A#, 1
-	sound_loop 4, .loop1
-;Bar 2
+	octave 5
+	note C_, 1
+	sound_loop 2, .loop1
 .loop2:
-	note F#, 1
+	octave 4
 	note F_, 1
-	note F#, 1
-	note A#, 1
-	sound_loop 4, .loop2
+	octave 5
+	note C#, 1
+	note C_, 1
+	note C#, 1
+	sound_loop 2, .loop2
+;Bar 2
+.loop3:
+	octave 4
+	note F_, 1
+	octave 5
+	note D_, 1
+	note C#, 1
+	note D_, 1
+	sound_loop 2, .loop3
+.loop4:
+	octave 4
+	note F_, 1
+	octave 5
+	note C#, 1
+	note C_, 1
+	note C#, 1
+	sound_loop 2, .loop4
 ;Bar 3
+	octave 4
 	note A_, 6
 	octave 3
-	note A#, 6
+	note A#, 4
+	note A#, 2
 	note G_, 4
 ;Bar 4
 	octave 4
-	note D_, 6
+	note D_, 2
+	note C_, 2
 	octave 3
-	note A_, 6
+	note A#, 2
+	note A_, 4
+	note A_, 2
 	note A#, 4
 ;Bar 5
-	note A_, 6
-	note A#, 6
+	note A_, 2
+	note A_, 2
+	note A_, 2
+	note A#, 4
+	note A#, 2
 	note G_, 4
 ;Bar 6
 	octave 4
-	note D_, 6
-	note D#, 6
-	volume_envelope 11, 0
+	note D_, 2
+	note C_, 2
+	note D_, 2
+	note D#, 4
+	note D#, 2
 	octave 3
 	note D#, 4
 ;Bar 7
-	volume_envelope 12, 2
 	octave 4
 	note D_, 2
-	volume_envelope 9, 2
-	octave 3
 	note D_, 2
 	note D_, 2
-	volume_envelope 12, 2
-	octave 4
 	note D#, 4
-	volume_envelope 9, 2
-	octave 3
-	note D_, 2
-	volume_envelope 12, 2
-	octave 4
+	note D#, 2
 	note C_, 4
-	note G_, 2
 ;Bar 8
-	note_type 12, 9, 2
-	octave 3
-	note D_, 2
-	note D_, 2
-	volume_envelope 12, 2
-	octave 4
-	note D_, 4
-	volume_envelope 9, 2
-	octave 3
-	note D_, 2
-	volume_envelope 12, 2
-	octave 4
-	note D#, 2
-	volume_envelope 9, 2
-	octave 3
-	note D#, 2
-;Bar 9
-	volume_envelope 12, 2
-	octave 4
-	note D_, 2
-	volume_envelope 9, 2
-	octave 3
-	note D_, 2
-	note D_, 2
-	volume_envelope 12, 2
-	octave 4
-	note D#, 4
-	volume_envelope 9, 2
-	octave 3
-	note D_, 2
-	volume_envelope 12, 2
-	octave 4
-	note C_, 2
-	volume_envelope 9, 2
-	octave 3
-	note D#, 2
-;Bar 10
-	volume_envelope 12, 2
-	octave 4
 	note G_, 2
-	volume_envelope 9, 2
-	octave 3
 	note F_, 2
+	note D#, 2
+	note D_, 4
+	note D_, 2
+	note D#, 4
+;Bar 9
+	note D_, 2
+	note D_, 2
+	note D_, 2
+	note D#, 4
+	note D#, 2
+	note C_, 4
+;Bar 10
+	note G_, 2
 	note F_, 2
-	volume_envelope 12, 2
-	octave 4
+	note G_, 2
+	note G#, 4
 	note G#, 2
-	volume_envelope 9, 2
-	octave 3
-	note F_, 2
-	note F_, 2
-	volume_envelope 12, 2
-	octave 4
-	note F#, 2
-	volume_envelope 11, 2
-	octave 3
-	note G#, 1
-	note A_, 1
+	note F#, 4
 ;Bar 11
 .mainloop:
+	octave 3
 	volume_envelope 12, 7
 	note A#, 8
 	volume_envelope 12, 4
@@ -812,22 +876,37 @@ Music_JohtoGymKaguya_Ch2:
 	volume_envelope 12, 2
 	note G#, 16
 ;Bar 54
-	volume_envelope 8, 0
+	volume_envelope 5, 0
 	octave 3
-	note F_, 16
+	note F_, 5
+	rest 1
+	note F_, 5
+	rest 1
+	note F_, 4
 ;Bar 55
-	octave 4
-	note C_, 16
+	note F#, 5
+	rest 1
+	note F#, 5
+	rest 1
+	note F#, 4
 ;Bar 56
-	octave 3
-	note B_, 16
+	note G#, 5
+	rest 1
+	note G#, 5
+	rest 1
+	note G#, 4
 ;Bar 57
-	note G_, 16
+	note F#, 5
+	rest 1
+	note F#, 5
+	rest 1
+	note F#, 4
 	sound_loop 0, .mainloop
 
 ; ============================================================================================================
 
 Music_JohtoGymKaguya_Ch3:
+	volume_envelope 2, 0
 	note_type 12, 1, 9
 ;Bar 1
 	octave 4
@@ -955,6 +1034,7 @@ Music_JohtoGymKaguya_Ch3:
 	note A#, 2
 	note G#, 2
 ;Bar 11
+volume_envelope 2, 0
 .mainloop:
 	note D_, 2
 	note G_, 2
@@ -1408,48 +1488,37 @@ Music_JohtoGymKaguya_Ch3:
 	note E_, 2
 	note F#, 2
 ;Bar 54
-	octave 2
-	note G_, 2
-	octave 3
-	note D_, 2
-	note C#, 2
-	note D_, 2
-	note G#, 2
-	note D_, 2
-	note C#, 2
-	note D_, 2
+	note F_, 2
+	note C_, 2
+	note D#, 2
+	note F_, 2
+	note F#, 4
+	note F_, 2
+	note D#, 2
 ;Bar 55
-	octave 2
-	note G#, 2
-	octave 3
+	note F_, 2
+	note C_, 2
 	note D#, 2
-	note D_, 2
-	note D#, 2
-	note G#, 2
-	note D#, 2
-	note D_, 2
+	note F_, 2
+	note D#, 4
+	note C#, 2
 	note D#, 2
 ;Bar 56
-	octave 2
-	note G#, 2
-	octave 3
 	note F_, 2
-	note E_, 2
+	note C_, 2
+	note D#, 2
 	note F_, 2
-	note G#, 2
+	note F#, 4
 	note F_, 2
-	note E_, 2
-	note F_, 2
+	note D#, 2
 ;Bar 57
-	octave 2
-	note G#, 2
-	octave 3
+	note F_, 2
+	note C_, 2
 	note D#, 2
-	note D_, 2
+	note F_, 2
 	note D#, 2
-	note G#, 2
-	note D#, 2
-	note D_, 2
+	note F#, 2
+	note F_, 2
 	note D#, 2
 	sound_loop 0, .mainloop
 
