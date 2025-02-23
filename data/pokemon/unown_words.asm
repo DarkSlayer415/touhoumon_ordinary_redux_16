@@ -8,7 +8,6 @@ ENDM
 UnownWords:
 ; entries correspond to UNOWN_* form constants
 	table_width 2
-	dw UnownWordA ; unused
 	dw UnownWordA
 	dw UnownWordB
 	dw UnownWordC
@@ -37,29 +36,30 @@ UnownWords:
 	dw UnownWordZ
 	assert_table_length NUM_UNOWN + 1
 
-UnownWordA: unownword "ANGRY"
-UnownWordB: unownword "BEAR"
-UnownWordC: unownword "CHASE"
-UnownWordD: unownword "DIRECT"
-UnownWordE: unownword "ENGAGE"
-UnownWordF: unownword "FIND"
-UnownWordG: unownword "GIVE"
-UnownWordH: unownword "HELP"
-UnownWordI: unownword "INCREASE"
-UnownWordJ: unownword "JOIN"
-UnownWordK: unownword "KEEP"
-UnownWordL: unownword "LAUGH"
-UnownWordM: unownword "MAKE"
-UnownWordN: unownword "NUZZLE"
-UnownWordO: unownword "OBSERVE"
-UnownWordP: unownword "PERFORM"
-UnownWordQ: unownword "QUICKEN"
-UnownWordR: unownword "REASSURE"
-UnownWordS: unownword "SEARCH"
-UnownWordT: unownword "TELL"
-UnownWordU: unownword "UNDO"
-UnownWordV: unownword "VANISH"
-UnownWordW: unownword "WANT"
-UnownWordX: unownword "XXXXX"
-UnownWordY: unownword "YIELD"
-UnownWordZ: unownword "ZOOM"
+;Kosuzu words are named after famous authors. Must be 8 characters or less.
+UnownWordA: unownword "AUSTEN" ; Jane Austen
+UnownWordB: unownword "BRONTE" ; Bronte Family
+UnownWordC: unownword "CHRISTIE" ; Agatha Christie
+UnownWordD: unownword "DICKENS" ; Charles Dickens
+UnownWordE: unownword "ELIOT" ; George Eliot/Mary Ann Evans
+UnownWordF: unownword "FLEMING" ; Ian Fleming
+UnownWordG: unownword "GONCOURT" ;Goncourt brothers 
+UnownWordH: unownword "HUXLEY" ; Aldous Huxley
+UnownWordI: unownword "IRVING" ; John Irving
+UnownWordJ: unownword "JOYCE" ; James Joyce
+UnownWordK: unownword "KAFKA" ; Franz Kafka
+UnownWordL: unownword "LEWIS" ; C.S. Lewis
+UnownWordM: unownword "MELVILLE" ; Herman Melville
+UnownWordN: unownword "NABOKOV" ; Vladimir Nabokov
+UnownWordO: unownword "ORWELL" ; George Orwell
+UnownWordP: unownword "POE" ;Edgar Allen Poe
+UnownWordQ: unownword "QUINN" ; Daniel Quinn
+UnownWordR: unownword "RAND" ;Ayn Rand
+UnownWordS: unownword "SALINGER" ; J.D. Salinger
+UnownWordT: unownword "TWAIN" ; Mark Twain
+UnownWordU: unownword "UMBERTO" ; Umberto Eco
+UnownWordV: unownword "VERNE" ; Jules Verne
+UnownWordW: unownword "WILDE" ; Oscar Wilde
+UnownWordX: unownword "XENOPHON" ; Xenophon of Athens
+UnownWordY: unownword "YAKUMO" ; Koizumi Yakumo/Lafcadio Hearn
+UnownWordZ: unownword "ZWEIG" ; Stefan Zweig

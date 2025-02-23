@@ -9,67 +9,71 @@ OddEggProbabilities:
 ; entries correspond to OddEggs (below)
 	table_width 2
 DEF prob_total = 0
-; Pichu
-	prob 8
-	prob 1
-; Cleffa
-	prob 16
-	prob 3
-; Igglybuff
-	prob 16
-	prob 3
-; Smoochum
-	prob 14
-	prob 2
-; Magby
-	prob 10
-	prob 2
-; Elekid
+; CReimu
 	prob 12
 	prob 2
-; Tyrogue
-	prob 10
-	prob 1
+; CMarisa
+	prob 12
+	prob 2
+; CSakuya
+	prob 12
+	prob 2
+; CKaguya
+	prob 12
+	prob 2
+; CMokou
+	prob 12
+	prob 2
+; CEirin
+	prob 12
+	prob 2
+; CAlice
+	prob 12
+	prob 4
 	assert_table_length NUM_ODD_EGGS
 	assert prob_total == 100, "OddEggProbabilities do not sum to 100%!"
 
 OddEggSpecies:
 	table_width 2, OddEggSpecies
-	dw PICHU
-	dw PICHU
-	dw CLEFFA
-	dw CLEFFA
+	dw BULBASAUR
+	dw BULBASAUR
+	dw CHARMANDER
+	dw CHARMANDER
+	dw SQUIRTLE
+	dw SQUIRTLE
+	dw CHIKORITA
+	dw CHIKORITA
+	dw CYNDAQUIL
+	dw CYNDAQUIL
+	dw TOTODILE
+	dw TOTODILE
 	dw IGGLYBUFF
 	dw IGGLYBUFF
-	dw SMOOCHUM
-	dw SMOOCHUM
-	dw MAGBY
-	dw MAGBY
-	dw ELEKID
-	dw ELEKID
-	dw TYROGUE
-	dw TYROGUE
 	assert_table_length NUM_ODD_EGGS
 
 OddEggMoves:
-	dw THUNDERSHOCK, CHARM, DIZZY_PUNCH, NO_MOVE
-	dw THUNDERSHOCK, CHARM, DIZZY_PUNCH, NO_MOVE
-	dw POUND, CHARM, DIZZY_PUNCH, NO_MOVE
-	dw POUND, CHARM, DIZZY_PUNCH, NO_MOVE
-	dw SING, CHARM, DIZZY_PUNCH, NO_MOVE
-	dw SING, CHARM, DIZZY_PUNCH, NO_MOVE
-	dw POUND, LICK, DIZZY_PUNCH, NO_MOVE
-	dw POUND, LICK, DIZZY_PUNCH, NO_MOVE
-	dw EMBER, DIZZY_PUNCH, NO_MOVE, NO_MOVE
-	dw EMBER, DIZZY_PUNCH, NO_MOVE, NO_MOVE
-	dw QUICK_ATTACK, LEER, DIZZY_PUNCH, NO_MOVE
-	dw QUICK_ATTACK, LEER, DIZZY_PUNCH, NO_MOVE
-	dw TACKLE, DIZZY_PUNCH, NO_MOVE, NO_MOVE
-	dw TACKLE, DIZZY_PUNCH, NO_MOVE, NO_MOVE
+	dw POUND, GROWL, DIZZY_PUNCH, FAIRY_WIND
+	dw POUND, GROWL, DIZZY_PUNCH, FAIRY_WIND
+	dw TACKLE, GROWL, DIZZY_PUNCH, THUNDERSHOCK
+	dw TACKLE, GROWL, DIZZY_PUNCH, THUNDERSHOCK
+	dw SCRATCH, LEER, DIZZY_PUNCH, KNIFE_THROW
+	dw SCRATCH, LEER, DIZZY_PUNCH, KNIFE_THROW
+	dw POUND, GROWL, DIZZY_PUNCH, FUTURE_SIGHT
+	dw POUND, GROWL, DIZZY_PUNCH, FUTURE_SIGHT
+	dw TACKLE, DIZZY_PUNCH, LEER, AGILITY
+	dw TACKLE, DIZZY_PUNCH, LEER, AGILITY
+	dw SCRATCH, LEER, DIZZY_PUNCH, PERISH_SONG
+	dw SCRATCH, LEER, DIZZY_PUNCH, PERISH_SONG
+	dw POUND, DIZZY_PUNCH, STRING_SHOT, FAIRY_WIND
+	dw POUND, DIZZY_PUNCH, STRING_SHOT, FAIRY_WIND
 
+
+;Hatched Stats match the Pokemon that was originally replaced.
+;Boxing or leveling up corrects stats.
 OddEggs:
 	table_width NICKNAMED_MON_STRUCT_LENGTH
 
+	;CReimu
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -81,8 +85,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 30, 20, 10, 0 ; PP
+	dn 15, 15, 15, 15 ; DVs
+	db 35, 30, 15, 25 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -96,6 +100,7 @@ OddEggs:
 	bigdw 8 ; SDef
 	db "EGG@@@@@@@@"
 
+	;Shiny CReimu
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -107,8 +112,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 30, 20, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 35, 30, 15, 25 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -122,6 +127,7 @@ OddEggs:
 	bigdw 9 ; SDef
 	db "EGG@@@@@@@@"
 
+	;CMarisa
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -133,8 +139,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 35, 20, 10, 0 ; PP
+	dn 15, 15, 15, 15 ; DVs
+	db 35, 30, 15, 25 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -148,6 +154,7 @@ OddEggs:
 	bigdw 10 ; SDef
 	db "EGG@@@@@@@@"
 
+	;Shiny CMarisa
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -159,8 +166,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 35, 20, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 35, 30, 15, 25 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -174,6 +181,7 @@ OddEggs:
 	bigdw 11 ; SDef
 	db "EGG@@@@@@@@"
 
+	;CSakuya
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -185,8 +193,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 15, 20, 10, 0 ; PP
+	dn 15, 15, 15, 15 ; DVs
+	db 35, 30, 15, 30 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -200,6 +208,7 @@ OddEggs:
 	bigdw 7 ; SDef
 	db "EGG@@@@@@@@"
 
+	;Shiny CSakuya
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -211,8 +220,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 15, 20, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 35, 30, 15, 30 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -226,6 +235,7 @@ OddEggs:
 	bigdw 8 ; SDef
 	db "EGG@@@@@@@@"
 
+	;CKaguya
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -237,8 +247,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 35, 30, 10, 0 ; PP
+	dn 15, 15, 15, 15 ; DVs
+	db 35, 30, 15, 10 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -252,6 +262,7 @@ OddEggs:
 	bigdw 11 ; SDef
 	db "EGG@@@@@@@@"
 
+	;Shiny CKaguya
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -264,7 +275,7 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	dn 2, 10, 10, 10 ; DVs
-	db 35, 30, 10, 0 ; PP
+	db 35, 30, 15, 10 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -278,6 +289,7 @@ OddEggs:
 	bigdw 12 ; SDef
 	db "EGG@@@@@@@@"
 
+	;CMokou
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -289,8 +301,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 25, 10, 0, 0 ; PP
+	dn 15, 15, 15, 15 ; DVs
+	db 35, 15, 30, 20 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -304,6 +316,7 @@ OddEggs:
 	bigdw 10 ; SDef
 	db "EGG@@@@@@@@"
 
+	;Shiny CMokou
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -315,8 +328,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 25, 10, 0, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 35, 15, 30, 20 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -329,7 +342,8 @@ OddEggs:
 	bigdw 13 ; SAtk
 	bigdw 11 ; SDef
 	db "EGG@@@@@@@@"
-
+	
+	;CEirin
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -341,8 +355,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 30, 30, 10, 0 ; PP
+	dn 15, 15, 15, 15 ; DVs
+	db 35, 30, 15, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -356,6 +370,7 @@ OddEggs:
 	bigdw 10 ; SDef
 	db "EGG@@@@@@@@"
 
+	;Shiny CEirin
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -367,8 +382,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 30, 30, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 35, 30, 15, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -382,6 +397,7 @@ OddEggs:
 	bigdw 11 ; SDef
 	db "EGG@@@@@@@@"
 
+	;CAlice
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -393,8 +409,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 35, 10, 0, 0 ; PP
+	dn 15, 15, 15, 15 ; DVs
+	db 35, 15, 30, 25 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -408,6 +424,7 @@ OddEggs:
 	bigdw 8 ; SDef
 	db "EGG@@@@@@@@"
 
+	;Shiny CAlice
 	db 0 ; Species, will be filled on load
 	db NO_ITEM
 	db 0, 0, 0, 0 ; Moves, will be filled on load
@@ -419,8 +436,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 35, 10, 0, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 35, 15, 30, 25 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
