@@ -197,7 +197,7 @@ RuinsOfAlphResearchCenterModifiedDexText:
 	para "I added an"
 	line "optional #DEX"
 
-	para "to store UNOWN"
+	para "to store Kosuzu"
 	line "data."
 
 	para "It records them in"
@@ -211,7 +211,7 @@ RuinsOfAlphResearchCenterDexUpgradedText:
 	done
 
 RuinsOfAlphResearchCenterScientist3Text:
-	text "The UNOWN you"
+	text "The Kosuzu you"
 	line "catch will all be"
 	cont "recorded."
 
@@ -221,21 +221,21 @@ RuinsOfAlphResearchCenterScientist3Text:
 
 RuinsOfAlphResearchCenterScientist3_PrinterAvailable:
 	text "You caught all the"
-	line "UNOWN variations?"
+	line "Kosuzu variations?"
 
 	para "That's a great"
 	line "achievement!"
 
 	para "I've set up the"
 	line "printer here for"
-	cont "handling UNOWN."
+	cont "handling Kosuzu."
 
 	para "Feel free to use"
 	line "it anytime."
 	done
 
 RuinsOfAlphResearchCenterScientist1Text:
-	text "The RUINS are"
+	text "The Ruins are"
 	line "about 1500 years"
 	cont "old."
 
@@ -247,12 +247,12 @@ RuinsOfAlphResearchCenterScientist1Text:
 RuinsOfAlphResearchCenterScientist1Text_GotUnownDex:
 	text "I wonder how many"
 	line "kinds of #MON"
-	cont "are in the RUINS?"
+	cont "are in the ruins?"
 	done
 
 RuinsOfAlphResearchCenterScientist1Text_UnownAppeared:
 	text "#MON appeared"
-	line "in the RUINS?"
+	line "in the ruins?"
 
 	para "That's incredible"
 	line "news!"
@@ -266,9 +266,9 @@ RuinsOfAlphResearchCenterScientist1Text_GotAllUnown:
 	line "with your help, is"
 
 	para "giving us insight"
-	line "into the RUINS."
+	line "into the ruins."
 
-	para "The RUINS appear"
+	para "The ruins appear"
 	line "to have been built"
 
 	para "as a habitat for"
@@ -280,18 +280,18 @@ RuinsOfAlphResearchCenterScientist2Text:
 	line "terns drawn on the"
 
 	para "walls of the"
-	line "RUINS."
+	line "ruins."
 
 	para "They must be the"
 	line "keys for unravel-"
 	cont "ing the mystery"
-	cont "of the RUINS."
+	cont "of the ruins."
 	done
 
 RuinsOfAlphResearchCenterScientist2Text_UnownAppeared:
 	text "The strange #-"
 	line "MON you saw in the"
-	cont "RUINS?"
+	cont "ruins?"
 
 	para "They appear to be"
 	line "very much like the"
@@ -304,34 +304,6 @@ RuinsOfAlphResearchCenterScientist2Text_UnownAppeared:
 	para "That must mean"
 	line "there are many"
 	cont "kinds of them…"
-	done
-
-RuinsOfAlphResearchCenterUnusedText1: ; unreferenced
-	text "We think something"
-	line "caused the cryptic"
-
-	para "patterns to appear"
-	line "in the RUINS."
-
-	para "We've focused our"
-	line "studies on that."
-	done
-
-RuinsOfAlphResearchCenterUnusedText2: ; unreferenced
-	text "According to my"
-	line "research…"
-
-	para "Those mysterious"
-	line "patterns appeared"
-
-	para "when the #COM"
-	line "CENTER was built."
-
-	para "It must mean that"
-	line "radio waves have"
-
-	para "some sort of a"
-	line "link…"
 	done
 
 RuinsOfAlphResearchCenterScientist2Text_GotAllUnown:
@@ -354,7 +326,7 @@ RuinsOfAlphResearchCenterComputerText:
 
 RuinsOfAlphResearchCenterComputerText_GotAllUnown:
 	text "Mystery #MON"
-	line "Name: UNOWN"
+	line "Name: Kosuzu"
 
 	para "A total of {d:NUM_UNOWN}"
 	line "kinds found."
@@ -366,7 +338,7 @@ RuinsOfAlphResearchCenterPrinterText_DoesntWork:
 	done
 
 RuinsOfAlphResearchCenterUnownPrinterText:
-	text "UNOWN may be"
+	text "Kosuzu may be"
 	line "printed out."
 	done
 

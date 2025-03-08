@@ -1103,16 +1103,20 @@ MisdreavusEvosAttacks:
 
 UnownEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, SKETCH
-	dbw 11, SKETCH
-	dbw 21, SKETCH
-	dbw 31, SKETCH
-	dbw 41, SKETCH
-	dbw 51, SKETCH
-	dbw 61, SKETCH
-	dbw 71, SKETCH
-	dbw 81, SKETCH
-	dbw 91, SKETCH
+	dbw 1, POUND
+	dbw 1, GROWL
+	dbw 7, PURSUIT
+	dbw 11, SWIFT
+	dbw 16, CONFUSION
+	dbw 19, SWEET_KISS
+	dbw 22, FAINT_ATTACK
+	dbw 25, PSYBEAM
+	dbw 28, KINESIS
+	dbw 33, STOMP
+	dbw 39, PSYCHIC_M
+	dbw 44, MEDITATE
+	dbw 49, SUPER_FANG
+	dbw 52, TRI_ATTACK
 	db 0 ; no more level-up moves
 
 WobbuffetEvosAttacks:

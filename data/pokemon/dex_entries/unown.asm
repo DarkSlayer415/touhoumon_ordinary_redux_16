@@ -1,10 +1,10 @@
-	db "Shopkeeper@" ; species name
-	dw 600, 2100 ; height, weight
+	db "Librarian@" ; species name
+	dw 427, 1000 ; height, weight
 
-	db   "The shopkeeper of"
-	next "Kourindou. Able to"
-	next "recognize the name"
+	db   "Works at Suzunaan,"
+	next "a library in the"
+	next "Human Village."
 
-	page "and purpose of an"
-	next "item of interest"
-	next "at a glance.@"
+	page "She can decipher"
+	next "any book just by"
+	next "touching one.@"
