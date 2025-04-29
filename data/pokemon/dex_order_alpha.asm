@@ -39,7 +39,9 @@ AlphabeticalPokedexOrder:
 	dw SUDOWOODO	;EChiyuri
 	dw DUNSPARCE	;CYumemi
 	dw GLIGAR		;Yumemi
-	dw STEELIX		;EYumemi			    
+	dw STEELIX		;EYumemi
+	dw MIMICHAN		;Mimi-Chan
+	dw RUUKOTO		;Ruukoto
 	dw DELIBIRD		;COrange
 	dw MANTINE		;Orange
 	dw SKARMORY		;EOrange
@@ -81,6 +83,7 @@ AlphabeticalPokedexOrder:
 	dw GROWLITHE	;CRumia
 	dw ARCANINE		;Rumia
 	dw CHANSEY		;ERumia
+	dw KEDAMA		;Kedama
 	dw EEVEE		;Himawari
 	dw MAGIKARP		;Daiyousei
 	dw GYARADOS		;EDaiyousei
@@ -230,9 +233,30 @@ AlphabeticalPokedexOrder:
 	dw MAREEP		;CKoishi
 	dw FLAAFFY		;Koishi
 	dw AMPHAROS		;EKoishi
-	dw VOLTORB		;CTokiko
-	dw ELECTRODE	;Tokiko
-	dw SCIZOR		;ETokiko
+	dw CNAZRIN		;CNazrin
+	dw NAZRIN		;Nazrin
+	dw ENAZRIN		;ENazrin
+	dw CKOGASA		;CKogasa
+	dw KOGASA		;Kogasa
+	dw EKOGASA		;EKogasa
+	dw CICHIRIN		;CIchirin
+	dw ICHIRIN		;Ichirin
+	dw EICHIRIN		;EIchirin
+	dw CMURASA		;CMurasa
+	dw MURASA		;Murasa
+	dw EMURASA		;EMurasa
+	dw CSHOU		;CShou
+	dw SHOU			;Shou
+	dw ESHOU		;EShou
+	dw CBYAKUREN	;CByakuren
+	dw BYAKUREN		;Byakuren
+	dw EBYAKUREN	;EByakuren
+	dw CNUE			;CNue
+	dw NUE			;Nue
+	dw ENUE			;ENue
+	dw NATU			;CHatate
+	dw XATU			;Hatate
+	dw CELEBI		;EHatate
 	dw MANKEY		;CSunny
 	dw PRIMEAPE		;Sunny
 	dw FLAREON		;ESunny
@@ -242,14 +266,17 @@ AlphabeticalPokedexOrder:
 	dw MEOWTH		;CStar
 	dw PERSIAN		;Star
 	dw VAPOREON		;EStar
-	dw NATU			;CHatate
-	dw XATU			;Hatate
-	dw CELEBI		;EHatate
-	dw MEWTWO		;CKasen
-	dw MEW			;Kasen
 	dw CYUUTO		;CYuuto
 	dw YUUTO		;Yuuto
-	dw UNOWN		;Rinnosuke
+	dw VOLTORB		;CTokiko
+	dw ELECTRODE	;Tokiko
+	dw SCIZOR		;ETokiko
+	dw AKYUU		;Akyuu
+	dw UNOWN		;Kosuzu
+	dw REI_SEN		;Rei'sen
+	dw MEWTWO		;CKasen
+	dw MEW			;Kasen
+	dw RINNOSUKE	;Rinnosuke
 	dw RAIKOU		;Toyohime
 	dw ENTEI		;Yorihime
 	dw SUICUNE		;Satsuki

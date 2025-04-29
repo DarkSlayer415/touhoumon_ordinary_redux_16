@@ -10,6 +10,8 @@
 ; - PokemonPalettes (see data/pokemon/palettes.asm)
 ; - PokedexDataPointerTable (see data/pokemon/dex_entry_pointers.asm)
 ; - AlphabeticalPokedexOrder (see data/pokemon/dex_order_alpha.asm)
+; - Note; Alphabetical Order is used to order Touhou characters by game appearance,
+; - including comments on which character takes the slot of which species constant that is kept.
 ; - NewPokedexOrder (see data/pokemon/dex_order_new.asm)
 ; - Pokered_MonIndices (see data/pokemon/gen1_order.asm)
 ; - Footprints (see gfx/footprints.asm)
@@ -271,6 +273,35 @@ DEF JOHTO_POKEMON EQU const_value
 	const LUGIA      ; f9
 	const HO_OH      ; fa
 	const CELEBI     ; fb
+	const CYUUTO     
+	const YUUTO
+	const KEDAMA
+	const MIMICHAN
+	const RUUKOTO
+	const REI_SEN
+	const AKYUU
+	const CNAZRIN
+	const NAZRIN
+	const ENAZRIN
+	const CKOGASA
+	const KOGASA
+	const EKOGASA
+	const CICHIRIN
+	const ICHIRIN
+	const EICHIRIN
+	const CMURASA
+	const MURASA
+	const EMURASA
+	const CSHOU
+	const SHOU
+	const ESHOU
+	const CBYAKUREN
+	const BYAKUREN
+	const EBYAKUREN
+	const CNUE
+	const NUE
+	const ENUE
+	const RINNOSUKE
 DEF NUM_POKEMON EQU const_value - 1
 
 DEF EGG EQU -3

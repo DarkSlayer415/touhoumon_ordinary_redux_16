@@ -1,4 +1,5 @@
-; Every Toho in Ordinary Dex Order
+; Every Puppet in Ordinary Dex Order
+; In general, Puppets are listed in the order the player is most likely to encounter from route to route.
 
 NewPokedexOrder:
 	table_width 2
@@ -11,6 +12,9 @@ NewPokedexOrder:
 	dw TOTODILE		;CEirin
 	dw CROCONAW		;Eirin
 	dw FERALIGATR	;EEirin
+	dw CNAZRIN		;CNazrin
+	dw NAZRIN		;Nazrin
+	dw ENAZRIN		;ENazrin
 	dw TENTACOOL	;CChen
 	dw TENTACRUEL	;Chen
 	dw JYNX			;EChen
@@ -32,6 +36,9 @@ NewPokedexOrder:
 	dw HORSEA		;CWriggle
 	dw SEADRA		;Wriggle
 	dw SCYTHER		;EWriggle
+	dw SNUBBULL		;CSara
+	dw GRANBULL		;Sara
+	dw QWILFISH		;ESara
 	dw SPEAROW		;CShizuha
 	dw FEAROW		;Shizuha
 	dw HITMONLEE	;EShizuha
@@ -80,15 +87,25 @@ NewPokedexOrder:
 	dw SENTRET		;CKana
 	dw FURRET		;Kana
 	dw BELLOSSOM	;EKana
+	dw CKOGASA		;CKogasa
+	dw KOGASA		;Kogasa
+	dw EKOGASA		;EKogasa
 	dw PIDGEY		;CAya
 	dw PIDGEOTTO	;Aya
 	dw PIDGEOT		;EAya
 	dw NATU			;CHatate
 	dw XATU			;Hatate
 	dw CELEBI		;EHatate
+	dw CBYAKUREN	;CByakuren
+	dw BYAKUREN		;Byakuren
+	dw EBYAKUREN	;EByakuren
+	dw UNOWN		;Kosuzu
 	dw WEEDLE		;CCirno
 	dw KAKUNA		;Cirno	
 	dw BEEDRILL		;ECirno
+	dw CUBONE		;CMeira
+	dw MAROWAK		;Meira
+	dw DITTO		;EMeira
 	dw SHUCKLE		;CLouise
 	dw HERACROSS	;Louise
 	dw CORSOLA		;ELouise
@@ -113,6 +130,10 @@ NewPokedexOrder:
 	dw BELLSPROUT	;CYuuka
 	dw WEEPINBELL	;Yuuka
 	dw VICTREEBEL	;EYuuka
+	dw PHANPY		;CElly
+	dw DONPHAN		;Elly
+	dw PORYGON2		;EElly
+	dw KEDAMA		;Kedama
 	dw EEVEE		;Himawari
 	dw VULPIX		;LilyWhite
 	dw NINETALES	;ELilyWhite
@@ -120,9 +141,6 @@ NewPokedexOrder:
 	dw GOLBAT		;ELilyBlack
 	dw MAGIKARP		;Daiyousei
 	dw GYARADOS		;EDaiyousei
-	dw SNUBBULL		;CSara
-	dw GRANBULL		;Sara
-	dw QWILFISH		;ESara
 	dw MACHOP		;CMeiling
 	dw MACHOKE		;Meiling
 	dw MACHAMP		;EMeiling
@@ -138,6 +156,7 @@ NewPokedexOrder:
 	dw SANDSHREW	;CEllen
 	dw SANDSLASH	;Ellen
 	dw AERODACTYL	;EEllen
+	dw AKYUU		;Akyuu
 	dw WOOPER		;CKeine
 	dw QUAGSIRE		;Keine
 	dw ESPEON		;EKeine
@@ -169,9 +188,18 @@ NewPokedexOrder:
 	dw MARILL		;CSuwako
 	dw AZUMARILL	;Suwako
 	dw POLITOED		;ESuwako
+	dw CICHIRIN		;CIchirin
+	dw ICHIRIN		;Ichirin
+	dw EICHIRIN		;EIchirin
+	dw CSHOU		;CShou
+	dw SHOU			;Shou
+	dw ESHOU		;EShou
 	dw FARFETCH_D	;CSatori
 	dw DODUO		;Satori
 	dw DODRIO		;ESatori
+	dw CNUE			;CNue
+	dw NUE			;Nue
+	dw ENUE			;ENue
 	dw POLIWAG		;CKomachi
 	dw POLIWHIRL	;Komachi
 	dw POLIWRATH	;EKomachi	
@@ -187,12 +215,6 @@ NewPokedexOrder:
 	dw LEDYBA		;CRikako
 	dw LEDIAN		;Rikako
 	dw AIPOM		;ERikako
-	dw PHANPY		;CElly
-	dw DONPHAN		;Elly
-	dw PORYGON2		;EElly
-	dw CUBONE		;CMeira
-	dw MAROWAK		;Meira
-	dw DITTO		;EMeira
 	dw EXEGGCUTE	;CRika
 	dw EXEGGUTOR	;Rika
 	dw LAPRAS		;ERika
@@ -202,6 +224,9 @@ NewPokedexOrder:
 	dw HOPPIP		;CUtsuho
 	dw SKIPLOOM		;Utsuho
 	dw JUMPLUFF		;EUtsuho
+	dw CMURASA		;CMurasa
+	dw MURASA		;Murasa
+	dw EMURASA		;EMurasa
 	dw ONIX			;CIku
 	dw DROWZEE		;Iku
 	dw HYPNO		;EIku
@@ -223,6 +248,7 @@ NewPokedexOrder:
 	dw TYROGUE		;CGengetsu
 	dw HITMONTOP	;Gengetsu
 	dw BLISSEY		;EGengetsu
+	dw REI_SEN		;Rei'sen
 	dw SNORLAX		;Genji
 	dw OMANYTE		;CKirisame
 	dw OMASTAR		;Kirisame
@@ -249,7 +275,7 @@ NewPokedexOrder:
 	dw LARVITAR		;CMima
 	dw PUPITAR		;Mima
 	dw TYRANITAR	;EMima
-	dw UNOWN		;Rinnosuke
+	dw RINNOSUKE	;Rinnosuke
 	dw RAIKOU		;Toyohime
 	dw ENTEI		;Yorihime
 	dw SUICUNE		;Satsuki
