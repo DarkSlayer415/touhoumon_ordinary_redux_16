@@ -258,7 +258,7 @@ PokemonNames::
 	db "Kedama@@@@"
 	db "Mimi-Chan@"
 	db "Ruukoto@@@"
-	db "Rei'sen@@@"
+	db "Rei'sen@@@@"
 	db "Akyuu@@@@@"
 	db "CNazrin@@@"
 	db "Nazrin@@@@"

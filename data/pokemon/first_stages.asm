@@ -254,4 +254,31 @@ FirstEvoStages::
 	dw NATU
 	dw CYUUTO
 	dw CYUUTO
+	dw KEDAMA
+	dw MIMICHAN
+	dw RUUKOTO
+	dw REI_SEN
+	dw AKYUU
+	dw CNAZRIN
+	dw CNAZRIN
+	dw CNAZRIN
+	dw CKOGASA
+	dw CKOGASA
+	dw CKOGASA
+	dw CICHIRIN
+	dw CICHIRIN
+	dw CICHIRIN
+	dw CMURASA
+	dw CMURASA
+	dw CMURASA
+	dw CSHOU
+	dw CSHOU
+	dw CSHOU
+	dw CBYAKUREN
+	dw CBYAKUREN
+	dw CBYAKUREN
+	dw CNUE
+	dw CNUE
+	dw CNUE
+	dw RINNOSUKE
 	assert_table_length NUM_POKEMON

@@ -1838,28 +1838,28 @@ dbw 34, BEEDRILL
 	dbw 3, HOOTHOOT
 	dbw 2, GIRAFARIG
 	dbw 2, HOOTHOOT
-	dbw 3, PHANPY
-	dbw 3, PHANPY
-	dbw 3, PHANPY
-	dbw 3, PHANPY
+	dbw 3, SNUBBULL
+	dbw 3, SNUBBULL
+	dbw 3, SNUBBULL
+	dbw 3, SNUBBULL
 	; day
 	dbw 3, GIRAFARIG
 	dbw 3, HOOTHOOT
 	dbw 2, GIRAFARIG
 	dbw 2, HOOTHOOT
-	dbw 3, PHANPY
-	dbw 3, PHANPY
-	dbw 3, PHANPY
-	dbw 3, PHANPY
+	dbw 3, SNUBBULL
+	dbw 3, SNUBBULL
+	dbw 3, SNUBBULL
+	dbw 3, SNUBBULL
 	; nite
 	dbw 3, GIRAFARIG
 	dbw 3, GROWLITHE
 	dbw 2, GIRAFARIG
 	dbw 2, GROWLITHE
-	dbw 3, PHANPY
-	dbw 3, PHANPY
-	dbw 3, PHANPY
-	dbw 3, PHANPY
+	dbw 3, SNUBBULL
+	dbw 3, SNUBBULL
+	dbw 3, SNUBBULL
+	dbw 3, SNUBBULL
 	end_grass_wildmons
 
 	def_grass_wildmons SILVER_CAVE_OUTSIDE

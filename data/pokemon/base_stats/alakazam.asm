@@ -1,6 +1,6 @@
 	db ALAKAZAM ; 065
 
-	db  85,  65,  85,  85, 120, 100
+	db 110,  55, 105,  80,  90, 105
 	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, DRAGON ; type

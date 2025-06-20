@@ -1,6 +1,6 @@
 	db VILEPLUME ; 045
 
-	db  95,  70,  90,  85, 100,  90
+	db  90,  60,  90,  90, 110,  90
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, GRASS ; type

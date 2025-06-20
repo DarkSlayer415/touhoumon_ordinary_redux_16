@@ -58,7 +58,7 @@ Moves1:
 	move EFFECT_RAMPAGE,           120, NORMAL,        100, 10,   0      ;THRASH
 	move EFFECT_RECOIL_HIT,        120, NORMAL,        100, 10,   0      ;DOUBLE_EDGE
 	move EFFECT_DEFENSE_DOWN,        0, NORMAL,        100, 30,   0      ;TAIL_WHIP
-	move EFFECT_POISON_HIT,         15, POISON,        100, 35,  30      ;POISON_STING
+	move EFFECT_POISON_HIT,         20, POISON,        100, 35,  30      ;POISON_STING
 	move EFFECT_POISON_MULTI_HIT,   30, BUG,           100, 20,  20      ;TWINEEDLE
 	move EFFECT_MULTI_HIT,          25, FAIRY,          85, 15,   0      ;HOLY_NEEDLE
 	move EFFECT_DEFENSE_DOWN,        0, NORMAL,        100, 30,   0      ;LEER
@@ -167,7 +167,7 @@ Moves1:
 	move EFFECT_ACCURACY_DOWN_HIT,  70, FAIRY,          90, 20,  20      ;FLASH
 	move EFFECT_LEVEL_DAMAGE,        1, PSYCHIC_TYPE,  100, 20,   0      ;PSYWAVE
 	move EFFECT_HAIL,                0, ICE,           100, 10,   0      ;HAIL
-	move EFFECT_DEFENSE_UP_2,        0, ROCK,          100, 20,   0      ;DISPERSE
+	move EFFECT_DEFENSE_UP_2,        0, POISON,        100, 20,   0      ;DISPERSE
 	move EFFECT_ATTACK_DOWN_HIT,    80, BUG,           100, 15,   0      ;LUNGE
 	move EFFECT_SELFDESTRUCT,      250, NORMAL,        100,  5,   0      ;EXPLOSION
 	move EFFECT_HEAL,                0, PSYCHIC_TYPE,  100, 10,   0      ;REST

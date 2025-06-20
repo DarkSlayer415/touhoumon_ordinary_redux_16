@@ -391,6 +391,71 @@ CYuutoEggMoves:
 	db DREAM_EATER
 	db MIRROR_MOVE
 	db MIMIC
+	db -1 ; end
+
+ReisenEggMoves:
+	db AGILITY
+	db PSYCH_UP
+	db ATTRACT
+	db MYSTIC_BOMB
+	db OCTAZOOKA
+	db -1 ; end
+
+CNazrinEggMoves:
+	db MIND_READER
+	db CONFUSE_RAY
+	db BATON_PASS
+	db HI_JUMP_KICK
+	db SUPER_FANG
+	db -1 ; end
+
+CKogasaEggMoves: 
+	db SUPER_FANG
+	db HYDRO_PUMP
+	db MIMIC
+	db CONVERSION
+	db CONVERSION2
+	db -1 ; end
+
+CIchirinEggMoves:
+	db COUNTER
+	db MIRROR_COAT
+	db ANCIENTPOWER
+	db HEADWIND
+	db CONFUSE_RAY
+	db -1 ; end
+	
+CMurasaEggMoves:
+	db GUILLOTINE
+	db MIST
+	db HAZE
+	db MEAN_LOOK
+	db PAIN_SPLIT
+	db -1 ; end
+	
+CShouEggMoves:
+	db ANCIENTPOWER
+	db BATON_PASS
+	db CONFUSE_RAY
+	db FISSURE
+	db SPIKES
+	db -1 ; end
+
+CByakurenEggMoves:
+	db COUNTER
+	db MIRROR_COAT
+	db PERISH_SONG
+	db HEAL_BELL
+	db PAIN_SPLIT
+	db -1 ; end
+
+CNueEggMoves: 
+	db EXTREMESPEED
+	db MIRROR_MOVE
+	db SIGMA_CANNON
+	db OUTRAGE
+	db GLARE
+	db -1 ; end
 
 NoEggMoves2:
 	dw -1 ; end

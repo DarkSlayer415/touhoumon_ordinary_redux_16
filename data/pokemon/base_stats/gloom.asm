@@ -1,6 +1,6 @@
 	db GLOOM ; 044
 
-	db  70,  60,  70,  65,  85,  70
+	db  70,  55,  70,  70,  85,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, GRASS ; type

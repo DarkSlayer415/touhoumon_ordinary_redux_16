@@ -1,6 +1,6 @@
 	db CROBAT ; 169
 
-	db  75, 115,  75, 120,  80,  75
+	db  70, 115,  75, 120,  85,  75
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, FLYING ; type
