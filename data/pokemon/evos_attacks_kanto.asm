@@ -1299,57 +1299,59 @@ PoliwagEvosAttacks:
 	dbbw EVOLVE_LEVEL, 24, POLIWHIRL
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
-	dbw 1, LICK
-	dbw 5, FALSE_SWIPE
-	dbw 8, CONFUSE_RAY
+	dbw 1, SCRATCH
+	dbw 5, SHARPEN
+	dbw 8, METAL_CLAW
 	dbw 11, PAY_DAY
-	dbw 15, BUBBLEBEAM
-	dbw 19, SPITE
-	dbw 24, SLASH
-	dbw 28, SHADOW_BALL
-	dbw 36, SNORE
+	dbw 15, FALSE_SWIPE
+	dbw 19, CONFUSE_RAY
+	dbw 24, BUBBLEBEAM
+	dbw 28, SLASH
+	dbw 33, SHADOW_BALL
+	dbw 37, SNORE
 	dbw 40, PAIN_SPLIT
 	dbw 44, DESTINY_BOND
 	dbw 48, HYDRO_PUMP
-	dbw 52, PHANTOM_DAZE
+	dbw 52, GUILLOTINE
 	db 0 ; no more level-up moves
 
 PoliwhirlEvosAttacks:
 	dbbw EVOLVE_ITEM, WATER_STONE, POLIWRATH
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
-	dbw 1, LICK
-	dbw 5, FALSE_SWIPE
-	dbw 8, CONFUSE_RAY
+	dbw 1, SCRATCH
+	dbw 5, SHARPEN
+	dbw 8, METAL_CLAW
 	dbw 11, PAY_DAY
-	dbw 15, BUBBLEBEAM
-	dbw 19, SPITE
-	dbw 24, SLASH
-	dbw 30, SHADOW_BALL
-	dbw 38, SNORE
+	dbw 15, FALSE_SWIPE
+	dbw 19, CONFUSE_RAY
+	dbw 24, BUBBLEBEAM
+	dbw 29, SLASH
+	dbw 35, SHADOW_BALL
+	dbw 39, SNORE
 	dbw 42, PAIN_SPLIT
 	dbw 46, DESTINY_BOND
 	dbw 50, HYDRO_PUMP
-	dbw 54, PHANTOM_DAZE
+	dbw 54, GUILLOTINE
 	db 0 ; no more level-up moves
 
 PoliwrathEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
-	dbw 1, LICK
-	dbw 5, FALSE_SWIPE
-	dbw 8, CONFUSE_RAY
-	dbw 11, FALSE_SWIPE
-	dbw 15, BUBBLEBEAM
-	dbw 19, SPITE
-	dbw 24, SLASH
-	dbw 32, SHADOW_BALL
-	dbw 40, SNORE
-	dbw 44, PAIN_SPLIT
-	dbw 48, DESTINY_BOND
-	dbw 52, HYDRO_PUMP
-	dbw 56, PHANTOM_DAZE
-	dbw 60, GUILLOTINE
+	dbw 1, SCRATCH
+	dbw 5, SHARPEN
+	dbw 8, METAL_CLAW
+	dbw 11, PAY_DAY
+	dbw 15, FALSE_SWIPE
+	dbw 19, CONFUSE_RAY
+	dbw 24, BUBBLEBEAM
+	dbw 29, SLASH
+	dbw 35, SHADOW_BALL
+	dbw 42, SNORE
+	dbw 47, PAIN_SPLIT
+	dbw 50, DESTINY_BOND
+	dbw 53, HYDRO_PUMP
+	dbw 56, GUILLOTINE
 	db 0 ; no more level-up moves
 
 AbraEvosAttacks:

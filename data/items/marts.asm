@@ -86,9 +86,10 @@ MartAzalea:
 	db -1 ; end
 
 MartCianwood:
-	db 9 ; # items
+	db 10 ; # items
 	db POKE_BALL
 	db GREAT_BALL
+	db ULTRA_BALL
 	db POTION
 	db SUPER_POTION
 	db HYPER_POTION
@@ -223,18 +224,20 @@ MartGoldenrod5F4:
 	db -1 ; end
 
 MartOlivine:
-	db 11 ; # items
+	db 13 ; # items
+	db POKE_BALL
 	db GREAT_BALL
+	db ULTRA_BALL
 	db SUPER_POTION
 	db HYPER_POTION
 	db REVIVE
 	db FULL_HEAL
 	db SUPER_REPEL
-	db SURF_MAIL
 	db TM_BODY_SLAM
 	db TM_ROLLOUT
 	db TM_DIG
 	db TM_STEEL_WING
+	db SURF_MAIL
 	db -1 ; end
 
 MartEcruteak:

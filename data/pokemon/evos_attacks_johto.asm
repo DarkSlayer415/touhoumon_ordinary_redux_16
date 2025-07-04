@@ -328,15 +328,16 @@ FeraligatrEvosAttacks:
 	db 0 ; no more level-up moves
 
 SentretEvosAttacks:
-	dbbw EVOLVE_LEVEL, 20, FURRET
+	dbbw EVOLVE_LEVEL, 17, FURRET
 	db 0 ; no more evolutions
 	dbw 1, POUND
 	dbw 1, GROWL
 	dbw 5, LICK
 	dbw 7, CONFUSE_RAY
-	dbw 11, AMNESIA
-	dbw 15, NIGHT_SHADE
-	dbw 20, SPITE
+	dbw 11, NIGHT_SHADE
+	dbw 14, DISABLE
+	dbw 17, SPITE
+	dbw 20, AMNESIA
 	dbw 23, HYPNOSIS
 	dbw 26, MIMIC
 	dbw 34, SHADOW_BALL
@@ -352,9 +353,10 @@ FurretEvosAttacks:
 	dbw 1, GROWL
 	dbw 5, LICK
 	dbw 7, CONFUSE_RAY
-	dbw 11, AMNESIA
-	dbw 15, NIGHT_SHADE
-	dbw 20, SPITE
+	dbw 11, NIGHT_SHADE
+	dbw 14, DISABLE
+	dbw 17, SPITE
+	dbw 20, AMNESIA
 	dbw 24, HYPNOSIS
 	dbw 27, MIMIC
 	dbw 34, SHADOW_BALL
@@ -756,9 +758,10 @@ BellossomEvosAttacks:
 	dbw 1, GROWL
 	dbw 5, LICK
 	dbw 7, CONFUSE_RAY
-	dbw 11, AMNESIA
-	dbw 15, NIGHT_SHADE
-	dbw 20, SPITE
+	dbw 11, NIGHT_SHADE
+	dbw 14, DISABLE
+	dbw 17, SPITE
+	dbw 20, AMNESIA
 	dbw 24, HYPNOSIS
 	dbw 27, MIMIC
 	dbw 34, SHADOW_BALL

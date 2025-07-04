@@ -309,7 +309,7 @@ GrowlitheEggMoves:
 PoliwagEggMoves:
 	db MIST
 	db HAZE
-	db AMNESIA
+	db PHANTOM_DAZE
 	db PETAL_DANCE
 	db MIND_READER
 	db -1 ; end

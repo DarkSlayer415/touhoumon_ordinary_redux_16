@@ -111,7 +111,7 @@ MonMenuIcons:
 	db ICON_ODDISH      ; HITMONCHAN
 	db ICON_STARYU      ; LICKITUNG
 	db ICON_STARYU      ; KOFFING
-	db ICON_BAT         ; WEEZING
+	db ICON_STARYU      ; WEEZING
 	db ICON_FOX         ; RHYHORN
 	db ICON_FOX         ; RHYDON
 	db ICON_STARYU      ; CHANSEY
@@ -202,7 +202,7 @@ MonMenuIcons:
 	db ICON_GYARADOS    ; MURKROW
 	db ICON_BULBASAUR   ; SLOWKING
 	db ICON_FOX         ; MISDREAVUS
-	db ICON_FISH        ; UNOWN
+	db ICON_HUMANSHAPE  ; UNOWN
 	db ICON_BAT         ; WOBBUFFET
 	db ICON_DIGLETT     ; GIRAFARIG
 	db ICON_DIGLETT     ; PINECO
@@ -255,4 +255,31 @@ MonMenuIcons:
 	db ICON_BIRD        ; CELEBI
 	db ICON_LAPRAS		; CYuuto
 	db ICON_LAPRAS		; Yuuto
+	db ICON_STARYU      ; Kedama
+	db ICON_STARYU		; MimiChan
+	db ICON_HO_OH		; Ruukoto
+	db ICON_SHELL		; Rei'sen
+	db ICON_HUMANSHAPE  ; Akyuu
+	db ICON_EQUINE		; CNazrin
+	db ICON_EQUINE		; Nazrin
+	db ICON_EQUINE		; ENazrin
+	db ICON_STARYU		; CKogasa
+	db ICON_STARYU		; Kogasa
+	db ICON_STARYU		; EKogasa
+	db ICON_FIGHTER		; CIchirin
+	db ICON_FIGHTER		; Ichirin
+	db ICON_FIGHTER		; EIchirin
+	db ICON_SLOWPOKE	; CMurasa
+	db ICON_SLOWPOKE	; Murasa
+	db ICON_SLOWPOKE	; EMurasa
+	db ICON_EQUINE		; CShou
+	db ICON_EQUINE		; Shou
+	db ICON_EQUINE		; EShou
+	db ICON_GYARADOS	; CByakuren
+	db ICON_GYARADOS	; Byakuren
+	db ICON_GYARADOS	; EByakuren
+	db ICON_BAT			; CNue
+	db ICON_BAT			; Nue
+	db ICON_BAT			; ENue
+	db ICON_FISH		; Rinnosuke
 	assert_table_length NUM_POKEMON

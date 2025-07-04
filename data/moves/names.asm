@@ -165,7 +165,7 @@ MoveNames::
 	li "Thief"
 	li "Spider Web"
 	li "Mind's Eye"
-	li "Occult Dance"
+	li "Shadow Dance"
 	li "Flame Wheel"
 	li "Slack Off"
 	li "Curse"
