@@ -80,17 +80,13 @@ AlphabeticalPokedexOrder:
 	dw URSARING		;EYumeko
 	dw TOGEPI		;CShinki
 	dw TOGETIC		;Shinki
+	dw KEDAMA		;Kedama
+	dw EEVEE		;Himawari
 	dw GROWLITHE	;CRumia
 	dw ARCANINE		;Rumia
 	dw CHANSEY		;ERumia
-	dw KEDAMA		;Kedama
-	dw EEVEE		;Himawari
 	dw MAGIKARP		;Daiyousei
 	dw GYARADOS		;EDaiyousei
-	dw VULPIX		;LilyWhite
-	dw NINETALES	;ELilyWhite
-	dw ZUBAT		;LilyBlack
-	dw GOLBAT		;ELilyBlack
 	dw WEEDLE		;CCirno
 	dw KAKUNA		;Cirno	
 	dw BEEDRILL		;ECirno
@@ -118,6 +114,8 @@ AlphabeticalPokedexOrder:
 	dw TENTACOOL	;CChen
 	dw TENTACRUEL	;Chen
 	dw JYNX			;EChen
+	dw VULPIX		;LilyWhite
+	dw NINETALES	;ELilyWhite
 	dw SEEL			;CLunasa
 	dw DEWGONG		;Lunasa
 	dw ARTICUNO		;ELunasa
@@ -167,6 +165,8 @@ AlphabeticalPokedexOrder:
 	dw CYNDAQUIL	;CMokou
 	dw QUILAVA		;Mokou
 	dw TYPHLOSION	;EMokou
+	dw ZUBAT		;LilyBlack
+	dw GOLBAT		;ELilyBlack
 	dw PARAS		;CMedicine
 	dw PARASECT		;Medicine
 	dw PINSIR		;EMedicine
@@ -266,16 +266,16 @@ AlphabeticalPokedexOrder:
 	dw MEOWTH		;CStar
 	dw PERSIAN		;Star
 	dw VAPOREON		;EStar
-	dw CYUUTO		;CYuuto
-	dw YUUTO		;Yuuto
 	dw VOLTORB		;CTokiko
 	dw ELECTRODE	;Tokiko
 	dw SCIZOR		;ETokiko
+	dw REI_SEN		;Rei'sen
 	dw AKYUU		;Akyuu
 	dw UNOWN		;Kosuzu
-	dw REI_SEN		;Rei'sen
 	dw MEWTWO		;CKasen
 	dw MEW			;Kasen
+	dw CYUUTO		;CYuuto
+	dw YUUTO		;Yuuto
 	dw RINNOSUKE	;Rinnosuke
 	dw RAIKOU		;Toyohime
 	dw ENTEI		;Yorihime

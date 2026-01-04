@@ -1,9 +1,9 @@
-	db DRAGONITE ; 149
-
-	db 115,  70, 125,  70,  95, 125
+	db 0 ; species ID placeholder
+	
+	db 120,  60, 130,  60, 100, 130
 	;   hp  atk  def  spd  sat  sdf
 
-	db PSYCHIC_TYPE, GHOST ; type
+	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
 	db 45 ; catch rate
 	db 230 ; base exp
 	db NO_ITEM, NO_ITEM ; items

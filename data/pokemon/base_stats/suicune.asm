@@ -1,6 +1,6 @@
-	db SUICUNE ; 245
+	db 0 ; species ID placeholder
 
-	db  90,  70, 100, 105, 115, 100
+	db 100,  75,  95, 110, 125,  95
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, POISON ; type

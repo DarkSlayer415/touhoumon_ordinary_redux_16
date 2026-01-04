@@ -1,6 +1,6 @@
 	db NIDOKING ; 034
 
-	db  95, 120,  90,  80,  50,  80
+	db 100, 120, 100,  80,  50,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db GROUND, FIGHTING ; type

@@ -1,9 +1,9 @@
-	db RAIKOU ; 243
+	db 0 ; species ID placeholder
 
-	db  90,  80, 115,  80, 100, 115
+	db 100,  70, 120,  70, 120, 120
 	;   hp  atk  def  spd  sat  sdf
 
-	db FAIRY, DRAGON ; type
+	db DRAGON, FAIRY ; type
 	db 15 ; catch rate
 	db 216 ; base exp
 	db NO_ITEM, NO_ITEM ; items

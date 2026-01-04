@@ -1,6 +1,6 @@
-	db DRAGONAIR ; 148
+	db 0 ; species ID placeholder
 
-	db  80,  40,  95,  45,  65,  95
+	db  80,  40,  90,  45,  75,  90
 	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type

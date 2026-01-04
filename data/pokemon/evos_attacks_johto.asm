@@ -1135,18 +1135,17 @@ UnownEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POUND
 	dbw 1, GROWL
-	dbw 7, PURSUIT
-	dbw 11, SWIFT
-	dbw 16, CONFUSION
-	dbw 19, SWEET_KISS
-	dbw 22, FAINT_ATTACK
-	dbw 25, PSYBEAM
+	dbw 7, FORESIGHT
+	dbw 11, CONFUSION
+	dbw 16, SWIFT
+	dbw 19, PSYBEAM
+	dbw 22, SWEET_KISS
+	dbw 25, PSYCH_UP
 	dbw 28, KINESIS
-	dbw 33, STOMP
-	dbw 39, PSYCHIC_M
+	dbw 33, PSYCHIC_M
+	dbw 39, HEAL_BELL
 	dbw 44, MEDITATE
-	dbw 49, SUPER_FANG
-	dbw 52, TRI_ATTACK
+	dbw 49, TRI_ATTACK
 	db 0 ; no more level-up moves
 
 WobbuffetEvosAttacks:
@@ -1794,7 +1793,7 @@ Porygon2EvosAttacks:
 	db 0 ; no more level-up moves
 
 StantlerEvosAttacks:
-	dbbw EVOLVE_LEVEL, 20, SMEARGLE
+	dbbw EVOLVE_LEVEL, 26, SMEARGLE
 	db 0 ; no more evolutions
 	dbw 1, POUND
 	dbw 1, GROWL
@@ -1842,7 +1841,7 @@ SmeargleEvosAttacks:
 	db 0 ; no more level-up moves
 
 TyrogueEvosAttacks:
-	dbbw EVOLVE_LEVEL, 20, HITMONTOP
+	dbbw EVOLVE_LEVEL, 26, HITMONTOP
 	db 0 ; no more evolutions
 	dbw 1, PURSUIT
 	dbw 1, LEER
@@ -2368,7 +2367,7 @@ EKogasaEvosAttacks:
 	db 0 ; no more level-up moves
 
 CIchirinEvosAttacks:
-	dbbw EVOLVE_LEVEL, 18, ICHIRIN
+	dbbw EVOLVE_LEVEL, 20, ICHIRIN
 	db 0 ; no more evolutions
 	dbw 1, POUND
 	dbw 1, LEER
@@ -2376,8 +2375,8 @@ CIchirinEvosAttacks:
 	dbw 9, CONFUSION
 	dbw 11, FOCUS_ENERGY
 	dbw 14, MACH_PUNCH
-	dbw 18, COMET_PUNCH
-	dbw 21, PSYBEAM
+	dbw 17, COMET_PUNCH
+	dbw 20, PSYBEAM
 	dbw 25, DIZZY_PUNCH
 	dbw 28, MEGA_PUNCH
 	dbw 34, CROSS_CHOP
@@ -2388,7 +2387,7 @@ CIchirinEvosAttacks:
 	db 0 ; no more level-up moves
 	
 IchirinEvosAttacks:
-	dbbw EVOLVE_LEVEL, 34, EICHIRIN
+	dbbw EVOLVE_LEVEL, 36, EICHIRIN
 	db 0 ; no more evolutions
 	dbw 1, POUND
 	dbw 1, LEER
@@ -2396,11 +2395,11 @@ IchirinEvosAttacks:
 	dbw 9, CONFUSION
 	dbw 11, FOCUS_ENERGY
 	dbw 14, MACH_PUNCH
-	dbw 18, COMET_PUNCH
-	dbw 22, PSYBEAM
+	dbw 17, COMET_PUNCH
+	dbw 20, PSYBEAM
 	dbw 26, DIZZY_PUNCH
 	dbw 29, MEGA_PUNCH
-	dbw 34, CROSS_CHOP
+	dbw 36, CROSS_CHOP
 	dbw 39, PSYCHIC_M
 	dbw 43, MIND_READER
 	dbw 47, MYSTIC_BOMB
@@ -2419,7 +2418,7 @@ EIchirinEvosAttacks:
 	dbw 22, PSYBEAM
 	dbw 26, DIZZY_PUNCH
 	dbw 29, MEGA_PUNCH
-	dbw 34, CROSS_CHOP
+	dbw 36, CROSS_CHOP
 	dbw 40, PSYCHIC_M
 	dbw 44, MIND_READER
 	dbw 48, MYSTIC_BOMB
@@ -2689,5 +2688,6 @@ RinnosukeEvosAttacks:
 	dbw 66, PETAL_DANCE
 	dbw 77, HI_JUMP_KICK
 	dbw 88, MEGA_KICK
+	dbw 99, EXTREMESPEED
 	db 0 ; no more level-up moves
 	

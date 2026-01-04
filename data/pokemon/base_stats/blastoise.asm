@@ -1,6 +1,6 @@
 	db BLASTOISE ; 009
 
-	db  80,  90,  75, 120,  90,  75
+	db  75,  95,  70, 125,  95,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db STEEL, PSYCHIC_TYPE ; type

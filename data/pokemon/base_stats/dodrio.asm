@@ -1,6 +1,6 @@
 	db DODRIO ; 085
 
-	db 220,  50, 70,  50,  70,  70
+	db 200,  60, 70,  60,  70,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type

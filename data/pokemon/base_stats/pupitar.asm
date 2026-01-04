@@ -1,4 +1,4 @@
-	db PUPITAR ; 247
+	db 0 ; species ID placeholder
 
 	db  70,  85,  55,  70,  85,  55
 	;   hp  atk  def  spd  sat  sdf

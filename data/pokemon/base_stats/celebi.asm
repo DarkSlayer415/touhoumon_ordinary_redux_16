@@ -1,4 +1,4 @@
-	db CELEBI ; 251
+	db 0 ; species ID placeholder
 
 	db  75,  85,  70, 110, 120,  70
 	;   hp  atk  def  spd  sat  sdf
@@ -13,7 +13,7 @@
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/celebi/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
-	db GROWTH_MEDIUM_FAST ; growth rate
+	db GROWTH_MEDIUM_SLOW ; growth rate
 	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups		
 	
 	; tm/hm learnset

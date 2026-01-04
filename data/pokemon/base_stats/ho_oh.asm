@@ -1,9 +1,9 @@
-	db HO_OH ; 250
+	db 0 ; species ID placeholder
 
 	db 110, 130,  95, 120, 130,  95
 	;   hp  atk  def  spd  sat  sdf
 
-	db STEEL, DRAGON ; type
+	db STEEL, FIRE ; type
 	db 5 ; catch rate
 	db 220 ; base exp
 	db SACRED_ASH, SACRED_ASH ; items

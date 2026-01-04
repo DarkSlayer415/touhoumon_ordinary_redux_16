@@ -1,6 +1,6 @@
-	db TYRANITAR ; 248
+	db 0 ; species ID placeholder
 
-	db  95, 125,  70, 115, 125,  70
+	db  85, 125,  75, 115, 125,  75
 	;   hp  atk  def  spd  sat  sdf
 
 	db GHOST, DARK ; type

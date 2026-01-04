@@ -1,6 +1,6 @@
-	db LUGIA ; 249
+	db 0 ; species ID placeholder
 
-	db 110,  90, 100, 135, 145, 100
+	db 110,  80, 105, 135, 145, 105
 	;   hp  atk  def  spd  sat  sdf
 
 	db GHOST, PSYCHIC_TYPE ; type

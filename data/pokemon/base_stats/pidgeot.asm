@@ -1,6 +1,6 @@
 	db PIDGEOT ; 018
 
-	db  70, 105,  70, 140,  75,  70
+	db  70, 105,  65, 145,  80,  65
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, FLYING ; type
@@ -13,7 +13,7 @@
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/pidgeot/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
-	db GROWTH_MEDIUM_FAST ; growth rate
+	db GROWTH_MEDIUM_SLOW ; growth rate
 	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset

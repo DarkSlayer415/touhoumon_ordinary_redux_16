@@ -1,4 +1,4 @@
-	db DRATINI ; 147
+	db 0 ; species ID placeholder
 
 	db  60,  25,  70,  25,  50,  70
 	;   hp  atk  def  spd  sat  sdf

@@ -3,6 +3,8 @@ MACRO mon_cry
 	dw \1, \2, \3
 ENDM
 
+; Custom Cries created using CryEd by Chaos-Lord: https://github.com/chaos-lord/CryEd/tree/master
+
 PokemonCries::
 ; entries correspond to constants/pokemon_constants.asm
 	table_width MON_CRY_LENGTH
@@ -116,7 +118,7 @@ PokemonCries::
 	mon_cry CRY_SEEL,          0,  256 ; LICKITUNG
 	mon_cry CRY_GOLEM,       230,  349 ; KOFFING
 	mon_cry CRY_GOLEM,       255,  383 ; WEEZING
-	mon_cry CRY_GIRAFARIG,    50,  576 ; RHYHORN
+	mon_cry CRY_GIRAFARIG,  8272,  576 ; RHYHORN
 	mon_cry CRY_GIRAFARIG,     0,  384 ; RHYDON
 	mon_cry CRY_PIDGEOTTO,    10,  320 ; CHANSEY
 	mon_cry CRY_KRABBY,      255,  240 ; TANGELA
@@ -173,8 +175,8 @@ PokemonCries::
 	mon_cry CRY_LEDYBA,        0,  222 ; LEDYBA
 	mon_cry CRY_LEDYBA,     -150,  312 ; LEDIAN
 	mon_cry CRY_SPINARAK,     17,  512 ; SPINARAK
-	mon_cry CRY_SPINARAK,   -174,  482 ; ARIADOS
-	mon_cry CRY_SPINARAK,    -16,  592 ; CROBAT
+	mon_cry CRY_SPINARAK,     -7,  512 ; ARIADOS
+	mon_cry CRY_SPINARAK,    -16,  512 ; CROBAT
 	mon_cry CRY_CYNDAQUIL,   969,  320 ; CHINCHOU
 	mon_cry CRY_CYNDAQUIL,   720,  272 ; LANTURN
 	mon_cry CRY_PICHU,         0,  320 ; PICHU
@@ -239,8 +241,8 @@ PokemonCries::
 	mon_cry CRY_SENTRET,      72,  560 ; PHANPY
 	mon_cry CRY_DONPHAN,      50,  416 ; DONPHAN
 	mon_cry CRY_DONPHAN,       0,  416 ; PORYGON2
-	mon_cry CRY_AIPOM,      -352,  384 ; STANTLER
-	mon_cry CRY_PICHU,      -538,  496 ; SMEARGLE
+	mon_cry CRY_AIPOM,       -96,  256 ; STANTLER
+	mon_cry CRY_AIPOM,      -352,  256 ; SMEARGLE
 	mon_cry CRY_AIPOM,        44,  264 ; TYROGUE
 	mon_cry CRY_SLUGMA,        0,  256 ; HITMONTOP
 	mon_cry CRY_RATTATA,       0,  256 ; SMOOCHUM
@@ -259,4 +261,31 @@ PokemonCries::
 	mon_cry CRY_NATU,       -167,  360 ; CELEBI
 	mon_cry CRY_ENTEI,       330,  273 ; CYuuto
 	mon_cry CRY_ENTEI,       256,  416 ; Yuuto
+	mon_cry CRY_PIDGEY,		 266,  383 ; Kedama
+	mon_cry CRY_CYNDAQUIL,  2884,  580 ; Mimi-Chan
+	mon_cry CRY_GIRAFARIG,   115,  576 ; Ruukoto
+	mon_cry CRY_GLIGAR,   	  47,  512 ; Rei'sen
+	mon_cry CRY_PICHU,      -538,  496 ; Akyuu
+	mon_cry CRY_MARILL,      237,  255 ; CNazrin
+	mon_cry CRY_MARILL,		 221,  255 ; Nazrin
+	mon_cry CRY_MARILL,     2218,  528 ; ENazrin
+	mon_cry CRY_CHIKORITA,	  60,  320 ; CKogasa
+	mon_cry CRY_CHIKORITA,   316,  320 ; Kogasa
+	mon_cry CRY_CHIKORITA,  8192,  580 ; EKogasa
+	mon_cry CRY_GLIGAR,      -80,  273 ; CIchirin
+	mon_cry CRY_GLIGAR,     3760,  273 ; Ichirin
+	mon_cry CRY_GLIGAR,     3472,  802 ; EIchirin
+	mon_cry CRY_PSYDUCK,	 592,  160 ; CMurasa
+	mon_cry CRY_PSYDUCK,	 624,  170 ; Murasa
+	mon_cry CRY_WOOPER,		3714,  896 ; EMurasa
+	mon_cry CRY_RATTATA,     101,  624 ; CShou
+	mon_cry CRY_RATTATA,     357,  624 ; Shou
+	mon_cry CRY_RAICHU,      -56,  200 ; EShou
+	mon_cry CRY_GLIGAR,		4092,  272 ; CByakuren
+	mon_cry CRY_VILEPLUME,	  56,  100 ; Byakuren
+	mon_cry CRY_VILEPLUME,  3880,  355 ; EByakuren
+	mon_cry CRY_SQUIRTLE,    255,  320 ; CNue
+	mon_cry CRY_SQUIRTLE,   3839,  320 ; Nue
+	mon_cry CRY_SQUIRTLE,   4084,  320 ; ENue
+	mon_cry CRY_RAIKOU,     2095,  368 ; Rinnosuke
 	assert_table_length NUM_POKEMON
