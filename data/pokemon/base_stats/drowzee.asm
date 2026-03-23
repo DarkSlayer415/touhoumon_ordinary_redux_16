@@ -1,4 +1,4 @@
-	db DROWZEE ; 096
+	db 0 ; species ID placeholder
 
 	db  65,  65,  65,  60,  90,  75
 	;   hp  atk  def  spd  sat  sdf

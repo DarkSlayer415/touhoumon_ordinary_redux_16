@@ -1,4 +1,4 @@
-	db SHUCKLE ; 213
+	db 0 ; species ID placeholder
 
 	db  60,  45,  50,  50,  45,  50
 	;   hp  atk  def  spd  sat  sdf

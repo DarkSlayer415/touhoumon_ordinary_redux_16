@@ -1,4 +1,4 @@
-	db GRIMER ; 088
+	db 0 ; species ID placeholder
 
 	db  50,  45,  40,  60,  65,  40
 	;   hp  atk  def  spd  sat  sdf

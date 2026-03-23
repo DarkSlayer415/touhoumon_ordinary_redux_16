@@ -1,4 +1,4 @@
-	db METAPOD ; 011
+	db 0 ; species ID placeholder
 
 	db  60,  45,  45,  60,  95,  95
 	;   hp  atk  def  spd  sat  sdf

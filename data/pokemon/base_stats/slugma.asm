@@ -1,4 +1,4 @@
-	db SLUGMA ; 218
+	db 0 ; species ID placeholder
 
 	db  60,  50,  60,  70,  90,  70
 	;   hp  atk  def  spd  sat  sdf

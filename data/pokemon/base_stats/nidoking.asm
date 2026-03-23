@@ -1,4 +1,4 @@
-	db NIDOKING ; 034
+	db 0 ; species ID placeholder
 
 	db 100, 120, 100,  80,  50,  80
 	;   hp  atk  def  spd  sat  sdf

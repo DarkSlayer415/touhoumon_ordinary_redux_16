@@ -1,9 +1,9 @@
-	db ALAKAZAM ; 065
+	db 0 ; species ID placeholder
 
-	db 110,  55, 105,  80,  90, 105
+	db  90,  60,  90, 100, 110, 90
 	;   hp  atk  def  spd  sat  sdf
 
-	db PSYCHIC_TYPE, DRAGON ; type
+	db PSYCHIC_TYPE, GHOST ; type
 	db 45 ; catch rate
 	db 215 ; base exp
 	db NO_ITEM, NO_ITEM ; items

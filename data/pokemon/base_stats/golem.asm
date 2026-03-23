@@ -1,4 +1,4 @@
-	db GOLEM ; 076
+	db 0 ; species ID placeholder
 
 	db  70, 105,  70, 110, 105,  70
 	;   hp  atk  def  spd  sat  sdf

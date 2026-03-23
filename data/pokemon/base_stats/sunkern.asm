@@ -1,6 +1,6 @@
 	db SUNKERN ; 191
 
-	db  30,  70,  30,  70,  70,  30
+	db  30,  70,  30,  55,  60,  55
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, FIRE ; type

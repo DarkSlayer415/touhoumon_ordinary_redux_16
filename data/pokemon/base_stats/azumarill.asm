@@ -1,6 +1,6 @@
-	db AZUMARILL ; 184
+	db 0 ; species ID placeholder
 
-	db  60,  70,  60,  70,  80,  80
+	db  65,  75,  60,  60,  80,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, GROUND ; type

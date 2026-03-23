@@ -1,6 +1,6 @@
-	db MACHOKE ; 067
+	db 0 ; species ID placeholder
 
-	db  70,  90,  50,  70,  60,  60
+	db  60,  90,  50,  70,  70,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIGHTING, FIGHTING ; type

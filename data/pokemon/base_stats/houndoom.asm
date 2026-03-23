@@ -1,4 +1,4 @@
-	db HOUNDOOM ; 229
+	db 0 ; species ID placeholder
 
 	db  80,  50,  60,  50,  90,  90
 	;   hp  atk  def  spd  sat  sdf

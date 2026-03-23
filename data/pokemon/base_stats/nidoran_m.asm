@@ -1,6 +1,6 @@
-	db NIDORAN_M ; 032
+	db 0 ; species ID placeholder
 
-	db  60,  70,  55,  40,  30,  45
+	db  55,  70,  55,  45,  30,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db GROUND, FIGHTING ; type

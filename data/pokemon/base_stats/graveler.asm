@@ -1,4 +1,4 @@
-	db GRAVELER ; 075
+	db 0 ; species ID placeholder
 
 	db  55,  80,  55,  95,  80,  55
 	;   hp  atk  def  spd  sat  sdf

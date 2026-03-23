@@ -1,6 +1,6 @@
-	db CHARIZARD ; 006
+	db 0 ; species ID placeholder
 
-	db  80,  65,  75, 115, 120,  75
+	db  80,  60,  75, 115, 125,  75
 	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, FIRE ; type

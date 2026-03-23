@@ -1,9 +1,9 @@
-	db SLOWPOKE ; 079
+	db 0 ; species ID placeholder
 
 	db  70,  40,  55,  25,  55,  55
 	;   hp  atk  def  spd  sat  sdf
 
-	db POISON, WATER ; type
+	db POISON, POISON ; type
 	db 190 ; catch rate
 	db 60 ; base exp
 	db NO_ITEM, NO_ITEM ; items

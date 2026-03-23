@@ -1,6 +1,6 @@
-	db MAREEP ; 179
+	db 0 ; species ID placeholder
 
-	db  45,  60,  40,  45,  70,  40
+	db  45,  55,  40,  55,  65,  40
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type

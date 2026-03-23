@@ -1,6 +1,6 @@
-	db VAPOREON ; 134
+	db 0 ; species ID placeholder
 
-	db  90,  60,  95,  70,  95, 110
+	db 100,  60,  90,  70,  90, 110
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, FAIRY ; type

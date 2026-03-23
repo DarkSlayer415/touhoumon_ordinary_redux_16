@@ -1,4 +1,4 @@
-	db TENTACRUEL ; 073
+	db 0 ; species ID placeholder
 
 	db  65,  75,  55,  95,  55,  55
 	;   hp  atk  def  spd  sat  sdf

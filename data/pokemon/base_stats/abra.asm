@@ -1,6 +1,6 @@
-	db ABRA ; 063
+	db 0 ; species ID placeholder
 
-	db  55,  30,  55,  50,  55,  55
+	db  50,  30,  50,  60,  60,  50
 	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type

@@ -1,4 +1,4 @@
-	db MR__MIME ; 122
+	db 0 ; species ID placeholder
 
 	db 110,  55,  90,  55,  70, 120
 	;   hp  atk  def  spd  sat  sdf

@@ -1,6 +1,6 @@
-	db PILOSWINE ; 221
+	db 0 ; species ID placeholder
 
-	db  70,  65,  70, 110, 120,  85
+	db  70,  60,  70, 110, 120,  90
 	;   hp  atk  def  spd  sat  sdf
 
 	db ICE, POISON ; type

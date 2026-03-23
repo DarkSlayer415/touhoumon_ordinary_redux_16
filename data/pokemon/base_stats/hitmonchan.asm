@@ -1,4 +1,4 @@
-	db HITMONCHAN ; 107
+	db 0 ; species ID placeholder
 
 	db 100,  50, 110,  50,  80, 110
 	;   hp  atk  def  spd  sat  sdf

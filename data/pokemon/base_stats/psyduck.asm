@@ -1,6 +1,6 @@
-	db PSYDUCK ; 054
+	db 0 ; species ID placeholder
 
-	db  40,  50,  40,  65,  65,  40
+	db  40,  50,  45,  60,  60,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, ELECTRIC ; type

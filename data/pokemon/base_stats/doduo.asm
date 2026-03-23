@@ -1,4 +1,4 @@
-	db DODUO ; 084
+	db 0 ; species ID placeholder
 
 	db 150,  40,  60,  40,  60,  60
 	;   hp  atk  def  spd  sat  sdf

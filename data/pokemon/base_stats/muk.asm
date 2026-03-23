@@ -1,4 +1,4 @@
-	db MUK ; 089
+	db 0 ; species ID placeholder
 
 	db  65,  60,  50,  85,  90,  50
 	;   hp  atk  def  spd  sat  sdf

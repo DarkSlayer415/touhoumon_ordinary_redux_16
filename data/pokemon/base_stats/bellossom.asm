@@ -1,4 +1,4 @@
-	db BELLOSSOM ; 182
+	db 0 ; species ID placeholder
 
 	db 100,  70,  90,  70,  90, 100
 	;   hp  atk  def  spd  sat  sdf

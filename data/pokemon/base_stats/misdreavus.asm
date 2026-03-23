@@ -1,4 +1,4 @@
-	db MISDREAVUS ; 200
+	db 0 ; species ID placeholder
 
 	db  50,  60,  40,  50,  60,  40
 	;   hp  atk  def  spd  sat  sdf

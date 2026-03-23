@@ -1,6 +1,6 @@
-	db PHANPY ; 231
+	db 0 ; species ID placeholder
 
-	db  50,  60,  45,  60,  40,  45
+	db  50,  70,  45,  50,  40,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIGHTING, FIGHTING ; type

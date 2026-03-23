@@ -1,4 +1,4 @@
-	db SKARMORY ; 227
+	db 0 ; species ID placeholder
 
 	db 255,  40,  50,  65,  40,  50
 	;   hp  atk  def  spd  sat  sdf

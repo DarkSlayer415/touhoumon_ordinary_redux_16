@@ -1,6 +1,6 @@
-	db TOGEPI ; 175
+	db 0 ; species ID placeholder
 
-	db  70,  55,  70,  70,  90,  70
+	db  65,  50,  60,  65,  85,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db DRAGON, FAIRY ; type

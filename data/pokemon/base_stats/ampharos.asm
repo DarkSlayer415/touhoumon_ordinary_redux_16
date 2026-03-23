@@ -1,4 +1,4 @@
-	db AMPHAROS ; 181
+	db 0 ; species ID placeholder
 
 	db  90,  95,  75,  95, 110,  75
 	;   hp  atk  def  spd  sat  sdf

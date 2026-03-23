@@ -1,4 +1,4 @@
-	db VILEPLUME ; 045
+	db 0 ; species ID placeholder
 
 	db  90,  60,  90,  90, 110,  90
 	;   hp  atk  def  spd  sat  sdf

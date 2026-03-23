@@ -1,4 +1,4 @@
-	db CYUUTO ; 252
+	db 0 ; species ID placeholder
 
 	db  50,  65,  50,  60,  75,  60
 	;   hp  atk  def  spd  sat  sdf

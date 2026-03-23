@@ -1,9 +1,9 @@
-	db RHYDON ; 112
+	db 0 ; species ID placeholder
 
-	db  80, 105,  75, 100, 105,  75
+	db  80, 110,  75, 110, 100,  75
 	;   hp  atk  def  spd  sat  sdf
 
-	db GROUND, DRAGON ; type
+	db GROUND, PSYCHIC_TYPE ; type
 	db 45 ; catch rate
 	db 215 ; base exp
 	db NO_ITEM, NO_ITEM ; items

@@ -1,6 +1,6 @@
-	db MAGCARGO ; 219
+	db 0 ; species ID placeholder
 
-	db  80,  65,  80,  90, 115,  90
+	db  80,  60,  80,  90, 120,  90
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, PSYCHIC_TYPE ; type

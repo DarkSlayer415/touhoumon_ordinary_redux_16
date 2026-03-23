@@ -1,6 +1,6 @@
-	db KOFFING ; 109
+	db 0 ; species ID placeholder
 
-	db  60,  50,  50,  85,  80,  70
+	db  60,  50,  50,  80,  80,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db FAIRY, POISON ; type

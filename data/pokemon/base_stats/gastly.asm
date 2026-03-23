@@ -1,4 +1,4 @@
-	db GASTLY ; 092
+	db 0 ; species ID placeholder
 
 	db  55,  55,  40,  60,  40,  50
 	;   hp  atk  def  spd  sat  sdf

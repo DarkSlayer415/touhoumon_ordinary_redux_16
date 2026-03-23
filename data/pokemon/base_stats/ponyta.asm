@@ -1,4 +1,4 @@
-	db PONYTA ; 077
+	db 0 ; species ID placeholder
 
 	db  50,  70,  50,  50,  40,  40
 	;   hp  atk  def  spd  sat  sdf

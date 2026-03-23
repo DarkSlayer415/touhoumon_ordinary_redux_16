@@ -1,4 +1,4 @@
-	db MANTINE ; 226
+	db 0 ; species ID placeholder
 
 	db 200,  35,  40,  50,  35,  40
 	;   hp  atk  def  spd  sat  sdf

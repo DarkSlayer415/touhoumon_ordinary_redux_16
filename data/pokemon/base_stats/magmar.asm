@@ -1,9 +1,9 @@
-	db MAGMAR ; 126
+	db 0 ; species ID placeholder
 
-	db 110,  65,  95,  60,  85,  95
+	db 110,  75,  95,  60,  85,  95
 	;   hp  atk  def  spd  sat  sdf
 
-	db POISON, WATER ; type
+	db POISON, POISON ; type
 	db 45 ; catch rate
 	db 185 ; base exp
 	db NO_ITEM, NO_ITEM ; items

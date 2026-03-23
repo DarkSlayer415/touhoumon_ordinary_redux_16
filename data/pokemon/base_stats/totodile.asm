@@ -1,4 +1,4 @@
-	db TOTODILE ; 158
+	db 0 ; species ID placeholder
 
 	db  50,  45,  50,  45,  60,  50
 	;   hp  atk  def  spd  sat  sdf

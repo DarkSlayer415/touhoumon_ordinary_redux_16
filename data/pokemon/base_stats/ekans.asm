@@ -1,4 +1,4 @@
-	db EKANS ; 023
+	db 0 ; species ID placeholder
 
 	db  60,  35,  65,  30,  50,  65
 	;   hp  atk  def  spd  sat  sdf

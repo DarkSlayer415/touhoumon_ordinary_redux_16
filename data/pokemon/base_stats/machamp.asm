@@ -1,6 +1,6 @@
-	db MACHAMP ; 068
+	db 0 ; species ID placeholder
 
-	db  80, 120,  60,  90,  85,  85
+	db  80, 120,  60,  95,  95,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIGHTING, DRAGON ; type

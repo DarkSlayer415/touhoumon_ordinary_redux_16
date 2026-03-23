@@ -1,4 +1,4 @@
-	db CROCONAW ; 159
+	db 0 ; species ID placeholder
 
 	db  70,  60,  65,  75,  85,  65
 	;   hp  atk  def  spd  sat  sdf

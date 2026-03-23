@@ -1,4 +1,4 @@
-	db MOLTRES ; 146
+	db 0 ; species ID placeholder
 
 	db  75,  65,  85, 120,  90,  85
 	;   hp  atk  def  spd  sat  sdf

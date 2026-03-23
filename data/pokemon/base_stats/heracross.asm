@@ -1,4 +1,4 @@
-	db HERACROSS ; 214
+	db 0 ; species ID placeholder
 
 	db  80,  60,  70,  60,  60,  70
 	;   hp  atk  def  spd  sat  sdf

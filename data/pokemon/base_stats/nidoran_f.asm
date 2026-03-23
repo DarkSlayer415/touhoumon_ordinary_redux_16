@@ -1,4 +1,4 @@
-	db NIDORAN_F ; 029
+	db 0 ; species ID placeholder
 
 	db  45,  40,  40,  70,  65,  40
 	;   hp  atk  def  spd  sat  sdf

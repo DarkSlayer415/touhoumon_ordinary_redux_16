@@ -1,6 +1,6 @@
-	db MAGNETON ; 082
-
-	db  60,  75,  40,  90,  85,  50
+	db 0 ; species ID placeholder
+	
+	db  50,  70,  50,  90,  80,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, GHOST ; type

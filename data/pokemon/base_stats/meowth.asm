@@ -1,6 +1,6 @@
-	db MEOWTH ; 052
+	db 0 ; species ID placeholder
 
-	db  50,  40,  55,  35,  55,  65
+	db  50,  40,  55,  40,  55,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type

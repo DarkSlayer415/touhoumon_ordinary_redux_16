@@ -1,4 +1,4 @@
-	db PICHU ; 172
+	db 0 ; species ID placeholder
 
 	db  40,  40,  50,  55,  65,  50
 	;   hp  atk  def  spd  sat  sdf

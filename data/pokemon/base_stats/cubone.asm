@@ -1,4 +1,4 @@
-	db CUBONE ; 104
+	db 0 ; species ID placeholder
 
 	db  45,  70,  50,  75,  35,  35
 	;   hp  atk  def  spd  sat  sdf

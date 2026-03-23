@@ -1,6 +1,6 @@
-	db YANMA ; 193
+	db 0 ; species ID placeholder
 
-	db  65, 125,  55, 115, 125,  55
+	db  60, 130,  60,  95, 100,  95
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, FIRE ; type

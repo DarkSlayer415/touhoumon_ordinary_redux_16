@@ -1,4 +1,4 @@
-	db VENUSAUR ; 003
+	db 0 ; species ID placeholder
 
 	db  85,  90,  90,  85,  90,  90
 	;   hp  atk  def  spd  sat  sdf

@@ -1,6 +1,6 @@
-	db SQUIRTLE ; 007
+	db 0 ; species ID placeholder
 
-	db  50,  50,  45,  60,  50,  45
+	db  50,  55,  40,  60,  55,  40
 	;   hp  atk  def  spd  sat  sdf
 
 	db STEEL, STEEL ; type

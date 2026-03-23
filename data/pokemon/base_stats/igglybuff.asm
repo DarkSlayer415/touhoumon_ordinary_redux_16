@@ -1,4 +1,4 @@
-	db IGGLYBUFF ; 174
+	db 0 ; species ID placeholder
 
 	db  55,  30,  45,  55,  70,  45
 	;   hp  atk  def  spd  sat  sdf

@@ -1,4 +1,4 @@
-	db STARYU ; 120
+	db 0 ; species ID placeholder
 
 	db  70,  30,  60,  30,  40,  70
 	;   hp  atk  def  spd  sat  sdf

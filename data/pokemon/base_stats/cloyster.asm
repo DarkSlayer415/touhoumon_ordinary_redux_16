@@ -1,4 +1,4 @@
-	db CLOYSTER ; 091
+	db 0 ; species ID placeholder
 
 	db  60,  50,  65,  75,  65,  65
 	;   hp  atk  def  spd  sat  sdf

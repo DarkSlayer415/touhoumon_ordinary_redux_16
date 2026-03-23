@@ -1,4 +1,4 @@
-	db CLEFABLE ; 036
+	db 0 ; species ID placeholder
 
 	db  80,  85,  75, 110,  85,  75
 	;   hp  atk  def  spd  sat  sdf

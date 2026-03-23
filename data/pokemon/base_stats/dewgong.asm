@@ -1,6 +1,6 @@
-	db DEWGONG ; 087
+	db 0 ; species ID placeholder
 
-	db  70,  45,  80,  55,  60,  90
+	db  75,  40,  75,  60,  60,  90
 	;   hp  atk  def  spd  sat  sdf
 
 	db GHOST, FAIRY ; type

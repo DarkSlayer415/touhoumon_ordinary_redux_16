@@ -1,4 +1,4 @@
-	db FARFETCH_D ; 083
+	db 0 ; species ID placeholder
 
 	db 100,  30,  45,  30,  50,  45
 	;   hp  atk  def  spd  sat  sdf

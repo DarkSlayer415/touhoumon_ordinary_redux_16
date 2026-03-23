@@ -1,9 +1,9 @@
-	db FLAAFFY ; 180
+	db 0 ; species ID placeholder
 
 	db  70,  75,  55,  75,  90,  55
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, NORMAL ; type
+	db NORMAL, GHOST ; type
 	db 120 ; catch rate
 	db 120 ; base exp
 	db NO_ITEM, NO_ITEM ; items

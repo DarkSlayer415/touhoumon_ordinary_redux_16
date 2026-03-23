@@ -1,4 +1,4 @@
-	db CLEFFA ; 173
+	db 0 ; species ID placeholder
 
 	db  40,  45,  55,  60,  45,  55
 	;   hp  atk  def  spd  sat  sdf

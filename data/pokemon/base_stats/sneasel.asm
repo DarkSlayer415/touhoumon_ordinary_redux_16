@@ -1,4 +1,4 @@
-	db SNEASEL ; 215
+	db 0 ; species ID placeholder
 
 	db  50,  75,  50,  45,  30,  50
 	;   hp  atk  def  spd  sat  sdf

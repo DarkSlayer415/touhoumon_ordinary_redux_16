@@ -1,6 +1,6 @@
-	db MEWTWO ; 150
+	db 0 ; species ID placeholder
 
-	db  70,  75,  60,  75,  85,  60
+	db  60,  70,  55,  70,  75,  55
 	;   hp  atk  def  spd  sat  sdf
 
 	db DRAGON, GRASS ; type

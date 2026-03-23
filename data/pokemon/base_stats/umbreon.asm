@@ -1,4 +1,4 @@
-	db UMBREON ; 197
+	db 0 ; species ID placeholder
 
 	db  85, 120,  75, 100,  70,  75
 	;   hp  atk  def  spd  sat  sdf

@@ -1,4 +1,4 @@
-	db DITTO ; 132
+	db 0 ; species ID placeholder
 
 	db  80, 110,  70, 120,  65,  65
 	;   hp  atk  def  spd  sat  sdf

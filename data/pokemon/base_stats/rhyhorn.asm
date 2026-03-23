@@ -1,4 +1,4 @@
-	db RHYHORN ; 111
+	db 0 ; species ID placeholder
 
 	db  60,  80,  60,  80,  80,  60
 	;   hp  atk  def  spd  sat  sdf

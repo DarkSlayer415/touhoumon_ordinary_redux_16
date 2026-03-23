@@ -1,6 +1,6 @@
-	db NIDORINA ; 030
+	db 0 ; species ID placeholder
 
-	db  65,  60,  60,  90,  85,  60
+	db  65,  55,  60,  90,  90,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type

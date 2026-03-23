@@ -1,6 +1,6 @@
-	db MARILL ; 183
+	db 0 ; species ID placeholder
 
-	db  40,  50,  40,  50,  60,  60
+	db  50,  50,  40,  40,  60,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, GROUND ; type

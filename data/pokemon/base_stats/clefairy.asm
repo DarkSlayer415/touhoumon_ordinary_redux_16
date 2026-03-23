@@ -1,4 +1,4 @@
-	db CLEFAIRY ; 035
+	db 0 ; species ID placeholder
 
 	db  65,  65,  65,  85,  65,  65
 	;   hp  atk  def  spd  sat  sdf

@@ -1,4 +1,4 @@
-	db TAUROS ; 128
+	db 0 ; species ID placeholder
 
 	db  70,  85,  70, 120, 105,  80
 	;   hp  atk  def  spd  sat  sdf

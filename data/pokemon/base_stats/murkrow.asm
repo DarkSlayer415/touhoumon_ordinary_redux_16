@@ -1,4 +1,4 @@
-	db MURKROW ; 198
+	db 0 ; species ID placeholder
 
 	db  60,  40,  50,  40,  60,  50
 	;   hp  atk  def  spd  sat  sdf

@@ -1,4 +1,4 @@
-	db SEAKING ; 119
+	db 0 ; species ID placeholder
 
 	db 100,  65, 100,  65, 110, 100
 	;   hp  atk  def  spd  sat  sdf

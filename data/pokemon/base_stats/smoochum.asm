@@ -1,10 +1,10 @@
-	db SMOOCHUM ; 238
+	db 0 ; species ID placeholder
 
 	db  60,  60,  50,  45,  35,  50
 	;   hp  atk  def  spd  sat  sdf
 
 	db ROCK, FIGHTING ; type
-	db 145 ; catch rate
+	db 150 ; catch rate
 	db 87 ; base exp
 	db BERRY, BERRY ; items
 	db GENDER_F50 ; gender ratio

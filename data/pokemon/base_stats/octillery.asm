@@ -1,6 +1,6 @@
-	db OCTILLERY ; 224
+	db 0 ; species ID placeholder
 
-	db  90,  85,  60, 100, 100,  75
+	db  80,  85,  70, 100, 100,  85
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, WATER ; type

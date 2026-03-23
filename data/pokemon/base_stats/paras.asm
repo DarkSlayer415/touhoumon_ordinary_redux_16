@@ -1,4 +1,4 @@
-	db PARAS ; 046
+	db 0 ; species ID placeholder
 
 	db  55,  40,  55,  45,  50,  55
 	;   hp  atk  def  spd  sat  sdf

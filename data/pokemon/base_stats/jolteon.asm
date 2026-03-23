@@ -1,4 +1,4 @@
-	db JOLTEON ; 135
+	db 0 ; species ID placeholder
 
 	db  80,  75,  70, 115, 110,  70
 	;   hp  atk  def  spd  sat  sdf

@@ -1,6 +1,6 @@
-	db SEEL ; 086
+	db 0 ; species ID placeholder
 
-	db  50,  35,  60,  40,  45,  70
+	db  60,  30,  60,  40,  40,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db GHOST, GHOST ; type

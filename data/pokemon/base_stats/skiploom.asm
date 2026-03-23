@@ -1,4 +1,4 @@
-	db SKIPLOOM ; 188
+	db 0 ; species ID placeholder
 
 	db  55,  75,  50,  90, 100,  50
 	;   hp  atk  def  spd  sat  sdf

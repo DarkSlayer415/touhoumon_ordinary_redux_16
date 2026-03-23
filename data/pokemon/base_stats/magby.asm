@@ -1,10 +1,10 @@
-	db MAGBY ; 240
+	db 0 ; species ID placeholder
 
 	db  45,  45,  35,  60,  70,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type
-	db 200 ; catch rate
+	db 225 ; catch rate
 	db 60 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio

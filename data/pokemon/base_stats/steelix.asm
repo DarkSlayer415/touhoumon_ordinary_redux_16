@@ -1,6 +1,6 @@
-	db STEELIX ; 208
+	db 0 ; species ID placeholder
 
-	db  85,  70,  80, 100, 125,  80
+	db  85,  70,  75, 110, 125,  75
 	;   hp  atk  def  spd  sat  sdf
 
 	db ICE, FIRE ; type

@@ -1,4 +1,4 @@
-	db YUUTO ; 253
+	db 0 ; species ID placeholder
 
 	db  70,  95,  70,  90, 110,  90
 	;   hp  atk  def  spd  sat  sdf

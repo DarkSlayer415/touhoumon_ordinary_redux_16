@@ -1,4 +1,4 @@
-	db QUILAVA ; 156
+	db 0 ; species ID placeholder
 
 	db  65,  80,  55,  85,  80,  55
 	;   hp  atk  def  spd  sat  sdf

@@ -1,4 +1,4 @@
-	db PORYGON ; 137
+	db 0 ; species ID placeholder
 
 	db  80, 110,  75, 100,  60,  75
 	;   hp  atk  def  spd  sat  sdf

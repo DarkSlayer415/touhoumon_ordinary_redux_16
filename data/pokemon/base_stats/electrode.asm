@@ -1,4 +1,4 @@
-	db ELECTRODE ; 101
+	db 0 ; species ID placeholder
 
 	db  65,  80,  65,  75,  50,  65
 	;   hp  atk  def  spd  sat  sdf

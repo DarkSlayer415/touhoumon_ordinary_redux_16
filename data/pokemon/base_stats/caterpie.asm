@@ -1,6 +1,6 @@
-	db CATERPIE ; 010
+	db 0 ; species ID placeholder
 
-	db  40,  35,  35,  50,  70,  70
+	db  45,  30,  30,  45,  75,  75
 	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type

@@ -1,6 +1,6 @@
-	db ARIADOS ; 168
+	db 0 ; species ID placeholder
 
-	db  60,  85,  55,  90,  70,  55
+	db  60,  80,  50,  90,  70,  50
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, FLYING ; type

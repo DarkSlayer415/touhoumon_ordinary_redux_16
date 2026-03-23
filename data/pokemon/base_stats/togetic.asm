@@ -1,4 +1,4 @@
-	db TOGETIC ; 176
+	db 0 ; species ID placeholder
 
 	db  95,  65,  90,  95, 120,  90
 	;   hp  atk  def  spd  sat  sdf

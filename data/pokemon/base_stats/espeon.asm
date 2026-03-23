@@ -1,6 +1,6 @@
-	db ESPEON ; 196
+	db 0 ; species ID placeholder
 
-	db  85,  70,  85,  80, 110,  95
+	db  85,  70,  95,  70, 110,  95
 	;   hp  atk  def  spd  sat  sdf
 
 	db STEEL, PSYCHIC_TYPE ; type

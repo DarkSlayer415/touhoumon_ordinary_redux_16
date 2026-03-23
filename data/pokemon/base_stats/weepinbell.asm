@@ -1,4 +1,4 @@
-	db WEEPINBELL ; 070
+	db 0 ; species ID placeholder
 
 	db  65,  75,  65,  50,  90,  75
 	;   hp  atk  def  spd  sat  sdf

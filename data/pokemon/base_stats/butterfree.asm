@@ -1,6 +1,6 @@
-	db BUTTERFREE ; 012
+	db 0 ; species ID placeholder
 
-	db  85,  60,  60,  85, 125, 115
+	db  80,  60,  60,  80, 130, 120
 	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, FAIRY ; type

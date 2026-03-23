@@ -1,6 +1,6 @@
-	db DONPHAN ; 232
+	db 0 ; species ID placeholder
 
-	db  65,  85,  60,  80,  50,  60
+	db  65,  95,  60,  70,  50,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIGHTING, FIGHTING ; type

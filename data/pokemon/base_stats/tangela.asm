@@ -1,4 +1,4 @@
-	db TANGELA ; 114
+	db 0 ; species ID placeholder
 
 	db  95,  60,  85,  65, 110,  85
 	;   hp  atk  def  spd  sat  sdf

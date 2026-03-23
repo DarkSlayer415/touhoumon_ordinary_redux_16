@@ -1,9 +1,9 @@
-	db KABUTOPS ; 141
+	db 0 ; species ID placeholder
 
-	db  70, 115,  70,  85, 115,  70
+	db  75, 110,  70,  90, 110,  70
 	;   hp  atk  def  spd  sat  sdf
 
-	db PSYCHIC_TYPE, FIGHTING ; type
+	db FAIRY, FIGHTING ; type
 	db 45 ; catch rate
 	db 190 ; base exp
 	db NO_ITEM, NO_ITEM ; items

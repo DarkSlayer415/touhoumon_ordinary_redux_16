@@ -1,4 +1,4 @@
-	db OMANYTE ; 138
+	db 0 ; species ID placeholder
 
 	db  50,  50,  50,  70,  70,  70
 	;   hp  atk  def  spd  sat  sdf

@@ -1,6 +1,6 @@
-	db SPINARAK ; 167
+	db 0 ; species ID placeholder
 
-	db  40,  65,  40,  70,  45,  40
+	db  40,  60,  40,  70,  50,  40
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, FLYING ; type

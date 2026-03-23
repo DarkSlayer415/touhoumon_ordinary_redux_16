@@ -1,4 +1,4 @@
-	db URSARING ; 217
+	db 0 ; species ID placeholder
 
 	db  90, 120,  90,  80,  60,  90
 	;   hp  atk  def  spd  sat  sdf

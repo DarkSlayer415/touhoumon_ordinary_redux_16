@@ -1,4 +1,4 @@
-	db PINECO ; 204
+	db 0 ; species ID placeholder
 
 	db  80,  70,  80,  50,  50,  70
 	;   hp  atk  def  spd  sat  sdf

@@ -1,6 +1,6 @@
 	db VENOMOTH ; 049
 
-	db  80,  40, 100,  30,  70,  70
+	db  80,  40, 100,  30,  60,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, FIRE ; type

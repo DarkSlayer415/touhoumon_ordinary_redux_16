@@ -1,6 +1,6 @@
-	db SWINUB ; 220
-
-	db  50,  65,  50,  80,  90,  65
+	db 0 ; species ID placeholder
+	
+	db  55,  50,  55,  80,  90,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db ICE, POISON ; type

@@ -1,4 +1,4 @@
-	db JYNX ; 124
+	db 0 ; species ID placeholder
 
 	db  75, 110,  65, 120,  65,  65
 	;   hp  atk  def  spd  sat  sdf

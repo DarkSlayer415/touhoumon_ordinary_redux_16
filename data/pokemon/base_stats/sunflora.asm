@@ -1,6 +1,6 @@
-	db SUNFLORA ; 192
+	db 0 ; species ID placeholder
 
-	db  45,  95,  45,  90,  95,  45
+	db  50,  85,  50,  70,  75,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, FIRE ; type

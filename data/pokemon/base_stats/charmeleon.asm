@@ -1,6 +1,6 @@
-	db CHARMELEON ; 005
+	db 0 ; species ID placeholder
 
-	db  65,  55,  60,  90,  90,  60
+	db  60,  50,  60,  95,  95,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, FIRE ; type

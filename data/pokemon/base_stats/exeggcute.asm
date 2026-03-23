@@ -1,9 +1,9 @@
-	db EXEGGCUTE ; 102
+	db 0 ; species ID placeholder
 
-	db  45,  45,  60,  45,  60,  45
+	db  45,  50,  60,  45,  50,  45
 	;   hp  atk  def  spd  sat  sdf
 
-	db STEEL, POISON ; type
+	db STEEL, STEEL ; type
 	db 180 ; catch rate
 	db 40 ; base exp
 	db NO_ITEM, UP_GRADE ; items

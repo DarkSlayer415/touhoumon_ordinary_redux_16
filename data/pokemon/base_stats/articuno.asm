@@ -1,6 +1,6 @@
-	db ARTICUNO ; 144
+	db 0 ; species ID placeholder
 
-	db  95,  55, 100,  80,  80, 110
+	db 100,  50, 100,  75,  75, 120
 	;   hp  atk  def  spd  sat  sdf
 
 	db GHOST, FAIRY ; type

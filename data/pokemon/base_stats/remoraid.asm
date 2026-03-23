@@ -1,6 +1,6 @@
-	db REMORAID ; 223
+	db 0 ; species ID placeholder
 
-	db  60,  65,  55,  80,  80,  60
+	db  60,  65,  50,  80,  80,  65
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, WATER ; type

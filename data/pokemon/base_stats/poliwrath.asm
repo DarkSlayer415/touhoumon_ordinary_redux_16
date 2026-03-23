@@ -1,9 +1,9 @@
-	db POLIWRATH ; 062
+	db 0 ; species ID placeholder
 
-	db  85,  85,  75,  95, 115,  75
+	db  85,  95,  75,  85, 115,  75
 	;   hp  atk  def  spd  sat  sdf
 
-	db WATER, GHOST ; type
+	db WATER, STEEL ; type
 	db 45 ; catch rate
 	db 200 ; base exp
 	db GOLD_LEAF, NUGGET ; items

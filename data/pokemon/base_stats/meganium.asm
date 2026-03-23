@@ -1,4 +1,4 @@
-	db MEGANIUM ; 154
+	db 0 ; species ID placeholder
 
 	db 105,  70,  95,  70, 100,  95
 	;   hp  atk  def  spd  sat  sdf

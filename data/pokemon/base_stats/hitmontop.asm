@@ -1,5 +1,5 @@
-	db HITMONTOP ; 237
-
+	db 0 ; species ID placeholder
+	
 	db  60,  85,  55,  80,  85,  55
 	;   hp  atk  def  spd  sat  sdf
 

@@ -1,4 +1,4 @@
-	db VOLTORB ; 100
+	db 0 ; species ID placeholder
 
 	db  50,  60,  50,  50,  40,  50
 	;   hp  atk  def  spd  sat  sdf

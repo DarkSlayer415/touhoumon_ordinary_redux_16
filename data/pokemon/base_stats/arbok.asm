@@ -1,4 +1,4 @@
-	db ARBOK ; 024
+	db 0 ; species ID placeholder
 
 	db  80,  50,  80,  50,  60,  80
 	;   hp  atk  def  spd  sat  sdf

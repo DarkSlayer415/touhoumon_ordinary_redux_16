@@ -1,4 +1,4 @@
-	db HITMONLEE ; 106
+	db 0 ; species ID placeholder
 
 	db  85,  70,  70,  85, 105,  85
 	;   hp  atk  def  spd  sat  sdf

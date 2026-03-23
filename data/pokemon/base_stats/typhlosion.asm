@@ -1,4 +1,4 @@
-	db TYPHLOSION ; 157
+	db 0 ; species ID placeholder
 
 	db  75, 110,  70, 100, 110,  70
 	;   hp  atk  def  spd  sat  sdf

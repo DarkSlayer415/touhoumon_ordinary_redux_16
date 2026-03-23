@@ -1,4 +1,4 @@
-	db CORSOLA ; 222
+	db 0 ; species ID placeholder
 
 	db 110,  75,  95,  70,  75,  95
 	;   hp  atk  def  spd  sat  sdf

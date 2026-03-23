@@ -1,4 +1,4 @@
-	db CYNDAQUIL ; 155
+	db 0 ; species ID placeholder
 
 	db  50,  55,  40,  60,  55,  40
 	;   hp  atk  def  spd  sat  sdf

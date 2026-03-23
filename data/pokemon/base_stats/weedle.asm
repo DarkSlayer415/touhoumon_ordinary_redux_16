@@ -1,6 +1,6 @@
-	db WEEDLE ; 013
+	db 0 ; species ID placeholder
 
-	db  40,  40,  40,  60,  60,  60
+	db  45,  45,  45,  60,  60,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db ICE, ICE ; type

@@ -1,6 +1,6 @@
-	db NIDORINO ; 033
+	db 0 ; species ID placeholder
 
-	db  75,  95,  75,  60,  40,  55
+	db  75,  95,  75,  65,  45,  65
 	;   hp  atk  def  spd  sat  sdf
 
 	db GROUND, FIGHTING ; type

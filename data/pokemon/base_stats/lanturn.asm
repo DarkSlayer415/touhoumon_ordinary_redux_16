@@ -1,4 +1,4 @@
-	db LANTURN ; 171
+	db 0 ; species ID placeholder
 
 	db  75,  40,  65,  65,  75,  80
 	;   hp  atk  def  spd  sat  sdf

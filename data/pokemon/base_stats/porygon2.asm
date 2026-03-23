@@ -1,6 +1,6 @@
-	db PORYGON2 ; 233
+	db 0 ; species ID placeholder
 
-	db  80, 125,  75, 105,  60,  75
+	db  85, 140,  70,  95,  60,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIGHTING, STEEL ; type

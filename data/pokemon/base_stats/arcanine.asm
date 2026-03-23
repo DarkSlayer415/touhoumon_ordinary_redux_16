@@ -1,4 +1,4 @@
-	db ARCANINE ; 059
+	db 0 ; species ID placeholder
 
 	db  65,  70,  55,  85,  70,  65
 	;   hp  atk  def  spd  sat  sdf

@@ -1,4 +1,4 @@
-	db MAGNEMITE ; 081
+	db 0 ; species ID placeholder
 
 	db  40,  60,  30,  60,  70,  40
 	;   hp  atk  def  spd  sat  sdf

@@ -1,4 +1,4 @@
-	db JIGGLYPUFF ; 039
+	db 0 ; species ID placeholder
 
 	db  75,  50,  60,  75,  85,  60
 	;   hp  atk  def  spd  sat  sdf

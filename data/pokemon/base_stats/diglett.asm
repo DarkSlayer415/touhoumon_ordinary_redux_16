@@ -1,4 +1,4 @@
-	db DIGLETT ; 050
+	db 0 ; species ID placeholder
 
 	db  40,  65,  50,  65,  30,  50
 	;   hp  atk  def  spd  sat  sdf

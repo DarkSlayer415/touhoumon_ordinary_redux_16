@@ -1,6 +1,6 @@
-	db POLITOED ; 186
+	db 0 ; species ID placeholder
 
-	db  80,  85,  85,  70, 110, 110
+	db  85,  95,  70,  70, 110, 110
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, GROUND ; type

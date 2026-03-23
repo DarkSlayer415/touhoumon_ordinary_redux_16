@@ -1,6 +1,6 @@
-	db PRIMEAPE ; 057
+	db 0 ; species ID placeholder
 
-	db  70,  50,  65,  75,  75,  65
+	db  70,  50,  60,  70,  70,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type

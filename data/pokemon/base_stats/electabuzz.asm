@@ -1,6 +1,6 @@
-	db ELECTABUZZ ; 125
+	db 0 ; species ID placeholder
 
-	db  80, 125,  80,  95,  60,  60
+	db  80, 130,  80,  90,  70,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db STEEL, NORMAL ; type

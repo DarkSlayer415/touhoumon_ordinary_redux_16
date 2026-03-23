@@ -1,6 +1,6 @@
-	db GOLDUCK ; 055
+	db 0 ; species ID placeholder
 
-	db  65,  65,  50,  85,  85,  50
+	db  60,  50,  55,  80,  80,  55
 	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, ELECTRIC ; type

@@ -1,4 +1,4 @@
-	db BELLSPROUT ; 069
+	db 0 ; species ID placeholder
 
 	db  50,  60,  40,  30,  70,  50
 	;   hp  atk  def  spd  sat  sdf

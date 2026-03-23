@@ -1,4 +1,4 @@
-	db KAKUNA ; 014
+	db 0 ; species ID placeholder
 
 	db  55,  50,  60,  80,  80,  75
 	;   hp  atk  def  spd  sat  sdf

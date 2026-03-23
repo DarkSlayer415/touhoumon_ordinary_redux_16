@@ -1,4 +1,4 @@
-	db VENONAT ; 048
+	db 0 ; species ID placeholder
 
 	db  60,  30,  80,  30,  50,  50
 	;   hp  atk  def  spd  sat  sdf

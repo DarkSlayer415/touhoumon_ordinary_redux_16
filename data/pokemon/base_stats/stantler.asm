@@ -1,4 +1,4 @@
-	db STANTLER ; 234
+	db 0 ; species ID placeholder
 
 	db  60,  40,  65,  30,  40,  65
 	;   hp  atk  def  spd  sat  sdf

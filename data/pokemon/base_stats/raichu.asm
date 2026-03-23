@@ -1,4 +1,4 @@
-	db RAICHU ; 026
+	db 0 ; species ID placeholder
 
 	db  75,  60,  80,  95, 115,  95
 	;   hp  atk  def  spd  sat  sdf

@@ -1,4 +1,4 @@
-	db PARASECT ; 047
+	db 0 ; species ID placeholder
 
 	db  75,  50,  75,  55,  70,  75
 	;   hp  atk  def  spd  sat  sdf

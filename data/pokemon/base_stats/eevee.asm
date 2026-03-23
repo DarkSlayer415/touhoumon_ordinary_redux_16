@@ -1,9 +1,9 @@
-	db EEVEE ; 133
+	db 0 ; species ID placeholder
 
-	db  50,  50,  50,  50,  50,  50
+	db  45,  45,  45,  45,  45,  45
 	;   hp  atk  def  spd  sat  sdf
 
-	db FAIRY, FAIRY ; type
+	db FAIRY, BUG ; type
 	db 255 ; catch rate
 	db 20 ; base exp
 	db NO_ITEM, NO_ITEM ; items

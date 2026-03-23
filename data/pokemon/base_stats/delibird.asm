@@ -1,4 +1,4 @@
-	db DELIBIRD ; 225
+	db 0 ; species ID placeholder
 
 	db 150,  30,  30,  30,  30,  30
 	;   hp  atk  def  spd  sat  sdf

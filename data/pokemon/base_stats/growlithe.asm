@@ -1,6 +1,6 @@
-	db GROWLITHE ; 058
+	db 0 ; species ID placeholder
 
-	db  45,  55,  35,  65,  55,  50
+	db  45,  55,  30,  65,  55,  50
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, DARK ; type

@@ -1,6 +1,6 @@
-	db SCYTHER ; 123
+	db 0 ; species ID placeholder
 
-	db  80, 110,  65, 100,  65,  80
+	db  80, 110,  70, 100,  60,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, FIGHTING ; type

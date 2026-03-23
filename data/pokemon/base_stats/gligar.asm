@@ -1,4 +1,4 @@
-	db GLIGAR ; 207
+	db 0 ; species ID placeholder
 
 	db  60,  60,  65,  80,  80,  65
 	;   hp  atk  def  spd  sat  sdf

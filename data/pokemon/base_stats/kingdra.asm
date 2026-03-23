@@ -1,4 +1,4 @@
-	db KINGDRA ; 230
+	db 0 ; species ID placeholder
 
 	db 110,  60,  80,  70, 110, 110
 	;   hp  atk  def  spd  sat  sdf

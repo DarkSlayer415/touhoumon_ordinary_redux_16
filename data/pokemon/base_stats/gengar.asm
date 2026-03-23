@@ -1,4 +1,4 @@
-	db GENGAR ; 094
+	db 0 ; species ID placeholder
 
 	db  80, 100,  65, 110,  65,  80
 	;   hp  atk  def  spd  sat  sdf

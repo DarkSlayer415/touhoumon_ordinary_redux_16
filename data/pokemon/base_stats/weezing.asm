@@ -1,6 +1,6 @@
-	db WEEZING ; 110
+	db 0 ; species ID placeholder
 
-	db  80,  65,  65, 110, 100,  80
+	db  80,  65,  65, 100, 100, 100
 	;   hp  atk  def  spd  sat  sdf
 
 	db FAIRY, POISON ; type

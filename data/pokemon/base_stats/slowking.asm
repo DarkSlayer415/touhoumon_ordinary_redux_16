@@ -1,4 +1,4 @@
-	db SLOWKING ; 199
+	db 0 ; species ID placeholder
 
 	db 110,  90, 100,  60,  60, 100
 	;   hp  atk  def  spd  sat  sdf

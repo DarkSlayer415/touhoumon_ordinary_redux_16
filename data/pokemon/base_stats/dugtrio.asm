@@ -1,4 +1,4 @@
-	db DUGTRIO ; 051
+	db 0 ; species ID placeholder
 
 	db  60,  80,  65,  85,  45,  65
 	;   hp  atk  def  spd  sat  sdf

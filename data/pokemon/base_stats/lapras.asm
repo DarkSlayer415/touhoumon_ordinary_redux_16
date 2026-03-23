@@ -1,9 +1,9 @@
-	db LAPRAS ; 131
+	db 0 ; species ID placeholder
 
-	db  85,  85, 120,  70, 110,  70
+	db  80,  90, 130,  75,  90,  75
 	;   hp  atk  def  spd  sat  sdf
 
-	db STEEL, POISON ; type
+	db STEEL, FLYING ; type
 	db 45 ; catch rate
 	db 215 ; base exp
 	db UP_GRADE, UP_GRADE ; items

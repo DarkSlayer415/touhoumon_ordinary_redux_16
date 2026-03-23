@@ -1,4 +1,4 @@
-	db BAYLEEF ; 153
+	db 0 ; species ID placeholder
 
 	db  75,  55,  75,  60,  80,  75
 	;   hp  atk  def  spd  sat  sdf

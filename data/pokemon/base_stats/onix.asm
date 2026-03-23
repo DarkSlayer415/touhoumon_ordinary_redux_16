@@ -1,6 +1,6 @@
-	db ONIX ; 095
+	db 0 ; species ID placeholder
 
-	db  45,  50,  50,  30,  70,  55
+	db  50,  40,  45,  45,  70,  50
 	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, ELECTRIC ; type

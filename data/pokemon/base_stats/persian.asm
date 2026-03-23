@@ -1,6 +1,6 @@
-	db PERSIAN ; 053
+	db 0 ; species ID placeholder
 
-	db  70,  50,  75,  45,  75,  85
+	db  70,  50,  70,  40,  70,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type

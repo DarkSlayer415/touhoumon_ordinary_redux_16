@@ -1,4 +1,4 @@
-	db LICKITUNG ; 108
+	db 0 ; species ID placeholder
 
 	db  45,  40,  35,  65,  60,  55
 	;   hp  atk  def  spd  sat  sdf

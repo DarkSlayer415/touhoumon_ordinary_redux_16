@@ -1,6 +1,6 @@
-	db CROBAT ; 169
+	db 0 ; species ID placeholder
 
-	db  70, 115,  75, 120,  85,  75
+	db  75, 115,  70, 120,  90,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, FLYING ; type

@@ -1,4 +1,4 @@
-	db MANKEY ; 056
+	db 0 ; species ID placeholder
 
 	db  50,  40,  50,  55,  55,  50
 	;   hp  atk  def  spd  sat  sdf

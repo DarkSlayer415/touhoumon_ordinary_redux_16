@@ -1,4 +1,4 @@
-	db LEDYBA ; 165
+	db 0 ; species ID placeholder
 
 	db  40,  35,  40,  60,  80,  45
 	;   hp  atk  def  spd  sat  sdf

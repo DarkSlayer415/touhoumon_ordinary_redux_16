@@ -1,6 +1,6 @@
-	db SNORLAX ; 143
+	db 0 ; species ID placeholder
 
-	db 140, 110, 110,  50,  65,  65
+	db 140, 100, 120,  50,  50,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db ROCK, FLYING ; type

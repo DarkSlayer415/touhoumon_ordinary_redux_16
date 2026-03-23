@@ -1,4 +1,4 @@
-	db FURRET ; 162
+	db 0 ; species ID placeholder
 
 	db  75,  60,  70,  60,  65,  70
 	;   hp  atk  def  spd  sat  sdf

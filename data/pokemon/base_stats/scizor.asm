@@ -1,4 +1,4 @@
-	db SCIZOR ; 212
+	db 0 ; species ID placeholder
 
 	db  75, 110,  80,  95,  60,  80
 	;   hp  atk  def  spd  sat  sdf

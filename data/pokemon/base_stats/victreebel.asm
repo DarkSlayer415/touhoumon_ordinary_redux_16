@@ -1,4 +1,4 @@
-	db VICTREEBEL ; 071
+	db 0 ; species ID placeholder
 
 	db  90,  95,  70,  70, 120,  95
 	;   hp  atk  def  spd  sat  sdf

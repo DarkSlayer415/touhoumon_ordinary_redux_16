@@ -1,6 +1,6 @@
-	db KANGASKHAN ; 115
+	db 0 ; species ID placeholder
 
-	db 100,  60, 120,  50,  85,  85
+	db  95,  50, 140,  50,  70,  95
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, FIRE ; type
