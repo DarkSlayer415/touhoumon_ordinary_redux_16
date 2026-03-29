@@ -1,11 +1,11 @@
 	db "Genius@" ; species name
 	dw 600, 1960 ; height, weight
 
-	db   "When the Lunarians"
-	next "invaded Gensokyo,"
-	next "she thwarted their"
+	db   "Usually pleasant,"
+	next "but she does not"
+	next "tolerate fools."
 
-	page "plans by using"
-	next "the Ultramarine"
-	next "Orb Elixir.@"
+	page "Has no qualms with"
+	next "killing others to"
+	next "achieve her goals.@"
 	

@@ -133,7 +133,7 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
-	dw EeveeEggMoves
+	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -480,14 +480,6 @@ StaryuEggMoves:
 	db HYPNOSIS
 	db MEAN_LOOK
 	db PHANTOM_DAZE
-	db -1 ; end
-
-EeveeEggMoves:
-	db SUPER_FANG
-	db CHARM
-	db COTTON_SPORE
-	db WHIRLWIND
-	db ATTRACT
 	db -1 ; end
 
 OmanyteEggMoves:

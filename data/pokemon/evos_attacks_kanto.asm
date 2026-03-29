@@ -842,6 +842,8 @@ ClefairyEvosAttacks:
 
 ClefableEvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, POUND
+	dbw 1, TAIL_WHIP
 	dbw 1, METRONOME
 	dbw 1, SWIFT
 	dbw 1, DOUBLESLAP
@@ -861,8 +863,10 @@ VulpixEvosAttacks:
 	dbbw EVOLVE_LEVEL, 30, NINETALES
 	db 0 ; no more evolutions
 	dbw 1, GUST
-	dbw 1, SUPERSONIC
-	dbw 15, WING_ATTACK
+	dbw 1, GROWL
+	dbw 10, FLAIL
+	dbw 15, SUPERSONIC
+	dbw 15, SONICBOOM
 	dbw 17, SWEET_KISS
 	dbw 20, CHARM
 	dbw 20, COTTON_SPORE
@@ -871,16 +875,18 @@ VulpixEvosAttacks:
 	dbw 30, MOONLIGHT
 	dbw 35, RECOVER
 	dbw 40, HEAL_BELL
-	dbw 42, PERISH_SONG
+	dbw 43, PERISH_SONG
 	dbw 46, BATON_PASS
-	dbw 49, HEADWIND
+	dbw 49, SUPER_FANG
 	db 0 ; no more level-up moves
 
 NinetalesEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, GUST
-	dbw 1, SUPERSONIC
-	dbw 15, WING_ATTACK
+	dbw 1, GROWL
+	dbw 10, FLAIL
+	dbw 15, SUPERSONIC
+	dbw 15, SONICBOOM
 	dbw 17, SWEET_KISS
 	dbw 20, CHARM
 	dbw 20, COTTON_SPORE
@@ -891,7 +897,7 @@ NinetalesEvosAttacks:
 	dbw 42, HEAL_BELL
 	dbw 45, PERISH_SONG
 	dbw 50, BATON_PASS
-	dbw 55, HEADWIND
+	dbw 55, SUPER_FANG
 	db 0 ; no more level-up moves
 
 JigglypuffEvosAttacks:
@@ -935,34 +941,40 @@ ZubatEvosAttacks:
 	dbbw EVOLVE_LEVEL, 30, GOLBAT
 	db 0 ; no more evolutions
 	dbw 1, GUST
-	dbw 1, SUPERSONIC
+	dbw 1, GROWL
+	dbw 10, FLAIL
 	dbw 15, PURSUIT
+	dbw 15, VICEGRIP
 	dbw 17, FAINT_ATTACK
-	dbw 20, WING_ATTACK
+	dbw 20, TWINEEDLE
 	dbw 23, SCREECH
+	dbw 23, SCARY_FACE
 	dbw 26, STEEL_WING
-	dbw 30, MOONLIGHT
+	dbw 30, CRABHAMMER
 	dbw 35, LEECH_LIFE
 	dbw 40, AGILITY
-	dbw 42, EXTREMESPEED
-	dbw 46, BATON_PASS
+	dbw 43, EXTREMESPEED
+	dbw 46, MEGAHORN
 	dbw 49, OUTRAGE
 	db 0 ; no more level-up moves
 
 GolbatEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, GUST
-	dbw 1, SUPERSONIC
+	dbw 1, GROWL
+	dbw 10, FLAIL
 	dbw 15, PURSUIT
+	dbw 15, VICEGRIP
 	dbw 17, FAINT_ATTACK
-	dbw 20, WING_ATTACK
+	dbw 20, TWINEEDLE
 	dbw 23, SCREECH
+	dbw 23, SCARY_FACE
 	dbw 26, STEEL_WING
-	dbw 30, MOONLIGHT
+	dbw 30, CRABHAMMER
 	dbw 36, LEECH_LIFE
 	dbw 42, AGILITY
 	dbw 45, EXTREMESPEED
-	dbw 50, BATON_PASS
+	dbw 50, MEGAHORN
 	dbw 55, OUTRAGE
 	db 0 ; no more level-up moves
 
@@ -1362,15 +1374,15 @@ AbraEvosAttacks:
 	dbw 5, SPIKES
 	dbw 9, SAFEGUARD
 	dbw 14, PSYBEAM
-	dbw 18, SONICBOOM
+	dbw 18, SPITE
 	dbw 24, KINESIS
 	dbw 28, GLARE
-	dbw 32, DRAGONBREATH
-	dbw 36, PSYCHIC_M
-	dbw 42, DRAGON_RAGE
-	dbw 46, FUTURE_SIGHT
-	dbw 50, MYSTIC_BOMB
-	dbw 54, SACRED_FIRE
+	dbw 32, PSYCHIC_M
+	dbw 36, SHADOW_BALL
+	dbw 42, MEDITATE
+	dbw 46, MIRROR_COAT
+	dbw 50, FUTURE_SIGHT
+	dbw 54, MYSTIC_BOMB
 	db 0 ; no more level-up moves
 
 KadabraEvosAttacks:
@@ -1662,13 +1674,13 @@ SlowpokeEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POISON_STING
 	dbw 1, WRAP
-	dbw 6, WATER_GUN
+	dbw 6, ACID
 	dbw 9, POISON_GAS
 	dbw 12, RAPID_SPIN
 	dbw 16, DISABLE
 	dbw 20, SMOG
-	dbw 20, BUBBLEBEAM
-	dbw 23, CONSTRICT
+	dbw 20, CONSTRICT
+	dbw 23, CHARM
 	dbw 26, SELFDESTRUCT
 	dbw 32, TOXIC
 	dbw 36, SLUDGE_BOMB
@@ -1682,13 +1694,13 @@ SlowbroEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POISON_STING
 	dbw 1, WRAP
-	dbw 6, WATER_GUN
+	dbw 6, ACID
 	dbw 9, POISON_GAS
 	dbw 12, RAPID_SPIN
 	dbw 16, DISABLE
 	dbw 20, SMOG
-	dbw 20, BUBBLEBEAM
-	dbw 23, CONSTRICT
+	dbw 20, CONSTRICT
+	dbw 23, CHARM
 	dbw 26, SELFDESTRUCT
 	dbw 32, TOXIC
 	dbw 38, SLUDGE_BOMB
@@ -2564,13 +2576,13 @@ MagmarEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POISON_STING
 	dbw 1, WRAP
-	dbw 6, WATER_GUN
+	dbw 6, ACID
 	dbw 9, POISON_GAS
 	dbw 12, RAPID_SPIN
 	dbw 16, DISABLE
 	dbw 20, SMOG
-	dbw 20, BUBBLEBEAM
-	dbw 24, CONSTRICT
+	dbw 20, CONSTRICT
+	dbw 24, CHARM
 	dbw 27, SELFDESTRUCT
 	dbw 32, TOXIC
 	dbw 40, SLUDGE_BOMB
@@ -2621,35 +2633,41 @@ MagikarpEvosAttacks:
 	dbbw EVOLVE_LEVEL, 30, GYARADOS
 	db 0 ; no more evolutions
 	dbw 1, GUST
-	dbw 1, SUPERSONIC
+	dbw 1, GROWL
+	dbw 10, FLAIL
+	dbw 15, SUPERSONIC
 	dbw 15, VICEGRIP
 	dbw 17, SWEET_SCENT
 	dbw 20, TWINEEDLE
-	dbw 23, SLEEP_POWDER
-	dbw 26, SWEET_KISS
+	dbw 23, MIST
+	dbw 23, HAZE
+	dbw 26, SLEEP_POWDER
 	dbw 30, MOONLIGHT
 	dbw 35, CRABHAMMER
 	dbw 39, SYNTHESIS
 	dbw 42, HEAL_BELL
 	dbw 46, BATON_PASS
-	dbw 49, MEGAHORN
+	dbw 49, SUPER_FANG
 	db 0 ; no more level-up moves
 
 GyaradosEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, GUST
-	dbw 1, SUPERSONIC
+	dbw 1, GROWL
+	dbw 10, FLAIL
+	dbw 15, SUPERSONIC
 	dbw 15, VICEGRIP
 	dbw 17, SWEET_SCENT
 	dbw 20, TWINEEDLE
-	dbw 23, SLEEP_POWDER
-	dbw 26, SWEET_KISS
+	dbw 23, MIST
+	dbw 23, HAZE
+	dbw 26, SLEEP_POWDER
 	dbw 30, MOONLIGHT
 	dbw 36, CRABHAMMER
 	dbw 42, SYNTHESIS
 	dbw 45, HEAL_BELL
 	dbw 50, BATON_PASS
-	dbw 55, MEGAHORN
+	dbw 55, SUPER_FANG
 	db 0 ; no more level-up moves
 
 LaprasEvosAttacks:
@@ -2697,11 +2715,10 @@ EeveeEvosAttacks:
 	dbbw EVOLVE_STAT, 15, ATK_GT_DEF, ZUBAT
 	dbbw EVOLVE_STAT, 15, ATK_EQ_DEF, MAGIKARP
 	db 0 ; no more evolutions
-	dbw 1, TACKLE
+	dbw 1, GUST
 	dbw 1, GROWL
-	dbw 5, GUST
 	dbw 10, FLAIL
-	dbw 15, SUPERSONIC
+	dbw 15, SWIFT
 	db 0 ; no more level-up moves
 
 VaporeonEvosAttacks:
