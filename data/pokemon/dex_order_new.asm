@@ -134,7 +134,7 @@ NewPokedexOrder:
 	dw DONPHAN		;Elly
 	dw PORYGON2		;EElly
 	dw KEDAMA		;Kedama
-	dw EEVEE		;Himawari
+	dw EEVEE		;Fairy
 	dw VULPIX		;LilyWhite
 	dw NINETALES	;ELilyWhite
 	dw ZUBAT		;LilyBlack
@@ -194,12 +194,12 @@ NewPokedexOrder:
 	dw CSHOU		;CShou
 	dw SHOU			;Shou
 	dw ESHOU		;EShou
-	dw FARFETCH_D	;CSatori
-	dw DODUO		;Satori
-	dw DODRIO		;ESatori
 	dw CNUE			;CNue
 	dw NUE			;Nue
 	dw ENUE			;ENue
+	dw FARFETCH_D	;CSatori
+	dw DODUO		;Satori
+	dw DODRIO		;ESatori
 	dw POLIWAG		;CKomachi
 	dw POLIWHIRL	;Komachi
 	dw POLIWRATH	;EKomachi	
@@ -249,6 +249,8 @@ NewPokedexOrder:
 	dw HITMONTOP	;Gengetsu
 	dw BLISSEY		;EGengetsu
 	dw REI_SEN		;Rei'sen
+	dw MIMI_CHAN	;Mimi-Chan
+	dw RUUKOTO		;Ruukoto
 	dw SNORLAX		;Genji
 	dw OMANYTE		;CKirisame
 	dw OMASTAR		;Kirisame
