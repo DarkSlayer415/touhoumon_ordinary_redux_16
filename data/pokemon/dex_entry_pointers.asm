@@ -254,4 +254,31 @@ PokedexDataPointerTable:
 	dba CelebiPokedexEntry
 	dba CYuutoPokedexEntry
 	dba YuutoPokedexEntry
+	dba KedamaPokedexEntry
+	dba MimiChanPokedexEntry
+	dba RuukotoPokedexEntry
+	dba ReiSenPokedexEntry
+	dba AkyuuPokedexEntry
+	dba CNazrinPokedexEntry
+	dba NazrinPokedexEntry
+	dba ENazrinPokedexEntry
+	dba CKogasaPokedexEntry
+	dba KogasaPokedexEntry
+	dba EKogasaPokedexEntry
+	dba CIchirinPokedexEntry
+	dba IchirinPokedexEntry
+	dba EIchirinPokedexEntry
+	dba CMurasaPokedexEntry
+	dba MurasaPokedexEntry
+	dba EMurasaPokedexEntry
+	dba CShouPokedexEntry
+	dba ShouPokedexEntry
+	dba EShouPokedexEntry
+	dba CByakurenPokedexEntry
+	dba ByakurenPokedexEntry
+	dba EByakurenPokedexEntry
+	dba CNuePokedexEntry
+	dba NuePokedexEntry
+	dba ENuePokedexEntry
+	dba RinnosukePokedexEntry
 	assert_table_length NUM_POKEMON

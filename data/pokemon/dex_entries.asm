@@ -202,7 +202,7 @@ SunkernPokedexEntry::    INCLUDE "data/pokemon/dex_entries/sunkern.asm"
 SunfloraPokedexEntry::   INCLUDE "data/pokemon/dex_entries/sunflora.asm"
 
 
-SECTION "Pokedex Entries 193-251", ROMX
+SECTION "Pokedex Entries 193-253", ROMX
 
 YanmaPokedexEntry::      INCLUDE "data/pokemon/dex_entries/yanma.asm"
 WooperPokedexEntry::     INCLUDE "data/pokemon/dex_entries/wooper.asm"
@@ -265,3 +265,33 @@ HoOhPokedexEntry::       INCLUDE "data/pokemon/dex_entries/ho_oh.asm"
 CelebiPokedexEntry::     INCLUDE "data/pokemon/dex_entries/celebi.asm"
 CYuutoPokedexEntry::     INCLUDE "data/pokemon/dex_entries/cyuuto.asm"
 YuutoPokedexEntry::		 INCLUDE "data/pokemon/dex_entries/yuuto.asm"
+
+SECTION "Pokedex Entries 254-280", ROMX
+
+KedamaPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/kedama.asm"
+MimiChanPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/mimi_chan.asm"
+RuukotoPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/ruukoto.asm"
+ReiSenPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/rei_sen.asm"
+AkyuuPokedexEntry::		 INCLUDE "data/pokemon/dex_entries/akyuu.asm"
+CNazrinPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/cnazrin.asm"
+NazrinPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/nazrin.asm"
+ENazrinPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/enazrin.asm"
+CKogasaPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/ckogasa.asm"
+KogasaPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/kogasa.asm"
+EKogasaPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/ekogasa.asm"
+CIchirinPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/cichirin.asm"
+IchirinPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/ichirin.asm"
+EIchirinPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/eichirin.asm"
+CMurasaPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/cmurasa.asm"
+MurasaPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/murasa.asm"
+EMurasaPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/emurasa.asm"
+CShouPokedexEntry::	 	 INCLUDE "data/pokemon/dex_entries/cshou.asm"
+ShouPokedexEntry::	 	 INCLUDE "data/pokemon/dex_entries/shou.asm"
+EShouPokedexEntry::	 	 INCLUDE "data/pokemon/dex_entries/eshou.asm"
+CByakurenPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/cbyakuren.asm"
+ByakurenPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/byakuren.asm"
+EByakurenPokedexEntry::	 INCLUDE "data/pokemon/dex_entries/ebyakuren.asm"
+CNuePokedexEntry::	 	 INCLUDE "data/pokemon/dex_entries/cnue.asm"
+NuePokedexEntry::	 	 INCLUDE "data/pokemon/dex_entries/nue.asm"
+ENuePokedexEntry::	 	 INCLUDE "data/pokemon/dex_entries/enue.asm"
+RinnosukePokedexEntry::	 INCLUDE "data/pokemon/dex_entries/rinnosuke.asm"
