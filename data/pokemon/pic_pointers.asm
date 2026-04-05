@@ -518,4 +518,63 @@ PokemonPicPointers::
 	dba HoOhBackpic
 	dba CelebiFrontpic
 	dba CelebiBackpic
+	; New Additions Start Here
+	dba CYuutoFrontpic
+	dba CYuutoBackpic
+	dba YuutoFrontpic
+	dba YuutoBackpic
+	dba KedamaFrontpic
+	dba KedamaBackpic
+	dba MimiChanFrontpic
+	dba MimiChanBackpic
+	dba RuukotoFrontpic
+	dba RuukotoBackpic
+	dba ReiSenFrontpic
+	dba ReiSenBackpic
+	dba AkyuuFrontpic
+	dba AkyuuBackpic
+	dba CNazrinFrontpic
+	dba CNazrinBackpic
+	dba NazrinFrontpic
+	dba NazrinBackpic
+	dba ENazrinFrontpic
+	dba ENazrinBackpic
+	dba CKogasaFrontpic
+	dba CKogasaBackpic
+	dba KogasaFrontpic
+	dba KogasaBackpic
+	dba EKogasaFrontpic
+	dba EKogasaBackpic
+	dba CIchirinFrontPic
+	dba CIchirinBackpic
+	dba IchirinFrontpic
+	dba IchirinBackpic
+	dba EIchirinFrontpic
+	dba EIchirinBackpic
+	dba CMurasaFrontpic
+	dba CMurasaBackpic
+	dba MurasaFrontpic
+	dba MurasaBackpic
+	dba EMurasaFrontpic
+	dba EMurasaBackpic
+	dba CShouFrontpic
+	dba CShouBackpic
+	dba ShouFrontpic
+	dba ShouBackpic
+	dba EShouFrontpic
+	dba EShouBackpic
+	dba CByakurenFrontpic
+	dba CByakurenBackpic
+	dba ByakurenFrontpic
+	dba ByakurenBackpic
+	dba EByakurenFrontpic
+	dba EByakurenBackpic
+	dba CNueFrontpic
+	dba CNueBackpic
+	dba NueFrontpic
+	dba NueBackpic
+	dba ENueFrontpic
+	dba ENueBackpic
+	dba RinnosukeFrontpic
+	dba RinnosukeBackpic
 	assert_table_length NUM_POKEMON + 1
