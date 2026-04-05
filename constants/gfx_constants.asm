@@ -44,16 +44,4 @@ DEF NUM_SPRITE_OAM_STRUCTS EQU 40 ; see wShadowOAM
 
 DEF SPRITE_GFX_LIST_CAPACITY EQU 32 ; see wUsedSprites
 
-; PokeAnims indexes (see engine/gfx/pic_animation.asm)
-	const_def
-	const ANIM_MON_SLOW
-	const ANIM_MON_NORMAL
-	const ANIM_MON_MENU
-	const ANIM_MON_TRADE
-	const ANIM_MON_EVOLVE
-	const ANIM_MON_HATCH
-	const ANIM_MON_HOF
-	const ANIM_MON_EGG1
-	const ANIM_MON_EGG2
-
 DEF OAM_YCOORD_HIDDEN EQU 160 ; hides an OAM offscreen

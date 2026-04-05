@@ -123,10 +123,8 @@ AnimateHallOfFame:
 	hlcoord 1, 2
 	call PlaceString
 	call WaitBGMap
-	decoord 6, 5
-	ld c, ANIM_MON_HOF
-	predef HOF_AnimateFrontpic
-	ld c, 60
+	call HOF_PlayCry
+	ld c, 180
 	call DelayFrames
 	and a
 	ret
@@ -404,9 +402,7 @@ _HallOfFamePC:
 	ld b, SCGB_PLAYER_OR_MON_FRONTPIC_PALS
 	call GetSGBLayout
 	call SetDefaultBGPAndOBP
-	decoord 6, 5
-	ld c, ANIM_MON_HOF
-	predef HOF_AnimateFrontpic
+	call HOF_PlayCry
 	and a
 	ret
 
@@ -443,6 +439,21 @@ LoadHOFTeam:
 
 .invalid
 	scf
+	ret
+
+HOF_PlayCry::
+	ld a, [wCurPartySpecies]
+	cp EGG
+	jr z, .fail
+	call IsAPokemon
+	jr c, .fail
+	ld a, [wCurPartySpecies]
+	call PlayMonCry2
+	ret
+
+.fail
+	ld a, 1
+	ld [wCurPartySpecies], a
 	ret
 
 DisplayHOFMon:
