@@ -255,4 +255,31 @@ Pokered_MonIndices:
 	db WOBBUFFET
 	db CYUUTO
 	db YUUTO
+	db KEDAMA
+	db MIMICHAN
+	db RUUKOTO
+	db REI_SEN
+	db AKYUU
+	db CNAZRIN
+	db NAZRIN
+	db ENAZRIN
+	db CKOGASA
+	db KOGASA
+	db EKOGASA
+	db CICHIRIN
+	db ICHIRIN
+	db EICHIRIN
+	db CMURASA
+	db MURASA
+	db EMURASA
+	db CSHOU
+	db SHOU
+	db ESHOU
+	db CBYAKUREN
+	db BYAKUREN
+	db EBYAKUREN
+	db CNUE
+	db NUE
+	db ENUE
+	db RINNOSUKE
 	assert_table_length NUM_POKEMON + 1
