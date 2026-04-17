@@ -3015,12 +3015,6 @@ wItems:: ds MAX_ITEMS * 2 + 1
 wNumKeyItems:: db
 wKeyItems:: ds MAX_KEY_ITEMS + 1
 
-wNumBalls:: db
-wBalls:: ds MAX_BALLS * 2 + 1
-
-wNumPCItems:: db
-wPCItems:: ds MAX_PC_ITEMS * 2 + 1
-
 wPokegearFlags::
 ; bit 0: map
 ; bit 1: radio
@@ -3127,7 +3121,9 @@ wMountMoonSquareSceneID::                         db
 wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
 
-	ds 49
+wNumBalls:: db
+wBalls:: ds MAX_BALLS * 2 + 1
+	ds 23
 
 ; fight counts
 wJackFightCount::    db
@@ -3159,7 +3155,8 @@ wKenjiFightCount::   db ; unreferenced
 wParryFightCount::   db
 wErinFightCount::    db
 
-	ds 100
+wNumPCItems:: db
+wPCItems:: ds MAX_PC_ITEMS * 2 + 1
 
 wEventFlags:: flag_array NUM_EVENTS
 
@@ -3256,17 +3253,13 @@ wdc60:: db
 
 wStepCount:: db
 wPoisonStepCount:: db
-	ds 2
 wHappinessStepCount:: db
-	ds 1
 
 wParkBallsRemaining::
 wSafariBallsRemaining:: db
 wSafariTimeRemaining:: dw
 
 wPhoneList:: ds CONTACT_LIST_SIZE + 1
-
-	ds 22
 
 wLuckyNumberShowFlag:: db
 	ds 1
