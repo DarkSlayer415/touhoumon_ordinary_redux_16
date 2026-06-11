@@ -107,7 +107,7 @@ Music:
 	dba Music_EirinCenter
 	dba Music_FollowMeHiroshige
 	dba Music_ChampionYukariBattle
-	dba Music_JohtoSanaeBattle
+	; dba Music_JohtoSanaeBattle (WIP)
 	dba Music_JohtoGymKaguya
 	dba Music_KantoMarisaBattle
 	dba Music_KantoGymFlandre

@@ -149,6 +149,20 @@ SECTION "Extra Songs 2", ROMX
 
 INCLUDE "audio/music/postcredits.asm"
 
+SECTION "New Songs", ROMX
+
+INCLUDE "audio/music/ceruleancity.asm"
+INCLUDE "audio/music/cinnabarisland.asm"
+INCLUDE "audio/music/nuggetbridge.asm"
+INCLUDE "audio/music/eirincenter.asm"
+INCLUDE "audio/music/followmehiroshige.asm"
+INCLUDE "audio/music/championyukari.asm"
+; INCLUDE "audio/music/johtotrainersanae.asm"
+INCLUDE "audio/music/johtogymkaguya.asm"
+INCLUDE "audio/music/kantotrainermarisa.asm"
+INCLUDE "audio/music/kantogymflandre.asm"
+INCLUDE "audio/music/legendarysuikabattle.asm"
+
 
 SECTION "Sound Effects", ROMX
 
