@@ -252,7 +252,7 @@ DoPlayerMovement::
 .not_turning
 	xor a
 	ret
-
+	
 .TryStep:
 ; Surfing actually calls .TrySurf directly instead of passing through here.
 	ld a, [wPlayerState]
@@ -276,7 +276,7 @@ DoPlayerMovement::
 
 ; Downhill riding is slower when not moving down.
 	call .BikeCheck
-	jr nz, .walk
+	jr nz, .HandleWalkAndRun
 
 	ld hl, wBikeFlags
 	bit BIKEFLAGS_DOWNHILL_F, [hl]
@@ -317,6 +317,25 @@ DoPlayerMovement::
 	xor a
 	ret
 
+.HandleWalkAndRun
+	ld a, [wWalkingDirection]
+	cp STANDING
+	jr z, .ensurewalk
+	ldh a, [hJoypadDown]
+	and B_BUTTON
+	cp B_BUTTON
+	jr nz, .ensurewalk
+	ld a, [wPlayerState]
+	cp PLAYER_RUN
+	call nz, .StartRunning
+	jr .fast
+
+.ensurewalk
+	ld a, [wPlayerState]
+	cp PLAYER_NORMAL
+	call nz, .StartWalking
+	jr .walk
+
 .TrySurf:
 	call .CheckSurfPerms
 	ld [wWalkingIntoLand], a
@@ -332,11 +351,24 @@ DoPlayerMovement::
 	ld a, [wWalkingIntoLand]
 	and a
 	jr nz, .ExitWater
+	
+	call .FastSurfCheck
+    jr z, .fast
+    ld a, STEP_WALK
 
 	ld a, STEP_WALK
 	call .DoStep
 	scf
 	ret
+
+	.FastSurfCheck:
+    ld a, [wPlayerState]
+    cp PLAYER_SURF
+    ret nz
+    ldh a, [hJoypadDown]
+    and B_BUTTON
+    cp B_BUTTON
+    ret
 
 .ExitWater:
 	call .GetOutOfWater
@@ -780,6 +812,22 @@ ENDM
 	ld a, PLAYER_NORMAL
 	ld [wPlayerState], a
 	call UpdatePlayerSprite ; UpdateSprites
+	pop bc
+	ret
+	
+.StartRunning:
+	push bc
+	ld a, PLAYER_RUN
+	ld [wPlayerState], a
+	call UpdatePlayerSprite
+	pop bc
+	ret
+
+.StartWalking:
+	push bc
+	ld a, PLAYER_NORMAL
+	ld [wPlayerState], a
+	call UpdatePlayerSprite
 	pop bc
 	ret
 
