@@ -2330,10 +2330,31 @@ BattleCommand_SuperEffectiveText:
 	and EFFECTIVENESS_MASK
 	cp EFFECTIVE
 	ret z
+	
+	cp EXTREMELY_EFFECTIVE
+	jr z, .extremely_effective
+	cp SUPER_EFFECTIVE
+	jr z, .super_effective
+	cp NOT_VERY_EFFECTIVE
+	jr z, .not_very_effective
+	
+	; 0.25x damage
+	ld hl, MostlyIneffectiveText
+	jp StdBattleTextbox
+
+	; 4x damage
+.extremely_effective:
+	ld hl, ExtremelyEffectiveText
+	jp StdBattleTextbox
+
+	; 2x damage
+.super_effective:
 	ld hl, SuperEffectiveText
-	jr nc, .print
+	jp StdBattleTextbox
+
+	; 0.5x damage
+.not_very_effective:
 	ld hl, NotVeryEffectiveText
-.print
 	jp StdBattleTextbox
 
 BattleCommand_CheckFaint:
