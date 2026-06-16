@@ -18,43 +18,17 @@ NurseNiteText:
 	line "Eirin Center!"
 	done
 
-PokeComNurseMornText:
-	text "Good morning!"
+NurseCenterWelcomeText:
+	text "Welcome to our"
+	line Eirin Center."
 
-	para "This is the #-"
-	line "mon COMMUNICATION"
-
-	para "CENTER--or the"
-	line "#COM CENTER."
-	done
-
-PokeComNurseDayText:
-	text "Hello!"
-
-	para "This is the #-"
-	line "mon COMMUNICATION"
-
-	para "CENTER--or the"
-	line "#COM CENTER."
-	done
-
-PokeComNurseNiteText:
-	text "Good to see you"
-	line "working so late."
-
-	para "This is the #-"
-	line "mon COMMUNICATION"
-
-	para "CENTER--or the"
-	line "#COM CENTER."
+	para "We can heal your"
+	line "#mon to perfect"
+	cont "health."
 	done
 
 NurseAskHealText:
-	text "We can heal your"
-	line "#mon to perfect"
-	cont "health."
-
-	para "Shall we heal your"
+	text "Shall we heal your"
 	line "#mon?"
 	done
 

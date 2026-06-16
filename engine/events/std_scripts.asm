@@ -58,6 +58,7 @@ StdScripts::
 	add_stdscript HappinessCheckScript
 
 PokecenterNurseScript:
+
 	checktime MORN
 	iftrue .morn
 	checktime DAY
@@ -67,55 +68,37 @@ PokecenterNurseScript:
 	sjump .ok
 
 .morn
-	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
-	iffalse .morn_comcenter
-	sjump .end_comcenter
-.morn_comcenter
-	opentext
 	farwritetext NurseMornText
 	promptbutton
-	sjump .ok_first_time
+	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
+	iffalse .ok_first_time
+	sjump .ok
 
 .day
-	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
-	iffalse .day_comcenter
-	sjump .end_comcenter
-.day_comcenter
-	opentext
-    farwritetext NurseDayText
+	farwritetext NurseDayText
 	promptbutton
-	sjump .ok_first_time
+	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
+	iffalse .ok_first_time
+	sjump .ok
 
 .nite
-	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
-	iffalse .nite_comcenter
-	sjump .end_comcenter
-.nite_comcenter
-	opentext
 	farwritetext NurseNiteText
 	promptbutton
-	sjump .ok_first_time
+	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
+	iffalse .ok_first_time
+	sjump .ok
 	
 .ok_first_time
-    farwritetext NurseAskHealText
-	yesorno
-	iffalse .no_heal
-	farwritetext NurseTakePokemonText
-	waitbutton
-	closetext
-	sjump .ok
-.no_heal
-	closetext
-	sjump .done
-
-.end_comcenter
-    opentext
-	farwritetext NurseTakePokemonText
-	pause 40
-	closetext
-	sjump .ok
+	farwritetext NurseCenterWelcomeText
+	promptbutton
 
 .ok
+
+	farwritetext NurseAskHealText
+	yesorno
+	iffalse .done
+
+	farwritetext NurseTakePokemonText
 	pause 20
 	special StubbedTrainerRankings_Healings
 	turnobject LAST_TALKED, LEFT
@@ -134,29 +117,23 @@ PokecenterNurseScript:
 	checkflag ENGINE_CAUGHT_POKERUS
 	iftrue .no
 	special CheckPokerus
-	iftrue .pokerus
-	
+	iftrue .pokerus	
 .no
-
 	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
-	iffalse .NurseReturnPokemonText
+	iftrue .done
+	farwritetext NurseReturnPokemonText
 	pause 20
-	
-.donetext
-	opentext
-	farwritetext NurseReturnPokemonShortText
-	pause 40
-	farwritetext NurseGoodbyeText
-	pause 40
-	closetext
-
 .done
+	farwritetext NurseGoodbyeText
+	setevent EVENT_WELCOMED_TO_POKECOM_CENTER
 
 	turnobject LAST_TALKED, UP
 	pause 10
 	turnobject LAST_TALKED, DOWN
 	pause 10
 
+	waitbutton
+	closetext
 	turnobject PLAYER, DOWN
 	end
 
