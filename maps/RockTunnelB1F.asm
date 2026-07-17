@@ -11,8 +11,8 @@ RockTunnelB1F_MapScripts:
 RockTunnelB1FIron:
 	itemball IRON
 
-RockTunnelB1FPPUp:
-	itemball PP_UP
+RockTunnelB1FRareCandy:
+	itemball RARE_CANDY
 
 RockTunnelB1FRevive:
 	itemball REVIVE
@@ -36,5 +36,5 @@ RockTunnelB1F_MapEvents:
 
 	def_object_events
 	object_event  6, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RockTunnelB1FIron, EVENT_ROCK_TUNNEL_B1F_IRON
-	object_event  7, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RockTunnelB1FPPUp, EVENT_ROCK_TUNNEL_B1F_PP_UP
+	object_event  7, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RockTunnelB1FRareCandy, EVENT_ROCK_TUNNEL_B1F_RARE_CANDY
 	object_event 16,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RockTunnelB1FRevive, EVENT_ROCK_TUNNEL_B1F_REVIVE

@@ -487,7 +487,7 @@ OldRodDesc:
 	next "fish for #MON.@"
 
 GoodRodDesc:
-	db   "A good ROD for"
+	db   "A good rod for"
 	next "catching #MON.@"
 
 SilverLeafDesc:
@@ -495,12 +495,12 @@ SilverLeafDesc:
 	next "colored leaf.@"
 
 SuperRodDesc:
-	db   "The best ROD for"
+	db   "The best rod for"
 	next "catching #MON.@"
 
 PPUpDesc:
-	db   "Raises max PP of"
-	next "a selected move.@"
+	db   "Dummied Out Item."
+	next "Has No Use.@"
 
 EtherDesc:
 	db   "Restores PP of one"

@@ -49,12 +49,12 @@ CeladonDeptStore5FGentlemanText:
 	done
 
 CeladonDeptStore5FSailorText:
-	text "I want PP UP, so I"
-	line "can raise the PP"
+	text "I wanted to buy PP"
+	line "Up to raise the PP"
 
 	para "of my #MON's"
-	line "moves. They only"
-	cont "sell them here!"
+	line "moves, but they've"
+	cont "been discontinued!"
 	done
 
 CeladonDeptStore5FTeacherText:

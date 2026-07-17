@@ -413,7 +413,7 @@ MartCeladon4F:
 	db -1 ; end
 
 MartCeladon5F1:
-	db 12 ; # items
+	db 11 ; # items
 	db FIRE_STONE
 	db THUNDERSTONE
 	db WATER_STONE
@@ -425,7 +425,6 @@ MartCeladon5F1:
 	db IRON
 	db CARBOS
 	db CALCIUM
-	db PP_UP
 	db -1 ; end
 
 MartCeladon5F2:

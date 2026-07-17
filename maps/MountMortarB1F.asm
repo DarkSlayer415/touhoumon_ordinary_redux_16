@@ -66,8 +66,8 @@ MountMortarB1FThickClub:
 MountMortarB1FMaxEther:
 	itemball MAX_ETHER
 
-MountMortarB1FPPUp:
-	itemball PP_UP
+MountMortarB1FRareCandy:
+	itemball RARE_CANDY
 
 MountMortarB1FHiddenMaxRevive:
 	hiddenitem MAX_REVIVE, EVENT_MOUNT_MORTAR_B1F_HIDDEN_MAX_REVIVE
@@ -117,9 +117,6 @@ MountMortarB1FKiyoGotRinnosukeText:
 	text "Rinnosuke is"
 	line "very rare."
 
-	para "It can use"
-	line "almost any move."
-
 	para "Keep up the hard"
 	line "work. I'll keep"
 	cont "training too."
@@ -151,4 +148,4 @@ MountMortarB1F_MapEvents:
 	object_event 16,  4, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MountMortarB1FKiyoScript, -1
 	object_event 34, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FThickClub, EVENT_MOUNT_MORTAR_B1F_THICK_CLUB
 	object_event 32,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FMaxEther, EVENT_MOUNT_MORTAR_B1F_MAX_ETHER
-	object_event 21, 26, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FPPUp, EVENT_MOUNT_MORTAR_B1F_PP_UP
+	object_event 21, 26, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortarB1FRareCandy, EVENT_MOUNT_MORTAR_B1F_RARE_CANDY

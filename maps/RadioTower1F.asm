@@ -93,7 +93,7 @@ RadioTower1FLuckyNumberManScript:
 	playsound SFX_3RD_PLACE
 	waitsfx
 	promptbutton
-	giveitem PP_UP
+	giveitem RARE_CANDY
 	iffalse .BagFull
 	itemnotify
 	setflag ENGINE_LUCKY_NUMBER_SHOW
@@ -266,7 +266,7 @@ RadioTower1FLuckyNumberManPerfectMatchText:
 	line "prize winner!"
 
 	para "You have won a"
-	line "MASTER BALL!"
+	line "Heaven Orb!"
 	done
 
 RadioTower1FLuckyNumberManOkayMatchText:
@@ -275,8 +275,8 @@ RadioTower1FLuckyNumberManOkayMatchText:
 	cont "three numbers!"
 
 	para "You've won second"
-	line "prize, an EXP."
-	cont "SHARE!"
+	line "prize, an Exp."
+	cont "Share!"
 	done
 
 RadioTower1FLuckyNumberManWeakMatchText:
@@ -285,7 +285,8 @@ RadioTower1FLuckyNumberManWeakMatchText:
 	cont "two numbers."
 
 	para "You've won third"
-	line "prize, a PP UP."
+	line "prize, a"
+	cont "Rare Candy."
 	done
 
 RadioTower1FLuckyNumberManNoneOfYourIDNumbersMatchText:
