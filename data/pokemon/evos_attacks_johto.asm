@@ -592,16 +592,16 @@ IgglybuffEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POUND
 	dbw 1, STRING_SHOT
-	dbw 5, GUST
+	dbw 5, CONFUSION
 	dbw 9, POWDER_SNOW
 	dbw 12, BARRIER
 	dbw 16, KINESIS
 	dbw 20, AURORA_BEAM
-	dbw 24, SUPERSONIC
+	dbw 24, PSYBEAM
 	dbw 28, MEDITATE
 	dbw 31, ICE_BEAM
-	dbw 35, MOONLIGHT
-	dbw 43, PSYCHIC_M
+	dbw 35, PSYCHIC_M
+	dbw 43, MOONLIGHT
 	dbw 46, BATON_PASS
 	dbw 46, SUBSTITUTE
 	db 0 ; no more level-up moves
@@ -1154,17 +1154,17 @@ WobbuffetEvosAttacks:
 	dbw 1, TACKLE
 	dbw 1, GROWL
 	dbw 5, PURSUIT
-	dbw 11, FAINT_ATTACK
+	dbw 11, BITE
 	dbw 15, DISABLE
-	dbw 18, BUBBLEBEAM
+	dbw 18, FAINT_ATTACK
 	dbw 23, AURORA_BEAM
 	dbw 26, LEECH_LIFE
 	dbw 29, SCARY_FACE
 	dbw 32, CRUNCH
 	dbw 35, RECOVER
-	dbw 41, LOVELY_KISS
-	dbw 45, OUTRAGE
-	dbw 49, HYDRO_PUMP
+	dbw 41, MEAN_LOOK
+	dbw 45, LOVELY_KISS
+	dbw 49, OUTRAGE
 	db 0 ; no more level-up moves
 
 GirafarigEvosAttacks:
@@ -1575,17 +1575,17 @@ RemoraidEvosAttacks:
 	dbw 1, TACKLE
 	dbw 1, GROWL
 	dbw 6, PURSUIT
-	dbw 11, FAINT_ATTACK
+	dbw 11, BITE
 	dbw 15, DISABLE
-	dbw 18, BUBBLEBEAM
+	dbw 18, FAINT_ATTACK
 	dbw 24, AURORA_BEAM
 	dbw 27, LEECH_LIFE
 	dbw 30, SCARY_FACE
 	dbw 32, CRUNCH
 	dbw 36, RECOVER
-	dbw 42, LOVELY_KISS
-	dbw 47, OUTRAGE
-	dbw 50, HYDRO_PUMP
+	dbw 42, MEAN_LOOK
+	dbw 47, LOVELY_KISS
+	dbw 50, OUTRAGE
 	db 0 ; no more level-up moves
 
 OctilleryEvosAttacks:
@@ -1593,17 +1593,17 @@ OctilleryEvosAttacks:
 	dbw 1, TACKLE
 	dbw 1, GROWL
 	dbw 7, PURSUIT
-	dbw 11, FAINT_ATTACK
+	dbw 11, BITE
 	dbw 15, DISABLE
-	dbw 18, BUBBLEBEAM
+	dbw 18, FAINT_ATTACK
 	dbw 24, AURORA_BEAM
 	dbw 27, LEECH_LIFE
 	dbw 30, SCARY_FACE
 	dbw 32, CRUNCH
 	dbw 38, RECOVER
-	dbw 44, LOVELY_KISS
-	dbw 50, OUTRAGE
-	dbw 54, HYDRO_PUMP
+	dbw 44, MEAN_LOOK
+	dbw 50, LOVELY_KISS
+	dbw 54, OUTRAGE
 	db 0 ; no more level-up moves
 
 DelibirdEvosAttacks:
@@ -2116,18 +2116,19 @@ LugiaEvosAttacks:
 
 HoOhEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, TWISTER
+	dbw 1, EMBER
+	dbw 1, VINE_WHIP
 	dbw 10, SMOKESCREEN
 	dbw 15, OCTAZOOKA
 	dbw 20, SELFDESTRUCT
-	dbw 25, METAL_CLAW
-	dbw 30, DRAGONBREATH
-	dbw 35, SLASH
-	dbw 40, DRAGON_RAGE
+	dbw 25, DRAGONBREATH
+	dbw 30, GIGA_DRAIN
+	dbw 35, FLAMETHROWER
+	dbw 40, MORNING_SUN
 	dbw 45, EXTREMESPEED
 	dbw 50, TRI_ATTACK
-	dbw 55, GUILLOTINE
-	dbw 60, SACRED_FIRE
+	dbw 55, LEAF_STORM
+	dbw 60, FIRE_BLAST
 	dbw 65, LOCK_ON
 	dbw 70, EXPLOSION
 	db 0 ; no more level-up moves

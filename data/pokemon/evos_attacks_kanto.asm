@@ -905,16 +905,16 @@ JigglypuffEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POUND
 	dbw 1, STRING_SHOT
-	dbw 5, GUST
+	dbw 5, CONFUSION
 	dbw 9, POWDER_SNOW
 	dbw 12, BARRIER
 	dbw 16, KINESIS
 	dbw 20, AURORA_BEAM
-	dbw 26, SUPERSONIC
+	dbw 26, PSYBEAM
 	dbw 32, MEDITATE
 	dbw 36, ICE_BEAM
-	dbw 40, MOONLIGHT
-	dbw 46, PSYCHIC_M
+	dbw 40, PSYCHIC_M
+	dbw 46, MOONLIGHT
 	dbw 50, BATON_PASS
 	dbw 50, SUBSTITUTE
 	db 0 ; no more level-up moves
@@ -923,16 +923,16 @@ WigglytuffEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POUND
 	dbw 1, STRING_SHOT
-	dbw 5, GUST
+	dbw 5, CONFUSION
 	dbw 9, POWDER_SNOW
 	dbw 12, BARRIER
 	dbw 16, KINESIS
 	dbw 20, AURORA_BEAM
-	dbw 26, SUPERSONIC
+	dbw 26, PSYBEAM
 	dbw 32, MEDITATE
 	dbw 36, ICE_BEAM
-	dbw 40, MOONLIGHT
-	dbw 47, PSYCHIC_M
+	dbw 40, PSYCHIC_M
+	dbw 47, MOONLIGHT
 	dbw 56, BATON_PASS
 	dbw 56, SUBSTITUTE
 	db 0 ; no more level-up moves

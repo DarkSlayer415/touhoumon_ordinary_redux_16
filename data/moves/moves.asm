@@ -93,7 +93,7 @@ Moves1:
 	move EFFECT_LEECH_HIT,          60, GRASS,         100, 16,   0      ;MEGA_DRAIN
 	move EFFECT_LEECH_SEED,          0, GRASS,          90, 12,   0      ;LEECH_SEED
 	move EFFECT_SP_ATK_UP,           0, GRASS,         100, 20,   0      ;GROWTH
-	move EFFECT_NORMAL_HIT,         55, GRASS,          95, 20,   0      ;RAZOR_LEAF
+	move EFFECT_NORMAL_HIT,         60, GRASS,         100, 20,   0      ;RAZOR_LEAF
 	move EFFECT_SOLARBEAM,         120, GRASS,         100, 12,   0      ;SOLARBEAM
 	move EFFECT_POISON,              0, POISON,         75, 20,   0      ;POISONPOWDER
 	move EFFECT_PARALYZE,            0, GRASS,          75, 20,   0      ;STUN_SPORE
@@ -152,7 +152,7 @@ Moves1:
 	move EFFECT_SP_DEF_UP_2,         0, PSYCHIC_TYPE,  100, 20,   0      ;AMNESIA
 	move EFFECT_SP_DEF_DOWN_2,       0, PSYCHIC_TYPE,  100, 20,   0      ;KINESIS
 	move EFFECT_HEAL,                0, FLYING,        100,  8,   0      ;SOFTBOILED
-	move EFFECT_JUMP_KICK,         100, FIGHTING,       90, 16,   0      ;HI_JUMP_KICK
+	move EFFECT_JUMP_KICK,         100, FIGHTING,       90, 12,   0      ;HI_JUMP_KICK
 	move EFFECT_PARALYZE,            0, DARK,           90, 20,   0      ;GLARE
 	move EFFECT_LEECH_HIT,          80, GHOST,         100, 12,   0      ;DREAM_EATER
 	move EFFECT_POISON,              0, POISON,         90, 20,   0      ;POISON_GAS
@@ -228,7 +228,7 @@ Moves1:
 	move EFFECT_MEAN_LOOK,           0, DARK,          100, 12,   0      ;MEAN_LOOK
 	move EFFECT_CONFUSE_HIT,       120, FAIRY,          85,  8,  30      ;HEART_CANNON
 	move EFFECT_SLEEP_TALK,          0, NORMAL,        100, 12,   0      ;SLEEP_TALK
-	move EFFECT_HEAL_BELL,           0, NORMAL,        100, 12,   0      ;HEAL_BELL
+	move EFFECT_HEAL_BELL,           0, NORMAL,        100,  8,   0      ;HEAL_BELL
 	move EFFECT_RETURN,              1, NORMAL,        100, 20,   0      ;RETURN
 	move EFFECT_ALL_UP_HIT,        120, GHOST,          85,  8,  20      ;PHANTOM_DAZE
 	move EFFECT_FRUSTRATION,         1, NORMAL,        100, 20,   0      ;FRUSTRATION

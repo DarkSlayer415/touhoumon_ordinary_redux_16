@@ -3,7 +3,7 @@
 	db 110, 130,  95, 120, 130,  95
 	;   hp  atk  def  spd  sat  sdf
 
-	db STEEL, FIRE ; type
+	db FIRE, GRASS ; type
 	db 5 ; catch rate
 	db 220 ; base exp
 	db SACRED_ASH, SACRED_ASH ; items

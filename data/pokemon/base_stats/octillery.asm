@@ -1,9 +1,9 @@
 	db 0 ; species ID placeholder
 
-	db  80,  85,  70, 100, 100,  85
+	db  80, 100,  70, 100,  85,  85
 	;   hp  atk  def  spd  sat  sdf
 
-	db DARK, WATER ; type
+	db DARK, DARK ; type
 	db 45 ; catch rate
 	db 180 ; base exp
 	db NO_ITEM, NO_ITEM ; items

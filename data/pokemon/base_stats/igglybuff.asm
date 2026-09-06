@@ -3,7 +3,7 @@
 	db  55,  30,  45,  55,  70,  45
 	;   hp  atk  def  spd  sat  sdf
 
-	db FAIRY, FAIRY ; type
+	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
 	db 200 ; catch rate
 	db 60 ; base exp
 	db NO_ITEM, NO_ITEM ; items
