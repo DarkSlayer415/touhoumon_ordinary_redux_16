@@ -147,7 +147,6 @@ MoveNames::
 	li "Spore"
 	li "Flash"
 	li "Psywave"
-	li "Hail"
 	li "Disperse"
 	li "Lunge"
 	li "Explosion"

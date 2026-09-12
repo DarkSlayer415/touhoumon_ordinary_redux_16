@@ -236,7 +236,7 @@ DEF TM01 EQU const_value
 	add_tm ROCK_SLIDE   ; cc
 	add_tm BLIZZARD     ; cd
 	add_tm DOUBLE_EDGE  ; ce
-	add_tm HAIL         ; cf
+	add_tm ICY_WIND     ; cf
 	add_tm PROTECT      ; d0
 	add_tm RAIN_DANCE   ; d1
 	add_tm GIGA_DRAIN   ; d2

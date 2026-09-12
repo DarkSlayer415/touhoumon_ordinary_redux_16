@@ -157,7 +157,6 @@
 	const SPORE        ; 93
 	const FLASH        ; 94
 	const PSYWAVE      ; 95
-	const HAIL         ; 96
 	const DISPERSE     ; 97
 	const LUNGE	   	   ; 98
 	const EXPLOSION    ; 99
