@@ -401,7 +401,6 @@ WeedleEvosAttacks:
 	dbw 30, AGILITY
 	dbw 34, ICE_BEAM
 	dbw 40, MOONLIGHT
-	dbw 47, HAIL
 	dbw 47, BLIZZARD
 	db 0 ; no more level-up moves
 
@@ -420,7 +419,6 @@ KakunaEvosAttacks:
 	dbw 30, AGILITY
 	dbw 34, ICE_BEAM
 	dbw 40, MOONLIGHT
-	dbw 48, HAIL
 	dbw 48, BLIZZARD
 	db 0 ; no more level-up moves
 
@@ -438,7 +436,6 @@ BeedrillEvosAttacks:
 	dbw 30, AGILITY
 	dbw 34, ICE_BEAM
 	dbw 42, MOONLIGHT
-	dbw 50, HAIL
 	dbw 50, BLIZZARD
 	db 0 ; no more level-up moves
 
@@ -2040,7 +2037,6 @@ KrabbyEvosAttacks:
 	dbw 31, SLEEP_TALK
 	dbw 35, ICE_BEAM
 	dbw 38, SHADOW_BALL
-	dbw 41, HAIL
 	dbw 45, BLIZZARD
 	dbw 47, DESTINY_BOND
 	db 0 ; no more level-up moves
@@ -2060,8 +2056,7 @@ KinglerEvosAttacks:
 	dbw 32, REST
 	dbw 32, SLEEP_TALK
 	dbw 35, ICE_BEAM
-	dbw 38, SHADOW_BALL
-	dbw 44, HAIL
+	dbw 40, SHADOW_BALL
 	dbw 47, BLIZZARD
 	dbw 50, DESTINY_BOND
 	db 0 ; no more level-up moves
@@ -2354,8 +2349,7 @@ TangelaEvosAttacks:
 	dbw 33, REST
 	dbw 33, SLEEP_TALK
 	dbw 35, ICE_BEAM
-	dbw 38, SHADOW_BALL
-	dbw 46, HAIL
+	dbw 42, SHADOW_BALL
 	dbw 50, BLIZZARD
 	dbw 54, DESTINY_BOND
 	db 0 ; no more level-up moves
