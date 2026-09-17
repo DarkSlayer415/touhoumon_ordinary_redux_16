@@ -76,18 +76,18 @@ GiveDratini:
 
 .Movesets:
 .Moveset0:
-; Dratini does not normally learn Extremespeed. This is a special gift.
-	dw WRAP
-	dw THUNDER_WAVE
-	dw TWISTER
+; CKasen does not normally learn Extremespeed. This is a special gift.
+	dw DRAGONBREATH
+	dw MEGA_PUNCH
+	dw MILK_DRINK
 	dw EXTREMESPEED
 	dw 0
 .Moveset1:
-; This is the normal moveset of a level 15 Dratini
-	dw WRAP
-	dw LEER
-	dw THUNDER_WAVE
-	dw TWISTER
+; This is the normal moveset of a level 35 CKasen
+	dw DRAGONBREATH
+	dw MEGA_PUNCH
+	dw MILK_DRINK
+	dw SCARY_FACE
 	dw 0
 
 .GetNthPartyMon:

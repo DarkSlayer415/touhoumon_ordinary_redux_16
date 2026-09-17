@@ -5,11 +5,11 @@ GiveShuckle:
 	xor a ; PARTYMON
 	ld [wMonType], a
 
-; Level 15 Shuckle.
-	ld hl, SHUCKLE
+; Level 20 CSanae (Aichiya).
+	ld hl, ODDISH
 	call GetPokemonIDFromIndex
 	ld [wCurPartySpecies], a
-	ld a, 15
+	ld a, 20
 	ld [wCurPartyLevel], a
 
 	predef TryAddMonToParty
@@ -19,7 +19,7 @@ GiveShuckle:
 	ld b, CAUGHT_BY_UNKNOWN
 	farcall SetGiftPartyMonCaughtData
 
-; Holding a Berry.
+; Holding an Everstone. Aichiya is meant to be returned as a CSanae
 	ld bc, PARTYMON_STRUCT_LENGTH
 	ld a, [wPartyCount]
 	dec a
@@ -27,7 +27,7 @@ GiveShuckle:
 	push bc
 	ld hl, wPartyMon1Item
 	call AddNTimes
-	ld [hl], BERRY
+	ld [hl], EVERSTONE
 	pop bc
 	pop af
 
@@ -70,7 +70,7 @@ SpecialShuckleOT:
 	db "MANIA@"
 
 SpecialShuckleNickname:
-	db "SHUCKIE@"
+	db "Aichiya@"
 
 ReturnShuckie:
 	farcall SelectMonFromParty
