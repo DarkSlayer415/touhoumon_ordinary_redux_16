@@ -1,7 +1,7 @@
 	db "Mouse@" ; species name
 	dw 500, 990 ; height, weight
 
-	db   "One can comission"
+	db   "One can commission"
 	next "her to help look"
 	next "for things, but"
 
