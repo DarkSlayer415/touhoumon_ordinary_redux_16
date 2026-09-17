@@ -5,7 +5,7 @@
 	next "Palanquin Ship,"
 	next "a ship that sails"
 
-	page "the skies. She was"
-	next "dedicated to help"
-	next "unseal Byakuren.@"
+	page "the skies. Helped"
+	next "unseal Byakuren"
+	next "from Makai.@"
 	
