@@ -478,7 +478,7 @@ CheckEnemyTurn:
 	call StdBattleTextbox
 
 	call HitSelfInConfusion
-	call BattleCommand_DamageCalc
+	call ConfusionDamageCalc
 	call BattleCommand_LowerSub
 
 	xor a
@@ -581,7 +581,7 @@ HitConfusion:
 	ld [wCriticalHit], a
 
 	call HitSelfInConfusion
-	call BattleCommand_DamageCalc
+	call ConfusionDamageCalc
 	call BattleCommand_LowerSub
 
 	xor a
@@ -1114,22 +1114,26 @@ BattleCommand_Critical:
 	ld hl, wBattleMonItem
 	ld a, [wBattleMonSpecies]
 
+
+; Lucky Punch and Stick are renamed to Lunar Fan and Lunar Sword
+; These items boost the crit rates of Toyohime and Yorihime, who internally replace Raikou and ENTEI
+; Maybe change to Layla and VIVIT exclusive items?
 .Item:
 	ld c, 0
 	ld b, [hl]
 	call GetPokemonIndexFromID
 
 	ld a, l
-	sub LOW(CHANSEY)
-	if HIGH(CHANSEY) == 0
+	sub LOW(RAIKOU)
+	if HIGH(RAIKOU) == 0
 		or h
 	else
 		jr nz, .Farfetchd
-		if HIGH(CHANSEY) == 1
+		if HIGH(RAIKOU) == 1
 			dec h
 		else
 			ld a, h
-			cp HIGH(CHANSEY)
+			cp HIGH(RAIKOU)
 		endc
 	endc
 	jr nz, .Farfetchd
@@ -1143,16 +1147,16 @@ BattleCommand_Critical:
 
 .Farfetchd:
 	ld a, l
-	sub LOW(FARFETCH_D)
-	if HIGH(FARFETCH_D) == 0
+	sub LOW(ENTEI)
+	if HIGH(ENTEI) == 0
 		or h
 	else
 		jr nz, .FocusEnergy
-		if HIGH(FARFETCH_D) == 1
+		if HIGH(ENTEI) == 1
 			dec h
 		else
 			ld a, h
-			cp HIGH(FARFETCH_D)
+			cp HIGH(ENTEI)
 		endc
 	endc
 	jr nz, .FocusEnergy
@@ -1852,8 +1856,11 @@ BattleCommand_EffectChance:
 	jr z, .got_move_chance
 	ld hl, wEnemyMoveStruct + MOVE_CHANCE
 .got_move_chance
-; BUG: Moves with a 100% secondary effect chance will not trigger it in 1/256 uses (see docs/bugs_and_glitches.md)
-	call BattleRandom
+	ld a, [hl]
+	sub 100 percent
+	; If chance was 100%, RNG won't be called (carry not set)
+	; Thus chance will be subtracted from 0, guaranteeing a carry
+	call c, BattleRandom
 	cp [hl]
 	pop hl
 	ret c
@@ -2514,22 +2521,23 @@ DittoMetalPowder:
 	jr nz, .got_species
 	ld a, [wTempEnemyMonSpecies]
 
+; EOrange internally replaces Skarmory
 .got_species
 	push hl
 	call GetPokemonIndexFromID
 	ld a, l
-	sub LOW(DITTO)
-	if HIGH(DITTO) == 0
+	sub LOW(SKARMORY)
+	if HIGH(SKARMORY) == 0
 		or h
 		pop hl
 	else
 		ld a, h
 		pop hl
 		ret nz
-		if HIGH(DITTO) == 1
+		if HIGH(SKARMORY) == 1
 			dec a
 		else
-			cp HIGH(DITTO)
+			cp HIGH(SKARMORY)
 		endc
 	endc
 	ret nz
@@ -2541,21 +2549,24 @@ DittoMetalPowder:
 	pop bc
 	ret nz
 
-; BUG: Metal Powder can increase damage taken with boosted (Special) Defense (see docs/bugs_and_glitches.md)
-	ld a, c
-	srl a
-	add c
-	ld c, a
+	ld h, b
+	ld l, c
+	srl b
+	rr c
+	add hl, bc
+	ld b, h
+	ld c, l
+
+	ld a, HIGH(MAX_STAT_VALUE)
+	cp b
+	jr c, .cap
+	ret nz
+	ld a, LOW(MAX_STAT_VALUE)
+	cp c
 	ret nc
 
-	srl b
-	ld a, b
-	and a
-	jr nz, .done
-	inc b
-.done
-	scf
-	rr c
+.cap
+	ld bc, MAX_STAT_VALUE
 	ret
 
 BattleCommand_DamageStats:
@@ -2610,12 +2621,14 @@ PlayerAttackDamage:
 	ld b, a
 	ld c, [hl]
 
+	call SandstormSpDefBoost
+	
 	ld a, [wEnemyScreens]
 	bit SCREENS_LIGHT_SCREEN, a
 	jr z, .specialcrit
 	sla c
 	rl b
-
+	
 .specialcrit
 	ld hl, wBattleMonSpclAtk
 	call CheckDamageStatsCritical
@@ -2637,11 +2650,15 @@ PlayerAttackDamage:
 	call ThickClubBoost
 
 .done
+
+	push hl
+	call DittoMetalPowder
+	pop hl
+	
 	call TruncateHL_BC
 
 	ld a, [wBattleMonLevel]
 	ld e, a
-	call DittoMetalPowder
 
 	ld a, 1
 	and a
@@ -2678,10 +2695,6 @@ TruncateHL_BC:
 	inc l
 
 .finish
-; BUG: Reflect and Light Screen can make (Special) Defense wrap around above 1024 (see docs/bugs_and_glitches.md)
-	ld a, [wLinkMode]
-	cp LINK_COLOSSEUM
-	jr z, .done
 ; If we go back to the loop point,
 ; it's the same as doing this exact
 ; same check twice.
@@ -2742,19 +2755,13 @@ CheckDamageStatsCritical:
 ThickClubBoost:
 ; Return in hl the stat value at hl.
 
-; If the attacking monster is Cubone or Marowak and
-; it's holding a Thick Club, double it.
+; If the attacking monster is EOrange and
+; it's holding a Combat Baton (Thick Club), double it.
 	push bc
 	push de
-	ld bc, CUBONE
+	ld bc, SKARMORY
 	ld d, THICK_CLUB
 	call SpeciesItemBoost
-	if MAROWAK == (CUBONE + 1)
-		inc bc
-	else
-		ld bc, MAROWAK
-	endc
-	call DoubleStatIfSpeciesHoldingItem
 	pop de
 	pop bc
 	ret
@@ -2762,11 +2769,11 @@ ThickClubBoost:
 LightBallBoost:
 ; Return in hl the stat value at hl.
 
-; If the attacking monster is Pikachu and it's
-; holding a Light Ball, double it.
+;  If the attacking monster is EOrange and
+; it's holding a Magic Baton (Light Ball), double it.
 	push bc
 	push de
-	ld bc, PIKACHU
+	ld bc, SKARMORY
 	ld d, LIGHT_BALL
 	call SpeciesItemBoost
 	pop de
@@ -2816,9 +2823,19 @@ DoubleStatIfSpeciesHoldingItem:
 	ret nz
 
 ; Double the stat
-; BUG: Thick Club and Light Ball can make (Special) Attack wrap around above 1024 (see docs/bugs_and_glitches.md)
 	sla l
 	rl h
+
+	ld a, HIGH(MAX_STAT_VALUE)
+	cp h
+	jr c, .cap
+	ret nz
+	ld a, LOW(MAX_STAT_VALUE)
+	cp l
+	ret nc
+
+.cap
+	ld hl, MAX_STAT_VALUE
 	ret
 
 EnemyAttackDamage:
@@ -2864,6 +2881,8 @@ EnemyAttackDamage:
 	ld a, [hli]
 	ld b, a
 	ld c, [hl]
+	
+	call SandstormSpDefBoost
 
 	ld a, [wPlayerScreens]
 	bit SCREENS_LIGHT_SCREEN, a
@@ -2889,11 +2908,15 @@ EnemyAttackDamage:
 	call ThickClubBoost
 
 .done
+
+	push hl
+	call DittoMetalPowder
+	pop hl
+
 	call TruncateHL_BC
 
 	ld a, [wEnemyMonLevel]
 	ld e, a
-	call DittoMetalPowder
 
 	ld a, 1
 	and a
@@ -2942,11 +2965,12 @@ HitSelfInConfusion:
 	ld d, 40
 	pop af
 	ld e, a
+	ld a, TRUE
+	ld [wIsConfusionDamage], a
 	ret
 
 BattleCommand_DamageCalc:
 ; Return a damage value for move power d, player level e, enemy defense c and player attack b.
-; BUG: Confusion damage is affected by type-boosting items and Explosion/Self-Destruct doubling (see docs/bugs_and_glitches.md)
 
 	ld a, BATTLE_VARS_MOVE_EFFECT
 	call GetBattleVar
@@ -2974,6 +2998,11 @@ BattleCommand_DamageCalc:
 	ret z
 
 .skip_zero_damage_check
+	xor a ; Not confusion damage
+	ld [wIsConfusionDamage], a
+	; fallthrough
+
+ConfusionDamageCalc:
 ; Minimum defense value is 1.
 	ld a, c
 	and a
@@ -3028,6 +3057,11 @@ BattleCommand_DamageCalc:
 	call Divide
 
 ; Item boosts
+; Item boosts don't apply to confusion damage
+	ld a, [wIsConfusionDamage]
+	and a
+	jr nz, .DoneItem
+	
 	call GetUserItem
 
 	ld a, b
@@ -5234,12 +5268,10 @@ BattleCommand_EndLoop:
 	jr .double_hit
 
 .only_one_beatup
-; BUG: Beat Up works incorrectly with only one Pokémon in the party (see docs/bugs_and_glitches.md)
 	ld a, BATTLE_VARS_SUBSTATUS3
 	call GetBattleVarAddr
 	res SUBSTATUS_IN_LOOP, [hl]
-	call BattleCommand_BeatUpFailText
-	jp EndMoveEffect
+	ret 
 
 .not_triple_kick
 	call BattleRandom
@@ -6473,7 +6505,12 @@ INCLUDE "engine/battle/move_effects/future_sight.asm"
 INCLUDE "engine/battle/move_effects/thunder.asm"
 
 CheckHiddenOpponent:
-; BUG: Lock-On and Mind Reader don't always bypass Fly and Dig (see docs/bugs_and_glitches.md)
+	ld a, BATTLE_VARS_SUBSTATUS5_OPP
+	call GetBattleVar
+	cpl
+	and 1 << SUBSTATUS_LOCK_ON
+	ret z
+
 	ld a, BATTLE_VARS_SUBSTATUS3_OPP
 	call GetBattleVar
 	and 1 << SUBSTATUS_FLYING | 1 << SUBSTATUS_UNDERGROUND
@@ -6716,4 +6753,34 @@ CheckMoveInList:
 	call IsInWordArray
 	pop de
 	pop bc
+	ret
+
+SandstormSpDefBoost: 
+; First, check if Sandstorm is active.
+	ld a, [wBattleWeather]
+	cp WEATHER_SANDSTORM
+	ret nz
+
+; Then, check the opponent's types.
+	ld hl, wEnemyMonType1
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .ok
+	ld hl, wBattleMonType1
+.ok
+	ld a, [hli]
+	cp ROCK
+	jr z, .start_boost
+	ld a, [hl]
+	cp ROCK
+	ret nz
+
+.start_boost
+	ld h, b
+	ld l, c
+	srl b
+	rr c
+	add hl, bc
+	ld b, h
+	ld c, l
 	ret

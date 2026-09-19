@@ -451,7 +451,7 @@ KurtsHouseKurtGoAroundPlayerThenExitHouseMovement:
 	step_end
 	
 KurtsHouseKurtGetStartedText:
-	text "Kurt: I'll get"
+	text "KURT: I'll get"
 	line "started right now!"
 	done	
 
@@ -465,13 +465,13 @@ KurtsHouseKurtMakingBallsMustWaitText:
 	para "Sorry, but that'll"
 	line "have to wait."
 
-	para "Do you know TEAM"
-	line "ROCKET? Ah, don't"
+	para "Do you know Team"
+	line "Rocket? Ah, don't"
 
 	para "worry. I'll tell"
 	line "you anyhow."
 
-	para "TEAM ROCKET's an"
+	para "Team Rocket's an"
 	line "evil gang that"
 
 	para "uses #MON for"
@@ -482,7 +482,7 @@ KurtsHouseKurtMakingBallsMustWaitText:
 	cont "three years ago."
 
 	para "Anyway, they're at"
-	line "the WELL, stealing"
+	line "the Well, stealing"
 
 	para "kappa cucumbers"
 	line "for sale!"
@@ -501,12 +501,12 @@ KurtsHouseKurtHonoredToMakeBallsText:
 
 	para "You handled your-"
 	line "self like a real"
-	cont "hero at the WELL."
+	cont "hero at the Well."
 
 	para "I like your style!"
 
 	para "I would be honored"
-	line "to make BALLS for"
+	line "to make Orbs for"
 
 	para "a trainer like"
 	line "you."
@@ -516,23 +516,23 @@ KurtsHouseKurtHonoredToMakeBallsText:
 	done
 
 KurtsHouseKurtBallsFromApricornsText:
-	text "KURT: I make BALLS"
-	line "from APRICORNS."
+	text "KURT: I make Orbs"
+	line "from Apricorns."
 
 	para "Collect them from"
 	line "trees and bring"
 	cont "'em to me."
 
-	para "I'll make BALLS"
+	para "I'll make Orbs"
 	line "out of them."
 	done
 
 KurtsHouseKurtAskYouHaveAnApricornText:
 	text "KURT: You have an"
-	line "APRICORN for me?"
+	line "Apricorn for me?"
 
 	para "Fine! I'll turn it"
-	line "into a BALL."
+	line "into a Orb."
 	done
 
 KurtsHouseKurtThatsALetdownText:
@@ -548,7 +548,7 @@ KurtsHouseKurtDontBotherMeText:
 KurtsHouseKurtJustFinishedYourBallText:
 	text "KURT: Ah, <PLAYER>!"
 	line "I just finished"
-	cont "your BALL. Here!"
+	cont "your Orb. Here!"
 	done
 
 KurtsHouseKurtTurnedOutGreatText:
@@ -574,7 +574,7 @@ KurtsHouseKurtWhatIsThatText:
 	line "one before."
 
 	para "It looks a lot"
-	line "like a # BALL,"
+	line "like a # Orb,"
 
 	para "but it appears to"
 	line "be something else."
