@@ -7,7 +7,7 @@ BattleTowerTrainers:
 	db "HANSON@@@@", FISHER
 	db "SAWYER@@@@", POKEMANIAC
 	db "MASUDA@@@@", GUITARIST
-	db "NICKEL@@@@", SCIENTIST
+	db "NICKEL@@@@", COOLTRAINERM
 	db "OLSON@@@@@", POKEFANM
 	db "ZABOROWSKI", LASS
 	db "WRIGHT@@@@", YOUNGSTER
@@ -35,13 +35,13 @@ BattleTowerTrainers:
 	db "RODRIGUEZ@", OFFICER
 	db "SANTIAGO@@", PSYCHIC_T
 	db "STOCK@@@@@", POKEFANM
-	db "THURMAN@@@", SCIENTIST
+	db "THURMAN@@@", COOLTRAINERM
 	db "VALENTINO@", BEAUTY
 	db "WAGNER@@@@", CAMPER
 	db "YATES@@@@@", BIRD_KEEPER
 	db "ANDREWS@@@", PICNICKER
 	db "BAHN@@@@@@", POKEMANIAC
-	db "MORI@@@@@@", SCIENTIST
+	db "MORI@@@@@@", COOLTRAINERM
 	db "BUCKMAN@@@", SAGE
 	db "COBB@@@@@@", SCHOOLBOY
 	db "HUGHES@@@@", FISHER
@@ -71,7 +71,7 @@ BattleTowerTrainers:
 	db "SMITH@@@@@", BUG_CATCHER
 	db "TAJIRI@@@@", BUG_CATCHER
 	db "BAKER@@@@@", POKEMANIAC
-	db "COLLINS@@@", SCIENTIST
+	db "COLLINS@@@", COOLTRAINERM
 	db "SMART@@@@@", SUPER_NERD
 	db "DYKSTRA@@@", SWIMMERF
 	db "EATON@@@@@", BIKER
