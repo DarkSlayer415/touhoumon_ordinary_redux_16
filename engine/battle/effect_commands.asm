@@ -3938,7 +3938,7 @@ BattleCommand_BurnTarget:
 	ld a, BATTLE_VARS_STATUS_OPP
 	call GetBattleVarAddr
 	and a
-	jp nz, Defrost
+	ret nz
 	ld a, [wTypeModifier]
 	and EFFECTIVENESS_MASK
 	ret z

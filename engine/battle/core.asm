@@ -6604,8 +6604,7 @@ ApplyPrzEffectOnSpeed:
 	ld a, [hld]
 	ld b, a
 	ld a, [hl]
-	srl a
-	rr b
+	; Speed reduction now at 50%.
 	srl a
 	rr b
 	ld [hli], a
@@ -6625,8 +6624,7 @@ ApplyPrzEffectOnSpeed:
 	ld a, [hld]
 	ld b, a
 	ld a, [hl]
-	srl a
-	rr b
+	; Speed reduction now at 50%
 	srl a
 	rr b
 	ld [hli], a
