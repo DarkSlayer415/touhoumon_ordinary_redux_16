@@ -38,7 +38,7 @@ CheckBreedmonCompatibility:
 	jr nz, .compute
 
 .genderless
-	ld hl, DITTO
+	ld hl, KEDAMA
 	call GetPokemonIDFromIndex
 	ld b, a
 	ld c, $0
@@ -122,9 +122,9 @@ CheckBreedmonCompatibility:
 	cp EGG_NONE * $11
 	jr z, .Incompatible
 
-; Ditto is automatically compatible with everything.
-; If not Ditto, load the breeding groups into b/c and d/e.
-	ld hl, DITTO
+; Kedama is automatically compatible with everything.
+; If not Kedama, load the breeding groups into b/c and d/e.
+	ld hl, KEDAMA
 	call GetPokemonIDFromIndex
 	ld d, a
 	ld a, [wBreedMon2Species]
@@ -582,7 +582,7 @@ LoadEggMove:
 	ret
 
 GetHeritableMoves:
-	ld hl, DITTO
+	ld hl, KEDAMA
 	call GetPokemonIDFromIndex
 	ld b, a
 	ld hl, wBreedMon2Moves
@@ -642,7 +642,7 @@ GetHeritableMoves:
 	ret
 
 GetBreedmonMovePointer:
-	ld hl, DITTO
+	ld hl, KEDAMA
 	call GetPokemonIDFromIndex
 	ld b, a
 	ld hl, wBreedMon1Moves

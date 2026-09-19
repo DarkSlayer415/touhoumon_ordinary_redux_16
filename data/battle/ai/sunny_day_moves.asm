@@ -5,9 +5,10 @@ SunnyDayMoves:
 	dw FIRE_PUNCH
 	dw EMBER
 	dw FLAMETHROWER
+	dw SOLARBEAM
 	dw FIRE_SPIN
 	dw FIRE_BLAST
-	dw SACRED_FIRE
-	dw MORNING_SUN
+	dw FLAME_WHEEL
+	dw SMOKE_FLARE
 	dw SYNTHESIS
 	dw -1 ; end
