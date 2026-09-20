@@ -457,7 +457,6 @@ Music_JohtoGymKaguya_Ch1:
 	volume_envelope 12, 2
 	note D#, 16
 ;Bar 54
-	volume_envelope 8, 0
 	octave 3
 	note C_, 5
 	rest 1
@@ -477,10 +476,8 @@ Music_JohtoGymKaguya_Ch1:
 	rest 1
 	note D#, 4
 ;Bar 57
-	volume_envelope 9, 7
 	note C#, 6
 	note C#, 4
-	volume_envelope 11, 4
 	octave 2
 	note A#, 2
 	octave 3
@@ -876,7 +873,7 @@ Music_JohtoGymKaguya_Ch2:
 	volume_envelope 12, 2
 	note G#, 16
 ;Bar 54
-	volume_envelope 5, 0
+	volume_envelope 8, 0
 	octave 3
 	note F_, 5
 	rest 1
@@ -906,7 +903,6 @@ Music_JohtoGymKaguya_Ch2:
 ; ============================================================================================================
 
 Music_JohtoGymKaguya_Ch3:
-	volume_envelope 2, 0
 	note_type 12, 1, 9
 ;Bar 1
 	octave 4
@@ -1034,7 +1030,6 @@ Music_JohtoGymKaguya_Ch3:
 	note A#, 2
 	note G#, 2
 ;Bar 11
-volume_envelope 2, 0
 .mainloop:
 	note D_, 2
 	note G_, 2
