@@ -320,7 +320,7 @@ Route39SignText:
 	done
 
 MoomooFarmSignText:
-	text "MOOMOO FARM"
+	text "SUNNY FARM"
 
 	para "Enjoy Our Fresh"
 	line "and Tasty Milk"
@@ -329,7 +329,7 @@ MoomooFarmSignText:
 Route39TrainerTipsText:
 	text "TRAINER TIPS"
 
-	para "Use HEADBUTT on"
+	para "Use Headbutt on"
 	line "trees to shake"
 	cont "#MON out."
 
@@ -337,7 +337,7 @@ Route39TrainerTipsText:
 	line "#MON drop out"
 	cont "of trees."
 
-	para "Use HEADBUTT on"
+	para "Use Headbutt on"
 	line "any tree you see!"
 	done
 

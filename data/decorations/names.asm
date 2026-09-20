@@ -17,7 +17,7 @@ DecorationNames:
 	li " BED"
 	li " CARPET"
 	li " POSTER"
-	li " DOLL"
+	li " Fumo"
 	li "BIG "
 	li "FEATHERY"
 	li "PIKACHU"

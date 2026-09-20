@@ -289,7 +289,7 @@ _LookAdorableDecoText::
 	done
 
 _LookGiantDecoText::
-	text "A giant doll! It's"
+	text "A Deka Fumo! It's"
 	line "fluffy and cuddly."
 	done
 

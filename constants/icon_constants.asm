@@ -1,44 +1,44 @@
 ; IconPointers indexes (see data/icon_pointers.asm)
 	const_def
 	const ICON_NULL
-	const ICON_POLIWAG
-	const ICON_JIGGLYPUFF
-	const ICON_DIGLETT
-	const ICON_PIKACHU
-	const ICON_STARYU
-	const ICON_FISH
-	const ICON_BIRD
-	const ICON_MONSTER
-	const ICON_CLEFAIRY
-	const ICON_ODDISH
-	const ICON_BUG
-	const ICON_GHOST
-	const ICON_LAPRAS
-	const ICON_HUMANSHAPE
-	const ICON_FOX
-	const ICON_EQUINE
-	const ICON_SHELL
-	const ICON_BLOB
-	const ICON_SERPENT
-	const ICON_VOLTORB
-	const ICON_SQUIRTLE
-	const ICON_BULBASAUR
-	const ICON_CHARMANDER
-	const ICON_CATERPILLAR
-	const ICON_UNOWN
-	const ICON_GEODUDE
-	const ICON_FIGHTER
+	const ICON_POLIWAG ; Suwako
+	const ICON_JIGGLYPUFF ; Daiyousei
+	const ICON_DIGLETT ; Tenshi
+	const ICON_PIKACHU ; Reimu
+	const ICON_STARYU ; Rumia
+	const ICON_FISH ; Youmu
+	const ICON_BIRD ; Aya
+	const ICON_MONSTER ; Mima
+	const ICON_CLEFAIRY ; Lily
+	const ICON_ODDISH ; Minoriko 
+	const ICON_BUG ; Wriggle
+	const ICON_GHOST ; Yuyuko
+	const ICON_LAPRAS ; Patchouli
+	const ICON_HUMANSHAPE ; Alice
+	const ICON_FOX ; Ran
+	const ICON_EQUINE ; Chen
+	const ICON_SHELL ; Reisen
+	const ICON_BLOB ; Kana
+	const ICON_SERPENT ; Iku
+	const ICON_VOLTORB ; Hina
+	const ICON_SQUIRTLE ; Eirin
+	const ICON_BULBASAUR ; Kaguya
+	const ICON_CHARMANDER ; Mokou
+	const ICON_CATERPILLAR ; Cirno
+	const ICON_UNOWN ; Utsuho
+	const ICON_GEODUDE ; Suika
+	const ICON_FIGHTER ; Meiling
 	const ICON_EGG
-	const ICON_JELLYFISH
-	const ICON_MOTH
-	const ICON_BAT
-	const ICON_SNORLAX
-	const ICON_HO_OH
-	const ICON_LUGIA
-	const ICON_GYARADOS
-	const ICON_SLOWPOKE
-	const ICON_SUDOWOODO
-	const ICON_BIGMON
+	const ICON_JELLYFISH ; Komachi
+	const ICON_MOTH ; Mystia
+	const ICON_BAT ; Remilia
+	const ICON_SNORLAX ; Yukari
+	const ICON_HO_OH ; Sakuya
+	const ICON_LUGIA ; Prismriver
+	const ICON_GYARADOS ; Yuuka
+	const ICON_SLOWPOKE ; Nitori
+	const ICON_SUDOWOODO ; Keine
+	const ICON_BIGMON ; Marisa
 DEF NUM_ICONS EQU const_value - 1
 
 ; LoadMenuMonIcon.Jumptable indexes (see engine/gfx/mon_icons.asm)
