@@ -40,25 +40,25 @@ DecorationAttributes:
 	decoration DECO_PLANT,   PUT_IT_AWAY,     PUT_AWAY_DOLL,     EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1, 0
 	decoration DECO_DOLL,    4,               SET_UP_DOLL,       EVENT_DECO_PIKACHU_DOLL,            SPRITE_PIKACHU ; Nitori Fumo
 	decoration DECO_PLANT,   SURF_PIKA_DOLL,  SET_UP_DOLL,       EVENT_DECO_SURFING_PIKACHU_DOLL,    SPRITE_SURFING_PIKACHU
-	decoration DECO_DOLL,    5,               SET_UP_DOLL,       EVENT_DECO_CLEFAIRY_DOLL,           SPRITE_NIDORINA ; Reisen Fumo
+	decoration DECO_DOLL,    5,               SET_UP_DOLL,       EVENT_DECO_CLEFAIRY_DOLL,           SPRITE_CLEFAIRY ; Reisen Fumo
 	decoration DECO_DOLL,    6,               SET_UP_DOLL,       EVENT_DECO_JIGGLYPUFF_DOLL,         SPRITE_JIGGLYPUFF ; Alice Fumo
 	decoration DECO_DOLL,    0,               SET_UP_DOLL,       EVENT_DECO_BULBASAUR_DOLL,          SPRITE_BULBASAUR ; Reimu Fumo
 	decoration DECO_DOLL,    1,               SET_UP_DOLL,       EVENT_DECO_CHARMANDER_DOLL,         SPRITE_CHARMANDER ; Marisa Fumo
-	decoration DECO_DOLL,    2,               SET_UP_DOLL,       EVENT_DECO_SQUIRTLE_DOLL,           SPRITE_SQUIRTLE ; Sakuya Fumo
+	decoration DECO_DOLL,    2,               SET_UP_DOLL,       EVENT_DECO_SQUIRTLE_DOLL,           SPRITE_HO_OH ; Sakuya Fumo
 	decoration DECO_DOLL,    9,               SET_UP_DOLL,       EVENT_DECO_POLIWAG_DOLL,            SPRITE_POLIWAG ; Komachi Fumo
-	decoration DECO_DOLL,    8,               SET_UP_DOLL,       EVENT_DECO_DIGLETT_DOLL,            SPRITE_DIGLETT ; Tenshi Fumo
-	decoration DECO_DOLL,    18,              SET_UP_DOLL,       EVENT_DECO_STARYU_DOLL,             SPRITE_CYNDAQUIL ; Mokou Fumo
-	decoration DECO_DOLL,    19,              SET_UP_DOLL,       EVENT_DECO_MAGIKARP_DOLL,           SPRITE_SPINARAK ; Remilia Fumo
+	decoration DECO_DOLL,    8,               SET_UP_DOLL,       EVENT_DECO_DIGLETT_DOLL,            SPRITE_GIRAFARIG ; Tenshi Fumo
+	decoration DECO_DOLL,    18,              SET_UP_DOLL,       EVENT_DECO_STARYU_DOLL,             SPRITE_BUTTERFREE ; Patchouli Fumo
+	decoration DECO_DOLL,    19,              SET_UP_DOLL,       EVENT_DECO_MAGIKARP_DOLL,           SPRITE_TOGEPI ; Remilia Fumo
 	decoration DECO_DOLL,    7,               SET_UP_DOLL,       EVENT_DECO_ODDISH_DOLL,             SPRITE_PIDGEY ; Aya Fumo
-	decoration DECO_DOLL,    15,              SET_UP_DOLL,       EVENT_DECO_GENGAR_DOLL,             SPRITE_CATERPIE ; Patchouli Fumo
-	decoration DECO_DOLL,    14,              SET_UP_DOLL,       EVENT_DECO_SHELLDER_DOLL,           SPRITE_GROWLITHE ; Rumia Fumo
+	decoration DECO_DOLL,    15,              SET_UP_DOLL,       EVENT_DECO_GENGAR_DOLL,             SPRITE_GENGAR ; Mystia Fumo
+	decoration DECO_DOLL,    14,              SET_UP_DOLL,       EVENT_DECO_SHELLDER_DOLL,           SPRITE_RHYDON ; Ran Fumo
 	decoration DECO_DOLL,    13,              SET_UP_DOLL,       EVENT_DECO_GRIMER_DOLL,             SPRITE_CHIKORITA ; Kaguya Fumo 
 	decoration DECO_DOLL,    17,              SET_UP_DOLL,       EVENT_DECO_VOLTORB_DOLL,            SPRITE_TOTODILE ; Eirin Fumo
 	decoration DECO_DOLL,    3,               SET_UP_DOLL,       EVENT_DECO_WEEDLE_DOLL,             SPRITE_WEEDLE ; Cirno Fumo
-	decoration DECO_DOLL,    22,              SET_UP_DOLL,       EVENT_DECO_UNOWN_DOLL,              SPRITE_HOPPIP ; Utsuho Fumo
+	decoration DECO_DOLL,    22,              SET_UP_DOLL,       EVENT_DECO_UNOWN_DOLL,              SPRITE_CYNDAQUIL ; Mokou Fumo
 	decoration DECO_DOLL,    12,              SET_UP_DOLL,       EVENT_DECO_GEODUDE_DOLL,            SPRITE_GEODUDE ; Youmu Fumo
-	decoration DECO_DOLL,    10,              SET_UP_DOLL,       EVENT_DECO_MACHOP_DOLL,             SPRITE_MACHOP ; Meiling Fumo
-	decoration DECO_DOLL,    11,              SET_UP_DOLL,       EVENT_DECO_TENTACOOL_DOLL,          SPRITE_HOUNDOUR ; Yuyuko Fumo
+	decoration DECO_DOLL,    10,              SET_UP_DOLL,       EVENT_DECO_MACHOP_DOLL,             SPRITE_POLITOED ; Suwako Fumo
+	decoration DECO_DOLL,    11,              SET_UP_DOLL,       EVENT_DECO_TENTACOOL_DOLL,          SPRITE_SMOOCHUM ; Suika Fumo
 	decoration DECO_PLANT,   GOLD_TROPHY,     SET_UP_DOLL,       EVENT_DECO_GOLD_TROPHY,             SPRITE_GOLD_TROPHY
 	decoration DECO_PLANT,   SILVER_TROPHY,   SET_UP_DOLL,       EVENT_DECO_SILVER_TROPHY,           SPRITE_SILVER_TROPHY
 	assert_table_length NUM_DECOS + NUM_DECO_CATEGORIES + 1
@@ -74,16 +74,16 @@ DecorationAttributePokemonNames:
 	dw PIDGEOTTO  ;  7, Aya Fumo
 	dw PINECO     ;  8, Tenshi Fumo
 	dw POLIWHIRL  ;  9, Komachi Fumo
-	dw MACHOKE    ; 10, Meiling Fumo
-	dw HOUNDOOM   ; 11, Yuyuko Fumo
+	dw AZUMARILL  ; 10, Suwako Fumo
+	dw RATTATA    ; 11, Suika Fumo
 	dw GRAVELER   ; 12, Youmu Fumo
 	dw BAYLEEF    ; 13, Kaguya Fumo
-	dw ARCANINE   ; 14, Rumia Fumo
-	dw METAPOD    ; 15, Patchouli Fumo
-	dw CHARIZARD  ; 16, Deka EMarisa Fumo
+	dw RHYHORN    ; 14, Ran Fumo
+	dw HAUNTER    ; 15, Mystia Fumo
+	dw CHARMELEON ; 16, Deka Marisa Fumo
 	dw CROCONAW   ; 17, Eirin Fumo
-	dw QUILAVA    ; 18, Mokou Fumo
+	dw METAPOD    ; 18, Patchouli Fumo
 	dw ARIADOS    ; 19, Remilia Fumo
-	dw VENUSAUR   ; 20, Deka EReimu Fumo
+	dw IVYSAUR    ; 20, Deka Reimu Fumo
 	dw SNORLAX    ; 21, Genji Doll
-	dw SKIPLOOM   ; 22, Utsuho Fumo
+	dw QUILAVA    ; 22, Mokou Fumo

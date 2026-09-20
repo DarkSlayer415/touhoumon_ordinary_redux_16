@@ -1,39 +1,39 @@
 SpriteMons:
 ; entries correspond to SPRITE_* constants past SPRITE_POKEMON
 	table_width 2
-	dw UNOWN
-	dw GEODUDE
-	dw GROWLITHE
-	dw WEEDLE
-	dw SHELLDER
-	dw ODDISH
-	dw GENGAR
-	dw ZUBAT
-	dw MAGIKARP
-	dw SQUIRTLE
-	dw TOGEPI
-	dw BUTTERFREE
-	dw DIGLETT
-	dw POLIWAG
-	dw PIKACHU
-	dw CLEFAIRY
-	dw CHARMANDER
-	dw JYNX
-	dw STARMIE
-	dw BULBASAUR
-	dw JIGGLYPUFF
-	dw GRIMER
-	dw EKANS
-	dw PARAS
-	dw TENTACOOL
-	dw TAUROS
-	dw MACHOP
-	dw VOLTORB
-	dw LAPRAS
-	dw RHYDON
-	dw MOLTRES
-	dw SNORLAX
-	dw GYARADOS
-	dw LUGIA
-	dw HO_OH
+	dw HOPPIP ;Utsuho
+	dw GEODUDE ;Youmu
+	dw GROWLITHE ;Rumia/Youkai
+	dw WEEDLE ;Cirno/Fairy
+	dw SENTRET ;Kana
+	dw CYNDAQUIL ;Mokou
+	dw GENGAR ;Mystia
+	dw ZUBAT ;Fairy
+	dw MAGIKARP ;Daiyousei
+	dw TOTODILE ;Eirin
+	dw TOGEPI ;Vampire
+	dw BUTTERFREE ;Patchouli
+	dw DIGLETT ;Wriggle
+	dw POLIWAG ;Komachi
+	dw PIDGEY ;Tengu
+	dw CLEFAIRY ;Bunny
+	dw CHARMANDER ;Marisa
+	dw JYNX ;Chen
+	dw CHIKORITA ;Kaguya/Princess
+	dw BULBASAUR ;Reimu/Miko
+	dw JIGGLYPUFF ;Alice
+	dw SMOOCHUM ;Suika/Oni
+	dw EKANS ;Minoriko/Shizuha
+	dw WOOPER ;Keine
+	dw LARVITAR ;Mima
+	dw DRATINI ;Yukari
+	dw MACHOP ;Meiling/Fighter
+	dw POLITOED ;Suwako
+	dw ONIX ;Iku
+	dw RHYDON ;Ran
+	dw BELLSPROUT ;Yuuka/Lady
+	dw MAGMAR ;Hina
+	dw GIRAFARIG ;Tenshi
+	dw LUGIA ;Prismriver
+	dw HO_OH ;Maid
 	assert_table_length NUM_POKEMON_SPRITES
