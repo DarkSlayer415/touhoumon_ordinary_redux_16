@@ -823,7 +823,7 @@ Text_HeadbuttIntro:
 	text "What am I doing?"
 
 	para "I'm shaking trees"
-	line "using HEADBUTT."
+	line "using Headbutt."
 
 	para "It's fun. Here,"
 	line "you try it too!"
@@ -831,7 +831,7 @@ Text_HeadbuttIntro:
 
 Text_HeadbuttOutro:
 	text "Rattle trees with"
-	line "HEADBUTT. Some-"
+	line "Headbutt. Some-"
 	cont "times, sleeping"
 	cont "#MON fall out."
 	done
