@@ -106,12 +106,15 @@ ElmCheckExpShare:
 	iftrue ElmGiveExpShareScript
 	checkevent EVENT_TOLD_ELM_ABOUT_HATATE_OVER_THE_PHONE
 	iffalse ElmCheckCHatateEgg
-	setval NATU
+	setval NATU ;CHatate
 	special FindPartyMonThatSpeciesYourTrainerID
 	iftrue ShowElmCHatateScript
-	setval XATU
+	setval XATU ;Hatate
 	special FindPartyMonThatSpeciesYourTrainerID
 	iftrue ShowElmCHatateScript
+	setval CELEBI ;EHatate
+	special FindPartyMonThatSpeciesYourTrainerID
+	iftrue ShowElmCHatateScript	
 	writetext ElmThoughtEggHatchedText
 	waitbutton
 	closetext
@@ -1210,12 +1213,6 @@ ElmGiveTicketText2:
 
 	para "Give my regards to"
 	line "PROF.OAK in KANTO!"
-	done
-
-ElmsLabMonEggText: ; unreferenced
-	text "It's the #MON"
-	line "EGG being studied"
-	cont "by PROF.ELM."
 	done
 
 AideText_GiveYouPotion:
