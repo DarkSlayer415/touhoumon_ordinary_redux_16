@@ -12,10 +12,14 @@ MoveReminding:
 	; Loads and prints the "MoveReminderWhichMonText" text.
 	ld hl, MoveReminderWhichMonText
 	call PrintText
+	
+	; This code falls through into the ".loop_party_menu" local jump.
+	; This is where the party menu loop begins.
 
 	; Loads the party menu to select a Pokémon. Relative jump
 	; to the ".cancel" local jump if the player leaves
 	; the party menu without selecting anything.
+.loop_party_menu
 	farcall SelectMonFromParty
 	jr c, .cancel
 
@@ -41,11 +45,15 @@ MoveReminding:
 	ld hl, MoveReminderWhichMoveText
 	call PrintText
 
-	; Generates the Move Reminder's menu. Relative jump to the
-	; ".exit_menu" local jump if the player leaves
-	; the menu and continue if they do not.
+	; This code falls through into the ".loop_move_menu" local jump.
+	; This is where the move menu loop begins.
+
+; Generates the Move Reminder's menu. Relative jump to the
+; ".loop_party_menu" local jump if the player leaves
+; the menu and continue if they do not.
+.loop_move_menu
 	call ChooseMoveToLearn
-	jr c, .exit_menu
+	jr c, .loop_party_menu
 
 	; If the player selects a move, load the move's name and copy
 	; it for later. This is used for displaying the move's
@@ -67,13 +75,16 @@ MoveReminding:
 	ld a, b
 	dec a
 	jr z, .move_learned
-; This code falls through into the ".exit_menu" local jump.
+; This code falls through into the ".recheck_for_moves" local jump.
 
-; Exits the menu and goes back to the
-; map with a speech text box open.
-.exit_menu
-	call ReturnToMapWithSpeechTextbox
-; This code falls through into the ".cancel" local jump.
+; Rechecks for any moves that can be learned. Relative
+; jump to the ".no_moves_to_learn" local jump if
+; there are none and relative jump to the
+; ".loop_move_menu" local jump if there are.
+.recheck_for_moves
+	call GetRemindableMoves
+	jr z, .no_moves_to_learn
+	jr .loop_move_menu
 
 ; Loads and prints the "MoveReminderCancelText" text.
 ; This ends the dialogue.
@@ -81,32 +92,40 @@ MoveReminding:
 	ld hl, MoveReminderCancelText
 	jp PrintText
 
-; Loads and prints the "MoveReminderEggText" text.
-; This ends the dialogue.
+; Loads and prints the "MoveReminderEggText" text and then waits for
+; the player to press a button for the text to progress. Then
+; relative jump to the ".loop_party_menu" local jump.
 .is_an_egg
 	ld hl, MoveReminderEggText
-	jp PrintText
+	call PrintText
+	jr .loop_party_menu
 
-; Loads and prints the "MoveReminderNotaMonText" text.
-; This ends the dialogue.
+; Loads and prints the "MoveReminderNotaMonText" text and then waits
+; for the player to press a button for the text to progress. Then
+; relative jump to the ".loop_party_menu" local jump.
 .not_a_pokemon
 	ld hl, MoveReminderNotaMonText
-	jp PrintText
+	call PrintText
+	jr .loop_party_menu
 
-; Loads and prints the "MoveReminderNoMovesText" text.
-; This ends the dialogue.
+; Loads and prints the "MoveReminderNoMovesText" text and then waits
+; for the player to press a button for the text to progress. Then
+; relative jump to the ".loop_party_menu" local jump.
 .no_moves_to_learn
 	ld hl, MoveReminderNoMovesText
-	jp PrintText
+	call PrintText
+	jr .loop_party_menu
 
 ; Exits the menu and goes back to the map with a
-; speech text box open and then loads and prints
-; the "MoveReminderMoveLearnedText" text.
-; This ends the dialogue.
+; speech text box open, loads and prints
+; the "MoveReminderMoveLearnedText"
+; text and relative jump to the
+; ".recheck_for_moves" local jump.
 .move_learned
 	call ReturnToMapWithSpeechTextbox
 	ld hl, MoveReminderMoveLearnedText
-	jp PrintText
+	call PrintText
+	jr .recheck_for_moves
 
 ; Checks for moves that can be learned and returns
 ; a zero flag if there are none.
@@ -313,9 +332,15 @@ ChooseMoveToLearn:
 	; This creates a border around the move list.
 	; "hlcoord" configures the position.
 	; "lb bc" configures the size.
-	hlcoord 0,  1
+	hlcoord 0,  0
 	lb bc, 9, 18
 	call TextboxBorder
+
+	; Adds a gap in the move list's text box border
+	; that prevents clipping with some names.
+	hlcoord 2, 0
+	lb bc, 1, 16
+	call ClearBox
 
 	; This replaces the tile using the identifier
 	; of "$6e" with the fourteenth tile of the
@@ -343,14 +368,16 @@ ChooseMoveToLearn:
 	ld a, [wCurPartySpecies]
 	ld [wNamedObjectIndex], a
 	call GetPokemonName
-	hlcoord  5, 1
+	hlcoord  3, 0
 	call PlaceString
 
 	; This displays the Pokémon's level
-	; right after the Pokémon's name.
+	; at the coordinates defined at
+	; "hlcoord". In this case that is
+	; the top right of the screen.
 	push bc
 	farcall CopyMonToTempMon
-	pop hl
+	hlcoord 14, 0
 	call PrintLevel
 
 	; Creates the menu, sets the "B_BUTTON"
@@ -379,7 +406,7 @@ ChooseMoveToLearn:
 ; vertical scroll arrows will be located.
 .MenuHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 1, 2, SCREEN_WIDTH - 2, 10
+	menu_coords 1, 1, SCREEN_WIDTH - 2, 9
 	dw .MenuData
 	db 1
 
@@ -466,7 +493,7 @@ ChooseMoveToLearn:
 ; box that replaces a leftover piece of the notch
 ; that remains when the cancel option is highlighted.
 .cancel_border_fix
-	hlcoord 0, 10
+	hlcoord 0, 9
 	ld [hl], "│"
 	inc hl
 	ret
@@ -476,8 +503,8 @@ ChooseMoveToLearn:
 .print_move_details
 
 	; This creates a border around the description.
-	hlcoord 0, 11
-	lb bc, 5, 18
+	hlcoord 0, 10
+	lb bc, 6, 18
 	call TextboxBorder
 
 	; This code will relative jump to the
@@ -505,24 +532,94 @@ ChooseMoveToLearn:
 .print_move_type
 	ld a, [wCurSpecies]
 	ld b, a
-	hlcoord 2, 12
+	hlcoord 2, 11
 	predef PrintMoveType
 ; This code falls through into the ".print_move_stat_strings" local jump.
 
 ; This prints the notch in the description text box border
-; and the "TYPE/" and "ATK/" strings.
+; and the "TYPE/", "ATK/", "EFF/" and "ACC/" strings.
 .print_move_stat_strings
-	hlcoord 0, 10
+	hlcoord 0, 9
 	ld de, MoveTypeTopString
 	call PlaceString
-	hlcoord 0, 11
+	hlcoord 0, 10
 	ld de, MoveTypeString
 	call PlaceString
-	hlcoord 12, 12
+	hlcoord 12, 11
 	ld de, MoveAttackString
+	call PlaceString
+	hlcoord  4, 12
+	ld de, MoveChanceString
+	call PlaceString
+	hlcoord 12, 12
+	ld de, MoveAccuracyString
 	call PlaceString
 ; This code falls through into the ".print_move_attack" local jump.
 
+; This prints the move's status effect chance number.
+.print_move_chance
+	ld a, [wMenuSelection]
+	ld bc, MOVE_LENGTH
+	ld hl, (Moves + MOVE_CHANCE) - MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	cp 1
+	jr c, .print_move_null_chance
+	Call ConvertPercentages
+	ld [wBuffer1], a
+	ld de, wBuffer1
+	lb bc, 1, 3
+	hlcoord  8, 12
+	call PrintNum
+	jr .print_move_accuracy
+
+; This prints "---" if the move has a status effect chance of "0".
+; This means one of three things:
+; It does not inflict a status effect.
+; It is always successful in inflicting a status
+; effect unless something blocks it.
+; Causes a weather effect.
+.print_move_null_chance
+	ld de, MoveNullValueString
+	ld bc, 3
+	hlcoord  8, 12
+	call PlaceString
+; This code falls through into the ".print_move_accuracy" local jump.
+
+; This prints the move's accuracy number.
+.print_move_accuracy
+	ld a, [wMenuSelection]
+	ld bc, MOVE_LENGTH
+	ld hl, (Moves + MOVE_EFFECT) - MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	cp EFFECT_MIRROR_MOVE
+	jr nc, .perfect_accuracy
+	ld a, [wMenuSelection]
+	ld bc, MOVE_LENGTH
+	ld hl, (Moves + MOVE_ACC) - MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	Call ConvertPercentages
+	ld [wBuffer1], a
+	ld de, wBuffer1
+	lb bc, 1, 3
+	hlcoord 16, 12
+	call PrintNum
+	jr .print_move_attack
+
+; This prints "---" if the move
+; has perfect accuracy.
+.perfect_accuracy
+	ld de, MoveNullValueString
+	ld bc, 3
+	hlcoord 16, 12
+	call PlaceString
+	
+; This code falls through into the ".print_move_attack" local jump.
 ; This prints the move's attack number.
 .print_move_attack
 	ld a, [wMenuSelection]
@@ -540,17 +637,63 @@ ChooseMoveToLearn:
 	ld [wBuffer1], a
 	ld de, wBuffer1
 	lb bc, 1, 3
-	hlcoord 16, 12
+	hlcoord 16, 11
 	jp PrintNum
 
 ; This prints "---" if the move has an attack of "0".
 ; This means that the move does not initially cause
 ; damage or is a one hit knockout move.
 .print_move_null_attack
-	hlcoord 16, 12
+	hlcoord 16, 11
 	ld de, MoveNullValueString
 	ld bc, 3
 	jp PlaceString
+
+; This converts values out of 256 into a value
+; out of 100. It achieves this by multiplying
+; the value by 100 and dividing it by 256.
+ConvertPercentages:
+
+	; Overwrite the "hl" register.
+	ld l, a
+	ld h, 0
+	push af
+
+	; Multiplies the value of the "hl" register by 3.
+	add hl, hl
+	add a, l
+	ld l, a
+	adc h
+	sub l
+	ld h, a
+
+	; Multiplies the value of the "hl" register
+	; by 8. The value of the "hl" register
+	; is now 24 times its original value.
+	add hl, hl
+	add hl, hl
+	add hl, hl
+
+	; Add the original value of the "hl" value to itself,
+	; making it 25 times its original value.
+	pop af
+	add a, l
+	ld l, a
+	adc h
+	sbc l
+	ld h, a
+
+	; Multiply the value of the "hl" register by
+	; 4, making it 100 times its original value.
+	add hl, hl
+	add hl, hl
+
+	; Round up value of the "h" register by adding 1.
+	; Return the result in the "a" register.
+	; The "l" register is ignored.
+	inc h
+	ld a, h
+	ret
 
 ; This is a notch that will be placed on
 ; the top left of the description box.
@@ -571,6 +714,16 @@ MoveAttackString:
 ; a metric with a null value.
 MoveNullValueString:
 	db "---@"
+
+; This is the string that precedes
+; the move's accuracy number.
+MoveAccuracyString:
+	db "ACC/@"
+
+; This is the string that precedes the
+; move's status effect chance number.
+MoveChanceString:
+	db "EFF/@"
 
 ; This is the text that displays when the player
 ; first talks to the move reminder.
@@ -611,7 +764,7 @@ MoveReminderCancelText:
 MoveReminderEggText:
 	text "An EGG can't learn"
 	line "any moves!"
-	done
+	prompt
 
 ; This is the text that displays if the player
 ; selects an entry in the party menu that
@@ -622,7 +775,7 @@ MoveReminderNotaMonText:
 	para "I'm sorry, but I"
 	line "can only teach"
 	cont "moves to #MON!"
-	done
+	prompt
 
 ; This is the text that displays if the player
 ; selects a Pokémon in the party menu that
@@ -631,7 +784,7 @@ MoveReminderNoMovesText:
 	text "There are no moves"
 	line "for this #MON"
 	cont "to learn."
-	done
+	prompt
 
 ; This is the text that displays after a
 ; Pokémon successfully learns a move.
@@ -639,4 +792,4 @@ MoveReminderMoveLearnedText:
 	text "Done! Your #MON"
 	line "remembered the"
 	cont "move."
-	done
+	prompt
