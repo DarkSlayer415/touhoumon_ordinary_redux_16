@@ -3120,10 +3120,11 @@ wFastShipB1FSceneID::                             db
 wMountMoonSquareSceneID::                         db
 wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
+wMountMortar1FOutsideSceneID::                    db
 
 wNumBalls:: db
 wBalls:: ds MAX_BALLS * 2 + 1
-	ds 23
+	ds 22
 
 ; fight counts
 wJackFightCount::    db
